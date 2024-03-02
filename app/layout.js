@@ -6,8 +6,8 @@ const prompt = Prompt({ subsets: ["latin"], weight: '500' });
 
 
 export const metadata = {
-  title: "Ed Portfolio",
-  description: "Portfolio",
+  title: "Abdellah Edaoudi",
+  description: "Portfolio Abdellah Edaoudi",
 };
 
 export default function RootLayout({ children }) {
