@@ -30,7 +30,7 @@ function Contact() {
       setName("");
       setEmail("");
       setMsg("");
-      alert("Thanks");
+      alert("sent succesfully");
     } catch (error) {
       console.error(error);
       alert("An error occurred. Please try again.");
