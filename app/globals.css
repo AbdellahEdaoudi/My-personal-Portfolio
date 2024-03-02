@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.imganim{
+  border-radius: 77% 23% 60% 40% / 25% 60% 40% 75% ;
+}
+.imganim2{
+  border-radius: 88% 12% 92% 8% / 8% 82% 18% 92%  ;
+}
