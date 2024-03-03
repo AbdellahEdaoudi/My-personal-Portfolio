@@ -55,7 +55,7 @@ function Portfolio() {
           <div className="flex justify-center items-center">
             <h1 className="p-3 underline">E-commerce App </h1>
             <a
-              href="https://ecommerce-app-chi-rose.vercel.app"
+              href="https://ecom-next-strapi.vercel.app"
               className="flex items-center  pr-2"
               target="_blank"
             >
@@ -66,16 +66,15 @@ function Portfolio() {
             </a>
           </div>
           <h2 className="px-3 text-[12px] pb-2  text-gray-500">
-            ReactJS and TailwindCSS App . designed to empower users with a
-            streamlined shopping experience thanks to its intuitive interface
-            and seamless navigation.
+            NextJs && Strapi and TailwindCSS  App 
+            adaptable to all devices with authentication and payment using stripe.
           </h2>
           <a
-            href="https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git"
+            href="https://github.com/AbdellahEdaoudi/Ecom-NextStrapi.git"
             className="flex items-center pr-2 float-end"
             target="_blank"
           >
-            <img src="Portfolio/github.png" width={24} alt="GitHub" />
+            <img src="Portfolio/EcommDigital.png" width={24} alt="GitHub" />
             <span className="ml-1 text-sm hover:text-blue-500">
               View on GitHub
             </span>
