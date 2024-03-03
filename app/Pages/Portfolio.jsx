@@ -46,7 +46,7 @@ function Portfolio() {
           </a>
         </div>
         {/* 2  */}
-       <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
+        <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
           <img
             className="w-96 rounded-md border-b-4 cursor-pointer"
             src="Portfolio/Ecom App.png"
@@ -66,25 +66,25 @@ function Portfolio() {
             </a>
           </div>
           <h2 className="px-3 text-[12px] pb-2  text-gray-500">
-            NextJs && Strapi and TailwindCSS  App 
-            adaptable to all devices with authentication and payment using stripe.
+            NextJs && Strapi and TailwindCSS App adaptable to all devices with
+            authentication and payment using stripe.
           </h2>
           <a
             href="https://github.com/AbdellahEdaoudi/Ecom-NextStrapi.git"
             className="flex items-center pr-2 float-end"
             target="_blank"
           >
-            <img src="Portfolio/EcommDigital.png" width={24} alt="GitHub" />
+            <img src="Portfolio/github.png" width={24} alt="GitHub" />
             <span className="ml-1 text-sm hover:text-blue-500">
               View on GitHub
             </span>
           </a>
         </div>
         {/* 3 */}
-       <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
+        <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
           <img
             className="w-96 rounded-md border-b-4 cursor-pointer"
-            src="Portfolio/Ecom App.png"
+            src="Portfolio/EcommDigital.png"
             alt="E-commerce App"
           />
           <div className="flex justify-center items-center">
@@ -117,7 +117,7 @@ function Portfolio() {
           </a>
         </div>
         {/* 1 */}
-       <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
+        <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
           <img
             className="w-96 rounded-md border-b-4 cursor-pointer"
             src="Portfolio/Ecom App.png"
@@ -153,7 +153,7 @@ function Portfolio() {
           </a>
         </div>
         {/* 2  */}
-       <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
+        <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
           <img
             className="w-96 rounded-md border-b-4 cursor-pointer"
             src="Portfolio/Ecom App.png"
