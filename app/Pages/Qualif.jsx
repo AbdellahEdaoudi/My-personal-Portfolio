@@ -74,10 +74,27 @@ function Qualif() {
       </div>
       {/* Qlf Experience */}
       <div className={`${Qlf ? "block" : "hidden"}`}>
-        <h1 className={`  text-5xl`}>سبحان الله</h1>
-        <h1 className={`  text-5xl`}>أستغفر الله</h1>
-        <h1 className={`  text-5xl`}>الحمد الله</h1>
-        <h1 className={`  text-5xl`}>الله أكبر</h1>
+      <div className={`md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}>
+          {/* STAGE */}
+          <div className=" bg-white border  px-10 md:flex  items-cente pt-7 pb-10 shadow-lg rounded-lg">
+              <div className=" flex items-center justify-center ">
+                <img src="./acad.jpg" alt="acadImg"  />
+              </div>
+              <div className="pt-5 ">
+                <h1 className="text-center text-red-500 pb-4">Stage en Développement Web</h1>
+                <ul>
+                  <li className="pl-5"><b>Lieu :</b> Académie Régionale d'Éducation et de Formation</li>
+                  <li className="pl-5"> Du 2024/3/1 au 2024/3/31</li>
+                  <li className="pl-5"><b>Description : <br /> </b> 
+                  <p className="">
+                  Durant ce stage, j'ai eu l'opportunité de travailler sur un projet de développement web pour la gestion des tâches. Mon rôle principal était de concevoir et développer une application web fonctionnelle utilisant la technologie React JS,Node JS. J'ai également intégré la bibliothèque de styles Tailwind CSS. J'ai travaillé en étroite collaboration avec l'équipe pour comprendre
+                   les exigences du projet et livrer une solution efficace et conviviale.
+                  </p>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
       </div>
     </section>
   );
