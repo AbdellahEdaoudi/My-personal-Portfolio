@@ -50,10 +50,10 @@ function Qualif() {
               .
             </h1>
             <div className=" ">
-              <div className="space-y-4">
+              <div className="space-y-4 border-2">
                 <img
                   alt="the cities of trades and skills"
-                  src="https://cmc.ac.ma/sites/default/files/styles/479x223/public/2022-12/banner-cmc-laayoune_0.png?itok=ikgS-lSV"
+                  src="https://orientation-chabab.com/images/cmc-maroc.png"
                 ></img>
               </div>
             </div>
@@ -65,7 +65,7 @@ function Qualif() {
               School
             </h1>
             <div className=" ">
-              <div className="space-y-4 pt-6">
+              <div className="space-y-4 pt-6 ">
                 <img src="./BabAhmedImage.jpg" alt=" Babe Ahmed High School" />
               </div>
             </div>
