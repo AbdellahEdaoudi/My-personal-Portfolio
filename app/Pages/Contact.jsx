@@ -10,10 +10,7 @@ function Contact() {
 
   const PostContact = async (e) => {
     e.preventDefault();
-
-    // Validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!name || !email || !msg || !emailRegex.test(email)) {
+    if (!name || !email || !msg) {
       alert("Please fill in all fields and provide a valid email.");
       return;
     }
