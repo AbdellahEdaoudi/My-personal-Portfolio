@@ -76,24 +76,24 @@ function Qualif() {
       <div className={`${Qlf ? "block" : "hidden"}`}>
       <div className={`md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}>
           {/* STAGE */}
-          <div className=" bg-white border  px-10 md:flex  items-cente pt-7 pb-10 shadow-lg rounded-lg">
-              <div className=" flex items-center justify-center ">
-                <img src="./acad.jpg" alt="acadImg"  />
-              </div>
-              <div className="pt-5 ">
-                <h1 className="text-center text-red-500 pb-4">Stage en Développement Web</h1>
-                <ul>
-                  <li className="pl-5"><b>Lieu :</b> Académie Régionale d'Éducation et de Formation</li>
-                  <li className="pl-5"> Du 2024/3/1 au 2024/3/31</li>
-                  <li className="pl-5"><b>Description : <br /> </b> 
-                  <p className="">
-                  Durant ce stage, j'ai eu l'opportunité de travailler sur un projet de développement web pour la gestion des tâches. Mon rôle principal était de concevoir et développer une application web fonctionnelle utilisant la technologie React JS,Node JS. J'ai également intégré la bibliothèque de styles Tailwind CSS. J'ai travaillé en étroite collaboration avec l'équipe pour comprendre
-                   les exigences du projet et livrer une solution efficace et conviviale.
-                  </p>
-                  </li>
-                </ul>
-              </div>
-          </div>
+          <div className=" bg-white border px-10 md:flex items-cente pt-7 pb-10 shadow-lg rounded-lg">
+               <div className="flex items-center justify-center">
+                 <img src="./acad.jpg" alt="acadImg" />
+               </div>
+               <div className="pt-5 ">
+                 <h1 className="text-center text-red-500 pb-4">Web Development Internship</h1>
+                 <ul>
+                   <li className="pl-5"><b>Location:</b> Regional Academy of Education and Training</li>
+                   <li className="pl-5"> From 2024/3/1 to 2024/3/31</li>
+                   <li className="pl-5"><b>Description: <br /> </b>
+                   <p className="">
+                   During this internship, I had the opportunity to work on a web development project for task management. My main role was to design and develop a functional web application using React JS, Node JS technology. I also integrated the Tailwind CSS style library. I worked closely with the team to understand
+                    project requirements and deliver an efficient and user-friendly solution.
+                   </p>
+                   </li>
+                 </ul>
+               </div>
+           </div>
         </div>
       </div>
     </section>
