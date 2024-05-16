@@ -53,7 +53,7 @@ function Portfolio() {
             alt="E-commerce App"
           />
           <div className="flex justify-center items-center">
-            <h1 className="p-3 underline">E-commerce App </h1>
+            <h1 className="p-3 underline">Hotel App</h1>
             <a
               href="https://edhotel.vercel.app/HomePage"
               className="flex items-center  pr-2"
