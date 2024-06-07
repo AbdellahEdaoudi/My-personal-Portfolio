@@ -37,7 +37,7 @@ function Contact() {
       alert("An error occurred. Please try again.");
     setloading(false)
     } finally {
-      setloading(true)
+      setloading(false)
     }
   };
 
