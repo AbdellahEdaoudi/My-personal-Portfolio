@@ -7,11 +7,14 @@ function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
+  const [loading,setloading]=useState(false)
 
   const PostContact = async (e) => {
     e.preventDefault();
+    setloading(true)
     if (!name || !email || !msg) {
       alert("Please fill in all fields and provide a valid email.");
+    setloading(false)
       return;
     }
 
@@ -28,9 +31,13 @@ function Contact() {
       setEmail("");
       setMsg("");
       alert("sent succesfully");
+    setloading(true)
     } catch (error) {
       console.error(error);
       alert("An error occurred. Please try again.");
+    setloading(false)
+    } finally {
+      setloading(true)
     }
   };
 
@@ -119,11 +126,11 @@ function Contact() {
               </li>
             </ul>
             <ul>
-              <button
+              <button disabled={loading}
                 onClick={PostContact}
                 className="flex gap-2 bg-gray-800 text-white px-5 py-3 rounded-lg items-center text-[14px]"
               >
-                Send Message <Send />
+                {loading ? "Sending..." : `Send Message`} <Send />
               </button>{" "}
             </ul>
           </div>
