@@ -63,7 +63,7 @@ function Contact() {
                 Write me <ArrowBigRight />
               </li>
             </ul>
-            <ul className="bg-white hidden space-y-1 py-4 rounded-lg border">
+            <ul className="bg-white  space-y-1 py-4 rounded-lg border">
               <li className="flex justify-center">
                 <img src="./whatsapp.png" width={25} alt="wh" />
               </li>

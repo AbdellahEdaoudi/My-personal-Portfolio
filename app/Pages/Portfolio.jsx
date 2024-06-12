@@ -70,9 +70,10 @@ function Portfolio() {
           It seamlessly handles reservations, guest services,
           user authentication, and payments via Stripe.
           </h2>
+          <div className="mx-4 cursor-pointer">
           <a
             href="https://github.com/AbdellahEdaoudi/EdHotel.git"
-            className="flex items-center pr-2 float-end"
+            className="flex items-center pr-2 float-start mx-"
             target="_blank"
           >
             <img src="Portfolio/github.png" width={24} alt="GitHub" />
@@ -80,18 +81,22 @@ function Portfolio() {
               View on GitHub
             </span>
           </a>
+            <a href="./Rapport.pdf" className=" text-red-700" title="Download Rapport" download="Rapport.pdf">
+            Rapport de Projet
+            </a>
+          </div>
         </div>
-        {/* 3 */}
+        {/* 2 */}
         <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
           <img
             className="w-96 rounded-md border-b-4 cursor-pointer"
-            src="Portfolio/EcommDigital.png"
+            src="Portfolio/HotelDash.png"
             alt="E-commerce App"
           />
           <div className="flex justify-center items-center">
-            <h1 className="p-3 underline">E-commerce App </h1>
+            <h1 className="p-3 underline">Hotel App</h1>
             <a
-              href="https://ecommerce-app-chi-rose.vercel.app"
+              href="https://edhotel.vercel.app/HomePage"
               className="flex items-center  pr-2"
               target="_blank"
             >
@@ -102,13 +107,14 @@ function Portfolio() {
             </a>
           </div>
           <h2 className="px-3 text-[12px] pb-2  text-gray-500">
-            ReactJS and TailwindCSS App . designed to empower users with a
-            streamlined shopping experience thanks to its intuitive interface
-            and seamless navigation.
+          Hotel management application using Next.js, Node.js, and Tailwind CSS.
+          It seamlessly handles reservations, guest services,
+          user authentication, and payments via Stripe.
           </h2>
+          <div className="mx-4 cursor-pointer">
           <a
-            href="https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git"
-            className="flex items-center pr-2 float-end"
+            href="https://github.com/AbdellahEdaoudi/EdHotel.git"
+            className="flex items-center pr-2 float-start mx-"
             target="_blank"
           >
             <img src="Portfolio/github.png" width={24} alt="GitHub" />
@@ -116,18 +122,22 @@ function Portfolio() {
               View on GitHub
             </span>
           </a>
+            <a href="./Rapport.pdf" className=" text-red-700" title="Download Rapport" download="Rapport.pdf">
+            Rapport de Projet
+            </a>
+          </div>
         </div>
-        {/* 1 */}
+        {/* 2 */}
         <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
           <img
             className="w-96 rounded-md border-b-4 cursor-pointer"
-            src="Portfolio/Ecom App.png"
+            src="Portfolio/HotelDash.png"
             alt="E-commerce App"
           />
           <div className="flex justify-center items-center">
-            <h1 className="p-3 underline">E-commerce App </h1>
+            <h1 className="p-3 underline">Hotel App</h1>
             <a
-              href="https://ecommerce-app-chi-rose.vercel.app"
+              href="https://edhotel.vercel.app/HomePage"
               className="flex items-center  pr-2"
               target="_blank"
             >
@@ -138,13 +148,14 @@ function Portfolio() {
             </a>
           </div>
           <h2 className="px-3 text-[12px] pb-2  text-gray-500">
-            ReactJS and TailwindCSS App . designed to empower users with a
-            streamlined shopping experience thanks to its intuitive interface
-            and seamless navigation.
+          Hotel management application using Next.js, Node.js, and Tailwind CSS.
+          It seamlessly handles reservations, guest services,
+          user authentication, and payments via Stripe.
           </h2>
+          <div className="mx-4 cursor-pointer">
           <a
-            href="https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git"
-            className="flex items-center pr-2 float-end"
+            href="https://github.com/AbdellahEdaoudi/EdHotel.git"
+            className="flex items-center pr-2 float-start mx-"
             target="_blank"
           >
             <img src="Portfolio/github.png" width={24} alt="GitHub" />
@@ -152,44 +163,12 @@ function Portfolio() {
               View on GitHub
             </span>
           </a>
-        </div>
-        {/* 2  */}
-        <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
-          <img
-            className="w-96 rounded-md border-b-4 cursor-pointer"
-            src="Portfolio/Ecom App.png"
-            alt="E-commerce App"
-          />
-          <div className="flex justify-center items-center">
-            <h1 className="p-3 underline">E-commerce App </h1>
-            <a
-              href="https://ecommerce-app-chi-rose.vercel.app"
-              className="flex items-center  pr-2"
-              target="_blank"
-            >
-              <img src="Portfolio/WebSite.png" width={20} alt="WebSite" />
-              <span className="ml-2 text-sm hover:text-blue-500">
-                Visit Website
-              </span>
+            <a href="./Rapport.pdf" className=" text-red-700" title="Download Rapport" download="Rapport.pdf">
+            Rapport de Projet
             </a>
           </div>
-          <h2 className="px-3 text-[12px] pb-2  text-gray-500">
-            ReactJS and TailwindCSS App . designed to empower users with a
-            streamlined shopping experience thanks to its intuitive interface
-            and seamless navigation.
-          </h2>
-          <a
-            href="https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git"
-            className="flex items-center pr-2 float-end"
-            target="_blank"
-          >
-            <img src="Portfolio/github.png" width={24} alt="GitHub" />
-            <span className="ml-1 text-sm hover:text-blue-500">
-              View on GitHub
-            </span>
-          </a>
         </div>
-        {/* 3 */}
+        {/* 1  */}
         <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
           <img
             className="w-96 rounded-md border-b-4 cursor-pointer"
@@ -224,6 +203,47 @@ function Portfolio() {
               View on GitHub
             </span>
           </a>
+        </div>
+        {/* 2 */}
+        <div className="bg-white h-[330px] w-80 rounded-lg shadow-lg pb-2 mb-5">
+          <img
+            className="w-96 rounded-md border-b-4 cursor-pointer"
+            src="Portfolio/HotelDash.png"
+            alt="E-commerce App"
+          />
+          <div className="flex justify-center items-center">
+            <h1 className="p-3 underline">Hotel App</h1>
+            <a
+              href="https://edhotel.vercel.app/HomePage"
+              className="flex items-center  pr-2"
+              target="_blank"
+            >
+              <img src="Portfolio/WebSite.png" width={20} alt="WebSite" />
+              <span className="ml-2 text-sm hover:text-blue-500">
+                Visit Website
+              </span>
+            </a>
+          </div>
+          <h2 className="px-3 text-[12px] pb-2  text-gray-500">
+          Hotel management application using Next.js, Node.js, and Tailwind CSS.
+          It seamlessly handles reservations, guest services,
+          user authentication, and payments via Stripe.
+          </h2>
+          <div className="mx-4 cursor-pointer">
+          <a
+            href="https://github.com/AbdellahEdaoudi/EdHotel.git"
+            className="flex items-center pr-2 float-start mx-"
+            target="_blank"
+          >
+            <img src="Portfolio/github.png" width={24} alt="GitHub" />
+            <span className="ml-1 text-sm hover:text-blue-500">
+              View on GitHub
+            </span>
+          </a>
+            <a href="./Rapport.pdf" className=" text-red-700" title="Download Rapport" download="Rapport.pdf">
+            Rapport de Projet
+            </a>
+          </div>
         </div>
       </div>
     </section>

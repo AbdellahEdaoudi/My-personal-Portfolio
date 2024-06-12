@@ -38,8 +38,8 @@ function Qualif() {
           {/* CMC */}
           <div className="text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-7 pb-10 shadow-lg rounded-lg">
             <h1 className="pb-5">
-              <p>2024</p> Trainee at the second year level in digital
-              development full stack option in the cities of trades and skills{" "}
+              <p>2024</p> Diploma in digital development Full Stack option
+               in Cities of Professions and Skills (CMC).{" "}
               <a
                 className="text-blue-500"
                 target="_blank"

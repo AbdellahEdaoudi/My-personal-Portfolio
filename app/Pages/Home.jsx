@@ -11,10 +11,10 @@ export default function Home() {
         <div className="flex flex-col-reverse items-center md:flex-row md:space-x-36 ">
           <ul className="space-y-4">
             <li className=" text-5xl">Abdellah Edaoudi</li>
-            <li className="text-2xl">~~~~~~~~ FullStack Developer</li>
+            <li className="text-2xl">~~~~~~~~ FullStack Mern Developer</li>
             <li className="w-96">
-              Digital development intern Full-Stack option, specializes in
-              creating websites and responsive applications.
+            Digital Developer, Full-Stack Option, adept at creating responsive websites and applications
+             using React.js, Node.js, Next.js, and Tailwind CSS.
             </li>
             <li className="flex space-x-4 justify-center">
               <a
