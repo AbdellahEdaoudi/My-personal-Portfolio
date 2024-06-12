@@ -23,13 +23,13 @@ function About() {
                 <Award />
                 <span className="text-[13px]">Experience</span>
                 <span className="text-[10px] text-gray-400 ">
-                  0 years Working
+                  1 years Working
                 </span>
               </li>
               <li className="flex flex-col items-center text-center bg-white  space-y-1 py-3 px-8  rounded-md border">
                 <Briefcase />
                 <span className="text-[13px]">Completed</span>
-                <span className="text-[10px] text-gray-400 ">+2 Projects</span>
+                <span className="text-[10px] text-gray-400 ">+3 Projects</span>
               </li>
               <li className="flex flex-col items-center text-center bg-white  space-y-1 py-3 px-8  rounded-md border">
                 <Headset />
