@@ -130,7 +130,7 @@ function Contact() {
                 onClick={PostContact}
                 className="flex gap-2 bg-gray-800 text-white px-5 py-3 rounded-lg items-center text-[14px]"
               >
-                {loading ? "Sending..." : `Send Message`} <Send />
+                {loading ? <i class="fa fa-spinner fa-spin"></i> : `Send Message`} <span className={`${loading &&  "hidden"}`}><Send /></span>
               </button>{" "}
             </ul>
           </div>
