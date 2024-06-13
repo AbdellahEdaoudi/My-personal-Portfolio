@@ -39,6 +39,9 @@ export default function Header() {
                         <span className={`${b}`}>
                             <li onClick={() => { window.scrollTo({ top: 2880, behavior: 'smooth' }); handleSetActiveLink("Contact") }} className={`${activeLink === "Contact" ? "text-green-500" : ""}`}>Contact</li>
                         </span>
+                        <Link href="/msg" className="text-white">
+                            Admin
+                        </Link>
                     </ul>
                 </div>
                 <div onClick={() => { menu ? setMenu(!menu) : setMenu(!menu) }} className='md:hidden cursor-grabbing'>
