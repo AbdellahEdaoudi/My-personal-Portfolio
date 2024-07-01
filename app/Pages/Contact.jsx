@@ -68,7 +68,7 @@ function Contact() {
                 <img src="./whatsapp.png" width={25} alt="wh" />
               </li>
               <li>Whatassap</li>
-              <li className="text-[12px] text-gray-400">+212 607071966</li>
+              <li className="text-[12px] text-gray-400">+212 687334600</li>
               <li className="flex items-center text-gray-400 justify-center text-[12px]">
                 Write me <ArrowBigRight />
               </li>
