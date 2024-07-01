@@ -2,7 +2,7 @@ import React from 'react'
 import {BadgeCheck} from 'lucide-react'
 function Skills() {
   const FrontEnd = [
-    { name: "NextJS(Reactjs)", ds: "Intermediate" },
+    { name: "NextJS", ds: "Intermediate" },
     { name: "BootStrap", ds: "Intermediate" },
     { name: "TailwindCss", ds: "Intermediate" },
     { name: "Git/Github", ds: "Intermediate" },
