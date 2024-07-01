@@ -38,10 +38,8 @@ function About() {
               </li>
             </ul>
             <ul className="text-justify w-[400px] text-gray-700 px-2 ">
-              Full-Stack Developer, creating well-designed, high-performance
-              code. I specialize in building responsive websites and apps with a
-              mobile-first approach, ensuring seamless experiences across all
-              devices.
+            MERN Stack Developer creating well-designed, high-performance code. I specialize in building responsive
+            websites and apps with a mobile-first approach, ensuring seamless experiences across all devices.
             </ul>
             <div className="flex items-center justify-center">
               <a

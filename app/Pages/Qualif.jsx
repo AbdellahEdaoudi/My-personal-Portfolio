@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { GraduationCap, Briefcase } from "lucide-react";
+import { GraduationCap, Briefcase, Download } from "lucide-react";
 function Qualif() {
   const [Qlf, setQlf] = useState(false);
   return (
@@ -38,8 +38,8 @@ function Qualif() {
           {/* CMC */}
           <div className="text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-7 pb-10 shadow-lg rounded-lg">
             <h1 className="pb-5">
-              <p>2024</p> Diploma in digital development Full Stack option
-               in Cities of Professions and Skills (CMC).{" "}
+              <p>2024</p> Diploma in digital development Full Stack option in
+              Cities of Professions and Skills (CMC).{" "}
               <a
                 className="text-blue-500"
                 target="_blank"
@@ -74,26 +74,47 @@ function Qualif() {
       </div>
       {/* Qlf Experience */}
       <div className={`${Qlf ? "block" : "hidden"}`}>
-      <div className={`md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}>
+        <div
+          className={`md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}
+        >
           {/* STAGE */}
           <div className=" bg-white border px-10 md:flex items-cente pt-7 pb-10 shadow-lg rounded-lg">
-               <div className="flex items-center justify-center">
-                 <img src="./acad.jpg" alt="acadImg" />
-               </div>
-               <div className="pt-5 ">
-                 <h1 className="text-center text-red-500 pb-4">Web Development Internship</h1>
-                 <ul>
-                   <li className="pl-5"><b>Location:</b> Regional Academy of Education and Training</li>
-                   <li className="pl-5"> From 2024/3/1 to 2024/3/31</li>
-                   <li className="pl-5"><b>Description: <br /> </b>
-                   <p className="">
-                   During this internship, I had the opportunity to work on a web development project for task management. My main role was to design and develop a functional web application using React JS, Node JS technology. I also integrated the Tailwind CSS style library. I worked closely with the team to understand
-                    project requirements and deliver an efficient and user-friendly solution.
-                   </p>
-                   </li>
-                 </ul>
-               </div>
-           </div>
+            <div className="flex items-center justify-center">
+              <img src="./acad.jpg" alt="acadImg" />
+            </div>
+            <div className="pt-5 ">
+              <h1 className="text-center text-red-500 pb-4">
+                Web Development Internship
+              </h1>
+              <ul>
+                <li className="pl-5">
+                  <b>Location:</b> Regional Academy of Education and Training
+                </li>
+                <li className="pl-5"> From 2024/3/1 to 2024/3/31</li>
+                <li className="pl-5">
+                  <b>
+                    Description: <br />{" "}
+                  </b>
+                  <p className="">
+                    During this internship, I had the opportunity to work on a
+                    web development project for task management. My main role
+                    was to design and develop a functional web application using
+                    React JS, Node JS technology. I also integrated the Tailwind
+                    CSS style library. I worked closely with the team to
+                    understand project requirements and deliver an efficient and
+                    user-friendly solution.
+                  </p>
+                </li>
+                <a
+                  href="/AttestaiondeStage.pdf"
+                  download
+                  className="float-right bg-green-500 p-2 rounded-md "
+                >
+                  Attestation De Stage
+                </a>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
