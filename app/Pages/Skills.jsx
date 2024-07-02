@@ -15,7 +15,7 @@ function Skills() {
     { name: "Docker", ds: "Intermediate" }
   ];
   return (
-    <section id='skill' className='bg-gray-50 py-14 flex  flex-col items-center px-10 '>
+    <section id='skill' className='bg-gray-50 py-14 flex  flex-col items-center md:px-10 px-5 '>
       <div className='text-center pb-10 '>
             <p className='text-4xl font-bold'>Skills</p>
             <p className='text-gray-400 text-sm'>My technical level</p>
@@ -23,7 +23,7 @@ function Skills() {
       {/* Skills */}
       <div className='md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5'>
       {/* Frontend developer */}
-        <div className='text-center bg-white border px-10 flex flex-col items-center pt-7 pb-10 rounded-lg'>
+        <div className='text-center bg-white border md:px-10 px-5 flex flex-col items-center pt-7 pb-10 rounded-lg'>
           <h1 className='pb-5'>Frontend Developer</h1>
           <div className='grid grid-cols-2 gap-5'>
             {FrontEnd.map((fr,i)=>{
@@ -37,7 +37,7 @@ function Skills() {
           </div>
         </div>
         {/* Backend developer */}
-            <div className='text-center bg-white border px-10 flex flex-col items-center pt-7 pb-10 rounded-lg'>
+            <div className='text-center bg-white border md:px-10 px-5 flex flex-col items-center pt-7 pb-10 rounded-lg'>
           <h1 className='pb-5'>Backend Developer</h1>
           <div className='grid grid-cols-2 gap-5'>
             {BackEnd.map((fr,i)=>{
