@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <nav>
-      <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 py-20 px-4 bg-gray-50">
+      <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 py-12 px-4 bg-gray-50">
         <div className="flex flex-col-reverse items-center md:flex-row md:space-x-36 ">
           <ul className="space-y-4">
             <li className=" text-5xl">Abdellah Edaoudi</li>

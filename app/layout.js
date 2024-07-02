@@ -7,15 +7,71 @@ const prompt = Prompt({ subsets: ["latin"], weight: '500' });
 
 
 export const metadata = {
-  icons: {
-    src: "/profile-pic.png",
-    className: "rounded-md"
-  },
   title: "Abdellah Edaoudi",
-  description: "Portfolio of Abdellah Edaoudi, a FullStack MERN Developer with expertise in building dynamic and responsive web applications.",
-  keywords: "Abdellah Edaoudi, FullStack Developer, MERN Stack, Portfolio, Web Development, React, Node.js, MongoDB, Express.js, JavaScript, Frontend Developer, Backend Developer, Software Engineer, Web Applications",
-
+  description: "Welcome to the official portfolio of Abdellah Edaoudi, a Digital Developer specializing in MERN-Stack. Explore my projects, skills, and experiences in building responsive websites and applications using Next.js (React.js), Tailwind CSS, and Node.js.",
+  keywords: "Abdellah Edaoudi, MERN Stack Developer, Portfolio, Web Development, React, Node.js, MongoDB, Express.js, JavaScript, Frontend Developer, Backend Developer, Software Engineer, Web Applications, Tailwind CSS, Next.js, Digital Developer, Responsive Design, Full-Stack Development, API Integration, UI/UX Design, SEO Optimization, Abdellah, Edaoudi",
+  openGraph: {
+    title: "Abdellah Edaoudi",
+    description: "Welcome to the official portfolio of Abdellah Edaoudi, a Digital Developer specializing in MERN-Stack. Explore my projects, skills, and experiences in building responsive websites and applications using Next.js (React.js), Tailwind CSS, and Node.js.",
+    type: 'website',
+    url: 'https://ed-portfolioo.vercel.app',
+    images: [
+      {
+        url: 'https://ed-portfolioo.vercel.app/profile-pic.png',
+        width: 800,
+        height: 600,
+        alt: 'Abdellah Edaoudi Profile Picture',
+      }
+    ],
+    locale: 'en_US',
+    site_name: 'Abdellah Edaoudi Portfolio'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@Edaoudi_abde',
+    creator: '@Edaoudi_abde',
+    title: "Abdellah Edaoudi - MERN Stack Developer | Portfolio",
+    description: "Welcome to the official portfolio of Abdellah Edaoudi, a Digital Developer specializing in MERN-Stack. Explore my projects, skills, and experiences in building responsive websites and applications using Next.js (React.js), Tailwind CSS, and Node.js.",
+    image: 'https://ed-portfolioo.vercel.app/profile-pic.png',
+  },
+  instagram: {
+    site: '@edaoudi_abdellah'
+  },
+  robots: 'index, follow',
+  google: {
+    name: 'Abdellah Edaoudi - MERN Stack Developer | Portfolio',
+    description: 'Welcome to the official portfolio of Abdellah Edaoudi, a Digital Developer specializing in MERN-Stack. Explore my projects, skills, and experiences in building responsive websites and applications using Next.js (React.js), Tailwind CSS, and Node.js.'
+  },
+  author: 'Abdellah Edaoudi',
+  canonical: 'https://ed-portfolioo.vercel.app',
+  additionalMetaTags: [
+    {
+      name: 'application-name',
+      content: 'Abdellah Edaoudi Portfolio'
+    },
+    {
+      name: 'msapplication-TileColor',
+      content: '#ffffff'
+    },
+    {
+      name: 'msapplication-TileImage',
+      content: 'https://ed-portfolioo.vercel.app/profile-pic.png'
+    },
+    {
+      name: 'theme-color',
+      content: '#ffffff'
+    },
+    {
+      name: 'keywords',
+      content: 'Abdellah Edaoudi, Abdellah, Edaoudi, MERN Stack Developer, Portfolio, Web Development, React, Node.js, MongoDB, Express.js, JavaScript, Frontend Developer, Backend Developer, Software Engineer, Web Applications, Tailwind CSS, Next.js, Digital Developer, UI/UX Design, API Integration, Responsive Design'
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image'
+    }
+  ]
 };
+
 
 export default function RootLayout({ children }) {
   return (
