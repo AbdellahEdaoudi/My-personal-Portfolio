@@ -9,10 +9,8 @@ import Skills from './Pages/Skills';
 
 export default function Page() {
   return (
-    <section>
-      <div className="sticky top-0 bg-white">
-        <Header />
-      </div>
+    <div>
+      <div className="sticky top-0 bg-white"><Header nm="Home" /></div>
       <Home />
       <About />
       <Skills />
@@ -20,6 +18,6 @@ export default function Page() {
       <Qualif />
       <Contact />
       <Footer />
-    </section>
+    </div>
   );
 }

@@ -9,18 +9,16 @@ function DeleteContactsPage() {
   const [authenticated, setAuthenticated] = useState(false);
 
   useEffect(() => {
-    // Check if authenticated on component mount
     checkAuthentication();
   }, []);
 
   const checkAuthentication = () => {
-    // Check if password matches your expected password
     if (password === '1234') {
       setAuthenticated(true);
       fetchContacts();
     } else {
       setAuthenticated(false);
-      setContacts([]); // Clear contacts if not authenticated
+      setContacts([]);
     }
   };
 
@@ -37,7 +35,6 @@ function DeleteContactsPage() {
     try {
       await axios.delete('https://contact-my-portfolio.vercel.app/Contact');
       setContacts([]);
-      // alert('All contacts deleted successfully');
     } catch (error) {
       console.error('Error deleting all contacts:', error);
       alert('Failed to delete all contacts');
@@ -48,7 +45,6 @@ function DeleteContactsPage() {
     try {
       await axios.delete(`https://contact-my-portfolio.vercel.app/Contact/${id}`);
       setContacts(contacts.filter(contact => contact._id !== id));
-      // alert('Contact deleted successfully');
     } catch (error) {
       console.error('Error deleting contact:', error);
       alert('Failed to delete contact');
@@ -57,15 +53,9 @@ function DeleteContactsPage() {
 
   const handleAddMessages = async () => {
     try {
-      const newMessages = { name: 'Abdellah Edaoudi', email: 'edaoudi@gmail.com', msg: 'New message 1' };
-
-      // Example of batch adding messages
+      const newMessages = { name: 'Abdellah Edaoudi', email: 'edaoudi@gmail.com', msg: 'Thank you' };
       await axios.post('https://contact-my-portfolio.vercel.app/Contact', newMessages);
-
-      // Assuming the server returns the updated list of contacts
       fetchContacts();
-      // Optionally alert or notify user of success
-      // alert('Messages added successfully');
     } catch (error) {
       console.error('Error adding messages:', error);
       alert('Failed to add messages');

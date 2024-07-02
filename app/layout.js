@@ -1,5 +1,6 @@
 import { Inter, Prompt } from "next/font/google";
 import "./globals.css";
+import Header from "./Pages/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 const prompt = Prompt({ subsets: ["latin"], weight: '500' });
