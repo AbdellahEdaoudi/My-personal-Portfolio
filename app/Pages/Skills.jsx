@@ -1,11 +1,13 @@
 import React from 'react'
-import {BadgeCheck} from 'lucide-react'
+import {BadgeCheck, Hourglass} from 'lucide-react'
 function Skills() {
   const FrontEnd = [
     { name: "NextJS", ds: "Intermediate" },
     { name: "BootStrap", ds: "Intermediate" },
     { name: "TailwindCss", ds: "Intermediate" },
     { name: "Git/Github", ds: "Intermediate" },
+    { name: <span className='flex'><Hourglass width={18} /> shadcn/ui </span>, ds: "Intermediate" },
+    // { name: "shadcn/ui", ds: "Intermediate" },
   ];
   const BackEnd = [
     { name: "NodeJS", ds: "Intermediate" },
