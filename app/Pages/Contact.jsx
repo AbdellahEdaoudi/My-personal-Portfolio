@@ -2,19 +2,21 @@
 import React, { useState } from "react";
 import { MailMinus, ArrowBigRight, Send } from "lucide-react";
 import Axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
-  const [loading,setloading]=useState(false)
+  const [loading, setloading] = useState(false);
 
   const PostContact = async (e) => {
     e.preventDefault();
-    setloading(true)
+    setloading(true);
     if (!name || !email || !msg) {
-      alert("Please fill in all fields and provide a valid email.");
-    setloading(false)
+      toast.error("Please fill in all fields and provide a valid email.");
+      setloading(false);
       return;
     }
 
@@ -30,26 +32,29 @@ function Contact() {
       setName("");
       setEmail("");
       setMsg("");
-      alert("sent succesfully");
-    setloading(true)
+      toast.success("Sent successfully", { autoClose: 1000 });
+      setloading(true);
     } catch (error) {
       console.error(error);
-      alert("An error occurred. Please try again.");
-    setloading(false)
+      toast.error("An error occurred. Please try again.");
+      setloading(false);
     } finally {
-      setloading(false)
+      setloading(false);
     }
   };
 
   return (
-    <section id="Cnt" className="bg-gray-50 pb-10 flex flex-col items-center">
+    <section
+      id="Cnt"
+      className="bg-gray-50 pb-10 flex flex-col items-center mt-2"
+    >
       <div className="text-center pb-10 ">
         <p className="text-4xl font-bold">Get in touch</p>
         <p className="text-gray-400 text-sm">Contact Me</p>
       </div>
       <div>
-        <div className="md:flex  justify-center md:space-x-20 md:space-y-0 space-y-5">
-          <div className="  w-64 text-center space-y-2">
+        <div className="md:flex justify-center md:space-x-20 md:space-y-0 space-y-5">
+          <div className="w-64 text-center space-y-2">
             <h4 className="text-center">Talk to me</h4>
             <ul className="bg-white space-y-1 py-4 rounded-lg border">
               <li className="flex justify-center">
@@ -63,11 +68,11 @@ function Contact() {
                 Write me <ArrowBigRight />
               </li>
             </ul>
-            <ul className="bg-white  space-y-1 py-4 rounded-lg border">
+            <ul className="bg-white space-y-1 py-4 rounded-lg border">
               <li className="flex justify-center">
                 <img src="./whatsapp.png" width={25} alt="wh" />
               </li>
-              <li>Whatassap</li>
+              <li>WhatsApp</li>
               <li className="text-[12px] text-gray-400">+212 687334600</li>
               <li className="flex items-center text-gray-400 justify-center text-[12px]">
                 Write me <ArrowBigRight />
@@ -91,7 +96,7 @@ function Contact() {
               <li>
                 <input
                   type="text"
-                  placeholder="insert your name"
+                  placeholder="Insert your name"
                   value={name}
                   onChange={(e) => {
                     setName(e.target.value);
@@ -104,7 +109,7 @@ function Contact() {
               <li>
                 <input
                   type="email"
-                  placeholder="insert your email"
+                  placeholder="Insert your email"
                   value={email}
                   onChange={(e) => {
                     setEmail(e.target.value);
@@ -126,17 +131,27 @@ function Contact() {
               </li>
             </ul>
             <ul>
-              <button disabled={loading}
+              <button
+                disabled={loading}
                 onClick={PostContact}
                 className="flex gap-2 bg-gray-800 text-white px-5 py-3 rounded-lg items-center text-[14px]"
               >
-                {loading ? <i class="fa fa-spinner fa-spin"></i> : `Send Message`} <span className={`${loading &&  "hidden"}`}><Send /></span>
-              </button>{" "}
+                {loading ? (
+                  <>
+                    Sending Message <i className="fa fa-spinner fa-spin"></i>
+                  </>
+                ) : (
+                  <>
+                    Send Message <span> <Send /></span>
+                  </>
+                )}
+              </button>
             </ul>
           </div>
         </div>
         <div></div>
       </div>
+      <ToastContainer />
     </section>
   );
 }

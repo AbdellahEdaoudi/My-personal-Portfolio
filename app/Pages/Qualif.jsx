@@ -32,14 +32,12 @@ function Qualif() {
       </div>
       {/* Qlf Education */}
       <div className={`${Qlf ? "hidden" : "block"}`}>
-        <div
-          className={` md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}
-        >
+        <div className={` md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}>
           {/* CMC */}
-          <div className="text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-7 pb-10 shadow-lg rounded-lg">
-            <h1 className="pb-5">
-              <p>2024</p> Diploma in digital development Full Stack option in
-              Cities of Professions and Skills (CMC).{" "}
+          <div className="text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4 pb-5 shadow-lg rounded-lg">
+            <h1 className="pb-1">
+              <p className="mx-5">2024 <br /> Diploma in digital development Full Stack option in
+              Cities of Professions and Skills.{" "}</p>
               <a
                 className="text-blue-500"
                 target="_blank"
@@ -59,10 +57,10 @@ function Qualif() {
             </div>
           </div>
           {/* BAB AHMED */}
-          <div className="text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-7 pb-10 shadow-lg rounded-lg">
-            <h1 className="pb-5">
-              <p>2022</p> Bachelor of Physical Sciences at Babe Ahmed High
-              School
+          <div className="text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4  shadow-lg rounded-lg">
+            <h1 className="pb-2">
+              <p className="mx-1">2022 <br /> Bachelor of Physical Sciences at Babe Ahmed High
+              School</p>
             </h1>
             <div className=" ">
               <div className="space-y-4 pt-6 ">
