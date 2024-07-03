@@ -13,7 +13,7 @@ export default function Home() {
             <li className=" text-5xl">Abdellah Edaoudi</li>
             <li className="text-2xl">~~~~~~~~ Mern Stack Developer</li>
             <li className="w-96">
-            Digital Developer, Mern-Stack Option, adept at creating responsive websites and applications
+             Digital Developer, Mern-Stack Option, adept at creating responsive websites and applications
              using Nextjs(Reactjs),Tailwind CSS and Node.js.
             </li>
             <li className="flex space-x-4 justify-center">

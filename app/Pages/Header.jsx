@@ -25,7 +25,7 @@ export default function Header({ nm }) {
                 </div>
                 <div className='hidden md:flex gap-6'>
                     {LinksHeader.map((ln, i) => (
-                        <Link key={i} href={ln.path} className={`${style2} ${nm === ln.name ? "text-green-500" : ""}`}>
+                        <Link key={i} href={ln.path} className={`${style2} ${nm === ln.name ? "text-green-500 scale-110" : ""}`}>
                             <span className="flex items-center">{ln.name}</span>
                         </Link>
                     ))}
