@@ -46,7 +46,7 @@ function Contact() {
   return (
     <section
       id="Cnt"
-      className="bg-gray-50 pb-10 flex flex-col items-center mt-2"
+      className="bg-gray-50 pb-10 flex flex-col items-center pt-2"
     >
       <div className="text-center pb-10 ">
         <p className="text-4xl font-bold">Get in touch</p>
