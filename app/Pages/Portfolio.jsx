@@ -23,7 +23,7 @@ function Portfolio() {
     
   ];
   return (
-    <section id="prtfl" className="bg-gray-50 pb-7 mt-2">
+    <section id="prtfl" className="bg-gray-50 pb-7 pt-2">
       <div className="text-center pb-5 ">
         <p className="text-4xl font-bold">Portfolio</p>
         <p className="text-gray-400 text-sm">Most recent work</p>
