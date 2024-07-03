@@ -10,6 +10,7 @@ function Skills() {
     // { name: "shadcn/ui", ds: "Intermediate" },
   ];
   const BackEnd = [
+    { name: "ExpressJs", ds: "Intermediate" },
     { name: "NodeJS", ds: "Intermediate" },
     { name: "MongoDB", ds: "Intermediate" },
     { name: "Docker", ds: "Intermediate" }
