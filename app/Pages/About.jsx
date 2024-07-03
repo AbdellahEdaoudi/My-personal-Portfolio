@@ -3,7 +3,7 @@ import { Award, Briefcase, Headset, StickyNote } from "lucide-react";
 
 function About() {
   return (
-    <section id="about" className="bg-gray-50 mt-1">
+    <section id="about" className="bg-gray-50 pt-1">
       <div className="text-center">
         <p className="text-4xl font-bold">About Me</p>
         <p className="text-gray-400 text-sm">My introduction</p>
