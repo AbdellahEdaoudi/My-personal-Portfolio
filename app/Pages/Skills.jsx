@@ -6,8 +6,8 @@ function Skills() {
     { name: "BootStrap", ds: "Intermediate" },
     { name: "TailwindCss", ds: "Intermediate" },
     { name: "Git/Github", ds: "Intermediate" },
-    { name: <span className='flex'><Hourglass width={18} /> shadcn/ui </span>, ds: "Intermediate" },
-    // { name: "shadcn/ui", ds: "Intermediate" },
+    // { name: <span className='flex'><Hourglass width={18} /> shadcn/ui </span>, ds: "Intermediate" },
+    { name: "shadcn/ui", ds: "Intermediate" },
   ];
   const BackEnd = [
     { name: "ExpressJs", ds: "Intermediate" },
