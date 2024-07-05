@@ -13,7 +13,7 @@ function Portfolio() {
     {
       title: "Hotel App",
       image: "Portfolio/HotelDash.png",
-      websiteUrl: "https://edhotel.vercel.app/HomePage",
+      websiteUrl: "https://edhotel.vercel.app/",
       githubUrl: "https://github.com/AbdellahEdaoudi/EdHotel.git",
       description:
         "Hotel management application using Next.js, Node.js, and Tailwind CSS. It seamlessly handles reservations, guest services, user authentication, and payments via Stripe.",
@@ -39,7 +39,7 @@ function Portfolio() {
           <div className="flex justify-center items-center">
             <h1 className="p-3 underline">{p.title}</h1>
             <a
-              href="https://edhotel.vercel.app/HomePage"
+              href={p.websiteUrl}
               className="flex items-center  pr-2"
               target="_blank"
             >
