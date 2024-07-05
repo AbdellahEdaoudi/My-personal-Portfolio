@@ -4,7 +4,7 @@ function Portfolio() {
     {
       title: "E-commerce App",
       image: "Portfolio/Ecom App.png",
-      websiteUrl: "https://ecommerce-app-chi-rose.vercel.app",
+      websiteUrl: "https://edmarkeet.vercel.app",
       githubUrl: "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
       description:
         "ReactJS and TailwindCSS App designed to empower users with a streamlined shopping experience thanks to its intuitive interface and seamless navigation.",
