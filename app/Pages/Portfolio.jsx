@@ -19,6 +19,13 @@ function Portfolio() {
         "Hotel management application using Next.js, Node.js, and Tailwind CSS. It seamlessly handles reservations, guest services, user authentication, and payments via Stripe.",
       Rapport:"./Rapport.pdf"
       },
+      {
+        title: "Chat App",
+        image: "Portfolio/ChatApp.png",
+        websiteUrl: "https://edchatflow.vercel.app",
+        githubUrl: "https://github.com/AbdellahEdaoudi/ChatApp.git",
+"description": "Chat application built with Next.js, Tailwind CSS, Node.js,MongoDB and Socket.io. Features include user authentication with Clerk, real-time messaging, and intuitive user interface.",        Rapport:" "
+        },
     
   ];
   return (
