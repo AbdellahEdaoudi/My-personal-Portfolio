@@ -81,6 +81,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={prompt.className}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
