@@ -22,7 +22,7 @@ function Contact() {
 
     try {
       const response = await Axios.post(
-        "https://contact-my-portfolio.vercel.app/Contact",
+        `${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`,
         { name, email, msg },
         {
           headers: { "Content-Type": "application/json" },
