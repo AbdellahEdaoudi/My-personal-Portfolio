@@ -76,43 +76,29 @@ function Qualif() {
           className={`md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}
         >
           {/* STAGE */}
-          <div className=" bg-white border px-10 md:flex items-cente pt-7 pb-10 shadow-lg rounded-lg">
-            <div className="flex items-center justify-center">
-              <img src="./acad.jpg" alt="acadImg" />
-            </div>
-            <div className="pt-5 ">
-              <h1 className="text-center text-red-500 pb-4">
-                Web Development Internship
-              </h1>
-              <ul>
-                <li className="pl-5">
-                  <b>Location:</b> Regional Academy of Education and Training
-                </li>
-                <li className="pl-5"> From 2024/3/1 to 2024/3/31</li>
-                <li className="pl-5">
-                  <b>
-                    Description: <br />{" "}
-                  </b>
-                  <p className="">
-                    During this internship, I had the opportunity to work on a
-                    web development project for task management. My main role
-                    was to design and develop a functional web application using
-                    React JS, Node JS technology. I also integrated the Tailwind
-                    CSS style library. I worked closely with the team to
-                    understand project requirements and deliver an efficient and
-                    user-friendly solution.
-                  </p>
-                </li>
-                <a
-                  href="/AttestaiondeStage.pdf"
-                  download
-                  className="float-right bg-green-500 p-2 rounded-md "
-                >
-                  Attestation De Stage
-                </a>
-              </ul>
-            </div>
-          </div>
+<div className="bg-white border px-10 md:flex items-start pt-7 pb-10 shadow-lg rounded-lg">
+  <div className="flex items-center justify-center">
+    <img src="./acad.jpg" alt="acadImg" />
+  </div>
+  <div className="pt-5">
+    <h1 className="text-center text-red-500 pb-4">Internship</h1>
+    <ul>
+      <li className="pl-5">
+        <b>Location:</b> Regional Academy of Education and Training
+      </li>
+      <li className="pl-5">
+        <b>Description:</b> <br />
+        <p className="">
+          During this internship, I had the opportunity to work on a web development project for task management. My main role was to design and develop a functional web application using React JS, Node JS technology. I also integrated the Tailwind CSS style library. I worked closely with the team to understand project requirements and deliver an efficient and user-friendly solution.
+        </p>
+      </li>
+      {/* <a href="/AttestaiondeStage.pdf" download className="float-right bg-green-500 p-2 rounded-md">
+        Attestation De Stage
+      </a> */}
+    </ul>
+  </div>
+</div>
+
         </div>
       </div>
     </section>
