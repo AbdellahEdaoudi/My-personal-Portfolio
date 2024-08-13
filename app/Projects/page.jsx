@@ -26,7 +26,7 @@ function page() {
   return (
     <div>
       <div className="sticky top-0 bg-white">
-        <Header nm="Portfolio" />
+        <Header nm="Projects" />
       </div>
       <Projects />
       <Qualif />
