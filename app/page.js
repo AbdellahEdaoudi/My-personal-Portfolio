@@ -3,7 +3,7 @@ import Contact from "./Pages/Contact";
 import Footer from "./Pages/Footer";
 import Header from "./Pages/Header";
 import Home from "./Pages/Home";
-import Portfolio from "./Pages/Portfolio";
+import Projects from "./Pages/Projects";
 import Qualif from "./Pages/Qualif";
 import Skills from './Pages/Skills';
 
@@ -14,7 +14,7 @@ export default function Page() {
       <Home />
       <About />
       <Skills />
-      <Portfolio />
+      <Projects />
       <Qualif />
       <Contact />
       <Footer />
