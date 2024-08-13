@@ -12,7 +12,7 @@ export default function Header({ nm }) {
         { name: "Home", path: "/" },
         { name: "About", path: "/About" },
         { name: "Skills", path: "/Skills" },
-        { name: "Portfolio", path: "/Portfolio" },
+        { name: "Projects", path: "/Projects" },
         { name: "Qualification", path: "/Qualification" },
         { name: "Contact", path: "/Contact" },
     ];
