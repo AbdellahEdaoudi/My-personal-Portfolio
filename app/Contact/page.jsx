@@ -30,7 +30,7 @@ export const metadata = {
 function page() {
   return (
     <div>
-      <div className="sticky top-0 bg-white"><Header  nm='Contact' /></div>
+      <div className="sticky top-0 bg-white  z-50"><Header  nm='Contact' /></div>
       <Contact />
       <Footer />
     </div>
