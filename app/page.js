@@ -10,7 +10,7 @@ import Skills from './Pages/Skills';
 export default function Page() {
   return (
     <div>
-      <div className="sticky top-0 bg-white"><Header nm="Home" /></div>
+      <div className="sticky top-0 bg-white z-50"><Header nm="Home" /></div>
       <Home />
       <About />
       <Skills />
