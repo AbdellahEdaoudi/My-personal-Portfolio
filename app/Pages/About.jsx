@@ -3,13 +3,13 @@ import { Award, Briefcase, Headset, StickyNote } from "lucide-react";
 
 function About() {
   return (
-    <section id="about" className="bg-gray-50 pt-1">
+    <section id="about" className="bg-gray-50 pt-4">
       <div className="text-center">
         <p className="text-4xl font-bold">About Me</p>
         <p className="text-gray-400 text-sm">My introduction</p>
       </div>
 
-      <div className=" md:flex md:items-center md:justify-center space-y-4 md:space-x-28 pt-14 px-4">
+      <div className=" md:flex md:items-center md:justify-center space-y-4 md:space-x-28 pt-7 px-4">
         <div className="flex flex-col md:items-start  items-center  md:flex-row md:space-x-28">
           <img
             src="./profile-pic.png"
@@ -29,7 +29,7 @@ function About() {
               <li className="flex flex-col items-center text-center bg-white  space-y-1 py-3 px-8  rounded-md border">
                 <Briefcase />
                 <span className="text-[13px]">Completed</span>
-                <span className="text-[10px] text-gray-400 ">+3 Projects</span>
+                <span className="text-[10px] text-gray-400 ">+4 Projects</span>
               </li>
               <li className="flex flex-col items-center text-center bg-white  space-y-1 py-3 px-8  rounded-md border">
                 <Headset />
@@ -43,7 +43,7 @@ function About() {
             </ul>
             <div className="flex items-center justify-center">
               <a
-                href="./CvAbdellahEdaoudi.pdf"
+                href="./Cv_Abdellah_Edaoudi.pdf"
                 target="_blank"
                 download="CvAbdellahEdaoudi.pdf"
                 className="flex p-3 rounded-lg   bg-black text-white gap-2"

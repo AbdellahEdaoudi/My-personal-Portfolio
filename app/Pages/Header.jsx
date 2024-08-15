@@ -2,11 +2,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { AlignJustify } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Header({ nm }) {
     const [menu, setMenu] = useState(false);
     const style1 = "hover:shadow-md hover:text-green-600 cursor-pointer pb-1";
-    const style2 = "cursor-pointer hover:text-green-500 hover:scale-110 duration-100";
+    const style2 = "cursor-pointer hover:text-green-500 hover:scale-110 duration-200";
 
     const LinksHeader = [
         { name: "Home", path: "/" },
@@ -19,13 +20,15 @@ export default function Header({ nm }) {
 
     return (
         <div>
-            <header className='flex justify-around py-6 text-gray-600 border-b-2'>
+            <header className='flex items-center py-4 justify-around  text-gray-600 shadow-md  border-2 rounded-sm'>
                 <div>
-                    <Link href={"/"}>Portfolio</Link>
+                    <Link href={"/"}>
+                    <Image src={"/image.png"} width={150} height={50} />
+                    </Link>
                 </div>
                 <div className='hidden md:flex gap-6'>
                     {LinksHeader.map((ln, i) => (
-                        <Link key={i} href={ln.path} className={`${style2} ${nm === ln.name ? "text-green-500 scale-110" : ""}`}>
+                        <Link key={i} href={ln.path} className={`${style2} ${nm === ln.path ? "text-green-500 scale-110" : ""}`}>
                             <span className="flex items-center">{ln.name}</span>
                         </Link>
                     ))}
