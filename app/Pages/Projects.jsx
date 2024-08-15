@@ -43,7 +43,7 @@ function Projects() {
     },
   ];
   return (
-    <section id="prtfl" className="bg-gray-50 pb-7 pt-2">
+    <section id="prtfl" className="bg-gray-50 pb-7 pt-4">
       <div className="text-center pb-5 ">
         <p className="text-4xl font-bold">Projects</p>
         <p className="text-gray-400 text-sm">Most recent work</p>
@@ -56,7 +56,7 @@ function Projects() {
               key={i}
               className="bg-white flex  flex-col justify-between w-80 hover:scale-105 duration-300  rounded-lg shadow-lg pb-4 mb-5"
             >
-              <Image width={200} height={200}
+              <Image width={1000} height={200}
                 className="w-96 rounded-md border-b-2 cursor-pointer"
                 src={p.image}
                 alt="E-commerce App"

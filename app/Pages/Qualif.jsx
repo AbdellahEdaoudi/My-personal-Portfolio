@@ -6,7 +6,7 @@ function Qualif() {
   return (
     <section
       id="Qlf"
-      className="bg-gray-50 flex  flex-col items-center  px-10 pb-10"
+      className="bg-gray-50 flex  flex-col items-center pt-4  px-10 pb-10"
     >
       <div className="text-center pb-10 ">
         <p className="text-4xl font-bold">Qualification</p>
