@@ -72,7 +72,7 @@ function DeleteContactsPage() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-400 to-indigo-600 p-8">
+    <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-r from-blue-400 to-indigo-600 p-8">
       {!authenticated ? (
         <div className="bg-white shadow-lg rounded-lg p-8">
           <h1 className="text-2xl font-bold mb-4">Enter Password to Access</h1>

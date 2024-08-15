@@ -38,9 +38,6 @@ export const metadata = {
 function page() {
   return (
     <div>
-      <div className="sticky z-50 top-0 bg-white">
-        <Header nm="About" />
-      </div>
       <About />
       <Skills />
       <Projects />
