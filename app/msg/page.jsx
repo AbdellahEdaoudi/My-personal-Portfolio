@@ -1,86 +1,83 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 
-function DeleteContactsPage() {
+
+function ContactsPage() {
   const [contacts, setContacts] = useState([]);
-  const [password, setPassword] = useState('');
-  const [authenticated, setAuthenticated] = useState(false);
-
-  useEffect(() => {
-    checkAuthentication();
-  }, []);
-
-  const checkAuthentication = () => {
-    if (password === '1234') {
-      setAuthenticated(true);
-      fetchContacts();
-    } else {
-      setAuthenticated(false);
-      setContacts([]);
+  const [password, setPassword] = useState("");
+  const [CheckPass, setCheckPass] = useState(false);
+  const [Ereur, setEreur] = useState("");
+  useEffect(()=>{
+    const  LocalPassworde = localStorage.getItem("NEXT_PUBLIC_PASSWORD")
+    if (LocalPassworde == "true") {
+      setCheckPass(true)
+    }else{
+      setCheckPass(false)
     }
-  };
+  },[CheckPass])
 
-  const fetchContacts = async () => {
+  const onSubmit = ()=>{
+    if (password === process.env.NEXT_PUBLIC_PASSWORD) {
+      localStorage.setItem("NEXT_PUBLIC_PASSWORD","true")
+    } else {
+      localStorage.setItem("NEXT_PUBLIC_PASSWORD","false")
+      setEreur("")
+    } 
+  } 
+  
+  const GetContacts = async () => {
     try {
-      const response = await axios.get('https://contact-my-portfolio.vercel.app/Contact');
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`);
       setContacts(response.data);
     } catch (error) {
       console.error('Error fetching contacts:', error);
     }
   };
-
-  const handleDeleteAll = async () => {
+  useEffect(()=>{
+    GetContacts();
+  },[])
+  const DeleteAll = async () => {
     try {
-      await axios.delete('https://contact-my-portfolio.vercel.app/Contact');
+      await axios.delete(`${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`);
       setContacts([]);
     } catch (error) {
       console.error('Error deleting all contacts:', error);
       alert('Failed to delete all contacts');
     }
   };
-
-  const handleDeleteById = async (id) => {
+  const DeleteById = async (id) => {
     try {
-      await axios.delete(`https://contact-my-portfolio.vercel.app/Contact/${id}`);
+      await axios.delete(`${process.env.NEXT_PUBLIC_SERVER_URL}/Contact/${id}`);
       setContacts(contacts.filter(contact => contact._id !== id));
     } catch (error) {
       console.error('Error deleting contact:', error);
       alert('Failed to delete contact');
     }
   };
-
-  const handleAddMessages = async () => {
+  const AddMessages = async () => {
     try {
       const newMessages = { name: 'Abdellah Edaoudi', email: 'edaoudi@gmail.com', msg: 'Thank you' };
-      await axios.post('https://contact-my-portfolio.vercel.app/Contact', newMessages);
-      fetchContacts();
+      await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`, newMessages);
+      await GetContacts();
     } catch (error) {
       console.error('Error adding messages:', error);
       alert('Failed to add messages');
     }
   };
 
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
-
-  const handleSubmitPassword = (event) => {
-    event.preventDefault();
-    checkAuthentication();
-  };
 
   return (
-    <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-r from-blue-400 to-indigo-600 p-8">
-      {!authenticated ? (
+      <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-r from-blue-400 to-indigo-600 p-8">
+      {!CheckPass ? (
         <div className="bg-white shadow-lg rounded-lg p-8">
           <h1 className="text-2xl font-bold mb-4">Enter Password to Access</h1>
-          <form onSubmit={handleSubmitPassword} className="flex items-center">
+          <form onSubmit={onSubmit} className="flex items-center">
             <input
               type="password"
               value={password}
-              onChange={handlePasswordChange}
+              onChange={(e)=>{setPassword(e.target.value)}}
               placeholder="Password"
               className="bg-gray-200 rounded-lg py-2 px-4 mr-2"
             />
@@ -94,7 +91,11 @@ function DeleteContactsPage() {
         </div>
       ) : (
         <>
-          <h1 className="text-4xl font-extrabold text-white mb-8">Manage Contacts</h1>
+          <h1
+          onClick={()=>{localStorage.removeItem("NEXT_PUBLIC_PASSWORD");
+            setCheckPass(false)
+          }}
+          className="text-4xl cursor-pointer font-extrabold text-white mb-8">Manage Contacts</h1>
           <div className="flex mb-8">
           <Link href='/'
               
@@ -103,13 +104,13 @@ function DeleteContactsPage() {
               HOME
             </Link>
             <button
-              onClick={handleDeleteAll}
+              onClick={DeleteAll}
               className="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-8 rounded-lg shadow-lg mr-4 transition duration-300 ease-in-out transform hover:scale-105"
             >
               Delete All Contacts
             </button>
             <button
-              onClick={handleAddMessages}
+              onClick={AddMessages}
               className="bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
             >
               Add Messages
@@ -123,21 +124,42 @@ function DeleteContactsPage() {
               <div className="py-3 px-6 w-1/2">Message</div>
               <div className="py-3 px-6 w-1/4">Actions</div>
             </div>
-            {contacts.map(contact => (
-              <div key={contact._id} className="flex border-b border-gray-200">
-                <div className="py-4 px-6 w-1/4">{contact.name}</div>
-                <div className="py-4 px-6 w-1/4">{contact.email}</div>
-                <div className="py-4 px-6 w-1/2">{contact.msg}</div>
-                <div className="py-4 px-6 w-1/4">
-                  <button
-                    onClick={() => handleDeleteById(contact._id)}
-                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
-                  >
-                    Delete
-                  </button>
+            {contacts.length > 0 ? (
+              contacts.map(contact => (
+                <div key={contact._id} className="flex border-b border-gray-200">
+                  <div className="py-4 px-6 w-1/4">{contact.name}</div>
+                  <div className="py-4 px-6 w-1/4">{contact.email}</div>
+                  <div className="py-4 px-6 w-1/2">{contact.msg}</div>
+                  <div className="py-4 px-6 w-1/4">
+                    <button
+                      onClick={() => DeleteById(contact._id)}
+                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            ):(
+                [1,2,3].map((mp)=>{
+                  return(
+                    <div className="flex border-b border-gray-200">
+                  <div className="my-4 mx-6 w-1/4 bg-gray-200 rounded-lg animate-pulse"></div>
+                  <div className="my-4 mx-6 w-1/4 bg-gray-200 rounded-lg animate-pulse"></div>
+                  <div className="my-4 mx-6 w-1/2 bg-gray-200 rounded-lg animate-pulse"></div>
+                  <div className="py-4 px-6 w-1/4">
+                    <button
+                      className="bg-red-500 hover:bg-red-700 text-white 
+                      font-bold py-1 px-3 rounded-lg shadow-md transition duration-300 
+                      ease-in-out transform hover:scale-105 "
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+                  )
+                })
+            )}
           </div>
         </>
       )}
@@ -145,7 +167,7 @@ function DeleteContactsPage() {
   );
 }
 
-export default DeleteContactsPage;
+export default ContactsPage;
 
 
 
