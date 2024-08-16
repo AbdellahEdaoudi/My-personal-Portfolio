@@ -1,47 +1,12 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
+import { MyContext } from "../Context/MyContext";
+import {projectsEn,projectsFr} from './DataProject'
 
 function Projects() {
-  const projects = [
-    {
-      title: "E-commerce App",
-      image: "/Projects/EcomApp.png",
-      websiteUrl: "https://edmarkeet.vercel.app",
-      githubUrl: "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-      description:
-        "ReactJS and TailwindCSS App designed to empower users with a streamlined shopping experience thanks to its intuitive interface and seamless navigation.",
-      Rapport: " ",
-    },
-    {
-      title: "Hotel App",
-      image: "/Projects/HotelDash.png",
-      websiteUrl: "https://edhotel.vercel.app/",
-      githubUrl: "https://github.com/AbdellahEdaoudi/EdHotel.git",
-      description:
-        "Hotel management application built using Next.js, Node.js, and Tailwind CSS. It seamlessly handles reservations, user authentication, and payments via Stripe, and includes a comprehensive dashboard for managing hotel operations.",
-      Rapport: "./Rapport.pdf",
-    },
-    {
-      title: "Chat App",
-      image: "/Projects/ChatApp.png",
-      websiteUrl: "https://edchatflow.vercel.app",
-      githubUrl: "https://github.com/AbdellahEdaoudi/ChatApp.git",
-      description:
-        "Chat application built with Next.js, Tailwind CSS, Node.js,MongoDB and Socket.io. Features include user authentication with Clerk, real-time messaging, and intuitive user interface.",
-      Rapport: " ",
-    },
-    {
-      title: "Qrcode App",
-      image: "/Projects/EdQrcode.png",
-      websiteUrl: "https://edqrcode.vercel.app",
-      githubUrl: "https://github.com/AbdellahEdaoudi/EdQrcode.git",
-      description: `A QR Code management app that allows you to create QR codes
-       with custom logos, read QR codes from images, and scan QR codes directly
-        via the camera to display data instantly. It features an attractive and
-         user-friendly interface with gradient colors and a design that adapts to various devices.`,
-      Rapport: " ",
-    },
-  ];
+  const { EnOrFr } = useContext(MyContext);
+  const projects = EnOrFr === "en" ? projectsEn : projectsFr;
   return (
     <section id="prtfl" className="bg-gray-50 pb-7 pt-4">
       <div className="text-center pb-5 ">

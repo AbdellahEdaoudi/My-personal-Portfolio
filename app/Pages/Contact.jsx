@@ -1,22 +1,47 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { MailMinus, ArrowBigRight, Send } from "lucide-react";
 import Axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { MyContext } from "../Context/MyContext";
+
+const ContactText = {
+  en: {
+    title: "Get in Touch",
+    subtitle: "Contact Me",
+    namePlaceholder: "Insert your name",
+    emailPlaceholder: "Insert your email",
+    messagePlaceholder: "Write your message",
+    sendButton: "Send Message",
+    sendingButton: "Sending Message",
+  },
+  fr: {
+    title: "Contactez-moi",
+    subtitle: "Me Contacter",
+    namePlaceholder: "Entrez votre nom",
+    emailPlaceholder: "Entrez votre email",
+    messagePlaceholder: "Écrivez votre message",
+    sendButton: "Envoyer le message",
+    sendingButton: "Envoi du message",
+  },
+};
 
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
-  const [loading, setloading] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const { EnOrFr } = useContext(MyContext);
+  const text = ContactText[EnOrFr];
 
   const PostContact = async (e) => {
     e.preventDefault();
-    setloading(true);
+    setLoading(true);
+
     if (!name || !email || !msg) {
       toast.error("Please fill in all fields and provide a valid email.");
-      setloading(false);
+      setLoading(false);
       return;
     }
 
@@ -33,13 +58,11 @@ function Contact() {
       setEmail("");
       setMsg("");
       toast.success("Sent successfully", { autoClose: 1000 });
-      setloading(true);
     } catch (error) {
       console.error(error);
       toast.error("An error occurred. Please try again.");
-      setloading(false);
     } finally {
-      setloading(false);
+      setLoading(false);
     }
   };
 
@@ -48,108 +71,89 @@ function Contact() {
       id="Cnt"
       className="bg-gray-50 pb-10 flex flex-col items-center pt-4"
     >
-      <div className="text-center pb-10 ">
-        <p className="text-4xl font-bold">Get in touch</p>
-        <p className="text-gray-400 text-sm">Contact Me</p>
+      <div className="text-center pb-10">
+        <p className="text-4xl font-bold">{text.title}</p>
+        <p className="text-gray-400 text-sm">{text.subtitle}</p>
       </div>
-      <div>
-        <div className="md:flex justify-center md:space-x-20 md:space-y-0 space-y-5">
-          <div className="w-64 text-center space-y-2">
-            <h4 className="text-center">Talk to me</h4>
-            <ul className="bg-white space-y-1 py-4 rounded-lg border">
-              <li className="flex justify-center">
-                <MailMinus />
-              </li>
-              <li>Email</li>
-              <li className="text-[12px] text-gray-400">
-                abdellahedaoudi80@gmail.com
-              </li>
-              <li className="flex items-center text-gray-400 justify-center text-[12px]">
-                Write me <ArrowBigRight />
-              </li>
-            </ul>
-            <ul className="bg-white space-y-1 py-4 rounded-lg border">
-              <li className="flex justify-center">
-                <img src="./whatsapp.png" width={25} alt="wh" />
-              </li>
-              <li>WhatsApp</li>
-              <li className="text-[12px] text-gray-400">+212 687334600</li>
-              <li className="flex items-center text-gray-400 justify-center text-[12px]">
-                Write me <ArrowBigRight />
-              </li>
-            </ul>
-            <ul className="bg-white space-y-1 py-4 rounded-lg border">
-              <li className="flex justify-center">
-                <img src="./messenger.png" width={32} alt="wh" />
-              </li>
-              <li>Messenger</li>
-              <li className="text-[12px] text-gray-400"></li>
-              <li className="flex items-center text-gray-400 justify-center text-[12px]">
-                Write me <ArrowBigRight />
-              </li>
-            </ul>
-          </div>
-
-          <div className="w-64 text-center space-y-6">
-            <h4 className="text-center ">Write me your Message</h4>
-            <ul>
-              <li>
-                <input
-                  type="text"
-                  placeholder="Insert your name"
-                  value={name}
-                  onChange={(e) => {
-                    setName(e.target.value);
-                  }}
-                  className="text-[13px] bg-gray-50 pl-4 md:-mt-3 py-3 w-72 rounded-lg border-2"
-                />
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <input
-                  type="email"
-                  placeholder="Insert your email"
-                  value={email}
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                  }}
-                  className="text-[13px] bg-gray-50 pl-4 py-3 w-72 rounded-lg border-2"
-                />
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <textarea
-                  placeholder="Write your message"
-                  value={msg}
-                  onChange={(e) => {
-                    setMsg(e.target.value);
-                  }}
-                  className="text-[13px] caret--500 bg-gray-50 pl-4 py-3 w-72 rounded-lg border-2"
-                />
-              </li>
-            </ul>
-            <ul>
-              <button
-                disabled={loading}
-                onClick={PostContact}
-                className="flex gap-2 bg-gray-800 text-white px-5 py-3 rounded-lg items-center text-[14px]"
-              >
-                {loading ? (
-                  <>
-                    Sending Message <i className="fa fa-spinner fa-spin"></i>
-                  </>
-                ) : (
-                  <>
-                    Send Message <span> <Send /></span>
-                  </>
-                )}
-              </button>
-            </ul>
-          </div>
+      <div className="md:flex justify-center md:space-x-20 md:space-y-0 space-y-5">
+        {/* Contact Information */}
+        <div className="w-64 text-center space-y-2">
+          <h4 className="text-center">{text.title}</h4>
+          <ul className="bg-white space-y-1 py-4 rounded-lg border">
+            <li className="flex justify-center">
+              <MailMinus />
+            </li>
+            <li>Email</li>
+            <li className="text-[12px] text-gray-400">
+              abdellahedaoudi80@gmail.com
+            </li>
+            <li className="flex items-center text-gray-400 justify-center text-[12px]">
+              {EnOrFr === "en" ? "Write me" : "Écrivez-moi"} <ArrowBigRight />
+            </li>
+          </ul>
+          <ul className="bg-white space-y-1 py-4 rounded-lg border">
+            <li className="flex justify-center">
+              <img src="./whatsapp.png" width={25} alt="whatsapp" />
+            </li>
+            <li>WhatsApp</li>
+            <li className="text-[12px] text-gray-400">+212 687334600</li>
+            <li className="flex items-center text-gray-400 justify-center text-[12px]">
+              {EnOrFr === "en" ? "Write me" : "Écrivez-moi"} <ArrowBigRight />
+            </li>
+          </ul>
+          {/* <ul className="bg-white space-y-1 py-4 rounded-lg border">
+            <li className="flex justify-center">
+              <img src="./messenger.png" width={32} alt="messenger" />
+            </li>
+            <li>Messenger</li>
+            <li className="text-[12px] text-gray-400"></li>
+            <li className="flex items-center text-gray-400 justify-center text-[12px]">
+              {EnOrFr === "en" ? "Write me" : "Écrivez-moi"} <ArrowBigRight />
+            </li>
+          </ul> */}
         </div>
-        <div></div>
+
+        {/* Contact Form */}
+        <div className="w-64 text-center space-y-6">
+          <h4 className="text-center">{text.subtitle}</h4>
+          <form onSubmit={PostContact} className="space-y-4">
+            <input
+              type="text"
+              placeholder={text.namePlaceholder}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="text-[13px] bg-gray-50 pl-4 py-3 w-72 rounded-lg border-2"
+            />
+            <input
+              type="email"
+              placeholder={text.emailPlaceholder}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="text-[13px] bg-gray-50 pl-4 py-3 w-72 rounded-lg border-2"
+            />
+            <textarea
+              placeholder={text.messagePlaceholder}
+              value={msg}
+              onChange={(e) => setMsg(e.target.value)}
+              className="text-[13px] bg-gray-50 pl-4 py-3 w-72 rounded-lg border-2"
+            />
+            <button
+              type="submit"
+              disabled={loading}
+              className="flex gap-2 bg-gray-800 text-white px-5 py-3 rounded-lg items-center text-[14px]"
+            >
+              {loading ? (
+                <>
+                  {text.sendingButton} <i className="fa fa-spinner fa-spin"></i>
+                </>
+              ) : (
+                <>
+                  {text.sendButton} <Send />
+                </>
+              )}
+            </button>
+          </form>
+        </div>
       </div>
       <ToastContainer />
     </section>
