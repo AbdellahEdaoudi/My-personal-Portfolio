@@ -2,7 +2,6 @@
 import React, { useContext, useState } from "react";
 import { GraduationCap, Briefcase, Download } from "lucide-react";
 import { MyContext } from "../Context/MyContext";
-import Link from "next/link";
 
 const QualifEn = {
   title: "Qualification",
@@ -63,19 +62,18 @@ function Qualif() {
       <div className={`${Qlf ? "hidden" : "block"}`}>
         <div className={` md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}>
           {/* CMC */}
-          <Link target="_blank" href={"https://www.linkedin.com/posts/abdellah-edaoudi-0bbba02a5_my-experience-in-d%C3%A9veloppement-digital-activity-7229862265754161152-QhTd?utm_source=share&utm_medium=member_desktop"} className=" hover:scale-105 duration-300 cursor-pointer bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4 pb-5 shadow-lg rounded-lg">
-            <div className="pb-1">
-              <p className="mx-5 ">
-              <span className="underline text-gray-700">2022 - 2024</span> : {Qualif.dip}{" "}
-              <span
+          <div className=" hover:scale-105 duration-300 bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4 pb-5 shadow-lg rounded-lg">
+            <h1 className="pb-1">
+              <p className="mx-5 "><span className="underline text-gray-700">2022 - 2024</span> : {Qualif.dip}{" "}
+              <a
                 className="text-blue-500"
                 target="_blank"
                 href="https://www.cmc.ac.ma/fr"
               >
                 (Cmc).
-              </span>
+              </a>
               </p>
-            </div>
+            </h1>
             <div className=" ">
               <div className="space-y-7">
                 <img
@@ -84,9 +82,9 @@ function Qualif() {
                 ></img>
               </div>
             </div>
-          </Link>
+          </div>
           {/* BAB AHMED */}
-          <div className="hover:scale-105 duration-300 cursor-pointer text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4  shadow-lg rounded-lg">
+          <div className="hover:scale-105 duration-300 text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4  shadow-lg rounded-lg">
             <h1 className="pb-2">
               <p className="mx-1"><span className="underline text-gray-700">2022</span> : {Qualif.bac}</p>
             </h1>
