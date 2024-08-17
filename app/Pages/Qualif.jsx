@@ -2,11 +2,12 @@
 import React, { useContext, useState } from "react";
 import { GraduationCap, Briefcase, Download } from "lucide-react";
 import { MyContext } from "../Context/MyContext";
+import Link from "next/link";
 
 const QualifEn = {
   title: "Qualification",
   subtitle: "My personal journey",
-  dip:`Diploma in digital development Full Stack option in
+  dip:`Diploma in digital development web Full Stack option in
               Cities of Professions and Skills.`,
   bac: `Bachelor of Physical Sciences at Babe Ahmed High School`,
   exL:"Regional Academy of Education and Training",
@@ -17,7 +18,7 @@ const QualifEn = {
 const QualifFr = {
   title: "Qualification",
   subtitle: "Mon parcours personnel",
-  dip: `Diplôme en Développement Digital option Full Stack
+  dip: `Diplôme en Développement Digital option web Full Stack
               aux Cités des Métiers et des Compétences.`,
   bac: `Baccalauréat en Sciences Physiques au Lycée Babe Ahmed`,
   exL : ` Académie Régionale d'Éducation et de Formation `,
@@ -62,29 +63,30 @@ function Qualif() {
       <div className={`${Qlf ? "hidden" : "block"}`}>
         <div className={` md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}>
           {/* CMC */}
-          <div className=" bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4 pb-5 shadow-lg rounded-lg">
-            <h1 className="pb-1">
-              <p className="mx-5 "><span className="underline text-gray-700">2022 - 2024</span> : {Qualif.dip}{" "}
-              <a
+          <Link target="_blank" href={"https://www.linkedin.com/posts/abdellah-edaoudi-0bbba02a5_my-experience-in-d%C3%A9veloppement-digital-activity-7229862265754161152-QhTd?utm_source=share&utm_medium=member_desktop"} className=" hover:scale-105 duration-300 cursor-pointer bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4 pb-5 shadow-lg rounded-lg">
+            <div className="pb-1">
+              <p className="mx-5 ">
+              <span className="underline text-gray-700">2022 - 2024</span> : {Qualif.dip}{" "}
+              <span
                 className="text-blue-500"
                 target="_blank"
                 href="https://www.cmc.ac.ma/fr"
               >
                 (Cmc).
-              </a>
+              </span>
               </p>
-            </h1>
+            </div>
             <div className=" ">
-              <div className="space-y-4 border-2">
+              <div className="space-y-7">
                 <img
                   alt="the cities of trades and skills"
-                  src="https://orientation-chabab.com/images/cmc-maroc.png"
+                  src="/cmc-maroc.png"
                 ></img>
               </div>
             </div>
-          </div>
+          </Link>
           {/* BAB AHMED */}
-          <div className="text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4  shadow-lg rounded-lg">
+          <div className="hover:scale-105 duration-300 cursor-pointer text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4  shadow-lg rounded-lg">
             <h1 className="pb-2">
               <p className="mx-1"><span className="underline text-gray-700">2022</span> : {Qualif.bac}</p>
             </h1>
