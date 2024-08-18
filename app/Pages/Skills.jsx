@@ -16,10 +16,22 @@ function Skills() {
   ];
 
   const BackEnd = [
-    { name: "ExpressJs", ds: "Intermediate" },
     { name: "NodeJS", ds: "Intermediate" },
-    { name: "MongoDB", ds: "Intermediate" },
+    { name: "ExpressJs", ds: "Intermediate" },
+    { name: "SQL", ds: "Intermediate" },
+    { name: "NOSQL", ds: "Intermediate" },
+  ];
+  const Tools = [
+    { name: "VsCode", ds: "Intermediate" },
     { name: "Docker", ds: "Intermediate" },
+    { name: "Postman", ds: "Intermediate" },
+    { name: "Studio3T", ds: "Intermediate" },
+  ];
+  const Outils = [
+    { name: "VsCode", ds: "Intermediate" },
+    { name: "Docker", ds: "Intermediate" },
+    { name: "Postman", ds: "Intermediate" },
+    { name: "Studio3T", ds: "Intermediate" },
   ];
 
   const contentEn = {
@@ -37,6 +49,7 @@ function Skills() {
   };
 
   const content = EnOrFr === "en" ? contentEn : contentFr;
+  const contentOtD = EnOrFr === "en" ? Tools : Outils;
 
   return (
     <section id='skill' className='bg-gray-50 pt-4 pb-16 flex flex-col items-center md:px-10 px-5'>
@@ -45,7 +58,7 @@ function Skills() {
         <p className='text-gray-400 text-sm'>{content.subtitle}</p>
       </div>
       {/* Skills */}
-      <div className='md:flex justify-center md:space-x-10 md:space-y-0 space-y-5'>
+      <div className='flex flex-wrap justify-around gap-6'>
         {/* Frontend developer */}
         <div className='text-center bg-white border md:px-10 px-5 flex flex-col items-center pt-7 pb-10 rounded-lg'>
           <h1 className='pb-5'>{content.frontendTitle}</h1>
@@ -64,6 +77,17 @@ function Skills() {
             {BackEnd.map((fr, i) => (
               <div key={i}>
                 <span className='flex gap-2'><BadgeCheck /> <span>{fr.name}</span></span>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Tools  */}
+        <div className='text-center bg-white border md:px-10 px-5 flex flex-col items-center pt-7 pb-10 rounded-lg'>
+          <h1 className='pb-5'>{EnOrFr === "en" ? "Development Tools" : "Outils de Développement"}</h1>
+          <div className='grid grid-cols-2 gap-5'>
+            {contentOtD.map((tl, i) => (
+              <div key={i}>
+                <span className='flex gap-2'><BadgeCheck /> <span>{tl.name}</span></span>
               </div>
             ))}
           </div>
