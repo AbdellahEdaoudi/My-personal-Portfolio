@@ -17,7 +17,8 @@ function About() {
     supportDetail: "Online 24/7",
     description:
       "MERN Stack Developer creating well-designed, high-performance code. I specialize in building responsive websites and apps with a mobile-first approach, ensuring seamless experiences across all devices.",
-    downloadCv: "Download CV",
+    downloadCv: "Résumé",
+    Cv: "Cv_abdellah_Edaoudi_en.pdf"
   };
 
   const aboutContentFr = {
@@ -31,7 +32,8 @@ function About() {
     supportDetail: "En ligne 24/7",
     description:
       "Développeur MERN Stack créant du code bien conçu et performant. Je me spécialise dans la création de sites web et d'applications réactifs avec une approche mobile-first, garantissant des expériences fluides sur tous les appareils.",
-    downloadCv: "Télécharger le CV",
+    downloadCv: "Résumé",
+    Cv: "Cv_abdellah_Edaoudi_fr.pdf"
   };
 
   const content = EnOrFr === "en" ? aboutContentEn : aboutContentFr;
@@ -74,9 +76,9 @@ function About() {
             </ul>
             <div className="flex items-center justify-center">
               <a
-                href="./Cv_Abdellah_Edaoudi.pdf"
+                href={content.Cv}
                 target="_blank"
-                download="CvAbdellahEdaoudi.pdf"
+                download={content.Cv}
                 className="flex p-3 rounded-lg bg-black text-white gap-2"
               >
                 {content.downloadCv} <StickyNote />

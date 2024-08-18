@@ -32,8 +32,8 @@ export default function Header({ nm }) {
     return (
         <div>
             <header className='flex items-center py-4 justify-evenly  text-gray-600 shadow-md  border-2 rounded-sm'>
-                <div>
-                    <Link href={"/"}>
+                <div className='hover:scale-105 duration-300'>
+                    <Link  href={"/"}>
                     <Image src={"/image.png"} width={150} height={50} />
                     </Link>
                 </div>
