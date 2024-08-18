@@ -14,12 +14,12 @@ function Projects() {
         <p className="text-gray-400 text-sm">Most recent work</p>
       </div>
       {/* Projects */}
-      <div className="grid grid-cols-1   md:grid-cols-3  mx-3   justify-items-center  ">
+      <div className="flex flex-wrap justify-around  mx-3   ">
         {projects.map((p, i) => {
           return (
             <div
               key={i}
-              className="bg-white flex  flex-col justify-between w-80 hover:scale-105 duration-300  rounded-lg shadow-lg pb-4 mb-5"
+              className="bg-white flex  flex-col  w-80 hover:scale-105 duration-300  rounded-lg shadow-lg pb-4 mb-5"
             >
               <Image width={1000} height={200}
                 className="w-96 rounded-md border-b-2 cursor-pointer"
@@ -49,18 +49,18 @@ function Projects() {
                   target="_blank"
                 >
                   <img src="Projects/github.png" width={24} alt="GitHub" />
-                  <span className="ml-1 text-sm hover:text-blue-500">
+                  <span className=" ml-2 text-sm  hover:text-blue-500">
                     View on GitHub
                   </span>
                 </a>
-                <a
+                {/* <a
                   href={p.Rapport}
                   className={`text-red-700 ${p.Rapport === " " && "hidden"}`}
                   title="Download Rapport"
                   download="Rapport.pdf"
                 >
                   Rapport de Projet
-                </a>
+                </a> */}
               </div>
             </div>
           );

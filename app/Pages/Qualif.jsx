@@ -2,29 +2,19 @@
 import React, { useContext, useState } from "react";
 import { GraduationCap, Briefcase, Download } from "lucide-react";
 import { MyContext } from "../Context/MyContext";
-
-const QualifEn = {
-  title: "Qualification",
-  subtitle: "My personal journey",
-  dip:`Diploma in digital development web Full Stack option in
-              Cities of Professions and Skills.`,
-  bac: `Bachelor of Physical Sciences at Babe Ahmed High School`,
-  exL:"Regional Academy of Education and Training",
-  dc:`During this internship, I had the opportunity to work on a web development
-   project for task management. My main role was to design and develop a functional web application using React JS, Node JS technology. I also integrated the Tailwind CSS style library. I worked closely with 
-  the team to understand project requirements and deliver an efficient and user-friendly solution.`
-};
-const QualifFr = {
-  title: "Qualification",
-  subtitle: "Mon parcours personnel",
-  dip: `Diplôme en Développement Digital option web Full Stack
-              aux Cités des Métiers et des Compétences.`,
-  bac: `Baccalauréat en Sciences Physiques au Lycée Babe Ahmed`,
-  exL : ` Académie Régionale d'Éducation et de Formation `,
-  dc:`Lors de ce stage, j'ai eu l'opportunité de travailler sur un développement web
-   projet de gestion des tâches. Mon rôle principal était de concevoir et développer une application web fonctionnelle utilisant la technologie React JS, Node JS. J'ai également intégré la bibliothèque de styles CSS Tailwind. J'ai travaillé en étroite collaboration avec 
-  l'équipe pour comprendre les exigences du projet et fournir une solution efficace et conviviale.`
-};
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+import {QualifEn,QualifFr} from "./Data.Qualif"
+import Image from "next/image";
 
 function Qualif() {
   const [Qlf, setQlf] = useState(false);
@@ -63,8 +53,8 @@ function Qualif() {
         <div className={` md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}>
           {/* CMC */}
           <div className=" hover:scale-105 duration-300 bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4 pb-5 shadow-lg rounded-lg">
-            <h1 className="pb-1">
-              <p className="mx-5 "><span className="underline text-gray-700">2022 - 2024</span> : {Qualif.dip}{" "}
+            <div className="pb-1">
+              <p className="mx-5 "><span className="underline text-gray-700">2024</span> : {Qualif.dip}{" "}
               <a
                 className="text-blue-500"
                 target="_blank"
@@ -73,15 +63,37 @@ function Qualif() {
                 (Cmc).
               </a>
               </p>
-            </h1>
-            <div className=" ">
+              {/* Alert Dialog */}
+              <div className="hover:text-sky-500  flex justify-end mr-10">
+              <AlertDialog >
+                <AlertDialogTrigger>
+                  <div className="underline hover:scale-105 duration-300" >{EnOrFr === "en" ? "Show My Experience" : "Montrer mon expérience"}</div>
+                </AlertDialogTrigger>
+                <AlertDialogContent>
+                  <AlertDialogHeader>
+                    {/* <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle> */}
+                    <AlertDialogDescription>
+                    <div
+                      dangerouslySetInnerHTML={{ __html: Qualif.expCmc }}
+                      className=" text-start text-black overflow-y-auto max-h-96">
+                      
+                    </div>
+                    </AlertDialogDescription>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter>
+                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                    {/* <AlertDialogAction>Continue</AlertDialogAction> */}
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
+              </div>
+            </div>
               <div className="space-y-7">
                 <img
                   alt="the cities of trades and skills"
                   src="/cmc-maroc.png"
                 ></img>
               </div>
-            </div>
           </div>
           {/* BAB AHMED */}
           <div className="hover:scale-105 duration-300 text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4  shadow-lg rounded-lg">
@@ -104,24 +116,15 @@ function Qualif() {
           {/* STAGE */}
 <div className="bg-white border px-10 md:flex items-start pt-7 pb-10 shadow-lg rounded-lg">
   <div className="flex items-center justify-center">
-    <img src="./acad.jpg" alt="acadImg" />
+    <Image  src="/acad.jpg" width={1000} height={500} alt="acadImg" />
   </div>
-  <div className="pt-5">
+  <div className="pt-3 ml-10">
     <h1 className="text-center text-red-500 pb-4">{EnOrFr === "en" ? "Internship" :"Stage"}</h1>
-    <ul>
-      <li className="pl-5">
-        <b>Company:</b>  {Qualif.exL}
-      </li>
-      <li className="pl-5">
-        <b>Description:</b> <br />
-        <p className="">
-          {Qualif.dc}
-       </p>
-      </li>
+        <b>Location: </b><span className="text-gray-950">{Qualif.exL}</span> <br />
+        <b>Description: </b><span className="text-gray-800">{Qualif.dc}</span>
       {/* <a href="/AttestaiondeStage.pdf" download className="float-right bg-green-500 p-2 rounded-md">
         Attestation De Stage
       </a> */}
-    </ul>
   </div>
 </div>
 
