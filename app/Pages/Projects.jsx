@@ -42,7 +42,7 @@ function Projects() {
               <h2 className="px-3 text-[12px] pb-2   text-gray-500">
                 {p.description}
               </h2>
-              <div className="mx-4 cursor-pointer">
+              <div className="mx-4 cursor-pointer flex justify-between items-center">
                 <a
                   href={p.githubUrl}
                   className="flex items-center pr-2 float-start mx-"
@@ -53,6 +53,20 @@ function Projects() {
                     View on GitHub
                   </span>
                 </a>
+                {p.githubUrls && (
+                  <a
+                  href={p.githubUrls}
+                  className="flex items-center pr-2 float-start mx-"
+                  target="_blank"
+                >
+                  <img src="Projects/github.png" width={24} alt="GitHub" />
+                  <span className=" ml-2 text-sm  hover:text-blue-500">
+                    Server
+                  </span>
+                </a>
+                )}
+                
+                
                 {/* <a
                   href={p.Rapport}
                   className={`text-red-700 ${p.Rapport === " " && "hidden"}`}
