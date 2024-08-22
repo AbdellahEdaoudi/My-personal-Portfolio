@@ -57,7 +57,7 @@ export const projectsFr = [
       image: "/Projects/HotelDash.png",
       websiteUrl: "https://edhotel.vercel.app/",
       githubUrl: "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-      githubUrls: "",
+      githubUrls: "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
       description:
           "Système de gestion d'Hotel qui permet la réservation et le paiement en ligne des chambres, fournit une confirmation par billet électronique, et comprend un tableau de bord pour gérer les réservations, les paiements et les réponses aux clients par email. Développé avec Next.js, Node.js et Tailwind CSS.",
       Rapport: " ",
