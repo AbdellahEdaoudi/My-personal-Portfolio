@@ -26,15 +26,15 @@ function Qualif() {
       id="Qlf"
       className="bg-gray-50 flex  flex-col items-center pt-4  px-10 pb-10"
     >
-      <div className="text-center pb-10 ">
+      <div className="text-center ">
         <p className="text-4xl font-bold">{Qualif.title}</p>
         <p className="text-gray-400 text-sm">{Qualif.subtitle}</p>
-        <div className="flex gap-5 pt-5">
+        <div className="flex gap-5 my-5 items-center">
           <h1
             onClick={() => {
               Qlf ? setQlf(!Qlf) : setQlf(Qlf);
             }}
-            className="flex  gap-3 cursor-grabbing hover:drop-shadow-lg"
+            className={`flex ${!Qlf && "bg-gray-200 p-2 rounded-lg"} gap-3 cursor-grabbing hover:drop-shadow-l`}
           >
             <GraduationCap /> Education
           </h1>
@@ -42,7 +42,7 @@ function Qualif() {
             onClick={() => {
               Qlf ? setQlf(Qlf) : setQlf(!Qlf);
             }}
-            className="flex  gap-3 cursor-grabbing hover:drop-shadow-lg"
+            className={`flex ${Qlf && "bg-gray-200 p-2 rounded-lg"} gap-3 cursor-grabbing hover:drop-shadow-l`}
           >
             <Briefcase /> Experience
           </h1>

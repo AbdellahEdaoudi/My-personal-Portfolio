@@ -15,7 +15,7 @@ export default function Home() {
         <div className="flex flex-col-reverse items-center md:flex-row md:space-x-36 ">
           <ul className="space-y-4">
             <li className=" text-5xl">Abdellah Edaoudi</li>
-            <li className="text-2xl">~~~~~~~~ Mern Stack Developer</li>
+            <li className="text-2xl">~~~~~~~~ MERN Stack Developer</li>
             <li className="w-96">
              {EnOrFr === "en" ? `
              Digital Developer, Mern-Stack Option, adept at creating responsive websites and applications
