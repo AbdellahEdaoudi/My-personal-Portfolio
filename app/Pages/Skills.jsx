@@ -9,26 +9,26 @@ function Skills() {
 
   const FrontEnd = [
     { name: "NextJS", ds: "Intermediate" },
-    { name: "BootStrap", ds: "Intermediate" },
+    { name: "ReactJS", ds: "Intermediate" },
     { name: "TailwindCss", ds: "Intermediate" },
-    { name: "Git/Github", ds: "Intermediate" },
-    { name: "shadcn/ui", ds: "Intermediate" },
+    { name: "BootStrap", ds: "Intermediate" },
+    { name: "Shadcn/ui", ds: "Intermediate" },
   ];
 
   const BackEnd = [
     { name: "NodeJS", ds: "Intermediate" },
     { name: "ExpressJs", ds: "Intermediate" },
-    { name: "SQL", ds: "Intermediate" },
-    { name: "NOSQL", ds: "Intermediate" },
+    { name: "MongoDB", ds: "Intermediate" },
+    { name: "Socket.io", ds: "Intermediate" },
   ];
   const Tools = [
-    { name: "VsCode", ds: "Intermediate" },
+    { name: "Git/Github", ds: "Intermediate" },
     { name: "Docker", ds: "Intermediate" },
     { name: "Postman", ds: "Intermediate" },
     { name: "Studio3T", ds: "Intermediate" },
   ];
   const Outils = [
-    { name: "VsCode", ds: "Intermediate" },
+    { name: "Git/Github", ds: "Intermediate" },
     { name: "Docker", ds: "Intermediate" },
     { name: "Postman", ds: "Intermediate" },
     { name: "Studio3T", ds: "Intermediate" },
