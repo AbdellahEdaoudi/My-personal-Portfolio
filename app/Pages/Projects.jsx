@@ -10,8 +10,8 @@ function Projects() {
   return (
     <section id="prtfl" className="bg-gray-50 pb-7 pt-4">
       <div className="text-center pb-5 ">
-        <p className="text-4xl font-bold">Projects</p>
-        <p className="text-gray-400 text-sm">Most recent work</p>
+        <p className="text-4xl font-bold">{EnOrFr === "en" ? "Projects" : "Projets"}</p>
+        <p className="text-gray-400 text-sm">{EnOrFr === "en" ? "Most recent work" : "Travaux les plus récents"}</p>
       </div>
       {/* Projects */}
       <div className="flex flex-wrap justify-around  mx-3   ">

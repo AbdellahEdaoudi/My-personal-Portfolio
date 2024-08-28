@@ -118,7 +118,7 @@ function Qualif() {
   <div className="flex items-center justify-center">
     <Image  src="/acad.jpg" width={1000} height={500} alt="acadImg" />
   </div>
-  <div className="pt-3 ml-10">
+  <div className="pt-3 md:ml-5">
     <h1 className="text-center text-red-500 pb-4">{EnOrFr === "en" ? "Internship" :"Stage"}</h1>
         <b>Location: </b><span className="text-gray-950">{Qualif.exL}</span> <br />
         <b>Description: </b><span className="text-gray-800">{Qualif.dc}</span>
