@@ -1,11 +1,11 @@
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Footer from "./Pages/Footer";
-import Header from "./Pages/Header";
-import Home from "./Pages/Home";
-import Projects from "./Pages/Projects";
-import Qualif from "./Pages/Qualif";
-import Skills from './Pages/Skills';
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Home from "./Components/Home";
+import Projects from "./Components/Projects";
+import Qualif from "./Components/Qualif";
+import Skills from './Components/Skills';
 
 export const metadata = {
   title: "Abdellah Edaoudi",

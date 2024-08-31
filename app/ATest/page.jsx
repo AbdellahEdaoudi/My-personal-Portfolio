@@ -13,46 +13,17 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
-import {QualifEn,QualifFr} from "./Data.Qualif"
 import Image from "next/image";
+import { QualifEn, QualifFr } from "../Components/data/Data.Qualif";
 
 function Qualif() {
   const [Qlf, setQlf] = useState(false);
   const { EnOrFr } = useContext(MyContext);
   const Qualif = EnOrFr === "en" ? QualifEn : QualifFr;
-
   return (
-    <section
-      id="Qlf"
-      className="bg-gray-50 flex  flex-col items-center pt-4  px-10 pb-10"
-    >
-      <div className="text-center ">
-        <p className="text-4xl font-bold">{Qualif.title}</p>
-        <p className="text-gray-400 text-sm">{Qualif.subtitle}</p>
-        <div className="flex gap-5 my-5 items-center">
-          <h1
-            onClick={() => {
-              Qlf ? setQlf(!Qlf) : setQlf(Qlf);
-            }}
-            className={`flex ${!Qlf && "bg-gray-200 p-2 rounded-lg"} gap-3 cursor-grabbing hover:drop-shadow-l`}
-          >
-            <GraduationCap /> Education
-          </h1>
-          <h1
-            onClick={() => {
-              Qlf ? setQlf(Qlf) : setQlf(!Qlf);
-            }}
-            className={`flex ${Qlf && "bg-gray-200 p-2 rounded-lg"} gap-3 cursor-grabbing hover:drop-shadow-l`}
-          >
-            <Briefcase /> Experience
-          </h1>
-        </div>
-      </div>
-      {/* Qlf Education */}
-      <div className={`${Qlf ? "hidden" : "block"}`}>
-        <div className={` md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}>
+    <div className={` md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}>
           {/* CMC */}
-          <div className=" hover:scale-105 duration-300 bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4 pb-5 shadow-lg rounded-lg">
+          <div className=" hover:scale-105 duration-300 bg-white border md:w-[380px] px-0.5 flex flex-col items-center pt-4 pb-5 shadow-lg rounded-lg">
             <div className="pb-1">
               <p className="mx-5 "><span className="underline text-gray-700">2024</span> : {Qualif.dip}{" "}
               <a
@@ -96,7 +67,7 @@ function Qualif() {
               </div>
           </div>
           {/* BAB AHMED */}
-          <div className="hover:scale-105 duration-300 text-center bg-white border w-[380px] px-0.5 flex flex-col items-center pt-4  shadow-lg rounded-lg">
+          <div className="hover:scale-105 duration-300 text-center bg-white border md:w-[380px] px-0.5 flex flex-col items-center pt-4  shadow-lg rounded-lg">
             <h1 className="pb-2">
               <p className="mx-1"><span className="underline text-gray-700">2022</span> : {Qualif.bac}</p>
             </h1>
@@ -107,30 +78,7 @@ function Qualif() {
             </div>
           </div>
         </div>
-      </div>
-      {/* Qlf Experience */}
-      <div className={`${Qlf ? "block" : "hidden"}`}>
-        <div
-          className={`md:flex  justify-center md:space-x-10 md:space-y-0 space-y-5`}
-        >
-          {/* STAGE */}
-<div className="bg-white border px-10 md:flex items-start pt-7 pb-10 shadow-lg rounded-lg">
-  <div className="flex items-center justify-center">
-    <Image  src="/acad.jpg" width={1000} height={500} alt="acadImg" />
-  </div>
-  <div className="pt-3 md:ml-5">
-    <h1 className="text-center text-red-500 pb-4">{EnOrFr === "en" ? "Internship" :"Stage"}</h1>
-        <b>Location: </b><span className="text-gray-950">{Qualif.exL}</span> <br />
-        <b>Description: </b><span className="text-gray-800">{Qualif.dc}</span>
-      {/* <a href="/AttestaiondeStage.pdf" download className="float-right bg-green-500 p-2 rounded-md">
-        Attestation De Stage
-      </a> */}
-  </div>
-</div>
-
-        </div>
-      </div>
-    </section>
-  );
+  )
 }
-export default Qualif;
+
+export default Qualif

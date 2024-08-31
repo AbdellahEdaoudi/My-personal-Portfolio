@@ -1,29 +1,25 @@
 "use client";
-import { Github, Linkedin, Instagram, Youtube } from "lucide-react";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { MyContext } from "../Context/MyContext";
 import Image from "next/image";
 
-export default function Home() {
-  const [imageLoaded, setImageLoaded] = useState("./profile-pic.png");
-  const {EnOrFr,setEnOrFr}=useContext(MyContext)
-  
-
+function Home() {
+    const {EnOrFr,setEnOrFr}=useContext(MyContext)
   return (
-    <nav>
-      <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 py-12 px-4 bg-gray-50">
-        <div className="flex flex-col-reverse items-center md:flex-row md:space-x-36 ">
-          <ul className="space-y-4">
-            <li className=" text-5xl">Abdellah Edaoudi</li>
-            <li className="text-2xl">~~~~~~~~ MERN Stack Developer</li>
-            <li className="w-96">
+    <section className="mx-4 ">
+        <div className="bg-gray-50 py-5 md:py-12 flex md:flex-row flex-col-reverse items-center justify-center gap-6 md:gap-32 ">
+            {/* Profile */}
+        <div className="  space-y-4  flex flex-col items-center justify-center">
+            <p className="text-5xl">Abdellah Edaoudi</p>
+            <p className="text-[22px] sm:text-2xl md:text-2xl">🔷 MERN Stack Developer 🔷</p>
+            <p className="md:w-96 sm:w-96 ">
              {EnOrFr === "en" ? `
              Digital Developer, Mern-Stack Option, adept at creating responsive websites and applications
-             using Nextjs(Reactjs),Tailwind CSS and Node.js.
+             using Nextjs , Reactjs , Tailwind CSS , Shadcn/ui and Node.js.
              `:`Développeur Digital, Mern-Stack Option, adepte de la création de sites Web 
-             et d'applications réactifs en utilisant Nextjs (Reactjs), Tailwind CSS et Node.js.`}
-            </li>
-            <li className="flex space-x-4 justify-center">
+             et d'applications réactifs en utilisant Nextjs , Reactjs , Tailwind CSS et Node.js.`}
+            </p>
+            <div className="flex space-x-4 justify-center">
               <a
                 href="https://www.linkedin.com/in/abdellah-edaoudi-0bbba02a5/"
                 target="_blank" className="hover:scale-105 duration-300"
@@ -54,24 +50,15 @@ export default function Home() {
                 <Image src={"/Icons/ins.svg"} width={30} height={10} /> 
 
               </a>
-            </li>
-          </ul>
-          {imageLoaded ? (
-            <img
-              src={imageLoaded}
-              className="rounded-md  pb-5 imganim"
-              alt="Profile Picture"
-              width={325}
-              height={300}
-            />
-          ) : (
-            <div
-              className="rounded-md pb-5 imganim animate-pulse bg-gray-500"
-              style={{ width: 325, height: 300 }}
-            ></div>
-          )}
+            </div>
         </div>
-      </div>
-    </nav>
-  );
+            {/* Image */}
+          <div className='flex-shrink-0  flex items-center justify-center'>
+          <Image src="/profile-pic.png" className="imganim" width={325} height={340} /> 
+          </div>
+    </div>
+    </section>
+  )
 }
+
+export default Home
