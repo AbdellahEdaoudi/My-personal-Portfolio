@@ -8,7 +8,7 @@ import { MyContext } from '../Context/MyContext';
 export default function Header({ nm }) {
     const [menu, setMenu] = useState(false);
     const {EnOrFr,setEnOrFr}=useContext(MyContext)
-    const style1 = "hover:shadow-md hover:text-green-600 cursor-pointer pb-1";
+    const style1 = "hover:text-green-600 cursor-pointer pb-1";
     const style2 = "cursor-pointer hover:text-green-500 hover:scale-110 duration-200";
     const LinksHeaderEn = [
         { name: "Home", path: "/" },
@@ -71,8 +71,8 @@ export default function Header({ nm }) {
                 <ul className={`text-center pt-1 pb-5`}>
                     {LinksHeader.map((ln, i) => (
                         <li key={i} onClick={() => setMenu(false)} className={`${style2}`}>
-                            <Link href={ln.path}>
-                                <span className={`${style1} ${nm === ln.name ? "text-green-500" : ""}`}>{ln.name}</span>
+                            <Link className="flex items-center justify-center" href={ln.path}>
+                                <span className={`${style1} ${nm === ln.path ? "text-green-500 scale-110" : ""}`}>{ln.name}</span>
                             </Link>
                         </li>
                     ))} 
