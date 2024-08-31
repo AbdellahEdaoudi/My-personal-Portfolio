@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useContext } from "react";
 import { MyContext } from "../Context/MyContext";
-import {projectsEn,projectsFr} from './DataProject'
+import {projectsEn,projectsFr} from './data/DataProject'
 
 function Projects() {
   const { EnOrFr } = useContext(MyContext);
