@@ -9,7 +9,8 @@
     support: "Support",
     supportDetail: "Online 24/7",
     description:
-      "MERN Stack Developer creating well-designed, high-performance code. I specialize in building responsive websites and apps with a mobile-first approach, ensuring seamless experiences across all devices.",
+      `I have extensive experience in transforming ideas into innovative and effective applications,
+       with a focus on enhancing user experience and designing attractive user interfaces.`,
     downloadCv: "Résumé",
     Cv: "Cv_abdellah_Edaoudi_en.pdf"
   };
@@ -24,7 +25,9 @@
     support: "Support",
     supportDetail: "En ligne 24/7",
     description:
-      "Développeur MERN Stack créant du code bien conçu et performant. Je me spécialise dans la création de sites web et d'applications réactifs avec une approche mobile-first, garantissant des expériences fluides sur tous les appareils.",
+      `J'ai une vaste expérience dans la transformation des idées en applications 
+      innovantes et efficaces, avec un accent sur l'amélioration
+       de l'expérience utilisateur et la conception d'interfaces attrayantes.`,
     downloadCv: "Résumé",
     Cv: "Cv_abdellah_Edaoudi_fr.pdf"
   };

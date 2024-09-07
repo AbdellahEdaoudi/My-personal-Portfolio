@@ -52,7 +52,7 @@ function Skills() {
   const contentOtD = EnOrFr === "en" ? Tools : Outils;
 
   return (
-    <section id='skill' className='bg-gray-50 pt-4 pb-16 flex flex-col items-center md:px-10 px-5'>
+    <section id='skill' className='bg-gray-50 pt-4 pb-16 md:mt-0 mt-5 flex flex-col items-center md:px-10 px-5'>
       <div className='text-center pb-10'>
         <p className='text-4xl font-bold'>{content.title}</p>
         <p className='text-gray-400 text-sm'>{content.subtitle}</p>
