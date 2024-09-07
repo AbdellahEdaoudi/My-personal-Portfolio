@@ -14,11 +14,11 @@ function About() {
         <p className="text-4xl font-bold">{content.title}</p>
         <p className="text-gray-400 text-sm">{content.subtitle}</p>
       </div>
-      <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 pt-7 px-4">
+      <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 pt-2 md:pt-7 px-4">
         <div className="flex flex-col-reverse  md:items-start items-center md:flex-row gap-6 md:gap-28">
           <Image
             src="/profile-pic.png"
-            className="rounded-lg pb-8 imganim"
+            className="rounded-lg pb-8 imganim md:block hidden"
             width={330}
             height={300}
           />
