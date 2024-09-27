@@ -15,7 +15,7 @@ export default function ExperienceSection() {
         <p className="text-gray-400 text-sm">{EnOrFr === "en" ? "My professional experience" : "Mon expérience professionnelle"}</p>
       </div>
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2  gap-4 md:mx-10">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-4 md:mx-10">
           <ExperienceCard
             title={EnOrFr === "en" ? "Full Stack MERN Developer" : "Développeur Full Stack MERN"}
             company="Académie Régionale d'Éducation et de Formation"
