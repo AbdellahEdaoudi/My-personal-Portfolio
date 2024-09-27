@@ -1,10 +1,10 @@
 import React from "react";
 import Skills from "../Components/Skills";
 import Projects from "../Components/Projects";
-import Qualif from "../Components/Qualif";
 import Footer from "../Components/Footer";
 import Contact from "../Components/Contact";
-import Header from "../Components/Header";
+import EducationSection from "../Components/Qualification/en_fr";
+import ExperienceSection from "../Components/Experience/en_fr";
 
 export const metadata = {
   title: "Abdellah Edaoudi - Skills",
@@ -28,7 +28,8 @@ function page() {
     <div>
       <Skills />
       <Projects />
-      <Qualif />
+      <EducationSection />
+      <ExperienceSection />
       <Contact />
       <Footer />
     </div>
