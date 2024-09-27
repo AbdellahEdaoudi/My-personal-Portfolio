@@ -15,7 +15,8 @@ export default function Header({ nm }) {
         { name: "About", path: "/About" },
         { name: "Skills", path: "/Skills" },
         { name: "Projects", path: "/Projects" },
-        { name: "Qualification", path: "/Qualification" },
+        { name: "Education", path: "/Education" },
+        { name: "Experience", path: "/Experience" },
         { name: "Contact", path: "/Contact" },
     ];
     
@@ -24,7 +25,8 @@ export default function Header({ nm }) {
         { name: "À propos", path: "/About" },
         { name: "Compétences", path: "/Skills" },
         { name: "Projets", path: "/Projects" },
-        { name: "Qualification", path: "/Qualification" },
+        { name: "Éducation", path: "/Education" },
+        { name: "Expérience", path: "/Experience" },
         { name: "Contact", path: "/Contact" },
     ];
     const LinksHeader = EnOrFr === "en" ? LinksHeaderEn : LinksHeaderFr;
@@ -67,7 +69,7 @@ export default function Header({ nm }) {
                 </div>
             </header>
             {/* Mobile Menu */}
-            <div onClick={() => setMenu(!menu)} className={`overflow-hidden ${menu ? 'max-h-44' : 'max-h-0'} ${menu ? 'min-h-36' : 'min-h-0'} md:hidden duration-500 shadow-lg`}>
+            <div onClick={() => setMenu(!menu)} className={`overflow-hidden ${menu ? 'max-h-52' : 'max-h-0'} ${menu ? 'min-h-36' : 'min-h-0'} md:hidden duration-500 shadow-lg`}>
                 <ul className={`text-center pt-1 pb-5`}>
                     {LinksHeader.map((ln, i) => (
                         <li key={i} onClick={() => setMenu(false)} className={`${style2}`}>

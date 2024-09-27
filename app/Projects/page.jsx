@@ -1,9 +1,9 @@
 import React from "react";
 import Projects from "../Components/Projects";
-import Qualif from "../Components/Qualif";
 import Footer from "../Components/Footer";
 import Contact from "../Components/Contact";
-import Header from "../Components/Header";
+import EducationSection from "../Components/Qualification/en_fr";
+import ExperienceSection from "../Components/Experience/en_fr";
 
 export const metadata = {
   title: "Abdellah Edaoudi - Projects",
@@ -26,7 +26,8 @@ function page() {
   return (
     <div>
       <Projects />
-      <Qualif />
+      <EducationSection />
+      <ExperienceSection />
       <Contact />
       <Footer />
     </div>
