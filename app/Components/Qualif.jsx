@@ -12,7 +12,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
+} from "../../components/ui/alert-dialog"
 import {QualifEn,QualifFr} from "./data/Data.Qualif"
 import Image from "next/image";
 

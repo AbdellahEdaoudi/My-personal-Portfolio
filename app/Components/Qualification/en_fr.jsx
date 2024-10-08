@@ -4,7 +4,7 @@ import { Card, CardContent } from "../../../components/ui/card";
 import { Badge } from "../../../components/ui/badge";
 import { CalendarIcon, MapPinIcon } from "lucide-react";
 import Image from "next/image";
-import { MyContext } from "@/app/Context/MyContext";
+import { MyContext } from "../../../app/Context/MyContext";
 
 export default function EducationSection() {
   const { EnOrFr } = useContext(MyContext);
