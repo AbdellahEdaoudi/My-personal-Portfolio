@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { Card, CardContent } from "../../../components/ui/card";
 import { Badge } from "../../../components/ui/badge";
 import { CalendarIcon, MapPinIcon, BriefcaseIcon } from "lucide-react";
-import { MyContext } from '@/app/Context/MyContext';
+import { MyContext } from '../../../app/Context/MyContext';
 
 export default function ExperienceSection() {
   const { EnOrFr } = useContext(MyContext);
