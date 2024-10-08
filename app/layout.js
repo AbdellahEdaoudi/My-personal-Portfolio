@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { usePathname } from "next/navigation";
 import Header from "./Components/Header";
 import { MyProvider } from "./Context/MyContext";
+import { ThemeProvider } from "./Components/theme-provider"
+
 
 const inter = Inter({ subsets: ["latin"] });
 const prompt = Prompt({ subsets: ["latin"], weight: '500' });

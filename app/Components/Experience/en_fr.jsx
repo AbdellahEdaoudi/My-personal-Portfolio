@@ -16,6 +16,34 @@ export default function ExperienceSection() {
       </div>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2  gap-4 md:mx-10">
+    <ExperienceCard
+      title={EnOrFr === "en" ? "Full Stack Developer - LinkerFolio Project" : "Développeur Full Stack - LinkerFolio"}
+      company="Personal Project"
+      location=""
+      startDate="Aug 2024"
+      endDate="Oct 2024"
+      duration={EnOrFr === "en" ? "3 mos" : "3 mois"}
+      type={EnOrFr === "en" ? "Self-employed" : "Self-employed"}
+      workType={EnOrFr === "en" ? "" : ""}
+      responsibilities={[
+        EnOrFr === "en" ? "Designed an elegant user interface that showcases resumes professionally." : "Conçu une interface utilisateur élégante qui présente les CV de manière professionnelle.",
+        EnOrFr === "en" ? "Developed a system for managing social media links in one place." : "Développé un système de gestion des liens des réseaux sociaux au même endroit.",
+        EnOrFr === "en" ? "Created a QR code generation feature for easy sharing." : "Créé une fonction de génération de code QR pour un partage facile.",
+        EnOrFr === "en" ? "Implemented automatic translation for resumes to reach a broader audience." : "Implémenté la traduction automatique pour les CV afin d'atteindre un public plus large.",
+        EnOrFr === "en" ? "Integrated an in-app chat system for user communication." : "Intégré un système de chat dans l'application pour la communication entre utilisateurs.",
+        EnOrFr === "en" ? "Added a customizable background feature for personal style." : "Ajouté une fonctionnalité de personnalisation de l'arrière-plan pour le style personnel."
+      ]}
+      skills={[
+        EnOrFr === "en" ? "Full-stack web development" : "Développement web full-stack",
+        EnOrFr === "en" ? "UI/UX Design" : "Conception UI/UX",
+        EnOrFr === "en" ? "API development" : "Développement d'API",
+        EnOrFr === "en" ? "Version control" : "Contrôle de version",
+        EnOrFr === "en" ? "Problem-solving" : "Résolution de problèmes",
+        EnOrFr === "en" ? "Project management" : "Gestion de projet"
+      ]}
+      techStack={["Next.js", "Node.js", "MongoDB", "React.js","WebSocket", "Tailwind CSS", "GitHub", "Postman","Vercel"]}
+    />
+
           <ExperienceCard
             title={EnOrFr === "en" ? "Full Stack MERN Developer" : "Développeur Full Stack MERN"}
             company="Académie Régionale d'Éducation et de Formation"
@@ -45,7 +73,7 @@ export default function ExperienceSection() {
           <ExperienceCard
             title={EnOrFr === "en" ? "Full Stack Developer" : "Développeur Full Stack"}
             company="Cités des Métiers et des Compétences"
-            location="Laayoune, Maroc"
+            location="Laayoune, Morocco"
             startDate="Sep 2023"
             endDate="Jun 2024"
             duration={EnOrFr === "en" ? "10 mos" : "10 mois"}
@@ -64,7 +92,7 @@ export default function ExperienceSection() {
           <ExperienceCard
             title={EnOrFr === "en" ? "Frontend Developer" : "Développeur Frontend"}
             company="Cités des Métiers et des Compétences"
-            location="Laayoune, Maroc"
+            location="Laayoune, Morocco"
             startDate="Sep 2023"
             endDate="Jan 2024"
             duration={EnOrFr === "en" ? "5 mos" : "5 mois"}
@@ -109,7 +137,7 @@ function ExperienceCard({
           <div className="flex flex-col items-start md:items-end mt-1 md:mt-0">
             <div className="flex items-center text-xs text-muted-foreground">
               <CalendarIcon className="mr-1 h-3 w-3 text-green-600" />
-              {startDate} - {endDate} · {duration}
+              {startDate} - {endDate}  <br /> {duration}
             </div>
             <div className="flex items-center text-xs text-muted-foreground mt-1">
               <MapPinIcon className="mr-1 h-3 w-3 text-red-600" />
