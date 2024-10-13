@@ -11,13 +11,13 @@ function Home() {
             {/* Profile */}
         <div className="  space-y-4  flex flex-col items-center justify-center">
             <p className="text-[2.4rem]">Hi,I'm Abdellah Edaoudi</p>
-            <p className="text-[1.2rem] md:text-[1.4rem]">🔷 MERN Stack Web Developer 🔷</p>
+            <p className="text-[1.2rem text-[1.4rem]">🔷 Full Stack Developer 🔷</p>
             <p className="md:w-96 sm:w-96">
              {EnOrFr === "en" ? `
              Digital Developer,adept at creating responsive websites and applications
-             using Nextjs,Reactjs,Tailwind CSS,Shadcn/ui and Node.js.
+             using Nextjs,Reactjs,Tailwind CSS,Shadcn/ui and Node.js,MongoDB.
              `:`Développeur Digital,adepte de la création de sites Web 
-             et d'applications réactifs en utilisant Nextjs,Reactjs,Tailwind CSS,Shadcn/ui et Node.js.`}
+             et d'applications réactifs en utilisant Nextjs,Reactjs,Tailwind CSS,Shadcn/ui et Node.js ,MongoDB.`}
             </p>
             <div className="flex space-x-4 justify-center">
               <a
@@ -40,6 +40,14 @@ function Home() {
               >
                 {/* <Youtube /> */}
                 <Image src={"/Icons/yt.svg"} width={30} height={10} /> 
+
+              </a>
+              <a
+                href="https://x.com/Edaoudi_abde"
+                target="_blank" className="hover:scale-105 duration-300"
+              >
+                {/* <Instagram /> */}
+                <Image src={"/Icons/twit.svg"} width={30} height={10} /> 
 
               </a>
               <a

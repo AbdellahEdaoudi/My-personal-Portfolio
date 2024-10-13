@@ -20,16 +20,16 @@ export default function EducationSection() {
           <EducationCard
             institution={`<a href="https://cmc.ac.ma/fr">Cités des Métiers et des Compétences</a>`}
             degree={EnOrFr === "fr" ? "Diplôme, Développement Web Full Stack" : "Diploma, Digital Development Web Full Stack"}
-            startDate="Nov 2022"
-            endDate="Jun 2024"
+            startDate="2022"
+            endDate="2024"
             location="Laayoune, Morocco"
             imageUrl="/cmc-maroc.png"
           />
           <EducationCard
             institution="Baba Ahmed bin Muhammad yahdih"
             degree={EnOrFr === "fr" ? "Baccalauréat, Sciences Physiques" : "Bachelor's degree, Physical Sciences"}
-            startDate="Sep 2021"
-            endDate="Jun 2022"
+            startDate="2021"
+            endDate="2022"
             location="Laayoune, Morocco"
             imageUrl="/BabAhmedImage.jpg"
           />

@@ -53,7 +53,7 @@ function About() {
               <a
                 href={content.Cv}
                 target="_blank"
-                download={content.Cv}
+                // download={content.Cv}
                 className="flex p-3 rounded-lg bg-black text-white gap-2"
               >
                 {content.downloadCv} <StickyNote />

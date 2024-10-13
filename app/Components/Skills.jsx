@@ -8,11 +8,12 @@ function Skills() {
   const { EnOrFr } = useContext(MyContext);
 
   const FrontEnd = [
-    { name: "NextJS", ds: "Intermediate" },
     { name: "ReactJS", ds: "Intermediate" },
+    { name: "NextJS", ds: "Intermediate" },
     { name: "TailwindCss", ds: "Intermediate" },
     { name: "BootStrap", ds: "Intermediate" },
     { name: "Shadcn/ui", ds: "Intermediate" },
+    { name: "Git/Github", ds: "Intermediate" },
   ];
 
   const BackEnd = [
@@ -22,18 +23,18 @@ function Skills() {
     { name: "Socket.io", ds: "Intermediate" },
   ];
   const Tools = [
-    { name: "Git/Github", ds: "Intermediate" },
     { name: "Docker", ds: "Intermediate" },
     { name: "Postman", ds: "Intermediate" },
     { name: "Studio3T", ds: "Intermediate" },
+    { name: "Vercel", ds: "Intermediate" },
+    { name: "VSCode", ds: "Intermediate" },
   ];
-  const Outils = [
-    { name: "Git/Github", ds: "Intermediate" },
-    { name: "Docker", ds: "Intermediate" },
-    { name: "Postman", ds: "Intermediate" },
-    { name: "Studio3T", ds: "Intermediate" },
+  const SoftSkills = [
+    { name: "Problem Solving", ds: "Intermediate" },
+    { name: "Teamwork", ds: "Intermediate" },
+    { name: "Communication", ds: "Intermediate" },
+    { name: "Adaptability", ds: "Intermediate" },
   ];
-
   const contentEn = {
     title: "Skills",
     subtitle: "My technical level",
@@ -49,7 +50,6 @@ function Skills() {
   };
 
   const content = EnOrFr === "en" ? contentEn : contentFr;
-  const contentOtD = EnOrFr === "en" ? Tools : Outils;
 
   return (
     <section id='skill' className='bg-gray-50 pt-4 pb-16 md:mt-0 mt-5 flex flex-col items-center md:px-10 px-5'>
@@ -85,9 +85,21 @@ function Skills() {
         <div className='text-center bg-white border md:px-10 px-5 flex flex-col items-center pt-7 pb-10 rounded-lg'>
           <h1 className='pb-5'>{EnOrFr === "en" ? "Development Tools" : "Outils de Développement"}</h1>
           <div className='grid grid-cols-2 gap-5'>
-            {contentOtD.map((tl, i) => (
+            {Tools.map((tl, i) => (
               <div key={i}>
                 <span className='flex gap-2'><BadgeCheck /> <span>{tl.name}</span></span>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* SoftSkills  */}
+        <div className='text-center bg-white border md:px-10 px-5 flex flex-col items-center pt-7 pb-10 rounded-lg'>
+          <h1 className='pb-5'>{EnOrFr === "en" ? "Soft Skills" : "Soft Skills"}</h1>
+          <div className='grid grid-cols-2 gap-5 '>
+            {SoftSkills.map((tl, i) => (
+              <div key={i} className='flex gap-1'>
+                 <p><BadgeCheck /></p>
+                 <p>{tl.name}</p>
               </div>
             ))}
           </div>
