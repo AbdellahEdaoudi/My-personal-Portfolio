@@ -44,6 +44,14 @@ const LinksFooter = EnOrFr === "en" ? LinksHeaderEn : LinksHeaderFr;
               {/* <Youtube /> */}
               <Image src={"/Icons/yt.svg"} width={30} height={10} /> 
               </a>
+              <a
+                href="https://x.com/Edaoudi_abde"
+                target="_blank" className="hover:scale-105 duration-300"
+              >
+                {/* <Instagram /> */}
+                <Image src={"/Icons/twit.svg"} width={30} height={10} /> 
+
+              </a>
               <a href='https://www.instagram.com/edaoudi_abdellah/' target='_blank'>
               {/* <Instagram /> */}
               <Image src={"/Icons/ins.svg"} width={30} height={10} /> 
