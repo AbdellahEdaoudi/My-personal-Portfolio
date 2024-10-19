@@ -12,7 +12,7 @@ function Home() {
         <div className="  space-y-4  flex flex-col items-center justify-center">
             <p className="text-[2.4rem]">Hi,I'm Abdellah Edaoudi</p>
             <p className="text-[1.2rem text-[1.4rem]">🔷 Full Stack Developer 🔷</p>
-            <p className="md:w-96 sm:w-96">
+            <p className="md:w-96 sm:w-96 border-2 rounded-lg p-2 bg-white shadow-md">
              {EnOrFr === "en" ? `
              Digital Developer,adept at creating responsive websites and applications
              using Nextjs,Reactjs,Tailwind CSS,Shadcn/ui and Node.js,MongoDB.
@@ -20,7 +20,7 @@ function Home() {
              et d'applications réactifs en utilisant Nextjs,Reactjs,Tailwind CSS,Shadcn/ui et Node.js ,MongoDB.`}
             </p>
             <div className="flex space-x-4 justify-center">
-              <a
+              <a 
                 href="https://www.linkedin.com/in/abdellah-edaoudi-0bbba02a5/"
                 target="_blank" className="hover:scale-105 duration-300"
               >
@@ -62,7 +62,7 @@ function Home() {
         </div>
             {/* Image */}
           <div className='flex-shrink-0 md:w-80 md:h-80 w-56 h-56   flex items-center justify-center'>
-          <Image src="/profile-pic.png" className="imganim" width={325} height={340} /> 
+          <Image src="/profile-pic.png" className="imganim drop-shadow-m borde-4 border-sky-95" width={325} height={340} /> 
           </div>
     </div>
     </section>
