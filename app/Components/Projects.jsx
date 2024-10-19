@@ -3,10 +3,12 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import { MyContext } from "../Context/MyContext";
 import {projectsEn,projectsFr} from './data/DataProject'
+import { useRouter } from "next/navigation";
 
 function Projects() {
   const { EnOrFr } = useContext(MyContext);
   const projects = EnOrFr === "en" ? projectsEn : projectsFr;
+  const router = useRouter()
   return (
     <section id="prtfl" className="bg-gray-50 pb-7 pt-4">
       <div className="text-center pb-5 ">
@@ -25,6 +27,7 @@ function Projects() {
                 className="w-96 rounded-md border-b-2 cursor-pointer"
                 src={p.image}
                 alt="E-commerce App"
+                onClick={() => window.open(p.websiteUrl, '_blank')} 
               />
               <div className="flex justify-center items-center">
                 <h1 className="p-3 underline">{p.title}</h1>
