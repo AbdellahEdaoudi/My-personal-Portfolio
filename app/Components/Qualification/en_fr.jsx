@@ -2,7 +2,7 @@
 import { useContext } from "react";
 import { Card, CardContent } from "../../../components/ui/card";
 import { Badge } from "../../../components/ui/badge";
-import { CalendarIcon, MapPinIcon } from "lucide-react";
+import { CalendarIcon, MapPinIcon, School } from "lucide-react";
 import Image from "next/image";
 import { MyContext } from "../../../app/Context/MyContext";
 
@@ -19,14 +19,14 @@ export default function EducationSection() {
         <div className="space-y-12">
           <EducationCard
             institution={`<a href="https://cmc.ac.ma/fr">Cités des Métiers et des Compétences</a>`}
-            degree={EnOrFr === "fr" ? "Diplôme, Développement Web Full Stack" : "Diploma, Digital Development Web Full Stack"}
+            degree={EnOrFr === "fr" ? "Diplôme, Développement Digital, option Web Full Stack" : "Diploma, Digital Development, Web Full Stack option"}
             startDate="2022"
             endDate="2024"
             location="Morocco"
             imageUrl="/cmc-maroc.png"
           />
           <EducationCard
-            institution="Baba Ahmed bin Muhammad yahdih"
+            institution={`Baba Ahmed bin Muhammad Yahdih High School`}
             degree={EnOrFr === "fr" ? "Baccalauréat, Sciences Physiques" : "Bachelor's degree, Physical Sciences"}
             startDate="2021"
             endDate="2022"
@@ -55,7 +55,10 @@ function EducationCard({ institution, degree, startDate, endDate, location, imag
           </div>
           <div className="md:w-2/3 p-6 bg-card">
             <h3 className="text-xl font-bold mb-2">{degree}</h3>
-            <p dangerouslySetInnerHTML={{ __html: institution }} className="text-sm text-primary mb-4"></p>
+            <div className="flex gap-2">
+            <span className="text-sky-950"><School width={18} /></span>
+            <span dangerouslySetInnerHTML={{ __html: institution }} className="text-sm text-primary mb-4"></span>
+            </div>
             <div  className="flex flex-wrap items-center gap-4 mb-4">
               {startDate && endDate && (
                 <div className="flex items-center text-sm text-muted-foreground">
