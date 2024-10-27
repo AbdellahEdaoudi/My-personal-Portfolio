@@ -22,7 +22,7 @@ export default function EducationSection() {
             degree={EnOrFr === "fr" ? "Diplôme, Développement Web Full Stack" : "Diploma, Digital Development Web Full Stack"}
             startDate="2022"
             endDate="2024"
-            location="Laayoune, Morocco"
+            location="Morocco"
             imageUrl="/cmc-maroc.png"
           />
           <EducationCard
@@ -30,7 +30,7 @@ export default function EducationSection() {
             degree={EnOrFr === "fr" ? "Baccalauréat, Sciences Physiques" : "Bachelor's degree, Physical Sciences"}
             startDate="2021"
             endDate="2022"
-            location="Laayoune, Morocco"
+            location="Morocco"
             imageUrl="/BabAhmedImage.jpg"
           />
         </div>
