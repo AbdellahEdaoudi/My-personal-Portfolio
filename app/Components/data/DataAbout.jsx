@@ -5,7 +5,7 @@
     experience: "Experience",
     experienceDetail: "1 year Working",
     completed: "Completed",
-    completedDetail: "+4 Projects",
+    completedDetail: "+5 Projects",
     support: "Support",
     supportDetail: "Online 24/7",
     description:
@@ -21,7 +21,7 @@
     experience: "Expérience",
     experienceDetail: "1 an de travail",
     completed: "Réalisé",
-    completedDetail: "+4 Projets",
+    completedDetail: "+5 Projets",
     support: "Support",
     supportDetail: "En ligne 24/7",
     description:
