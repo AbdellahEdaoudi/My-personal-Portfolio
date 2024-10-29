@@ -92,7 +92,7 @@ function ExperienceCard({ title, company, location, startDate, endDate, duration
         </div>
         {responsibilities && (
           <div className="mt-4">
-          <h4 className="text-sm font-semibold text-gray-600 mb-1">Key Responsibilities:</h4>
+          <h4 className="text-sm font-semibold  mb-1">Key Responsibilities :</h4>
           <ul className="list-disc list-inside text-gray-700 space-y-1">
             {responsibilities.map((item, index) => (
               <li key={index} className="text-xs">{item}</li>
@@ -102,7 +102,7 @@ function ExperienceCard({ title, company, location, startDate, endDate, duration
         )}
         {description && (
          <div className="mt-4">
-          <h4 className="text-sm font-semibold text-gray-600 mb-1">Description:</h4>
+          <h4 className="text-sm font-semibold  mb-1">Description :</h4>
           <ul className="list-disc list-inside text-gray-700 space-y-1">
             {description?.map((item, index) => (
               <li key={index} className="text-xs">{item}</li>
