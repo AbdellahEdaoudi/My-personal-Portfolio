@@ -13,7 +13,6 @@ function Skills() {
     { name: "TailwindCss", ds: "Intermediate" },
     { name: "BootStrap", ds: "Intermediate" },
     { name: "Shadcn/ui", ds: "Intermediate" },
-    { name: "Git/Github", ds: "Intermediate" },
   ];
 
   const BackEnd = [
@@ -23,6 +22,7 @@ function Skills() {
     { name: "Socket.io", ds: "Intermediate" },
   ];
   const Tools = [
+    { name: "Git/Github", ds: "Intermediate" },
     { name: "Docker", ds: "Intermediate" },
     { name: "Postman", ds: "Intermediate" },
     { name: "Studio3T", ds: "Intermediate" },
