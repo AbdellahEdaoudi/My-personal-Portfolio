@@ -29,12 +29,19 @@ function Skills() {
     { name: "Vercel", ds: "Intermediate" },
     { name: "VSCode", ds: "Intermediate" },
   ];
-  const SoftSkills = [
+  const SoftSkillsEn = [
     { name: "Problem Solving", ds: "Intermediate" },
     { name: "Teamwork", ds: "Intermediate" },
     { name: "Communication", ds: "Intermediate" },
     { name: "Adaptability", ds: "Intermediate" },
   ];
+  const SoftSkillsFr = [
+    { name: "Résolution de problèmes", ds: "Intermédiaire" },
+    { name: "Travail en équipe", ds: "Intermédiaire" },
+    { name: "Communication", ds: "Intermédiaire" },
+    { name: "Adaptabilité", ds: "Intermédiaire" },
+  ];
+  
   const contentEn = {
     title: "Skills",
     subtitle: "My technical level",
@@ -50,7 +57,8 @@ function Skills() {
   };
 
   const content = EnOrFr === "en" ? contentEn : contentFr;
-
+  const SoftSkills = EnOrFr === "en" ? SoftSkillsEn : SoftSkillsFr;
+  
   return (
     <section id='skill' className='bg-gray-50 pt-4 pb-16 md:mt-0 mt-5 flex flex-col items-center md:px-10 px-5'>
       <div className='text-center pb-10'>
