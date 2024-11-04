@@ -12,7 +12,7 @@
       `I have extensive experience in transforming ideas into innovative and effective applications,
        with a focus on enhancing user experience and designing attractive user interfaces.`,
     downloadCv: "Résumé",
-    Cv: "Cv/Cv Abdellah Edaoudi.en.pdf"
+    Cv: "/Cv Abdellah Edaoudi.en.pdf"
   };
 
   export const aboutContentFr = {
@@ -29,5 +29,5 @@
       innovantes et efficaces, avec un accent sur l'amélioration
        de l'expérience utilisateur et la conception d'interfaces attrayantes.`,
     downloadCv: "Résumé",
-    Cv: "Cv/Cv Abdellah Edaoudi.fr.pdf"
+    Cv: "/Cv Abdellah Edaoudi.fr.pdf"
   };
