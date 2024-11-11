@@ -22,7 +22,7 @@ function Admin() {
           alert("Your session has expired. Please log in again.");
           router.push("/Login");
         } else {
-          alert("Error fetching books");
+          // alert("Error fetching books");
         }
       }
     };
