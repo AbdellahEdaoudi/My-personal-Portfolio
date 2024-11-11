@@ -2,45 +2,69 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Link from 'next/link';
-
+import {apiRequest} from "../Components/apiRequest"
+import RequireAuth from "../Components/RequireAuth"
 
 function Admin() {
   const [contacts, setContacts] = useState([]);
   
-  const GetContacts = async () => {
-    try {
-      const response = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`);
-      setContacts(response.data);
-    } catch (error) {
-      console.error('Error fetching contacts:', error);
-    }
-  };
-  useEffect(()=>{
+ 
+  useEffect(() => {
+    const GetContacts = async () => {
+      try {
+        const response = await apiRequest({
+          method: 'get',
+          url: `${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`,
+        });
+        setContacts(response.data);
+      } catch (error) {
+        if (error.response && error.response.status === 403) {
+          alert("Your session has expired. Please log in again.");
+          router.push("/Login");
+        } else {
+          alert("Error fetching books");
+        }
+      }
+    };
+
     GetContacts();
-  },[])
+  }, [process.env.NEXT_PUBLIC_SERVER_URL]);
+
   const DeleteAll = async () => {
     try {
-      await axios.delete(`${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`);
+      await apiRequest({
+        method: 'delete',
+        url: `${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`,
+      });
       setContacts([]);
     } catch (error) {
       console.error('Error deleting all contacts:', error);
       alert('Failed to delete all contacts');
     }
   };
+
   const DeleteById = async (id) => {
     try {
-      await axios.delete(`${process.env.NEXT_PUBLIC_SERVER_URL}/Contact/${id}`);
+      await apiRequest({
+        method: 'delete',
+        url: `${process.env.NEXT_PUBLIC_SERVER_URL}/Contact/${id}`,
+      });
       setContacts(contacts.filter(contact => contact._id !== id));
     } catch (error) {
       console.error('Error deleting contact:', error);
       alert('Failed to delete contact');
     }
   };
+
   const AddMessages = async () => {
     try {
       const newMessages = { name: 'Abdellah Edaoudi', email: 'edaoudi@gmail.com', msg: 'Thank you' };
-      await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`, newMessages);
-      await GetContacts();
+      await apiRequest({
+        method: 'post',
+        url: `${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`,
+        data: newMessages,
+      });
+      setContacts((contact)=>[...contact,newMessages])
     } catch (error) {
       console.error('Error adding messages:', error);
       alert('Failed to add messages');
@@ -49,8 +73,8 @@ function Admin() {
 
 
   return (
+    <RequireAuth>
       <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-r from-blue-400 to-indigo-600 p-8">
-      <>
           <h1
           onClick={()=>{localStorage.removeItem("NEXT_PUBLIC_PASSWORD");
             setCheckPass(false)
@@ -121,8 +145,9 @@ function Admin() {
                 })
             )}
           </div>
-        </>
     </div>
+    </RequireAuth>
+      
   );
 }
 
