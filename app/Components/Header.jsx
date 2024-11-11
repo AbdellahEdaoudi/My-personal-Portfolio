@@ -52,7 +52,7 @@ export default function Header({ nm }) {
                         <option value={"fr"}>fr</option>
                     </select>
                     
-                    <Link href="/msg" className="text-white flex items-center">
+                    <Link href="/Admin" className="text-white flex items-center">
                         Admin
                     </Link>
                 </div>

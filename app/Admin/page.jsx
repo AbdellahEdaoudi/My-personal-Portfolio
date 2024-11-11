@@ -4,28 +4,8 @@ import axios from 'axios';
 import Link from 'next/link';
 
 
-function ContactsPage() {
+function Admin() {
   const [contacts, setContacts] = useState([]);
-  const [password, setPassword] = useState("");
-  const [CheckPass, setCheckPass] = useState(false);
-  const [Ereur, setEreur] = useState("");
-  useEffect(()=>{
-    const  LocalPassworde = localStorage.getItem("NEXT_PUBLIC_PASSWORD")
-    if (LocalPassworde == "true") {
-      setCheckPass(true)
-    }else{
-      setCheckPass(false)
-    }
-  },[CheckPass])
-
-  const onSubmit = ()=>{
-    if (password === process.env.NEXT_PUBLIC_PASSWORD) {
-      localStorage.setItem("NEXT_PUBLIC_PASSWORD","true")
-    } else {
-      localStorage.setItem("NEXT_PUBLIC_PASSWORD","false")
-      setEreur("")
-    } 
-  } 
   
   const GetContacts = async () => {
     try {
@@ -70,27 +50,7 @@ function ContactsPage() {
 
   return (
       <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-r from-blue-400 to-indigo-600 p-8">
-      {!CheckPass ? (
-        <div className="bg-white shadow-lg rounded-lg p-8">
-          <h1 className="text-2xl font-bold mb-4">Enter Password to Access</h1>
-          <form onSubmit={onSubmit} className="flex items-center">
-            <input
-              type="password"
-              value={password}
-              onChange={(e)=>{setPassword(e.target.value)}}
-              placeholder="Password"
-              className="bg-gray-200 rounded-lg py-2 px-4 mr-2"
-            />
-            <button
-              type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              Submit
-            </button>
-          </form>
-        </div>
-      ) : (
-        <>
+      <>
           <h1
           onClick={()=>{localStorage.removeItem("NEXT_PUBLIC_PASSWORD");
             setCheckPass(false)
@@ -162,12 +122,11 @@ function ContactsPage() {
             )}
           </div>
         </>
-      )}
     </div>
   );
 }
 
-export default ContactsPage;
+export default Admin;
 
 
 
