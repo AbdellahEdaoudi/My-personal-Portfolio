@@ -126,6 +126,7 @@ function Contact() {
             />
             <input
               type="email"
+              name="email"
               placeholder={text.emailPlaceholder}
               value={email}
               onChange={(e) => setEmail(e.target.value)}

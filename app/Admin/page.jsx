@@ -74,78 +74,81 @@ function Admin() {
 
   return (
     <RequireAuth>
-      <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-r from-blue-400 to-indigo-600 p-8">
-          <h1
-          onClick={()=>{localStorage.removeItem("NEXT_PUBLIC_PASSWORD");
-            setCheckPass(false)
-          }}
-          className="text-4xl cursor-pointer font-extrabold text-white mb-8">Manage Contacts</h1>
-          <div className="flex mb-8">
+    <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-r from-blue-400 to-indigo-600 p-4 md:p-8">
+          <h1 className="text-4xl cursor-pointer font-extrabold text-white mb-8">Manage Contacts</h1>
+          <div className="flex mb-8 text-md">
           <Link href='/'
-              
-              className="bg-green-600 hover:bg-green-800 mr-4 text-white font-bold py-2 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+              className="bg-green-600 hover:bg-green-800 mr-4 text-white font-bold p-2 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
             >
               HOME
             </Link>
             <button
               onClick={DeleteAll}
-              className="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-8 rounded-lg shadow-lg mr-4 transition duration-300 ease-in-out transform hover:scale-105"
+              className="bg-red-600 hover:bg-red-800 text-white font-bold p-2 rounded-lg shadow-lg mr-4 transition duration-300 ease-in-out transform hover:scale-105"
             >
               Delete All Contacts
             </button>
             <button
               onClick={AddMessages}
-              className="bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+              className="bg-green-600 hover:bg-green-800 text-white font-bold p-2 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
             >
               Add Messages
             </button>
             
           </div>
-          <div className="w-full max-w-5xl bg-white shadow-lg rounded-lg overflow-hidden">
-            <div className="flex bg-gray-200 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">
-              <div className="py-3 px-6 w-1/4">Name</div>
-              <div className="py-3 px-6 w-1/4">Email</div>
-              <div className="py-3 px-6 w-1/2">Message</div>
-              <div className="py-3 px-6 w-1/4">Actions</div>
-            </div>
-            {contacts.length > 0 ? (
-              contacts.map(contact => (
-                <div key={contact._id} className="flex border-b border-gray-200">
-                  <div className="py-4 px-6 w-1/4">{contact.name}</div>
-                  <div className="py-4 px-6 w-1/4">{contact.email}</div>
-                  <div className="py-4 px-6 w-1/2">{contact.msg}</div>
-                  <div className="py-4 px-6 w-1/4">
-                    <button
-                      onClick={() => DeleteById(contact._id)}
-                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
-                    >
-                      Delete
-                    </button>
-                  </div>
-                </div>
-              ))
-            ):(
-                [1,2,3].map((mp)=>{
-                  return(
-                    <div className="flex border-b border-gray-200">
-                  <div className="my-4 mx-6 w-1/4 bg-gray-200 rounded-lg animate-pulse"></div>
-                  <div className="my-4 mx-6 w-1/4 bg-gray-200 rounded-lg animate-pulse"></div>
-                  <div className="my-4 mx-6 w-1/2 bg-gray-200 rounded-lg animate-pulse"></div>
-                  <div className="py-4 px-6 w-1/4">
-                    <button
-                      className="bg-red-500 hover:bg-red-700 text-white 
-                      font-bold py-1 px-3 rounded-lg shadow-md transition duration-300 
-                      ease-in-out transform hover:scale-105 "
-                    >
-                      Delete
-                    </button>
-                  </div>
-                </div>
-                  )
-                })
-            )}
-          </div>
-    </div>
+          
+          <div className="w-full max-w-5xl bg-white shadow-lg rounded-lg overflow-x-auto">
+  <table className="w-full table-auto">
+    <thead className="bg-gray-200 text-center text-[8px] md:text-[14px] font-bold text-gray-600 uppercase tracking-wider">
+      <tr>
+        <th className="p-2">Name</th>
+        <th className="p-2">Email</th>
+        <th className="p-2">Message</th>
+        <th className="p-2">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {contacts.length > 0 ? (
+        contacts.map(contact => (
+          <tr key={contact._id} className="text-[8px] md:text-base text-center border-b border-gray-200">
+            <td className="py-3 px-6 border">{contact.name}</td>
+            <td className="py-3 px-6 border">{contact.email}</td>
+            <td className="py-3 px-6 border">{contact.msg}</td>
+            <td className="py-3 px-6 border">
+              <button
+                onClick={() => DeleteById(contact._id)}
+                className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+        ))
+      ) : (
+        [1, 2, 3].map((mp) => (
+          <tr key={mp} className="border-b border-gray-200">
+            <td className="py-4 px-6 w-1/4 bg-gray-200 rounded-lg animate-pulse"></td>
+            <td className="py-4 px-6 w-1/4 bg-gray-200 rounded-lg animate-pulse"></td>
+            <td className="py-4 px-6 w-1/2 bg-gray-200 rounded-lg animate-pulse"></td>
+            <td className="py-4 px-6 w-1/4">
+              <button
+                className="bg-red-500 hover:bg-red-700 text-white 
+                font-bold py-1 px-3 rounded-lg shadow-md transition duration-300 
+                ease-in-out transform hover:scale-105"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+        ))
+      )}
+    </tbody>
+  </table>
+</div>
+
+
+
+     </div>
     </RequireAuth>
       
   );
