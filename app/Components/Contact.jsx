@@ -47,7 +47,7 @@ function Contact() {
 
     try {
       const response = await Axios.post(
-        `${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`,
+          `${process.env.NEXT_PUBLIC_SERVER_URL}/contact`,
         { name, email, msg },
         {
           headers: { "Content-Type": "application/json" },
