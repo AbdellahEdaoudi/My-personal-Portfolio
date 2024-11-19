@@ -14,7 +14,7 @@ function Admin() {
       try {
         const response = await apiRequest({
           method: 'get',
-          url: `${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`,
+          url: `${process.env.NEXT_PUBLIC_SERVER_URL}/contact`,
         });
         setContacts(response.data);
       } catch (error) {
