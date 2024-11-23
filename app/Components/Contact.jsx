@@ -5,7 +5,6 @@ import Axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { MyContext } from "../Context/MyContext";
-
 const ContactText = {
   en: {
     title: "Get in Touch",
@@ -18,14 +17,15 @@ const ContactText = {
   },
   fr: {
     title: "Contactez-moi",
-    subtitle: "Me Contacter",
+    subtitle: "Contactez-moi",
     namePlaceholder: "Entrez votre nom",
     emailPlaceholder: "Entrez votre email",
     messagePlaceholder: "Écrivez votre message",
     sendButton: "Envoyer le message",
-    sendingButton: "Envoi du message",
+    sendingButton: "Envoi en cours",
   },
 };
+
 
 function Contact() {
   const [name, setName] = useState("");

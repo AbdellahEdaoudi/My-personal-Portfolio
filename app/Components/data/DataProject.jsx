@@ -6,10 +6,9 @@ export const projectsEn = [
         githubUrl: "https://github.com/AbdellahEdaoudi/LinkerFolio-App",
         githubUrls: "https://github.com/AbdellahEdaoudi/Server-LinkerFolio",
         description:
-            `LinkerFolio is an innovative application I developed that allows users 
-            to showcase their resumes and social media links in one place. This application
-            helps users present their professional identity in a unique and effective way,
-                making it ideal for job seekers or anyone looking to enhance their digital presence.`,
+            `Innovative application I developed, allowing users to showcase their professional portfolio
+             and social media links in one place. This app helps users manage their digital identity effectively, making it an ideal tool for job
+             seekers or anyone looking to enhance their online presence and digital influence.`,
         Rapport: " ",
     },
     {
@@ -62,11 +61,11 @@ export const projectsEn = [
             githubUrl: "https://github.com/AbdellahEdaoudi/LinkerFolio-App",
             githubUrls: "https://github.com/AbdellahEdaoudi/Server-LinkerFolio",
             description:
-                `LinkerFolio est une application innovante que j'ai développée, permettant aux utilisateurs 
-                de présenter leurs CV et leurs liens de médias sociaux en un seul endroit. Cette application 
-                aide les utilisateurs à présenter leur identité professionnelle de manière unique et efficace, 
-                ce qui la rend idéale pour les chercheurs d'emploi ou toute personne souhaitant améliorer 
-                sa présence numérique.`,
+                `Une application innovante que j'ai développée,
+                 permettant aux utilisateurs de présenter leur portfolio professionnel
+                  et leurs liens de réseaux sociaux en un seul endroit. Cette application
+                 aide les utilisateurs à gérer efficacement leur identité numérique, ce qui en fait un outil idéal pour les chercheurs d'emploi ou
+                 toute personne souhaitant améliorer sa visibilité et son influence dans le monde numérique.`,
             Rapport: " ",
         },      
         {

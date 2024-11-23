@@ -12,6 +12,12 @@ import { ThemeProvider } from "./Components/theme-provider"
 const inter = Inter({ subsets: ["latin"] });
 const prompt = Prompt({ subsets: ["latin"], weight: '500' });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  // maximumScale: 1,
+  // userScalable: false, // منع التكبير/التصغير
+};
 
 
 export default function RootLayout({ children }) {
@@ -22,7 +28,7 @@ export default function RootLayout({ children }) {
         <meta name="google-adsense-account" content="ca-pub-2614061557764113" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2614061557764113"
-          crossorigin="anonymous"></script>    
+          crossOrigin="anonymous"></script>    
       </head>
       <body className={`${prompt.className} bg-gray-50`}>
         <MyProvider>

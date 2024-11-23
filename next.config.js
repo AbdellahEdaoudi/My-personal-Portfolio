@@ -1,8 +1,12 @@
-// next.config.js
-
 const nextConfig = {
   images: {
-    domains: ['ed-portfolioo.vercel.app'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'ed-portfolioo.vercel.app',
+        pathname: '/**',
+      },
+    ],
   },
   env: {
     metadataBase: 'https://ed-portfolioo.vercel.app',
