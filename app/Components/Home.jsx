@@ -14,10 +14,8 @@ function Home() {
             <p className="text-[1.2rem text-[1.4rem]">🔷 Full Stack Developer 🔷</p>
             <p className="md:w-96 sm:w-96 border-2 rounded-lg p-2 bg-white shadow-md">
              {EnOrFr === "en" ? `
-             Digital Developer,adept at creating responsive websites and applications
-             using Nextjs,Reactjs,Tailwind CSS,Shadcn/ui and Node.js,MongoDB.
-             `:`Développeur Digital,adepte de la création de sites Web 
-             et d'applications réactifs en utilisant Nextjs,Reactjs,Tailwind CSS,Shadcn/ui et Node.js ,MongoDB.`}
+             Digital Developer skilled in creating responsive websites and applications using Next.js, React.js, Tailwind CSS, Shadcn/UI, Node.js, NestJS, and MongoDB.
+             `:`Développeur Digital compétent dans la création de sites web et d'applications responsives en utilisant Next.js, React.js, Tailwind CSS, Shadcn/UI, Node.js, NestJS, et MongoDB.`}
             </p>
             <div className="flex space-x-4 justify-center">
               <a 
