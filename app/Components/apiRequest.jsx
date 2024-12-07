@@ -33,7 +33,9 @@ export const apiRequest = async (config) => {
           };
           return await axios(config);
         } catch (refreshError) {
-          throw refreshError;
+          if (refreshError.response && refreshError.response.status === 401) {
+             window.location.href = '/Login'
+          }
         }
       } else {
         throw error;
