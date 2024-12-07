@@ -10,12 +10,16 @@ function Home() {
         <div className="bg-gray-50 py-8 md:py-12 flex md:flex-row flex-col-reverse items-center justify-center gap-6 md:gap-32 ">
             {/* Profile */}
         <div className="  space-y-4  flex flex-col items-center justify-center">
-            <p className="text-[2.4rem]">Hi,I'm Abdellah Edaoudi</p>
-            <p className="text-[1.2rem text-[1.4rem]">🔷 Full Stack Developer 🔷</p>
+            <p className="text-[2.4rem]">
+            {EnOrFr === "en" ? "Hi,I'm Abdellah Edaoudi" : "Hi,I'm Abdellah Edaoudi"}
+            </p>
+            <p className="text-[1.2rem text-[1.4rem]">
+              {EnOrFr === "en" ? "🔷 Full Stack Developer 🔷" : "🔷 Développeur Full Stack 🔷"}
+            </p>
             <p className="md:w-96 sm:w-96 border-2 rounded-lg p-2 bg-white shadow-md">
              {EnOrFr === "en" ? `
-             Digital Developer skilled in creating responsive websites and applications using Next.js, React.js, Tailwind CSS, Shadcn/UI, Node.js, NestJS, and MongoDB.
-             `:`Développeur Digital compétent dans la création de sites web et d'applications responsives en utilisant Next.js, React.js, Tailwind CSS, Shadcn/UI, Node.js, NestJS, et MongoDB.`}
+             Skilled in creating responsive websites and applications using the MERN stack along with Next.js and NestJS for enhanced performance and scalability.
+             `:`Compétent dans la création de sites web et d'applications responsives en utilisant la stack MERN , ainsi que Next.js et NestJS pour des performances optimales et une évolutivité accrue.`}
             </p>
             <div className="flex space-x-4 justify-center">
               <a 
