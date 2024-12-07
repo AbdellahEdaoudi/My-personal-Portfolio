@@ -18,8 +18,9 @@ function Home() {
             </p>
             <p className="md:w-96 sm:w-96 border-2 rounded-lg p-2 bg-white shadow-md">
              {EnOrFr === "en" ? `
-             Skilled in creating responsive websites and applications using the MERN stack along with Next.js and NestJS for enhanced performance and scalability.
-             `:`Compétent dans la création de sites web et d'applications responsives en utilisant la stack MERN , ainsi que Next.js et NestJS pour des performances optimales et une évolutivité accrue.`}
+             Skilled in developing responsive websites and applications using the MERN stack,
+              along with Next.js and NestJS for optimal performance and scalability.
+             `:`"Compétent en développement de sites web et applications responsive à l’aide de la pile MERN, ainsi que Next.js et NestJS pour un performance et une évolutivité optimales."`}
             </p>
             <div className="flex space-x-4 justify-center">
               <a 
