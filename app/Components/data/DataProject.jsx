@@ -1,6 +1,6 @@
 export const projectsEn = [
     {
-        title: "LinkerFolio Project",
+        title: "Portfolio Platform",
         image: "/Projects/Linkerfolio.png",
         websiteUrl: "https://linkerfolio.vercel.app",
         githubUrl: "https://github.com/AbdellahEdaoudi/LinkerFolio-App",
@@ -55,7 +55,7 @@ export const projectsEn = [
 
     export const projectsFr = [
         {
-            title: "Projet LinkerFolio",
+            title: "Plateforme de Portfolio",
             image: "/Projects/Linkerfolio.png",
             websiteUrl: "https://linkerfolio.vercel.app",
             githubUrl: "https://github.com/AbdellahEdaoudi/LinkerFolio-App",
