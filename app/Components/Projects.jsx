@@ -4,11 +4,11 @@ import React, { useContext } from "react";
 import { MyContext } from "../Context/MyContext";
 import {projectsEn,projectsFr} from './data/DataProject'
 import { useRouter } from "next/navigation";
+import { Github, Globe } from "lucide-react";
 
 function Projects() {
   const { EnOrFr } = useContext(MyContext);
   const projects = EnOrFr === "en" ? projectsEn : projectsFr;
-  const router = useRouter()
   return (
     <section id="prtfl" className="bg-gray-50 pb-7 pt-4">
       <div className="text-center pb-5 ">
@@ -29,55 +29,45 @@ function Projects() {
                 alt="E-commerce App"
                 onClick={() => window.open(p.websiteUrl, '_blank')} 
               />
-              <div className="flex justify-center items-center">
+              <div>
+                <div className="flex justify-around items-center">
                 <h1 className="p-3 underline">{p.title}</h1>
                 <a
                   href={p.websiteUrl}
                   className="flex items-center  pr-2"
                   target="_blank"
                 >
-                  <img src="Projects/WebSite.png" width={20} alt="WebSite" />
+                  <Image src="/Projects/WebSite.png" width={20} height={20} alt="WebSite" />
                   <span className="ml-2 text-sm hover:text-blue-500">
-                    Visit Website
+                  Live Demo
                   </span>
                 </a>
               </div>
-              <h2 className="px-3 text-[12px] pb-2   text-gray-500">
+              <h2 className="px-3 text-[12px] pb-2    text-gray-500">
                 {p.description}
               </h2>
-              <div className="mx-4 cursor-pointer flex justify-between items-center">
-                <a
-                  href={p.githubUrl}
-                  className="flex items-center pr-2 float-start mx-"
-                  target="_blank"
-                >
-                  <img src="Projects/github.png" width={24} alt="GitHub" />
-                  <span className=" ml-2 text-sm  hover:text-blue-500">
-                    View on GitHub
-                  </span>
-                </a>
-                {p.githubUrls && (
+              <div className="flex justify-around items-center">
                   <a
-                  href={p.githubUrls}
-                  className="flex items-center pr-2 float-start mx-"
-                  target="_blank"
-                >
-                  <img src="Projects/github.png" width={24} alt="GitHub" />
-                  <span className=" ml-2 text-sm  hover:text-blue-500">
-                    Server
-                  </span>
-                </a>
-                )}
-                
-                
-                {/* <a
-                  href={p.Rapport}
-                  className={`text-red-700 ${p.Rapport === " " && "hidden"}`}
-                  title="Download Rapport"
-                  download="Rapport.pdf"
-                >
-                  Rapport de Projet
-                </a> */}
+                    href={p.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-300 border p-2 rounded-md"
+                  >
+                    <Github className="w-5 h-5 mr-2" />
+                    <span className="text-sm">Frontend</span>
+                  </a>
+                  {p.githubUrls && (
+                    <a
+                      href={p.githubUrls}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-300 border p-2 rounded-md"
+                    >
+                      <Github className="w-5 h-5 mr-2" />
+                      <span className="text-sm">Backend</span>
+                    </a>
+                  )}
+              </div>
               </div>
             </div>
           );
