@@ -17,11 +17,14 @@ function Admin() {
           url: `${process.env.NEXT_PUBLIC_SERVER_URL}/contact`,
         });
         setContacts(response.data);
+        console.log("Get Howa hadak");
+        
       } catch (error) {
         if (error.response && error.response.status === 403) {
           alert("Your session has expired. Please log in again.");
-          router.push("/Login");
+          window.href("/Login")
         } else {
+          console.log("Get machi Howa hadak",process.env.NEXT_PUBLIC_SERVER_URL+"/contact");
           // alert("Error fetching books");
         }
       }

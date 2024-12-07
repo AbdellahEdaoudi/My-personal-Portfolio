@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${prompt.className} bg-gray-50`}>
         <MyProvider>
-          <div className="sticky z-50 top-0 bg-white">
+          <div className={`sticky z-50 top-0 bg-white `}>
             <Header nm={path} />
           </div>
           <AnimatePresence mode="wait">
