@@ -16,12 +16,10 @@ function About() {
       </div>
       <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 pt-2 md:pt-7 px-4">
         <div className="flex flex-col-reverse  md:items-start items-center md:flex-row gap-6 md:gap-28">
-          <Image
-            src="/profile-pic.png"
-            className="rounded-lg pb-8 imganim md:block hidden"
-            width={330}
-            height={300}
-          />
+         <Image src="/profile-pic.png" 
+                   className="imganim md:w-80  w-56 " 
+                   width={500} height={500} 
+                   /> 
           <div className="space-y-4">
             <ul className="flex gap-4 items-center justify-center pt-4">
               <li className="flex flex-col items-center text-center bg-white p-4 rounded-md border">

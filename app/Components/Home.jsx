@@ -4,25 +4,28 @@ import { MyContext } from "../Context/MyContext";
 import Image from "next/image";
 
 function Home() {
-    const {EnOrFr,setEnOrFr}=useContext(MyContext)
+    // const {EnOrFr,setEnOrFr}=useContext(MyContext)
+    const [EnOrFr, setEnOrFr] = useState("en")
   return (
-    <section className="mx-4 ">
-        <div className="bg-gray-50 py-8 md:py-12 flex md:flex-row flex-col-reverse items-center justify-center gap-6 md:gap-32 ">
+    <section className="mx-4">
+        <div className="flex md:flex-row flex-col-reverse items-center justify-center gap-2 md:gap-12 lg:gap-28 pt-4 md:py-7 duration-300">
             {/* Profile */}
-        <div className="  space-y-4  flex flex-col items-center justify-center">
+        <div className="space-y-2 lg:space-y-3 flex flex-col items-center justify-center">
             <p className="text-[2.4rem]">
             {EnOrFr === "en" ? "Hi,I'm Abdellah Edaoudi" : "Hi,I'm Abdellah Edaoudi"}
             </p>
             <p className="text-[1.2rem text-[1.4rem]">
               {EnOrFr === "en" ? "🔷 Full Stack Developer 🔷" : "🔷 Développeur Full Stack 🔷"}
             </p>
-            <p className="md:w-96 sm:w-96 border-2 rounded-lg p-2 bg-white shadow-md">
+            <p className="border-2 rounded-lg  md:w-[400px] text-justify p-2 bg-white shadow-md">
              {EnOrFr === "en" ? `
-             Skilled in developing responsive websites and applications using the MERN stack,
-              along with Next.js and NestJS for optimal performance and scalability.
-             `:`"Compétent en développement de sites web et applications responsive à l’aide de la pile MERN, ainsi que Next.js et NestJS pour un performance et une évolutivité optimales."`}
+             I Specialize  in developing responsive websites and applications using the MERN stack,
+              as well as advanced frameworks like Next.js and NestJS for optimal performance and scalability.
+             `:`Spécialise dans le développement de sites web et d'applications réactives en utilisant la stack MERN,
+              ainsi que des frameworks avancés tels que Next.js et NestJS pour des performances et une scalabilité optimales.`}
             </p>
-            <div className="flex space-x-4 justify-center">
+            {/* Social Link */}
+            <div className="flex space-x-4 justify-center py-2">
               <a 
                 href="https://www.linkedin.com/in/abdellah-edaoudi-0bbba02a5/"
                 target="_blank" className="hover:scale-105 duration-300"
@@ -64,9 +67,11 @@ function Home() {
             </div>
         </div>
             {/* Image */}
-          <div className='flex-shrink-0 md:w-80 md:h-80 w-56 h-56   flex items-center justify-center'>
-          <Image src="/profile-pic.png" className="imganim drop-shadow-m borde-4 border-sky-95" width={325} height={340} /> 
-          </div>
+          <Image src="/profile-pic.png" 
+          className="imganim md:w-80  w-56 " 
+          width={500} height={500} 
+          /> 
+          
     </div>
     </section>
   )
