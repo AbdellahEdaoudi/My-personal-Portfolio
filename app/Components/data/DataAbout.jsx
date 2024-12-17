@@ -9,8 +9,7 @@
     support: "Support",
     supportDetail: "Online 24/7",
     description:
-      `I have extensive experience in transforming ideas into innovative and effective applications,
-       with a focus on enhancing user experience and designing attractive user interfaces.`,
+      `I have extensive experience in transforming ideas into innovative and effective applications, with a focus on enhancing user experience and developing attractive user interfaces.`,
     downloadCv: "Résumé",
     Cv: "/Cv_Abdellah_Edaoudi.en.pdf"
   };
@@ -25,9 +24,9 @@
     support: "Support",
     supportDetail: "En ligne 24/7",
     description:
-      `J'ai une vaste expérience dans la transformation des idées en applications 
-      innovantes et efficaces, avec un accent sur l'amélioration
-       de l'expérience utilisateur et la conception d'interfaces attrayantes.`,
+      `J’ai une vaste expérience dans la transformation des idées en applications innovantes et efficaces,
+       avec un accent sur l’amélioration de l’expérience utilisateur et le développement
+       d’interfaces utilisateur attrayantes.`,
     downloadCv: "Résumé",
     Cv: "/Cv_Abdellah_Edaoudi.fr.pdf"
   };
