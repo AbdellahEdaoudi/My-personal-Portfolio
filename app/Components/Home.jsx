@@ -4,8 +4,8 @@ import { MyContext } from "../Context/MyContext";
 import Image from "next/image";
 
 function Home() {
-    // const {EnOrFr,setEnOrFr}=useContext(MyContext)
-    const [EnOrFr, setEnOrFr] = useState("en")
+    const {EnOrFr,setEnOrFr}=useContext(MyContext)
+    // const [EnOrFr, setEnOrFr] = useState("en")
   return (
     <section className="mx-4">
         <div className="flex md:flex-row flex-col-reverse items-center justify-center gap-2 md:gap-12 lg:gap-28 pt-4 md:py-7 duration-300">
@@ -21,7 +21,7 @@ function Home() {
              {EnOrFr === "en" ? `
              I Specialize  in developing responsive websites and applications using the MERN stack,
               as well as advanced frameworks like Next.js and NestJS for optimal performance and scalability.
-             `:`Spécialise dans le développement de sites web et d'applications réactives en utilisant la stack MERN,
+             `:`Je me spécialise dans le développement de sites web et d'applications réactives en utilisant la stack MERN,
               ainsi que des frameworks avancés tels que Next.js et NestJS pour des performances et une scalabilité optimales.`}
             </p>
             {/* Social Link */}
