@@ -1,5 +1,27 @@
 export const projectsEn = [
     {
+        title: "E-Commerce Back-End",
+        type: "backend",
+        image: "/Projects/Ecom-backend.png",
+        websiteUrl: "/Requirements.docx.pdf",
+        githubUrl: "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+        githubUrls: "",
+        description:
+            `A robust and scalable back-end system for an e-commerce platform. The system handles various functions
+             such as user management, product inventory organization, order processing, payment handling (either via cash or card),
+             coupon addition, reviews, category and brand management, supplier management, and tax regulation.`,
+        technologies: [
+            { name: "Nestjs", logo: "/Skills/Nestjs.png" },
+            { name: "Node.js", logo: "/Skills/Nodejs.png" },
+            { name: "MongoDB ", logo: "/Skills/Mongodb.png" },
+            { name: "Typescript ", logo: "/Skills/typescript.png" },
+            { name: "jwt ", logo: "/Skills/jwt.jpg" },
+            { name: "stripe", logo: "/Skills/stripe.jpg" },
+            { name: "cloudinary", logo: "/Skills/cloudinary.jpg" },
+            { name: "Git", logo: "/Skills/Git.png" },
+        ],
+    },
+    {
         title: "Portfolio Platform",
         image: "/Projects/Linkerfolio.png",
         websiteUrl: "https://linkerfolio.vercel.app",
@@ -23,7 +45,7 @@ export const projectsEn = [
         Rapport: " ",
     },
     {
-        title: "Hotel App",
+        title: "Hotel Booking",
         image: "/Projects/HotelDash.png",
         websiteUrl: "https://edhotel.vercel.app/",
         githubUrl: "https://github.com/AbdellahEdaoudi/Hotel-management-system",
@@ -98,6 +120,28 @@ export const projectsEn = [
 
 export const projectsFr = [
     {
+        title: "Back-End E-Commerce",
+        type: "backend",
+        image: "/Projects/Ecom-backend.png",
+        websiteUrl: "/Requirements.docx.pdf",
+        githubUrl: "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+        githubUrls: "",
+        description:
+            `Un système back-end robuste et évolutif pour une plateforme de commerce électronique. Le système gère diverses fonctions telles que 
+            la gestion des utilisateurs, l'organisation de l'inventaire des produits, le traitement des commandes, la gestion des paiements (soit par carte ou par espèces), 
+            l'ajout de coupons, les avis, la gestion des catégories et des marques, la gestion des fournisseurs et la régulation des taxes.`,
+        technologies: [
+            { name: "Nestjs", logo: "/Skills/Nestjs.png" },
+            { name: "Node.js", logo: "/Skills/Nodejs.png" },
+            { name: "MongoDB", logo: "/Skills/Mongodb.png" },
+            { name: "Typescript", logo: "/Skills/typescript.png" },
+            { name: "jwt", logo: "/Skills/jwt.jpg" },
+            { name: "stripe", logo: "/Skills/stripe.jpg" },
+            { name: "cloudinary", logo: "/Skills/cloudinary.jpg" },
+            { name: "Git", logo: "/Skills/Git.png" }
+        ]
+    },    
+    {
         title: "Plateforme de Portfolio",
         image: "/Projects/Linkerfolio.png",
         websiteUrl: "https://linkerfolio.vercel.app",
@@ -123,7 +167,7 @@ export const projectsFr = [
         Rapport: " ",
     },
     {
-        title: "Gestion d'Hotel",
+        title: "Réservation d'hôtel",
         image: "/Projects/HotelDash.png",
         websiteUrl: "https://edhotel.vercel.app/",
         githubUrl: "https://github.com/AbdellahEdaoudi/Hotel-management-system",
