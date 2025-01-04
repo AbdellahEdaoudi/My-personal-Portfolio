@@ -35,11 +35,11 @@ function Projects() {
               onClick={() => window.open(p.websiteUrl, '_blank')}
             />
             <div>
-              <div className="flex justify-around items-center">
-                <h1 className="p-3 underline">{p.title}</h1>
-                <a href={p.websiteUrl} className="flex items-center pr-2 hover:scale-105 duration-300 hover:text-sky-500 hover:bg-sky-50 border p-1 rounded-md bg-gray-100" target="_blank">
-                  <Image src="/Projects/WebSite.png" width={20} height={20} alt="WebSite" />
-                  <span className="ml-2 text-sm ">Live Demo</span>
+              <div className="flex justify-around items-center px-1 text-[16px] p-3">
+                <h1 className=" underline ">{p.title}</h1>
+                <a href={p.websiteUrl} className="flex items-center pr-1 hover:scale-105 duration-300 hover:text-sky-500 hover:bg-sky-50 border p-1 rounded-md bg-gray-100" target="_blank">
+                  <Image src="/Projects/WebSite.png" width={17} height={17} alt="WebSite" />
+                  <span className="ml-1 text-sm">Live Demo</span>
                 </a>
               </div>
               {/* Description */}
@@ -68,7 +68,9 @@ function Projects() {
                <div className="flex justify-around items-center mt-3 space-x-4">
                  <a href={p.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
                    <Image src={"/Icons/github.svg"} alt={"Github Logo"} width={25} height={25} className="mr-2 rounded-full" />
-                   <span className="text-sm">Frontend</span>
+                   <span className="text-sm">
+                   {p.type === "backend" ? "View on GitHub" : "Frontend"}
+                   </span>
                  </a>
                  {p.githubUrls && (
                    <a href={p.githubUrls} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
