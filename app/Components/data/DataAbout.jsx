@@ -5,13 +5,13 @@
     experience: "Experience",
     experienceDetail: "1 year Working",
     completed: "Completed",
-    completedDetail: "+5 Projects",
+    completedDetail: "+6 Projects",
     support: "Support",
     supportDetail: "Online 24/7",
     description:
       `I have extensive experience in transforming ideas into innovative and effective applications, with a focus on enhancing user experience and developing attractive user interfaces.`,
     downloadCv: "Résumé",
-    Cv: "/Cv_Abdellah_Edaoudi.en.pdf"
+    Cv: "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
   };
 
   export const aboutContentFr = {
@@ -20,7 +20,7 @@
     experience: "Expérience",
     experienceDetail: "1 an de travail",
     completed: "Réalisé",
-    completedDetail: "+5 Projets",
+    completedDetail: "+6 Projets",
     support: "Support",
     supportDetail: "En ligne 24/7",
     description:
@@ -28,5 +28,5 @@
        avec un accent sur l’amélioration de l’expérience utilisateur et le développement
        d’interfaces utilisateur attrayantes.`,
     downloadCv: "Résumé",
-    Cv: "/Cv_Abdellah_Edaoudi.fr.pdf"
+    Cv: "/Resume/Cv_Abdellah_Edaoudi.fr.pdf"
   };
