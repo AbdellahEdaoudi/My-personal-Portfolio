@@ -14,13 +14,13 @@ export const metadata = {
   ogTitle: "Abdellah Edaoudi - Projects",
   ogDescription:
     "Explore the Projects of Abdellah Edaoudi, a MERN Stack Developer. View projects including E-commerce App and Hotel App.",
-  ogImage: "https://ed-portfolioo.vercel.app/profile-pic.png",
-  ogUrl: "https://ed-portfolioo.vercel.app/Portfolio",
+  ogImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
+  ogUrl: "https://abdellah-edaoudi.vercel.app/Projects",
   twitterTitle: "Abdellah Edaoudi - Projects",
   twitterDescription:
     "Explore the Projects of Abdellah Edaoudi, a MERN Stack Developer. View projects including E-commerce App and Hotel App.",
-  twitterImage: "https://ed-portfolioo.vercel.app/profile-pic.png",
-  twitterCard: "summary_large_image",
+  twitterImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
+  twitterCard: "https://x.com/Edaoudi_abde/header_photo",
 };
 function page() {
   return (

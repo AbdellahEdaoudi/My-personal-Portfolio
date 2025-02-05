@@ -12,13 +12,13 @@ export const metadata = {
     ogTitle: "Abdellah Edaoudi - Professional Experience",
     ogDescription:
       "Explore Abdellah Edaoudi's professional experience in web development and projects.",
-    ogImage: "https://ed-portfolioo.vercel.app/profile-pic.png",
-    ogUrl: "https://ed-portfolioo.vercel.app/Experience",
+    ogImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
+    ogUrl: "https://abdellah-edaoudi.vercel.app/Experience",
     twitterTitle: "Abdellah Edaoudi - Professional Experience",
     twitterDescription:
       "Explore Abdellah Edaoudi's professional experience in web development and projects.",
-    twitterImage: "https://ed-portfolioo.vercel.app/profile-pic.png",
-    twitterCard: "summary_large_image",
+    twitterImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
+    twitterCard: "https://x.com/Edaoudi_abde/header_photo",
   };
   
 function page() {

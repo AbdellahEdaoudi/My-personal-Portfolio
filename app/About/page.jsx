@@ -8,7 +8,7 @@ import EducationSection from "../Components/Qualification/en_fr";
 import ExperienceSection from "../Components/Experience/en_fr";
 
 export const metadata = {
-  title: "Abdellah Edaoudi - About Me",
+  title: "Abdellah Edaoudi - About",
   description:
     "Learn more about Abdellah Edaoudi, a MERN Stack Developer with 1 year of experience and 3 completed projects.",
   keywords:
@@ -17,10 +17,10 @@ export const metadata = {
     title: "Abdellah Edaoudi - About Me",
     description:
       "Learn more about Abdellah Edaoudi, a MERN Stack Developer with 1 year of experience and 3 completed projects.",
-    url: "https://ed-portfolioo.vercel.app/about",
+    url: "https://abdellah-edaoudi.vercel.app/About",
     images: [
       {
-        url: "https://ed-portfolioo.vercel.app/profile-pic.png",
+        url: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
         width: 800,
         height: 600,
         alt: "Abdellah Edaoudi Profile Picture",
@@ -28,11 +28,11 @@ export const metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "https://x.com/Edaoudi_abde/header_photo",
     title: "Abdellah Edaoudi - About Me",
     description:
       "Learn more about Abdellah Edaoudi, a MERN Stack Developer with 1 year of experience and 3 completed projects.",
-    image: "https://ed-portfolioo.vercel.app/profile-pic.png",
+    image: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
   },
 };
 function page() {
