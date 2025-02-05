@@ -25,8 +25,8 @@ export const projectsEn = [
         title: "Portfolio Platform",
         image: "/Projects/Linkerfolio.png",
         websiteUrl: "https://linkerfolio.vercel.app",
-        githubUrl: "https://github.com/AbdellahEdaoudi/LinkerFolio-App",
-        githubUrls: "https://github.com/AbdellahEdaoudi/Server-LinkerFolio",
+        githubUrl: "https://github.com/AbdellahEdaoudi/Portfolio-Platform-Project-Front",
+        githubUrls: "https://github.com/AbdellahEdaoudi/Portfolio-Platform-Project-Server",
         description:
             `Innovative application I developed, allowing users to showcase their professional portfolio
              and social media links in one place. This app helps users manage their digital identity effectively, making it an ideal tool for job
@@ -145,8 +145,8 @@ export const projectsFr = [
         title: "Plateforme de Portfolio",
         image: "/Projects/Linkerfolio.png",
         websiteUrl: "https://linkerfolio.vercel.app",
-        githubUrl: "https://github.com/AbdellahEdaoudi/LinkerFolio-App",
-        githubUrls: "https://github.com/AbdellahEdaoudi/Server-LinkerFolio",
+        githubUrl: "https://github.com/AbdellahEdaoudi/Portfolio-Platform-Project-Front",
+        githubUrls: "https://github.com/AbdellahEdaoudi/Portfolio-Platform-Project-Server",
         description:
             `Une application innovante que j'ai développée,
              permettant aux utilisateurs de présenter leur portfolio professionnel
