@@ -15,13 +15,13 @@ export const metadata = {
   ogTitle: "Abdellah Edaoudi - Skills",
   ogDescription:
     "Explore the technical skills and expertise of Abdellah Edaoudi, including frontend and backend development skills.",
-  ogImage: "https://ed-portfolioo.vercel.app/profile-pic.png",
-  ogUrl: "https://ed-portfolioo.vercel.app/Skills",
+  ogImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
+  ogUrl: "https://abdellah-edaoudi.vercel.app/Skills",
   twitterTitle: "Abdellah Edaoudi - Skills",
   twitterDescription:
     "Explore the technical skills and expertise of Abdellah Edaoudi, including frontend and backend development skills.",
-  twitterImage: "https://ed-portfolioo.vercel.app/profile-pic.png",
-  twitterCard: "summary_large_image",
+  twitterImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
+  twitterCard: "https://x.com/Edaoudi_abde/header_photo",
 };
 function page() {
   return (

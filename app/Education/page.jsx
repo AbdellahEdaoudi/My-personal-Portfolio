@@ -10,16 +10,16 @@ export const metadata = {
     "Discover Abdellah Edaoudi's personal journey including education and professional experience.",
   keywords:
     "Abdellah Edaoudi, Qualifications, Education, Experience, Web Development, Internship",
-  ogTitle: "Abdellah Edaoudi - Qualifications",
+  ogTitle: "Abdellah Edaoudi - Education",
   ogDescription:
     "Discover Abdellah Edaoudi's personal journey including education and professional experience.",
-  ogImage: "https://ed-portfolioo.vercel.app/profile-pic.png",
-  ogUrl: "https://ed-portfolioo.vercel.app/Qualification",
-  twitterTitle: "Abdellah Edaoudi - Qualifications",
+  ogImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
+  ogUrl: "https://abdellah-edaoudi.vercel.app/Education",
+  twitterTitle: "Abdellah Edaoudi - Education",
   twitterDescription:
     "Discover Abdellah Edaoudi's personal journey including education and professional experience.",
-  twitterImage: "https://ed-portfolioo.vercel.app/profile-pic.png",
-  twitterCard: "summary_large_image",
+  twitterImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
+  twitterCard: "https://x.com/Edaoudi_abde/header_photo",
 };
 function page() {
   return (

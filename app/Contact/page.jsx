@@ -4,19 +4,19 @@ import Contact from "../Components/Contact";
 import Header from "../Components/Header";
 
 export const metadata = {
-  title: "Abdellah Edaoudi - Contact Me",
+  title: "Abdellah Edaoudi - Contact",
   description:
     "Get in touch with Abdellah Edaoudi. Contact me via email, WhatsApp, or Messenger.",
   keywords:
-    "Abdellah Edaoudi, Contact, MERN Stack Developer, Web Development, React, Node.js",
+    "Abdellah Edaoudi, Contact, MERN Stack Developer, Web Development",
   openGraph: {
-    title: "Abdellah Edaoudi - Contact Me",
+    title: "Abdellah Edaoudi - Contact",
     description:
       "Get in touch with Abdellah Edaoudi. Contact me via email, WhatsApp, or Messenger.",
-    url: "https://ed-portfolioo.vercel.app/contact",
+    url: "https://abdellah-edaoudi.vercel.app/Contact",
     images: [
       {
-        url: "https://ed-portfolioo.vercel.app/profile-pic.png",
+        url: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
         width: 800,
         height: 600,
         alt: "Abdellah Edaoudi Profile Picture",
@@ -24,11 +24,11 @@ export const metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "https://x.com/Edaoudi_abde/header_photo",
     title: "Abdellah Edaoudi - Contact Me",
     description:
       "Get in touch with Abdellah Edaoudi. Contact me via email, WhatsApp, or Messenger.",
-    image: "https://ed-portfolioo.vercel.app/profile-pic.png",
+    image: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
   },
 };
 function page() {
