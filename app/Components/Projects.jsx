@@ -25,7 +25,7 @@ function Projects() {
         <p className="text-4xl font-bold">{EnOrFr === "en" ? "Projects" : "Projets"}</p>
         <p className="text-gray-400 text-sm">{EnOrFr === "en" ? "Most recent work" : "Travaux les plus récents"}</p>
       </div>
-      <div className="flex flex-wrap justify-around mx-3">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 justify-items-center">
         {projects.map((p, i) => (
           <div key={i} className="bg-white flex flex-col w-80 hover:scale-105 border duration-300 rounded-lg shadow-lg pb-4 mb-5">
             <Image width={1000} height={200}
