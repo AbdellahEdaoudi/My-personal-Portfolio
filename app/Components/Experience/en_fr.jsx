@@ -16,7 +16,7 @@ export default function ExperienceSection() {
       </div>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2  gap-4 md:mx-10">
-         <ExperienceCard
+         {/* <ExperienceCard
           title={EnOrFr === "en" ? "Full Stack Developer - Portfolio Platform Project" : "Développeur Full Stack - Plateforme de Portfolio"}
           company="LinkerFolio"
           location={EnOrFr === "en" ? "El-Aaiun , Morocco" : "Laayoune , Maroc"}
@@ -49,7 +49,7 @@ export default function ExperienceSection() {
               : "Ajout d'une option pour personnaliser la couleur de fond du portfolio afin qu'elle corresponde au style personnel de l'utilisateur."
           ]}
           
-        />
+        /> */}
         
         <ExperienceCard
           title={EnOrFr === "en" ? "Full Stack MERN Developer" : "Développeur Full Stack MERN"}
@@ -62,29 +62,26 @@ export default function ExperienceSection() {
           workType={EnOrFr === "en" ? "Hybrid" : "Hybride"}
           responsibilities={[
             EnOrFr === "en" 
-              ? "Analyzed and defined system requirements through use case diagrams and class diagrams." 
-              : "Analyse et définition des exigences du système à travers des diagrammes de cas d'utilisation et des diagrammes de classes.",
-          
+              ? "Designed and developed a task management application allowing users to add, edit, and delete tasks."
+              : "Conçu et développé une application de gestion des tâches permettant aux utilisateurs d'ajouter, modifier et supprimer des tâches.",
+            
             EnOrFr === "en" 
-              ? "Developed an interactive user interface using React.js and Tailwind CSS." 
-              : "Développé une interface utilisateur interactive avec React.js et Tailwind CSS.",
-          
+              ? "Implemented authentication and authorization using JWT to ensure the security of the application."
+              : "Mis en œuvre l'authentification et l'autorisation à l'aide de JWT pour garantir la sécurité de l'application.",
+            
             EnOrFr === "en" 
-              ? "Built a robust backend with Node.js and MongoDB." 
-              : "Construit un backend robuste avec Node.js et MongoDB.",
-          
+              ? "Tested API endpoints using Postman to ensure proper functionality."
+              : "Testé les points de terminaison de l'API à l'aide de Postman pour garantir leur bon fonctionnement.",
+            
             EnOrFr === "en" 
-              ? "Implemented authentication and authorization to ensure user security and define permissions." 
-              : "Mise en œuvre de l'authentification et de l'autorisation pour garantir la sécurité des utilisateurs et définir les permissions.",
-          
+              ? "Improved user experience by designing a simple and user-friendly interface."
+              : "Amélioré l'expérience utilisateur en concevant une interface simple et conviviale.",
+            
             EnOrFr === "en" 
-              ? "Tested APIs with Postman and ensured system integration." 
-              : "Testé les API avec Postman et assuré l'intégration du système.",
-          
-            EnOrFr === "en" 
-              ? "Used Git and GitHub for source code management and team collaboration." 
-              : "Utilisation de Git et GitHub pour la gestion du code source et la collaboration en équipe."
+              ? "Deployed the application on Vercel and managed the codebase using Git/GitHub."
+              : "Déployé l'application sur Vercel et géré le code à l'aide de Git/GitHub."
           ]}
+          
         />
         
         <ExperienceCard
