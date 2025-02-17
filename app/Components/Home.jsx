@@ -67,10 +67,14 @@ function Home() {
             </div>
         </div>
             {/* Image */}
+          <div className="relative">
           <Image src="/profile-pic.png" 
-          className="imganim md:w-80  w-56 " 
+          className="md:absolute imganim md:w-80  w-56 " 
           width={500} height={500} 
           /> 
+            <div className=" imganim md:w-80  w-56 md:h-[360px] bg-gray-300 animate-puls" ></div>
+          </div>
+          
           
     </div>
     </section>
