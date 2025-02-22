@@ -80,7 +80,7 @@ function Admin() {
     <RequireAuth>
       <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-r from-blue-400 to-indigo-600 p-4 md:p-8">
         <h1 className="text-4xl cursor-pointer font-extrabold text-white mb-8">Manage Contacts</h1>
-        <div className="flex mb-8 text-md">
+        <div className="flex flex-wrap gap-2 items-center justify-center mb-8 text-md">
           <Link
             href='/'
             className="bg-green-600 hover:bg-green-800 mr-4 text-white font-bold p-2 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
@@ -100,7 +100,7 @@ function Admin() {
             Add Messages
           </button>
           <Link href={`/Admin/Users-Location`} className='p-2  ml-3 rounded-md bg-yellow-500'>
-            <UserRoundSearch lassName="text-white w-6 h-6" />
+            <UserRoundSearch className="text-black w-6 h-6" />
           </Link>
         </div>
         
