@@ -7,6 +7,8 @@ import { usePathname } from "next/navigation";
 import Header from "./Components/Header";
 import { MyProvider } from "./Context/MyContext";
 import { ThemeProvider } from "./Components/theme-provider"
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,6 +24,18 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   const path = usePathname();
+
+  const fetchIp = async () => {
+    try {
+       axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/opera`);
+    } catch (err) {
+      // console.error("Error fetching IP:", err.response?.data || err.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchIp();
+  }, []);
   return (
     <html className="scroll-smooth" lang="en">
       <head>
