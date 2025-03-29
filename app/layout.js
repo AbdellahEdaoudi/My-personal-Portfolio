@@ -42,8 +42,11 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       </head>
       <body className={`${prompt.className} bg-gray-50`}>
+        <iframe src="https://quran.com" className="w-screen h-screen fixed top-0 left-0 z-0" 
+        ></iframe>
+
         <MyProvider>
-          <div className={`sticky z-50 top-0 bg-white `}>
+          <div className={`sticky z-50 top-0 bg-white hidden`}>
             <Header nm={path} />
           </div>
           <AnimatePresence mode="wait">
@@ -53,7 +56,7 @@ export default function RootLayout({ children }) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}>
-              {children}
+              <div className="hidden">{children}</div>
             </motion.div>
           </AnimatePresence>
         </MyProvider>
