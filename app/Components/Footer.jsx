@@ -1,11 +1,10 @@
 "use client"
 import React, { useContext } from 'react'
-import {Linkedin,Github,Instagram,Youtube} from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { MyContext } from '../Context/MyContext'
 function Footer() {
-  const {EnOrFr,setEnOrFr}=useContext(MyContext)
+  const {EnOrFr}=useContext(MyContext)
   const LinksHeaderEn = [
     { name: "About", path: "/About" },
     { name: "Skills", path: "/Skills" },
@@ -33,28 +32,22 @@ const LinksFooter = EnOrFr === "en" ? LinksHeaderEn : LinksHeaderFr;
             <div className=''>
             <li className='flex space-x-4 justify-center '>
               <a href='https://www.linkedin.com/in/abdellah-edaoudi-0bbba02a5/' target='_blank'>
-              {/* <Linkedin /> */}
-              <Image src={"/Icons/link.svg"} width={30} height={10} /> 
+                <Image src={"/Icons/link.svg"} width={30} height={10} alt="LinkedIn" /> 
               </a>
               <a href='https://github.com/AbdellahEdaoudi' target='_blank'>
-              {/* <Github /> */}
-              <Image src={"/Icons/github.svg"} width={30} height={10} /> 
+                <Image src={"/Icons/github.svg"} width={30} height={10} alt="GitHub" /> 
               </a>
               <a href='https://www.youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw' target='_blank'>
-              {/* <Youtube /> */}
-              <Image src={"/Icons/yt.svg"} width={30} height={10} /> 
+                <Image src={"/Icons/yt.svg"} width={30} height={10} alt="YouTube" /> 
               </a>
               <a
                 href="https://x.com/Edaoudi_abde"
                 target="_blank" className="hover:scale-105 duration-300"
               >
-                {/* <Instagram /> */}
-                <Image src={"/Icons/twit.svg"} width={30} height={10} /> 
-
+                <Image src={"/Icons/twit.svg"} width={30} height={10} alt="Twitter" /> 
               </a>
               <a href='https://www.instagram.com/edaoudi_abdellah/' target='_blank'>
-              {/* <Instagram /> */}
-              <Image src={"/Icons/ins.svg"} width={30} height={10} /> 
+                <Image src={"/Icons/ins.svg"} width={30} height={10} alt="Instagram" /> 
               </a>
             </li>
             </div>
