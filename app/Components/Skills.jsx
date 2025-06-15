@@ -14,38 +14,38 @@ function Skills() {
     { name: "ReactJS", logo: <FaReact className="text-blue-500" /> },
     { name: "TailwindCss", logo: <SiTailwindcss className="text-teal-500" /> },
     { name: "BootStrap", logo: <SiBootstrap className="text-purple-600" /> },
-    { name: "Shadcn/ui", logo: <Image height={20} width={20} src={'/Skills/shadcn.png'} className="rounded-full" /> },
+    { name: "Shadcn/ui", logo: <Image height={20} width={20} src={'/Skills/shadcn.png'} alt="Shadcn UI" className="rounded-full" /> },
   ];
 
   const BackEnd = [
-    { name: "NestJS", logo: <Image height={20} width={20} src={'/Skills/Nestjs.png'} className="rounded-full" /> },
+    { name: "NestJS", logo: <Image height={20} width={20} src={'/Skills/Nestjs.png'} alt="NestJS" className="rounded-full" /> },
     { name: "NodeJS", logo: <FaNodeJs className="text-green-500" /> },
-    { name: "ExpressJs", logo: <Image height={20} width={20} src={'/Skills/ExpressJs.png'} className="rounded-full" /> },
+    { name: "ExpressJs", logo: <Image height={20} width={20} src={'/Skills/ExpressJs.png'} alt="ExpressJS" className="rounded-full" /> },
     { name: "MongoDB", logo: <SiMongodb className="text-green-700" /> },
-    { name: "Socket.io", logo: <Image height={20} width={20} src={'/Skills/Socket.io.png'} className="rounded-full" /> },
+    { name: "Socket.io", logo: <Image height={20} width={20} src={'/Skills/Socket.io.png'} alt="Socket.io" className="rounded-full" /> },
   ];
 
   const Tools = [
     { name: "Git/Github", logo: <FaGitAlt className="text-orange-500" /> },
     { name: "Docker", logo: <FaDocker className="text-blue-400" /> },
     { name: "Postman", logo: <SiPostman className="text-orange-400" /> },
-    { name: "Studio3T", logo: <Image height={20} width={20} src={'/Skills/Studio3T.png'} className="rounded-full" /> },
-    { name: "VSCode", logo: <Image height={20} width={20} src={'/Skills/VSCode.png'} className="rounded-full" /> },
-    { name: "Vercel", logo: <Image height={20} width={20} src={'/Skills/Vercel.png'} className="rounded-full" /> },
+    { name: "Studio3T", logo: <Image height={20} width={20} src={'/Skills/Studio3T.png'} alt="Studio3T" className="rounded-full" /> },
+    { name: "VSCode", logo: <Image height={20} width={20} src={'/Skills/VSCode.png'} alt="VSCode" className="rounded-full" /> },
+    { name: "Vercel", logo: <Image height={20} width={20} src={'/Skills/Vercel.png'} alt="Vercel" className="rounded-full" /> },
   ];
 
   const SoftSkillsEn = [
-    { name: "Problem Solving", logo: <Image height={30} width={30} src={'/Skills/Problem Solving.png'} className="rounded-full" /> },
-    { name: "Teamwork", logo: <Image height={40} width={40} src={'/Skills/Teamwork.jpg'} className="rounded-full" /> },
-    { name: "Communication", logo: <Image height={40} width={40} src={'/Skills/Communication.png'} className="rounded-full" /> },
-    { name: "Adaptability", logo: <Image height={23} width={23} src={'/Skills/Adaptability.png'} /> },
+    { name: "Problem Solving", logo: <Image height={30} width={30} src={'/Skills/Problem Solving.png'} alt="Problem Solving" className="rounded-full" /> },
+    { name: "Teamwork", logo: <Image height={40} width={40} src={'/Skills/Teamwork.jpg'} alt="Teamwork" className="rounded-full" /> },
+    { name: "Communication", logo: <Image height={40} width={40} src={'/Skills/Communication.png'} alt="Communication" className="rounded-full" /> },
+    { name: "Adaptability", logo: <Image height={23} width={23} src={'/Skills/Adaptability.png'} alt="Adaptability" /> },
   ];
 
   const SoftSkillsFr = [
-    { name: "Résolution de problèmes", logo: <Image height={30} width={30} src={'/Skills/Problem Solving.png'} className="rounded-full" /> },
-    { name: "Travail en équipe", logo: <Image height={40} width={40} src={'/Skills/Teamwork.jpg'} className="rounded-full" /> },
-    { name: "Communication", logo: <Image height={40} width={40} src={'/Skills/Communication.png'} className="rounded-full" /> },
-    { name: "Adaptabilité", logo: <Image height={23} width={23} src={'/Skills/Adaptability.png'} /> },
+    { name: "Résolution de problèmes", logo: <Image height={30} width={30} src={'/Skills/Problem Solving.png'} alt="Résolution de problèmes" className="rounded-full" /> },
+    { name: "Travail en équipe", logo: <Image height={40} width={40} src={'/Skills/Teamwork.jpg'} alt="Travail en équipe" className="rounded-full" /> },
+    { name: "Communication", logo: <Image height={40} width={40} src={'/Skills/Communication.png'} alt="Communication" className="rounded-full" /> },
+    { name: "Adaptabilité", logo: <Image height={23} width={23} src={'/Skills/Adaptability.png'} alt="Adaptabilité" /> },
   ];
 
   const contentEn = {

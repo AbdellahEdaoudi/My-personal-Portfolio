@@ -31,21 +31,21 @@ function Home() {
                 target="_blank" className="hover:scale-105 duration-300"
               >
                 {/* <Linkedin /> */}
-                <Image src={"/Icons/link.svg"} width={30} height={10} /> 
+                <Image src={"/Icons/link.svg"} alt="" width={30} height={10} /> 
               </a>
               <a 
               href="https://github.com/AbdellahEdaoudi" 
               target="_blank" className="hover:scale-105 duration-300"
               >
                 {/* <Github /> */}
-                <Image src={"/Icons/github.svg"} width={30} height={10} /> 
+                <Image src={"/Icons/github.svg"} alt="" width={30} height={10} /> 
               </a>
               <a
                 href="https://www.youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw"
                 target="_blank" className="hover:scale-105 duration-300"
               >
                 {/* <Youtube /> */}
-                <Image src={"/Icons/yt.svg"} width={30} height={10} /> 
+                <Image src={"/Icons/yt.svg"} alt="" width={30} height={10} /> 
 
               </a>
               <a
@@ -53,7 +53,7 @@ function Home() {
                 target="_blank" className="hover:scale-105 duration-300"
               >
                 {/* <Instagram /> */}
-                <Image src={"/Icons/twit.svg"} width={30} height={10} /> 
+                <Image src={"/Icons/twit.svg"} alt="" width={30} height={10} /> 
 
               </a>
               <a
@@ -61,7 +61,7 @@ function Home() {
                 target="_blank" className="hover:scale-105 duration-300"
               >
                 {/* <Instagram /> */}
-                <Image src={"/Icons/ins.svg"} width={30} height={10} /> 
+                <Image src={"/Icons/ins.svg"} alt="" width={30} height={10} /> 
 
               </a>
             </div>
@@ -69,7 +69,7 @@ function Home() {
             {/* Image */}
           <div className="relative">
           <Image src="/profile-pic.png" 
-          className="md:absolute imganim md:w-80  w-56 " 
+          className="md:absolute imganim md:w-80  w-56 "  alt=""
           width={500} height={500} 
           /> 
             <div className=" imganim md:w-80  w-56 md:h-[360px] bg-gray-300 animate-puls" ></div>
