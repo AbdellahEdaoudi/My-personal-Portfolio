@@ -8,13 +8,13 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'ed-portfolioo.vercel.app',
+        hostname: 'abdellah-edaoudi.vercel.app',
         pathname: '/**',
       },
     ],
   },
   env: {
-    metadataBase: 'https://ed-portfolioo.vercel.app',
+    metadataBase: 'https://abdellah-edaoudi.vercel.app',
   },
 };
 

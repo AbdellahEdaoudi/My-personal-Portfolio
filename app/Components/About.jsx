@@ -16,7 +16,7 @@ function About() {
       </div>
       <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 pt-2 md:pt-7 px-4">
         <div className="flex flex-col-reverse  md:items-start items-center md:flex-row gap-6 md:gap-28">
-         <Image src="/profile-pic.png" 
+         <Image src="/profile-pic.png" alt="Profile Picture"
                    className="imganim md:w-80  w-56 md:block hidden " 
                    width={500} height={500} 
                    /> 
