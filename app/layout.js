@@ -5,6 +5,7 @@ import { MyProvider } from "./Context/MyContext";
 import { ThemeProvider } from "./Components/theme-provider"
 import ClientHeader from "./Components/Header/ClientHeader";
 import ClientIpFetcher from "./Components/ClientIpFetcher/ClientIpFetcher";
+import Script from "next/script";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,8 +20,8 @@ const prompt = Prompt({ subsets: ["latin"], weight: '500' });
 
 export const metadata = {
   title: "Abdellah Edaoudi",
-  description: "Specialize in developing responsive websites and applications using the MERN stack, as well as advanced frameworks like Next.js and NestJS for optimal performance and scalability.",
-  keywords: "MERN stack, Full Stack Developer, Next.js, NestJS, Web Development, Scalable Web Applications, JavaScript Developer, Front-End Development, Back-End Development, Responsive Design, Custom Web Solutions, Node.js, React Development, Express.js, MongoDB Development, SEO Optimization, Web App Performance, Cross-Platform Web Development,Abdellah, Edaoudi, Abdellah Edaoudi, Abdellah daoudi, Software Engineer, Web Applications,Digital Developer,API Integration",
+  description: "I'm Abdellah Edaoudi, a full stack developer specialize in developing responsive websites and applications using the MERN stack, as well as advanced frameworks like Next.js and NestJS for optimal performance and scalability.",
+  keywords: "Abdellah Edaoudi, عبدالله الداودي, MERN stack, Full Stack Developer, Next.js, NestJS, Web Development, Scalable Web Applications, JavaScript Developer, Front-End Development, Back-End Development, Responsive Design, Custom Web Solutions, Node.js, React Development, Express.js, MongoDB Development, SEO Optimization, Web App Performance, Cross-Platform Web Development, Abdellah, Edaoudi, Abdellah daoudi, Software Engineer, Web Applications, Digital Developer, API Integration",
   openGraph: {
     title: "Abdellah Edaoudi",
     description: "Welcome to the official portfolio of Abdellah Edaoudi, a Digital Developer specializing in MERN-Stack. Explore my projects, skills, and experiences in building responsive websites and applications using Next.js (React.js), Tailwind CSS, and Node.js.",
@@ -45,14 +46,7 @@ export const metadata = {
     description: "Welcome to the official portfolio of Abdellah Edaoudi, a Digital Developer specializing in MERN-Stack. Explore my projects, skills, and experiences in building responsive websites and applications using Next.js (React.js), Tailwind CSS, and Node.js.",
     image: 'https://abdellah-edaoudi.vercel.app/profile-pic.png',
   },
-  instagram: {
-    site: '@edaoudi_abdellah'
-  },
   robots: 'index, follow',
-  google: {
-    name: 'Abdellah Edaoudi - MERN Stack Developer | Portfolio',
-    description: 'Welcome to the official portfolio of Abdellah Edaoudi, a Digital Developer specializing in MERN-Stack. Explore my projects, skills, and experiences in building responsive websites and applications using Next.js (React.js), Tailwind CSS, and Node.js.'
-  },
   author: 'Abdellah Edaoudi',
   canonical: 'https://abdellah-edaoudi.vercel.app',
   additionalMetaTags: [
@@ -74,7 +68,7 @@ export const metadata = {
     },
     {
       name: 'keywords',
-      content: 'Abdellah Edaoudi, Abdellah, Edaoudi, MERN Stack Developer, Portfolio, Web Development, React, Node.js, MongoDB, Express.js, JavaScript, Frontend Developer, Backend Developer, Software Engineer, Web Applications, Tailwind CSS, Next.js, Digital Developer, UI/UX Design, API Integration, Responsive Design'
+      content: 'Abdellah Edaoudi, عبدالله الداودي, MERN Stack Developer, Portfolio, Web Development, React, Node.js, MongoDB, Express.js, JavaScript, Frontend Developer, Backend Developer, Software Engineer, Web Applications, Tailwind CSS, Next.js, Digital Developer, UI/UX Design, API Integration, Responsive Design'
     },
     {
       name: 'twitter:card',
@@ -82,11 +76,32 @@ export const metadata = {
     }
   ]
 };
+
 export default function RootLayout({ children }) {
+
+  const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abdellah Edaoudi (عبدالله الداودي)",
+  "url": "https://abdellah-edaoudi.vercel.app",
+  "sameAs": [
+    "https://twitter.com/Edaoudi_abde",
+    "https://instagram.com/edaoudi_abdellah",
+    "https://linkedin.com/in/abdellah-edaoudi"
+  ],
+  "additionalName": ["عبد الله الداودي", "عبدالله الدودي", "الداودي عبدالله", "الدودي عبدالله"],
+};
+
 
   return (
     <html className="scroll-smooth" lang="en">
       <head>
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          strategy="afterInteractive"
+        />
         <link rel="stylesheet" 
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       </head>
