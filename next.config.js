@@ -1,4 +1,7 @@
+// /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // output: 'export',
+
   images: {
     remotePatterns: [
       {
@@ -13,6 +16,7 @@ const nextConfig = {
       },
     ],
   },
+
   env: {
     metadataBase: 'https://abdellah-edaoudi.vercel.app',
   },
