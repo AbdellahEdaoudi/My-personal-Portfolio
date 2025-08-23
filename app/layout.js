@@ -8,7 +8,7 @@ import ClientIpFetcher from "./Components/ClientIpFetcher/ClientIpFetcher";
 import Script from "next/script";
 
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 const prompt = Prompt({ subsets: ["latin"], weight: '500' });
 
 // export const viewport = {

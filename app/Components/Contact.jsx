@@ -96,7 +96,7 @@ function Contact() {
               <img src="./whatsapp.png" width={25} alt="whatsapp" />
             </li>
             <li>WhatsApp</li>
-            <li className="text-[12px] text-gray-400">+212 609085357</li>
+            <li className="text-[12px] text-gray-400">+212 607071966</li>
             <li className="flex items-center text-gray-400 justify-center text-[12px]">
               {EnOrFr === "en" ? "Write me" : "Écrivez-moi"} <ArrowBigRight />
             </li>
