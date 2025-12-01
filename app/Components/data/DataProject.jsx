@@ -22,13 +22,13 @@ export const projectsEn = [
         ],
     },
     {
-        title: "Portfolio Platform",
+        title: "Resume Platform",
         image: "/Projects/Linkerfolio.png",
         websiteUrl: "https://linkerfolio.vercel.app",
-        githubUrl: "https://github.com/AbdellahEdaoudi/Portfolio-Platform-Project-Front",
-        githubUrls: "https://github.com/AbdellahEdaoudi/Portfolio-Platform-Project-Server",
+        githubUrl: "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+        githubUrls: "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
         description:
-            `Innovative application I developed, allowing users to showcase their professional portfolio
+            `Innovative application I developed, allowing users to showcase their professional Resume
              and social media links in one place. This app helps users manage their digital identity effectively, making it an ideal tool for job
              seekers or anyone looking to enhance their online presence and digital influence.`,
         technologies: [
@@ -142,14 +142,14 @@ export const projectsFr = [
         ]
     },    
     {
-        title: "Plateforme de Portfolio",
+        title: "Plateforme de Resume",
         image: "/Projects/Linkerfolio.png",
         websiteUrl: "https://linkerfolio.vercel.app",
-        githubUrl: "https://github.com/AbdellahEdaoudi/Portfolio-Platform-Project-Front",
-        githubUrls: "https://github.com/AbdellahEdaoudi/Portfolio-Platform-Project-Server",
+        githubUrl: "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+        githubUrls: "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
         description:
             `Une application innovante que j'ai développée,
-             permettant aux utilisateurs de présenter leur portfolio professionnel
+             permettant aux utilisateurs de présenter leur Resume professionnel
               et leurs liens de réseaux sociaux en un seul endroit. Cette application
              aide les utilisateurs à gérer efficacement leur identité numérique, ce qui en fait un outil idéal pour les chercheurs d'emploi ou
              toute personne souhaitant améliorer sa visibilité et son influence dans le monde numérique.`,
