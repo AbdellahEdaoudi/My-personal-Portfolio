@@ -16,41 +16,6 @@ export default function ExperienceSection() {
       </div>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2  gap-4 md:mx-10">
-         {/* <ExperienceCard
-          title={EnOrFr === "en" ? "Full Stack Developer - Portfolio Platform Project" : "Développeur Full Stack - Plateforme de Portfolio"}
-          company="LinkerFolio"
-          location={EnOrFr === "en" ? "El-Aaiun , Morocco" : "Laayoune , Maroc"}
-          startDate="Aug 2024"
-          endDate="Oct 2024"
-          duration={EnOrFr === "en" ? "3 mos" : "3 mois"}
-          type={EnOrFr === "en" ? "Self-employed" : "Self-employed"}
-          workType={EnOrFr === "en" ? "" : ""}
-          responsibilities={[
-            EnOrFr === "en"
-              ? "Developed an elegant interface to showcase professional portfolios."
-              : "Développement d'une interface élégante pour présenter des portfolios professionnels.",
-            EnOrFr === "en"
-              ? "Developed a system to manage social media and business links."
-              : "Mise en place d'un système de gestion des liens de réseaux sociaux et des liens professionnels.",
-            EnOrFr === "en"
-              ? "Integrated authentication using NextAuth.js."
-              : "Intégration d'une authentification sécurisée avec NextAuth.js.",
-            EnOrFr === "en"
-              ? "Created a QR code generation feature to facilitate sharing the Portfolio via mobile devices."
-              : "Création d'une fonctionnalité de génération de code QR pour faciliter le partage du portfolio via les appareils mobiles.",
-            EnOrFr === "en"
-              ? "Implemented automatic translation for the Portfolio, helping reach a wider audience."
-              : "Mise en œuvre d'une traduction automatique du portfolio pour atteindre un public plus large.",
-            EnOrFr === "en"
-              ? "Integrated a chat system within the app to enhance communication between users."
-              : "Intégration d'un système de chat au sein de l'application pour améliorer la communication entre les utilisateurs.",
-            EnOrFr === "en"
-              ? "Added an option to customize the background color of the Portfolio to match the user’s personal style."
-              : "Ajout d'une option pour personnaliser la couleur de fond du portfolio afin qu'elle corresponde au style personnel de l'utilisateur."
-          ]}
-          
-        /> */}
-        
         <ExperienceCard
           title={EnOrFr === "en" ? "Full Stack MERN Developer" : "Développeur Full Stack MERN"}
           company="Académie Régionale d'Éducation et de Formation"
