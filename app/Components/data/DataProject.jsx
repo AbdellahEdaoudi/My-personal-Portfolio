@@ -1,5 +1,25 @@
 export const projectsEn = [
     {
+        title: "DGT Portfolio Builder",
+        type: "fullstack",
+        image: "/Projects/dgtportfolio.png",
+        websiteUrl: "https://dgtportfolio.com",
+        githubUrl: "",
+        githubUrls: "",
+        description: "A comprehensive SaaS platform empowering users to build professional portfolios effortlessly. It features multi-language support, custom domain integration, dynamic theme selection, real-time resume generation, and an intuitive admin dashboard for managing content, subscriptions, and analytics.",
+        technologies: [
+            { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
+            { name: "Node.js", logo: "/Skills/Nodejs.png" },
+            { name: "Express", logo: "/Skills/ExpressJs.png" },
+            { name: "MongoDB", logo: "/Skills/Mongodb.png" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
+            { name: "PayPal", logo: "/Skills/paypal.png" },
+            { name: "cloudinary", logo: "/Skills/cloudinary.jpg" },
+            { name: "Git", logo: "/Skills/Git.png" }
+        ],
+    },
+    {
         title: "E-Commerce Back-End",
         type: "backend",
         image: "/Projects/Ecom-backend.png",
@@ -20,6 +40,25 @@ export const projectsEn = [
             { name: "cloudinary", logo: "/Skills/cloudinary.jpg" },
             { name: "Git", logo: "/Skills/Git.png" },
         ],
+    },
+    {
+        title: "Hotel Booking",
+        image: "/Projects/HotelDash.png",
+        websiteUrl: "https://edhotel.vercel.app/",
+        githubUrl: "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+        githubUrls: "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+        description:
+            "The hotel management system provides a comprehensive solution for managing room bookings and payments. It allows users to easily book rooms and receive an electronic ticket for confirmation. The system includes a dashboard for managing bookings, payments, and customer responses via email.",
+        technologies: [
+            { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "Node.js", logo: "/Skills/Nodejs.png" },
+            { name: "Express", logo: "/Skills/ExpressJs.png" },
+            { name: "MongoDB ", logo: "/Skills/Mongodb.png" },
+            { name: "Git", logo: "/Skills/Git.png" },
+            { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
+        ],
+        Rapport: " ",
     },
     {
         title: "Resume Platform",
@@ -45,25 +84,6 @@ export const projectsEn = [
         Rapport: " ",
     },
     {
-        title: "Hotel Booking",
-        image: "/Projects/HotelDash.png",
-        websiteUrl: "https://edhotel.vercel.app/",
-        githubUrl: "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-        githubUrls: "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-        description:
-            "The hotel management system provides a comprehensive solution for managing room bookings and payments. It allows users to easily book rooms and receive an electronic ticket for confirmation. The system includes a dashboard for managing bookings, payments, and customer responses via email.",
-            technologies: [
-                { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
-                { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
-                { name: "Node.js", logo: "/Skills/Nodejs.png" },
-                { name: "Express", logo: "/Skills/ExpressJs.png" },
-                { name: "MongoDB ", logo: "/Skills/Mongodb.png" },
-                { name: "Git", logo: "/Skills/Git.png" },
-                { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
-            ],
-        Rapport: " ",
-    },
-    {
         title: "Shopping App",
         image: "/Projects/EcomApp.png",
         websiteUrl: "https://edmarkeet.vercel.app",
@@ -71,12 +91,12 @@ export const projectsEn = [
         githubUrls: "",
         description:
             "An app that offers a seamless shopping experience, making it easy for users to browse products and add items to their cart. The app features a modern and innovative design that enhances the user experience, with instant responsiveness and interactive elements that make shopping more enjoyable.",
-            technologies: [
-                { name: "React.js", logo: "/Skills/reactjs.png" },
-                { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
-                { name: "Git", logo: "/Skills/Git.png" },   
+        technologies: [
+            { name: "React.js", logo: "/Skills/reactjs.png" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "Git", logo: "/Skills/Git.png" },
 
-            ],
+        ],
         Rapport: " ",
     },
     {
@@ -87,17 +107,17 @@ export const projectsEn = [
         githubUrls: "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
         description:
             "A chat application offering a seamless and user-friendly communication experience. It enables users to easily connect through instant messaging, facilitating smooth exchanges of messages and ideas.",
-            technologies: [
-                { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
-                { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
-                { name: "Node.js", logo: "/Skills/Nodejs.png" },
-                { name: "Express", logo: "/Skills/ExpressJs.png" },
-                { name: "MongoDB ", logo: "/Skills/Mongodb.png" },
-                { name: "Git", logo: "/Skills/Git.png" },
-                { name: "Socket.IO", logo: "/Skills/Socket.io.png" },
-                { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
-                { name: "Shadcn/ui ", logo: "/Skills/shadcn.png" },
-            ],
+        technologies: [
+            { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "Node.js", logo: "/Skills/Nodejs.png" },
+            { name: "Express", logo: "/Skills/ExpressJs.png" },
+            { name: "MongoDB ", logo: "/Skills/Mongodb.png" },
+            { name: "Git", logo: "/Skills/Git.png" },
+            { name: "Socket.IO", logo: "/Skills/Socket.io.png" },
+            { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
+            { name: "Shadcn/ui ", logo: "/Skills/shadcn.png" },
+        ],
         Rapport: " ",
     },
     {
@@ -108,17 +128,37 @@ export const projectsEn = [
         githubUrls: "",
         description:
             "A QR Code management app that allows you to create QR codes with custom logos, read QR codes from images, and scan QR codes via the camera to display data instantly. Features an attractive and responsive design.",
-            technologies: [
-                { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
-                { name: "React.js", logo: "/Skills/reactjs.png" },
-                { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
-                { name: "Git", logo: "/Skills/Git.png" },
-            ],
+        technologies: [
+            { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
+            { name: "React.js", logo: "/Skills/reactjs.png" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "Git", logo: "/Skills/Git.png" },
+        ],
         Rapport: " ",
     },
 ];
 
 export const projectsFr = [
+    {
+        title: "DGT Portfolio Builder",
+        type: "fullstack",
+        image: "/Projects/dgtportfolio.png",
+        websiteUrl: "https://dgtportfolio.com/fr",
+        githubUrl: "",
+        githubUrls: "",
+        description: "Une plateforme SaaS complète permettant aux utilisateurs de créer des portfolios professionnels sans effort. Elle propose un support multilingue, l'intégration de domaines personnalisés, une sélection de thèmes dynamiques, la génération de CV en temps réel et un tableau de bord administratif intuitif pour gérer le contenu, les abonnements et les analyses.",
+        technologies: [
+            { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
+            { name: "Node.js", logo: "/Skills/Nodejs.png" },
+            { name: "Express", logo: "/Skills/ExpressJs.png" },
+            { name: "MongoDB", logo: "/Skills/Mongodb.png" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
+            { name: "PayPal", logo: "/Skills/paypal.png" },
+            { name: "cloudinary", logo: "/Skills/cloudinary.jpg" },
+            { name: "Git", logo: "/Skills/Git.png" }
+        ],
+    },
     {
         title: "Back-End E-Commerce",
         type: "backend",
@@ -140,7 +180,26 @@ export const projectsFr = [
             { name: "cloudinary", logo: "/Skills/cloudinary.jpg" },
             { name: "Git", logo: "/Skills/Git.png" }
         ]
-    },    
+    },
+    {
+        title: "Réservation d'hôtel",
+        image: "/Projects/HotelDash.png",
+        websiteUrl: "https://edhotel.vercel.app/",
+        githubUrl: "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+        githubUrls: "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+        description:
+            "Le système de gestion de l’hôtel offre une solution complète pour gérer les réservations de chambres et les paiements. Il permet aux utilisateurs de réserver facilement des chambres et de recevoir une carte électronique de confirmation. Le système comprend un tableau de bord pour gérer les réservations, les paiements et les réponses des clients par e-mail.",
+        technologies: [
+            { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "Node.js", logo: "/Skills/Nodejs.png" },
+            { name: "Express", logo: "/Skills/ExpressJs.png" },
+            { name: "MongoDB ", logo: "/Skills/Mongodb.png" },
+            { name: "Git", logo: "/Skills/Git.png" },
+            { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
+        ],
+        Rapport: " ",
+    },
     {
         title: "Plateforme de Resume",
         image: "/Projects/Linkerfolio.png",
@@ -153,36 +212,17 @@ export const projectsFr = [
               et leurs liens de réseaux sociaux en un seul endroit. Cette application
              aide les utilisateurs à gérer efficacement leur identité numérique, ce qui en fait un outil idéal pour les chercheurs d'emploi ou
              toute personne souhaitant améliorer sa visibilité et son influence dans le monde numérique.`,
-             technologies: [
-                { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
-                { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
-                { name: "Node.js", logo: "/Skills/Nodejs.png" },
-                { name: "Express", logo: "/Skills/ExpressJs.png" },
-                { name: "MongoDB ", logo: "/Skills/Mongodb.png" },
-                { name: "Socket.IO", logo: "/Skills/Socket.io.png" },
-                { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
-                { name: "Git", logo: "/Skills/Git.png" },
-                { name: "Shadcn/ui ", logo: "/Skills/shadcn.png" },
-            ],
-        Rapport: " ",
-    },
-    {
-        title: "Réservation d'hôtel",
-        image: "/Projects/HotelDash.png",
-        websiteUrl: "https://edhotel.vercel.app/",
-        githubUrl: "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-        githubUrls: "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-        description:
-            "Le système de gestion de l’hôtel offre une solution complète pour gérer les réservations de chambres et les paiements. Il permet aux utilisateurs de réserver facilement des chambres et de recevoir une carte électronique de confirmation. Le système comprend un tableau de bord pour gérer les réservations, les paiements et les réponses des clients par e-mail.",
-            technologies: [
-                { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
-                { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
-                { name: "Node.js", logo: "/Skills/Nodejs.png" },
-                { name: "Express", logo: "/Skills/ExpressJs.png" },
-                { name: "MongoDB ", logo: "/Skills/Mongodb.png" },
-                { name: "Git", logo: "/Skills/Git.png" },
-                { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
-            ],
+        technologies: [
+            { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "Node.js", logo: "/Skills/Nodejs.png" },
+            { name: "Express", logo: "/Skills/ExpressJs.png" },
+            { name: "MongoDB ", logo: "/Skills/Mongodb.png" },
+            { name: "Socket.IO", logo: "/Skills/Socket.io.png" },
+            { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
+            { name: "Git", logo: "/Skills/Git.png" },
+            { name: "Shadcn/ui ", logo: "/Skills/shadcn.png" },
+        ],
         Rapport: " ",
     },
     {
@@ -193,11 +233,11 @@ export const projectsFr = [
         githubUrls: "",
         description:
             "Une application offrant une expérience de shopping fluide, facilitant la navigation des utilisateurs parmi les produits et l’ajout d’articles au panier. L’application se distingue par un design moderne et innovant, enrichissant l’expérience utilisateur avec une réactivité instantanée et des éléments interactifs, rendant ainsi le shopping plus agréable.",
-            technologies: [
-                { name: "React.js", logo: "/Skills/reactjs.png" },
-                { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
-                { name: "Git", logo: "/Skills/Git.png" },
-            ],
+        technologies: [
+            { name: "React.js", logo: "/Skills/reactjs.png" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "Git", logo: "/Skills/Git.png" },
+        ],
         Rapport: " ",
     },
     {
@@ -208,17 +248,17 @@ export const projectsFr = [
         githubUrls: "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
         description:
             "Une application de chat offrant une expérience de communication fluide et conviviale. Elle permet aux utilisateurs de se connecter facilement via la messagerie instantanée, facilitant les échanges de messages et d’idées de manière fluide et efficace.",
-            technologies: [
-                { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
-                { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
-                { name: "Node.js", logo: "/Skills/Nodejs.png" },
-                { name: "Express", logo: "/Skills/ExpressJs.png" },
-                { name: "MongoDB ", logo: "/Skills/Mongodb.png" },
-                { name: "Git", logo: "/Skills/Git.png" },
-                { name: "Socket.IO", logo: "/Skills/Socket.io.png" },
-                { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
-                { name: "Shadcn/ui ", logo: "/Skills/shadcn.png" },
-            ],
+        technologies: [
+            { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "Node.js", logo: "/Skills/Nodejs.png" },
+            { name: "Express", logo: "/Skills/ExpressJs.png" },
+            { name: "MongoDB ", logo: "/Skills/Mongodb.png" },
+            { name: "Git", logo: "/Skills/Git.png" },
+            { name: "Socket.IO", logo: "/Skills/Socket.io.png" },
+            { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
+            { name: "Shadcn/ui ", logo: "/Skills/shadcn.png" },
+        ],
         Rapport: " ",
     },
     {
@@ -229,12 +269,12 @@ export const projectsFr = [
         githubUrls: "",
         description:
             "Une application de gestion des QR codes permettant de créer des QR codes avec des logos personnalisés, de lire des QR codes à partir d’images et de scanner des QR codes via la caméra pour afficher instantanément les données. Dispose d’un design attrayant et réactif.",
-            technologies: [
-                { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
-                { name: "React.js", logo: "/Skills/reactjs.png" },
-                { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
-                { name: "Git", logo: "/Skills/Git.png" },
-            ],
+        technologies: [
+            { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
+            { name: "React.js", logo: "/Skills/reactjs.png" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "Git", logo: "/Skills/Git.png" },
+        ],
         Rapport: " ",
     },
 ];
