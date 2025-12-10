@@ -66,12 +66,14 @@ function Projects() {
                </div>
               {/* githubUrl */}
                <div className="flex justify-around items-center mt-3 space-x-4">
+                 {p.githubUrl && (
                  <a href={p.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
                    <Image src={"/Icons/github.svg"} alt={"Github Logo"} width={25} height={25} className="mr-2 rounded-full" />
                    <span className="text-sm">
                    {p.type === "backend" ? "View on GitHub" : "Frontend"}
                    </span>
                  </a>
+                 )}
                  {p.githubUrls && (
                    <a href={p.githubUrls} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
                      <Image src={"/Icons/github.svg"} alt={"Github Logo"} width={25} height={25} className="mr-2 rounded-full" />
