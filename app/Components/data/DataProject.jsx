@@ -58,7 +58,6 @@ export const projectsEn = [
             { name: "Git", logo: "/Skills/Git.png" },
             { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
         ],
-        Rapport: " ",
     },
     {
         title: "Resume Platform",
@@ -81,7 +80,6 @@ export const projectsEn = [
             { name: "Git", logo: "/Skills/Git.png" },
             { name: "Shadcn/ui ", logo: "/Skills/shadcn.png" },
         ],
-        Rapport: " ",
     },
     {
         title: "Shopping App",
@@ -97,7 +95,6 @@ export const projectsEn = [
             { name: "Git", logo: "/Skills/Git.png" },
 
         ],
-        Rapport: " ",
     },
     {
         title: "Chat App",
@@ -118,7 +115,20 @@ export const projectsEn = [
             { name: "NextAuth", logo: "/Skills/nextauth.jpg" },
             { name: "Shadcn/ui ", logo: "/Skills/shadcn.png" },
         ],
-        Rapport: " ",
+    },
+    {
+        title: "Image Compressor",
+        image: "/Projects/image-compressor.png",
+        websiteUrl: "https://image-compressor-aed.vercel.app",
+        githubUrl: "",
+        githubUrls: "",
+        description: "A powerful and secure browser-based image compression tool. It allows users to compress unlimited JPG, PNG, and WebP images by up to 90% without losing quality. Features include bulk compression, PDF generation, drag-and-drop interface, and complete privacy as all processing happens locally in the browser.",
+        technologies: [
+            { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
+            { name: "React.js", logo: "/Skills/reactjs.png" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "Git", logo: "/Skills/Git.png" }
+        ],
     },
     {
         title: "QR Code Management App",
@@ -239,6 +249,20 @@ export const projectsFr = [
             { name: "Git", logo: "/Skills/Git.png" },
         ],
         Rapport: " ",
+    },
+    {
+        title: "Compresseur d'Images",
+        image: "/Projects/image-compressor.png",
+        websiteUrl: "https://image-compressor-aed.vercel.app",
+        githubUrl: "",
+        githubUrls: "",
+        description: "Un outil de compression d'images puissant et sécurisé basé sur le navigateur. Il permet aux utilisateurs de compresser un nombre illimité d'images JPG, PNG et WebP jusqu'à 90 % sans perte de qualité. Les fonctionnalités incluent la compression en masse, la génération de PDF, une interface glisser-déposer et une confidentialité totale car tout le traitement s'effectue localement.",
+        technologies: [
+            { name: "Next.js", logo: "/Skills/Nextjs.jpg" },
+            { name: "React.js", logo: "/Skills/reactjs.png" },
+            { name: "Tailwind CSS", logo: "/Skills/Tailwind.png" },
+            { name: "Git", logo: "/Skills/Git.png" }
+        ],
     },
     {
         title: "App de Messagerie",
