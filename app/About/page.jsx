@@ -1,50 +1,55 @@
+import meta from "../dictionaries/metadata/aboutmeta.json";
 import React from "react";
-import About from "../Components/About";
-import Skills from "../Components/Skills";
-import Projects from "../Components/Projects";
-import Footer from "../Components/Footer";
-import Contact from "../Components/Contact";
-import EducationSection from "../Components/Qualification/en_fr";
-import ExperienceSection from "../Components/Experience/en_fr";
 
 export const metadata = {
-  title: "Abdellah Edaoudi - About",
-  description:
-    "Learn more about Abdellah Edaoudi, a MERN Stack Developer with 1 year of experience and 3 completed projects.",
-  keywords:
-    "Abdellah Edaoudi, About, MERN Stack Developer, Web Development, React, Node.js",
+  title: meta.en.title,
+  description: meta.en.description,
+  keywords: meta.en.keywords,
   openGraph: {
-    title: "Abdellah Edaoudi - About Me",
-    description:
-      "Learn more about Abdellah Edaoudi, a MERN Stack Developer with 1 year of experience and 3 completed projects.",
-    url: "https://abdellah-edaoudi.vercel.app/About",
+    title: meta.en.title,
+    description: meta.en.description,
+    url: 'https://abdellah-edaoudi.vercel.app/About',
+    siteName: 'Abdellah Edaoudi Portfolio',
+    locale: 'en',
+    type: 'website',
     images: [
       {
-        url: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
-        width: 800,
-        height: 600,
-        alt: "Abdellah Edaoudi Profile Picture",
+        url: 'https://abdellah-edaoudi.vercel.app/profile-pic.png',
+        width: 1200,
+        height: 630,
+        alt: meta.en.title,
       },
     ],
   },
   twitter: {
-    card: "https://x.com/Edaoudi_abde/header_photo",
-    title: "Abdellah Edaoudi - About Me",
-    description:
-      "Learn more about Abdellah Edaoudi, a MERN Stack Developer with 1 year of experience and 3 completed projects.",
-    image: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
+    card: 'summary_large_image',
+    title: meta.en.title,
+    description: meta.en.description,
+    creator: '@Edaoudi_abde',
+    images: ['https://abdellah-edaoudi.vercel.app/profile-pic.png'],
+  },
+  alternates: {
+    canonical: '/en/About',
+    languages: {
+      'en': '/en/About',
+      'fr': '/fr/About',
+    },
   },
 };
-function page() {
+
+import About from "../Components/About";
+import Footer from "../Components/Footer";
+import Header from "../Components/Header";
+import { getDictionary } from "../dictionaries/get-dictionary";
+
+
+async function page() {
+  const dictionary = await getDictionary('en');
   return (
     <div>
-      <About />
-      <Skills />
-      <Projects />
-      <EducationSection />
-      <ExperienceSection />
-      <Contact />
-      <Footer />
+      <Header content={dictionary.header} />
+      <About content={dictionary.about} />
+      <Footer content={dictionary.footer} />
     </div>
   );
 }

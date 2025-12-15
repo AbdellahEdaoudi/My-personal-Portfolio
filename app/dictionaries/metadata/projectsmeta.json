@@ -1,0 +1,24 @@
+{
+    "en": {
+        "title": "Abdellah Edaoudi | Projects",
+        "description": "Browse a curated gallery of high-performance web applications. Showcasing expertise in MERN stack, SaaS platforms, and responsive design by Abdellah Edaoudi.",
+        "keywords": [
+            "Web Development Portfolio",
+            "MERN Stack Projects",
+            "React Applications",
+            "Next.js Showcase",
+            "Abdellah Edaoudi Projects"
+        ]
+    },
+    "fr": {
+        "title": "Abdellah Edaoudi | Projets",
+        "description": "Parcourez une galerie organisée d'applications web haute performance. Mise en valeur de l'expertise en pile MERN, plateformes SaaS et design réactif par Abdellah Edaoudi.",
+        "keywords": [
+            "Portfolio Développement Web",
+            "Projets MERN Stack",
+            "Applications React",
+            "Vitrine Next.js",
+            "Projets Abdellah Edaoudi"
+        ]
+    }
+}

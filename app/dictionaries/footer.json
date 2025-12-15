@@ -1,0 +1,36 @@
+{
+    "en": {
+        "links": [
+            {
+                "name": "About",
+                "path": "#about"
+            },
+            {
+                "name": "Skills",
+                "path": "#skill"
+            },
+            {
+                "name": "Projects",
+                "path": "#portfolio"
+            }
+        ],
+        "rights": "© Abdellah Edaoudi All rights reserved ©"
+    },
+    "fr": {
+        "links": [
+            {
+                "name": "À propos",
+                "path": "#about"
+            },
+            {
+                "name": "Compétences",
+                "path": "#skill"
+            },
+            {
+                "name": "Projets",
+                "path": "#portfolio"
+            }
+        ],
+        "rights": "© Abdellah Edaoudi Tous droits réservés ©"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "en": {
+        "title": "Abdellah Edaoudi | Skills",
+        "description": "Deep dive into Abdellah Edaoudi's technical arsenal. Mastering JavaScript, React, Node.js, MongoDB, Docker, and the tools that build the modern web.",
+        "keywords": [
+            "MERN Stack Skills",
+            "Next.js Expertise",
+            "JavaScript Mastery",
+            "DevOps Tools",
+            "Web Development Technologies"
+        ]
+    },
+    "fr": {
+        "title": "Abdellah Edaoudi | Compétences",
+        "description": "Plongez dans l'arsenal technique d'Abdellah Edaoudi. Maîtrise de JavaScript, React, Node.js, MongoDB, Docker et des outils qui construisent le web moderne.",
+        "keywords": [
+            "Compétences MERN Stack",
+            "Expertise Next.js",
+            "Maîtrise JavaScript",
+            "Outils DevOps",
+            "Technologies Développement Web"
+        ]
+    }
+}

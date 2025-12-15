@@ -1,37 +1,56 @@
+import meta from "../dictionaries/metadata/skillsmeta.json";
 import React from "react";
-import Skills from "../Components/Skills";
-import Projects from "../Components/Projects";
-import Footer from "../Components/Footer";
-import Contact from "../Components/Contact";
-import EducationSection from "../Components/Qualification/en_fr";
-import ExperienceSection from "../Components/Experience/en_fr";
 
 export const metadata = {
-  title: "Abdellah Edaoudi - Skills",
-  description:
-    "Explore the technical skills and expertise of Abdellah Edaoudi, including frontend and backend development skills.",
-  keywords:
-    "Abdellah Edaoudi, Skills, Frontend Development, Backend Development, NextJS, ExpressJs, MongoDB, TailwindCss, Docker",
-  ogTitle: "Abdellah Edaoudi - Skills",
-  ogDescription:
-    "Explore the technical skills and expertise of Abdellah Edaoudi, including frontend and backend development skills.",
-  ogImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
-  ogUrl: "https://abdellah-edaoudi.vercel.app/Skills",
-  twitterTitle: "Abdellah Edaoudi - Skills",
-  twitterDescription:
-    "Explore the technical skills and expertise of Abdellah Edaoudi, including frontend and backend development skills.",
-  twitterImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
-  twitterCard: "https://x.com/Edaoudi_abde/header_photo",
+  title: meta.en.title,
+  description: meta.en.description,
+  keywords: meta.en.keywords,
+  openGraph: {
+    title: meta.en.title,
+    description: meta.en.description,
+    url: 'https://abdellah-edaoudi.vercel.app/Skills',
+    siteName: 'Abdellah Edaoudi Portfolio',
+    locale: 'en',
+    type: 'website',
+    images: [
+      {
+        url: 'https://abdellah-edaoudi.vercel.app/profile-pic.png',
+        width: 1200,
+        height: 630,
+        alt: meta.en.title,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: meta.en.title,
+    description: meta.en.description,
+    creator: '@Edaoudi_abde',
+    images: ['https://abdellah-edaoudi.vercel.app/profile-pic.png'],
+  },
+  alternates: {
+    canonical: '/en/Skills',
+    languages: {
+      'en': '/en/Skills',
+      'fr': '/fr/Skills',
+    },
+  },
 };
-function page() {
+
+import Skills from "../Components/Skills";
+import Footer from "../Components/Footer";
+import Header from "../Components/Header";
+import { getDictionary } from "../dictionaries/get-dictionary";
+
+
+async function page() {
+  const dictionary = await getDictionary('en');
+
   return (
     <div>
-      <Skills />
-      <Projects />
-      <EducationSection />
-      <ExperienceSection />
-      <Contact />
-      <Footer />
+      <Header content={dictionary.header} />
+      <Skills content={dictionary.skills} />
+      <Footer content={dictionary.footer} />
     </div>
   );
 }

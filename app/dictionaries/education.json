@@ -1,0 +1,46 @@
+{
+    "en": {
+        "title": "Education",
+        "subtitle": "My personal journey",
+        "items": [
+            {
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
+                "degree": "Diploma in Digital Development (Full Stack Web Option)",
+                "startDate": "2022",
+                "endDate": "2024",
+                "location": "El-Aaiun , Morocco",
+                "imageUrl": "/cmc-maroc.png"
+            },
+            {
+                "institution": "Baba Ahmed bin Muhammad Yahdih High School",
+                "degree": "Bachelor's degree, Physical Sciences",
+                "startDate": "2021",
+                "endDate": "2022",
+                "location": "El-Aaiun , Morocco",
+                "imageUrl": "/BabAhmedImage.jpg"
+            }
+        ]
+    },
+    "fr": {
+        "title": "Éducation",
+        "subtitle": "Mon parcours personnel",
+        "items": [
+            {
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
+                "degree": "Diplôme en Développement Digital (Option Web Full Stack)",
+                "startDate": "2022",
+                "endDate": "2024",
+                "location": "Laayoune , Maroc",
+                "imageUrl": "/cmc-maroc.png"
+            },
+            {
+                "institution": "Baba Ahmed bin Muhammad Yahdih High School",
+                "degree": "Baccalauréat, Sciences Physiques",
+                "startDate": "2021",
+                "endDate": "2022",
+                "location": "Laayoune , Maroc",
+                "imageUrl": "/BabAhmedImage.jpg"
+            }
+        ]
+    }
+}

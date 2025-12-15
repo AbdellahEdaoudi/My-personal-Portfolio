@@ -1,0 +1,12 @@
+{
+    "en": {
+        "greeting": "Hi, I'm Abdellah Edaoudi",
+        "role": "🔷 Full Stack Developer 🔷",
+        "description": "I Specialize in developing responsive websites and applications using the MERN stack, as well as advanced frameworks like Next.js and NestJS for optimal performance and scalability."
+    },
+    "fr": {
+        "greeting": "Salut, je suis Abdellah Edaoudi",
+        "role": "🔷 Développeur Full Stack 🔷",
+        "description": "Je me spécialise dans le développement de sites web et d'applications réactives en utilisant la stack MERN, ainsi que des frameworks avancés tels que Next.js et NestJS pour des performances et une scalabilité optimales."
+    }
+}
