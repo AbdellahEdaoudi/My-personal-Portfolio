@@ -1,0 +1,22 @@
+{
+    "en": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "education": "Education",
+        "experience": "Experience",
+        "contact": "Contact",
+        "admin": "Admin"
+    },
+    "fr": {
+        "home": "Accueil",
+        "about": "À propos",
+        "skills": "Compétences",
+        "projects": "Projets",
+        "education": "Éducation",
+        "experience": "Expérience",
+        "contact": "Contact",
+        "admin": "Admin"
+    }
+}

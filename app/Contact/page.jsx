@@ -1,41 +1,56 @@
+import meta from "../dictionaries/metadata/contactmeta.json";
 import React from "react";
-import Footer from "../Components/Footer";
-import Contact from "../Components/Contact";
-import Header from "../Components/Header";
 
 export const metadata = {
-  title: "Abdellah Edaoudi - Contact",
-  description:
-    "Get in touch with Abdellah Edaoudi. Contact me via email, WhatsApp, or Messenger.",
-  keywords:
-    "Abdellah Edaoudi, Contact, MERN Stack Developer, Web Development",
+  title: meta.en.title,
+  description: meta.en.description,
+  keywords: meta.en.keywords,
   openGraph: {
-    title: "Abdellah Edaoudi - Contact",
-    description:
-      "Get in touch with Abdellah Edaoudi. Contact me via email, WhatsApp, or Messenger.",
-    url: "https://abdellah-edaoudi.vercel.app/Contact",
+    title: meta.en.title,
+    description: meta.en.description,
+    url: 'https://abdellah-edaoudi.vercel.app/Contact',
+    siteName: 'Abdellah Edaoudi Portfolio',
+    locale: 'en',
+    type: 'website',
     images: [
       {
-        url: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
-        width: 800,
-        height: 600,
-        alt: "Abdellah Edaoudi Profile Picture",
+        url: 'https://abdellah-edaoudi.vercel.app/profile-pic.png',
+        width: 1200,
+        height: 630,
+        alt: meta.en.title,
       },
     ],
   },
   twitter: {
-    card: "https://x.com/Edaoudi_abde/header_photo",
-    title: "Abdellah Edaoudi - Contact Me",
-    description:
-      "Get in touch with Abdellah Edaoudi. Contact me via email, WhatsApp, or Messenger.",
-    image: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
+    card: 'summary_large_image',
+    title: meta.en.title,
+    description: meta.en.description,
+    creator: '@Edaoudi_abde',
+    images: ['https://abdellah-edaoudi.vercel.app/profile-pic.png'],
+  },
+  alternates: {
+    canonical: '/en/Contact',
+    languages: {
+      'en': '/en/Contact',
+      'fr': '/fr/Contact',
+    },
   },
 };
-function page() {
+
+import Footer from "../Components/Footer";
+import Contact from "../Components/Contact";
+import Header from "../Components/Header";
+import { getDictionary } from "../dictionaries/get-dictionary";
+
+
+async function page() {
+  const dictionary = await getDictionary('en');
+
   return (
     <div>
-      <Contact />
-      <Footer />
+      <Header content={dictionary.header} />
+      <Contact content={dictionary.contact} />
+      <Footer content={dictionary.footer} />
     </div>
   );
 }
