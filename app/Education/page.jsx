@@ -1,33 +1,56 @@
+import meta from "../dictionaries/metadata/educationmeta.json";
 import React from "react";
-import Footer from "../Components/Footer";
-import Contact from "../Components/Contact";
-import EducationSection from "../Components/Qualification/en_fr";
-import ExperienceSection from "../Components/Experience/en_fr";
 
 export const metadata = {
-  title: "Abdellah Edaoudi - Education",
-  description:
-    "Discover Abdellah Edaoudi's personal journey including education and professional experience.",
-  keywords:
-    "Abdellah Edaoudi, Qualifications, Education, Experience, Web Development, Internship",
-  ogTitle: "Abdellah Edaoudi - Education",
-  ogDescription:
-    "Discover Abdellah Edaoudi's personal journey including education and professional experience.",
-  ogImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
-  ogUrl: "https://abdellah-edaoudi.vercel.app/Education",
-  twitterTitle: "Abdellah Edaoudi - Education",
-  twitterDescription:
-    "Discover Abdellah Edaoudi's personal journey including education and professional experience.",
-  twitterImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
-  twitterCard: "https://x.com/Edaoudi_abde/header_photo",
+  title: meta.en.title,
+  description: meta.en.description,
+  keywords: meta.en.keywords,
+  openGraph: {
+    title: meta.en.title,
+    description: meta.en.description,
+    url: 'https://abdellah-edaoudi.vercel.app/Education',
+    siteName: 'Abdellah Edaoudi Portfolio',
+    locale: 'en',
+    type: 'website',
+    images: [
+      {
+        url: 'https://abdellah-edaoudi.vercel.app/profile-pic.png',
+        width: 1200,
+        height: 630,
+        alt: meta.en.title,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: meta.en.title,
+    description: meta.en.description,
+    creator: '@Edaoudi_abde',
+    images: ['https://abdellah-edaoudi.vercel.app/profile-pic.png'],
+  },
+  alternates: {
+    canonical: '/en/Education',
+    languages: {
+      'en': '/en/Education',
+      'fr': '/fr/Education',
+    },
+  },
 };
-function page() {
+
+import Footer from "../Components/Footer";
+import Education from "../Components/Education";
+import Header from "../Components/Header";
+import { getDictionary } from "../dictionaries/get-dictionary";
+
+
+async function page() {
+  const dictionary = await getDictionary('en');
+
   return (
     <div>
-      <EducationSection />
-      <ExperienceSection />
-      <Contact />
-      <Footer />
+      <Header content={dictionary.header} />
+      <Education content={dictionary.education} />
+      <Footer content={dictionary.footer} />
     </div>
   );
 }

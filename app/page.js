@@ -1,25 +1,28 @@
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-import ExperienceSection from "./Components/Experience/en_fr";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
 import Home from "./Components/Home";
+import About from "./Components/About";
+import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
-import Qualif from "./Components/Qualif";
-import EducationSection from "./Components/Qualification/en_fr";
-import Skills from './Components/Skills';
+import Education from "./Components/Education";
+import Experience from "./Components/Experience";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import { getDictionary } from "./dictionaries/get-dictionary";
+import Header from "./Components/Header";
 
-export default function Page() {
+export default async function Page() {
+  const dictionary = await getDictionary('en');
+
   return (
     <div>
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <EducationSection />
-      <ExperienceSection />
-      <Contact />
-      <Footer />
+      <Header content={dictionary.header} />
+      <Home content={dictionary.home} />
+      <About content={dictionary.about} />
+      <Skills content={dictionary.skills} />
+      <Projects content={dictionary.projects} />
+      <Experience content={dictionary.experience} />
+      <Education content={dictionary.education} />
+      <Contact content={dictionary.contact} />
+      <Footer content={dictionary.footer} />
     </div>
   );
 }

@@ -1,33 +1,56 @@
+import meta from "../dictionaries/metadata/experiencemeta.json";
 import React from "react";
-import ExperienceSection from "../Components/Experience/en_fr";
-import Footer from "../Components/Footer";
-import Contact from "../Components/Contact";
 
 export const metadata = {
-    title: "Abdellah Edaoudi - Experience",
-    description:
-      "Explore Abdellah Edaoudi's professional experience in web development and projects.",
-    keywords:
-      "Abdellah Edaoudi, Professional Experience, Web Development, Projects, Internships, Skills",
-    ogTitle: "Abdellah Edaoudi - Professional Experience",
-    ogDescription:
-      "Explore Abdellah Edaoudi's professional experience in web development and projects.",
-    ogImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
-    ogUrl: "https://abdellah-edaoudi.vercel.app/Experience",
-    twitterTitle: "Abdellah Edaoudi - Professional Experience",
-    twitterDescription:
-      "Explore Abdellah Edaoudi's professional experience in web development and projects.",
-    twitterImage: "https://abdellah-edaoudi.vercel.app/profile-pic.png",
-    twitterCard: "https://x.com/Edaoudi_abde/header_photo",
-  };
-  
-function page() {
+  title: meta.en.title,
+  description: meta.en.description,
+  keywords: meta.en.keywords,
+  openGraph: {
+    title: meta.en.title,
+    description: meta.en.description,
+    url: 'https://abdellah-edaoudi.vercel.app/Experience',
+    siteName: 'Abdellah Edaoudi Portfolio',
+    locale: 'en',
+    type: 'website',
+    images: [
+      {
+        url: 'https://abdellah-edaoudi.vercel.app/profile-pic.png',
+        width: 1200,
+        height: 630,
+        alt: meta.en.title,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: meta.en.title,
+    description: meta.en.description,
+    creator: '@Edaoudi_abde',
+    images: ['https://abdellah-edaoudi.vercel.app/profile-pic.png'],
+  },
+  alternates: {
+    canonical: '/en/Experience',
+    languages: {
+      'en': '/en/Experience',
+      'fr': '/fr/Experience',
+    },
+  },
+};
+
+import Experience from "../Components/Experience";
+import Footer from "../Components/Footer";
+import Header from "../Components/Header";
+import { getDictionary } from "../dictionaries/get-dictionary";
+
+
+async function page() {
+  const dictionary = await getDictionary('en');
 
   return (
     <div>
-      <ExperienceSection />
-      <Contact />
-      <Footer />
+      <Header content={dictionary.header} />
+      <Experience content={dictionary.experience} />
+      <Footer content={dictionary.footer} />
     </div>
   );
 }

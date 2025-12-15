@@ -1,0 +1,36 @@
+{
+    "en": {
+        "title": "Abdellah Edaoudi",
+        "description": "portfolio of Abdellah Edaoudi, a Digital Developer specializing in MERN-Stack.Explore my projects, skills, and experiences in building responsive websites and applications using Next.js (React.js), Tailwind CSS, and Node.js.",
+        "keywords": "Abdellah Edaoudi, MERN Stack Developer, Portfolio, Web Development, React, React.js, Node.js, MongoDB, Express.js, JavaScript, Frontend Developer, Backend Developer, Software Engineer, Web Applications, Tailwind CSS, Next.js, Digital Developer, Responsive Design, Full-Stack Development, API Integration, UI/UX Design, SEO Optimization",
+        "openGraph": {
+            "title": "Abdellah Edaoudi",
+            "description": "Welcome to the official portfolio of Abdellah Edaoudi, a Digital Developer specializing in MERN-Stack. Explore my projects, skills, and experiences in building responsive websites and applications using Next.js (React.js), Tailwind CSS, and Node.js."
+        },
+        "twitter": {
+            "title": "Abdellah Edaoudi - MERN Stack Developer | Portfolio",
+            "description": "Welcome to the official portfolio of Abdellah Edaoudi, a Digital Developer specializing in MERN-Stack. Explore my projects, skills, and experiences in building responsive websites and applications using Next.js (React.js), Tailwind CSS, and Node.js."
+        },
+        "google": {
+            "name": "Abdellah Edaoudi - MERN Stack Developer | Portfolio",
+            "description": "Welcome to the official portfolio of Abdellah Edaoudi, a Digital Developer specializing in MERN-Stack. Explore my projects, skills, and experiences in building responsive websites and applications using Next.js (React.js), Tailwind CSS, and Node.js."
+        }
+    },
+    "fr": {
+        "title": "Abdellah Edaoudi",
+        "description": "portfolio de Abdellah Edaoudi, un Développeur Digital spécialisé en MERN-Stack. Explorez mes projets, compétences et expériences dans la création de sites et d'applications réactifs utilisant Next.js (React.js), Tailwind CSS, et Node.js.",
+        "keywords": "Abdellah Edaoudi, Développeur MERN Stack, Portfolio, Développement Web, React, React.js, Node.js, MongoDB, Express.js, JavaScript, Développeur Frontend, Développeur Backend, Ingénieur Logiciel, Applications Web, Tailwind CSS, Next.js, Développeur Digital, Design Réactif, Développement Full-Stack, Intégration API, Design UI/UX, Optimisation SEO",
+        "openGraph": {
+            "title": "Abdellah Edaoudi",
+            "description": "Bienvenue sur le portfolio officiel de Abdellah Edaoudi, un Développeur Digital spécialisé en MERN-Stack. Explorez mes projets, compétences et expériences dans la création de sites et d'applications réactifs utilisant Next.js (React.js), Tailwind CSS, et Node.js."
+        },
+        "twitter": {
+            "title": "Abdellah Edaoudi - Développeur MERN Stack | Portfolio",
+            "description": "Bienvenue sur le portfolio officiel de Abdellah Edaoudi, un Développeur Digital spécialisé en MERN-Stack. Explorez mes projets, compétences et expériences dans la création de sites et d'applications réactifs utilisant Next.js (React.js), Tailwind CSS, et Node.js."
+        },
+        "google": {
+            "name": "Abdellah Edaoudi - Développeur MERN Stack | Portfolio",
+            "description": "Bienvenue sur le portfolio officiel de Abdellah Edaoudi, un Développeur Digital spécialisé en MERN-Stack. Explorez mes projets, compétences et expériences dans la création de sites et d'applications réactifs utilisant Next.js (React.js), Tailwind CSS, et Node.js."
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "en": {
+        "title": "Get in Touch",
+        "subtitle": "Contact Me",
+        "namePlaceholder": "Insert your name",
+        "emailPlaceholder": "Insert your email",
+        "messagePlaceholder": "Write your message",
+        "sendButton": "Send Message",
+        "sendingButton": "Sending Message",
+        "writeMe": "Write me",
+        "email": "Email",
+        "whatsapp": "WhatsApp"
+    },
+    "fr": {
+        "title": "Contactez-moi",
+        "subtitle": "Contactez-moi",
+        "namePlaceholder": "Entrez votre nom",
+        "emailPlaceholder": "Entrez votre email",
+        "messagePlaceholder": "Écrivez votre message",
+        "sendButton": "Envoyer le message",
+        "sendingButton": "Envoi en cours",
+        "writeMe": "Écrivez-moi",
+        "email": "Email",
+        "whatsapp": "WhatsApp"
+    }
+}

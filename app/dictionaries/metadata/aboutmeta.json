@@ -1,0 +1,24 @@
+{
+    "en": {
+        "title": "Abdellah Edaoudi | About",
+        "description": "Discover Abdellah Edaoudi's journey. A top-tier Full Stack Developer specializing in scalable MERN applications, Next.js performance, and innovative digital solutions.",
+        "keywords": [
+            "About Abdellah Edaoudi",
+            "Full Stack Expert",
+            "MERN Stack Developer",
+            "Next.js Architect",
+            "Web Development Brand"
+        ]
+    },
+    "fr": {
+        "title": "Abdellah Edaoudi | À Propos",
+        "description": "Découvrez le parcours d'Abdellah Edaoudi. Développeur Full Stack de premier plan spécialisé dans les applications MERN évolutives, la performance Next.js et les solutions numériques innovantes.",
+        "keywords": [
+            "À Propos d'Abdellah Edaoudi",
+            "Expert Full Stack",
+            "Développeur MERN",
+            "Architecte Next.js",
+            "Développement Web Maroc"
+        ]
+    }
+}
