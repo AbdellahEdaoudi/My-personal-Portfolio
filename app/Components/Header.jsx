@@ -1,6 +1,9 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { useParams, usePathname, useRouter } from 'next/navigation';
+
 const AlignJustify = ({ className, ...props }) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
         <line x1="3" x2="21" y1="6" y2="6" />
@@ -8,8 +11,6 @@ const AlignJustify = ({ className, ...props }) => (
         <line x1="3" x2="21" y1="18" y2="18" />
     </svg>
 )
-import Image from 'next/image';
-import { useParams, usePathname, useRouter } from 'next/navigation';
 
 export default function Header({ content }) {
     const [menu, setMenu] = useState(false);
@@ -17,6 +18,12 @@ export default function Header({ content }) {
     const router = useRouter();
     const pathname = usePathname();
     const currentLang = params.lang || 'en';
+
+    // Helper to get path without current language
+    const getPathWithoutLang = (path) => {
+        // Simple but robust regex for supported languages
+        return path.replace(/^\/(en|fr|de|zh|nl|es|pt)/, '');
+    }
 
     const LinksHeader = [
         { name: content?.home || "Home", path: "/" },
@@ -30,30 +37,24 @@ export default function Header({ content }) {
 
     const handleLanguageChange = (e) => {
         const newLang = e.target.value;
-        let newPath = pathname;
+        let newPath = getPathWithoutLang(pathname);
+        if (newPath === '' || newPath === '/') newPath = '';
 
-        if (currentLang !== 'en') {
-            newPath = newPath.replace(`/${currentLang}`, '');
-        }
-
-        if (newLang === 'en') {
-            if (newPath === '') newPath = '/';
-            router.push(newPath);
-        } else {
-            router.push(`/${newLang}${newPath === '/' ? '' : newPath}`);
-        }
+        // Always direct to /{lang}/{path}
+        router.push(`/${newLang}${newPath}`);
     };
 
     const getPath = (path) => {
-        if (currentLang === 'en') return path;
-        return `/${currentLang}${path === '/' ? '' : path}`;
+        // Ensure path always has language prefix
+        const cleanPath = path === '/' ? '' : path;
+        return `/${currentLang}${cleanPath}`;
     };
 
     return (
         <header className="sticky top-0 z-50 bg-white">
             <div className='flex items-center py-4 justify-evenly bg-white text-gray-600 shadow-md border-b-2 rounded-sm'>
                 <div className='hover:scale-105 duration-300'>
-                    <Link href={`/${currentLang === 'en' ? '' : currentLang}`}>
+                    <Link href={`/`}>
                         <Image src={"/image.png"} alt='Logo' width={150} height={50} style={{ width: "auto", height: "auto" }} priority />
                     </Link>
                 </div>
@@ -74,10 +75,6 @@ export default function Header({ content }) {
                         <option value={"nl"}>nl</option>
                         <option value={"zh"}>zh</option>
                     </select>
-
-                    {/* <Link href={`/${currentLang}/Admin`} className="text-gray-600 hover:text-green-500 flex items-center">
-                        {content?.admin || "Admin"}
-                    </Link> */}
                 </div>
                 <div className='flex flex-row-reverse gap-4 items-center'>
                     <div onClick={() => setMenu(!menu)} className='md:hidden cursor-pointer'>
