@@ -1,18 +1,17 @@
 import Image from 'next/image';
 
 function Projects({ content }) {
-  const projects = content;
-
   if (!content) return null;
+  const { items: projects, title, subtitle } = content;
 
   return (
     <section id="prtfl" className="bg-gray-50 pb-7 pt-4">
       <div className="text-center pb-5 ">
-        <p className="text-4xl font-bold">Projects</p>
-        <p className="text-gray-400 text-sm">Most recent work</p>
+        <p className="text-4xl font-bold">{title}</p>
+        <p className="text-gray-400 text-sm">{subtitle}</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 justify-items-center">
-        {projects.map((p, i) => (
+        {projects?.map((p, i) => (
           <div key={i} className="bg-white flex flex-col w-80 hover:scale-105 border duration-300 rounded-lg shadow-lg pb-4 mb-5">
             <a href={p.websiteUrl} target="_blank" rel="noopener noreferrer">
               <Image width={1000} height={200}
