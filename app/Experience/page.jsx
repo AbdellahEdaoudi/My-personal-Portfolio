@@ -33,6 +33,11 @@ export const metadata = {
     languages: {
       'en': '/en/Experience',
       'fr': '/fr/Experience',
+      'de': '/de/Experience',
+      'zh': '/zh/Experience',
+      'nl': '/nl/Experience',
+      'es': '/es/Experience',
+      'pt': '/pt/Experience',
     },
   },
 };

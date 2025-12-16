@@ -20,5 +20,60 @@
             "Vitrine Next.js",
             "Projets Abdellah Edaoudi"
         ]
+    },
+    "zh": {
+        "title": "Abdellah Edaoudi | 项目",
+        "description": "探索 Abdellah Edaoudi 的投资组合项目。展示创新的 Web 应用程序、全栈开发工作和编码专业知识。",
+        "keywords": [
+            "项目",
+            "作品集",
+            "工作",
+            "案例研究",
+            "Web 应用程序"
+        ]
+    },
+    "nl": {
+        "title": "Abdellah Edaoudi | Projecten",
+        "description": "Ontdek de portfolioprojecten van Abdellah Edaoudi. Toont innovatieve webapplicaties, full stack ontwikkelingswerk en coding-expertise.",
+        "keywords": [
+            "Projecten",
+            "Portfolio",
+            "Werk",
+            "Casestudy's",
+            "Webapplicaties"
+        ]
+    },
+    "es": {
+        "title": "Abdellah Edaoudi | Proyectos",
+        "description": "Explora los proyectos del portafolio de Abdellah Edaoudi. Muestra aplicaciones web innovadoras, trabajo de desarrollo full stack y experiencia en codificación.",
+        "keywords": [
+            "Proyectos",
+            "Portafolio",
+            "Trabajo",
+            "Casos de Estudio",
+            "Aplicaciones Web"
+        ]
+    },
+    "pt": {
+        "title": "Abdellah Edaoudi | Projetos",
+        "description": "Explore os projetos do portfólio de Abdellah Edaoudi. Apresentando aplicativos da web inovadores, trabalho de desenvolvimento full stack e experiência em codificação.",
+        "keywords": [
+            "Projetos",
+            "Portfólio",
+            "Trabalho",
+            "Estudos de Caso",
+            "Aplicações Web"
+        ]
+    },
+    "de": {
+        "title": "Abdellah Edaoudi | Projekte",
+        "description": "Durchsuchen Sie eine kuratierte Galerie von Hochleistungs-Webanwendungen. Präsentation von Fachwissen im MERN-Stack, SaaS-Plattformen und responsivem Design von Abdellah Edaoudi.",
+        "keywords": [
+            "Portfolio Webentwicklung",
+            "Projekte MERN Stack",
+            "React Anwendungen",
+            "Next.js Showcase",
+            "Projekte Abdellah Edaoudi"
+        ]
     }
 }

@@ -20,5 +20,60 @@
             "Architecte Next.js",
             "Développement Web Maroc"
         ]
+    },
+    "de": {
+        "title": "Abdellah Edaoudi | Über mich",
+        "description": "Entdecken Sie den Werdegang von Abdellah Edaoudi. Ein erstklassiger Full-Stack-Entwickler, spezialisiert auf skalierbare MERN-Anwendungen, Next.js-Performance und innovative digitale Lösungen.",
+        "keywords": [
+            "Über Abdellah Edaoudi",
+            "Full Stack Experte",
+            "MERN Entwickler",
+            "Next.js Architekt",
+            "Webentwicklung Marokko"
+        ]
+    },
+    "zh": {
+        "title": "关于我 | Abdellah Edaoudi",
+        "description": "了解更多关于 Abdellah Edaoudi 的信息，他是 MERN 技术栈全栈开发人员。了解我的背景、教育和专业之旅。",
+        "keywords": [
+            "关于我",
+            "Abdellah Edaoudi",
+            "传记",
+            "背景",
+            "信息"
+        ]
+    },
+    "nl": {
+        "title": "Over mij | Abdellah Edaoudi",
+        "description": "Leer meer over Abdellah Edaoudi, een Full Stack ontwikkelaar in MERN-stack. Ontdek mijn achtergrond, opleiding en professionele reis.",
+        "keywords": [
+            "Over mij",
+            "Abdellah Edaoudi",
+            "Biografie",
+            "Achtergrond",
+            "Informatie"
+        ]
+    },
+    "es": {
+        "title": "Sobre mí | Abdellah Edaoudi",
+        "description": "Conoce más sobre Abdellah Edaoudi, un desarrollador Full Stack en MERN-Stack. Descubre mi trayectoria, educación y camino profesional.",
+        "keywords": [
+            "Sobre mí",
+            "Abdellah Edaoudi",
+            "Biografía",
+            "Antecedentes",
+            "Información"
+        ]
+    },
+    "pt": {
+        "title": "Sobre mim | Abdellah Edaoudi",
+        "description": "Saiba mais sobre Abdellah Edaoudi, um desenvolvedor Full Stack em MERN-Stack. Descubra minha experiência, educação e jornada profissional.",
+        "keywords": [
+            "Sobre mim",
+            "Abdellah Edaoudi",
+            "Biografia",
+            "Antecedentes",
+            "Informações"
+        ]
     }
 }

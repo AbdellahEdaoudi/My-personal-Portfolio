@@ -178,5 +178,455 @@
                 ]
             }
         ]
+    },
+    "de": {
+        "title": "Erfahrung",
+        "subtitle": "Meine Berufserfahrung",
+        "items": [
+            {
+                "title": "Gründer & Entwickler von DGT Portfolio",
+                "company": "Dgt Portfolio",
+                "location": "Laayoune , Marokko",
+                "startDate": "Okt 2024",
+                "endDate": "Gegenwart",
+                "duration": "+ 2 Mon",
+                "type": "Gründer & Entwickler",
+                "workType": "Hybrid",
+                "achievementsLabel": "Erfolge:",
+                "responsibilities": [
+                    "Ein professioneller Weg, Ihr digitales Portfolio ohne Programmier- oder Designkenntnisse zu erstellen.",
+                    "Benutzerdefinierte Subdomain: ihrname.dgtportfolio.com",
+                    "Benutzerdefinierte Domain: ihrname.com",
+                    "Verbesserte SEO-Sichtbarkeit für Ihr Portfolio",
+                    "QR-Code bereit für einfaches Teilen",
+                    "Mehrere Themen passend zu Ihrem Stil",
+                    "Zeigen Sie Ihr Portfolio in jeder gewünschten Sprache an",
+                    "Schnelle, reibungslose und benutzerfreundliche Erfahrung"
+                ]
+            },
+            {
+                "title": "Full Stack MERN Entwickler",
+                "company": "Regionale Akademie für Bildung und Ausbildung",
+                "location": "Laayoune , Marokko",
+                "startDate": "Mär 2024",
+                "endDate": "Apr 2024",
+                "duration": "2 Mon",
+                "type": "Praktikum",
+                "workType": "Hybrid",
+                "achievementsLabel": "Erfolge:",
+                "responsibilities": [
+                    "Entwurf und Entwicklung einer Aufgabenverwaltungsanwendung, mit der Benutzer Aufgaben hinzufügen, bearbeiten und löschen können.",
+                    "Implementierung von Authentifizierung und Autorisierung mit JWT zur Gewährleistung der Sicherheit der Anwendung.",
+                    "Testen von API-Endpunkten mit Postman zur Sicherstellung der ordnungsgemäßen Funktionalität.",
+                    "Verbesserung der Benutzererfahrung durch Gestaltung einer einfachen und benutzerfreundlichen Oberfläche.",
+                    "Bereitstellung der Anwendung auf Vercel und Verwaltung der Codebasis mit Git/GitHub."
+                ]
+            },
+            {
+                "title": "Full Stack Webentwickler",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Laayoune , Marokko",
+                "startDate": "Sep 2023",
+                "endDate": "Jun 2024",
+                "duration": "10 Mon",
+                "type": "Praktikant",
+                "workType": "Vor Ort",
+                "achievementsLabel": "Erfolge:",
+                "description": [
+                    "Erwerb wesentlicher Webentwicklungskenntnisse durch Kombination von Theorie und praktischer Anwendung in einem professionellen Umfeld.",
+                    "Gestaltung interaktiver und attraktiver Benutzeroberflächen in der Frontend-Entwicklung.",
+                    "Erfahrung in der Backend-Entwicklung und Datenbankverwaltung gesammelt.",
+                    "Entwicklung von Fähigkeiten zur Erstellung und Wartung dynamischer Webanwendungen.",
+                    "Anwendung der Agilen Methodik zur Verbesserung der Effizienz und Stärkung der Teamarbeit.",
+                    "Erfahrung mit Git und GitHub für effektives Code- und Projektmanagement gesammelt.",
+                    "Verwendung von SonarQube zur Analyse der Codequalität und Sicherstellung kontinuierlicher Verbesserung.",
+                    "Verwendung von Docker zur Optimierung der Umgebungsverwaltung und Anwendungsentwicklung.",
+                    "Verbesserung zwischenmenschlicher Fähigkeiten wie Kommunikation und Teamarbeit zur besseren Vorbereitung auf diverse Arbeitsumgebungen."
+                ]
+            },
+            {
+                "title": "Praktikant Digitalentwickler",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Laayoune , Marokko",
+                "startDate": "Nov 2022",
+                "endDate": "Jun 2023",
+                "duration": "8 Mon",
+                "type": "Praktikant",
+                "workType": "Vor Ort",
+                "keyResponsibilities": "Hauptverantwortlichkeiten:",
+                "description": [
+                    "Kultur und fortgeschrittene Techniken des digitalen Bereichs",
+                    "Verständnis der Dimensionen des Berufs und des Lernpfades",
+                    "Erwerb der Grundlagen der Algorithmik",
+                    "Verhaltens- und Sozialkompetenzen",
+                    "Entwicklung von Fähigkeiten in der objektorientierten Programmierung",
+                    "Konzeption und Erstellung statischer Websites",
+                    "Verwendung von JavaScript für die Anwendungsentwicklung",
+                    "Arbeiten mit Datenbanken und Ausführen grundlegender Operationen",
+                    "Erstellung dynamischer Websites, die mit Benutzern interagieren",
+                    "Vertrautmachen mit den Prinzipien der Informationssicherheit"
+                ]
+            }
+        ]
+    },
+    "zh": {
+        "title": "经验",
+        "subtitle": "我的专业经验",
+        "items": [
+            {
+                "title": "DGT Portfolio 创始人兼开发人员",
+                "company": "Dgt Portfolio",
+                "location": "摩洛哥阿尤恩",
+                "startDate": "2024年10月",
+                "endDate": "至今",
+                "duration": "+ 2 个月",
+                "type": "创始人兼开发人员",
+                "workType": "混合办公",
+                "achievementsLabel": "成就：",
+                "responsibilities": [
+                    "无需任何编码或设计技能即可创建数字作品集的专业方式。",
+                    "自定义子域名：yourname.dgtportfolio.com",
+                    "自定义域名：yourname.com",
+                    "提高作品集的 SEO 可见性",
+                    "二维码就绪，方便分享",
+                    "多种主题以匹配您的风格",
+                    "以您选择的任何语言展示您的作品集",
+                    "快速、流畅且用户友好的体验"
+                ]
+            },
+            {
+                "title": "MERN 全栈开发人员",
+                "company": "区域教育培训学院",
+                "location": "摩洛哥阿尤恩",
+                "startDate": "2024年3月",
+                "endDate": "2024年4月",
+                "duration": "2 个月",
+                "type": "实习",
+                "workType": "混合办公",
+                "achievementsLabel": "成就：",
+                "responsibilities": [
+                    "设计并开发了一个任务管理应用程序，允许用户添加、编辑和删除任务。",
+                    "使用 JWT 实现身份验证和授权，以确保应用程序的安全性。",
+                    "使用 Postman 测试 API 端点以确保功能正常。",
+                    "通过设计简单且用户友好的界面改善用户体验。",
+                    "将应用程序部署在 Vercel 上，并使用 Git/GitHub 管理代码库。"
+                ]
+            },
+            {
+                "title": "全栈 Web 开发人员",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "摩洛哥阿尤恩",
+                "startDate": "2023年9月",
+                "endDate": "2024年6月",
+                "duration": "10 个月",
+                "type": "实习",
+                "workType": "现场办公",
+                "achievementsLabel": "成就：",
+                "description": [
+                    "在专业环境中结合理论与实践，获得了重要的 Web 开发技能。",
+                    "在前端开发中设计了交互式且有吸引力的用户界面。",
+                    "获得了后端开发和数据库管理方面的经验。",
+                    "培养了创建和维护动态 Web 应用程序的技能。",
+                    "应用敏捷方法提高效率并加强团队合作。",
+                    "获得了使用 Git 和 GitHub 进行有效代码和项目管理的经验。",
+                    "使用 SonarQube 分析代码质量并确保持续改进。",
+                    "使用 Docker 以此简化环境管理和应用程序开发。",
+                    "增强了人际交往能力，如沟通和团队合作，以便更好地适应多样化的工作环境。"
+                ]
+            },
+            {
+                "title": "数字开发实习生",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "摩洛哥阿尤恩",
+                "startDate": "2022年11月",
+                "endDate": "2023年6月",
+                "duration": "8 个月",
+                "type": "实习",
+                "workType": "现场办公",
+                "keyResponsibilities": "主要职责：",
+                "description": [
+                    "数字领域的文化和先进技术",
+                    "了解职业的维度和学习路径",
+                    "掌握算法基础",
+                    "行为和社交技能",
+                    "培养面向对象编程技能",
+                    "设计和构建静态网站",
+                    "使用 JavaScript 进行应用程序开发",
+                    "使用数据库并执行基本操作",
+                    "构建与用户交互的动态网站",
+                    "熟悉信息系统安全原则"
+                ]
+            }
+        ]
+    },
+    "nl": {
+        "title": "Ervaring",
+        "subtitle": "Mijn Professionele Ervaring",
+        "items": [
+            {
+                "title": "Oprichter & Ontwikkelaar van DGT Portfolio",
+                "company": "Dgt Portfolio",
+                "location": "El-Aaiun , Marokko",
+                "startDate": "Okt 2024",
+                "endDate": "Heden",
+                "duration": "+ 2 mnd",
+                "type": "Oprichter & Ontwikkelaar",
+                "workType": "Hybride",
+                "achievementsLabel": "Prestaties:",
+                "responsibilities": [
+                    "Professionele manier om uw digitale portfolio te maken zonder codeer- of ontwerpvaardigheden.",
+                    "Aangepast subdomein: uwname.dgtportfolio.com",
+                    "Aangepast domein: uwname.com",
+                    "Verbeterde SEO-zichtbaarheid voor uw portfolio",
+                    "QR-code klaar voor eenvoudig delen",
+                    "Meerdere thema's die bij uw stijl passen",
+                    "Toon uw portfolio in elke taal die u kiest",
+                    "Snelle, soepele en gebruiksvriendelijke ervaring"
+                ]
+            },
+            {
+                "title": "Full Stack MERN-ontwikkelaar",
+                "company": "Regionale Academie voor Onderwijs en Opleiding",
+                "location": "El-Aaiun , Marokko",
+                "startDate": "Mrt 2024",
+                "endDate": "Apr 2024",
+                "duration": "2 mnd",
+                "type": "Stage",
+                "workType": "Hybride",
+                "achievementsLabel": "Prestaties:",
+                "responsibilities": [
+                    "Ontworpen en ontwikkeld een taakbeheerapplicatie waarmee gebruikers taken kunnen toevoegen, bewerken en verwijderen.",
+                    "Authenticatie en autorisatie geïmplementeerd met behulp van JWT om de beveiliging van de applicatie te garanderen.",
+                    "API-eindpunten getest met Postman om een correcte functionaliteit te garanderen.",
+                    "Gebruikerservaring verbeterd door een eenvoudige en gebruiksvriendelijke interface te ontwerpen.",
+                    "De applicatie geïmplementeerd op Vercel en de codebase beheerd met behulp van Git/GitHub."
+                ]
+            },
+            {
+                "title": "Full Stack Webontwikkelaar",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiun , Marokko",
+                "startDate": "Sep 2023",
+                "endDate": "Jun 2024",
+                "duration": "10 mnd",
+                "type": "Stagiair",
+                "workType": "Op locatie",
+                "achievementsLabel": "Prestaties:",
+                "description": [
+                    "Essentiële webontwikkelingsvaardigheden opgedaan door theorie te combineren met praktische toepassing in een professionele omgeving.",
+                    "Interactieve en aantrekkelijke gebruikersinterfaces ontworpen in frontend-ontwikkeling.",
+                    "Ervaring opgedaan in backend-ontwikkeling en databasebeheer.",
+                    "Vaardigheden ontwikkeld in het creëren en onderhouden van dynamische webapplicaties.",
+                    "Agile-methodologie toegepast om de efficiëntie te verbeteren en teamwork te versterken.",
+                    "Ervaring opgedaan met Git en GitHub voor effectief code- en projectbeheer.",
+                    "SonarQube gebruikt om de codekwaliteit te analyseren en continue verbetering te garanderen.",
+                    "Docker gebruikt om omgevingsbeheer en applicatieontwikkeling te stroomlijnen.",
+                    "Interpersoonlijke vaardigheden verbeterd, zoals communicatie en teamwork, voor een betere voorbereiding in diverse werkomgevingen."
+                ]
+            },
+            {
+                "title": "Stagiair Digitaal Ontwikkelaar",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiun , Marokko",
+                "startDate": "Nov 2022",
+                "endDate": "Jun 2023",
+                "duration": "8 mnd",
+                "type": "Stagiair",
+                "workType": "Op locatie",
+                "keyResponsibilities": "Belangrijkste verantwoordelijkheden:",
+                "description": [
+                    "Cultuur en geavanceerde technieken van het digitale veld",
+                    "Begrip van de dimensies van het beroep en het leertraject",
+                    "De basisprincipes van algoritmiek verwerven",
+                    "Gedrags- en sociale vaardigheden",
+                    "Ontwikkelen van vaardigheden in objectgeoriënteerd programmeren",
+                    "Ontwerpen en bouwen van statische websites",
+                    "Gebruik van JavaScript voor applicatieontwikkeling",
+                    "Werken met databases en uitvoeren van basisbewerkingen",
+                    "Bouwen van dynamische websites die communiceren met gebruikers",
+                    "Kennismaken met de principes van informatiebeveiliging"
+                ]
+            }
+        ]
+    },
+    "es": {
+        "title": "Experiencia",
+        "subtitle": "Mi Experiencia Profesional",
+        "items": [
+            {
+                "title": "Fundador y Desarrollador de DGT Portfolio",
+                "company": "Dgt Portfolio",
+                "location": "El-Aaiún, Marruecos",
+                "startDate": "Oct 2024",
+                "endDate": "Presente",
+                "duration": "+ 2 meses",
+                "type": "Fundador y Desarrollador",
+                "workType": "Híbrido",
+                "achievementsLabel": "Logros:",
+                "responsibilities": [
+                    "Forma profesional de crear tu portafolio digital sin conocimientos de programación o diseño.",
+                    "Subdominio personalizado: tunombre.dgtportfolio.com",
+                    "Dominio personalizado: tunombre.com",
+                    "Mejor visibilidad SEO para tu portafolio",
+                    "Código QR listo para compartir fácilmente",
+                    "Múltiples temas para combinar con tu estilo",
+                    "Muestra tu portafolio en cualquier idioma que elijas",
+                    "Experiencia rápida, fluida y fácil de usar"
+                ]
+            },
+            {
+                "title": "Desarrollador Full Stack MERN",
+                "company": "Academia Regional de Educación y Formación",
+                "location": "El-Aaiún, Marruecos",
+                "startDate": "Mar 2024",
+                "endDate": "Abr 2024",
+                "duration": "2 meses",
+                "type": "Pasantía",
+                "workType": "Híbrido",
+                "achievementsLabel": "Logros:",
+                "responsibilities": [
+                    "Diseñé y desarrollé una aplicación de gestión de tareas que permite a los usuarios agregar, editar y eliminar tareas.",
+                    "Implementé autenticación y autorización usando JWT para garantizar la seguridad de la aplicación.",
+                    "Probé los endpoints de la API usando Postman para asegurar su correcto funcionamiento.",
+                    "Mejoré la experiencia del usuario diseñando una interfaz simple y amigable.",
+                    "Desplegué la aplicación en Vercel y gestioné el código base usando Git/GitHub."
+                ]
+            },
+            {
+                "title": "Desarrollador Web Full Stack",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiún, Marruecos",
+                "startDate": "Sep 2023",
+                "endDate": "Jun 2024",
+                "duration": "10 meses",
+                "type": "Pasantía",
+                "workType": "Presencial",
+                "achievementsLabel": "Logros:",
+                "description": [
+                    "Adquirí habilidades esenciales de desarrollo web combinando teoría con aplicación práctica en un entorno profesional.",
+                    "Diseñé interfaces de usuario interactivas y atractivas en desarrollo frontend.",
+                    "Adquirí experiencia en desarrollo backend y gestión de bases de datos.",
+                    "Desarrollé habilidades en la creación y mantenimiento de aplicaciones web dinámicas.",
+                    "Apliqué la metodología Agile para mejorar la eficiencia y fortalecer el trabajo en equipo.",
+                    "Gané experiencia usando Git y GitHub para una gestión efectiva del código y proyectos.",
+                    "Usé SonarQube para analizar la calidad del código y asegurar la mejora continua.",
+                    "Usé Docker para agilizar la gestión de entornos y el desarrollo de aplicaciones.",
+                    "Mejoré habilidades interpersonales, como comunicación y trabajo en equipo, para una mejor preparación en diversos entornos laborales."
+                ]
+            },
+            {
+                "title": "Pasante de Desarrollador Digital",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiún, Marruecos",
+                "startDate": "Nov 2022",
+                "endDate": "Jun 2023",
+                "duration": "8 meses",
+                "type": "Pasantía",
+                "workType": "Presencial",
+                "keyResponsibilities": "Responsabilidades clave:",
+                "description": [
+                    "Cultura y técnicas avanzadas del campo digital",
+                    "Comprensión de las dimensiones de la profesión y el camino de aprendizaje",
+                    "Adquisición de los conceptos básicos de algoritmia",
+                    "Habilidades conductuales y sociales",
+                    "Desarrollo de habilidades en programación orientada a objetos",
+                    "Diseño y construcción de sitios web estáticos",
+                    "Uso de JavaScript para el desarrollo de aplicaciones",
+                    "Trabajar con bases de datos y ejecutar operaciones básicas",
+                    "Construcción de sitios web dinámicos que interactúan con los usuarios",
+                    "Familiarización con los principios de seguridad de sistemas de información"
+                ]
+            }
+        ]
+    },
+    "pt": {
+        "title": "Experiência",
+        "subtitle": "Minha Experiência Profissional",
+        "items": [
+            {
+                "title": "Fundador e Desenvolvedor do DGT Portfolio",
+                "company": "Dgt Portfolio",
+                "location": "El-Aaiun , Marrocos",
+                "startDate": "Out 2024",
+                "endDate": "Presente",
+                "duration": "+ 2 meses",
+                "type": "Fundador e Desenvolvedor",
+                "workType": "Híbrido",
+                "achievementsLabel": "Conquistas:",
+                "responsibilities": [
+                    "Maneira profissional de criar seu portfólio digital sem habilidades de codificação ou design.",
+                    "Subdomínio personalizado: seunome.dgtportfolio.com",
+                    "Domínio personalizado: seunome.com",
+                    "Melhor visibilidade de SEO para seu portfólio",
+                    "Código QR pronto para fácil compartilhamento",
+                    "Vários temas para combinar com seu estilo",
+                    "Exiba seu portfólio em qualquer idioma que escolher",
+                    "Experiência rápida, suave e amigável"
+                ]
+            },
+            {
+                "title": "Desenvolvedor Full Stack MERN",
+                "company": "Academia Regional de Educação e Formação",
+                "location": "El-Aaiun , Marrocos",
+                "startDate": "Mar 2024",
+                "endDate": "Abr 2024",
+                "duration": "2 meses",
+                "type": "Estágio",
+                "workType": "Híbrido",
+                "achievementsLabel": "Conquistas:",
+                "responsibilities": [
+                    "Projetei e desenvolvi um aplicativo de gerenciamento de tarefas permitindo aos usuários adicionar, editar e excluir tarefas.",
+                    "Implementei autenticação e autorização usando JWT para garantir a segurança do aplicativo.",
+                    "Testei endpoints de API usando Postman para garantir o funcionamento correto.",
+                    "Melhorei a experiência do usuário projetando uma interface simples e amigável.",
+                    "Implantei o aplicativo na Vercel e gerenciei a base de código usando Git/GitHub."
+                ]
+            },
+            {
+                "title": "Desenvolvedor Web Full Stack",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiun , Marrocos",
+                "startDate": "Set 2023",
+                "endDate": "Jun 2024",
+                "duration": "10 meses",
+                "type": "Estágio",
+                "workType": "Presencial",
+                "achievementsLabel": "Conquistas:",
+                "description": [
+                    "Adquiri habilidades essenciais de desenvolvimento web combinando teoria com aplicação prática em um ambiente profissional.",
+                    "Projetei interfaces de usuário interativas e atraentes no desenvolvimento frontend.",
+                    "Adquiri experiência em desenvolvimento backend e gerenciamento de banco de dados.",
+                    "Desenvolvi habilidades na criação e manutenção de aplicações web dinâmicas.",
+                    "Apliquei a metodologia Agile para melhorar a eficiência e fortalecer o trabalho em equipe.",
+                    "Ganhei experiência usando Git e GitHub para gerenciamento eficaz de código e projetos.",
+                    "Usei SonarQube para analisar a qualidade do código e garantir melhoria contínua.",
+                    "Usei Docker para agilizar o gerenciamento de ambiente e desenvolvimento de aplicativos.",
+                    "Aprimorei habilidades interpessoais, como comunicação e trabalho em equipe, para melhor preparação em diversos ambientes de trabalho."
+                ]
+            },
+            {
+                "title": "Estagiário de Desenvolvimento Digital",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiun , Marrocos",
+                "startDate": "Nov 2022",
+                "endDate": "Jun 2023",
+                "duration": "8 meses",
+                "type": "Estagiário",
+                "workType": "Presencial",
+                "keyResponsibilities": "Principais responsabilidades:",
+                "description": [
+                    "Cultura e técnicas avançadas do campo digital",
+                    "Compreensão das dimensões da profissão e do caminho de aprendizado",
+                    "Aquisição dos fundamentos da algoritmia",
+                    "Habilidades comportamentais e sociais",
+                    "Desenvolvimento de habilidades em programação orientada a objetos",
+                    "Design e construção de sites estáticos",
+                    "Uso de JavaScript para desenvolvimento de aplicativos",
+                    "Trabalhar com bancos de dados e executar operações básicas",
+                    "Construção de sites dinâmicos que interagem com os usuários",
+                    "Familiarização com os princípios de segurança de sistemas de informação"
+                ]
+            }
+        ]
     }
 }

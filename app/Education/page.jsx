@@ -33,6 +33,11 @@ export const metadata = {
     languages: {
       'en': '/en/Education',
       'fr': '/fr/Education',
+      'de': '/de/Education',
+      'zh': '/zh/Education',
+      'nl': '/nl/Education',
+      'es': '/es/Education',
+      'pt': '/pt/Education',
     },
   },
 };
