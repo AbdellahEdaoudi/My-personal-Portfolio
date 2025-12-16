@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import './globals.css'
 import { Prompt } from 'next/font/google'
 import ScrollToTop from './Components/ScrollToTop'
@@ -83,6 +84,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${prompt.className}`}>
         {children}
+        <Analytics />
         <ScrollToTop />
       </body>
     </html>
