@@ -33,6 +33,11 @@ export const metadata = {
     languages: {
       'en': '/en/About',
       'fr': '/fr/About',
+      'de': '/de/About',
+      'zh': '/zh/About',
+      'nl': '/nl/About',
+      'es': '/es/About',
+      'pt': '/pt/About',
     },
   },
 };

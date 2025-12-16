@@ -18,5 +18,55 @@
         "experience": "Expérience",
         "contact": "Contact",
         "admin": "Admin"
+    },
+    "de": {
+        "home": "Startseite",
+        "about": "Über mich",
+        "skills": "Fähigkeiten",
+        "projects": "Projekte",
+        "education": "Bildung",
+        "experience": "Erfahrung",
+        "contact": "Kontakt",
+        "admin": "Admin"
+    },
+    "zh": {
+        "home": "首页",
+        "about": "关于我",
+        "skills": "技能",
+        "projects": "项目",
+        "education": "教育",
+        "experience": "经验",
+        "contact": "联系",
+        "admin": "管理"
+    },
+    "nl": {
+        "home": "Home",
+        "about": "Over mij",
+        "skills": "Vaardigheden",
+        "projects": "Projecten",
+        "education": "Opleiding",
+        "experience": "Ervaring",
+        "contact": "Contact",
+        "admin": "Beheerder"
+    },
+    "es": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "education": "Educación",
+        "experience": "Experiencia",
+        "contact": "Contacto",
+        "admin": "Admin"
+    },
+    "pt": {
+        "home": "Início",
+        "about": "Sobre mim",
+        "skills": "Habilidades",
+        "projects": "Projetos",
+        "education": "Educação",
+        "experience": "Experiência",
+        "contact": "Contato",
+        "admin": "Admin"
     }
 }

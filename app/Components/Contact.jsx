@@ -1,6 +1,25 @@
 "use client";
 import React, { useState } from "react";
-import { MailMinus, ArrowBigRight, Send } from "lucide-react";
+const MailMinus = ({ className, ...props }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
+    <path d="M22 15V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8" />
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+    <path d="M16 19h6" />
+  </svg>
+)
+
+const ArrowBigRight = ({ className, ...props }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
+    <path d="M6 9h6V5l7 7-7 7v-4H6V9z" />
+  </svg>
+)
+
+const Send = ({ className, ...props }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
+    <path d="m22 2-7 20-4-9-9-4Z" />
+    <path d="M22 2 11 13" />
+  </svg>
+)
 import Axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -19,7 +38,7 @@ function Contact({ content }) {
     setLoading(true);
 
     if (!name || !email || !msg) {
-      toast.error("Please fill in all fields and provide a valid email.");
+      toast.error(content.validationError || "Please fill in all fields and provide a valid email.");
       setLoading(false);
       return;
     }
@@ -36,10 +55,10 @@ function Contact({ content }) {
       setName("");
       setEmail("");
       setMsg("");
-      toast.success("Sent successfully", { autoClose: 1000 });
+      toast.success(content.successMessage || "Sent successfully", { autoClose: 1000 });
     } catch (error) {
       console.error(error);
-      toast.error("An error occurred. Please try again.");
+      toast.error(content.errorMessage || "An error occurred. Please try again.");
     } finally {
       setLoading(false);
     }

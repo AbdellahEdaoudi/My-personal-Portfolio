@@ -20,5 +20,60 @@
             "Diplômes Abdellah Edaoudi",
             "Formation MERN"
         ]
+    },
+    "de": {
+        "title": "Abdellah Edaoudi | Bildung",
+        "description": "Erkunden Sie das akademische Fundament eines Full-Stack-Experten. Spezialisiertes Diplom in Digitaler Entwicklung, zertifizierte Fähigkeiten in React, Node.js und moderner Webarchitektur.",
+        "keywords": [
+            "Diplom Digitale Entwicklung",
+            "Zertifizierung Full Stack",
+            "Webentwicklung Ausbildung",
+            "Abschlüsse Abdellah Edaoudi",
+            "MERN Ausbildung"
+        ]
+    },
+    "zh": {
+        "title": "Abdellah Edaoudi | 教育",
+        "description": "查看 Abdellah Edaoudi 的教育背景和资格证书。",
+        "keywords": [
+            "教育",
+            "学习",
+            "学位",
+            "大学",
+            "资格"
+        ]
+    },
+    "nl": {
+        "title": "Abdellah Edaoudi | Opleiding",
+        "description": "Bekijk de educatieve achtergrond en kwalificaties van Abdellah Edaoudi.",
+        "keywords": [
+            "Opleiding",
+            "Leren",
+            "Graad",
+            "Universiteit",
+            "Kwalificaties"
+        ]
+    },
+    "es": {
+        "title": "Abdellah Edaoudi | Educación",
+        "description": "Ver antecedentes educativos y calificaciones de Abdellah Edaoudi.",
+        "keywords": [
+            "Educación",
+            "Aprendizaje",
+            "Título",
+            "Universidad",
+            "Calificaciones"
+        ]
+    },
+    "pt": {
+        "title": "Abdellah Edaoudi | Educação",
+        "description": "Veja o histórico educacional e as qualificações de Abdellah Edaoudi.",
+        "keywords": [
+            "Educação",
+            "Aprendizado",
+            "Grau",
+            "Universidade",
+            "Qualificações"
+        ]
     }
 }
