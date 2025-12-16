@@ -83,6 +83,32 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${prompt.className}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Abdellah Edaoudi",
+              "url": "https://abdellah-edaoudi.vercel.app",
+              "sameAs": [
+                "https://linkedin.com/in/abdellah-edaoudi/",
+                "https://github.com/AbdellahEdaoudi",
+                "https://x.com/Edaoudi_abde",
+                "https://instagram.com/edaoudi_abdellah/",
+                "https://youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw"
+              ],
+              "jobTitle": "Full Stack Developer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Freelance"
+              },
+              "description": "Full Stack Developer specializing in MERN stack, Next.js, and modern web technologies. Explore my projects and skills.",
+              "disambiguatingDescription": "Software Engineer and Full Stack Developer specialized in React and Node.js. distinct from the artist/singer Abdellah Daoudi.",
+              "knowsAbout": ["Web Development", "MERN Stack", "React", "Next.js", "JavaScript", "Software Engineering"]
+            })
+          }}
+        />
         {children}
         <Analytics />
         <ScrollToTop />
