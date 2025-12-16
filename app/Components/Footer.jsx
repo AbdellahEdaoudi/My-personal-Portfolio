@@ -18,19 +18,19 @@ function Footer({ content }) {
         </div>
         <div className='flex space-x-4 justify-center '>
           <Link href='https://www.linkedin.com/in/abdellah-edaoudi-0bbba02a5/' target='_blank'>
-            <Image src={"/icons/link.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="LinkedIn" />
+            <Image src={"/icons/linkedin.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="LinkedIn" />
           </Link>
           <Link href='https://github.com/AbdellahEdaoudi' target='_blank'>
             <Image src={"/icons/github.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="GitHub" />
           </Link>
           <Link href='https://www.youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw' target='_blank'>
-            <Image src={"/icons/yt.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="YouTube" />
+            <Image src={"/icons/youtube.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="YouTube" />
           </Link>
           <Link href="https://x.com/Edaoudi_abde" target="_blank">
-            <Image src={"/icons/twit.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="Twitter" />
+            <Image src={"/icons/twitter.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="Twitter" />
           </Link>
           <Link href='https://www.instagram.com/edaoudi_abdellah/' target='_blank'>
-            <Image src={"/icons/ins.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="Instagram" />
+            <Image src={"/icons/instagram.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="Instagram" />
           </Link>
         </div>
         <div>

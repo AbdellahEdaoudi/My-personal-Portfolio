@@ -26,7 +26,7 @@ function Home({ content }) {
               target="_blank" className="hover:scale-105 duration-300"
             >
               {/* <Linkedin /> */}
-              <Image src={"/icons/link.svg"} alt="" width={30} height={10} />
+              <Image src={"/icons/linkedin.svg"} alt="" width={30} height={10} />
             </a>
             <a
               href="https://github.com/AbdellahEdaoudi"
@@ -40,7 +40,7 @@ function Home({ content }) {
               target="_blank" className="hover:scale-105 duration-300"
             >
               {/* <Youtube /> */}
-              <Image src={"/icons/yt.svg"} alt="" width={30} height={10} />
+              <Image src={"/icons/youtube.svg"} alt="" width={30} height={10} />
 
             </a>
             <a
@@ -48,7 +48,7 @@ function Home({ content }) {
               target="_blank" className="hover:scale-105 duration-300"
             >
               {/* <Instagram /> */}
-              <Image src={"/icons/twit.svg"} alt="" width={30} height={10} />
+              <Image src={"/icons/twitter.svg"} alt="" width={30} height={10} />
 
             </a>
             <a
@@ -56,7 +56,7 @@ function Home({ content }) {
               target="_blank" className="hover:scale-105 duration-300"
             >
               {/* <Instagram /> */}
-              <Image src={"/icons/ins.svg"} alt="" width={30} height={10} />
+              <Image src={"/icons/instagram.svg"} alt="" width={30} height={10} />
 
             </a>
           </div>
