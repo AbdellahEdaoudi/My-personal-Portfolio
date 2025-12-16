@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /Admin
-Disallow: /Admin/Users-Location
-
-Sitemap: https://abdellah-edaoudi.vercel.app/sitemap.xml
