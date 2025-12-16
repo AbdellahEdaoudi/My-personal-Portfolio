@@ -40,6 +40,11 @@ export async function generateMetadata({ params }) {
             languages: {
                 'en': '/en/Skills',
                 'fr': '/fr/Skills',
+                'de': '/de/Skills',
+                'zh': '/zh/Skills',
+                'nl': '/nl/Skills',
+                'es': '/es/Skills',
+                'pt': '/pt/Skills',
             },
         },
     }

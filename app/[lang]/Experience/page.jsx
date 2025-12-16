@@ -40,6 +40,11 @@ export async function generateMetadata({ params }) {
             languages: {
                 'en': '/en/Experience',
                 'fr': '/fr/Experience',
+                'de': '/de/Experience',
+                'zh': '/zh/Experience',
+                'nl': '/nl/Experience',
+                'es': '/es/Experience',
+                'pt': '/pt/Experience',
             },
         },
     }

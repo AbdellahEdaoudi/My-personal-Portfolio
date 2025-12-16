@@ -40,6 +40,11 @@ export async function generateMetadata({ params }) {
             languages: {
                 'en': '/en/Projects',
                 'fr': '/fr/Projects',
+                'de': '/de/Projects',
+                'zh': '/zh/Projects',
+                'nl': '/nl/Projects',
+                'es': '/es/Projects',
+                'pt': '/pt/Projects',
             },
         },
     }

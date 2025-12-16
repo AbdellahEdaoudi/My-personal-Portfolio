@@ -20,5 +20,60 @@
             "Abdellah Edaoudi Contact",
             "Services Développement Web"
         ]
+    },
+    "de": {
+        "title": "Abdellah Edaoudi | Kontakt",
+        "description": "Bereit, etwas Erstaunliches zu bauen? Kontaktieren Sie Abdellah Edaoudi für Freelance-Anfragen, Kooperationen oder Full-Stack-Entwicklerstellen in Vollzeit.",
+        "keywords": [
+            "Full Stack Entwickler einstellen",
+            "Webentwickler Kontakt",
+            "Freelance MERN",
+            "Abdellah Edaoudi Kontakt",
+            "Webentwicklungsdienste"
+        ]
+    },
+    "zh": {
+        "title": "Abdellah Edaoudi | 联系",
+        "description": "准备好构建令人惊叹的东西了吗？联系 Abdellah Edaoudi 进行自由职业咨询、合作或全职全栈开发角色。让我们谈谈。",
+        "keywords": [
+            "聘请全栈开发人员",
+            "Web 开发人员联系",
+            "自由职业 MERN 开发人员",
+            "Abdellah Edaoudi 联系",
+            "Web 开发服务"
+        ]
+    },
+    "nl": {
+        "title": "Abdellah Edaoudi | Contact",
+        "description": "Klaar om iets geweldigs te bouwen? Neem contact op met Abdellah Edaoudi voor freelance aanvragen, samenwerkingen of fulltime Full Stack ontwikkelingsrollen. Laten we praten.",
+        "keywords": [
+            "Huur Full Stack Ontwikkelaar",
+            "Webontwikkelaar Contact",
+            "Freelance MERN Ontwikkelaar",
+            "Abdellah Edaoudi Contact",
+            "Webontwikkelingsdiensten"
+        ]
+    },
+    "es": {
+        "title": "Abdellah Edaoudi | Contacto",
+        "description": "¿Listo para construir algo increíble? Contacta a Abdellah Edaoudi para consultas de freelance, colaboraciones o roles de desarrollo Full Stack a tiempo completo. Hablemos.",
+        "keywords": [
+            "Contratar Desarrollador Full Stack",
+            "Contacto Desarrollador Web",
+            "Freelance MERN",
+            "Abdellah Edaoudi Contacto",
+            "Servicios de Desarrollo Web"
+        ]
+    },
+    "pt": {
+        "title": "Abdellah Edaoudi | Contato",
+        "description": "Pronto para construir algo incrível? Entre em contato com Abdellah Edaoudi para consultas de freelancer, colaborações ou funções de desenvolvimento Full Stack em tempo integral. Vamos conversar.",
+        "keywords": [
+            "Contratar Desenvolvedor Full Stack",
+            "Contato Desenvolvedor Web",
+            "Freelancer MERN",
+            "Abdellah Edaoudi Contato",
+            "Serviços de Desenvolvimento Web"
+        ]
     }
 }

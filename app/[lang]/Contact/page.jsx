@@ -40,6 +40,11 @@ export async function generateMetadata({ params }) {
             languages: {
                 'en': '/en/Contact',
                 'fr': '/fr/Contact',
+                'de': '/de/Contact',
+                'zh': '/zh/Contact',
+                'nl': '/nl/Contact',
+                'es': '/es/Contact',
+                'pt': '/pt/Contact',
             },
         },
     }

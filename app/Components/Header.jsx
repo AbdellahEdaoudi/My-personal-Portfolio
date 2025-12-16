@@ -1,7 +1,13 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { AlignJustify } from 'lucide-react';
+const AlignJustify = ({ className, ...props }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
+        <line x1="3" x2="21" y1="6" y2="6" />
+        <line x1="3" x2="21" y1="12" y2="12" />
+        <line x1="3" x2="21" y1="18" y2="18" />
+    </svg>
+)
 import Image from 'next/image';
 import { useParams, usePathname, useRouter } from 'next/navigation';
 
@@ -62,6 +68,11 @@ export default function Header({ content }) {
                         className='rounded-md border border-gray-300 px-2 py-1 focus:outline-none focus:border-green-500 bg-transparent'>
                         <option value={"en"}>en</option>
                         <option value={"fr"}>fr</option>
+                        <option value={"de"}>de</option>
+                        <option value={"es"}>es</option>
+                        <option value={"pt"}>pt</option>
+                        <option value={"nl"}>nl</option>
+                        <option value={"zh"}>zh</option>
                     </select>
 
                     {/* <Link href={`/${currentLang}/Admin`} className="text-gray-600 hover:text-green-500 flex items-center">
@@ -77,6 +88,11 @@ export default function Header({ content }) {
                         className='md:hidden rounded-md border border-gray-300 px-2 py-1 bg-transparent'>
                         <option value={"en"}>en</option>
                         <option value={"fr"}>fr</option>
+                        <option value={"de"}>de</option>
+                        <option value={"zh"}>zh</option>
+                        <option value={"nl"}>nl</option>
+                        <option value={"es"}>es</option>
+                        <option value={"pt"}>pt</option>
                     </select>
                 </div>
             </div>

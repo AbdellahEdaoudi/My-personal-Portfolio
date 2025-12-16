@@ -36,8 +36,6 @@ export const metadata = {
     images: [
       {
         url: '/profile-pic.png',
-        width: 1200,
-        height: 630,
         alt: 'Abdellah Edaoudi - Full Stack Developer',
       }
     ],
@@ -61,9 +59,21 @@ export const metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/apple-icon.png',
+    icon: '/profile-pic.png',
+    shortcut: '/profile-pic.png',
+    apple: '/profile-pic.png',
+  },
+  alternates: {
+    canonical: '/en',
+    languages: {
+      'en': '/en',
+      'fr': '/fr',
+      'de': '/de',
+      'zh': '/zh',
+      'nl': '/nl',
+      'es': '/es',
+      'pt': '/pt',
+    },
   },
 }
 const prompt = Prompt({ subsets: ["latin"], weight: '500' });
