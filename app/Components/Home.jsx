@@ -7,7 +7,7 @@ function Home({ content }) {
 
   return (
     <section className="mx-4">
-      <div className="flex md:flex-row flex-col-reverse items-center justify-center gap-2 md:gap-12 lg:gap-28 pt-4 md:py-7 duration-300">
+      <div className="flex md:flex-row flex-col-reverse items-center justify-center gap-2 md:gap-12 lg:gap-28 pt-4 pb-5 md:py-7 duration-300">
         {/* Profile */}
         <div className="space-y-2 lg:space-y-3 flex flex-col items-center justify-center">
           <p className="text-[2.4rem]">
