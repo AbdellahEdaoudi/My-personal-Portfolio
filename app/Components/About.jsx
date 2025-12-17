@@ -30,7 +30,7 @@ function About({ content }) {
   if (!content) return null;
 
   return (
-    <section id="about" className="bg-gray-50 pt-4 min-h-screen">
+    <section id="about" className="py-4 md:min-h-screen">
       <div className="text-center">
         <p className="text-4xl font-bold">{content.title}</p>
         <p className="text-gray-400 text-sm">{content.subtitle}</p>
