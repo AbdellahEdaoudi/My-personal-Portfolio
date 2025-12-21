@@ -180,5 +180,31 @@
                 "image": "/Skills/Adaptability.png"
             }
         ]
+    },
+    "ar": {
+        "title": "المهارات",
+        "subtitle": "المستوى التقني",
+        "frontendTitle": "مطور واجهة أمامية",
+        "backendTitle": "مطور واجهة خلفية",
+        "toolsTitle": "أدوات التطوير",
+        "softSkillsTitle": "المهارات الشخصية",
+        "softSkills": [
+            {
+                "name": "حل المشكلات",
+                "image": "/Skills/Problem Solving.png"
+            },
+            {
+                "name": "العمل الجماعي",
+                "image": "/Skills/Teamwork.jpg"
+            },
+            {
+                "name": "التواصل",
+                "image": "/Skills/Communication.png"
+            },
+            {
+                "name": "القدرة على التكيف",
+                "image": "/Skills/Adaptability.png"
+            }
+        ]
     }
 }

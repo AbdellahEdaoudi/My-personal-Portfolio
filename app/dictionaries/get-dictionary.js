@@ -85,6 +85,18 @@ const dictionaries = {
         metadata: import('./metadata.json').then((module) => module.pt),
         header: import('./header.json').then((module) => module.pt),
     }),
+    ar: () => ({
+        home: import('./home.json').then((module) => module.ar),
+        about: import('./about.json').then((module) => module.ar),
+        skills: import('./skills.json').then((module) => module.ar),
+        projects: import('./projects.json').then((module) => module.ar),
+        experience: import('./experience.json').then((module) => module.ar),
+        education: import('./education.json').then((module) => module.ar),
+        contact: import('./contact.json').then((module) => module.ar),
+        footer: import('./footer.json').then((module) => module.ar),
+        metadata: import('./metadata.json').then((module) => module.ar),
+        header: import('./header.json').then((module) => module.ar),
+    }),
 }
 // Note: The structure of JSON files was: { "en": { ... }, "fr": { ... } } for each file.
 // So for 'en', we want module.default.en? No, let's check the JSON files I wrote.

@@ -103,5 +103,20 @@
         "validationError": "Por favor, preencha todos os campos e forneça um e-mail válido.",
         "successMessage": "Enviado com sucesso",
         "errorMessage": "Ocorreu um erro. Tente novamente."
+    },
+    "ar": {
+        "title": "تواصل",
+        "subtitle": "الحصول على اتصال",
+        "namePlaceholder": "أدخل اسمك",
+        "emailPlaceholder": "أدخل بريدك الإلكتروني",
+        "messagePlaceholder": "أدخل رسالتك",
+        "sendButton": "إرسال الرسالة",
+        "sendingButton": "جاري الإرسال...",
+        "writeMe": "راسلني",
+        "email": "البريد الإلكتروني",
+        "whatsapp": "واتساب",
+        "validationError": "يرجى ملء جميع الحقول وتقديم بريد إلكتروني صالح.",
+        "successMessage": "تم الإرسال بنجاح",
+        "errorMessage": "حدث خطأ. حاول مرة أخرى."
     }
 }

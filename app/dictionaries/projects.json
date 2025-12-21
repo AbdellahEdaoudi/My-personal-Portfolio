@@ -2,6 +2,9 @@
     "en": {
         "title": "Projects",
         "subtitle": "Most recent work",
+        "liveDemo": "Demo",
+        "readMore": "Read more",
+        "showLess": "Show less",
         "items": [
             {
                 "title": "DGT Portfolio Builder",
@@ -303,6 +306,9 @@
     "fr": {
         "title": "Projets",
         "subtitle": "Travaux les plus récents",
+        "liveDemo": "Démo",
+        "readMore": "Lire la suite",
+        "showLess": "Afficher moins",
         "items": [
             {
                 "title": "DGT Portfolio Builder",
@@ -608,6 +614,9 @@
     "de": {
         "title": "Projekte",
         "subtitle": "Neueste Arbeiten",
+        "liveDemo": "Demo",
+        "readMore": "Mehr lesen",
+        "showLess": "Weniger anzeigen",
         "items": [
             {
                 "title": "DGT Portfolio Builder",
@@ -912,7 +921,10 @@
     },
     "zh": {
         "title": "项目",
-        "subtitle": "最近的作品",
+        "subtitle": "最新作品",
+        "liveDemo": "演示",
+        "readMore": "阅读更多",
+        "showLess": "收起",
         "items": [
             {
                 "title": "DGT 投资组合构建器",
@@ -1213,6 +1225,9 @@
     "nl": {
         "title": "Projecten",
         "subtitle": "Meest recente werk",
+        "liveDemo": "Demo",
+        "readMore": "Lees meer",
+        "showLess": "Toon minder",
         "items": [
             {
                 "title": "DGT Portfolio Builder",
@@ -1513,6 +1528,9 @@
     "es": {
         "title": "Proyectos",
         "subtitle": "Trabajos más recientes",
+        "liveDemo": "Demo",
+        "readMore": "Leer más",
+        "showLess": "Mostrar menos",
         "items": [
             {
                 "title": "Constructor de Portafolios DGT",
@@ -1813,6 +1831,9 @@
     "pt": {
         "title": "Projetos",
         "subtitle": "Trabalhos mais recentes",
+        "liveDemo": "Demo",
+        "readMore": "Ler mais",
+        "showLess": "Mostrar menos",
         "items": [
             {
                 "title": "Construtor de Portfólio DGT",
@@ -2089,6 +2110,309 @@
                 "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
                 "githubUrls": "",
                 "description": "Um aplicativo de gerenciamento de códigos QR que permite criar códigos QR com logotipos personalizados, ler códigos QR de imagens e digitalizar códigos QR através da câmera para exibir dados instantaneamente. Apresenta um design atraente e responsivo.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "ar": {
+        "title": "المشاريع",
+        "subtitle": "أحدث الأعمال",
+        "liveDemo": "معاينة",
+        "readMore": "اقرأ المزيد",
+        "showLess": "عرض أقل",
+        "items": [
+            {
+                "title": "DGT Portfolio Builder",
+                "type": "fullstack",
+                "image": "/Projects/dgtportfolio.png",
+                "websiteUrl": "https://dgtportfolio.com",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "منصة SaaS شاملة تمكن المستخدمين من بناء محافظ احترافية دون عناء. تتميز بدعم متعدد اللغات، وتكامل النطاق المخصص، واختيار السمات الديناميكية، وإنشاء السيرة الذاتية في الوقت الفعلي، ولوحة تحكم إدارية بديهية لإدارة المحتوى والاشتراكات والتحليلات.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "PayPal",
+                        "logo": "/Skills/paypal.png"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Backend التجارة الإلكترونية",
+                "type": "backend",
+                "image": "/Projects/Ecom-backend.png",
+                "websiteUrl": "/Requirements.docx.pdf",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubUrls": "",
+                "description": "نظام خلفي قوي وقابل للتوسع لمنصة التجارة الإلكترونية. يتعامل النظام مع وظائف مختلفة مثل إدارة المستخدمين، وتنظيم مخزون المنتجات، ومعالجة الطلبات، والتعامل مع المدفوعات (سواء نقداً أو بالبطاقة)، وإضافة القسائم، والمراجعات، وإدارة الفئات والعلامات التجارية، وإدارة الموردين، والتنظيم الضريبي.",
+                "technologies": [
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Typescript",
+                        "logo": "/Skills/typescript.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "حجز الفنادق",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "يوفر نظام إدارة الفنادق حلاً شاملاً لإدارة حجوزات الغرف والمدفوعات. يسمح للمستخدمين بحجز الغرف بسهولة وتلقي تذكرة إلكترونية للتأكيد. يتضمن النظام لوحة تحكم لإدارة الحجوزات والمدفوعات وردود العملاء عبر البريد الإلكتروني.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "منصة السيرة الذاتية",
+                "image": "/Projects/Linkerfolio.png",
+                "websiteUrl": "https://linkerfolio.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "description": "تطبيق مبتكر قمت بتطويره، يسمح للمستخدمين بعرض سيرتهم الذاتية المهنية وروابط وسائل التواصل الاجتماعي في مكان واحد. يساعد هذا التطبيق المستخدمين على إدارة هويتهم الرقمية بفعالية، مما يجعله أداة مثالية للباحثين عن عمل أو أي شخص يتطلع إلى تعزيز تواجده عبر الإنترنت وتأثيره الرقمي.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Shadcn/ui",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "تطبيق التسوق",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "تطبيق يوفر تجربة تسوق سلسة، مما يسهل على المستخدمين تصفح المنتجات وإضافة العناصر إلى عربة التسوق الخاصة بهم. يتميز التطبيق بتصميم حديث ومبتكر يعزز تجربة المستخدم، مع استجابة فورية وعناصر تفاعلية تجعل التسوق أكثر متعة.",
+                "technologies": [
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "ضاغط الصور",
+                "image": "/Projects/image-compressor.png",
+                "websiteUrl": "https://image-compressor-aed.vercel.app",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "أداة قوية وآمنة لضغط الصور تعتمد على المتصفح. تتيح للمستخدمين ضغط عدد غير محدود من صور JPG و PNG و WebP بنسبة تصل إلى 90٪ دون فقدان الجودة. تشمل الميزات الضغط الجماعي، وإنشاء PDF، وواجهة السحب والإفلات، والخصوصية الكاملة حيث تتم جميع المعالجة محلياً في المتصفح.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "تطبيق الدردشة",
+                "image": "/Projects/ChatApp.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "تطبيق دردشة يوفر تجربة تواصل سلسة وسهلة الاستخدام. يتيح للمستخدمين التواصل بسهولة من خلال المراسلة الفورية، مما يسهل التبادل السلس للرسائل والأفكار.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Shadcn/ui",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "تطبيق إدارة رمز QR",
+                "image": "/Projects/EdQrcode.png",
+                "websiteUrl": "https://edqrcode.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubUrls": "",
+                "description": "تطبيق لإدارة رموز QR يسمح لك بإنشاء رموز QR مع شعارات مخصصة، وقراءة رموز QR من الصور، ومسح رموز QR عبر الكاميرا لعرض البيانات على الفور. يتميز بتصميم جذاب وسريع الاستجابة.",
                 "technologies": [
                     {
                         "name": "Next.js",
