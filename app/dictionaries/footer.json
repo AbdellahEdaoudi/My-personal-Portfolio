@@ -117,5 +117,22 @@
             }
         ],
         "rights": "© Abdellah Edaoudi Todos os direitos reservados ©"
+    },
+    "ar": {
+        "links": [
+            {
+                "name": "نبذة عني",
+                "path": "#about"
+            },
+            {
+                "name": "المهارات",
+                "path": "#skill"
+            },
+            {
+                "name": "المشاريع",
+                "path": "#portfolio"
+            }
+        ],
+        "rights": "© Abdellah Edaoudi جميع الحقوق محفوظة ©"
     }
 }

@@ -152,5 +152,27 @@
                 "imageUrl": "/BabAhmedImage.jpg"
             }
         ]
+    },
+    "ar": {
+        "title": "التعليم",
+        "subtitle": "رحلتي الشخصية",
+        "items": [
+            {
+                "institution": "<a href='https://cmc.ac.ma/fr'>مدن المهن والكفاءات</a>",
+                "degree": "دبلوم في التطوير الرقمي (خيار Web Full Stack)",
+                "startDate": "2022",
+                "endDate": "2024",
+                "location": "العيون، المغرب",
+                "imageUrl": "/cmc-maroc.png"
+            },
+            {
+                "institution": "ثانوية بابا أحمد بن محمد يحظيه",
+                "degree": "بكالوريا، علوم فيزيائية",
+                "startDate": "2021",
+                "endDate": "2022",
+                "location": "العيون، المغرب",
+                "imageUrl": "/BabAhmedImage.jpg"
+            }
+        ]
     }
 }

@@ -117,5 +117,22 @@
             "name": "Abdellah Edaoudi - Desenvolvedor MERN Stack | Portfólio",
             "description": "Bem-vindo ao portfólio oficial de Abdellah Edaoudi, um Desenvolvedor Digital especializado em MERN-Stack. Explore meus projetos, habilidades e experiências na construção de sites e aplicativos responsivos usando Next.js (React.js), Tailwind CSS e Node.js."
         }
+    },
+    "ar": {
+        "title": "عبد الله الداودي",
+        "description": "محفظة عبد الله الداودي، مطور رقمي متخصص في MERN-Stack. استكشف مشاريعي ومهاراتي وخبراتي في بناء مواقع ويب وتطبيقات متجاوبة باستخدام Next.js (React.js) و Tailwind CSS و Node.js.",
+        "keywords": "عبد الله الداودي، مطور MERN Stack، محفظة، تطوير الويب، React، React.js، Node.js، MongoDB، Express.js، JavaScript، مطور واجهة أمامية، مطور واجهة خلفية، مهندس برمجيات، تطبيقات الويب، Tailwind CSS، Next.js، مطور رقمي، تصميم متجاوب، تطوير Full-Stack، تكامل API، تصميم UI/UX، تحسين محركات البحث",
+        "openGraph": {
+            "title": "عبد الله الداودي",
+            "description": "مرحباً بكم في المحفظة الرسمية لعبد الله الداودي، مطور رقمي متخصص في MERN-Stack. استكشف مشاريعي ومهاراتي وخبراتي في بناء مواقع ويب وتطبيقات متجاوبة باستخدام Next.js (React.js) و Tailwind CSS و Node.js."
+        },
+        "twitter": {
+            "title": "عبد الله الداودي - مطور MERN Stack | محفظة",
+            "description": "مرحباً بكم في المحفظة الرسمية لعبد الله الداودي، مطور رقمي متخصص في MERN-Stack. استكشف مشاريعي ومهاراتي وخبراتي في بناء مواقع ويب وتطبيقات متجاوبة باستخدام Next.js (React.js) و Tailwind CSS و Node.js."
+        },
+        "google": {
+            "name": "عبد الله الداودي - مطور MERN Stack | محفظة",
+            "description": "مرحباً بكم في المحفظة الرسمية لعبد الله الداودي، مطور رقمي متخصص في MERN-Stack. استكشف مشاريعي ومهاراتي وخبراتي في بناء مواقع ويب وتطبيقات متجاوبة باستخدام Next.js (React.js) و Tailwind CSS و Node.js."
+        }
     }
 }

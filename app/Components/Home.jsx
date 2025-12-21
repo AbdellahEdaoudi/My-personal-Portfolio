@@ -1,6 +1,5 @@
-
-import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Home({ content }) {
   if (!content) return null;
@@ -10,55 +9,55 @@ function Home({ content }) {
       <div className="flex md:flex-row flex-col-reverse items-center justify-center gap-2 md:gap-12 lg:gap-28 pt-4 pb-5 md:py-7 duration-300">
         {/* Profile */}
         <div className="space-y-2 lg:space-y-3 flex flex-col items-center justify-center">
-          <p className="text-[2.4rem]">
+          <h1 className="text-[2.4rem]">
             {content.greeting}
-          </p>
-          <p className="text-[1.2rem] lg:text-[1.4rem]">
+          </h1>
+          <h2 className="text-[1.2rem] lg:text-[1.4rem]">
             {content.role}
-          </p>
+          </h2>
           <p className="border-2 rounded-lg  md:w-[400px] text-justify p-2 bg-white shadow-md">
             {content.description}
           </p>
           {/* Social Link */}
           <div className="flex space-x-4 justify-center py-2">
-            <a
+            <Link
               href="https://www.linkedin.com/in/abdellah-edaoudi-0bbba02a5/"
-              target="_blank" className="hover:scale-105 duration-300"
+              target="_blank" className="hover:scale-105 duration-300 ml-4"
             >
               {/* <Linkedin /> */}
               <Image src={"/icons/linkedin.svg"} alt="" width={30} height={10} />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/AbdellahEdaoudi"
               target="_blank" className="hover:scale-105 duration-300"
             >
               {/* <Github /> */}
               <Image src={"/icons/github.svg"} alt="" width={30} height={10} />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw"
               target="_blank" className="hover:scale-105 duration-300"
             >
               {/* <Youtube /> */}
               <Image src={"/icons/youtube.svg"} alt="" width={30} height={10} />
 
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://x.com/Edaoudi_abde"
               target="_blank" className="hover:scale-105 duration-300"
             >
               {/* <Instagram /> */}
               <Image src={"/icons/twitter.svg"} alt="" width={30} height={10} />
 
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.instagram.com/edaoudi_abdellah/"
               target="_blank" className="hover:scale-105 duration-300"
             >
               {/* <Instagram /> */}
               <Image src={"/icons/instagram.svg"} alt="" width={30} height={10} />
 
-            </a>
+            </Link>
           </div>
         </div>
         {/* Image */}

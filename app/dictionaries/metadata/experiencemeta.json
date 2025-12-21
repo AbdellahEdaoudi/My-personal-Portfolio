@@ -75,5 +75,16 @@
             "Empregos MERN Stack",
             "Desenvolvedor Web Profissional"
         ]
+    },
+    "ar": {
+        "title": "عبد الله الداودي | الخبرة",
+        "description": "تتبع مسيرة عبد الله الداودي المهنية. مؤسس DGT Portfolio، ومطور ذو خبرة يقدم تطبيقات ويب عالية التأثير لمختلف الصناعات.",
+        "keywords": [
+            "خبرة Full Stack",
+            "مسيرة مطور ويب",
+            "مؤسس DGT Portfolio",
+            "وظائف MERN Stack",
+            "مطور ويب محترف"
+        ]
     }
 }

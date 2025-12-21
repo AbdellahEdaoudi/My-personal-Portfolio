@@ -75,5 +75,16 @@
             "Ferramentas DevOps",
             "Tecnologias de Desenvolvimento Web"
         ]
+    },
+    "ar": {
+        "title": "عبد الله الداودي | المهارات",
+        "description": "تعمق في الترسانة التقنية لعبد الله الداودي. إتقان JavaScript، React، Node.js، MongoDB، Docker، والأدوات التي تبني الويب الحديث.",
+        "keywords": [
+            "مهارات MERN Stack",
+            "خبرة Next.js",
+            "إتقان JavaScript",
+            "أدوات DevOps",
+            "تقنيات تطوير الويب"
+        ]
     }
 }

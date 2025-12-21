@@ -68,5 +68,15 @@
         "experience": "Experiência",
         "contact": "Contato",
         "admin": "Admin"
+    },
+    "ar": {
+        "home": "الرئيسية",
+        "about": "نبذة عني",
+        "skills": "المهارات",
+        "projects": "المشاريع",
+        "education": "التعليم",
+        "experience": "الخبرة",
+        "contact": "تواصل",
+        "admin": "Admin"
     }
 }

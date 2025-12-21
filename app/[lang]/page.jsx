@@ -52,6 +52,7 @@ export async function generateMetadata({ params }) {
                 'nl': '/nl',
                 'es': '/es',
                 'pt': '/pt',
+                'ar': '/ar',
             },
         },
     }
@@ -60,7 +61,6 @@ export async function generateMetadata({ params }) {
 export default async function Page({ params }) {
     const { lang } = await params;
     const dictionary = await getDictionary(lang);
-
     return (
         <>
             <Header content={dictionary.header} />

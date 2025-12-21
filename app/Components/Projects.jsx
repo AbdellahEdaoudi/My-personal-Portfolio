@@ -1,8 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Projects({ content }) {
   if (!content) return null;
-  const { items: projects, title, subtitle } = content;
+  const { items: projects, title, subtitle, liveDemo, readMore, showLess } = content;
 
   return (
     <section id="prtfl" className="bg-gray-50 pb-7 pt-4">
@@ -23,9 +24,9 @@ function Projects({ content }) {
             <div>
               <div className="flex justify-around items-center px-1 text-[16px] p-3">
                 <h1 className=" underline ">{p.title}</h1>
-                <a href={p.websiteUrl} className="flex items-center pr-1 hover:scale-105 duration-300 hover:text-sky-500 hover:bg-sky-50 border p-1 rounded-md bg-gray-100" target="_blank">
+                <a href={p.websiteUrl} className="flex items-center gap-1 hover:scale-105 duration-300 hover:text-sky-500 hover:bg-sky-50 border p-1 rounded-md bg-gray-100" target="_blank">
                   <Image src="/Projects/WebSite.png" width={17} height={17} alt="WebSite" />
-                  <span className="ml-1 text-sm">Live Demo</span>
+                  <span className="ml-1 text-sm">{liveDemo}</span>
                 </a>
               </div>
               {/* Description */}
@@ -37,10 +38,10 @@ function Projects({ content }) {
                 {p.description.length > 200 && (
                   <>
                     <label htmlFor={`expand-${i}`} className="text-blue-500 cursor-pointer block mt-1 hover:underline peer-checked:hidden text-right">
-                      Read more
+                      {readMore}
                     </label>
                     <label htmlFor={`expand-${i}`} className="text-blue-500 cursor-pointer hidden mt-1 hover:underline peer-checked:block text-right">
-                      Show less
+                      {showLess}
                     </label>
                   </>
                 )}
@@ -57,18 +58,18 @@ function Projects({ content }) {
               {/* githubUrl */}
               <div className="flex justify-around items-center mt-3 space-x-4">
                 {p.githubUrl && (
-                  <a href={p.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
+                  <Link href={p.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
                     <Image src={"/icons/github.svg"} alt={"Github Logo"} width={25} height={25} className="mr-2 rounded-full" />
                     <span className="text-sm">
                       {p.type === "backend" ? "View on GitHub" : "Frontend"}
                     </span>
-                  </a>
+                  </Link>
                 )}
                 {p.githubUrls && (
-                  <a href={p.githubUrls} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
+                  <Link href={p.githubUrls} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
                     <Image src={"/icons/github.svg"} alt={"Github Logo"} width={25} height={25} className="mr-2 rounded-full" />
                     <span className="text-sm">Backend</span>
-                  </a>
+                  </Link>
                 )}
               </div>
             </div>
