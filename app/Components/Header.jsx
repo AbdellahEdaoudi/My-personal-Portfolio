@@ -22,7 +22,7 @@ export default function Header({ content }) {
     // Helper to get path without current language
     const getPathWithoutLang = (path) => {
         // Simple but robust regex for supported languages
-        return path.replace(/^\/(en|fr|de|zh|nl|es|pt)/, '');
+        return path.replace(/^\/(en|fr|de|zh|nl|es|pt|ar)/, '');
     }
 
     const LinksHeader = [
@@ -68,8 +68,9 @@ export default function Header({ content }) {
                         onChange={handleLanguageChange}
                         className='rounded-md border border-gray-300 px-2 py-1 focus:outline-none focus:border-green-500 bg-transparent'>
                         <option value={"en"}>en</option>
-                        <option value={"fr"}>fr</option>
                         <option value={"de"}>de</option>
+                        <option value={"ar"}>ar</option>
+                        <option value={"fr"}>fr</option>
                         <option value={"es"}>es</option>
                         <option value={"pt"}>pt</option>
                         <option value={"nl"}>nl</option>
@@ -90,6 +91,7 @@ export default function Header({ content }) {
                         <option value={"nl"}>nl</option>
                         <option value={"es"}>es</option>
                         <option value={"pt"}>pt</option>
+                        <option value={"ar"}>ar</option>
                     </select>
                 </div>
             </div>

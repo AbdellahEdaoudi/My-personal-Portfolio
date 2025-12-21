@@ -20,7 +20,7 @@ const Send = ({ className, ...props }) => (
     <path d="M22 2 11 13" />
   </svg>
 )
-import Axios from "axios";
+import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Image from "next/image";
@@ -44,7 +44,7 @@ function Contact({ content }) {
     }
 
     try {
-      const response = await Axios.post(
+      const response = await axios.post(
         `${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`,
         { name, email, msg },
         {
@@ -73,7 +73,7 @@ function Contact({ content }) {
         <p className="text-4xl font-bold">{content.title}</p>
         <p className="text-gray-400 text-sm">{content.subtitle}</p>
       </div>
-      <div className="md:flex justify-center md:space-x-20 md:space-y-0 space-y-5">
+      <div className="md:flex justify-center md:space-x-20 md:gap-20 md:space-y-0 space-y-5">
         {/* Contact Information */}
         <div className="w-64 text-center space-y-2">
           <h4 className="text-center">{content.title}</h4>
@@ -110,7 +110,7 @@ function Contact({ content }) {
               placeholder={content.namePlaceholder}
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="text-[13px] bg-gray-50 pl-4 py-3 w-72 rounded-lg border-2"
+              className="text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2"
             />
             <input
               type="email"
@@ -118,13 +118,13 @@ function Contact({ content }) {
               placeholder={content.emailPlaceholder}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="text-[13px] bg-gray-50 pl-4 py-3 w-72 rounded-lg border-2"
+              className="text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2"
             />
             <textarea
               placeholder={content.messagePlaceholder}
               value={msg}
               onChange={(e) => setMsg(e.target.value)}
-              className="text-[13px] bg-gray-50 pl-4 py-3 w-72 rounded-lg border-2"
+              className="text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2"
             />
             <button
               type="submit"

@@ -66,7 +66,7 @@ export default function Experience({ content }) {
                                     </div>
 
                                     <div className="flex flex-col md:items-end gap-1.5 text-sm">
-                                        <div className="flex items-center text-gray-700 font-semibold bg-gray-50 border border-gray-100 px-2 py-1 rounded-md w-fit">
+                                        <div className="flex items-center gap-1 text-gray-700 font-semibold bg-gray-50 border border-gray-100 px-2 py-1 rounded-md w-fit">
                                             <CalendarIcon className="w-3.5 h-3.5 mr-1.5 text-gray-500" />
                                             {item.startDate} - {item.endDate}
                                         </div>
