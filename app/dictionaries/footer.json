@@ -3,15 +3,15 @@
         "links": [
             {
                 "name": "About",
-                "path": "#about"
+                "path": "/About"
             },
             {
                 "name": "Skills",
-                "path": "#skill"
+                "path": "/Skills"
             },
             {
                 "name": "Projects",
-                "path": "#portfolio"
+                "path": "/Projects"
             }
         ],
         "rights": "© Abdellah Edaoudi All rights reserved ©"
@@ -20,15 +20,15 @@
         "links": [
             {
                 "name": "À propos",
-                "path": "#about"
+                "path": "/About"
             },
             {
                 "name": "Compétences",
-                "path": "#skill"
+                "path": "/Skills"
             },
             {
                 "name": "Projets",
-                "path": "#portfolio"
+                "path": "/Projects"
             }
         ],
         "rights": "© Abdellah Edaoudi Tous droits réservés ©"
@@ -37,15 +37,15 @@
         "links": [
             {
                 "name": "Über mich",
-                "path": "#about"
+                "path": "/About"
             },
             {
                 "name": "Fähigkeiten",
-                "path": "#skill"
+                "path": "/Skills"
             },
             {
                 "name": "Projekte",
-                "path": "#portfolio"
+                "path": "/Projects"
             }
         ],
         "rights": "© Abdellah Edaoudi Alle Rechte vorbehalten ©"
@@ -54,15 +54,15 @@
         "links": [
             {
                 "name": "关于我",
-                "path": "#about"
+                "path": "/About"
             },
             {
                 "name": "技能",
-                "path": "#skill"
+                "path": "/Skills"
             },
             {
                 "name": "项目",
-                "path": "#portfolio"
+                "path": "/Projects"
             }
         ],
         "rights": "© Abdellah Edaoudi 版权所有 ©"
@@ -71,15 +71,15 @@
         "links": [
             {
                 "name": "Over mij",
-                "path": "#about"
+                "path": "/About"
             },
             {
                 "name": "Vaardigheden",
-                "path": "#skill"
+                "path": "/Skills"
             },
             {
                 "name": "Projecten",
-                "path": "#portfolio"
+                "path": "/Projects"
             }
         ],
         "rights": "© Abdellah Edaoudi Alle rechten voorbehouden ©"
@@ -88,15 +88,15 @@
         "links": [
             {
                 "name": "Sobre mí",
-                "path": "#about"
+                "path": "/About"
             },
             {
                 "name": "Habilidades",
-                "path": "#skill"
+                "path": "/Skills"
             },
             {
                 "name": "Proyectos",
-                "path": "#portfolio"
+                "path": "/Projects"
             }
         ],
         "rights": "© Abdellah Edaoudi Todos los derechos reservados ©"
@@ -105,15 +105,15 @@
         "links": [
             {
                 "name": "Sobre mim",
-                "path": "#about"
+                "path": "/About"
             },
             {
                 "name": "Habilidades",
-                "path": "#skill"
+                "path": "/Skills"
             },
             {
                 "name": "Projetos",
-                "path": "#portfolio"
+                "path": "/Projects"
             }
         ],
         "rights": "© Abdellah Edaoudi Todos os direitos reservados ©"
@@ -122,15 +122,15 @@
         "links": [
             {
                 "name": "نبذة عني",
-                "path": "#about"
+                "path": "/About"
             },
             {
                 "name": "المهارات",
-                "path": "#skill"
+                "path": "/Skills"
             },
             {
                 "name": "المشاريع",
-                "path": "#portfolio"
+                "path": "/Projects"
             }
         ],
         "rights": "© Abdellah Edaoudi جميع الحقوق محفوظة ©"
