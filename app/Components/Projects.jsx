@@ -14,20 +14,20 @@ function Projects({ content }) {
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 justify-items-center">
         {projects?.map((p, i) => (
           <div key={i} className="bg-white flex flex-col w-80 hover:scale-105 border duration-300 rounded-lg shadow-lg pb-4 mb-5">
-            <a href={p.websiteUrl} target="_blank" rel="noopener noreferrer">
+            <Link href={p.websiteUrl} target="_blank" rel="noopener noreferrer">
               <Image width={1000} height={200}
                 className="w-96 rounded-md border-b-2 cursor-pointer"
                 src={p.image}
                 alt="E-commerce App"
               />
-            </a>
+            </Link>
             <div>
               <div className="flex justify-around items-center px-1 text-[16px] p-3">
                 <h1 className=" underline ">{p.title}</h1>
-                <a href={p.websiteUrl} className="flex items-center gap-1 hover:scale-105 duration-300 hover:text-sky-500 hover:bg-sky-50 border p-1 rounded-md bg-gray-100" target="_blank">
+                <Link href={p.websiteUrl} className="flex items-center gap-1 hover:scale-105 duration-300 hover:text-sky-500 hover:bg-sky-50 border p-1 rounded-md bg-gray-100" target="_blank">
                   <Image src="/Projects/WebSite.png" width={17} height={17} alt="WebSite" />
                   <span className="ml-1 text-sm">{liveDemo}</span>
-                </a>
+                </Link>
               </div>
               {/* Description */}
               <div className="relative px-3 py-2 text-[12px] border text-gray-500">
