@@ -25,6 +25,7 @@ const StickyNote = ({ className, ...props }) => (
   </svg>
 )
 import Image from "next/image";
+import Link from "next/link";
 
 function About({ content }) {
   if (!content) return null;
@@ -69,14 +70,14 @@ function About({ content }) {
               {content.description}
             </p>
             <div className="flex items-center justify-center">
-              <a
+              <Link
                 href={content.Cv}
                 target="_blank"
                 // download={content.Cv}
                 className="flex p-3 rounded-lg bg-black text-white gap-2"
               >
                 {content.downloadCv} <StickyNote />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
