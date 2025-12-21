@@ -1,8 +1,12 @@
-import React from 'react'
+"use client"
 import Link from 'next/link'
 import Image from 'next/image'
+import { useParams } from 'next/navigation'
 
 function Footer({ content }) {
+  const params = useParams();
+  const currentLang = params.lang || 'en';
+
   if (!content) return null;
 
   return (
@@ -12,7 +16,7 @@ function Footer({ content }) {
         <div className='pb-4 flex items-center gap-3 justify-center text-gray-500'>
           {content.links && content.links.map((l, i) => {
             return (
-              <Link key={i} href={l.path} >{l.name}</Link>
+              <Link key={i} href={`/${currentLang}${l.path}`} >{l.name}</Link>
             )
           })}
         </div>
