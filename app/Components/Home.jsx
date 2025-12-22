@@ -21,7 +21,7 @@ function Home({ content }) {
           {/* Social Link */}
           <div className="flex space-x-4 justify-center py-2">
             <Link
-              href="https://www.linkedin.com/in/abdellah-edaoudi-0bbba02a5/"
+              href="https://www.linkedin.com/in/abdellah-edaoudi"
               target="_blank" className="hover:scale-105 duration-300 ml-4"
             >
               {/* <Linkedin /> */}

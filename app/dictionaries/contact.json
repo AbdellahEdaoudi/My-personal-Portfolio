@@ -2,7 +2,7 @@
     "en": {
         "title": "Get in Touch",
         "subtitle": "Contact Me",
-        "namePlaceholder": "Insert your name",
+        "subjectPlaceholder": "Insert your subject",
         "emailPlaceholder": "Insert your email",
         "messagePlaceholder": "Write your message",
         "sendButton": "Send Message",
@@ -17,7 +17,7 @@
     "fr": {
         "title": "Contactez-moi",
         "subtitle": "Contactez-moi",
-        "namePlaceholder": "Entrez votre nom",
+        "subjectPlaceholder": "Entrez votre sujet",
         "emailPlaceholder": "Entrez votre email",
         "messagePlaceholder": "Écrivez votre message",
         "sendButton": "Envoyer le message",
@@ -32,7 +32,7 @@
     "de": {
         "title": "Kontaktieren Sie mich",
         "subtitle": "Kontaktieren Sie mich",
-        "namePlaceholder": "Geben Sie Ihren Namen ein",
+        "subjectPlaceholder": "Geben Sie Ihren Betreff ein",
         "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
         "messagePlaceholder": "Schreiben Sie Ihre Nachricht",
         "sendButton": "Nachricht senden",
@@ -47,7 +47,7 @@
     "zh": {
         "title": "联系我",
         "subtitle": "取得联系",
-        "namePlaceholder": "输入您的姓名",
+        "subjectPlaceholder": "输入您的主题",
         "emailPlaceholder": "输入您的电子邮件",
         "messagePlaceholder": "输入您的留言",
         "sendButton": "发送消息",
@@ -62,7 +62,7 @@
     "nl": {
         "title": "Neem contact op",
         "subtitle": "Contact opnemen",
-        "namePlaceholder": "Voer uw naam in",
+        "subjectPlaceholder": "Voer uw onderwerp in",
         "emailPlaceholder": "Voer uw e-mail in",
         "messagePlaceholder": "Voer uw bericht in",
         "sendButton": "Verstuur bericht",
@@ -77,7 +77,7 @@
     "es": {
         "title": "Contáctame",
         "subtitle": "Ponerse en contacto",
-        "namePlaceholder": "Ingresa tu nombre",
+        "subjectPlaceholder": "Ingresa tu asunto",
         "emailPlaceholder": "Ingresa tu correo",
         "messagePlaceholder": "Ingresa tu mensaje",
         "sendButton": "Enviar mensaje",
@@ -92,7 +92,7 @@
     "pt": {
         "title": "Contate-me",
         "subtitle": "Entre em contato",
-        "namePlaceholder": "Digite seu nome",
+        "subjectPlaceholder": "Digite seu assunto",
         "emailPlaceholder": "Digite seu e-mail",
         "messagePlaceholder": "Digite sua mensagem",
         "sendButton": "Enviar mensagem",
@@ -107,7 +107,7 @@
     "ar": {
         "title": "تواصل",
         "subtitle": "الحصول على اتصال",
-        "namePlaceholder": "أدخل اسمك",
+        "subjectPlaceholder": "أدخل الموضوع",
         "emailPlaceholder": "أدخل بريدك الإلكتروني",
         "messagePlaceholder": "أدخل رسالتك",
         "sendButton": "إرسال الرسالة",

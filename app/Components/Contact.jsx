@@ -26,9 +26,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import Image from "next/image";
 
 function Contact({ content }) {
-  const [name, setName] = useState("");
+  const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
-  const [msg, setMsg] = useState("");
+  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
   if (!content) return null;
@@ -37,7 +37,7 @@ function Contact({ content }) {
     e.preventDefault();
     setLoading(true);
 
-    if (!name || !email || !msg) {
+    if (!subject || !email || !message) {
       toast.error(content.validationError || "Please fill in all fields and provide a valid email.");
       setLoading(false);
       return;
@@ -46,15 +46,15 @@ function Contact({ content }) {
     try {
       const response = await axios.post(
         `${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`,
-        { name, email, msg },
+        { subject, email, message },
         {
           headers: { "Content-Type": "application/json" },
         }
       );
       console.log(response.data);
-      setName("");
+      setSubject("");
       setEmail("");
-      setMsg("");
+      setMessage("");
       toast.success(content.successMessage || "Sent successfully", { autoClose: 1000 });
     } catch (error) {
       console.error(error);
@@ -107,23 +107,26 @@ function Contact({ content }) {
           <form onSubmit={PostContact} className="space-y-4">
             <input
               type="text"
-              placeholder={content.namePlaceholder}
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              placeholder={content.subjectPlaceholder}
+              maxLength={100}
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
               className="text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2"
             />
             <input
               type="email"
               name="email"
               placeholder={content.emailPlaceholder}
+              maxLength={100}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2"
             />
             <textarea
               placeholder={content.messagePlaceholder}
-              value={msg}
-              onChange={(e) => setMsg(e.target.value)}
+              maxLength={5000}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               className="text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2"
             />
             <button

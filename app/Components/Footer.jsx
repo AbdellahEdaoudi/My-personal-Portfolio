@@ -21,7 +21,7 @@ function Footer({ content }) {
           })}
         </div>
         <div className='flex items-center gap-4 justify-center '>
-          <Link href='https://www.linkedin.com/in/abdellah-edaoudi-0bbba02a5/' target='_blank'>
+          <Link href='https://www.linkedin.com/in/abdellah-edaoudi' target='_blank'>
             <Image src={"/icons/linkedin.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="LinkedIn" />
           </Link>
           <Link href='https://github.com/AbdellahEdaoudi' target='_blank'>
