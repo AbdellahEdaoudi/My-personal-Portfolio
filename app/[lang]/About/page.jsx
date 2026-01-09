@@ -1,9 +1,9 @@
 import About from "../../Components/About";
 import Footer from "../../Components/Footer";
-import { getDictionary } from "../../dictionaries/get-dictionary";
+import { getDictionary } from "../../translations/get-dictionary";
 import Header from "../../Components/Header";
 
-import meta from "../../dictionaries/metadata/aboutmeta.json";
+import meta from "../../translations/metadata/aboutmeta.json";
 
 export async function generateMetadata({ params }) {
     const { lang } = await params;

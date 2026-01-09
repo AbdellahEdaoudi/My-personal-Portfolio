@@ -8,8 +8,8 @@ import Education from "../Components/Education";
 import Experience from "../Components/Experience";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
-import { getDictionary } from "../dictionaries/get-dictionary";
-import meta from "../dictionaries/metadata.json";
+import { getDictionary } from "../translations/get-dictionary";
+import meta from "../translations/metadata.json";
 
 export async function generateMetadata({ params }) {
     const { lang } = await params;
