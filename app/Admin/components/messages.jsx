@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { apiRequest } from "../../Components/apiRequest";
+import { AnimatePresence, motion } from "framer-motion";
+import { toast } from "react-toastify";
 const MessageSquare = ({ className, ...props }) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -67,7 +69,15 @@ export default function Messages() {
     const [isLoading, setIsLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 8; // Increased for compact view
+    const itemsPerPage = 8;
+
+    // Delete Modal State
+    const [deleteModal, setDeleteModal] = useState({
+        isOpen: false,
+        type: null, // "single" or "all"
+        id: null, // id for single delete
+        isDeleting: false
+    });
 
     const fetchContacts = async () => {
         setIsLoading(true);
@@ -89,25 +99,30 @@ export default function Messages() {
         fetchContacts();
     }, []);
 
-    const handleDeleteAll = async () => {
-        if (!window.confirm("Are you sure you want to delete ALL messages?")) return;
-        try {
-            await apiRequest({ method: "delete", url: `${API_URL}/Contact` });
-            setContacts([]);
-            toast.success("All messages deleted.");
-        } catch (error) {
-            toast.error("Failed to delete messages.");
-        }
+    const handleDeleteAllClick = () => {
+        setDeleteModal({ isOpen: true, type: "all", id: null, isDeleting: false });
     };
 
-    const handleDeleteById = async (id) => {
-        if (!window.confirm("Delete this message?")) return;
+    const handleDeleteByIdClick = (id) => {
+        setDeleteModal({ isOpen: true, type: "single", id, isDeleting: false });
+    };
+
+    const confirmDelete = async () => {
+        setDeleteModal(prev => ({ ...prev, isDeleting: true }));
         try {
-            await apiRequest({ method: "delete", url: `${API_URL}/Contact/${id}` });
-            setContacts((prev) => prev.filter((contact) => contact._id !== id));
-            toast.success("Message deleted.");
+            if (deleteModal.type === "all") {
+                await apiRequest({ method: "delete", url: `${API_URL}/Contact` });
+                setContacts([]);
+                toast.success("All messages deleted.");
+            } else if (deleteModal.type === "single" && deleteModal.id) {
+                await apiRequest({ method: "delete", url: `${API_URL}/Contact/${deleteModal.id}` });
+                setContacts((prev) => prev.filter((contact) => contact._id !== deleteModal.id));
+                toast.success("Message deleted.");
+            }
         } catch (error) {
-            toast.error("Failed to delete contact.");
+            toast.error(deleteModal.type === "all" ? "Failed to delete messages." : "Failed to delete contact.");
+        } finally {
+            setDeleteModal(prev => ({ ...prev, isOpen: false, isDeleting: false }));
         }
     };
 
@@ -140,18 +155,70 @@ export default function Messages() {
     );
 
     return (
-        <div className="h-full flex flex-col p-4 md:p-6 max-w-7xl mx-auto w-full">
+        <div className="h-full flex flex-col p-4 md:p-6 max-w-7xl mx-auto w-full relative">
+            <AnimatePresence>
+                {deleteModal.isOpen && (
+                    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={() => !deleteModal.isDeleting && setDeleteModal({ ...deleteModal, isOpen: false })}
+                            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
+                        />
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.95 }}
+                            className="relative bg-white rounded-2xl shadow-2xl p-6 w-full max-w-sm overflow-hidden border border-gray-100"
+                        >
+                            <div className="flex flex-col items-center text-center">
+                                <div className="w-14 h-14 bg-red-50 rounded-full flex items-center justify-center mb-5 border border-red-100 shadow-sm">
+                                    <Trash2 className="w-7 h-7 text-red-500" />
+                                </div>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                                    {deleteModal.type === "all" ? "Delete All Messages" : "Delete Message"}
+                                </h3>
+                                <p className="text-gray-500 mb-8 leading-relaxed">
+                                    {deleteModal.type === "all"
+                                        ? "Are you absolutely sure? This action will permanently remove all messages and cannot be undone."
+                                        : "Are you sure you want to delete this message? It will be permanently removed from your inbox."}
+                                </p>
+                                <div className="flex gap-3 w-full">
+                                    <button
+                                        disabled={deleteModal.isDeleting}
+                                        onClick={() => setDeleteModal({ ...deleteModal, isOpen: false })}
+                                        className="flex-1 px-4 py-2.5 bg-white border border-gray-200 text-gray-700 rounded-xl hover:bg-gray-50 font-medium transition-all focus:outline-none focus:ring-2 focus:ring-gray-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                                    >
+                                        Cancel
+                                    </button>
+                                    <button
+                                        disabled={deleteModal.isDeleting}
+                                        onClick={confirmDelete}
+                                        className="flex-1 px-4 py-2.5 bg-red-600 text-white rounded-xl hover:bg-red-700 font-medium transition-all shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center gap-2"
+                                    >
+                                        {deleteModal.isDeleting ? (
+                                            <>
+                                                <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                                                <span>Deleting...</span>
+                                            </>
+                                        ) : (
+                                            "Delete"
+                                        )}
+                                    </button>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </div>
+                )}
+            </AnimatePresence>
+
             {/* Header / Stats / Controls Compact Row */}
             <div className="flex flex-col md:flex-row gap-4 justify-between items-end md:items-center mb-6">
                 <div>
                     <h2 className="text-xl font-semibold text-gray-900 mb-1">Messages</h2>
                     <div className="flex items-center gap-4 text-sm text-gray-500">
                         <span className="flex items-center gap-1"><MessageCircle className="w-4 h-4" /> {contacts.length} Total</span>
-                        <span className="w-px h-3 bg-gray-200"></span>
-                        <span className="flex items-center gap-1 text-emerald-600">
-                            <Plus className="w-3 h-3" />
-                            {contacts.filter(c => new Date(c.createdAt || Date.now()).toDateString() === new Date().toDateString()).length} New
-                        </span>
                     </div>
                 </div>
 
@@ -174,7 +241,7 @@ export default function Messages() {
                         <Plus className="w-4 h-4" />
                     </button>
                     <button
-                        onClick={handleDeleteAll}
+                        onClick={handleDeleteAllClick}
                         className="p-2 bg-red-50 text-red-600 border border-red-100 hover:bg-red-100 rounded-lg transition-colors"
                         title="Delete All"
                     >
@@ -233,8 +300,8 @@ export default function Messages() {
                                             </td>
                                             <td className="px-4 py-3 align-middle text-right">
                                                 <button
-                                                    onClick={() => handleDeleteById(contact._id)}
-                                                    className="p-1.5 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded transition-colors opacity-0 group-hover:opacity-100"
+                                                    onClick={() => handleDeleteByIdClick(contact._id)}
+                                                    className="p-1.5 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
                                                 >
                                                     <Trash2 className="w-4 h-4" />
                                                 </button>
