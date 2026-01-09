@@ -1,0 +1,508 @@
+{
+    "header": {
+        "home": "首页",
+        "about": "关于我",
+        "skills": "技能",
+        "projects": "项目",
+        "education": "教育",
+        "experience": "经验",
+        "contact": "联系",
+        "admin": "管理"
+    },
+    "home": {
+        "greeting": "你好, 我是 Abdellah Edaoudi",
+        "role": "🔷 全栈开发人员 🔷",
+        "description": "我专注于使用 MERN 技术栈以及 Next.js 和 NestJS 等高级框架开发响应式网站和应用程序，以实现最佳性能和可扩展性，并特别注重应用程序安全和数据保护。"
+    },
+    "about": {
+        "title": "关于我",
+        "subtitle": "简介",
+        "experience": "经验",
+        "experienceDetail": "2 年工作经验",
+        "completed": "已完成",
+        "completedDetail": "+8 个项目",
+        "support": "支持",
+        "supportDetail": "24/7 在线",
+        "description": "我在将想法转化为创新、安全且有效的应用程序方面拥有丰富的经验。我的重点是将增强用户体验和制作有吸引力的界面与确保强大的安全性和高性能相结合。",
+        "downloadCv": "简历",
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+    },
+    "skills": {
+        "title": "技能",
+        "subtitle": "我的技术水平",
+        "frontendTitle": "前端开发人员",
+        "backendTitle": "后端开发人员",
+        "toolsTitle": "开发工具",
+        "softSkillsTitle": "软技能",
+        "softSkills": [
+            {
+                "name": "解决问题",
+                "image": "/Skills/Problem Solving.png"
+            },
+            {
+                "name": "团队合作",
+                "image": "/Skills/Teamwork.jpg"
+            },
+            {
+                "name": "沟通",
+                "image": "/Skills/Communication.png"
+            },
+            {
+                "name": "适应能力",
+                "image": "/Skills/Adaptability.png"
+            }
+        ]
+    },
+    "projects": {
+        "title": "项目",
+        "subtitle": "最新作品",
+        "liveDemo": "演示",
+        "readMore": "阅读更多",
+        "showLess": "收起",
+        "items": [
+            {
+                "title": "DGT 投资组合构建器",
+                "type": "fullstack",
+                "image": "/Projects/dgtportfolio.png",
+                "websiteUrl": "https://dgtportfolio.com/zh",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "一个全面的 SaaS 平台，使用户能够轻松创建专业的作品集。它提供多语言支持、自定义域名集成、动态主题选择、实时简历生成以及直观的管理仪表板来管理内容、订阅和分析。",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "PayPal",
+                        "logo": "/Skills/paypal.png"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "电子商务后端",
+                "type": "backend",
+                "image": "/Projects/Ecom-backend.png",
+                "websiteUrl": "/Requirements.docx.pdf",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubUrls": "",
+                "description": "一个强大且可扩展的电子商务平台后端系统。该系统处理各种功能，如用户管理、产品库存组织、订单处理、支付处理（现金或银行卡）、优惠券添加、评论、类别和品牌管理、供应商管理以及税务监管。",
+                "technologies": [
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Typescript ",
+                        "logo": "/Skills/typescript.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "酒店预订",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "酒店管理系统为管理客房预订和付款提供了全面的解决方案。它允许用户轻松预订房间并接收电子确认票。该系统包括一个用于管理预订、付款和通过电子邮件回复客户的仪表板。",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "简历平台",
+                "image": "/Projects/Linkerfolio.png",
+                "websiteUrl": "https://linkerfolio.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "description": "我开发的创新应用程序，允许用户在一个地方展示他们的专业简历和社交媒体链接。该应用程序帮助用户有效地管理他们的数字身份，使其成为求职者或任何希望增强在线形象和数字影响力的人的理想工具。",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "购物应用",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "一个提供无缝购物体验的应用程序，使用户可以轻松浏览产品并将商品添加到购物车。该应用程序具有现代和创新的设计，增强了用户体验，具有即时响应能力和交互式元素，使购物更加愉快。",
+                "technologies": [
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "聊天应用",
+                "image": "/Projects/ChatApp.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "一个提供无缝且用户友好通信体验的聊天应用程序。它使用户能够通过即时消息轻松连接，促进消息和想法的顺畅交流。",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "图片压缩器",
+                "image": "/Projects/image-compressor.png",
+                "websiteUrl": "https://image-compressor-aed.vercel.app",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "一个强大且安全的基于浏览器的图像压缩工具。它允许用户将无限量的 JPG、PNG 和 WebP 图像压缩高达 90% 而不损失质量。功能包括批量压缩、PDF 生成、拖放界面以及完全的隐私保护，因为所有处理都在浏览器本地进行。",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "二维码管理应用",
+                "image": "/Projects/EdQrcode.png",
+                "websiteUrl": "https://edqrcode.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubUrls": "",
+                "description": "一个二维码管理应用程序，允许您使用自定义徽标创建二维码、从图像读取二维码以及通过相机扫描二维码以立即显示数据。设计美观且响应灵敏。",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "experience": {
+        "title": "经验",
+        "subtitle": "我的专业经验",
+        "items": [
+            {
+                "title": "DGT Portfolio 创始人兼开发人员",
+                "company": "Dgt Portfolio",
+                "location": "摩洛哥阿尤恩",
+                "startDate": "2024年10月",
+                "endDate": "至今",
+                "duration": "+ 2 个月",
+                "type": "创始人兼开发人员",
+                "workType": "混合办公",
+                "achievementsLabel": "成就：",
+                "responsibilities": [
+                    "无需任何编码或设计技能即可创建数字作品集的专业方式。",
+                    "自定义子域名：yourname.dgtportfolio.com",
+                    "自定义域名：yourname.com",
+                    "提高作品集的 SEO 可见性",
+                    "二维码就绪，方便分享",
+                    "多种主题以匹配您的风格",
+                    "以您选择的任何语言展示您的作品集",
+                    "快速、流畅且用户友好的体验"
+                ]
+            },
+            {
+                "title": "MERN 全栈开发人员",
+                "company": "区域教育培训学院",
+                "location": "摩洛哥阿尤恩",
+                "startDate": "2024年3月",
+                "endDate": "2024年4月",
+                "duration": "2 个月",
+                "type": "实习",
+                "workType": "混合办公",
+                "achievementsLabel": "成就：",
+                "responsibilities": [
+                    "设计并开发了一个任务管理应用程序，允许用户添加、编辑和删除任务。",
+                    "使用 JWT 实现身份验证和授权，以确保应用程序的安全性。",
+                    "使用 Postman 测试 API 端点以确保功能正常。",
+                    "通过设计简单且用户友好的界面改善用户体验。",
+                    "将应用程序部署在 Vercel 上，并使用 Git/GitHub 管理代码库。"
+                ]
+            },
+            {
+                "title": "全栈 Web 开发人员",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "摩洛哥阿尤恩",
+                "startDate": "2023年9月",
+                "endDate": "2024年6月",
+                "duration": "10 个月",
+                "type": "实习",
+                "workType": "现场办公",
+                "achievementsLabel": "成就：",
+                "description": [
+                    "在专业环境中结合理论与实践，获得了重要的 Web 开发技能。",
+                    "在前端开发中设计了交互式且有吸引力的用户界面。",
+                    "获得了后端开发和数据库管理方面的经验。",
+                    "培养了创建和维护动态 Web 应用程序的技能。",
+                    "应用敏捷方法提高效率并加强团队合作。",
+                    "获得了使用 Git 和 GitHub 进行有效代码和项目管理的经验。",
+                    "使用 SonarQube 分析代码质量并确保持续改进。",
+                    "使用 Docker 以此简化环境管理和应用程序开发。",
+                    "增强了人际交往能力，如沟通和团队合作，以便更好地适应多样化的工作环境。"
+                ]
+            },
+            {
+                "title": "数字开发实习生",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "摩洛哥阿尤恩",
+                "startDate": "2022年11月",
+                "endDate": "2023年6月",
+                "duration": "8 个月",
+                "type": "实习",
+                "workType": "现场办公",
+                "keyResponsibilities": "主要职责：",
+                "description": [
+                    "数字领域的文化和先进技术",
+                    "了解职业的维度和学习路径",
+                    "掌握算法基础",
+                    "行为和社交技能",
+                    "培养面向对象编程技能",
+                    "设计和构建静态网站",
+                    "使用 JavaScript 进行应用程序开发",
+                    "使用数据库并执行基本操作",
+                    "构建与用户交互的动态网站",
+                    "熟悉信息系统安全原则"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "教育",
+        "subtitle": "我的个人旅程",
+        "items": [
+            {
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
+                "degree": "数字开发文凭（全栈网络选项）",
+                "startDate": "2022",
+                "endDate": "2024",
+                "location": "阿尤恩，摩洛哥",
+                "imageUrl": "/cmc-maroc.png"
+            },
+            {
+                "institution": "巴巴艾哈迈德·本·穆罕默德·亚赫迪高中",
+                "degree": "理学学士学位，物理科学",
+                "startDate": "2021",
+                "endDate": "2022",
+                "location": "阿尤恩，摩洛哥",
+                "imageUrl": "/BabAhmedImage.jpg"
+            }
+        ]
+    },
+    "contact": {
+        "title": "联系我",
+        "subtitle": "取得联系",
+        "subjectPlaceholder": "输入您的主题",
+        "emailPlaceholder": "输入您的电子邮件",
+        "messagePlaceholder": "输入您的留言",
+        "sendButton": "发送消息",
+        "sendingButton": "发送中...",
+        "writeMe": "写信给我",
+        "email": "邮件",
+        "whatsapp": "WhatsApp",
+        "validationError": "请填写所有必填项并提供有效的电子邮件。",
+        "formError": "请修正表单中的错误。",
+        "subjectRequired": "主题是必填项",
+        "emailRequired": "电子邮件是必填项",
+        "emailInvalid": "请输入有效的电子邮件地址",
+        "messageRequired": "消息是必填项",
+        "successMessage": "发送成功",
+        "errorMessage": "发生错误。请重试。"
+    },
+    "footer": {
+        "links": [
+            {
+                "name": "关于我",
+                "path": "/About"
+            },
+            {
+                "name": "技能",
+                "path": "/Skills"
+            },
+            {
+                "name": "项目",
+                "path": "/Projects"
+            }
+        ],
+        "rights": "© Abdellah Edaoudi 版权所有 ©"
+    }
+}

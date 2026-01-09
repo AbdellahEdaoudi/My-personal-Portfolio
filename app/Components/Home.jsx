@@ -1,7 +1,11 @@
+import { getTranslation } from "../translations/portfolio/load-translations";
 import Image from "next/image";
 import Link from "next/link";
 
-function Home({ content }) {
+async function Home({ lang = 'en' }) {
+  const dictionary = await getTranslation(lang);
+  const content = dictionary.home;
+
   if (!content) return null;
 
   return (

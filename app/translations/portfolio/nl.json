@@ -1,0 +1,508 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "Over mij",
+        "skills": "Vaardigheden",
+        "projects": "Projecten",
+        "education": "Opleiding",
+        "experience": "Ervaring",
+        "contact": "Contact",
+        "admin": "Beheerder"
+    },
+    "home": {
+        "greeting": "Hallo, ik ben Abdellah Edaoudi",
+        "role": "🔷 Full Stack Ontwikkelaar 🔷",
+        "description": "Ik ben gespecialiseerd in het ontwikkelen van responsieve websites en applicaties met behulp van de MERN-stack, evenals geavanceerde frameworks zoals Next.js en NestJS voor optimale prestaties en schaalbaarheid, met een sterke focus op applicatiebeveiliging en gegevensbescherming."
+    },
+    "about": {
+        "title": "Over mij",
+        "subtitle": "Introductie",
+        "experience": "Ervaring",
+        "experienceDetail": "2 jaar werkervaring",
+        "completed": "Voltooid",
+        "completedDetail": "+8 Projecten",
+        "support": "Ondersteuning",
+        "supportDetail": "24/7 Online",
+        "description": "Ik heb uitgebreide ervaring in het omzetten van ideeën in innovatieve, veilige en effectieve applicaties. Mijn focus combineert het verbeteren van de gebruikerservaring en het creëren van aantrekkelijke interfaces met het waarborgen van robuuste beveiliging en hoge prestaties.",
+        "downloadCv": "CV",
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+    },
+    "skills": {
+        "title": "Vaardigheden",
+        "subtitle": "Mijn technisch niveau",
+        "frontendTitle": "Frontend Ontwikkelaar",
+        "backendTitle": "Backend Ontwikkelaar",
+        "toolsTitle": "Ontwikkeltools",
+        "softSkillsTitle": "Soft Skills",
+        "softSkills": [
+            {
+                "name": "Probleemoplossing",
+                "image": "/Skills/Problem Solving.png"
+            },
+            {
+                "name": "Teamwerk",
+                "image": "/Skills/Teamwork.jpg"
+            },
+            {
+                "name": "Communicatie",
+                "image": "/Skills/Communication.png"
+            },
+            {
+                "name": "Aanpassingsvermogen",
+                "image": "/Skills/Adaptability.png"
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projecten",
+        "subtitle": "Meest recente werk",
+        "liveDemo": "Demo",
+        "readMore": "Lees meer",
+        "showLess": "Toon minder",
+        "items": [
+            {
+                "title": "DGT Portfolio Builder",
+                "type": "fullstack",
+                "image": "/Projects/dgtportfolio.png",
+                "websiteUrl": "https://dgtportfolio.com/nl",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "Een uitgebreid SaaS-platform waarmee gebruikers moeiteloos professionele portfolio's kunnen maken. Het biedt meertalige ondersteuning, integratie van aangepaste domeinen, dynamische themaselectie, realtime CV-generatie en een intuïtief beheerdersdashboard voor het beheren van inhoud, abonnementen en analyses.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "PayPal",
+                        "logo": "/Skills/paypal.png"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "E-Commerce Back-End",
+                "type": "backend",
+                "image": "/Projects/Ecom-backend.png",
+                "websiteUrl": "/Requirements.docx.pdf",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubUrls": "",
+                "description": "Een robuust en schaalbaar back-endsysteem voor een e-commerceplatform. Het systeem verwerkt diverse functies zoals gebruikersbeheer, organisatie van productinventaris, orderverwerking, betalingsafhandeling (via contant geld of kaart), toevoegen van coupons, beoordelingen, categorie- en merkbeheer, leveranciersbeheer en belastingregelgeving.",
+                "technologies": [
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Typescript ",
+                        "logo": "/Skills/typescript.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Hotel Boeking",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "Het hotelmanagementsysteem biedt een uitgebreide oplossing voor het beheren van kamerboekingen en betalingen. Het stelt gebruikers in staat eenvoudig kamers te boeken en een elektronisch ticket ter bevestiging te ontvangen. Het systeem bevat een dashboard voor het beheren van boekingen, betalingen en klantreacties via e-mail.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "CV Platform",
+                "image": "/Projects/Linkerfolio.png",
+                "websiteUrl": "https://linkerfolio.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "description": "Een innovatieve applicatie die ik heb ontwikkeld, waarmee gebruikers hun professionele CV en links naar sociale media op één plek kunnen presenteren. Deze app helpt gebruikers hun digitale identiteit effectief te beheren, waardoor het een ideaal hulpmiddel is voor werkzoekenden of iedereen die zijn online aanwezigheid en digitale invloed wil vergroten.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "Winkel App",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "Een app die een naadloze winkelervaring biedt, waardoor gebruikers eenvoudig door producten kunnen bladeren en items aan hun winkelwagen kunnen toevoegen. De app heeft een modern en innovatief ontwerp dat de gebruikerservaring verbetert, met directe responsiviteit en interactieve elementen die winkelen leuker maken.",
+                "technologies": [
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Chat App",
+                "image": "/Projects/ChatApp.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "Een chatapplicatie die een naadloze en gebruiksvriendelijke communicatie-ervaring biedt. Het stelt gebruikers in staat eenvoudig verbinding te maken via instant messaging, wat een soepele uitwisseling van berichten en ideeën mogelijk maakt.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "Afbeelding Compressor",
+                "image": "/Projects/image-compressor.png",
+                "websiteUrl": "https://image-compressor-aed.vercel.app",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "Een krachtige en veilige browsergebaseerde tool voor beeldcompressie. Hiermee kunnen gebruikers onbeperkt JPG-, PNG- en WebP-afbeeldingen tot 90% comprimeren zonder kwaliteitsverlies. Functies omvatten bulkcompressie, PDF-generatie, drag-and-drop-interface en volledige privacy omdat alle verwerking lokaal in de browser plaatsvindt.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "QR-code Beheer App",
+                "image": "/Projects/EdQrcode.png",
+                "websiteUrl": "https://edqrcode.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubUrls": "",
+                "description": "Een app voor het beheren van QR-codes, waarmee u QR-codes met aangepaste logo's kunt maken, QR-codes van afbeeldingen kunt lezen en QR-codes via de camera kunt scannen om gegevens direct weer te geven. Heeft een aantrekkelijk en responsief ontwerp.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "experience": {
+        "title": "Ervaring",
+        "subtitle": "Mijn Professionele Ervaring",
+        "items": [
+            {
+                "title": "Oprichter & Ontwikkelaar van DGT Portfolio",
+                "company": "Dgt Portfolio",
+                "location": "El-Aaiun , Marokko",
+                "startDate": "Okt 2024",
+                "endDate": "Heden",
+                "duration": "+ 2 mnd",
+                "type": "Oprichter & Ontwikkelaar",
+                "workType": "Hybride",
+                "achievementsLabel": "Prestaties:",
+                "responsibilities": [
+                    "Professionele manier om uw digitale portfolio te maken zonder codeer- of ontwerpvaardigheden.",
+                    "Aangepast subdomein: uwname.dgtportfolio.com",
+                    "Aangepast domein: uwname.com",
+                    "Verbeterde SEO-zichtbaarheid voor uw portfolio",
+                    "QR-code klaar voor eenvoudig delen",
+                    "Meerdere thema's die bij uw stijl passen",
+                    "Toon uw portfolio in elke taal die u kiest",
+                    "Snelle, soepele en gebruiksvriendelijke ervaring"
+                ]
+            },
+            {
+                "title": "Full Stack MERN-ontwikkelaar",
+                "company": "Regionale Academie voor Onderwijs en Opleiding",
+                "location": "El-Aaiun , Marokko",
+                "startDate": "Mrt 2024",
+                "endDate": "Apr 2024",
+                "duration": "2 mnd",
+                "type": "Stage",
+                "workType": "Hybride",
+                "achievementsLabel": "Prestaties:",
+                "responsibilities": [
+                    "Ontworpen en ontwikkeld een taakbeheerapplicatie waarmee gebruikers taken kunnen toevoegen, bewerken en verwijderen.",
+                    "Authenticatie en autorisatie geïmplementeerd met behulp van JWT om de beveiliging van de applicatie te garanderen.",
+                    "API-eindpunten getest met Postman om een correcte functionaliteit te garanderen.",
+                    "Gebruikerservaring verbeterd door een eenvoudige en gebruiksvriendelijke interface te ontwerpen.",
+                    "De applicatie geïmplementeerd op Vercel en de codebase beheerd met behulp van Git/GitHub."
+                ]
+            },
+            {
+                "title": "Full Stack Webontwikkelaar",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiun , Marokko",
+                "startDate": "Sep 2023",
+                "endDate": "Jun 2024",
+                "duration": "10 mnd",
+                "type": "Stagiair",
+                "workType": "Op locatie",
+                "achievementsLabel": "Prestaties:",
+                "description": [
+                    "Essentiële webontwikkelingsvaardigheden opgedaan door theorie te combineren met praktische toepassing in een professionele omgeving.",
+                    "Interactieve en aantrekkelijke gebruikersinterfaces ontworpen in frontend-ontwikkeling.",
+                    "Ervaring opgedaan in backend-ontwikkeling en databasebeheer.",
+                    "Vaardigheden ontwikkeld in het creëren en onderhouden van dynamische webapplicaties.",
+                    "Agile-methodologie toegepast om de efficiëntie te verbeteren en teamwork te versterken.",
+                    "Ervaring opgedaan met Git en GitHub voor effectief code- en projectbeheer.",
+                    "SonarQube gebruikt om de codekwaliteit te analyseren en continue verbetering te garanderen.",
+                    "Docker gebruikt om omgevingsbeheer en applicatieontwikkeling te stroomlijnen.",
+                    "Interpersoonlijke vaardigheden verbeterd, zoals communicatie en teamwork, voor een betere voorbereiding in diverse werkomgevingen."
+                ]
+            },
+            {
+                "title": "Stagiair Digitaal Ontwikkelaar",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiun , Marokko",
+                "startDate": "Nov 2022",
+                "endDate": "Jun 2023",
+                "duration": "8 mnd",
+                "type": "Stagiair",
+                "workType": "Op locatie",
+                "keyResponsibilities": "Belangrijkste verantwoordelijkheden:",
+                "description": [
+                    "Cultuur en geavanceerde technieken van het digitale veld",
+                    "Begrip van de dimensies van het beroep en het leertraject",
+                    "De basisprincipes van algoritmiek verwerven",
+                    "Gedrags- en sociale vaardigheden",
+                    "Ontwikkelen van vaardigheden in objectgeoriënteerd programmeren",
+                    "Ontwerpen en bouwen van statische websites",
+                    "Gebruik van JavaScript voor applicatieontwikkeling",
+                    "Werken met databases en uitvoeren van basisbewerkingen",
+                    "Bouwen van dynamische websites die communiceren met gebruikers",
+                    "Kennismaken met de principes van informatiebeveiliging"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Opleiding",
+        "subtitle": "Mijn persoonlijke reis",
+        "items": [
+            {
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
+                "degree": "Diploma in Digitale Ontwikkeling (Full Stack Web Optie)",
+                "startDate": "2022",
+                "endDate": "2024",
+                "location": "El-Aaiun, Marokko",
+                "imageUrl": "/cmc-maroc.png"
+            },
+            {
+                "institution": "Baba Ahmed bin Muhammad Yahdih Middelbare School",
+                "degree": "Bachelor, Natuurwetenschappen",
+                "startDate": "2021",
+                "endDate": "2022",
+                "location": "El-Aaiun, Marokko",
+                "imageUrl": "/BabAhmedImage.jpg"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Neem contact op",
+        "subtitle": "Contact opnemen",
+        "subjectPlaceholder": "Voer uw onderwerp in",
+        "emailPlaceholder": "Voer uw e-mail in",
+        "messagePlaceholder": "Voer uw bericht in",
+        "sendButton": "Verstuur bericht",
+        "sendingButton": "Verzenden...",
+        "writeMe": "Schrijf mij",
+        "email": "E-mail",
+        "whatsapp": "WhatsApp",
+        "validationError": "Vul alle velden in en geef een geldig e-mailadres op.",
+        "formError": "Corrigeer de fouten in het formulier.",
+        "subjectRequired": "Onderwerp is verplicht",
+        "emailRequired": "E-mail is verplicht",
+        "emailInvalid": "Voer een geldig e-mailadres in",
+        "messageRequired": "Bericht is verplicht",
+        "successMessage": "Succesvol verzonden",
+        "errorMessage": "Er is een fout opgetreden. Probeer het opnieuw."
+    },
+    "footer": {
+        "links": [
+            {
+                "name": "Over mij",
+                "path": "/About"
+            },
+            {
+                "name": "Vaardigheden",
+                "path": "/Skills"
+            },
+            {
+                "name": "Projecten",
+                "path": "/Projects"
+            }
+        ],
+        "rights": "© Abdellah Edaoudi Alle rechten voorbehouden ©"
+    }
+}

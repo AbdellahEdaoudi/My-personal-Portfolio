@@ -1,0 +1,85 @@
+{
+    "home": {
+        "title": "Abdellah Edaoudi",
+        "description": "portfolio Abdellaha Edaoudi, developera cyfrowego specjalizującego się w MERN-Stack. Poznaj moje projekty, umiejętności i doświadczenia w tworzeniu responsywnych stron internetowych i aplikacji przy użyciu Next.js (React.js), Tailwind CSS i Node.js.",
+        "keywords": "Abdellah Edaoudi, Developer MERN Stack, Portfolio, Tworzenie Stron WWW, React, React.js, Node.js, MongoDB, Express.js, JavaScript, Developer Frontend, Developer Backend, Inżynier Oprogramowania, Aplikacje WWW, Tailwind CSS, Next.js, Developer Cyfrowy, Responsywny Design, Rozwój Full-Stack, Integracja API, Design UI/UX, Optymalizacja SEO",
+        "openGraph": {
+            "title": "Abdellah Edaoudi",
+            "description": "Witamy w oficjalnym portfolio Abdellaha Edaoudi, developera cyfrowego specjalizującego się w MERN-Stack. Poznaj moje projekty, umiejętności i doświadczenia w tworzeniu responsywnych stron internetowych i aplikacji przy użyciu Next.js (React.js), Tailwind CSS i Node.js."
+        },
+        "twitter": {
+            "title": "Abdellah Edaoudi - Developer MERN Stack | Portfolio",
+            "description": "Witamy w oficjalnym portfolio Abdellaha Edaoudi, developera cyfrowego specjalizującego się w MERN-Stack. Poznaj moje projekty, umiejętności i doświadczenia w tworzeniu responsywnych stron internetowych i aplikacji przy użyciu Next.js (React.js), Tailwind CSS i Node.js."
+        },
+        "google": {
+            "name": "Abdellah Edaoudi - Developer MERN Stack | Portfolio",
+            "description": "Witamy w oficjalnym portfolio Abdellaha Edaoudi, developera cyfrowego specjalizującego się w MERN-Stack. Poznaj moje projekty, umiejętności i doświadczenia w tworzeniu responsywnych stron internetowych i aplikacji przy użyciu Next.js (React.js), Tailwind CSS i Node.js."
+        }
+    },
+    "about": {
+        "title": "Abdellah Edaoudi | O mnie",
+        "description": "Odkryj podróż Abdellaha Edaoudi. Wysokiej klasy developer Full Stack specjalizujący się w skalowalnych aplikacjach MERN, wydajności Next.js i innowacyjnych rozwiązaniach cyfrowych.",
+        "keywords": [
+            "O Abdellahu Edaoudi",
+            "Ekspert Full Stack",
+            "Developer MERN Stack",
+            "Architekt Next.js",
+            "Marka Tworzenia Stron WWW"
+        ]
+    },
+    "contact": {
+        "title": "Abdellah Edaoudi | Kontakt",
+        "description": "Gotowy na stworzenie czegoś niesamowitego? Skontaktuj się z Abdellahem Edaoudi w sprawie zapytań o freelance, współpracy lub pełnoetatowych ról developerskich Full Stack. Porozmawiajmy.",
+        "keywords": [
+            "Zatrudnij Developera Full Stack",
+            "Kontakt do Developera WWW",
+            "Freelance MERN Developer",
+            "Kontakt Abdellah Edaoudi",
+            "Usługi Tworzenia Stron WWW"
+        ]
+    },
+    "education": {
+        "title": "Abdellah Edaoudi | Edukacja",
+        "description": "Poznaj akademickie podstawy eksperta Full Stack. Specjalistyczny dyplom w zakresie rozwoju cyfrowego, certyfikowane umiejętności w React, Node.js i nowoczesnej architekturze webowej.",
+        "keywords": [
+            "Dyplom Rozwoju Cyfrowego",
+            "Certyfikacja Full Stack",
+            "Edukacja Tworzenia Stron WWW",
+            "Stopnie naukowe Abdellah Edaoudi",
+            "Szkolenie MERN"
+        ]
+    },
+    "experience": {
+        "title": "Abdellah Edaoudi | Doświadczenie",
+        "description": "Śledź karierę Abdellaha Edaoudi. Założyciel DGT Portfolio i doświadczony developer dostarczający aplikacje internetowe o dużym wpływie dla różnych branż.",
+        "keywords": [
+            "Doświadczenie Full Stack",
+            "Kariera Developera WWW",
+            "Założyciel DGT Portfolio",
+            "Praca MERN Stack",
+            "Profesjonalny Developer WWW"
+        ]
+    },
+    "projects": {
+        "title": "Abdellah Edaoudi | Projekty",
+        "description": "Przeglądaj wyselekcjonowaną galerię wysokowydajnych aplikacji internetowych. Prezentacja ekspertyzy w stosie MERN, platformach SaaS i responsywnym designie autorstwa Abdellaha Edaoudi.",
+        "keywords": [
+            "Portfolio Tworzenia Stron WWW",
+            "Projekty MERN Stack",
+            "Aplikacje React",
+            "Prezentacja Next.js",
+            "Projekty Abdellah Edaoudi"
+        ]
+    },
+    "skills": {
+        "title": "Abdellah Edaoudi | Umiejętności",
+        "description": "Zanurz się w technicznym arsenale Abdellaha Edaoudi. Opanowanie JavaScript, React, Node.js, MongoDB, Docker i narzędzi budujących nowoczesny Internet.",
+        "keywords": [
+            "Umiejętności MERN Stack",
+            "Ekspertyza Next.js",
+            "Mistrzostwo JavaScript",
+            "Narzędzia DevOps",
+            "Technologie Tworzenia Stron WWW"
+        ]
+    }
+}
