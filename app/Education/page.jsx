@@ -1,4 +1,4 @@
-import meta from "../dictionaries/metadata/educationmeta.json";
+import meta from "../translations/metadata/educationmeta.json";
 import React from "react";
 
 export const metadata = {
@@ -45,7 +45,7 @@ export const metadata = {
 import Footer from "../Components/Footer";
 import Education from "../Components/Education";
 import Header from "../Components/Header";
-import { getDictionary } from "../dictionaries/get-dictionary";
+import { getDictionary } from "../translations/get-dictionary";
 
 
 async function page() {
