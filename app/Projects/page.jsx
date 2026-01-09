@@ -1,4 +1,4 @@
-import meta from "../dictionaries/metadata/projectsmeta.json";
+import meta from "../translations/metadata/projectsmeta.json";
 import React from "react";
 
 export const metadata = {
@@ -45,7 +45,7 @@ export const metadata = {
 import Projects from "../Components/Projects";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-import { getDictionary } from "../dictionaries/get-dictionary";
+import { getDictionary } from "../translations/get-dictionary";
 
 async function page() {
   const dictionary = await getDictionary('en');

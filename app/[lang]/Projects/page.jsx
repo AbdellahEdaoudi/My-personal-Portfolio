@@ -1,10 +1,10 @@
 import Projects from "../../Components/Projects";
 import Footer from "../../Components/Footer";
-import { getDictionary } from "../../dictionaries/get-dictionary";
+import { getDictionary } from "../../translations/get-dictionary";
 import Header from "../../Components/Header";
 
 
-import meta from "../../dictionaries/metadata/projectsmeta.json";
+import meta from "../../translations/metadata/projectsmeta.json";
 
 export async function generateMetadata({ params }) {
     const { lang } = await params;

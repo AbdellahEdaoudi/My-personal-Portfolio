@@ -1,10 +1,10 @@
 import Experience from "../../Components/Experience";
 import Footer from "../../Components/Footer";
-import { getDictionary } from "../../dictionaries/get-dictionary";
+import { getDictionary } from "../../translations/get-dictionary";
 import Header from "../../Components/Header";
 
 
-import meta from "../../dictionaries/metadata/experiencemeta.json";
+import meta from "../../translations/metadata/experiencemeta.json";
 
 export async function generateMetadata({ params }) {
     const { lang } = await params;

@@ -1,4 +1,4 @@
-import meta from "../dictionaries/metadata/aboutmeta.json";
+import meta from "../translations/metadata/aboutmeta.json";
 import React from "react";
 
 export const metadata = {
@@ -45,7 +45,7 @@ export const metadata = {
 import About from "../Components/About";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-import { getDictionary } from "../dictionaries/get-dictionary";
+import { getDictionary } from "../translations/get-dictionary";
 
 
 async function page() {

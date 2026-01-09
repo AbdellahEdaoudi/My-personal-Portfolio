@@ -98,11 +98,6 @@ const dictionaries = {
         header: import('./header.json').then((module) => module.ar),
     }),
 }
-// Note: The structure of JSON files was: { "en": { ... }, "fr": { ... } } for each file.
-// So for 'en', we want module.default.en? No, let's check the JSON files I wrote.
-// I wrote: { "en": { ... }, "fr": { ... } } inside about.json.
-// So `import('./about.json')` returns the whole object.
-// So dictionaries.en should return `module.default.en`. 
 
 const loadDictionary = async (locale) => {
     const dict = {

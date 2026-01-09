@@ -6,7 +6,7 @@ import Education from "./Components/Education";
 import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import { getDictionary } from "./dictionaries/get-dictionary";
+import { getDictionary } from "./translations/get-dictionary";
 import Header from "./Components/Header";
 
 export default async function Page() {
