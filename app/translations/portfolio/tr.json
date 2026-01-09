@@ -1,0 +1,508 @@
+{
+    "header": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımda",
+        "skills": "Yetenekler",
+        "projects": "Projeler",
+        "education": "Eğitim",
+        "experience": "Deneyim",
+        "contact": "İletişim",
+        "admin": "Yönetici"
+    },
+    "home": {
+        "greeting": "Merhaba, Ben Abdellah Edaoudi",
+        "role": "🔷 Full Stack Geliştirici 🔷",
+        "description": "MERN yığını kullanarak duyarlı web siteleri ve uygulamalar geliştirmenin yanı sıra, optimum performans ve ölçeklenebilirlik için Next.js ve NestJS gibi gelişmiş çerçeveler konusunda uzmanım; uygulama güvenliği ve veri korumasına güçlü bir odaklanma ile."
+    },
+    "about": {
+        "title": "Hakkımda",
+        "subtitle": "Giriş",
+        "experience": "Deneyim",
+        "experienceDetail": "2 yıl Çalışma",
+        "completed": "Tamamlandı",
+        "completedDetail": "+8 Proje",
+        "support": "Destek",
+        "supportDetail": "7/24 Çevrimiçi",
+        "description": "Fikirleri yenilikçi, güvenli ve etkili uygulamalara dönüştürme konusunda geniş deneyime sahibim. Odak noktam, kullanıcı deneyimini geliştirmeyi ve çekici arayüzler oluşturmayı, sağlam güvenlik ve yüksek performans sağlamakla harmanlıyor.",
+        "downloadCv": "Özgeçmiş",
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+    },
+    "skills": {
+        "title": "Yetenekler",
+        "subtitle": "Teknik seviyem",
+        "frontendTitle": "Frontend Geliştirici",
+        "backendTitle": "Backend Geliştirici",
+        "toolsTitle": "Geliştirme Araçları",
+        "softSkillsTitle": "Sosyal Beceriler",
+        "softSkills": [
+            {
+                "name": "Problem Çözme",
+                "image": "/Skills/Problem Solving.png"
+            },
+            {
+                "name": "Takım Çalışması",
+                "image": "/Skills/Teamwork.jpg"
+            },
+            {
+                "name": "İletişim",
+                "image": "/Skills/Communication.png"
+            },
+            {
+                "name": "Uyumluluk",
+                "image": "/Skills/Adaptability.png"
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projeler",
+        "subtitle": "En son çalışmalar",
+        "liveDemo": "Demo",
+        "readMore": "Daha fazla oku",
+        "showLess": "Daha az göster",
+        "items": [
+            {
+                "title": "DGT Portföy Oluşturucu",
+                "type": "fullstack",
+                "image": "/Projects/dgtportfolio.png",
+                "websiteUrl": "https://dgtportfolio.com/tr",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "Kullanıcıların profesyonel portföyleri zahmetsizce oluşturmasını sağlayan kapsamlı bir SaaS platformu. Çoklu dil desteği, özel alan adı entegrasyonu, dinamik tema seçimi, gerçek zamanlı özgeçmiş oluşturma ve içerik, abonelikler ve analizleri yönetmek için sezgisel bir yönetici paneli içerir.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "PayPal",
+                        "logo": "/Skills/paypal.png"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "E-Ticaret Back-End",
+                "type": "backend",
+                "image": "/Projects/Ecom-backend.png",
+                "websiteUrl": "/Requirements.docx.pdf",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubUrls": "",
+                "description": "Bir e-ticaret platformu için sağlam ve ölçeklenebilir bir arka uç sistemi. Sistem, kullanıcı yönetimi, ürün envanteri organizasyonu, sipariş işleme, ödeme işleme (nakit veya kart ile), kupon ekleme, incelemeler, kategori ve marka yönetimi, tedarikçi yönetimi ve vergi düzenlemesi gibi çeşitli işlevleri yerine getirir.",
+                "technologies": [
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Typescript ",
+                        "logo": "/Skills/typescript.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Otel Rezervasyonu",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "Otel yönetim sistemi, oda rezervasyonlarını ve ödemeleri yönetmek için kapsamlı bir çözüm sunar. Kullanıcıların kolayca oda ayırtmasına ve onay için elektronik bir bilet almasına olanak tanır. Sistem, rezervasyonları, ödemeleri ve e-posta yoluyla müşteri yanıtlarını yönetmek için bir panel içerir.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Özgeçmiş Platformu",
+                "image": "/Projects/Linkerfolio.png",
+                "websiteUrl": "https://linkerfolio.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "description": "Geliştirdiğim yenilikçi uygulama, kullanıcıların profesyonel özgeçmişlerini ve sosyal medya bağlantılarını tek bir yerde sergilemelerine olanak tanır. Bu uygulama, kullanıcıların dijital kimliklerini etkili bir şekilde yönetmelerine yardımcı olur, bu da onu iş arayanlar veya çevrimiçi varlıklarını ve dijital etkilerini artırmak isteyen herkes için ideal bir araç haline getirir.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "Alışveriş Uygulaması",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "Kullanıcıların ürünlere kolayca göz atmasını ve sepetlerine ürün eklemesini sağlayan, sorunsuz bir alışveriş deneyimi sunan bir uygulama. Uygulama, anında yanıt verebilirlik ve alışverişi daha keyifli hale getiren etkileşimli öğelerle kullanıcı deneyimini geliştiren modern ve yenilikçi bir tasarıma sahiptir.",
+                "technologies": [
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Sohbet Uygulaması",
+                "image": "/Projects/ChatApp.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "Sorunsuz ve kullanıcı dostu bir iletişim deneyimi sunan bir sohbet uygulaması. Kullanıcıların anlık mesajlaşma yoluyla kolayca bağlantı kurmasını sağlayarak mesaj ve fikir alışverişini kolaylaştırır.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "Görüntü Sıkıştırıcı",
+                "image": "/Projects/image-compressor.png",
+                "websiteUrl": "https://image-compressor-aed.vercel.app",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "Güçlü ve güvenli bir tarayıcı tabanlı görüntü sıkıştırma aracı. Kullanıcıların sınırsız JPG, PNG ve WebP görüntüsünü kalite kaybı olmadan %90'a kadar sıkıştırmasına olanak tanır. Özellikler arasında toplu sıkıştırma, PDF oluşturma, sürükle ve bırak arayüzü ve tüm işlemler yerel olarak tarayıcıda gerçekleştiği için tam gizlilik bulunur.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "QR Kod Yönetim Uygulaması",
+                "image": "/Projects/EdQrcode.png",
+                "websiteUrl": "https://edqrcode.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubUrls": "",
+                "description": "Özel logolarla QR kodları oluşturmanıza, görüntülerden QR kodları okumanıza ve verileri anında görüntülemek için kamera aracılığıyla QR kodlarını taramanıza olanak tanıyan bir QR Kod yönetim uygulaması. Çekici ve duyarlı bir tasarıma sahiptir.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "experience": {
+        "title": "Deneyim",
+        "subtitle": "Profesyonel deneyimim",
+        "items": [
+            {
+                "title": "DGT Portföy'ün Kurucusu ve Geliştiricisi",
+                "company": "Dgt Portfolio",
+                "location": "El-Aaiun , Fas",
+                "startDate": "Ekim 2024",
+                "endDate": "Günümüz",
+                "duration": "+ 2 ay",
+                "type": "Kurucu & Geliştirici",
+                "workType": "Hibrit",
+                "achievementsLabel": "Başarılar :",
+                "responsibilities": [
+                    "Herhangi bir kodlama veya tasarım becerisi olmadan dijital portföyünüzü oluşturmanın profesyonel yolu.",
+                    "Özel alt alan adı: adiniz.dgtportfolio.com",
+                    "Özel alan adı: adiniz.com",
+                    "Portföyünüz için geliştirilmiş SEO görünürlüğü",
+                    "Kolay paylaşım için hazır QR Kodu",
+                    "Tarzınıza uygun birden fazla tema",
+                    "Portföyünüzü seçtiğiniz herhangi bir dilde görüntüleyin",
+                    "Hızlı, sorunsuz ve kullanıcı dostu deneyim"
+                ]
+            },
+            {
+                "title": "Full Stack MERN Geliştirici",
+                "company": "Bölgesel Eğitim ve Öğretim Akademisi",
+                "location": "El-Aaiun , Fas",
+                "startDate": "Mart 2024",
+                "endDate": "Nisan 2024",
+                "duration": "2 ay",
+                "type": "Staj",
+                "workType": "Hibrit",
+                "achievementsLabel": "Başarılar :",
+                "responsibilities": [
+                    "Kullanıcıların görev eklemesine, düzenlemesine ve silmesine olanak tanıyan bir görev yönetim uygulaması tasarladı ve geliştirdi.",
+                    "Uygulamanın güvenliğini sağlamak için JWT kullanarak kimlik doğrulama ve yetkilendirme uyguladı.",
+                    "Uygun işlevselliği sağlamak için Postman kullanarak API uç noktalarını test etti.",
+                    "Basit ve kullanıcı dostu bir arayüz tasarlayarak kullanıcı deneyimini iyileştirdi.",
+                    "Uygulamayı Vercel'de yayınladı ve kod tabanını Git/GitHub kullanarak yönetti."
+                ]
+            },
+            {
+                "title": "Full Stack Web Geliştirici",
+                "company": "Meslekler ve Yetkinlikler Şehirleri",
+                "location": "El-Aaiun , Fas",
+                "startDate": "Eylül 2023",
+                "endDate": "Haziran 2024",
+                "duration": "10 ay",
+                "type": "Stajyer",
+                "workType": "Yerinde",
+                "achievementsLabel": "Başarılar :",
+                "description": [
+                    "Profesyonel bir ortamda teori ile pratik uygulamayı birleştirerek temel web geliştirme becerileri kazandı.",
+                    "Ön uç geliştirmede etkileşimli ve çekici kullanıcı arayüzleri tasarladı.",
+                    "Arka uç geliştirme ve veritabanı yönetiminde deneyim kazandı.",
+                    "Dinamik web uygulamaları oluşturma ve sürdürme becerileri geliştirdi.",
+                    "Verimliliği artırmak ve ekip çalışmasını güçlendirmek için Çevik metodolojiyi uyguladı.",
+                    "Etkili kod ve proje yönetimi için Git ve GitHub kullanma deneyimi kazandı.",
+                    "Kod kalitesini analiz etmek ve sürekli iyileştirmeyi sağlamak için SonarQube kullandı.",
+                    "Ortam yönetimini ve uygulama geliştirmeyi kolaylaştırmak için Docker kullandı.",
+                    "Çeşitli çalışma ortamlarına daha iyi hazırlanmak için iletişim ve ekip çalışması dahil olmak üzere kişilerarası becerileri geliştirdi."
+                ]
+            },
+            {
+                "title": "Dijital Geliştirici Stajyeri",
+                "company": "Meslekler ve Yetkinlikler Şehirleri",
+                "location": "El-Aaiun , Fas",
+                "startDate": "Kasım 2022",
+                "endDate": "Haziran 2023",
+                "duration": "8 ay",
+                "type": "Stajyer",
+                "workType": "Yerinde",
+                "achievementsLabel": "Başarılar :",
+                "description": [
+                    "Dijital alanın kültürü ve ileri teknikleri",
+                    "Mesleğin boyutlarını ve öğrenme yolunu anlama",
+                    "Algoritma temellerini edinme",
+                    "Davranışsal ve sosyal beceriler",
+                    "Nesne yönelimli programlamada beceri geliştirme",
+                    "Statik web siteleri tasarlama ve oluşturma",
+                    "Uygulama geliştirme için JavaScript kullanma",
+                    "Veritabanları ile çalışma ve temel işlemleri yürütme",
+                    "Kullanıcılarla etkileşime giren dinamik web siteleri oluşturma",
+                    "Bilgi sistemi güvenliği ilkelerine aşinalık"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Eğitim",
+        "subtitle": "Kişisel yolculuğum",
+        "items": [
+            {
+                "institution": "<a href='https://cmc.ac.ma/fr'>Meslekler ve Yetkinlikler Şehirleri</a>",
+                "degree": "Dijital Geliştirme Diploması (Full Stack Web Seçeneği)",
+                "startDate": "2022",
+                "endDate": "2024",
+                "location": "El-Aaiun , Fas",
+                "imageUrl": "/cmc-maroc.png"
+            },
+            {
+                "institution": "Baba Ahmed bin Muhammad Yahdih Lisesi",
+                "degree": "Lisans, Fizik Bilimleri",
+                "startDate": "2021",
+                "endDate": "2022",
+                "location": "El-Aaiun , Fas",
+                "imageUrl": "/BabAhmedImage.jpg"
+            }
+        ]
+    },
+    "contact": {
+        "title": "İletişime Geç",
+        "subtitle": "Bana Ulaşın",
+        "subjectPlaceholder": "Konuyu girin",
+        "emailPlaceholder": "E-postanızı girin",
+        "messagePlaceholder": "Mesajınızı yazın",
+        "sendButton": "Mesaj Gönder",
+        "sendingButton": "Gönderiliyor",
+        "writeMe": "Bana yaz",
+        "email": "E-posta",
+        "whatsapp": "WhatsApp",
+        "validationError": "Lütfen tüm alanları doldurun ve geçerli bir e-posta sağlayın.",
+        "formError": "Lütfen formdaki hataları düzeltin.",
+        "subjectRequired": "Konu gereklidir",
+        "emailRequired": "E-posta gereklidir",
+        "emailInvalid": "Lütfen geçerli bir e-posta adresi girin",
+        "messageRequired": "Mesaj gereklidir",
+        "successMessage": "Başarıyla gönderildi",
+        "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin."
+    },
+    "footer": {
+        "links": [
+            {
+                "name": "Hakkımda",
+                "path": "/About"
+            },
+            {
+                "name": "Yetenekler",
+                "path": "/Skills"
+            },
+            {
+                "name": "Projeler",
+                "path": "/Projects"
+            }
+        ],
+        "rights": "© Abdellah Edaoudi Tüm hakları saklıdır ©"
+    }
+}

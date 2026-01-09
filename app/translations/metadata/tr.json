@@ -1,0 +1,85 @@
+{
+    "home": {
+        "title": "Abdellah Edaoudi",
+        "description": "Abdellah Edaoudi'nin portföyü, MERN-Stack konusunda uzmanlaşmış bir Dijital Geliştirici. Next.js (React.js), Tailwind CSS ve Node.js kullanarak duyarlı web siteleri ve uygulamalar oluşturma konusundaki projelerimi, becerilerimi ve deneyimlerimi keşfedin.",
+        "keywords": "Abdellah Edaoudi, MERN Yığını Geliştiricisi, Portföy, Web Geliştirme, React, React.js, Node.js, MongoDB, Express.js, JavaScript, Frontend Geliştirici, Backend Geliştirici, Yazılım Mühendisi, Web Uygulamaları, Tailwind CSS, Next.js, Dijital Geliştirici, Duyarlı Tasarım, Full-Stack Geliştirme, API Entegrasyonu, UI/UX Tasarımı, SEO Optimizasyonu",
+        "openGraph": {
+            "title": "Abdellah Edaoudi",
+            "description": "MERN-Stack konusunda uzmanlaşmış bir Dijital Geliştirici olan Abdellah Edaoudi'nin resmi portföyüne hoş geldiniz. Next.js (React.js), Tailwind CSS ve Node.js kullanarak duyarlı web siteleri ve uygulamalar oluşturma konusundaki projelerimi, becerilerimi ve deneyimlerimi keşfedin."
+        },
+        "twitter": {
+            "title": "Abdellah Edaoudi - MERN Yığını Geliştiricisi | Portföy",
+            "description": "MERN-Stack konusunda uzmanlaşmış bir Dijital Geliştirici olan Abdellah Edaoudi'nin resmi portföyüne hoş geldiniz. Next.js (React.js), Tailwind CSS ve Node.js kullanarak duyarlı web siteleri ve uygulamalar oluşturma konusundaki projelerimi, becerilerimi ve deneyimlerimi keşfedin."
+        },
+        "google": {
+            "name": "Abdellah Edaoudi - MERN Yığını Geliştiricisi | Portföy",
+            "description": "MERN-Stack konusunda uzmanlaşmış bir Dijital Geliştirici olan Abdellah Edaoudi'nin resmi portföyüne hoş geldiniz. Next.js (React.js), Tailwind CSS ve Node.js kullanarak duyarlı web siteleri ve uygulamalar oluşturma konusundaki projelerimi, becerilerimi ve deneyimlerimi keşfedin."
+        }
+    },
+    "about": {
+        "title": "Abdellah Edaoudi | Hakkında",
+        "description": "Abdellah Edaoudi'nin yolculuğunu keşfedin. Ölçeklenebilir MERN uygulamaları, Next.js performansı ve yenilikçi dijital çözümler konusunda uzmanlaşmış üst düzey bir Full Stack Geliştirici.",
+        "keywords": [
+            "Abdellah Edaoudi Hakkında",
+            "Full Stack Uzmanı",
+            "MERN Yığını Geliştiricisi",
+            "Next.js Mimarı",
+            "Web Geliştirme Markası"
+        ]
+    },
+    "contact": {
+        "title": "Abdellah Edaoudi | İletişim",
+        "description": "Harika bir şey inşa etmeye hazır mısınız? Freelance soruları, işbirlikleri veya tam zamanlı Full Stack geliştirme rolleri için Abdellah Edaoudi ile iletişime geçin. Konuşalım.",
+        "keywords": [
+            "Full Stack Geliştirici İşe Al",
+            "Web Geliştirici İletişim",
+            "Freelance MERN Geliştirici",
+            "Abdellah Edaoudi İletişim",
+            "Web Geliştirme Hizmetleri"
+        ]
+    },
+    "education": {
+        "title": "Abdellah Edaoudi | Eğitim",
+        "description": "Bir Full Stack uzmanının akademik temelini keşfedin. Dijital Geliştirme alanında Uzmanlık Diploması, React, Node.js ve modern web mimarisinde sertifikalı beceriler.",
+        "keywords": [
+            "Dijital Geliştirme Diploması",
+            "Full Stack Sertifikası",
+            "Web Geliştirme Eğitimi",
+            "Abdellah Edaoudi Dereceleri",
+            "MERN Eğitimi"
+        ]
+    },
+    "experience": {
+        "title": "Abdellah Edaoudi | Deneyim",
+        "description": "Abdellah Edaoudi'nin kariyerini takip edin. DGT Portfolio'nun kurucusu ve çeşitli endüstriler için yüksek etkili web uygulamaları sunan deneyimli geliştirici.",
+        "keywords": [
+            "Full Stack Deneyimi",
+            "Web Geliştirici Kariyeri",
+            "DGT Portfolio Kurucusu",
+            "MERN Yığını İşleri",
+            "Profesyonel Web Geliştirici"
+        ]
+    },
+    "projects": {
+        "title": "Abdellah Edaoudi | Projeler",
+        "description": "Yüksek performanslı web uygulamalarının küratörlüğünü yaptığı bir galeriye göz atın. Abdellah Edaoudi'nin MERN yığını, SaaS platformları ve duyarlı tasarım konusundaki uzmanlığını sergiliyor.",
+        "keywords": [
+            "Web Geliştirme Portföyü",
+            "MERN Yığını Projeleri",
+            "React Uygulamaları",
+            "Next.js Vitrini",
+            "Abdellah Edaoudi Projeleri"
+        ]
+    },
+    "skills": {
+        "title": "Abdellah Edaoudi | Beceriler",
+        "description": "Abdellah Edaoudi'nin teknik cephaneliğine derinlemesine dalın. JavaScript, React, Node.js, MongoDB, Docker ve modern web'i oluşturan araçlarda ustalaşmak.",
+        "keywords": [
+            "MERN Yığını Becerileri",
+            "Next.js Uzmanlığı",
+            "JavaScript Ustalığı",
+            "DevOps Araçları",
+            "Web Geliştirme Teknolojileri"
+        ]
+    }
+}

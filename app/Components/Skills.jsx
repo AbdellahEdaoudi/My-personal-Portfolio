@@ -3,7 +3,12 @@ import { FaReact, FaNodeJs, FaGitAlt, FaDocker } from "react-icons/fa";
 import { SiNextdotjs, SiMongodb, SiTailwindcss, SiBootstrap, SiPostman } from "react-icons/si";
 import Image from "next/image";
 
-function Skills({ content }) {
+import { getTranslation } from "../translations/portfolio/load-translations";
+
+async function Skills({ lang = 'en' }) {
+  const dictionary = await getTranslation(lang);
+  const content = dictionary.skills;
+
   if (!content) return null;
 
   const FrontEnd = [

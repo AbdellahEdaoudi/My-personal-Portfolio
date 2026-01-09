@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react"
 import './globals.css'
 import { Prompt } from 'next/font/google'
 import ScrollToTop from './Components/ScrollToTop'
+import { ToastProvider } from './Components/Toast'
 
 export const metadata = {
   metadataBase: new URL('https://abdellah-edaoudi.vercel.app'),
@@ -74,6 +75,15 @@ export const metadata = {
       'nl': '/nl',
       'es': '/es',
       'pt': '/pt',
+      'ar': '/ar',
+      'ru': '/ru',
+      'ja': '/ja',
+      'it': '/it',
+      'hi': '/hi',
+      'tr': '/tr',
+      'ko': '/ko',
+      'id': '/id',
+      'pl': '/pl',
     },
   },
 }
@@ -109,7 +119,9 @@ export default function RootLayout({ children }) {
             })
           }}
         />
-        {children}
+        <ToastProvider>
+          {children}
+        </ToastProvider>
         <Analytics />
         <ScrollToTop />
       </body>

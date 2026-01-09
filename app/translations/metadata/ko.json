@@ -1,0 +1,85 @@
+{
+    "home": {
+        "title": "아브델라 에다우디",
+        "description": "MERN-Stack을 전문으로 하는 디지털 개발자 아브델라 에다우디의 포트폴리오. Next.js(React.js), Tailwind CSS 및 Node.js를 사용하여 반응형 웹 사이트 및 애플리케이션을 구축하는 저의 프로젝트, 기술 및 경험을 살펴보십시오.",
+        "keywords": "아브델라 에다우디, MERN 스택 개발자, 포트폴리오, 웹 개발, React, React.js, Node.js, MongoDB, Express.js, JavaScript, 프론트엔드 개발자, 백엔드 개발자, 소프트웨어 엔지니어, 웹 애플리케이션, Tailwind CSS, Next.js, 디지털 개발자, 반응형 디자인, 풀 스택 개발, API 통합, UI/UX 디자인, SEO 최적화",
+        "openGraph": {
+            "title": "아브델라 에다우디",
+            "description": "MERN-Stack을 전문으로 하는 디지털 개발자 아브델라 에다우디의 공식 포트폴리오에 오신 것을 환영합니다. Next.js(React.js), Tailwind CSS 및 Node.js를 사용하여 반응형 웹 사이트 및 애플리케이션을 구축하는 저의 프로젝트, 기술 및 경험을 살펴보십시오."
+        },
+        "twitter": {
+            "title": "아브델라 에다우디 - MERN 스택 개발자 | 포트폴리오",
+            "description": "MERN-Stack을 전문으로 하는 디지털 개발자 아브델라 에다우디의 공식 포트폴리오에 오신 것을 환영합니다. Next.js(React.js), Tailwind CSS 및 Node.js를 사용하여 반응형 웹 사이트 및 애플리케이션을 구축하는 저의 프로젝트, 기술 및 경험을 살펴보십시오."
+        },
+        "google": {
+            "name": "아브델라 에다우디 - MERN 스택 개발자 | 포트폴리오",
+            "description": "MERN-Stack을 전문으로 하는 디지털 개발자 아브델라 에다우디의 공식 포트폴리오에 오신 것을 환영합니다. Next.js(React.js), Tailwind CSS 및 Node.js를 사용하여 반응형 웹 사이트 및 애플리케이션을 구축하는 저의 프로젝트, 기술 및 경험을 살펴보십시오."
+        }
+    },
+    "about": {
+        "title": "아브델라 에다우디 | 소개",
+        "description": "아브델라 에다우디의 여정을 알아보세요. 확장 가능한 MERN 애플리케이션, Next.js 성능 및 혁신적인 디지털 솔루션을 전문으로 하는 최상위 풀 스택 개발자입니다.",
+        "keywords": [
+            "아브델라 에다우디 소개",
+            "풀 스택 전문가",
+            "MERN 스택 개발자",
+            "Next.js 설계자",
+            "웹 개발 브랜드"
+        ]
+    },
+    "contact": {
+        "title": "아브델라 에다우디 | 연락처",
+        "description": "놀라운 것을 만들 준비가 되셨습니까? 프리랜서 문의, 협업 또는 정규직 풀 스택 개발 역할에 대해 아브델라 에다우디에게 문의하십시오. 이야기해 봅시다.",
+        "keywords": [
+            "풀 스택 개발자 고용",
+            "웹 개발자 연락처",
+            "프리랜서 MERN 개발자",
+            "아브델라 에다우디 연락처",
+            "웹 개발 서비스"
+        ]
+    },
+    "education": {
+        "title": "아브델라 에다우디 | 교육",
+        "description": "풀 스택 전문가의 학문적 기반을 살펴보십시오. 디지털 개발 전문 디플로마, React, Node.js 및 최신 웹 아키텍처에 대한 인증된 기술.",
+        "keywords": [
+            "디지털 개발 디플로마",
+            "풀 스택 인증",
+            "웹 개발 교육",
+            "아브델라 에다우디 학위",
+            "MERN 교육"
+        ]
+    },
+    "experience": {
+        "title": "아브델라 에다우디 | 경력",
+        "description": "아브델라 에다우디의 경력을 추적하십시오. DGT Portfolio의 설립자이자 다양한 산업에 영향력 있는 웹 애플리케이션을 제공하는 숙련된 개발자입니다.",
+        "keywords": [
+            "풀 스택 경력",
+            "웹 개발자 경력",
+            "DGT Portfolio 설립자",
+            "MERN 스택 작업",
+            "전문 웹 개발자"
+        ]
+    },
+    "projects": {
+        "title": "아브델라 에다우디 | 프로젝트",
+        "description": "고성능 웹 애플리케이션의 엄선된 갤러리를 찾아보십시오. 아브델라 에다우디의 MERN 스택, SaaS 플랫폼 및 반응형 디자인에 대한 전문 지식을 보여줍니다.",
+        "keywords": [
+            "웹 개발 포트폴리오",
+            "MERN 스택 프로젝트",
+            "React 애플리케이션",
+            "Next.js 쇼케이스",
+            "아브델라 에다우디 프로젝트"
+        ]
+    },
+    "skills": {
+        "title": "아브델라 에다우디 | 기술",
+        "description": "아브델라 에다우디의 기술 무기고에 대해 자세히 알아보십시오. JavaScript, React, Node.js, MongoDB, Docker 및 현대 웹을 구축하는 도구를 마스터합니다.",
+        "keywords": [
+            "MERN 스택 기술",
+            "Next.js 전문 지식",
+            "JavaScript 숙달",
+            "DevOps 도구",
+            "웹 개발 기술"
+        ]
+    }
+}

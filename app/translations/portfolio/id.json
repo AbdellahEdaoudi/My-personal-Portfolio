@@ -1,0 +1,508 @@
+{
+    "header": {
+        "home": "Beranda",
+        "about": "Tentang Saya",
+        "skills": "Keahlian",
+        "projects": "Proyek",
+        "education": "Pendidikan",
+        "experience": "Pengalaman",
+        "contact": "Kontak",
+        "admin": "Admin"
+    },
+    "home": {
+        "greeting": "Hai, Saya Abdellah Edaoudi",
+        "role": "🔷 Full Stack Developer 🔷",
+        "description": "Saya berspesialisasi dalam mengembangkan situs web dan aplikasi responsif menggunakan tumpukan MERN, serta kerangka kerja lanjutan seperti Next.js dan NestJS untuk kinerja dan skalabilitas yang optimal, dengan fokus yang kuat pada keamanan aplikasi dan perlindungan data."
+    },
+    "about": {
+        "title": "Tentang Saya",
+        "subtitle": "Pengantar",
+        "experience": "Pengalaman",
+        "experienceDetail": "2 tahun Bekerja",
+        "completed": "Selesai",
+        "completedDetail": "+8 Proyek",
+        "support": "Dukungan",
+        "supportDetail": "Online 24/7",
+        "description": "Saya memiliki pengalaman luas dalam mengubah ide menjadi aplikasi yang inovatif, aman, dan efektif. Fokus saya memadukan peningkatan pengalaman pengguna dan pembuatan antarmuka yang menarik dengan memastikan keamanan yang kuat dan kinerja tinggi.",
+        "downloadCv": "Resume",
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+    },
+    "skills": {
+        "title": "Keahlian",
+        "subtitle": "Level teknis saya",
+        "frontendTitle": "Pengembang Frontend",
+        "backendTitle": "Pengembang Backend",
+        "toolsTitle": "Alat Pengembangan",
+        "softSkillsTitle": "Keterampilan lunak",
+        "softSkills": [
+            {
+                "name": "Pemecahan Masalah",
+                "image": "/Skills/Problem Solving.png"
+            },
+            {
+                "name": "Kerja Tim",
+                "image": "/Skills/Teamwork.jpg"
+            },
+            {
+                "name": "Komunikasi",
+                "image": "/Skills/Communication.png"
+            },
+            {
+                "name": "Adaptabilitas",
+                "image": "/Skills/Adaptability.png"
+            }
+        ]
+    },
+    "projects": {
+        "title": "Proyek",
+        "subtitle": "Pekerjaan terbaru",
+        "liveDemo": "Demo",
+        "readMore": "Baca selengkapnya",
+        "showLess": "Tampilkan lebih sedikit",
+        "items": [
+            {
+                "title": "DGT Portfolio Builder",
+                "type": "fullstack",
+                "image": "/Projects/dgtportfolio.png",
+                "websiteUrl": "https://dgtportfolio.com/id",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "Platform SaaS komprehensif yang memberdayakan pengguna untuk membangun portofolio profesional dengan mudah. Ini fitur dukungan multi-bahasa, integrasi domain kustom, pemilihan tema dinamis, pembuatan resume real-time, dan dasbor admin intuitif untuk mengelola konten, langganan, dan analitik.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "PayPal",
+                        "logo": "/Skills/paypal.png"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "E-Commerce Back-End",
+                "type": "backend",
+                "image": "/Projects/Ecom-backend.png",
+                "websiteUrl": "/Requirements.docx.pdf",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubUrls": "",
+                "description": "Sistem back-end yang tangguh dan dapat diskalakan untuk platform e-commerce. Sistem menangani berbagai fungsi seperti manajemen pengguna, organisasi inventaris produk, pemrosesan pesanan, penanganan pembayaran (baik melalui uang tunai atau kartu), penambahan kupon, ulasan, manajemen kategori dan merek, manajemen pemasok, dan peraturan pajak.",
+                "technologies": [
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Typescript ",
+                        "logo": "/Skills/typescript.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Pemesanan Hotel",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "Sistem manajemen hotel memberikan solusi komprehensif untuk mengelola pemesanan kamar dan pembayaran. Ini memungkinkan pengguna untuk dengan mudah memesan kamar dan menerima tiket elektronik untuk konfirmasi. Sistem mencakup dasbor untuk mengelola pemesanan, pembayaran, dan tanggapan pelanggan melalui email.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Platform Resume",
+                "image": "/Projects/Linkerfolio.png",
+                "websiteUrl": "https://linkerfolio.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "description": "Aplikasi inovatif yang saya kembangkan, memungkinkan pengguna untuk memamerkan resume profesional dan tautan media sosial mereka di satu tempat. Aplikasi ini membantu pengguna mengelola identitas digital mereka secara efektif, menjadikannya alat yang ideal bagi pencari kerja atau siapa pun yang ingin meningkatkan kehadiran online dan pengaruh digital mereka.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "Aplikasi Belanja",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "Aplikasi yang menawarkan pengalaman berbelanja yang mulus, memudahkan pengguna untuk menelusuri produk dan menambahkan item ke keranjang mereka. Aplikasi ini memiliki desain modern dan inovatif yang meningkatkan pengalaman pengguna, dengan daya tanggap instan dan elemen interaktif yang membuat belanja lebih menyenangkan.",
+                "technologies": [
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Aplikasi Obrolan",
+                "image": "/Projects/ChatApp.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "Aplikasi obrolan yang menawarkan pengalaman komunikasi yang mulus dan ramah pengguna. Ini memungkinkan pengguna untuk dengan mudah terhubung melalui pesan instan, memfasilitasi pertukaran pesan dan ide yang lancar.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "Kompresor Gambar",
+                "image": "/Projects/image-compressor.png",
+                "websiteUrl": "https://image-compressor-aed.vercel.app",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "Alat kompresi gambar berbasis browser yang kuat dan aman. Ini memungkinkan pengguna untuk mengompres gambar JPG, PNG, dan WebP tanpa batas hingga 90% tanpa kehilangan kualitas. Fitur termasuk kompresi massal, pembuatan PDF, antarmuka seret dan lepas, dan privasi lengkap karena semua pemrosesan terjadi secara lokal di browser.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Aplikasi Manajemen Kode QR",
+                "image": "/Projects/EdQrcode.png",
+                "websiteUrl": "https://edqrcode.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubUrls": "",
+                "description": "Aplikasi manajemen Kode QR yang memungkinkan Anda membuat kode QR dengan logo kustom, membaca kode QR dari gambar, dan memindai kode QR melalui kamera untuk menampilkan data secara instan. Menampilkan desain yang menarik dan responsif.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "experience": {
+        "title": "Pengalaman",
+        "subtitle": "Pengalaman profesional saya",
+        "items": [
+            {
+                "title": "Pendiri & Pengembang DGT Portfolio",
+                "company": "Dgt Portfolio",
+                "location": "El-Aaiun , Maroko",
+                "startDate": "Okt 2024",
+                "endDate": "Sekarang",
+                "duration": "+ 2 bln",
+                "type": "Pendiri & Pengembang",
+                "workType": "Hibrida",
+                "achievementsLabel": "Prestasi :",
+                "responsibilities": [
+                    "Cara profesional untuk membuat portofolio digital Anda tanpa keahlian coding atau desain apa pun.",
+                    "Subdomain khusus: namasaya.dgtportfolio.com",
+                    "Domain khusus: namasaya.com",
+                    "Visibilitas SEO yang ditingkatkan untuk portofolio Anda",
+                    "Kode QR siap untuk berbagi dengan mudah",
+                    "Beberapa tema yang sesuai dengan gaya Anda",
+                    "Tampilkan portofolio Anda dalam bahasa apa pun yang Anda pilih",
+                    "Pengalaman cepat, lancar, dan ramah pengguna"
+                ]
+            },
+            {
+                "title": "Pengembang Full Stack MERN",
+                "company": "Akademi Regional Pendidikan dan Pelatihan",
+                "location": "El-Aaiun , Maroko",
+                "startDate": "Mar 2024",
+                "endDate": "Apr 2024",
+                "duration": "2 bln",
+                "type": "Magang",
+                "workType": "Hibrida",
+                "achievementsLabel": "Prestasi :",
+                "responsibilities": [
+                    "Merancang dan mengembangkan aplikasi manajemen tugas yang memungkinkan pengguna menambah, mengedit, dan menghapus tugas.",
+                    "Menerapkan otentikasi dan otorisasi menggunakan JWT untuk memastikan keamanan aplikasi.",
+                    "Menguji titik akhir API menggunakan Postman untuk memastikan fungsionalitas yang tepat.",
+                    "Meningkatkan pengalaman pengguna dengan merancang antarmuka yang sederhana dan ramah pengguna.",
+                    "Men-deploy aplikasi di Vercel dan mengelola basis kode menggunakan Git/GitHub."
+                ]
+            },
+            {
+                "title": "Pengembang Web Full Stack",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiun , Maroko",
+                "startDate": "Sep 2023",
+                "endDate": "Jun 2024",
+                "duration": "10 bln",
+                "type": "Magang",
+                "workType": "Di lokasi",
+                "achievementsLabel": "Prestasi :",
+                "description": [
+                    "Memperoleh keterampilan pengembangan web penting dengan menggabungkan teori dan aplikasi praktis di lingkungan profesional.",
+                    "Merancang antarmuka pengguna interaktif dan menarik dalam pengembangan front-end.",
+                    "Memperoleh pengalaman dalam pengembangan back-end dan manajemen basis data.",
+                    "Mengembangkan keterampilan dalam membuat dan memelihara aplikasi web dinamis.",
+                    "Menerapkan metodologi Agile untuk meningkatkan efisiensi dan memperkuat kerja tim.",
+                    "Memperoleh pengalaman menggunakan Git dan GitHub untuk manajemen kode dan proyek yang efektif.",
+                    "Menggunakan SonarQube untuk menganalisis kualitas kode dan memastikan peningkatan berkelanjutan.",
+                    "Menggunakan Docker untuk merampingkan manajemen lingkungan dan pengembangan aplikasi.",
+                    "Meningkatkan keterampilan interpersonal, termasuk komunikasi dan kerja tim, untuk kesiapan yang lebih baik di lingkungan kerja yang beragam."
+                ]
+            },
+            {
+                "title": "Magang Pengembang Digital",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiun , Maroko",
+                "startDate": "Nov 2022",
+                "endDate": "Jun 2023",
+                "duration": "8 bln",
+                "type": "Magang",
+                "workType": "Di lokasi",
+                "achievementsLabel": "Prestasi :",
+                "description": [
+                    "Budaya dan teknik canggih di bidang digital",
+                    "Memahami dimensi profesi dan jalur pembelajaran",
+                    "Memperoleh dasar-dasar algoritmik",
+                    "Keterampilan perilaku dan sosial",
+                    "Mengembangkan keterampilan dalam pemrograman berorientasi objek",
+                    "Merancang dan membangun situs web statis",
+                    "Menggunakan JavaScript untuk pengembangan aplikasi",
+                    "Bekerja dengan basis data dan mengeksekusi operasi dasar",
+                    "Membangun situs web dinamis yang berinteraksi dengan pengguna",
+                    "Mengenal prinsip-prinsip keamanan sistem informasi"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Pendidikan",
+        "subtitle": "Perjalanan pribadi saya",
+        "items": [
+            {
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
+                "degree": "Diploma Pengembangan Digital (Opsi Web Full Stack)",
+                "startDate": "2022",
+                "endDate": "2024",
+                "location": "El-Aaiun , Maroko",
+                "imageUrl": "/cmc-maroc.png"
+            },
+            {
+                "institution": "Sekolah Menengah Baba Ahmed bin Muhammad Yahdih",
+                "degree": "Gelar Sarjana, Ilmu Fisika",
+                "startDate": "2021",
+                "endDate": "2022",
+                "location": "El-Aaiun , Maroko",
+                "imageUrl": "/BabAhmedImage.jpg"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Hubungi",
+        "subtitle": "Hubungi Saya",
+        "subjectPlaceholder": "Masukkan subjek Anda",
+        "emailPlaceholder": "Masukkan email Anda",
+        "messagePlaceholder": "Tulis pesan Anda",
+        "sendButton": "Kirim Pesan",
+        "sendingButton": "Mengirim Pesan",
+        "writeMe": "Tulis saya",
+        "email": "Email",
+        "whatsapp": "WhatsApp",
+        "validationError": "Harap isi semua kolom dan berikan email yang valid.",
+        "formError": "Harap perbaiki kesalahan pada formulir.",
+        "subjectRequired": "Subjek wajib diisi",
+        "emailRequired": "Email wajib diisi",
+        "emailInvalid": "Harap masukkan alamat email yang valid",
+        "messageRequired": "Pesan wajib diisi",
+        "successMessage": "Berhasil dikirim",
+        "errorMessage": "Terjadi kesalahan. Silakan coba lagi."
+    },
+    "footer": {
+        "links": [
+            {
+                "name": "Tentang Saya",
+                "path": "/About"
+            },
+            {
+                "name": "Keahlian",
+                "path": "/Skills"
+            },
+            {
+                "name": "Proyek",
+                "path": "/Projects"
+            }
+        ],
+        "rights": "© Abdellah Edaoudi Hak cipta dilindungi undang-undang ©"
+    }
+}

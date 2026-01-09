@@ -1,4 +1,4 @@
-// /** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   // output: 'export',
 
@@ -6,20 +6,25 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "flagcdn.com",
-        pathname: "/**",
+        hostname: "**",
       },
       {
-        protocol: 'https',
-        hostname: 'abdellah-edaoudi.vercel.app',
-        pathname: '/**',
+        protocol: "http",
+        hostname: "**",
       },
     ],
   },
 
-  env: {
-    metadataBase: 'https://abdellah-edaoudi.vercel.app',
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: `${process.env.NEXT_PUBLIC_SERVER_URL}/:path*`,
+      },
+    ];
   },
 };
 
 module.exports = nextConfig;
+
+

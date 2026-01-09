@@ -6,23 +6,23 @@ import Education from "./Components/Education";
 import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import { getDictionary } from "./translations/get-dictionary";
+import { getTranslation } from "./translations/portfolio/load-translations";
 import Header from "./Components/Header";
 
 export default async function Page() {
-  const dictionary = await getDictionary('en');
+  const dictionary = await getTranslation('en');
 
   return (
     <div>
       <Header content={dictionary.header} />
-      <Home content={dictionary.home} />
-      <About content={dictionary.about} />
-      <Skills content={dictionary.skills} />
-      <Projects content={dictionary.projects} />
-      <Experience content={dictionary.experience} />
-      <Education content={dictionary.education} />
+      <Home lang="en" />
+      <About lang="en" />
+      <Skills lang="en" />
+      <Projects lang="en" />
+      <Experience lang="en" />
+      <Education lang="en" />
       <Contact content={dictionary.contact} />
-      <Footer content={dictionary.footer} />
+      <Footer />
     </div>
   );
 }

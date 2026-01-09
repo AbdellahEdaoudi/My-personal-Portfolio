@@ -1,20 +1,23 @@
 import Experience from "../../Components/Experience";
 import Footer from "../../Components/Footer";
-import { getDictionary } from "../../translations/get-dictionary";
+import { getTranslation } from "../../translations/portfolio/load-translations";
 import Header from "../../Components/Header";
 
 
-import meta from "../../translations/metadata/experiencemeta.json";
+import { getMetadata } from "../../translations/metadata/load-metadata";
 
 export async function generateMetadata({ params }) {
     const { lang } = await params;
+    const t = await getMetadata(lang);
+    const meta = t.experience;
+
     return {
-        title: meta[lang]?.title || meta['en'].title,
-        description: meta[lang]?.description || meta['en'].description,
-        keywords: meta[lang]?.keywords || meta['en'].keywords,
+        title: meta?.title,
+        description: meta?.description,
+        keywords: meta?.keywords,
         openGraph: {
-            title: meta[lang]?.title || meta['en'].title,
-            description: meta[lang]?.description || meta['en'].description,
+            title: meta?.title,
+            description: meta?.description,
             url: `https://abdellah-edaoudi.vercel.app/${lang}/Experience`,
             siteName: 'Abdellah Edaoudi Portfolio',
             locale: lang,
@@ -24,14 +27,14 @@ export async function generateMetadata({ params }) {
                     url: 'https://abdellah-edaoudi.vercel.app/profile-pic.png',
                     width: 1200,
                     height: 630,
-                    alt: meta[lang]?.title || meta['en'].title,
+                    alt: meta?.title,
                 },
             ],
         },
         twitter: {
             card: 'summary_large_image',
-            title: meta[lang]?.title || meta['en'].title,
-            description: meta[lang]?.description || meta['en'].description,
+            title: meta?.title,
+            description: meta?.description,
             creator: '@Edaoudi_abde',
             images: ['https://abdellah-edaoudi.vercel.app/profile-pic.png'],
         },
@@ -45,6 +48,15 @@ export async function generateMetadata({ params }) {
                 'nl': '/nl/Experience',
                 'es': '/es/Experience',
                 'pt': '/pt/Experience',
+                'ar': '/ar/Experience',
+                'ru': '/ru/Experience',
+                'ja': '/ja/Experience',
+                'it': '/it/Experience',
+                'hi': '/hi/Experience',
+                'tr': '/tr/Experience',
+                'ko': '/ko/Experience',
+                'id': '/id/Experience',
+                'pl': '/pl/Experience',
             },
         },
     }
@@ -52,12 +64,12 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
     const { lang } = await params;
-    const dictionary = await getDictionary(lang);
+    const dictionary = await getTranslation(lang);
     return (
         <div>
             <Header content={dictionary.header} />
-            <Experience content={dictionary.experience} />
-            <Footer content={dictionary.footer} />
+            <Experience lang={lang} />
+            <Footer lang={lang} />
         </div>
     );
 }

@@ -1,155 +1,172 @@
 "use client";
 import React, { useState } from "react";
-const MailMinus = ({ className, ...props }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
-    <path d="M22 15V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8" />
-    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-    <path d="M16 19h6" />
-  </svg>
-)
-
-const ArrowBigRight = ({ className, ...props }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
-    <path d="M6 9h6V5l7 7-7 7v-4H6V9z" />
-  </svg>
-)
-
-const Send = ({ className, ...props }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
-    <path d="m22 2-7 20-4-9-9-4Z" />
-    <path d="M22 2 11 13" />
-  </svg>
-)
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import { useToast } from "./Toast";
 import Image from "next/image";
+import { ArrowBigRight, MailMinus, Send } from "./Icons";
 
 function Contact({ content }) {
-  const [subject, setSubject] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
+    const toast = useToast();
+    const [subject, setSubject] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [loading, setLoading] = useState(false);
+    const [errors, setErrors] = useState({});
 
-  if (!content) return null;
+    if (!content) return null;
 
-  const PostContact = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    if (!subject || !email || !message) {
-      toast.error(content.validationError || "Please fill in all fields and provide a valid email.");
-      setLoading(false);
-      return;
-    }
-
-    try {
-      const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_SERVER_URL}/Contact`,
-        { subject, email, message },
-        {
-          headers: { "Content-Type": "application/json" },
+    const validate = () => {
+        let tempErrors = {};
+        if (!subject.trim()) tempErrors.subject = content.subjectRequired || "Subject is required";
+        if (!email.trim()) {
+            tempErrors.email = content.emailRequired || "Email is required";
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            tempErrors.email = content.emailInvalid || "Please enter a valid email address";
         }
-      );
-      console.log(response.data);
-      setSubject("");
-      setEmail("");
-      setMessage("");
-      toast.success(content.successMessage || "Sent successfully", { autoClose: 1000 });
-    } catch (error) {
-      console.error(error);
-      toast.error(content.errorMessage || "An error occurred. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
+        if (!message.trim()) tempErrors.message = content.messageRequired || "Message is required";
 
-  return (
-    <section
-      id="Cnt"
-      className="bg-gray-50 pb-10 flex flex-col items-center pt-4"
-    >
-      <div className="text-center pb-10">
-        <p className="text-4xl font-bold">{content.title}</p>
-        <p className="text-gray-400 text-sm">{content.subtitle}</p>
-      </div>
-      <div className="md:flex justify-center md:space-x-20 md:gap-20 md:space-y-0 space-y-5">
-        {/* Contact Information */}
-        <div className="w-64 text-center space-y-2">
-          <h4 className="text-center">{content.title}</h4>
-          <ul className="bg-white space-y-1 py-4 rounded-lg border">
-            <li className="flex justify-center">
-              <MailMinus />
-            </li>
-            <li>{content.email}</li>
-            <li className="text-[12px] text-gray-400">
-              abdellahedaoudi80@gmail.com
-            </li>
-            <li className="flex items-center text-gray-400 justify-center text-[12px]">
-              {content.writeMe} <ArrowBigRight />
-            </li>
-          </ul>
-          <ul className="bg-white space-y-1 py-4 rounded-lg border">
-            <li className="flex justify-center">
-              <Image src="/whatsapp.png" width={25} height={25} alt="whatsapp" />
-            </li>
-            <li>{content.whatsapp}</li>
-            <li className="text-[12px] text-gray-400">+212 607071966</li>
-            <li className="flex items-center text-gray-400 justify-center text-[12px]">
-              {content.writeMe} <ArrowBigRight />
-            </li>
-          </ul>
-        </div>
+        setErrors(tempErrors);
+        return Object.keys(tempErrors).length === 0;
+    };
 
-        {/* Contact Form */}
-        <div className="w-64 text-center space-y-6">
-          <h4 className="text-center">{content.subtitle}</h4>
-          <form onSubmit={PostContact} className="space-y-4">
-            <input
-              type="text"
-              placeholder={content.subjectPlaceholder}
-              maxLength={100}
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-              className="text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder={content.emailPlaceholder}
-              maxLength={100}
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2"
-            />
-            <textarea
-              placeholder={content.messagePlaceholder}
-              maxLength={5000}
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className="text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2"
-            />
-            <button
-              type="submit"
-              disabled={loading}
-              className="flex gap-2 bg-gray-800 text-white px-5 py-3 rounded-lg items-center text-[14px]"
-            >
-              {loading ? (
-                <>
-                  {content.sendingButton} <i className="fa fa-spinner fa-spin"></i>
-                </>
-              ) : (
-                <>
-                  {content.sendButton} <Send />
-                </>
-              )}
-            </button>
-          </form>
-        </div>
-      </div>
-      <ToastContainer />
-    </section>
-  );
+    const PostContact = async (e) => {
+        e.preventDefault();
+        setErrors({});
+
+        if (!validate()) {
+            toast.error(content.formError || "Please correct the errors in the form.");
+            return;
+        }
+
+        setLoading(true);
+
+        try {
+            await axios.post(
+                '/api/Contact',
+                { subject, email, message },
+                {
+                    headers: { "Content-Type": "application/json" },
+                }
+            );
+            setSubject("");
+            setEmail("");
+            setMessage("");
+            setErrors({});
+            toast.success(content.successMessage || "Sent successfully");
+        } catch (error) {
+            console.error(error);
+            toast.error(content.errorMessage || "An error occurred. Please try again.");
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    return (
+        <section
+            id="Cnt"
+            className="bg-gray-50 pb-10 flex flex-col items-center pt-4"
+        >
+            <div className="text-center pb-10">
+                <p className="text-4xl font-bold">{content.title}</p>
+                <p className="text-gray-400 text-sm">{content.subtitle}</p>
+            </div>
+            <div className="md:flex justify-center md:space-x-20 md:gap-20 md:space-y-0 space-y-5">
+                {/* Contact Information */}
+                <div className="w-64 text-center space-y-2">
+                    <h4 className="text-center">{content.title}</h4>
+                    <ul className="bg-white space-y-1 py-4 rounded-lg border">
+                        <li className="flex justify-center">
+                            <MailMinus />
+                        </li>
+                        <li>{content.email}</li>
+                        <li className="text-[12px] text-gray-400">
+                            abdellahedaoudi80@gmail.com
+                        </li>
+                        <li className="flex items-center text-gray-400 justify-center text-[12px]">
+                            {content.writeMe} <ArrowBigRight />
+                        </li>
+                    </ul>
+                    <ul className="bg-white space-y-1 py-4 rounded-lg border">
+                        <li className="flex justify-center">
+                            <Image src="/whatsapp.png" width={25} height={25} alt="whatsapp" />
+                        </li>
+                        <li>{content.whatsapp}</li>
+                        <li className="text-[12px] text-gray-400">+212 607071966</li>
+                        <li className="flex items-center text-gray-400 justify-center text-[12px]">
+                            {content.writeMe} <ArrowBigRight />
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Contact Form */}
+                <div className="w-72 space-y-6">
+                    <h4 className="text-center">{content.subtitle}</h4>
+                    <form onSubmit={PostContact} className="space-y-4">
+                        <div>
+                            <input
+                                type="text"
+                                placeholder={content.subjectPlaceholder}
+                                maxLength={100}
+                                value={subject}
+                                onChange={(e) => {
+                                    setSubject(e.target.value);
+                                    if (errors.subject) setErrors(prev => ({ ...prev, subject: null }));
+                                }}
+                                className={`text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2 ${errors.subject ? 'border-red-500 bg-red-50' : 'border-gray-200 focus:border-gray-800'}`}
+                            />
+                            {errors.subject && <p className="text-red-500 text-[10px] mt-1">{errors.subject}</p>}
+                        </div>
+
+                        <div>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder={content.emailPlaceholder}
+                                maxLength={100}
+                                value={email}
+                                onChange={(e) => {
+                                    setEmail(e.target.value);
+                                    if (errors.email) setErrors(prev => ({ ...prev, email: null }));
+                                }}
+                                className={`text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2 ${errors.email ? 'border-red-500 bg-red-50' : 'border-gray-200 focus:border-gray-800'}`}
+                            />
+                            {errors.email && <p className="text-red-500 text-[10px] mt-1">{errors.email}</p>}
+                        </div>
+
+                        <div>
+                            <textarea
+                                placeholder={content.messagePlaceholder}
+                                maxLength={5000}
+                                value={message}
+                                onChange={(e) => {
+                                    setMessage(e.target.value);
+                                    if (errors.message) setErrors(prev => ({ ...prev, message: null }));
+                                }}
+                                className={`text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2 ${errors.message ? 'border-red-500 bg-red-50' : 'border-gray-200 focus:border-gray-800'}`}
+                            />
+                            {errors.message && <p className="text-red-500 text-[10px] mt-1">{errors.message}</p>}
+                        </div>
+
+                        <button
+                            type="submit"
+                            disabled={loading}
+                            className="flex gap-2 bg-gray-800 text-white px-5 py-3 rounded-lg items-center text-[14px] disabled:opacity-50"
+                        >
+                            {loading ? (
+                                <div className="flex items-center gap-2">
+                                    {content.sendingButton} <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                                </div>
+                            ) : (
+                                <>
+                                    {content.sendButton} <Send />
+                                </>
+                            )}
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    );
 }
 
 export default Contact;

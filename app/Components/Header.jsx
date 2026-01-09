@@ -1,28 +1,47 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useParams, usePathname, useRouter } from 'next/navigation';
+import { motion, AnimatePresence } from 'framer-motion';
+import { AlignJustify, ChevronDown } from './Icons';
 
-const AlignJustify = ({ className, ...props }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} {...props}>
-        <line x1="3" x2="21" y1="6" y2="6" />
-        <line x1="3" x2="21" y1="12" y2="12" />
-        <line x1="3" x2="21" y1="18" y2="18" />
-    </svg>
-)
+import "flag-icons/css/flag-icons.min.css"; // Import flag-icons CSS
+
+
+const languages = [
+    { code: 'en', name: 'English', countryCode: 'gb' },
+    { code: 'de', name: 'Deutsch', countryCode: 'de' },
+    { code: 'fr', name: 'Français', countryCode: 'fr' },
+    { code: 'es', name: 'Español', countryCode: 'es' },
+    { code: 'pt', name: 'Português', countryCode: 'pt' },
+    { code: 'it', name: 'Italiano', countryCode: 'it' },
+    { code: 'nl', name: 'Nederlands', countryCode: 'nl' },
+    { code: 'ar', name: 'العربية', countryCode: 'sa' },
+    { code: 'ru', name: 'Русский', countryCode: 'ru' },
+    { code: 'zh', name: '中文', countryCode: 'cn' },
+    { code: 'ja', name: '日本語', countryCode: 'jp' },
+    { code: 'hi', name: 'हिन्दी', countryCode: 'in' },
+    { code: 'tr', name: 'Türkçe', countryCode: 'tr' },
+    { code: 'ko', name: '한국어', countryCode: 'kr' },
+    { code: 'id', name: 'Indonesia', countryCode: 'id' },
+    { code: 'pl', name: 'Polski', countryCode: 'pl' },
+];
 
 export default function Header({ content }) {
     const [menu, setMenu] = useState(false);
+    const [isLangOpen, setIsLangOpen] = useState(false);
+    const [isMobileLangOpen, setIsMobileLangOpen] = useState(false);
     const params = useParams();
     const router = useRouter();
     const pathname = usePathname();
     const currentLang = params.lang || 'en';
+    const langDropdownRef = useRef(null);
+    const mobileLangDropdownRef = useRef(null);
 
     // Helper to get path without current language
     const getPathWithoutLang = (path) => {
-        // Simple but robust regex for supported languages
-        return path.replace(/^\/(en|fr|de|zh|nl|es|pt|ar)/, '');
+        return path.replace(/^\/(en|fr|de|zh|nl|es|pt|ar|ru|ja|it|hi|tr|ko|id|pl)/, '');
     }
 
     const LinksHeader = [
@@ -35,24 +54,42 @@ export default function Header({ content }) {
         { name: content?.contact || "Contact", path: "/Contact" }
     ];
 
-    const handleLanguageChange = (e) => {
-        const newLang = e.target.value;
+    const handleLanguageChange = (langCode) => {
+        const newLang = langCode;
         let newPath = getPathWithoutLang(pathname);
         if (newPath === '' || newPath === '/') newPath = '';
 
-        // Always direct to /{lang}/{path}
         router.push(`/${newLang}${newPath}`);
+        setIsLangOpen(false);
+        setIsMobileLangOpen(false);
     };
 
     const getPath = (path) => {
-        // Ensure path always has language prefix
         const cleanPath = path === '/' ? '' : path;
         return `/${currentLang}${cleanPath}`;
     };
 
+    // Close dropdown when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (langDropdownRef.current && !langDropdownRef.current.contains(event.target)) {
+                setIsLangOpen(false);
+            }
+            if (mobileLangDropdownRef.current && !mobileLangDropdownRef.current.contains(event.target)) {
+                setIsMobileLangOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
+    const selectedLang = languages.find(l => l.code === currentLang) || languages[0];
+
     return (
-        <header className="sticky top-0 z-50 bg-white">
-            <div className='flex items-center py-4 justify-evenly bg-white text-gray-600 shadow-md border-b-2 rounded-sm'>
+        <header className="sticky top-0 z-50 bg-white shadow-sm">
+            <div className='flex items-center py-4 justify-evenly bg-white text-gray-600 rounded-sm relative z-50'>
                 <div className='hover:scale-105 duration-300'>
                     <Link href={`/`}>
                         <Image src={"/image.png"} alt='Logo' width={150} height={50} style={{ width: "auto", height: "auto" }} priority />
@@ -61,51 +98,97 @@ export default function Header({ content }) {
                 <div className='hidden md:flex gap-6 items-center'>
                     {LinksHeader.map((ln, i) => (
                         <Link key={i} href={getPath(ln.path)} className={`${pathname === getPath(ln.path) ? "text-green-500 scale-110" : ""} cursor-pointer hover:text-green-500 hover:scale-110 duration-200`}>
-                            <span className="flex items-center font-medium">{ln.name}</span>
+                            <span className="flex items-center font-medium text-sm lg:text-base">{ln.name}</span>
                         </Link>
                     ))}
-                    <select value={currentLang}
-                        onChange={handleLanguageChange}
-                        className='rounded-md border border-gray-300 px-2 py-1 focus:outline-none focus:border-green-500 bg-transparent'>
-                        <option value={"en"}>en</option>
-                        <option value={"de"}>de</option>
-                        <option value={"ar"}>ar</option>
-                        <option value={"fr"}>fr</option>
-                        <option value={"es"}>es</option>
-                        <option value={"pt"}>pt</option>
-                        <option value={"nl"}>nl</option>
-                        <option value={"zh"}>zh</option>
-                    </select>
+
+                    {/* Desktop Language Switcher */}
+                    <div className="relative" ref={langDropdownRef}>
+                        <button
+                            onClick={() => setIsLangOpen(!isLangOpen)}
+                            className="flex items-center gap-2 border border-gray-200 rounded-full px-3 py-1.5 hover:border-green-500 transition-colors focus:outline-none bg-gray-50 hover:bg-white"
+                        >
+                            <span className={`fi fi-${selectedLang.countryCode}`}></span>
+                            <span className="text-sm font-medium uppercase">{selectedLang.code}</span>
+                            <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isLangOpen ? 'rotate-180' : ''}`} />
+                        </button>
+
+                        <AnimatePresence>
+                            {isLangOpen && (
+                                <motion.div
+                                    initial={{ opacity: 0, y: -10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -10 }}
+                                    transition={{ duration: 0.2 }}
+                                    className="absolute top-full right-0 mt-2 w-48 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden max-h-80 overflow-y-auto"
+                                >
+                                    {languages.map((lang) => (
+                                        <button
+                                            key={lang.code}
+                                            onClick={() => handleLanguageChange(lang.code)}
+                                            className={`w-full flex items-center gap-3 px-4 py-2.5 hover:bg-green-50 transition-colors text-left ${currentLang === lang.code ? 'bg-green-50 text-green-600' : 'text-gray-700'}`}
+                                        >
+                                            <span className={`fi fi-${lang.countryCode}`}></span>
+                                            <span className="text-sm font-medium">{lang.name}</span>
+                                        </button>
+                                    ))}
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
                 </div>
                 <div className='flex flex-row-reverse gap-4 items-center'>
-                    <div onClick={() => setMenu(!menu)} className='md:hidden cursor-pointer'>
+                    <div onClick={() => setMenu(!menu)} className='md:hidden cursor-pointer p-2 hover:bg-gray-100 rounded-lg transition-colors'>
                         <AlignJustify />
                     </div>
-                    <select value={currentLang}
-                        onChange={handleLanguageChange}
-                        className='md:hidden rounded-md border border-gray-300 px-2 py-1 bg-transparent'>
-                        <option value={"en"}>en</option>
-                        <option value={"fr"}>fr</option>
-                        <option value={"de"}>de</option>
-                        <option value={"zh"}>zh</option>
-                        <option value={"nl"}>nl</option>
-                        <option value={"es"}>es</option>
-                        <option value={"pt"}>pt</option>
-                        <option value={"ar"}>ar</option>
-                    </select>
+
+                    {/* Mobile Language Switcher */}
+                    <div className="md:hidden relative" ref={mobileLangDropdownRef}>
+                        <button
+                            onClick={() => setIsMobileLangOpen(!isMobileLangOpen)}
+                            className="flex items-center gap-2 border border-gray-200 rounded-lg px-2 py-1.5 hover:border-green-500 transition-colors focus:outline-none bg-gray-50 hover:bg-white"
+                        >
+                            <span className={`fi fi-${selectedLang.countryCode}`}></span>
+                            <span className="text-sm font-medium uppercase">{selectedLang.code}</span>
+                            <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${isMobileLangOpen ? 'rotate-180' : ''}`} />
+                        </button>
+
+                        <AnimatePresence>
+                            {isMobileLangOpen && (
+                                <motion.div
+                                    initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                                    exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                                    transition={{ duration: 0.2 }}
+                                    className="absolute top-full right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-100 overflow-hidden max-h-60 overflow-y-auto z-[60]"
+                                >
+                                    {languages.map((lang) => (
+                                        <button
+                                            key={lang.code}
+                                            onClick={() => handleLanguageChange(lang.code)}
+                                            className={`w-full flex items-center gap-2 px-3 py-2 hover:bg-green-50 transition-colors text-left text-sm ${currentLang === lang.code ? 'bg-green-50 text-green-600' : 'text-gray-700'}`}
+                                        >
+                                            <span className={`fi fi-${lang.countryCode}`}></span>
+                                            <span className="font-medium">{lang.name}</span>
+                                        </button>
+                                    ))}
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
                 </div>
             </div>
             {/* Mobile Menu */}
             <div className={`md:hidden absolute w-full bg-white shadow-lg grid transition-[grid-template-rows] duration-300 ease-in-out border-gray-100 ${menu ? 'grid-rows-[1fr] border-t' : 'grid-rows-[0fr]'}`}>
                 <div className="overflow-hidden">
-                    <ul className="flex flex-col items-center py-2 space-y-1">
+                    <ul className="flex flex-col items-center py-4 space-y-2">
                         {LinksHeader.map((ln, i) => (
-                            <li key={i} onClick={() => setMenu(false)} className="w-full flex justify-center">
+                            <li key={i} onClick={() => setMenu(false)} className="w-full px-4">
                                 <Link
                                     href={getPath(ln.path)}
-                                    className={`flex items-center justify-center gap-2 py-1.5 px-4 rounded-lg transition-all duration-300 ${pathname === getPath(ln.path) ? "bg-green-50 text-green-600 font-bold" : "text-gray-600 hover:bg-gray-50 hover:text-green-500"}`}
+                                    className={`flex items-center justify-center gap-2 py-3 px-4 rounded-xl transition-all duration-300 ${pathname === getPath(ln.path) ? "bg-green-50 text-green-600 font-bold shadow-sm" : "text-gray-600 hover:bg-gray-50 hover:text-green-500"}`}
                                 >
-                                    <span className="font-medium text-sm">{ln.name}</span>
+                                    <span className="font-medium">{ln.name}</span>
                                 </Link>
                             </li>
                         ))}
