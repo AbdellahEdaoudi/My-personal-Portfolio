@@ -1,0 +1,85 @@
+{
+    "home": {
+        "title": "Abdellah Edaoudi",
+        "description": "portofolio Abdellah Edaoudi, Pengembang Digital yang berspesialisasi dalam MERN-Stack. Jelajahi proyek, keterampilan, dan pengalaman saya dalam membangun situs web dan aplikasi responsif menggunakan Next.js (React.js), Tailwind CSS, dan Node.js.",
+        "keywords": "Abdellah Edaoudi, Pengembang MERN Stack, Portofolio, Pengembangan Web, React, React.js, Node.js, MongoDB, Express.js, JavaScript, Pengembang Frontend, Pengembang Backend, Insinyur Perangkat Lunak, Aplikasi Web, Tailwind CSS, Next.js, Pengembang Digital, Desain Responsif, Pengembangan Full-Stack, Integrasi API, Desain UI/UX, Optimasi SEO",
+        "openGraph": {
+            "title": "Abdellah Edaoudi",
+            "description": "Selamat datang di portofolio resmi Abdellah Edaoudi, Pengembang Digital yang berspesialisasi dalam MERN-Stack. Jelajahi proyek, keterampilan, dan pengalaman saya dalam membangun situs web dan aplikasi responsif menggunakan Next.js (React.js), Tailwind CSS, dan Node.js."
+        },
+        "twitter": {
+            "title": "Abdellah Edaoudi - Pengembang MERN Stack | Portofolio",
+            "description": "Selamat datang di portofolio resmi Abdellah Edaoudi, Pengembang Digital yang berspesialisasi dalam MERN-Stack. Jelajahi proyek, keterampilan, dan pengalaman saya dalam membangun situs web dan aplikasi responsif menggunakan Next.js (React.js), Tailwind CSS, dan Node.js."
+        },
+        "google": {
+            "name": "Abdellah Edaoudi - Pengembang MERN Stack | Portofolio",
+            "description": "Selamat datang di portofolio resmi Abdellah Edaoudi, Pengembang Digital yang berspesialisasi dalam MERN-Stack. Jelajahi proyek, keterampilan, dan pengalaman saya dalam membangun situs web dan aplikasi responsif menggunakan Next.js (React.js), Tailwind CSS, dan Node.js."
+        }
+    },
+    "about": {
+        "title": "Abdellah Edaoudi | Tentang",
+        "description": "Temukan perjalanan Abdellah Edaoudi. Pengembang Full Stack tingkat atas yang berspesialisasi dalam aplikasi MERN yang dapat diskalakan, kinerja Next.js, dan solusi digital inovatif.",
+        "keywords": [
+            "Tentang Abdellah Edaoudi",
+            "Ahli Full Stack",
+            "Pengembang MERN Stack",
+            "Arsitek Next.js",
+            "Merek Pengembangan Web"
+        ]
+    },
+    "contact": {
+        "title": "Abdellah Edaoudi | Kontak",
+        "description": "Siap membangun sesuatu yang luar biasa? Hubungi Abdellah Edaoudi untuk pertanyaan freelance, kolaborasi, atau peran pengembangan Full Stack penuh waktu. Mari bicara.",
+        "keywords": [
+            "Sewa Pengembang Full Stack",
+            "Kontak Pengembang Web",
+            "Pengembang MERN Freelance",
+            "Kontak Abdellah Edaoudi",
+            "Layanan Pengembangan Web"
+        ]
+    },
+    "education": {
+        "title": "Abdellah Edaoudi | Pendidikan",
+        "description": "Jelajahi landasan akademis seorang ahli Full Stack. Diploma Khusus dalam Pengembangan Digital, keterampilan bersertifikat dalam React, Node.js, dan arsitektur web modern.",
+        "keywords": [
+            "Diploma Pengembangan Digital",
+            "Sertifikasi Full Stack",
+            "Pendidikan Pengembangan Web",
+            "Gelar Abdellah Edaoudi",
+            "Pelatihan MERN"
+        ]
+    },
+    "experience": {
+        "title": "Abdellah Edaoudi | Pengalaman",
+        "description": "Lacak karier Abdellah Edaoudi. Pendiri DGT Portfolio, dan pengembang berpengalaman yang memberikan aplikasi web berdampak tinggi untuk berbagai industri.",
+        "keywords": [
+            "Pengalaman Full Stack",
+            "Karier Pengembang Web",
+            "Pendiri DGT Portfolio",
+            "Pekerjaan MERN Stack",
+            "Pengembang Web Profesional"
+        ]
+    },
+    "projects": {
+        "title": "Abdellah Edaoudi | Proyek",
+        "description": "Jelajahi galeri aplikasi web berkinerja tinggi yang dikurasi. Menampilkan keahlian dalam tumpukan MERN, platform SaaS, dan desain responsif oleh Abdellah Edaoudi.",
+        "keywords": [
+            "Portofolio Pengembangan Web",
+            "Proyek MERN Stack",
+            "Aplikasi React",
+            "Pameran Next.js",
+            "Proyek Abdellah Edaoudi"
+        ]
+    },
+    "skills": {
+        "title": "Abdellah Edaoudi | Keahlian",
+        "description": "Selami lebih dalam gudang senjata teknis Abdellah Edaoudi. Menguasai JavaScript, React, Node.js, MongoDB, Docker, dan alat-alat yang membangun web modern.",
+        "keywords": [
+            "Keahlian MERN Stack",
+            "Keahlian Next.js",
+            "Penguasaan JavaScript",
+            "Alat DevOps",
+            "Teknologi Pengembangan Web"
+        ]
+    }
+}

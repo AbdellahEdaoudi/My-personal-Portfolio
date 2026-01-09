@@ -1,0 +1,508 @@
+{
+    "header": {
+        "home": "홈",
+        "about": "소개",
+        "skills": "기술",
+        "projects": "프로젝트",
+        "education": "교육",
+        "experience": "경력",
+        "contact": "연락처",
+        "admin": "관리자"
+    },
+    "home": {
+        "greeting": "안녕하세요, 저는 아브델라 에다우디입니다",
+        "role": "🔷 풀 스택 개발자 🔷",
+        "description": "저는 MERN 스택을 사용하여 반응형 웹사이트 및 애플리케이션을 개발하고, 최적의 성능과 확장성을 위해 Next.js 및 NestJS와 같은 고급 프레임워크를 사용하는 것을 전문으로 하며, 애플리케이션 보안 및 데이터 보호에 중점을 둡니다."
+    },
+    "about": {
+        "title": "소개",
+        "subtitle": "소개",
+        "experience": "경력",
+        "experienceDetail": "2년 경력",
+        "completed": "완료",
+        "completedDetail": "+8 프로젝트",
+        "support": "지원",
+        "supportDetail": "연중무휴 온라인",
+        "description": "저는 아이디어를 혁신적이고 안전하며 효과적인 애플리케이션으로 변환하는 데 광범위한 경험을 가지고 있습니다. 저의 초점은 사용자 경험을 향상시키고 매력적인 인터페이스를 만드는 것과 강력한 보안 및 고성능을 보장하는 것을 융합하는 것입니다.",
+        "downloadCv": "이력서",
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+    },
+    "skills": {
+        "title": "기술",
+        "subtitle": "나의 기술 수준",
+        "frontendTitle": "프론트엔드 개발자",
+        "backendTitle": "백엔드 개발자",
+        "toolsTitle": "개발 도구",
+        "softSkillsTitle": "소프트 스킬",
+        "softSkills": [
+            {
+                "name": "문제 해결",
+                "image": "/Skills/Problem Solving.png"
+            },
+            {
+                "name": "팀워크",
+                "image": "/Skills/Teamwork.jpg"
+            },
+            {
+                "name": "의사소통",
+                "image": "/Skills/Communication.png"
+            },
+            {
+                "name": "적응력",
+                "image": "/Skills/Adaptability.png"
+            }
+        ]
+    },
+    "projects": {
+        "title": "프로젝트",
+        "subtitle": "최신 작업",
+        "liveDemo": "데모",
+        "readMore": "더 읽기",
+        "showLess": "줄이기",
+        "items": [
+            {
+                "title": "DGT 포트폴리오 빌더",
+                "type": "fullstack",
+                "image": "/Projects/dgtportfolio.png",
+                "websiteUrl": "https://dgtportfolio.com/ko",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "사용자가 전문가 수준의 포트폴리오를 쉽게  구축할 수 있도록 지원하는 포괄적인 SaaS 플랫폼입니다. 다국어 지원, 사용자 지정 도메인 통합, 동적 테마 선택, 실시간 이력서 생성, 콘텐츠, 구독 및 분석을 관리하기 위한 직관적인 관리자 대시보드를 제공합니다.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "PayPal",
+                        "logo": "/Skills/paypal.png"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "전자 상거래 백엔드",
+                "type": "backend",
+                "image": "/Projects/Ecom-backend.png",
+                "websiteUrl": "/Requirements.docx.pdf",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubUrls": "",
+                "description": "전자 상거래 플랫폼을 위한 강력하고 확장 가능한 백엔드 시스템입니다. 이 시스템은 사용자 관리, 제품 재고 정리, 주문 처리, 결제 처리(현금 또는 카드), 쿠폰 추가, 리뷰, 카테고리 및 브랜드 관리, 공급업체 관리, 세금 규제 등 다양한 기능을 처리합니다.",
+                "technologies": [
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Typescript ",
+                        "logo": "/Skills/typescript.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "호텔 예약",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "호텔 관리 시스템은 객실 예약 및 결제 관리를 위한 포괄적인 솔루션을 제공합니다. 사용자는 쉽게 객실을 예약하고 확인을 위한 전자 티켓을 받을 수 있습니다. 이 시스템에는 예약, 결제 및 이메일을 통한 고객 응답 관리를 위한 대시보드가 포함되어 있습니다.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "이력서 플랫폼",
+                "image": "/Projects/Linkerfolio.png",
+                "websiteUrl": "https://linkerfolio.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "description": "제가 개발한 혁신적인 애플리케이션으로, 사용자가 자신의 전문 이력서와 소셜 미디어 링크를 한 곳에서 보여줄 수 있습니다. 이 앱은 사용자가 디지털 신원을 효과적으로 관리하도록 도와주며, 구직자나 온라인 입지 및 디지털 영향력을 강화하려는 모든 사람에게 이상적인 도구입니다.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "쇼핑 앱",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "원활한 쇼핑 경험을 제공하여 사용자가 쉽게 제품을 탐색하고 장바구니에 항목을 추가할 수 있는 앱입니다. 이 앱은 즉각적인 반응성과 쇼핑을 더욱 즐겁게 만드는 대화형 요소로 사용자 경험을 향상시키는 현대적이고 혁신적인 디자인을 갖추고 있습니다.",
+                "technologies": [
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "채팅 앱",
+                "image": "/Projects/ChatApp.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "원활하고 사용자 친화적인 커뮤니케이션 경험을 제공하는 채팅 애플리케이션입니다. 사용자가 인스턴트 메시징을 통해 쉽게 연결할 수 있어 메시지와 아이디어를 원활하게 교환할 수 있습니다.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "이미지 압축기",
+                "image": "/Projects/image-compressor.png",
+                "websiteUrl": "https://image-compressor-aed.vercel.app",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "강력하고 안전한 브라우저 기반 이미지 압축 도구입니다. 사용자가 품질 저하 없이 무제한 JPG, PNG 및 WebP 이미지를 최대 90%까지 압축할 수 있습니다. 기능에는 대량 압축, PDF 생성, 드래그 앤 드롭 인터페이스, 모든 처리가 브라우저에서 로컬로 수행되므로 완벽한 개인 정보 보호가 포함됩니다.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "QR 코드 관리 앱",
+                "image": "/Projects/EdQrcode.png",
+                "websiteUrl": "https://edqrcode.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubUrls": "",
+                "description": "사용자 지정 로고가 있는 QR 코드를 만들고, 이미지에서 QR 코드를 읽고, 카메라를 통해 QR 코드를 스캔하여 데이터를 즉시 표시할 수 있는 QR 코드 관리 앱입니다. 매력적이고 반응이 빠른 디자인이 특징입니다.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "experience": {
+        "title": "경력",
+        "subtitle": "나의 전문 경력",
+        "items": [
+            {
+                "title": "DGT 포트폴리오 창립자 및 개발자",
+                "company": "Dgt Portfolio",
+                "location": "El-Aaiun , 모로코",
+                "startDate": "2024년 10월",
+                "endDate": "현재",
+                "duration": "+ 2개월",
+                "type": "창립자 및 개발자",
+                "workType": "하이브리드",
+                "achievementsLabel": "성과 :",
+                "responsibilities": [
+                    "코딩이나 디자인 기술 없이 디지털 포트폴리오를 만드는 전문적인 방법입니다.",
+                    "맞춤형 하위 도메인: yourname.dgtportfolio.com",
+                    "맞춤형 도메인: yourname.com",
+                    "포트폴리오의 SEO 가시성 향상",
+                    "쉬운 공유를 위한 QR 코드 준비",
+                    "스타일에 맞는 다양한 테마",
+                    "선택한 언어로 포트폴리오 표시",
+                    "빠르고 원활하며 사용자 친화적인 경험"
+                ]
+            },
+            {
+                "title": "풀 스택 MERN 개발자",
+                "company": "지역 교육 훈련 아카데미",
+                "location": "El-Aaiun , 모로코",
+                "startDate": "2024년 3월",
+                "endDate": "2024년 4월",
+                "duration": "2개월",
+                "type": "인턴십",
+                "workType": "하이브리드",
+                "achievementsLabel": "성과 :",
+                "responsibilities": [
+                    "사용자가 작업을 추가, 편집 및 삭제할 수 있는 작업 관리 애플리케이션을 설계하고 개발했습니다.",
+                    "애플리케이션 보안을 보장하기 위해 JWT를 사용하여 인증 및 권한 부여를 구현했습니다.",
+                    "Postman을 사용하여 API 끝점을 테스트하여 적절한 기능을 보장했습니다.",
+                    "간단하고 사용자 친화적인 인터페이스를 설계하여 사용자 경험을 개선했습니다.",
+                    "Vercel에 애플리케이션을 배포하고 Git/GitHub를 사용하여 코드베이스를 관리했습니다."
+                ]
+            },
+            {
+                "title": "풀 스택 웹 개발자",
+                "company": "직업 및 역량 도시",
+                "location": "El-Aaiun , 모로코",
+                "startDate": "2023년 9월",
+                "endDate": "2024년 6월",
+                "duration": "10개월",
+                "type": "인턴",
+                "workType": "현장 근무",
+                "achievementsLabel": "성과 :",
+                "description": [
+                    "전문적인 환경에서 이론과 실제 적용을 결합하여 필수적인 웹 개발 기술을 습득했습니다.",
+                    "프론트엔드 개발에서 대화형이며 매력적인 사용자 인터페이스를 설계했습니다.",
+                    "백엔드 개발 및 데이터베이스 관리 경험을 쌓았습니다.",
+                    "동적 웹 애플리케이션을 만들고 유지 관리하는 기술을 개발했습니다.",
+                    "효율성을 높이고 팀워크를 강화하기 위해 애자일 방법론을 적용했습니다.",
+                    "효과적인 코드 및 프로젝트 관리를 위해 Git 및 GitHub를 사용하는 경험을 쌓았습니다.",
+                    "SonarQube를 사용하여 코드 품질을 분석하고 지속적인 개선을 보장했습니다.",
+                    "Docker를 사용하여 환경 관리 및 애플리케이션 개발을 간소화했습니다.",
+                    "다양한 작업 환경에 더 잘 대비하기 위해 의사 소통 및 팀워크를 포함한 대인 관계 기술을 향상시켰습니다."
+                ]
+            },
+            {
+                "title": "디지털 개발자 인턴",
+                "company": "직업 및 역량 도시",
+                "location": "El-Aaiun , 모로코",
+                "startDate": "2022년 11월",
+                "endDate": "2023년 6월",
+                "duration": "8개월",
+                "type": "인턴",
+                "workType": "현장 근무",
+                "achievementsLabel": "성과 :",
+                "description": [
+                    "디지털 분야의 문화 및 고급 기술",
+                    "직업의 차원과 학습 경로 이해",
+                    "알고리즘의 기초 습득",
+                    "행동 및 사회적 기술",
+                    "객체 지향 프로그래밍 기술 개발",
+                    "정적 웹사이트 설계 및 구축",
+                    "애플리케이션 개발을 위한 JavaScript 사용",
+                    "데이터베이스 작업 및 기본 작업 실행",
+                    "사용자와 상호 작용하는 동적 웹사이트 구축",
+                    "정보 시스템 보안 원칙에 대한 숙지"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "교육",
+        "subtitle": "나의 개인적인 여정",
+        "items": [
+            {
+                "institution": "<a href='https://cmc.ac.ma/fr'>직업 및 역량 도시</a>",
+                "degree": "디지털 개발 디플로마 (풀 스택 웹 옵션)",
+                "startDate": "2022",
+                "endDate": "2024",
+                "location": "El-Aaiun , 모로코",
+                "imageUrl": "/cmc-maroc.png"
+            },
+            {
+                "institution": "바바 아흐메드 빈 무함마드 야흐디 고등학교",
+                "degree": "학사 학위, 물리 과학",
+                "startDate": "2021",
+                "endDate": "2022",
+                "location": "El-Aaiun , 모로코",
+                "imageUrl": "/BabAhmedImage.jpg"
+            }
+        ]
+    },
+    "contact": {
+        "title": "연락하기",
+        "subtitle": "저에게 연락하세요",
+        "subjectPlaceholder": "주제 입력",
+        "emailPlaceholder": "이메일 입력",
+        "messagePlaceholder": "메시지 작성",
+        "sendButton": "메시지 보내기",
+        "sendingButton": "메시지 보내는 중",
+        "writeMe": "저에게 쓰기",
+        "email": "이메일",
+        "whatsapp": "WhatsApp",
+        "validationError": "모든 필드를 채우고 유효한 이메일을 제공하십시오.",
+        "formError": "양식의 오류를 수정하십시오.",
+        "subjectRequired": "제목은 필수입니다",
+        "emailRequired": "이메일은 필수입니다",
+        "emailInvalid": "유효한 이메일 주소를 입력하십시오",
+        "messageRequired": "메시지는 필수입니다",
+        "successMessage": "성공적으로 전송됨",
+        "errorMessage": "오류가 발생했습니다. 다시 시도하십시오."
+    },
+    "footer": {
+        "links": [
+            {
+                "name": "소개",
+                "path": "/About"
+            },
+            {
+                "name": "기술",
+                "path": "/Skills"
+            },
+            {
+                "name": "프로젝트",
+                "path": "/Projects"
+            }
+        ],
+        "rights": "© Abdellah Edaoudi 모든 권리 보유 ©"
+    }
+}

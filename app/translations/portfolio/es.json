@@ -1,0 +1,508 @@
+{
+    "header": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "education": "Educación",
+        "experience": "Experiencia",
+        "contact": "Contacto",
+        "admin": "Admin"
+    },
+    "home": {
+        "greeting": "Hola, soy Abdellah Edaoudi",
+        "role": "🔷 Desarrollador Full Stack 🔷",
+        "description": "Me especializo en el desarrollo de sitios web y aplicaciones receptivas utilizando el stack MERN, así como marcos avanzados como Next.js y NestJS para un rendimiento y escalabilidad óptimos, con un fuerte enfoque en la seguridad de las aplicaciones y la protección de datos."
+    },
+    "about": {
+        "title": "Sobre mí",
+        "subtitle": "Introducción",
+        "experience": "Experiencia",
+        "experienceDetail": "2 años de trabajo",
+        "completed": "Completado",
+        "completedDetail": "+8 Proyectos",
+        "support": "Soporte",
+        "supportDetail": "En línea 24/7",
+        "description": "Tengo una amplia experiencia en transformar ideas en aplicaciones innovadoras, seguras y efectivas. Mi enfoque combina mejorar la experiencia del usuario y crear interfaces atractivas con garantizar una seguridad robusta y un alto rendimiento.",
+        "downloadCv": "Currículum",
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+    },
+    "skills": {
+        "title": "Habilidades",
+        "subtitle": "Mi nivel técnico",
+        "frontendTitle": "Desarrollador Frontend",
+        "backendTitle": "Desarrollador Backend",
+        "toolsTitle": "Herramientas de Desarrollo",
+        "softSkillsTitle": "Habilidades Blandas",
+        "softSkills": [
+            {
+                "name": "Resolución de problemas",
+                "image": "/Skills/Problem Solving.png"
+            },
+            {
+                "name": "Trabajo en equipo",
+                "image": "/Skills/Teamwork.jpg"
+            },
+            {
+                "name": "Comunicación",
+                "image": "/Skills/Communication.png"
+            },
+            {
+                "name": "Adaptabilidad",
+                "image": "/Skills/Adaptability.png"
+            }
+        ]
+    },
+    "projects": {
+        "title": "Proyectos",
+        "subtitle": "Trabajos más recientes",
+        "liveDemo": "Demo",
+        "readMore": "Leer más",
+        "showLess": "Mostrar menos",
+        "items": [
+            {
+                "title": "Constructor de Portafolios DGT",
+                "type": "fullstack",
+                "image": "/Projects/dgtportfolio.png",
+                "websiteUrl": "https://dgtportfolio.com/es",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "Una plataforma SaaS completa que permite a los usuarios crear portafolios profesionales sin esfuerzo. Ofrece soporte multilingüe, integración de dominio personalizado, selección de temas dinámicos, generación de currículums en tiempo real y un panel de administración intuitivo para gestionar contenido, suscripciones y análisis.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "PayPal",
+                        "logo": "/Skills/paypal.png"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Backend de Comercio Electrónico",
+                "type": "backend",
+                "image": "/Projects/Ecom-backend.png",
+                "websiteUrl": "/Requirements.docx.pdf",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubUrls": "",
+                "description": "Un sistema backend robusto y escalable para una plataforma de comercio electrónico. El sistema maneja varias funciones como gestión de usuarios, organización de inventario de productos, procesamiento de pedidos, manejo de pagos (ya sea en efectivo o con tarjeta), adición de cupones, reseñas, gestión de categorías y marcas, gestión de proveedores y regulación fiscal.",
+                "technologies": [
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Typescript ",
+                        "logo": "/Skills/typescript.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Reserva de Hotel",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "El sistema de gestión hotelera proporciona una solución integral para gestionar reservas de habitaciones y pagos. Permite a los usuarios reservar habitaciones fácilmente y recibir un boleto electrónico de confirmación. El sistema incluye un panel para gestionar reservas, pagos y respuestas a clientes por correo electrónico.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Plataforma de Currículum",
+                "image": "/Projects/Linkerfolio.png",
+                "websiteUrl": "https://linkerfolio.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "description": "Aplicación innovadora que desarrollé, permitiendo a los usuarios mostrar su currículum profesional y enlaces a redes sociales en un solo lugar. Esta aplicación ayuda a los usuarios a gestionar su identidad digital de manera efectiva, convirtiéndola en una herramienta ideal para buscadores de empleo o cualquier persona que busque mejorar su presencia en línea e influencia digital.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "App de Compras",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "Una aplicación que ofrece una experiencia de compra fluida, facilitando a los usuarios navegar por productos y agregar artículos a su carrito. La aplicación cuenta con un diseño moderno e innovador que mejora la experiencia del usuario, con capacidad de respuesta instantánea y elementos interactivos que hacen que comprar sea más agradable.",
+                "technologies": [
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "App de Chat",
+                "image": "/Projects/ChatApp.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "Una aplicación de chat que ofrece una experiencia de comunicación fluida y amigable. Permite a los usuarios conectarse fácilmente a través de mensajería instantánea, facilitando el intercambio fluido de mensajes e ideas.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "NextAuth",
+                        "logo": "/Skills/nextauth.jpg"
+                    },
+                    {
+                        "name": "Shadcn/ui ",
+                        "logo": "/Skills/shadcn.png"
+                    }
+                ]
+            },
+            {
+                "title": "Compresor de Imágenes",
+                "image": "/Projects/image-compressor.png",
+                "websiteUrl": "https://image-compressor-aed.vercel.app",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "Una herramienta de compresión de imágenes potente y segura basada en el navegador. Permite a los usuarios comprimir imágenes JPG, PNG y WebP ilimitadas hasta en un 90% sin perder calidad. Las características incluyen compresión masiva, generación de PDF, interfaz de arrastrar y soltar y privacidad completa ya que todo el procesamiento ocurre localmente en el navegador.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "App de Gestión de Códigos QR",
+                "image": "/Projects/EdQrcode.png",
+                "websiteUrl": "https://edqrcode.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubUrls": "",
+                "description": "Una aplicación de gestión de códigos QR que te permite crear códigos QR con logotipos personalizados, leer códigos QR de imágenes y escanear códigos QR a través de la cámara para mostrar datos al instante. Presenta un diseño atractivo y receptivo.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "experience": {
+        "title": "Experiencia",
+        "subtitle": "Mi Experiencia Profesional",
+        "items": [
+            {
+                "title": "Fundador y Desarrollador de DGT Portfolio",
+                "company": "Dgt Portfolio",
+                "location": "El-Aaiún, Marruecos",
+                "startDate": "Oct 2024",
+                "endDate": "Presente",
+                "duration": "+ 2 meses",
+                "type": "Fundador y Desarrollador",
+                "workType": "Híbrido",
+                "achievementsLabel": "Logros:",
+                "responsibilities": [
+                    "Forma profesional de crear tu portafolio digital sin conocimientos de programación o diseño.",
+                    "Subdominio personalizado: tunombre.dgtportfolio.com",
+                    "Dominio personalizado: tunombre.com",
+                    "Mejor visibilidad SEO para tu portafolio",
+                    "Código QR listo para compartir fácilmente",
+                    "Múltiples temas para combinar con tu estilo",
+                    "Muestra tu portafolio en cualquier idioma que elijas",
+                    "Experiencia rápida, fluida y fácil de usar"
+                ]
+            },
+            {
+                "title": "Desarrollador Full Stack MERN",
+                "company": "Academia Regional de Educación y Formación",
+                "location": "El-Aaiún, Marruecos",
+                "startDate": "Mar 2024",
+                "endDate": "Abr 2024",
+                "duration": "2 meses",
+                "type": "Pasantía",
+                "workType": "Híbrido",
+                "achievementsLabel": "Logros:",
+                "responsibilities": [
+                    "Diseñé y desarrollé una aplicación de gestión de tareas que permite a los usuarios agregar, editar y eliminar tareas.",
+                    "Implementé autenticación y autorización usando JWT para garantizar la seguridad de la aplicación.",
+                    "Probé los endpoints de la API usando Postman para asegurar su correcto funcionamiento.",
+                    "Mejoré la experiencia del usuario diseñando una interfaz simple y amigable.",
+                    "Desplegué la aplicación en Vercel y gestioné el código base usando Git/GitHub."
+                ]
+            },
+            {
+                "title": "Desarrollador Web Full Stack",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiún, Marruecos",
+                "startDate": "Sep 2023",
+                "endDate": "Jun 2024",
+                "duration": "10 meses",
+                "type": "Pasantía",
+                "workType": "Presencial",
+                "achievementsLabel": "Logros:",
+                "description": [
+                    "Adquirí habilidades esenciales de desarrollo web combinando teoría con aplicación práctica en un entorno profesional.",
+                    "Diseñé interfaces de usuario interactivas y atractivas en desarrollo frontend.",
+                    "Adquirí experiencia en desarrollo backend y gestión de bases de datos.",
+                    "Desarrollé habilidades en la creación y mantenimiento de aplicaciones web dinámicas.",
+                    "Apliqué la metodología Agile para mejorar la eficiencia y fortalecer el trabajo en equipo.",
+                    "Gané experiencia usando Git y GitHub para una gestión efectiva del código y proyectos.",
+                    "Usé SonarQube para analizar la calidad del código y asegurar la mejora continua.",
+                    "Usé Docker para agilizar la gestión de entornos y el desarrollo de aplicaciones.",
+                    "Mejoré habilidades interpersonales, como comunicación y trabajo en equipo, para una mejor preparación en diversos entornos laborales."
+                ]
+            },
+            {
+                "title": "Pasante de Desarrollador Digital",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "El-Aaiún, Marruecos",
+                "startDate": "Nov 2022",
+                "endDate": "Jun 2023",
+                "duration": "8 meses",
+                "type": "Pasantía",
+                "workType": "Presencial",
+                "keyResponsibilities": "Responsabilidades clave:",
+                "description": [
+                    "Cultura y técnicas avanzadas del campo digital",
+                    "Comprensión de las dimensiones de la profesión y el camino de aprendizaje",
+                    "Adquisición de los conceptos básicos de algoritmia",
+                    "Habilidades conductuales y sociales",
+                    "Desarrollo de habilidades en programación orientada a objetos",
+                    "Diseño y construcción de sitios web estáticos",
+                    "Uso de JavaScript para el desarrollo de aplicaciones",
+                    "Trabajar con bases de datos y ejecutar operaciones básicas",
+                    "Construcción de sitios web dinámicos que interactúan con los usuarios",
+                    "Familiarización con los principios de seguridad de sistemas de información"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Educación",
+        "subtitle": "Mi trayectoria personal",
+        "items": [
+            {
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
+                "degree": "Diploma en Desarrollo Digital (Opción Web Full Stack)",
+                "startDate": "2022",
+                "endDate": "2024",
+                "location": "El Aaiún, Marruecos",
+                "imageUrl": "/cmc-maroc.png"
+            },
+            {
+                "institution": "Escuela Secundaria Baba Ahmed bin Muhammad Yahdih",
+                "degree": "Bachillerato, Ciencias Físicas",
+                "startDate": "2021",
+                "endDate": "2022",
+                "location": "El Aaiún, Marruecos",
+                "imageUrl": "/BabAhmedImage.jpg"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contáctame",
+        "subtitle": "Ponerse en contacto",
+        "subjectPlaceholder": "Ingresa tu asunto",
+        "emailPlaceholder": "Ingresa tu correo",
+        "messagePlaceholder": "Ingresa tu mensaje",
+        "sendButton": "Enviar mensaje",
+        "sendingButton": "Enviando...",
+        "writeMe": "Escríbeme",
+        "email": "Correo",
+        "whatsapp": "WhatsApp",
+        "validationError": "Por favor completa todos los campos y proporciona un correo válido.",
+        "formError": "Por favor, corrija los errores en el formulario.",
+        "subjectRequired": "El asunto es obligatorio",
+        "emailRequired": "El correo es obligatorio",
+        "emailInvalid": "Por favor introduce un correo válido",
+        "messageRequired": "El mensaje es obligatorio",
+        "successMessage": "Enviado con éxito",
+        "errorMessage": "Ocurrió un error. Inténtalo de nuevo."
+    },
+    "footer": {
+        "links": [
+            {
+                "name": "Sobre mí",
+                "path": "/About"
+            },
+            {
+                "name": "Habilidades",
+                "path": "/Skills"
+            },
+            {
+                "name": "Proyectos",
+                "path": "/Projects"
+            }
+        ],
+        "rights": "© Abdellah Edaoudi Todos los derechos reservados ©"
+    }
+}

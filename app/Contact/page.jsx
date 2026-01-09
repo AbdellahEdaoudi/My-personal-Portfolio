@@ -1,13 +1,15 @@
-import meta from "../translations/metadata/contactmeta.json";
+import t from "../translations/metadata/en.json";
 import React from "react";
 
+const meta = t.contact;
+
 export const metadata = {
-  title: meta.en.title,
-  description: meta.en.description,
-  keywords: meta.en.keywords,
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
   openGraph: {
-    title: meta.en.title,
-    description: meta.en.description,
+    title: meta.title,
+    description: meta.description,
     url: 'https://abdellah-edaoudi.vercel.app/Contact',
     siteName: 'Abdellah Edaoudi Portfolio',
     locale: 'en',
@@ -17,14 +19,14 @@ export const metadata = {
         url: 'https://abdellah-edaoudi.vercel.app/profile-pic.png',
         width: 1200,
         height: 630,
-        alt: meta.en.title,
+        alt: meta.title,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: meta.en.title,
-    description: meta.en.description,
+    title: meta.title,
+    description: meta.description,
     creator: '@Edaoudi_abde',
     images: ['https://abdellah-edaoudi.vercel.app/profile-pic.png'],
   },
@@ -38,6 +40,15 @@ export const metadata = {
       'nl': '/nl/Contact',
       'es': '/es/Contact',
       'pt': '/pt/Contact',
+      'ar': '/ar/Contact',
+      'ru': '/ru/Contact',
+      'ja': '/ja/Contact',
+      'it': '/it/Contact',
+      'hi': '/hi/Contact',
+      'tr': '/tr/Contact',
+      'ko': '/ko/Contact',
+      'id': '/id/Contact',
+      'pl': '/pl/Contact',
     },
   },
 };
@@ -45,17 +56,17 @@ export const metadata = {
 import Footer from "../Components/Footer";
 import Contact from "../Components/Contact";
 import Header from "../Components/Header";
-import { getDictionary } from "../translations/get-dictionary";
+import { getTranslation } from "../translations/portfolio/load-translations";
 
 
 async function page() {
-  const dictionary = await getDictionary('en');
+  const dictionary = await getTranslation('en');
 
   return (
     <div>
       <Header content={dictionary.header} />
       <Contact content={dictionary.contact} />
-      <Footer content={dictionary.footer} />
+      <Footer />
     </div>
   );
 }

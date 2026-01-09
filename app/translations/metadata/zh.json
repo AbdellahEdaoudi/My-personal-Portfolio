@@ -1,0 +1,85 @@
+{
+    "home": {
+        "title": "Abdellah Edaoudi",
+        "description": "Abdellah Edaoudi 的作品集，MERN-Stack 专精数字开发人员。探索我使用 Next.js (React.js)、Tailwind CSS 和 Node.js 构建响应式网站和应用程序的项目、技能和经验。",
+        "keywords": "Abdellah Edaoudi, MERN 技术栈开发人员, 作品集, Web 开发, React, React.js, Node.js, MongoDB, Express.js, JavaScript, 前端开发人员, 后端开发人员, 软件工程师, Web 应用程序, Tailwind CSS, Next.js, 数字开发人员, 响应式设计, 全栈开发, API 集成, UI/UX 设计, SEO 优化",
+        "openGraph": {
+            "title": "Abdellah Edaoudi",
+            "description": "欢迎来到 Abdellah Edaoudi 的官方作品集，MERN-Stack 专精数字开发人员。探索我使用 Next.js (React.js)、Tailwind CSS 和 Node.js 构建响应式网站和应用程序的项目、技能和经验。"
+        },
+        "twitter": {
+            "title": "Abdellah Edaoudi - MERN 技术栈开发人员 | 作品集",
+            "description": "欢迎来到 Abdellah Edaoudi 的官方作品集，MERN-Stack 专精数字开发人员。探索我使用 Next.js (React.js)、Tailwind CSS 和 Node.js 构建响应式网站和应用程序的项目、技能和经验。"
+        },
+        "google": {
+            "name": "Abdellah Edaoudi - MERN 技术栈开发人员 | 作品集",
+            "description": "欢迎来到 Abdellah Edaoudi 的官方作品集，MERN-Stack 专精数字开发人员。探索我使用 Next.js (React.js)、Tailwind CSS 和 Node.js 构建响应式网站和应用程序的项目、技能和经验。"
+        }
+    },
+    "about": {
+        "title": "关于我 | Abdellah Edaoudi",
+        "description": "了解更多关于 Abdellah Edaoudi 的信息，他是 MERN 技术栈全栈开发人员。了解我的背景、教育和专业之旅。",
+        "keywords": [
+            "关于我",
+            "Abdellah Edaoudi",
+            "传记",
+            "背景",
+            "信息"
+        ]
+    },
+    "contact": {
+        "title": "Abdellah Edaoudi | 联系",
+        "description": "准备好构建令人惊叹的东西了吗？联系 Abdellah Edaoudi 进行自由职业咨询、合作或全职全栈开发角色。让我们谈谈。",
+        "keywords": [
+            "聘请全栈开发人员",
+            "Web 开发人员联系",
+            "自由职业 MERN 开发人员",
+            "Abdellah Edaoudi 联系",
+            "Web 开发服务"
+        ]
+    },
+    "education": {
+        "title": "Abdellah Edaoudi | 教育",
+        "description": "查看 Abdellah Edaoudi 的教育背景和资格证书。",
+        "keywords": [
+            "教育",
+            "学习",
+            "学位",
+            "大学",
+            "资格"
+        ]
+    },
+    "experience": {
+        "title": "Abdellah Edaoudi | 经验",
+        "description": "探索 Abdellah Edaoudi 的专业经验和职业生涯。DGT Portfolio 创始人，拥有丰富经验的开发人员，为各行各业提供高影响力的 Web 应用程序。",
+        "keywords": [
+            "全栈经验",
+            "Web 开发人员职业生涯",
+            "DGT Portfolio 创始人",
+            "MERN 技术栈职位",
+            "专业 Web 开发人员"
+        ]
+    },
+    "projects": {
+        "title": "Abdellah Edaoudi | 项目",
+        "description": "探索 Abdellah Edaoudi 的投资组合项目。展示创新的 Web 应用程序、全栈开发工作和编码专业知识。",
+        "keywords": [
+            "项目",
+            "作品集",
+            "工作",
+            "案例研究",
+            "Web 应用程序"
+        ]
+    },
+    "skills": {
+        "title": "Abdellah Edaoudi | 技能",
+        "description": "探索 Abdellah Edaoudi 的技术技能和工具。精通 JavaScript、React、Node.js、MongoDB、Docker 以及构建现代 Web 的工具。",
+        "keywords": [
+            "MERN 技术栈技能",
+            "Next.js 专业知识",
+            "JavaScript 精通",
+            "DevOps 工具",
+            "Web 开发技术"
+        ]
+    }
+}
