@@ -9,6 +9,31 @@ import Footer from "./Components/Footer";
 import { getTranslation } from "./translations/portfolio/load-translations";
 import Header from "./Components/Header";
 
+export const metadata = {
+  alternates: {
+    canonical: '/en',
+    languages: {
+      'en': '/en',
+      'fr': '/fr',
+      'de': '/de',
+      'zh': '/zh',
+      'nl': '/nl',
+      'es': '/es',
+      'pt': '/pt',
+      'ar': '/ar',
+      'ru': '/ru',
+      'ja': '/ja',
+      'it': '/it',
+      'hi': '/hi',
+      'tr': '/tr',
+      'ko': '/ko',
+      'id': '/id',
+      'pl': '/pl',
+    },
+  },
+}
+
+
 export default async function Page() {
   const dictionary = await getTranslation('en');
 
