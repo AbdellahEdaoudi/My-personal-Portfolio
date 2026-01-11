@@ -65,27 +65,6 @@ export const metadata = {
     shortcut: '/profile-pic.png',
     apple: '/profile-pic.png',
   },
-  alternates: {
-    canonical: '/en',
-    languages: {
-      'en': '/en',
-      'fr': '/fr',
-      'de': '/de',
-      'zh': '/zh',
-      'nl': '/nl',
-      'es': '/es',
-      'pt': '/pt',
-      'ar': '/ar',
-      'ru': '/ru',
-      'ja': '/ja',
-      'it': '/it',
-      'hi': '/hi',
-      'tr': '/tr',
-      'ko': '/ko',
-      'id': '/id',
-      'pl': '/pl',
-    },
-  },
 }
 const prompt = Prompt({ subsets: ["latin"], weight: '500' });
 
