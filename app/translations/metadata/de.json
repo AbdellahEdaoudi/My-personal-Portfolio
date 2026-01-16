@@ -1,19 +1,19 @@
 {
     "home": {
-        "title": "Abdellah Edaoudi",
-        "description": "Portfolio von Abdellah Edaoudi, einem Digitalentwickler, der auf MERN-Stack spezialisiert ist. Entdecken Sie meine Projekte, Fähigkeiten und Erfahrungen bei der Erstellung reaktionsschneller Websites und Anwendungen mit Next.js (React.js), Tailwind CSS und Node.js.",
-        "keywords": "Abdellah Edaoudi, MERN Stack Entwickler, Portfolio, Webentwicklung, React, React.js, Node.js, MongoDB, Express.js, JavaScript, Frontend Entwickler, Backend Entwickler, Softwareingenieur, Webanwendungen, Tailwind CSS, Next.js, Digitalentwickler, Responsive Design, Full-Stack Entwicklung, API-Integration, UI/UX Design, SEO-Optimierung",
+        "title": "Abdellah Edaoudi | Full Stack Entwickler",
+        "description": "Professionelles Portfolio von Abdellah Edaoudi, Full Stack Entwickler spezialisiert auf MERN-Stack, Next.js, Nest.js, Anwendungssicherheit und Skalierung von Webanwendungen. Entdecken Sie meine Projekte.",
+        "keywords": "Abdellah Edaoudi, Full Stack Entwickler, MERN Stack, Next.js, Nest.js, Anwendungssicherheit, Webentwicklung, React, Node.js, MongoDB, JavaScript, Softwareingenieur",
         "openGraph": {
-            "title": "Abdellah Edaoudi",
-            "description": "Willkommen im offiziellen Portfolio von Abdellah Edaoudi, einem Digitalentwickler, der auf MERN-Stack spezialisiert ist. Entdecken Sie meine Projekte, Fähigkeiten und Erfahrungen bei der Erstellung reaktionsschneller Websites und Anwendungen mit Next.js (React.js), Tailwind CSS und Node.js."
+            "title": "Abdellah Edaoudi - Full Stack Entwickler",
+            "description": "Entdecken Sie das offizielle Portfolio von Abdellah Edaoudi, Experte für MERN-Stack, Next.js, Nest.js und Anwendungssicherheit."
         },
         "twitter": {
-            "title": "Abdellah Edaoudi - MERN Stack Entwickler | Portfolio",
-            "description": "Willkommen im offiziellen Portfolio von Abdellah Edaoudi, einem Digitalentwickler, der auf MERN-Stack spezialisiert ist. Entdecken Sie meine Projekte, Fähigkeiten und Erfahrungen bei der Erstellung reaktionsschneller Websites und Anwendungen mit Next.js (React.js), Tailwind CSS und Node.js."
+            "title": "Abdellah Edaoudi | Full Stack Entwickler & Sicherheitsexperte",
+            "description": "Professionelles Portfolio von Abdellah Edaoudi. Full Stack Entwickler spezialisiert auf MERN, Next.js und robuste Anwendungssicherheit."
         },
         "google": {
-            "name": "Abdellah Edaoudi - MERN Stack Entwickler | Portfolio",
-            "description": "Willkommen im offiziellen Portfolio von Abdellah Edaoudi, einem Digitalentwickler, der auf MERN-Stack spezialisiert ist. Entdecken Sie meine Projekte, Fähigkeiten und Erfahrungen bei der Erstellung reaktionsschneller Websites und Anwendungen mit Next.js (React.js), Tailwind CSS und Node.js."
+            "name": "Abdellah Edaoudi | Full Stack Entwickler",
+            "description": "Full Stack Portfolio von Abdellah Edaoudi. Spezialisiert auf MERN, Next.js, Nest.js und sichere Web-Lösungen."
         }
     },
     "about": {
