@@ -1,19 +1,19 @@
 {
     "home": {
-        "title": "Abdellah Edaoudi",
-        "description": "Abdellah Edaoudi'nin portföyü, MERN-Stack konusunda uzmanlaşmış bir Dijital Geliştirici. Next.js (React.js), Tailwind CSS ve Node.js kullanarak duyarlı web siteleri ve uygulamalar oluşturma konusundaki projelerimi, becerilerimi ve deneyimlerimi keşfedin.",
-        "keywords": "Abdellah Edaoudi, MERN Yığını Geliştiricisi, Portföy, Web Geliştirme, React, React.js, Node.js, MongoDB, Express.js, JavaScript, Frontend Geliştirici, Backend Geliştirici, Yazılım Mühendisi, Web Uygulamaları, Tailwind CSS, Next.js, Dijital Geliştirici, Duyarlı Tasarım, Full-Stack Geliştirme, API Entegrasyonu, UI/UX Tasarımı, SEO Optimizasyonu",
+        "title": "Abdellah Edaoudi | Full Stack Geliştirici",
+        "description": "Abdellah Edaoudi'nin profesyonel portföyü, MERN yığını, Next.js, Nest.js, uygulama güvenliği ve web uygulamalarının ölçeklendirilmesi konusunda uzmanlaşmış Full Stack Geliştirici. Projelerimi keşfedin.",
+        "keywords": "Abdellah Edaoudi, Full Stack Geliştirici, MERN Stack, Next.js, Nest.js, Uygulama Güvenliği, Web Geliştirme, React, Node.js, MongoDB, JavaScript, Yazılım Mühendisi",
         "openGraph": {
-            "title": "Abdellah Edaoudi",
-            "description": "MERN-Stack konusunda uzmanlaşmış bir Dijital Geliştirici olan Abdellah Edaoudi'nin resmi portföyüne hoş geldiniz. Next.js (React.js), Tailwind CSS ve Node.js kullanarak duyarlı web siteleri ve uygulamalar oluşturma konusundaki projelerimi, becerilerimi ve deneyimlerimi keşfedin."
+            "title": "Abdellah Edaoudi - Full Stack Geliştirici",
+            "description": "MERN yığını, Next.js, Nest.js ve uygulama güvenliği uzmanı Abdellah Edaoudi'nin resmi portföyünü keşfedin."
         },
         "twitter": {
-            "title": "Abdellah Edaoudi - MERN Yığını Geliştiricisi | Portföy",
-            "description": "MERN-Stack konusunda uzmanlaşmış bir Dijital Geliştirici olan Abdellah Edaoudi'nin resmi portföyüne hoş geldiniz. Next.js (React.js), Tailwind CSS ve Node.js kullanarak duyarlı web siteleri ve uygulamalar oluşturma konusundaki projelerimi, becerilerimi ve deneyimlerimi keşfedin."
+            "title": "Abdellah Edaoudi | Full Stack Geliştirici & Güvenlik Uzmanı",
+            "description": "Abdellah Edaoudi'nin profesyonel portföyü. MERN, Next.js ve sağlam uygulama güvenliği konusunda uzmanlaşmış Full Stack Geliştirici."
         },
         "google": {
-            "name": "Abdellah Edaoudi - MERN Yığını Geliştiricisi | Portföy",
-            "description": "MERN-Stack konusunda uzmanlaşmış bir Dijital Geliştirici olan Abdellah Edaoudi'nin resmi portföyüne hoş geldiniz. Next.js (React.js), Tailwind CSS ve Node.js kullanarak duyarlı web siteleri ve uygulamalar oluşturma konusundaki projelerimi, becerilerimi ve deneyimlerimi keşfedin."
+            "name": "Abdellah Edaoudi | Full Stack Geliştirici",
+            "description": "Abdellah Edaoudi'nin Full Stack portföyü. MERN, Next.js, Nest.js ve güvenli web çözümlerinde uzman."
         }
     },
     "about": {
