@@ -8,37 +8,37 @@ export const metadata = {
   metadataBase: new URL('https://abdellah-edaoudi.vercel.app'),
   title: {
     default: 'Abdellah Edaoudi',
-    template: '%s | Abdellah Edaoudi'
+    template: '%s | Abdellah Edaoudi - Full Stack Developer'
   },
-  description: 'Portfolio of Abdellah Edaoudi, a passionate Full Stack Developer specializing in MERN stack, Next.js, and modern web technologies. Explore my projects and skills.',
+  description: 'Official portfolio of Abdellah Edaoudi, a professional Full Stack Developer. Specialized in MERN stack, Next.js, Nest.js, application security, and scaling web applications.',
   keywords: [
     'Abdellah Edaoudi',
-    'Full Stack Developer',
+    'Abdellah Edaoudi Developer',
+    'Abdellah Edaoudi Morocco',
+    'Full Stack Developer Morocco',
+    'Software Engineer Morocco',
     'Web Developer',
     'MERN Stack',
-    'Next.js',
-    'React',
-    'Node.js',
-    'MongoDB',
-    'Tailwind CSS',
-    'JavaScript',
-    'Software Engineer',
-    'Morocco'
+    'Next.js Specialist',
+    'React Developer',
+    'Abdellah E',
+    'Edaoudi Abdellah'
   ],
-  authors: [{ name: 'Abdellah Edaoudi' }],
+  applicationName: 'Abdellah Edaoudi',
+  authors: [{ name: 'Abdellah Edaoudi', url: 'https://abdellah-edaoudi.vercel.app' }],
   creator: 'Abdellah Edaoudi',
   publisher: 'Abdellah Edaoudi',
   openGraph: {
-    title: 'Abdellah Edaoudi',
-    description: 'Explore the portfolio of Abdellah Edaoudi, featuring innovative web projects and professional experience in Full Stack development.',
+    title: 'Abdellah Edaoudi - Official Portfolio',
+    description: 'Professional Software Engineer and Full Stack Developer. Specialized in modern web technologies. Based in Morocco.',
     url: 'https://abdellah-edaoudi.vercel.app',
     siteName: 'Abdellah Edaoudi Portfolio',
     locale: 'en_US',
-    type: 'website',
+    type: 'profile',
     images: [
       {
         url: '/profile-pic.png',
-        alt: 'Abdellah Edaoudi - Full Stack Developer',
+        alt: 'Abdellah Edaoudi Portfolio',
       }
     ],
   },
@@ -65,6 +65,9 @@ export const metadata = {
     shortcut: '/profile-pic.png',
     apple: '/profile-pic.png',
   },
+  alternates: {
+    canonical: 'https://abdellah-edaoudi.vercel.app',
+  }
 }
 const prompt = Prompt({ subsets: ["latin"], weight: '500' });
 
@@ -80,6 +83,7 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               "name": "Abdellah Edaoudi",
               "url": "https://abdellah-edaoudi.vercel.app",
+              "image": "https://abdellah-edaoudi.vercel.app/profile-pic.png",
               "sameAs": [
                 "https://linkedin.com/in/abdellah-edaoudi/",
                 "https://github.com/AbdellahEdaoudi",
@@ -87,14 +91,22 @@ export default function RootLayout({ children }) {
                 "https://instagram.com/edaoudi_abdellah/",
                 "https://youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw"
               ],
-              "jobTitle": "Full Stack Developer",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Freelance"
+              "jobTitle": "Full Stack Developer & Software Engineer",
+              "nationality": {
+                "@type": "Country",
+                "name": "Morocco"
               },
-              "description": "Full Stack Developer specializing in MERN stack, Next.js, and modern web technologies. Explore my projects and skills.",
-              "disambiguatingDescription": "Software Engineer and Full Stack Developer specialized in React and Node.js. distinct from the artist/singer Abdellah Daoudi.",
-              "knowsAbout": ["Web Development", "MERN Stack", "React", "Next.js", "JavaScript", "Software Engineering"]
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "El-Aaiun",
+                "addressCountry": "MA"
+              },
+              "description": "Professional Full Stack Developer specializing in MERN stack and Next.js. Official website of Abdellah Edaoudi.",
+              "disambiguatingDescription": "Software Engineer and developer based in El-Aaiun, Morocco. Not to be confused with the Moroccan singer Abdellah Daoudi.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Abdellah Edaoudi"
+              }
             })
           }}
         />

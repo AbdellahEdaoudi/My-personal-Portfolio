@@ -1,19 +1,19 @@
 {
     "home": {
-        "title": "Abdellah Edaoudi",
-        "description": "portofolio Abdellah Edaoudi, Pengembang Digital yang berspesialisasi dalam MERN-Stack. Jelajahi proyek, keterampilan, dan pengalaman saya dalam membangun situs web dan aplikasi responsif menggunakan Next.js (React.js), Tailwind CSS, dan Node.js.",
-        "keywords": "Abdellah Edaoudi, Pengembang MERN Stack, Portofolio, Pengembangan Web, React, React.js, Node.js, MongoDB, Express.js, JavaScript, Pengembang Frontend, Pengembang Backend, Insinyur Perangkat Lunak, Aplikasi Web, Tailwind CSS, Next.js, Pengembang Digital, Desain Responsif, Pengembangan Full-Stack, Integrasi API, Desain UI/UX, Optimasi SEO",
+        "title": "Abdellah Edaoudi | Pengembang Full Stack",
+        "description": "Portofolio profesional Abdellah Edaoudi, Pengembang Full Stack yang berspesialisasi dalam tumpukan MERN, Next.js, Nest.js, keamanan aplikasi, dan penskalaan aplikasi web. Jelajahi proyek saya.",
+        "keywords": "Abdellah Edaoudi, Pengembang Full Stack, MERN Stack, Next.js, Nest.js, Keamanan aplikasi, Pengembangan Web, React, Node.js, MongoDB, JavaScript, Insinyur Perangkat Lunak",
         "openGraph": {
-            "title": "Abdellah Edaoudi",
-            "description": "Selamat datang di portofolio resmi Abdellah Edaoudi, Pengembang Digital yang berspesialisasi dalam MERN-Stack. Jelajahi proyek, keterampilan, dan pengalaman saya dalam membangun situs web dan aplikasi responsif menggunakan Next.js (React.js), Tailwind CSS, dan Node.js."
+            "title": "Abdellah Edaoudi - Pengembang Full Stack",
+            "description": "Jelajahi portofolio resmi Abdellah Edaoudi, ahli dalam tumpukan MERN, Next.js, Nest.js, dan keamanan aplikasi."
         },
         "twitter": {
-            "title": "Abdellah Edaoudi - Pengembang MERN Stack | Portofolio",
-            "description": "Selamat datang di portofolio resmi Abdellah Edaoudi, Pengembang Digital yang berspesialisasi dalam MERN-Stack. Jelajahi proyek, keterampilan, dan pengalaman saya dalam membangun situs web dan aplikasi responsif menggunakan Next.js (React.js), Tailwind CSS, dan Node.js."
+            "title": "Abdellah Edaoudi | Pengembang Full Stack & Pakar Keamanan",
+            "description": "Portofolio profesional Abdellah Edaoudi. Pengembang Full Stack yang berspesialisasi dalam MERN, Next.js, dan keamanan aplikasi yang kuat."
         },
         "google": {
-            "name": "Abdellah Edaoudi - Pengembang MERN Stack | Portofolio",
-            "description": "Selamat datang di portofolio resmi Abdellah Edaoudi, Pengembang Digital yang berspesialisasi dalam MERN-Stack. Jelajahi proyek, keterampilan, dan pengalaman saya dalam membangun situs web dan aplikasi responsif menggunakan Next.js (React.js), Tailwind CSS, dan Node.js."
+            "name": "Abdellah Edaoudi | Pengembang Full Stack",
+            "description": "Portofolio Full Stack Abdellah Edaoudi. Spesialis dalam MERN, Next.js, Nest.js, dan solusi web yang aman."
         }
     },
     "about": {

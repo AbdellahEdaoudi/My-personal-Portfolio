@@ -1,19 +1,19 @@
 {
     "home": {
-        "title": "Abdellah Edaoudi",
-        "description": "Abdellah Edaoudi 的作品集，MERN-Stack 专精数字开发人员。探索我使用 Next.js (React.js)、Tailwind CSS 和 Node.js 构建响应式网站和应用程序的项目、技能和经验。",
-        "keywords": "Abdellah Edaoudi, MERN 技术栈开发人员, 作品集, Web 开发, React, React.js, Node.js, MongoDB, Express.js, JavaScript, 前端开发人员, 后端开发人员, 软件工程师, Web 应用程序, Tailwind CSS, Next.js, 数字开发人员, 响应式设计, 全栈开发, API 集成, UI/UX 设计, SEO 优化",
+        "title": "Abdellah Edaoudi | 全栈开发人员",
+        "description": "Abdellah Edaoudi 的专业作品集，全栈开发人员，专精于 MERN 技术栈、Next.js、Nest.js、应用安全和 Web 应用程序扩展。探索我的项目和技术专业知识。",
+        "keywords": "Abdellah Edaoudi, 全栈开发人员, MERN 技术栈, Next.js, Nest.js, 应用安全, Web 开发, React, Node.js, MongoDB, JavaScript, 软件工程师",
         "openGraph": {
-            "title": "Abdellah Edaoudi",
-            "description": "欢迎来到 Abdellah Edaoudi 的官方作品集，MERN-Stack 专精数字开发人员。探索我使用 Next.js (React.js)、Tailwind CSS 和 Node.js 构建响应式网站和应用程序的项目、技能和经验。"
+            "title": "Abdellah Edaoudi - 全栈开发人员",
+            "description": "探索 Abdellah Edaoudi 的官方作品集，MERN 技术栈、Next.js、Nest.js 和应用安全领域的专家。"
         },
         "twitter": {
-            "title": "Abdellah Edaoudi - MERN 技术栈开发人员 | 作品集",
-            "description": "欢迎来到 Abdellah Edaoudi 的官方作品集，MERN-Stack 专精数字开发人员。探索我使用 Next.js (React.js)、Tailwind CSS 和 Node.js 构建响应式网站和应用程序的项目、技能和经验。"
+            "title": "Abdellah Edaoudi | 全栈开发人员与安全专家",
+            "description": "Abdellah Edaoudi 的专业作品集。全栈开发人员，专精于 MERN、Next.js 和强大的应用安全性。"
         },
         "google": {
-            "name": "Abdellah Edaoudi - MERN 技术栈开发人员 | 作品集",
-            "description": "欢迎来到 Abdellah Edaoudi 的官方作品集，MERN-Stack 专精数字开发人员。探索我使用 Next.js (React.js)、Tailwind CSS 和 Node.js 构建响应式网站和应用程序的项目、技能和经验。"
+            "name": "Abdellah Edaoudi | 全栈开发人员",
+            "description": "Abdellah Edaoudi 的全栈开发作品集。专精于 MERN、Next.js、Nest.js 和安全的 Web 解决方案。"
         }
     },
     "about": {
