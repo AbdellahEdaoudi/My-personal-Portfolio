@@ -72,10 +72,10 @@ async function Home({ lang = 'en' }) {
         {/* Image Section - Premium Tech Glow Design */}
         <div className="relative group">
           <div className="absolute -top-6 -left-6 text-blue-600/10 text-[7rem] font-serif transition-all duration-700 group-hover:-translate-x-3 group-hover:-translate-y-3 select-none leading-none">
-            &#123;
+            {lang === 'ar' ? '}' : '{'}
           </div>
           <div className="absolute -bottom-6 -right-6 text-purple-600/10 text-[7rem] font-serif transition-all duration-700 group-hover:translate-x-3 group-hover:translate-y-3 select-none leading-none">
-            &#125;
+            {lang === 'ar' ? '{' : '}'}
           </div>
 
           <div className="absolute -inset-6 bg-gradient-to-br from-blue-100/30 via-purple-50/30 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
