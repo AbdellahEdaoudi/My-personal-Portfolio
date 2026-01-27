@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.imganim{
-    border-radius: 77% 23% 60% 40% / 25% 60% 40% 75% ;
+.group {
+    animation: float 6s ease-in-out infinite;
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
 
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
