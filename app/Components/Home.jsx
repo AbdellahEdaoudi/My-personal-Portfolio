@@ -10,7 +10,7 @@ async function Home({ lang = 'en' }) {
 
   return (
     <section className="mx-4">
-      <div className="flex md:flex-row flex-col-reverse items-center justify-center gap-2 md:gap-12 lg:gap-28 pt-4 pb-5 md:py-7 duration-300">
+      <div className="flex md:flex-row flex-col-reverse items-center justify-center gap-2 md:gap-12 lg:gap-28 md:py-10 pb-6 duration-300">
         {/* Profile */}
         <div className="space-y-2 lg:space-y-3 flex flex-col items-center justify-center">
           <h1 className="text-[2.4rem] md:w-[458px] text-center">
@@ -69,14 +69,51 @@ async function Home({ lang = 'en' }) {
             </Link>
           </div>
         </div>
-        {/* Image */}
-        <div className="relative">
-          <Image src="/profile-pic.png"
-            className="md:absolute imganim md:w-80  w-56 "
-            alt="Abdellah Edaoudi - Full Stack Developer and Software Engineer"
-            width={500} height={500}
-          />
-          <div className=" imganim md:w-80  w-56 md:h-[360px] bg-gray-300 animate-puls" ></div>
+        {/* Image Section - Premium Tech Glow Design */}
+        <div className="relative group">
+          {/* الأقواس البرمجية للزينة - تم تصغيرها لتكون أكثر دقة */}
+          <div className="absolute -top-6 -left-6 text-blue-600/10 text-[7rem] font-serif transition-all duration-700 group-hover:-translate-x-3 group-hover:-translate-y-3 select-none leading-none">
+            &#123;
+          </div>
+          <div className="absolute -bottom-6 -right-6 text-purple-600/10 text-[7rem] font-serif transition-all duration-700 group-hover:translate-x-3 group-hover:translate-y-3 select-none leading-none">
+            &#125;
+          </div>
+
+          {/* هالة ضوئية خلفية ناعمة جداً */}
+          <div className="absolute -inset-6 bg-gradient-to-br from-blue-100/30 via-purple-50/30 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+          {/* الإطار الخلفي المتحرك */}
+          <div className="absolute top-4 left-4 w-full h-full border border-gray-100 rounded-[2.5rem] transition-transform duration-500 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+
+          {/* حاوية الصورة الأساسية بإطار متدرج */}
+          <div className="relative z-10 p-[1px] bg-gradient-to-br from-gray-200 via-white to-gray-100 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
+            <div className="relative bg-white p-2 rounded-[2.5rem] overflow-hidden">
+              <div className="overflow-hidden rounded-[2rem]">
+                <Image
+                  src="/profile/profile.jpg"
+                  className="md:w-80 md:h-[360px] object-cover h-64 w-56 transform transition-transform duration-1000 group-hover:scale-105"
+                  alt="Abdellah Edaoudi - Full Stack Developer and Software Engineer"
+                  width={500}
+                  height={500}
+                  priority
+                />
+              </div>
+
+              {/* تأثير انعكاس ضوئي يمر فوق الصورة عند الـ Hover */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
+            </div>
+          </div>
+
+          {/* الملصق الجانبي الأنيق */}
+          <div className="absolute -right-6 top-10 flex flex-col items-center gap-4 z-20">
+            <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-blue-500"></div>
+            <span className="[writing-mode:vertical-lr] text-[10px] uppercase tracking-[0.4em] font-bold text-blue-600 bg-white/80 backdrop-blur-sm p-2 rounded-full border border-blue-100 shadow-sm transition-transform duration-500 group-hover:-translate-y-2">
+              Portfolio {new Date().getFullYear()}
+            </span>
+          </div>
+
+          {/* زخرفة هندسية صغيرة */}
+          <div className="absolute -bottom-2 -left-2 w-10 h-10 border-b-2 border-l-2 border-purple-500/20 rounded-bl-xl transition-all duration-500 group-hover:-translate-x-2 group-hover:translate-y-2"></div>
         </div>
       </div>
     </section>
