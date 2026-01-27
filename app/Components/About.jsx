@@ -20,7 +20,6 @@ async function About({ lang = 'en' }) {
         <div className="flex flex-col-reverse  md:items-start items-center md:flex-row gap-6 md:gap-28">
           {/* Image Section - About Page Premium Version */}
           <div className="relative group md:block hidden">
-            {/* الأقواس البرمجية للزينة - تم تصغيرها لتكون أكثر رقة */}
             <div className="absolute -top-6 -left-6 text-blue-600/10 text-[6rem] font-serif transition-all duration-700 group-hover:-translate-x-3 group-hover:-translate-y-3 select-none leading-none">
               &#123;
             </div>
@@ -28,13 +27,10 @@ async function About({ lang = 'en' }) {
               &#125;
             </div>
 
-            {/* الهالة الخلفية */}
             <div className="absolute -inset-6 bg-gradient-to-br from-blue-100/30 via-purple-50/30 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-            {/* الإطار الخلفي */}
             <div className="absolute top-4 right-4 w-full h-full border border-gray-100 rounded-[2.5rem] transition-transform duration-500 group-hover:-translate-x-2 group-hover:translate-y-2"></div>
 
-            {/* حاوية الصورة الأساسية */}
             <div className="relative z-10 p-[1px] bg-gradient-to-bl from-gray-200 via-white to-gray-100 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
               <div className="relative bg-white p-2 rounded-[2.5rem] overflow-hidden">
                 <div className="overflow-hidden rounded-[2rem] relative">
@@ -47,7 +43,6 @@ async function About({ lang = 'en' }) {
                     priority
                   />
 
-                  {/* الختم الرقمي لإخفاء الشعار بطريقة احترافية */}
                   <div className="absolute bottom-0 right-0 p-2 bg-gradient-to-tl from-white via-white/80 to-transparent z-20">
                     <div className="flex flex-col items-end opacity-40 group-hover:opacity-100 transition-opacity duration-500">
                       <span className="text-[8px] font-black uppercase tracking-tighter text-blue-900 leading-none">Abdellah Edaoudi</span>
@@ -55,7 +50,6 @@ async function About({ lang = 'en' }) {
                     </div>
                   </div>
                 </div>
-                {/* تأثير اللمعان */}
                 <div className="absolute inset-0 bg-gradient-to-br from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
               </div>
             </div>
