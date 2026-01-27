@@ -37,7 +37,7 @@ async function About({ lang = 'en' }) {
             {/* حاوية الصورة الأساسية */}
             <div className="relative z-10 p-[1px] bg-gradient-to-bl from-gray-200 via-white to-gray-100 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
               <div className="relative bg-white p-2 rounded-[2.5rem] overflow-hidden">
-                <div className="overflow-hidden rounded-[2rem]">
+                <div className="overflow-hidden rounded-[2rem] relative">
                   <Image
                     src="/profile/profileabout.png"
                     alt="Abdellah Edaoudi - About Me"
@@ -46,15 +46,18 @@ async function About({ lang = 'en' }) {
                     height={500}
                     priority
                   />
+
+                  {/* الختم الرقمي لإخفاء الشعار بطريقة احترافية */}
+                  <div className="absolute bottom-0 right-0 p-2 bg-gradient-to-tl from-white via-white/80 to-transparent z-20">
+                    <div className="flex flex-col items-end opacity-40 group-hover:opacity-100 transition-opacity duration-500">
+                      <span className="text-[8px] font-black uppercase tracking-tighter text-blue-900 leading-none">Abdellah Edaoudi</span>
+                      <span className="text-[6px] font-bold uppercase tracking-widest text-gray-500 leading-none mt-1">Software Developer</span>
+                    </div>
+                  </div>
                 </div>
                 {/* تأثير اللمعان */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
               </div>
-            </div>
-
-            {/* عنصر زخرفي سفلي */}
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-white/80 backdrop-blur-md rounded-full border border-gray-100 shadow-sm opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:-translate-y-2">
-              <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-gray-500">About Me</span>
             </div>
           </div>
           <div className="space-y-4">
