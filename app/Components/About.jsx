@@ -19,16 +19,14 @@ async function About({ lang = 'en' }) {
       <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 pt-2 md:pt-7 px-4">
         <div className="flex flex-col-reverse  md:items-start items-center md:flex-row gap-6 md:gap-28">
           {/* Image Section - About Page Premium Version */}
-          <div className="relative group md:block hidden">
+          <div className="relative group md:block hidde">
             <div className="absolute -top-6 -left-6 text-blue-600/10 text-[6rem] font-serif transition-all duration-700 group-hover:-translate-x-3 group-hover:-translate-y-3 select-none leading-none">
               {lang === 'ar' ? '}' : '{'}
             </div>
             <div className="absolute -bottom-6 -right-6 text-purple-600/10 text-[6rem] font-serif transition-all duration-700 group-hover:translate-x-3 group-hover:translate-y-3 select-none leading-none">
               {lang === 'ar' ? '{' : '}'}
             </div>
-
             <div className="absolute -inset-6 bg-gradient-to-br from-blue-100/30 via-purple-50/30 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-
             <div className={`absolute top-4 ${lang === 'ar' ? 'left-4' : 'right-4'} w-full h-full border border-gray-100 rounded-[2.5rem] transition-transform duration-500 ${lang === 'ar' ? 'group-hover:translate-x-2' : 'group-hover:-translate-x-2'} group-hover:translate-y-2`}></div>
 
             <div className="relative z-10 p-[1px] bg-gradient-to-bl from-gray-200 via-white to-gray-100 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
@@ -37,7 +35,7 @@ async function About({ lang = 'en' }) {
                   <Image
                     src="/profile/profileabout.png"
                     alt="Abdellah Edaoudi - About Me"
-                    className="md:w-80 object-cover w-56 transform transition-transform duration-1000 group-hover:scale-105"
+                    className="md:w-80 object-cover w-72 sm:w-80 transform transition-transform duration-1000 group-hover:scale-105"
                     width={500}
                     height={500}
                     priority
@@ -86,7 +84,7 @@ async function About({ lang = 'en' }) {
                 href={content.Cv}
                 target="_blank"
                 // download={content.Cv}
-                className="flex p-3 rounded-lgbg-black hover:scale-[1.03] duration-300 text-white gap-2"
+                className="flex p-3 rounded-lg bg-black hover:scale-[1.03] duration-300 text-white gap-2"
               >
                 {content.downloadCv} <StickyNote />
               </Link>
