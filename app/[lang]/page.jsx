@@ -11,6 +11,27 @@ import Footer from "../Components/Footer";
 import { getTranslation } from "../translations/portfolio/load-translations";
 import { getMetadata } from "../translations/metadata/load-metadata";
 
+export async function generateStaticParams() {
+    return [
+        { lang: 'en' },
+        { lang: 'es' },
+        { lang: 'fr' },
+        { lang: 'ar' },
+        { lang: 'de' },
+        { lang: 'ru' },
+        { lang: 'ja' },
+        { lang: 'zh' },
+        { lang: 'nl' },
+        { lang: 'pt' },
+        { lang: 'it' },
+        { lang: 'tr' },
+        { lang: 'ko' },
+        { lang: 'hi' },
+        { lang: 'id' },
+        { lang: 'pl' },
+    ];
+}
+
 export async function generateMetadata({ params }) {
     const { lang } = await params;
     const t = await getMetadata(lang);
