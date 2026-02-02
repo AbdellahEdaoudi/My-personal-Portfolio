@@ -7,12 +7,19 @@
         "education": "教育",
         "experience": "经验",
         "contact": "联系",
-        "admin": "管理"
+        "admin": "管理",
+        "mobileMenu": {
+            "navigation": "导航",
+            "explore": "探索此部分",
+            "history": "历史",
+            "learning": "学习"
+        }
     },
     "home": {
         "greeting": "你好, 我是 Abdellah Edaoudi",
         "role": "🔷 全栈开发人员 🔷",
-        "description": "我专注于使用 MERN 技术栈以及 Next.js 和 NestJS 等高级框架开发响应式网站和应用程序，以实现最佳性能和可扩展性，并特别注重应用程序安全和数据保护。"
+        "description": "我专注于使用 MERN 技术栈以及 Next.js 和 NestJS 等高级框架开发响应式网站和应用程序，以实现最佳性能和可扩展性，并特别注重应用程序安全和数据保护。",
+        "portfolio": "作品集"
     },
     "about": {
         "title": "关于我",
@@ -504,5 +511,8 @@
             }
         ],
         "rights": "© Abdellah Edaoudi 版权所有 ©"
+    },
+    "scrollToTop": {
+        "backToTop": "返回顶部"
     }
 }

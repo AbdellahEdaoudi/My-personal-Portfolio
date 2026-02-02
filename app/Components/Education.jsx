@@ -10,7 +10,7 @@ export default async function Education({ lang = "en" }) {
   if (!content) return null;
 
   return (
-    <section className="py-3 mx-auto sm:mx-16 md:mx-28 lg:mx-52 min-h-screen">
+    <section className="py-8 mx-auto sm:mx-16 md:mx-28 lg:mx-52">
       <div className="text-center mb-6">
         <p className="text-4xl font-bold">{content.title}</p>
         <p className="text-gray-400 text-sm">{content.subtitle}</p>

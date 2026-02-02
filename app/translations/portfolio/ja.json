@@ -7,12 +7,19 @@
         "education": "教育",
         "experience": "経験",
         "contact": "お問い合わせ",
-        "admin": "管理"
+        "admin": "管理",
+        "mobileMenu": {
+            "navigation": "ナビゲーション",
+            "explore": "このセクションを探索",
+            "history": "履歴",
+            "learning": "学習"
+        }
     },
     "home": {
         "greeting": "こんにちは、アブデラ・エダウディです",
         "role": "🔷 フルスタック開発者 🔷",
-        "description": "MERNスタックを使用したレスポンシブなWebサイトやアプリケーションの開発、およびNext.jsやNestJSなどの高度なフレームワークを使用した最適なパフォーマンスとスケーラビリティの実現を専門としており、アプリケーションのセキュリティとデータ保護に重点を置いています。"
+        "description": "MERNスタックを使用したレスポンシブなWebサイトやアプリケーションの開発、およびNext.jsやNestJSなどの高度なフレームワークを使用した最適なパフォーマンスとスケーラビリティの実現を専門としており、アプリケーションのセキュリティとデータ保護に重点を置いています。",
+        "portfolio": "ポートフォリオ"
     },
     "about": {
         "title": "私について",
@@ -504,5 +511,8 @@
             }
         ],
         "rights": "© Abdellah Edaoudi 全著作権所有 ©"
+    },
+    "scrollToTop": {
+        "backToTop": "トップに戻る"
     }
 }

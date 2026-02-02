@@ -19,58 +19,40 @@ async function Home({ lang = 'en' }) {
           <h2 className="text-2xl">
             {content.role}
           </h2>
-          <p className="border-2 rounded-lg md:w-[400px] text-justify p-2 bg-white shadow-md">
+          <p className="border border-white/40 rounded-2xl md:w-[420px] text-justify p-4 bg-white/30 backdrop-blur-xl shadow-2xl text-gray-800 leading-relaxed transition-all duration-500 hover:bg-white/40">
             {content.description}
           </p>
-          {/* Social Link */}
-          <div className="flex space-x-4 justify-center py-2">
-            <Link
-              href="https://www.linkedin.com/in/abdellah-edaoudi"
-              target="_blank" className="hover:scale-105 duration-300 ml-4"
-              title="LinkedIn - Abdellah Edaoudi"
-            >
-              {/* <Linkedin /> */}
-              <Image src={"/icons/linkedin.svg"} alt="Abdellah Edaoudi LinkedIn" width={30} height={10} />
-            </Link>
-            <Link
-              href="https://github.com/AbdellahEdaoudi"
-              target="_blank" className="hover:scale-105 duration-300"
-              title="GitHub - Abdellah Edaoudi"
-            >
-              {/* <Github /> */}
-              <Image src={"/icons/github.svg"} alt="Abdellah Edaoudi GitHub" width={30} height={10} />
-            </Link>
-            <Link
-              href="https://www.youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw"
-              target="_blank" className="hover:scale-105 duration-300"
-              title="YouTube - Abdellah Edaoudi"
-            >
-              {/* <Youtube /> */}
-              <Image src={"/icons/youtube.svg"} alt="Abdellah Edaoudi YouTube" width={30} height={10} />
-
-            </Link>
-            <Link
-              href="https://x.com/Edaoudi_abde"
-              target="_blank" className="hover:scale-105 duration-300"
-              title="X (Twitter) - Abdellah Edaoudi"
-            >
-              {/* <Instagram /> */}
-              <Image src={"/icons/twitter.svg"} alt="Abdellah Edaoudi X Twitter" width={30} height={10} />
-
-            </Link>
-            <Link
-              href="https://www.instagram.com/edaoudi_abdellah/"
-              target="_blank" className="hover:scale-105 duration-300"
-              title="Instagram - Abdellah Edaoudi"
-            >
-              {/* <Instagram /> */}
-              <Image src={"/icons/instagram.svg"} alt="Abdellah Edaoudi Instagram" width={30} height={10} />
-
-            </Link>
+          {/* Social Links - Refactored with map */}
+          <div className="flex gap-4 justify-center py-2">
+            {[
+              { id: 'linkedin', href: 'https://www.linkedin.com/in/abdellah-edaoudi', icon: '/icons/linkedin.svg', alt: 'LinkedIn' },
+              { id: 'github', href: 'https://github.com/AbdellahEdaoudi', icon: '/icons/github.svg', alt: 'GitHub' },
+              { id: 'youtube', href: 'https://www.youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw', icon: '/icons/youtube.svg', alt: 'YouTube' },
+              { id: 'twitter', href: 'https://x.com/Edaoudi_abde', icon: '/icons/twitter.svg', alt: 'X (Twitter)' },
+              { id: 'instagram', href: 'https://www.instagram.com/edaoudi_abdellah/', icon: '/icons/instagram.svg', alt: 'Instagram' }
+            ].map((social) => (
+              <Link
+                key={social.id}
+                href={social.href}
+                target="_blank"
+                className="hover:scale-110 transition-transform duration-300 active:scale-95"
+                title={`${social.alt} - Abdellah Edaoudi`}
+              >
+                <Image
+                  priority
+                  src={social.icon}
+                  alt={`Abdellah Edaoudi ${social.alt}`}
+                  width={30}
+                  height={30}
+                  className="drop-shadow-sm"
+                />
+              </Link>
+            ))}
           </div>
         </div>
         {/* Image Section - Premium Tech Glow Design */}
         <div className="relative group">
+          {/* Decorative Brackets - Reverted to TL/BR but symbols flipped for AR */}
           <div className="absolute -top-6 -left-6 text-blue-600/10 text-[7rem] font-serif transition-all duration-700 group-hover:-translate-x-3 group-hover:-translate-y-3 select-none leading-none">
             {lang === 'ar' ? '}' : '{'}
           </div>
@@ -80,6 +62,7 @@ async function Home({ lang = 'en' }) {
 
           <div className="absolute -inset-6 bg-gradient-to-br from-blue-100/30 via-purple-50/30 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
+          {/* Border Outline - Reverted to Left */}
           <div className="absolute top-4 left-4 w-full h-full border border-gray-100 rounded-[2.5rem] transition-transform duration-500 group-hover:translate-x-2 group-hover:translate-y-2"></div>
 
           <div className="relative z-10 p-[1px] bg-gradient-to-br from-gray-200 via-white to-gray-100 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
@@ -99,13 +82,15 @@ async function Home({ lang = 'en' }) {
             </div>
           </div>
 
-          <div className="absolute -right-6 top-10 flex flex-col items-center gap-4 z-20">
+          {/* Vertical Text - Left side for Arabic, rotated to look right */}
+          <div className={`absolute ${lang === 'ar' ? '-left-6' : '-right-6'} top-10 flex flex-col items-center gap-4 z-20`}>
             <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-blue-500"></div>
-            <span className="[writing-mode:vertical-lr] text-[10px] uppercase tracking-[0.4em] font-bold text-blue-600 bg-white/80 backdrop-blur-sm p-2 rounded-full border border-blue-100 shadow-sm transition-transform duration-500 group-hover:-translate-y-2">
-              Portfolio {new Date().getFullYear()}
+            <span className={`[writing-mode:vertical-lr] ${lang === 'ar' ? 'rotate-180' : ''} text-[10px] uppercase tracking-[0.4em] font-bold text-blue-600 bg-white/80 backdrop-blur-sm p-2 rounded-full border border-blue-100 shadow-sm transition-transform duration-500 group-hover:-translate-y-2`}>
+              {content.portfolio || "Portfolio"} {new Date().getFullYear()}
             </span>
           </div>
 
+          {/* Corner Decoration - Reverted to Left */}
           <div className="absolute -bottom-2 -left-2 w-10 h-10 border-b-2 border-l-2 border-purple-500/20 rounded-bl-xl transition-all duration-500 group-hover:-translate-x-2 group-hover:translate-y-2"></div>
         </div>
       </div>
