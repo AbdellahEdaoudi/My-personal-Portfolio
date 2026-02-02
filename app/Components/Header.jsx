@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { AlignJustify, ChevronDown } from './Icons';
 
 import "flag-icons/css/flag-icons.min.css"; // Import flag-icons CSS
+import Image from 'next/image';
 
 
 const languages = [
@@ -88,8 +89,8 @@ export default function Header({ content }) {
     const selectedLang = languages.find(l => l.code === currentLang) || languages[0];
 
     return (
-        <header className="sticky top-0 z-50 bg-white shadow-sm">
-            <div className='flex items-center py-4 justify-evenly bg-white text-gray-600 rounded-sm relative z-50'>
+        <header className="sticky top-0 z-50 bg-white/40 backdrop-blur-xl border-b border-white/20 shadow-sm transition-all duration-300">
+            <div className='flex items-center py-4 justify-evenly text-gray-800 rounded-sm relative z-50'>
                 <div className='hover:scale-105 duration-300'>
                     <Link href={`/`}>
                         <div className="flex items-center gap-1 cursor-pointer hover:bg-slate-50 px-3 py-1 rounded-lg transition-all duration-300">
@@ -184,21 +185,75 @@ export default function Header({ content }) {
                     </div>
                 </div>
             </div>
-            {/* Mobile Menu */}
-            <div className={`md:hidden absolute w-full bg-white shadow-lg grid transition-[grid-template-rows] duration-300 ease-in-out border-gray-100 ${menu ? 'grid-rows-[1fr] border-t' : 'grid-rows-[0fr]'}`}>
-                <div className="overflow-hidden">
-                    <ul className="flex flex-col items-center py-4 space-y-2">
-                        {LinksHeader.map((ln, i) => (
-                            <li key={i} onClick={() => setMenu(false)} className="w-full px-4">
-                                <Link
-                                    href={getPath(ln.path)}
-                                    className={`flex items-center justify-center gap-2 py-3 px-4 rounded-xl transition-all duration-300 ${pathname === getPath(ln.path) ? "bg-green-50 text-green-600 font-bold shadow-sm" : "text-gray-600 hover:bg-gray-50 hover:text-green-500"}`}
-                                >
-                                    <span className="font-medium">{ln.name}</span>
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
+            {/* Luxury Studio Navigation - Mobile Dashboard */}
+            <div className={`md:hidden absolute top-full left-0 w-full overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] ${menu ? 'opacity-100 translate-y-0 visible pointer-events-auto' : 'opacity-0 -translate-y-8 invisible pointer-events-none'}`}>
+                <div className="mx-4 my-4 bg-white/95 backdrop-blur-3xl rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/20 overflow-hidden">
+                    <div className="p-8">
+                        {/* Section 1: Main Links with Sub-labels */}
+                        <div>
+                            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-emerald-600 mb-6 flex items-center gap-2">
+                                <span className="w-8 h-[1px] bg-emerald-100"></span> {content?.mobileMenu?.navigation || "Navigation"}
+                            </p>
+                            <nav className="space-y-4">
+                                {LinksHeader.slice(0, 4).map((ln, i) => (
+                                    <Link
+                                        key={i}
+                                        href={getPath(ln.path)}
+                                        onClick={() => setMenu(false)}
+                                        className="flex items-center justify-between"
+                                    >
+                                        <div className="flex flex-col">
+                                            <span className={`text-2xl font-bold tracking-tight transition-colors duration-300 ${pathname === getPath(ln.path) ? 'text-emerald-600' : 'text-slate-900 group-hover:text-emerald-500'}`}>
+                                                {ln.name}
+                                            </span>
+                                            <span className="text-[10px] text-slate-400 font-medium uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300">{content?.mobileMenu?.explore || "Explore this section"}</span>
+                                        </div>
+                                        <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-500 ${pathname === getPath(ln.path) ? 'bg-emerald-600 text-white' : 'bg-slate-50 text-slate-400 group-hover:bg-emerald-50 group-hover:text-emerald-600'}`}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </nav>
+                        </div>
+
+                        {/* Section 2: Quick Career Info */}
+                        <div className="grid grid-cols-2 gap-3">
+                            <Link href={getPath('/Experience')} onClick={() => setMenu(false)} className={`p-5 rounded-3xl transition-all duration-300 ${pathname === getPath('/Experience') ? 'bg-slate-900 text-white shadow-xl' : 'bg-slate-50 text-slate-900 hover:bg-white border border-slate-100 shadow-sm'}`}>
+                                <div className="text-[10px] font-bold opacity-60 uppercase mb-2">{content?.mobileMenu?.history || "History"}</div>
+                                <div className="text-sm font-black italic">{content?.experience || "Experience"}</div>
+                            </Link>
+                            <Link href={getPath('/Education')} onClick={() => setMenu(false)} className={`p-5 rounded-3xl transition-all duration-300 ${pathname === getPath('/Education') ? 'bg-slate-900 text-white shadow-xl' : 'bg-slate-50 text-slate-900 hover:bg-white border border-slate-100 shadow-sm'}`}>
+                                <div className="text-[10px] font-bold opacity-60 uppercase mb-2">{content?.mobileMenu?.learning || "Learning"}</div>
+                                <div className="text-sm font-black italic">{content?.education || "Education"}</div>
+                            </Link>
+                        </div>
+
+                        {/* Section 3: Call to Action & Footer */}
+                        <div className="pt-6 border-t border-slate-100 flex flex-col gap-6">
+                            <Link
+                                href={getPath('/Contact')}
+                                onClick={() => setMenu(false)}
+                                className="w-full bg-emerald-600 text-white h-16 rounded-2xl flex items-center justify-center gap-3 font-bold text-lg hover:bg-emerald-700 active:scale-95 transition-all shadow-[0_10px_30px_rgba(16,185,129,0.3)]"
+                            >
+                                <span>{content?.contact || "Let's Talk"}</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.31-2.31a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </Link>
+
+                            <div className="flex items-center justify-between">
+                                <div className="flex gap-4">
+                                    <Link href="https://github.com/AbdellahEdaoudi" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-slate-900 hover:text-white transition-all">
+                                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> */}
+                                        <Image priority src={"/icons/github.svg"} alt="Abdellah Edaoudi GitHub" width={30} height={30} />
+                                    </Link>
+                                    <Link href="https://linkedin.com/in/abdellah-edaoudi" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 hover:bg-slate-900 hover:text-white transition-all">
+                                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> */}
+                                        <Image priority src={"/icons/linkedin.svg"} alt="Abdellah Edaoudi LinkedIn" width={30} height={30} />
+                                    </Link>
+                                </div>
+                                <span className="text-[9px] font-black uppercase tracking-[0.2em] text-slate-300">© AE Portfolio ©</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>

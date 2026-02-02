@@ -7,12 +7,19 @@
         "education": "Bildung",
         "experience": "Erfahrung",
         "contact": "Kontakt",
-        "admin": "Admin"
+        "admin": "Admin",
+        "mobileMenu": {
+            "navigation": "Navigation",
+            "explore": "Diesen Bereich erkunden",
+            "history": "Verlauf",
+            "learning": "Lernen"
+        }
     },
     "home": {
         "greeting": "Hallo, ich bin Abdellah Edaoudi",
         "role": "🔷 Full Stack Entwickler 🔷",
-        "description": "Ich spezialisiere mich auf die Entwicklung reaktionsschneller Websites und Anwendungen mit dem MERN-Stack sowie fortschrittlichen Frameworks wie Next.js und NestJS für optimale Leistung und Skalierbarkeit, mit einem starken Fokus auf Anwendungssicherheit und Datenschutz."
+        "description": "Ich spezialisiere mich auf die Entwicklung reaktionsschneller Websites und Anwendungen mit dem MERN-Stack sowie fortschrittlichen Frameworks wie Next.js und NestJS für optimale Leistung und Skalierbarkeit, mit einem starken Fokus auf Anwendungssicherheit und Datenschutz.",
+        "portfolio": "Portfolio"
     },
     "about": {
         "title": "Über mich",
@@ -509,5 +516,8 @@
             }
         ],
         "rights": "© Abdellah Edaoudi Alle Rechte vorbehalten ©"
+    },
+    "scrollToTop": {
+        "backToTop": "Zurück nach oben"
     }
 }

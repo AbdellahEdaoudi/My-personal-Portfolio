@@ -11,14 +11,14 @@ async function Projects({ lang = 'en' }) {
   const { items: projects, title, subtitle, liveDemo, readMore, showLess } = content;
 
   return (
-    <section id="prtfl" className="bg-gray-50 pb-7 pt-4">
+    <section id="prtfl" className="pb-7 pt-4">
       <div className="text-center pb-5 ">
         <p className="text-4xl font-bold">{title}</p>
         <p className="text-gray-400 text-sm">{subtitle}</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 justify-items-center px-4">
         {projects?.map((p, i) => (
-          <div key={i} className="bg-white flex flex-col w-80 hover:scale-105 border duration-300 rounded-lg shadow-lg pb-4 mb-5">
+          <div key={i} className="bg-white/40 backdrop-blur-xl flex flex-col w-80 hover:scale-[1.03] border border-white/40 duration-300 rounded-lg shadow-2xl pb-4 mb-5 overflow-hidden transition-all hover:bg-white/50">
             <Link href={p.websiteUrl} target="_blank" rel="noopener noreferrer">
               <Image width={1000} height={200}
                 className="w-96 rounded-md border-b-2 cursor-pointer"

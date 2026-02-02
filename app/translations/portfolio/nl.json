@@ -7,12 +7,19 @@
         "education": "Opleiding",
         "experience": "Ervaring",
         "contact": "Contact",
-        "admin": "Beheerder"
+        "admin": "Beheerder",
+        "mobileMenu": {
+            "navigation": "Navigatie",
+            "explore": "Verken deze sectie",
+            "history": "Geschiedenis",
+            "learning": "Leren"
+        }
     },
     "home": {
         "greeting": "Hallo, ik ben Abdellah Edaoudi",
         "role": "🔷 Full Stack Ontwikkelaar 🔷",
-        "description": "Ik ben gespecialiseerd in het ontwikkelen van responsieve websites en applicaties met behulp van de MERN-stack, evenals geavanceerde frameworks zoals Next.js en NestJS voor optimale prestaties en schaalbaarheid, met een sterke focus op applicatiebeveiliging en gegevensbescherming."
+        "description": "Ik ben gespecialiseerd in het ontwikkelen van responsieve websites en applicaties met behulp van de MERN-stack, evenals geavanceerde frameworks zoals Next.js en NestJS voor optimale prestaties en schaalbaarheid, met een sterke focus op applicatiebeveiliging en gegevensbescherming.",
+        "portfolio": "Portfolio"
     },
     "about": {
         "title": "Over mij",
@@ -504,5 +511,8 @@
             }
         ],
         "rights": "© Abdellah Edaoudi Alle rechten voorbehouden ©"
+    },
+    "scrollToTop": {
+        "backToTop": "Terug naar boven"
     }
 }

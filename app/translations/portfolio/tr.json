@@ -7,12 +7,19 @@
         "education": "Eğitim",
         "experience": "Deneyim",
         "contact": "İletişim",
-        "admin": "Yönetici"
+        "admin": "Yönetici",
+        "mobileMenu": {
+            "navigation": "Navigasyon",
+            "explore": "Bu bölümü keşfet",
+            "history": "Geçmiş",
+            "learning": "Öğrenme"
+        }
     },
     "home": {
         "greeting": "Merhaba, Ben Abdellah Edaoudi",
         "role": "🔷 Full Stack Geliştirici 🔷",
-        "description": "MERN yığını kullanarak duyarlı web siteleri ve uygulamalar geliştirmenin yanı sıra, optimum performans ve ölçeklenebilirlik için Next.js ve NestJS gibi gelişmiş çerçeveler konusunda uzmanım; uygulama güvenliği ve veri korumasına güçlü bir odaklanma ile."
+        "description": "MERN yığını kullanarak duyarlı web siteleri ve uygulamalar geliştirmenin yanı sıra, optimum performans ve ölçeklenebilirlik için Next.js ve NestJS gibi gelişmiş çerçeveler konusunda uzmanım; uygulama güvenliği ve veri korumasına güçlü bir odaklanma ile.",
+        "portfolio": "Portfolyo"
     },
     "about": {
         "title": "Hakkımda",
@@ -504,5 +511,8 @@
             }
         ],
         "rights": "© Abdellah Edaoudi Tüm hakları saklıdır ©"
+    },
+    "scrollToTop": {
+        "backToTop": "Başa dön"
     }
 }
