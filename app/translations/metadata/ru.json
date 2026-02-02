@@ -1,19 +1,19 @@
 {
     "home": {
         "title": "Абделла Эдауди (Abdellah Edaoudi) | Full Stack разработчик",
-        "description": "Профессиональное портфолио Абделлы Эдауди (Abdellah Edaoudi), Full Stack разработчика, специализирующегося на MERN stack, Next.js, Nest.js, безопасности приложений и масштабировании веб-приложений.",
+        "description": "Официальное портфолио Абделлы Эдауди (Abdellah Edaoudi), Full Stack разработчика, специализирующегося на MERN stack, Next.js, Nest.js и создании безопасных и масштабируемых веб-приложений.",
         "keywords": "Абделла Эдауди, Abdellah Edaoudi, Full Stack разработчик, MERN Stack, Next.js, Nest.js,безопасность приложений, веб-разработка, React, Node.js, MongoDB, JavaScript, инженер-программист",
         "openGraph": {
             "title": "Абделла Эдауди (Abdellah Edaoudi) - Full Stack разработчик",
-            "description": "Откройте для себя официальное портфолио Абделлы Эдауди, эксперта по стеку MERN, Next.js, Nest.js и безопасности приложений."
+            "description": "Официальное портфолио Абделлы Эдауди, Full Stack разработчика, специализирующегося на MERN stack, Next.js, Nest.js и создании безопасных и масштабируемых веб-приложений."
         },
         "twitter": {
             "title": "Абделла Эдауди (Abdellah Edaoudi) | Full Stack разработчик и эксперт по безопасности",
-            "description": "Профессиональное портфолио Абделлы Эдауди. Full Stack разработчик, специализирующийся на MERN, Next.js и надежной безопасности приложений."
+            "description": "Официальное портфолио Абделлы Эдауди. Full Stack разработчик, специализирующийся на MERN, Next.js, Nest.js и создании безопасных и масштабируемых веб-приложений."
         },
         "google": {
             "name": "Абделла Эдауди (Abdellah Edaoudi) | Full Stack разработчик",
-            "description": "Full Stack портфолио Абделлы Эдауди. Специализируется на MERN, Next.js, Nest.js и безопасных веб-решениях."
+            "description": "Официальное портфолио Абделлы Эдауди. Специализируется на MERN, Next.js, Nest.js и создании безопасных и масштабируемых веб-приложений."
         }
     },
     "about": {

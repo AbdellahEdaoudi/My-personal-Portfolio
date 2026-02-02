@@ -72,7 +72,7 @@ function Contact({ content }) {
             </div>
             <div className="md:flex justify-center md:space-x-20 md:gap-20 md:space-y-0 space-y-5">
                 {/* Contact Information */}
-                <div className="w-64 text-center space-y-2">
+                <div className="w-64 mx-auto text-center space-y-2">
                     <h4 className="text-center">{content.title}</h4>
                     <ul className="bg-white space-y-1 py-4 rounded-lg border">
                         <li className="flex justify-center">

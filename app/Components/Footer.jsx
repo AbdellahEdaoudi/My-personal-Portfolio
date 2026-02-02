@@ -20,21 +20,25 @@ async function Footer({ lang = 'en' }) {
           })}
         </div>
         <div className='flex items-center gap-4 justify-center '>
-          <Link href='https://www.linkedin.com/in/abdellah-edaoudi' target='_blank'>
-            <Image src={"/icons/linkedin.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="LinkedIn" />
-          </Link>
-          <Link href='https://github.com/AbdellahEdaoudi' target='_blank'>
-            <Image src={"/icons/github.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="GitHub" />
-          </Link>
-          <Link href='https://www.youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw' target='_blank'>
-            <Image src={"/icons/youtube.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="YouTube" />
-          </Link>
-          <Link href="https://x.com/Edaoudi_abde" target="_blank">
-            <Image src={"/icons/twitter.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="Twitter" />
-          </Link>
-          <Link href='https://www.instagram.com/edaoudi_abdellah/' target='_blank'>
-            <Image src={"/icons/instagram.svg"} width={30} height={30} className='w-8 h-8 hover:scale-105 duration-200' alt="Instagram" />
-          </Link>
+          {[
+            { href: 'https://www.linkedin.com/in/abdellah-edaoudi', icon: '/icons/linkedin.svg', alt: 'LinkedIn' },
+            { href: 'https://github.com/AbdellahEdaoudi', icon: '/icons/github.svg', alt: 'GitHub' },
+            { href: 'https://www.youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw', icon: '/icons/youtube.svg', alt: 'YouTube' },
+            { href: 'https://x.com/Edaoudi_abde', icon: '/icons/twitter.svg', alt: 'Twitter' },
+            { href: 'https://www.instagram.com/edaoudi_abdellah/', icon: '/icons/instagram.svg', alt: 'Instagram' }
+          ].map((social, index) => (
+            <Link key={index} href={social.href} target='_blank'
+              title={`${social.alt} - Abdellah Edaoudi`}
+            >
+              <Image
+                src={social.icon}
+                width={32}
+                height={32}
+                className='w-8 h-8 hover:scale-105 duration-200'
+                alt={`Abdellah Edaoudi ${social.alt}`}
+              />
+            </Link>
+          ))}
         </div>
         <div>
           <h6 className='text-[10px] text-gray-500 pt-5'>{content.rights}</h6>

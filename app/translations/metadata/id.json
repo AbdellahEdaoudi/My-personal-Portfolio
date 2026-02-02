@@ -1,19 +1,19 @@
 {
     "home": {
         "title": "Abdellah Edaoudi | Pengembang Full Stack",
-        "description": "Portofolio profesional Abdellah Edaoudi, Pengembang Full Stack yang berspesialisasi dalam tumpukan MERN, Next.js, Nest.js, keamanan aplikasi, dan penskalaan aplikasi web. Jelajahi proyek saya.",
+        "description": "Portofolio resmi Abdellah Edaoudi, Pengembang Full Stack yang berspesialisasi dalam tumpukan MERN, Next.js, Nest.js, dan membangun aplikasi web yang aman dan dapat diskalakan.",
         "keywords": "Abdellah Edaoudi, Pengembang Full Stack, MERN Stack, Next.js, Nest.js, Keamanan aplikasi, Pengembangan Web, React, Node.js, MongoDB, JavaScript, Insinyur Perangkat Lunak",
         "openGraph": {
             "title": "Abdellah Edaoudi - Pengembang Full Stack",
-            "description": "Jelajahi portofolio resmi Abdellah Edaoudi, ahli dalam tumpukan MERN, Next.js, Nest.js, dan keamanan aplikasi."
+            "description": "Portofolio resmi Abdellah Edaoudi, Pengembang Full Stack yang berspesialisasi dalam tumpukan MERN, Next.js, Nest.js, dan membangun aplikasi web yang aman dan dapat diskalakan."
         },
         "twitter": {
             "title": "Abdellah Edaoudi | Pengembang Full Stack & Pakar Keamanan",
-            "description": "Portofolio profesional Abdellah Edaoudi. Pengembang Full Stack yang berspesialisasi dalam MERN, Next.js, dan keamanan aplikasi yang kuat."
+            "description": "Portofolio resmi Abdellah Edaoudi, Pengembang Full Stack yang berspesialisasi dalam tumpukan MERN, Next.js, Nest.js, dan membangun aplikasi web yang aman dan dapat diskalakan."
         },
         "google": {
             "name": "Abdellah Edaoudi | Pengembang Full Stack",
-            "description": "Portofolio Full Stack Abdellah Edaoudi. Spesialis dalam MERN, Next.js, Nest.js, dan solusi web yang aman."
+            "description": "Portofolio resmi Abdellah Edaoudi, Pengembang Full Stack yang berspesialisasi dalam tumpukan MERN, Next.js, Nest.js, dan membangun aplikasi web yang aman dan dapat diskalakan."
         }
     },
     "about": {
