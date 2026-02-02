@@ -1,19 +1,19 @@
 {
     "home": {
         "title": "Abdellah Edaoudi | 全栈开发人员",
-        "description": "Abdellah Edaoudi 的专业作品集，全栈开发人员，专精于 MERN 技术栈、Next.js、Nest.js、应用安全和 Web 应用程序扩展。探索我的项目和技术专业知识。",
+        "description": "Abdellah Edaoudi 的官方作品集，全栈开发人员，专精于 MERN 技术栈、Next.js、Nest.js 以及构建安全和可扩展的 Web 应用程序。",
         "keywords": "Abdellah Edaoudi, 全栈开发人员, MERN 技术栈, Next.js, Nest.js, 应用安全, Web 开发, React, Node.js, MongoDB, JavaScript, 软件工程师",
         "openGraph": {
             "title": "Abdellah Edaoudi - 全栈开发人员",
-            "description": "探索 Abdellah Edaoudi 的官方作品集，MERN 技术栈、Next.js、Nest.js 和应用安全领域的专家。"
+            "description": "Abdellah Edaoudi 的官方作品集，全栈开发人员，专精于 MERN 技术栈、Next.js、Nest.js 以及构建安全和可扩展的 Web 应用程序。"
         },
         "twitter": {
             "title": "Abdellah Edaoudi | 全栈开发人员与安全专家",
-            "description": "Abdellah Edaoudi 的专业作品集。全栈开发人员，专精于 MERN、Next.js 和强大的应用安全性。"
+            "description": "Abdellah Edaoudi 的官方作品集。全栈开发人员，专精于 MERN、Next.js、Nest.js 以及构建安全和可扩展的 Web 应用程序。"
         },
         "google": {
             "name": "Abdellah Edaoudi | 全栈开发人员",
-            "description": "Abdellah Edaoudi 的全栈开发作品集。专精于 MERN、Next.js、Nest.js 和安全的 Web 解决方案。"
+            "description": "Abdellah Edaoudi 的官方作品集。专精于 MERN、Next.js、Nest.js 以及构建安全和可扩展的 Web 应用程序。"
         }
     },
     "about": {

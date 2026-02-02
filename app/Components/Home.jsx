@@ -39,12 +39,11 @@ async function Home({ lang = 'en' }) {
                 title={`${social.alt} - Abdellah Edaoudi`}
               >
                 <Image
-                  priority
                   src={social.icon}
                   alt={`Abdellah Edaoudi ${social.alt}`}
                   width={30}
                   height={30}
-                  className="drop-shadow-sm"
+                  className="w-[30px] h-[30px] drop-shadow-sm"
                 />
               </Link>
             ))}

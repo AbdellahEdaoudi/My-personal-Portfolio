@@ -1,19 +1,19 @@
 {
     "home": {
         "title": "Abdellah Edaoudi | Sviluppatore Full Stack",
-        "description": "Portfolio professionale di Abdellah Edaoudi, Sviluppatore Full Stack specializzato nello stack MERN, Next.js, Nest.js, sicurezza delle applicazioni e scalabilità delle applicazioni web. Esplora i miei progetti.",
+        "description": "Portfolio ufficiale di Abdellah Edaoudi, uno sviluppatore Full Stack specializzato nello stack MERN, Next.js, Nest.js e nella creazione di applicazioni web sicure e scalabili.",
         "keywords": "Abdellah Edaoudi, Sviluppatore Full Stack, MERN Stack, Next.js, Nest.js, Sicurezza delle applicazioni, Sviluppo Web, React, Node.js, MongoDB, JavaScript, Ingegnere Software",
         "openGraph": {
             "title": "Abdellah Edaoudi - Sviluppatore Full Stack",
-            "description": "Esplora il portfolio ufficiale di Abdellah Edaoudi, esperto nello stack MERN, Next.js, Nest.js e sicurezza delle applicazioni."
+            "description": "Portfolio ufficiale di Abdellah Edaoudi, uno sviluppatore Full Stack specializzato nello stack MERN, Next.js, Nest.js e nella creazione di applicazioni web sicure e scalabili."
         },
         "twitter": {
             "title": "Abdellah Edaoudi | Sviluppatore Full Stack & Esperto di Sicurezza",
-            "description": "Portfolio professionale di Abdellah Edaoudi. Sviluppatore Full Stack specializzato in MERN, Next.js e sicurezza delle applicazioni."
+            "description": "Portfolio ufficiale di Abdellah Edaoudi, uno sviluppatore Full Stack specializzato nello stack MERN, Next.js, Nest.js e nella creazione di applicazioni web sicure e scalabili."
         },
         "google": {
             "name": "Abdellah Edaoudi | Sviluppatore Full Stack",
-            "description": "Portfolio Full Stack di Abdellah Edaoudi. Specializzato in MERN, Next.js, Nest.js e soluzioni web sicure."
+            "description": "Portfolio ufficiale di Abdellah Edaoudi, uno sviluppatore Full Stack specializzato nello stack MERN, Next.js, Nest.js e nella creazione di applicazioni web sicure e scalabili."
         }
     },
     "about": {

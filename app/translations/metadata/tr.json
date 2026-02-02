@@ -1,19 +1,19 @@
 {
     "home": {
         "title": "Abdellah Edaoudi | Full Stack Geliştirici",
-        "description": "Abdellah Edaoudi'nin profesyonel portföyü, MERN yığını, Next.js, Nest.js, uygulama güvenliği ve web uygulamalarının ölçeklendirilmesi konusunda uzmanlaşmış Full Stack Geliştirici. Projelerimi keşfedin.",
+        "description": "Abdellah Edaoudi'nin resmi portföyü, MERN yığını, Next.js, Nest.js ve güvenli ve ölçeklenebilir web uygulamaları oluşturma konusunda uzmanlaşmış bir Full Stack Geliştirici.",
         "keywords": "Abdellah Edaoudi, Full Stack Geliştirici, MERN Stack, Next.js, Nest.js, Uygulama Güvenliği, Web Geliştirme, React, Node.js, MongoDB, JavaScript, Yazılım Mühendisi",
         "openGraph": {
             "title": "Abdellah Edaoudi - Full Stack Geliştirici",
-            "description": "MERN yığını, Next.js, Nest.js ve uygulama güvenliği uzmanı Abdellah Edaoudi'nin resmi portföyünü keşfedin."
+            "description": "Abdellah Edaoudi'nin resmi portföyü, MERN yığını, Next.js, Nest.js ve güvenli ve ölçeklenebilir web uygulamaları oluşturma konusunda uzmanlaşmış bir Full Stack Geliştirici."
         },
         "twitter": {
             "title": "Abdellah Edaoudi | Full Stack Geliştirici & Güvenlik Uzmanı",
-            "description": "Abdellah Edaoudi'nin profesyonel portföyü. MERN, Next.js ve sağlam uygulama güvenliği konusunda uzmanlaşmış Full Stack Geliştirici."
+            "description": "Abdellah Edaoudi'nin resmi portföyü, MERN yığını, Next.js, Nest.js ve güvenli ve ölçeklenebilir web uygulamaları oluşturma konusunda uzmanlaşmış bir Full Stack Geliştirici."
         },
         "google": {
             "name": "Abdellah Edaoudi | Full Stack Geliştirici",
-            "description": "Abdellah Edaoudi'nin Full Stack portföyü. MERN, Next.js, Nest.js ve güvenli web çözümlerinde uzman."
+            "description": "Abdellah Edaoudi'nin resmi portföyü, MERN yığını, Next.js, Nest.js ve güvenli ve ölçeklenebilir web uygulamaları oluşturma konusunda uzmanlaşmış bir Full Stack Geliştirici."
         }
     },
     "about": {
