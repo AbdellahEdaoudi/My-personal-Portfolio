@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+
 import { useParams, usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlignJustify, ChevronDown } from './Icons';
@@ -92,7 +92,13 @@ export default function Header({ content }) {
             <div className='flex items-center py-4 justify-evenly bg-white text-gray-600 rounded-sm relative z-50'>
                 <div className='hover:scale-105 duration-300'>
                     <Link href={`/`}>
-                        <Image src={"/image.png"} alt='Logo' width={150} height={50} style={{ width: "auto", height: "auto" }} priority />
+                        <div className="flex items-center gap-1 cursor-pointer hover:bg-slate-50 px-3 py-1 rounded-lg transition-all duration-300">
+                            <span className="text-emerald-700 font-semibold text-xl group-hover:text-emerald-600 transition-colors duration-300">&lt;</span>
+                            <span className="text-2xl font-bold text-slate-900 tracking-tight">
+                                A<span className="text-emerald-600">.</span>Ed<span className="font-medium text-slate-600">Portfolio</span>
+                            </span>
+                            <span className="text-emerald-700 font-semibold text-xl group-hover:text-emerald-600 transition-colors duration-300">/&gt;</span>
+                        </div>
                     </Link>
                 </div>
                 <div className='hidden md:flex gap-6 items-center'>
