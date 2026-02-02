@@ -9,14 +9,14 @@ async function Home({ lang = 'en' }) {
   if (!content) return null;
 
   return (
-    <section className="mx-4">
+    <section className="mx-4 md:mt-0 mt-5">
       <div className="flex md:flex-row flex-col-reverse items-center justify-center gap-2 md:gap-12 lg:gap-28 md:py-10 pb-6 duration-300">
         {/* Profile */}
-        <div className="space-y-2 lg:space-y-3 flex flex-col items-center justify-center">
+        <div className="space-y-4 flex flex-col items-center justify-center">
           <h1 className="text-[2.4rem] md:w-[458px] text-center">
             {content.greeting}
           </h1>
-          <h2 className="text-[1.2rem] lg:text-[1.4rem]">
+          <h2 className="text-2xl">
             {content.role}
           </h2>
           <p className="border-2 rounded-lg md:w-[400px] text-justify p-2 bg-white shadow-md">
