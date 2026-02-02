@@ -1,19 +1,19 @@
 {
     "home": {
         "title": "Abdellah Edaoudi | Desenvolvedor Full Stack",
-        "description": "Portfólio profissional de Abdellah Edaoudi, Desenvolvedor Full Stack especializado em MERN stack, Next.js, Nest.js, segurança de aplicações e escalonamento de aplicações web. Explore meus projetos.",
+        "description": "Portfólio oficial de Abdellah Edaoudi, um desenvolvedor Full Stack especializado em MERN stack, Next.js, Nest.js e na criação de aplicações web seguras e escaláveis.",
         "keywords": "Abdellah Edaoudi, Desenvolvedor Full Stack, MERN Stack, Next.js, Nest.js, Segurança de aplicações, Desenvolvimento Web, React, Node.js, MongoDB, JavaScript, Engenheiro de Software",
         "openGraph": {
             "title": "Abdellah Edaoudi - Desenvolvedor Full Stack",
-            "description": "Explore o portfólio oficial de Abdellah Edaoudi, especialista em MERN stack, Next.js, Nest.js e segurança de aplicações."
+            "description": "Portfólio oficial de Abdellah Edaoudi, um desenvolvedor Full Stack especializado em MERN stack, Next.js, Nest.js e na criação de aplicações web seguras e escaláveis."
         },
         "twitter": {
             "title": "Abdellah Edaoudi | Desenvolvedor Full Stack & Especialista em Segurança",
-            "description": "Portfólio profissional de Abdellah Edaoudi. Desenvolvedor Full Stack especializado em MERN, Next.js e segurança robusta de aplicações."
+            "description": "Portfólio oficial de Abdellah Edaoudi, um desenvolvedor Full Stack especializado em MERN stack, Next.js, Nest.js e na criação de aplicações web seguras e escaláveis."
         },
         "google": {
             "name": "Abdellah Edaoudi | Desenvolvedor Full Stack",
-            "description": "Portfólio Full Stack de Abdellah Edaoudi. Especializado em MERN, Next.js, Nest.js e soluções web seguras."
+            "description": "Portfólio oficial de Abdellah Edaoudi, um desenvolvedor Full Stack especializado em MERN stack, Next.js, Nest.js e na criação de aplicações web seguras e escaláveis."
         }
     },
     "about": {

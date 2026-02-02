@@ -1,19 +1,19 @@
 {
     "home": {
         "title": "アブデラ・エダウディ (Abdellah Edaoudi) | フルスタック開発者",
-        "description": "アブデラ・エダウディ (Abdellah Edaoudi) の専門ポートフォリオ。MERNスタック、Next.js、Nest.js、アプリケーションセキュリティ、スケーラブルなWebアプリケーションを専門とするフルスタック開発者。",
+        "description": "アブデラ・エダウディ (Abdellah Edaoudi) の公式ポートフォリオ。MERNスタック、Next.js、Nest.js、および安全でスケーラブルなWebアプリケーションの構築を専門とするフルスタック開発者。",
         "keywords": "アブデラ・エダウディ, Abdellah Edaoudi, フルスタック開発者, MERNスタック, Next.js, Nest.js, アプリケーションセキュリティ, Web開発, React, Node.js, MongoDB, JavaScript, ソフトウェアエンジニア",
         "openGraph": {
             "title": "アブデラ・エダウディ (Abdellah Edaoudi) - フルスタック開発者",
-            "description": "MERNスタック、Next.js、Nest.js、アプリケーションセキュリティの専門家、アブデラ・エダウディの公式サイトをご覧ください。"
+            "description": "アブデラ・エダウディの公式ポートフォリオ。MERNスタック、Next.js、Nest.js、および安全でスケーラブルなWebアプリケーションの構築を専門とするフルスタック開発者。"
         },
         "twitter": {
             "title": "アブデラ・エダウディ (Abdellah Edaoudi) | フルスタック開発者 & セキュリティエキスパート",
-            "description": "アブデラ・エダウディの専門ポートフォリオ。MERN、Next.js、および堅牢なアプリケーションセキュリティを専門とするフルスタック開発者。"
+            "description": "アブデラ・エダウディの公式ポートフォリオ。MERN、Next.js、Nest.js、および安全でスケーラブルなWebアプリケーションの構築を専門とするフルスタック開発者。"
         },
         "google": {
             "name": "アブデラ・エダウディ (Abdellah Edaoudi) | フルスタック開発者",
-            "description": "アブデラ・エダウディのフルスタックポートフォリオ。MERN、Next.js、Nest.js、および安全なWebソリューションを専門としています。"
+            "description": "アブデラ・エダウディの公式ポートフォリオ。MERN、Next.js、Nest.js、および安全でスケーラブルなWebアプリケーションの構築を専門としています。"
         }
     },
     "about": {

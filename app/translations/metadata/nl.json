@@ -1,19 +1,19 @@
 {
     "home": {
         "title": "Abdellah Edaoudi | Full Stack Ontwikkelaar",
-        "description": "Professioneel portfolio van Abdellah Edaoudi, Full Stack Ontwikkelaar gespecialiseerd in MERN stack, Next.js, Nest.js, applicatiebeveiliging en het schalen van webapplicaties. Ontdek mijn projecten.",
+        "description": "Officieel portfolio van Abdellah Edaoudi, een Full Stack Ontwikkelaar gespecialiseerd in MERN stack, Next.js, Nest.js en het bouwen van veilige en schaalbare webapplicaties.",
         "keywords": "Abdellah Edaoudi, Full Stack Ontwikkelaar, MERN Stack, Next.js, Nest.js, Applicatiebeveiliging, Webontwikkeling, React, Node.js, MongoDB, JavaScript, Software Engineer",
         "openGraph": {
             "title": "Abdellah Edaoudi - Full Stack Ontwikkelaar",
-            "description": "Ontdek het officiële portfolio van Abdellah Edaoudi, expert in MERN stack, Next.js, Nest.js en applicatiebeveiliging."
+            "description": "Officieel portfolio van Abdellah Edaoudi, een Full Stack Ontwikkelaar gespecialiseerd in MERN stack, Next.js, Nest.js en het bouwen van veilige en schaalbare webapplicaties."
         },
         "twitter": {
             "title": "Abdellah Edaoudi | Full Stack Ontwikkelaar & Beveiligingsexpert",
-            "description": "Professioneel portfolio van Abdellah Edaoudi. Full Stack Ontwikkelaar gespecialiseerd in MERN, Next.js en robuuste applicatiebeveiliging."
+            "description": "Officieel portfolio van Abdellah Edaoudi, een Full Stack Ontwikkelaar gespecialiseerd in MERN stack, Next.js, Nest.js en het bouwen van veilige en schaalbare webapplicaties."
         },
         "google": {
             "name": "Abdellah Edaoudi | Full Stack Ontwikkelaar",
-            "description": "Full Stack portfolio van Abdellah Edaoudi. Gespecialiseerd in MERN, Next.js, Nest.js en veilige weboplossingen."
+            "description": "Officieel portfolio van Abdellah Edaoudi, een Full Stack Ontwikkelaar gespecialiseerd in MERN stack, Next.js, Nest.js en het bouwen van veilige en schaalbare webapplicaties."
         }
     },
     "about": {

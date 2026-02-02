@@ -1,19 +1,19 @@
 {
     "home": {
         "title": "Abdellah Edaoudi | Développeur Full Stack",
-        "description": "Portfolio professionnel d'Abdellah Edaoudi, Développeur Full Stack spécialisé en pile MERN, Next.js, Nest.js, sécurité des applications et mise à l'échelle d'applications web. Explorez mes projets et mon expertise technique.",
+        "description": "Portfolio officiel d'Abdellah Edaoudi, Développeur Full Stack spécialisé dans la pile MERN, Next.js, Nest.js et la création d'applications web sécurisées et évolutives.",
         "keywords": "Abdellah Edaoudi, Développeur Full Stack, MERN Stack, Next.js, Nest.js, Sécurité des applications, Développement Web, React, Node.js, MongoDB, JavaScript, Ingénieur Logiciel, Maroc",
         "openGraph": {
             "title": "Abdellah Edaoudi - Développeur Full Stack",
-            "description": "Découvrez le portfolio officiel d'Abdellah Edaoudi, expert en pile MERN, Next.js, Nest.js et sécurité des applications."
+            "description": "Portfolio officiel d'Abdellah Edaoudi, Développeur Full Stack spécialisé dans la pile MERN, Next.js, Nest.js et la création d'applications web sécurisées et évolutives."
         },
         "twitter": {
             "title": "Abdellah Edaoudi | Développeur Full Stack & Expert Sécurité",
-            "description": "Portfolio professionnel d'Abdellah Edaoudi. Développeur Full Stack spécialisé en MERN, Next.js et sécurité robuste des applications."
+            "description": "Portfolio officiel d'Abdellah Edaoudi, Développeur Full Stack spécialisé dans la pile MERN, Next.js, Nest.js et la création d'applications web sécurisées et évolutives."
         },
         "google": {
             "name": "Abdellah Edaoudi | Développeur Full Stack",
-            "description": "Portfolio Full Stack d'Abdellah Edaoudi. Spécialisé en MERN, Next.js, Nest.js et solutions web sécurisées."
+            "description": "Portfolio officiel d'Abdellah Edaoudi, Développeur Full Stack spécialisé dans la pile MERN, Next.js, Nest.js et la création d'applications web sécurisées et évolutives."
         }
     },
     "about": {
