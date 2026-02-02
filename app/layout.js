@@ -3,6 +3,7 @@ import './globals.css'
 import { Prompt } from 'next/font/google'
 import ScrollToTop from './Components/ScrollToTop'
 import { ToastProvider } from './Components/Toast'
+import CinematicBackground from './Components/CinematicBackground'
 
 export const metadata = {
   metadataBase: new URL('https://abdellah-edaoudi.vercel.app'),
@@ -37,7 +38,7 @@ export const metadata = {
     type: 'profile',
     images: [
       {
-        url: '/profile-pic.png',
+        url: '/profile/profile.jpg',
         alt: 'Abdellah Edaoudi Portfolio',
       }
     ],
@@ -47,7 +48,7 @@ export const metadata = {
     title: 'Abdellah Edaoudi | Full Stack Developer',
     description: 'Passionate Full Stack Developer building modern, scalable web applications.',
     creator: '@Edaoudi_abde',
-    images: ['/profile-pic.png'],
+    images: ['/profile/profile.jpg'],
   },
   robots: {
     index: true,
@@ -61,9 +62,9 @@ export const metadata = {
     },
   },
   icons: {
-    icon: '/profile-pic.png',
-    shortcut: '/profile-pic.png',
-    apple: '/profile-pic.png',
+    icon: '/profile/profile.jpg',
+    shortcut: '/profile/profile.jpg',
+    apple: '/profile/profile.jpg',
   },
   alternates: {
     canonical: 'https://abdellah-edaoudi.vercel.app',
@@ -74,7 +75,8 @@ const prompt = Prompt({ subsets: ["latin"], weight: '500' });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${prompt.className} bg-gray-50`}>
+      <body className={`${prompt.className} relative`}>
+        <CinematicBackground />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -83,7 +85,7 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               "name": "Abdellah Edaoudi",
               "url": "https://abdellah-edaoudi.vercel.app",
-              "image": "https://abdellah-edaoudi.vercel.app/profile-pic.png",
+              "image": "https://abdellah-edaoudi.vercel.app/profile/profile.jpg",
               "sameAs": [
                 "https://linkedin.com/in/abdellah-edaoudi/",
                 "https://github.com/AbdellahEdaoudi",

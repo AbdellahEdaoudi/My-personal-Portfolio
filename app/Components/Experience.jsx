@@ -10,7 +10,7 @@ export default async function Experience({ lang = 'en' }) {
     if (!content) return null;
 
     return (
-        <section className="py-5 bg-white min-h-screen">
+        <section className="py-5 min-h-screen">
             <div className="container mx-auto px-4 max-w-4xl">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold text-gray-900">{content.title}</h2>

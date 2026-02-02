@@ -7,12 +7,19 @@
         "education": "Pendidikan",
         "experience": "Pengalaman",
         "contact": "Kontak",
-        "admin": "Admin"
+        "admin": "Admin",
+        "mobileMenu": {
+            "navigation": "Navigasi",
+            "explore": "Jelajahi bagian ini",
+            "history": "Riwayat",
+            "learning": "Pembelajaran"
+        }
     },
     "home": {
         "greeting": "Hai, Saya Abdellah Edaoudi",
         "role": "🔷 Full Stack Developer 🔷",
-        "description": "Saya berspesialisasi dalam mengembangkan situs web dan aplikasi responsif menggunakan tumpukan MERN, serta kerangka kerja lanjutan seperti Next.js dan NestJS untuk kinerja dan skalabilitas yang optimal, dengan fokus yang kuat pada keamanan aplikasi dan perlindungan data."
+        "description": "Saya berspesialisasi dalam mengembangkan situs web dan aplikasi responsif menggunakan tumpukan MERN, serta kerangka kerja lanjutan seperti Next.js dan NestJS untuk kinerja dan skalabilitas yang optimal, dengan fokus yang kuat pada keamanan aplikasi dan perlindungan data.",
+        "portfolio": "Portofolio"
     },
     "about": {
         "title": "Tentang Saya",
@@ -504,5 +511,8 @@
             }
         ],
         "rights": "© Abdellah Edaoudi Hak cipta dilindungi undang-undang ©"
+    },
+    "scrollToTop": {
+        "backToTop": "Kembali ke atas"
     }
 }

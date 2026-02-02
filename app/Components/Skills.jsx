@@ -37,12 +37,12 @@ async function Skills({ lang = 'en' }) {
   ];
 
   return (
-    <section id='skill' className='bg-gray-50 pt-4 pb-16 md:mt-0 mt-5 flex flex-col items-center md:px-10 px-5'>
+    <section id='skill' className='py-5 flex flex-col items-center md:px-10 px-5'>
       <div className='text-center pb-10'>
         <p className='text-4xl font-bold'>{content.title}</p>
         <p className='text-gray-400 text-sm'>{content.subtitle}</p>
       </div>
-      <div className='grid md:grid-cols-2 grid-cols-1 gap-6 md:mx-32'>
+      <div className='pb-5 grid md:grid-cols-2 grid-cols-1 gap-6 md:mx-32'>
         {/* Frontend developer */}
         <div className='hover:scale-105 transition duration-300 text-center bg-white border-2 md:px-10 px-5 flex flex-col items-center pt-7 pb-10 rounded-lg shadow-lg'>
           <h1 className='pb-5'>{content.frontendTitle}</h1>

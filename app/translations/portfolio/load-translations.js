@@ -1,4 +1,4 @@
-import 'server-only'
+// This file can be used in both Server and Client Components
 
 const translations = {
     en: () => import('./en.json').then((module) => module.default),

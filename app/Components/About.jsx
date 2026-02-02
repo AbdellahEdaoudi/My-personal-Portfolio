@@ -11,12 +11,12 @@ async function About({ lang = 'en' }) {
   if (!content) return null;
 
   return (
-    <section id="about" className="py-4 md:min-h-screen">
+    <section id="about" className="py-4">
       <div className="text-center">
         <p className="text-4xl font-bold">{content.title}</p>
         <p className="text-gray-400 text-sm">{content.subtitle}</p>
       </div>
-      <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 pt-2 md:pt-7 px-4">
+      <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 pt-2 md:pt-7 px-4 pb-4">
         <div className="flex flex-col-reverse  md:items-start items-center md:flex-row gap-6 md:gap-28">
           {/* Image Section - About Page Premium Version */}
           <div className="relative group md:block hidde">
@@ -54,24 +54,24 @@ async function About({ lang = 'en' }) {
           </div>
           <div className="space-y-4">
             <ul className="flex gap-4 items-center justify-center pt-4">
-              <li className="flex flex-col items-center text-center bg-white p-4 rounded-md border">
+              <li className="flex flex-col items-center text-center bg-white/30 backdrop-blur-xl p-4 rounded-2xl border border-white/40 shadow-lg transition-all hover:bg-white/50">
                 <Award />
                 <span className="text-[13px]">{content.experience}</span>
-                <span className="text-[10px] text-gray-400">
+                <span className="text-[10px] text-gray-500">
                   {content.experienceDetail}
                 </span>
               </li>
-              <li className="flex flex-col items-center text-center bg-white py-4 md:px-4 px-2 rounded-md border">
+              <li className="flex flex-col items-center text-center bg-white/30 backdrop-blur-xl py-4 md:px-4 px-2 rounded-2xl border border-white/40 shadow-lg transition-all hover:bg-white/50">
                 <Briefcase />
                 <span className="text-[13px]">{content.completed}</span>
-                <span className="text-[10px] text-gray-400">
+                <span className="text-[10px] text-gray-500">
                   {content.completedDetail}
                 </span>
               </li>
-              <li className="flex flex-col items-center text-center bg-white px-5 duration-300 md:px-6 py-4 rounded-md border">
+              <li className="flex flex-col items-center text-center bg-white/30 backdrop-blur-xl px-5 duration-300 md:px-6 py-4 rounded-2xl border border-white/40 shadow-lg transition-all hover:bg-white/50">
                 <Headset />
                 <span className="text-[13px]">{content.support}</span>
-                <span className="text-[10px] text-gray-400">
+                <span className="text-[10px] text-gray-500">
                   {content.supportDetail}
                 </span>
               </li>
