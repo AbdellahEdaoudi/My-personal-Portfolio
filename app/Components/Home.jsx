@@ -41,9 +41,9 @@ async function Home({ lang = 'en' }) {
                 <Image
                   src={social.icon}
                   alt={`Abdellah Edaoudi ${social.alt}`}
-                  width={30}
-                  height={30}
-                  className="w-[30px] h-[30px] drop-shadow-sm"
+                  width={32}
+                  height={32}
+                  className="w-[32px] h-[32px] drop-shadow-sm"
                 />
               </Link>
             ))}
