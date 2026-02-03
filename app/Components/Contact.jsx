@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import axios from "axios";
 import { useToast } from "./Toast";
 import Image from "next/image";
@@ -114,7 +115,18 @@ function Contact({ content }) {
                                 }}
                                 className={`text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2 ${errors.subject ? 'border-red-500 bg-red-50' : 'border-gray-200 focus:border-gray-800'}`}
                             />
-                            {errors.subject && <p className="text-red-500 text-[10px] mt-1">{errors.subject}</p>}
+                            <AnimatePresence>
+                                {errors.subject && (
+                                    <motion.p
+                                        initial={{ opacity: 0, y: -10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: -10 }}
+                                        className="text-red-500 text-[10px] mt-1"
+                                    >
+                                        {errors.subject}
+                                    </motion.p>
+                                )}
+                            </AnimatePresence>
                         </div>
 
                         <div>
@@ -130,7 +142,18 @@ function Contact({ content }) {
                                 }}
                                 className={`text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2 ${errors.email ? 'border-red-500 bg-red-50' : 'border-gray-200 focus:border-gray-800'}`}
                             />
-                            {errors.email && <p className="text-red-500 text-[10px] mt-1">{errors.email}</p>}
+                            <AnimatePresence>
+                                {errors.email && (
+                                    <motion.p
+                                        initial={{ opacity: 0, y: -10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: -10 }}
+                                        className="text-red-500 text-[10px] mt-1"
+                                    >
+                                        {errors.email}
+                                    </motion.p>
+                                )}
+                            </AnimatePresence>
                         </div>
 
                         <div>
@@ -144,7 +167,18 @@ function Contact({ content }) {
                                 }}
                                 className={`text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2 ${errors.message ? 'border-red-500 bg-red-50' : 'border-gray-200 focus:border-gray-800'}`}
                             />
-                            {errors.message && <p className="text-red-500 text-[10px] mt-1">{errors.message}</p>}
+                            <AnimatePresence>
+                                {errors.message && (
+                                    <motion.p
+                                        initial={{ opacity: 0, y: -10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: -10 }}
+                                        className="text-red-500 text-[10px] mt-1"
+                                    >
+                                        {errors.message}
+                                    </motion.p>
+                                )}
+                            </AnimatePresence>
                         </div>
 
                         <button
