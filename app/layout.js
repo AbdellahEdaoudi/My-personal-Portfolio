@@ -4,6 +4,7 @@ import { Prompt } from 'next/font/google'
 import ScrollToTop from './Components/ScrollToTop'
 import { ToastProvider } from './Components/Toast'
 import CinematicBackground from './Components/CinematicBackground'
+import CustomCursor from './Components/CustomCursor'
 
 export const metadata = {
   metadataBase: new URL('https://abdellah-edaoudi.vercel.app'),
@@ -94,18 +95,18 @@ export default function RootLayout({ children }) {
                 "https://instagram.com/edaoudi_abdellah/",
                 "https://youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw"
               ],
-              "jobTitle": "Full Stack Developer & Software Engineer",
+              "jobTitle": "Full Stack Developer",
               "nationality": {
                 "@type": "Country",
                 "name": "Morocco"
               },
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "El-Aaiun",
+                "addressLocality": "Laayoune",
                 "addressCountry": "MA"
               },
               "description": "Official portfolio of Abdellah Edaoudi, a Full Stack Developer specialized in MERN stack, Next.js, Nest.js, and building secure and scalable web applications.",
-              "disambiguatingDescription": "Software Engineer and developer based in El-Aaiun, Morocco. Not to be confused with the Moroccan singer Abdellah Daoudi.",
+              "disambiguatingDescription": "Full Stack Developer based in Morocco. Not to be confused with the Moroccan singer Abdellah Daoudi.",
               "brand": {
                 "@type": "Brand",
                 "name": "Abdellah Edaoudi"
@@ -118,6 +119,7 @@ export default function RootLayout({ children }) {
         </ToastProvider>
         <Analytics />
         <ScrollToTop />
+        <CustomCursor />
       </body>
     </html>
   )

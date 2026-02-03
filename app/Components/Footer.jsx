@@ -15,7 +15,13 @@ async function Footer({ lang = 'en' }) {
         <div className='pb-4 flex items-center gap-3 justify-center text-gray-500'>
           {content.links && content.links.map((l, i) => {
             return (
-              <Link key={i} href={`/${lang}${l.path}`} >{l.name}</Link>
+              <Link
+                key={i}
+                href={`/${lang}${l.path}`}
+                className="hover:text-green-800 transition-colors duration-300"
+              >
+                {l.name}
+              </Link>
             )
           })}
         </div>

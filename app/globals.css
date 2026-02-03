@@ -33,3 +33,21 @@
         transform: rotate(360deg);
     }
 }
+
+/* Custom Cursor Styles */
+@media (hover: hover) and (pointer: fine) {
+
+    html,
+    body {
+        cursor: none !important;
+    }
+
+    a,
+    button,
+    [role="button"],
+    input,
+    textarea,
+    select {
+        cursor: none !important;
+    }
+}

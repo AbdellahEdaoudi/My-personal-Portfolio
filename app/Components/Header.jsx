@@ -93,7 +93,7 @@ export default function Header({ content }) {
             <div className='flex items-center py-4 justify-evenly text-gray-800 rounded-sm relative z-50'>
                 <div className='hover:scale-105 duration-300'>
                     <Link href={`/`}>
-                        <div className="flex items-center gap-1 cursor-pointer hover:bg-slate-50 px-3 py-1 rounded-lg transition-all duration-300">
+                        <div className="flex items-center gap-1 hover:bg-slate-50 px-3 py-1 rounded-lg transition-all duration-300">
                             <span className="text-emerald-700 font-semibold text-xl group-hover:text-emerald-600 transition-colors duration-300">&lt;</span>
                             <span className="text-2xl font-bold text-slate-900 tracking-tight">
                                 A<span className="text-emerald-600">.</span>Ed<span className="font-medium text-slate-600">Portfolio</span>
