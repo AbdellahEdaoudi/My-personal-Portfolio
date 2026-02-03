@@ -18,7 +18,7 @@
     "home": {
         "greeting": "Salut, je suis Abdellah Edaoudi",
         "role": "🔷 Développeur Full Stack 🔷",
-        "description": "Je me spécialise dans le développement de sites web et d'applications réactives en utilisant la stack MERN, ainsi que des frameworks avancés tels que Next.js et NestJS pour des performances et une scalabilité optimales, avec un fort accent sur la sécurité des applications et la protection des données.",
+        "description": "Je me spécialise dans la création d'applications web full-stack sécurisées à l'aide de la pile MERN, ainsi que de frameworks avancés tels que Next.js et NestJS. Je me concentre sur la fourniture de solutions performantes et évolutives avec un code propre et une excellente expérience utilisateur.",
         "portfolio": "Portfolio"
     },
     "about": {

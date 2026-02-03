@@ -18,7 +18,7 @@
     "home": {
         "greeting": "你好, 我是 Abdellah Edaoudi",
         "role": "🔷 全栈开发人员 🔷",
-        "description": "我专注于使用 MERN 技术栈以及 Next.js 和 NestJS 等高级框架开发响应式网站和应用程序，以实现最佳性能和可扩展性，并特别注重应用程序安全和数据保护。",
+        "description": "我专注于使用 MERN 技术栈以及 Next.js 和 NestJS 等高级框架构建安全的、全栈 Web 应用程序。我致力于提供具有清晰代码且能够提供出色用户体验的高性能、可扩展解决方案。",
         "portfolio": "作品集"
     },
     "about": {
