@@ -66,11 +66,14 @@ async function Home({ lang = 'en' }) {
 
           <div className="relative z-10 p-[1px] bg-gradient-to-br from-gray-200 via-white to-gray-100 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
             <div className="relative bg-white p-2 rounded-[2.5rem] overflow-hidden">
-              <div className="overflow-hidden rounded-[2rem]">
+              <div className="overflow-hidden rounded-[2rem] bg-gray-100 relative md:w-80 md:h-[360px] w-56 h-64">
+                {/* Loader / Placeholder Background - Reserves space */}
+                <div className="absolute inset-0 bg-gradient-to-r from-gray-100 via-gray-200 to-gray-100 animate-pulse"></div>
+
                 <Image
                   src="/profile/profile.jpg"
-                  className="md:w-80 md:h-[360px] object-cover h-64 w-56 transform transition-transform duration-1000 group-hover:scale-105"
-                  alt="Abdellah Edaoudi - Full Stack Developer and Software Engineer"
+                  className="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-105 relative z-10"
+                  alt="Abdellah Edaoudi - Full Stack Developer"
                   width={500}
                   height={500}
                   priority
