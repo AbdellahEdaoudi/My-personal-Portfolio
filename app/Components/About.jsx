@@ -58,7 +58,7 @@ async function About({ lang = 'en' }) {
                 <Award />
                 <span className="text-[13px]">{content.experience}</span>
                 <span className="text-[10px] text-gray-500">
-                  {content.experienceDetail}
+                  {new Date().getFullYear() - 2024} {content.experienceDetail}
                 </span>
               </li>
               <li className="flex flex-col items-center text-center bg-white/30 backdrop-blur-xl py-4 md:px-4 px-2 rounded-2xl border border-white/40 shadow-lg transition-all hover:bg-white/50">
