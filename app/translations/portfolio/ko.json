@@ -118,7 +118,7 @@
                 "title": "전자 상거래 백엔드",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
-                "websiteUrl": "/Requirements.docx.pdf",
+                "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
                 "description": "전자 상거래 플랫폼을 위한 강력하고 확장 가능한 백엔드 시스템입니다. 이 시스템은 사용자 관리, 제품 재고 정리, 주문 처리, 결제 처리(현금 또는 카드), 쿠폰 추가, 리뷰, 카테고리 및 브랜드 관리, 공급업체 관리, 세금 규제 등 다양한 기능을 처리합니다.",
@@ -463,7 +463,7 @@
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "El-Aaiun , 모로코",
-                "imageUrl": "/cmc-maroc.png"
+                "imageUrl": "/Education/cmc.png"
             },
             {
                 "institution": "바바 아흐메드 빈 무함마드 야흐디 고등학교",
@@ -471,7 +471,7 @@
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "El-Aaiun , 모로코",
-                "imageUrl": "/BabAhmedImage.jpg"
+                "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
     },
@@ -496,6 +496,10 @@
         "errorMessage": "오류가 발생했습니다. 다시 시도하십시오."
     },
     "footer": {
+        "name": "Abdellah Edaoudi",
+        "tagline": "풀스택 개발자 | 안전하고 현대적인 웹 앱 구축",
+        "backToTop": "맨 위로",
+        "siteMapLabel": "사이트 맵",
         "links": [
             {
                 "name": "소개",
@@ -508,9 +512,27 @@
             {
                 "name": "프로젝트",
                 "path": "/Projects"
+            },
+            {
+                "name": "교육",
+                "path": "/Education"
+            },
+            {
+                "name": "경력",
+                "path": "/Experience"
+            },
+            {
+                "name": "연락처",
+                "path": "/Contact"
             }
         ],
-        "rights": "© Abdellah Edaoudi 모든 권리 보유 ©"
+        "connectLabel": "연결하다",
+        "emailLabel": "이메일",
+        "whatsappLabel": "WhatsApp",
+        "locationLabel": "위치",
+        "locationValue": "모로코 엘아이운",
+        "copyright": "저작권",
+        "rights": "모든 권리 보유"
     },
     "scrollToTop": {
         "backToTop": "맨 위로"

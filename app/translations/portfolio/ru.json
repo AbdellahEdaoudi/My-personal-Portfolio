@@ -118,7 +118,7 @@
                 "title": "E-Commerce Back-End",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
-                "websiteUrl": "/Requirements.docx.pdf",
+                "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
                 "description": "Надежная и масштабируемая бэкенд-система для платформы электронной коммерции. Система выполняет различные функции, такие как управление пользователями, организация инвентаря продуктов, обработка заказов, обработка платежей (наличными или картой), добавление купонов, отзывы, управление категориями и брендами, управление поставщиками и налоговое регулирование.",
@@ -463,7 +463,7 @@
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "El-Aaiun , Марокко",
-                "imageUrl": "/cmc-maroc.png"
+                "imageUrl": "/Education/cmc.png"
             },
             {
                 "institution": "Средняя школа Баба Ахмеда бин Мухаммада Яхдиха",
@@ -471,7 +471,7 @@
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "El-Aaiun , Марокко",
-                "imageUrl": "/BabAhmedImage.jpg"
+                "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
     },
@@ -496,6 +496,10 @@
         "errorMessage": "Произошла ошибка. Пожалуйста, попробуйте еще раз."
     },
     "footer": {
+        "name": "Абделла Эдауди",
+        "tagline": "Full Stack разработчик | Создание безопасных и современных веб-приложений",
+        "backToTop": "Наверх",
+        "siteMapLabel": "Карта сайта",
         "links": [
             {
                 "name": "Обо мне",
@@ -508,9 +512,27 @@
             {
                 "name": "Проекты",
                 "path": "/Projects"
+            },
+            {
+                "name": "Образование",
+                "path": "/Education"
+            },
+            {
+                "name": "Опыт",
+                "path": "/Experience"
+            },
+            {
+                "name": "Контакты",
+                "path": "/Contact"
             }
         ],
-        "rights": "© Абделла Эдауди Все права защищены ©"
+        "connectLabel": "Связаться",
+        "emailLabel": "Электронная почта",
+        "whatsappLabel": "WhatsApp",
+        "locationLabel": "Местоположение",
+        "locationValue": "Эль-Аюн, Марокко",
+        "copyright": "Авторское право",
+        "rights": "Все права защищены"
     },
     "scrollToTop": {
         "backToTop": "Наверх"

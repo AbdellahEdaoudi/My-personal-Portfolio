@@ -118,7 +118,7 @@
                 "title": "E-Commerce Back-End",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
-                "websiteUrl": "/Requirements.docx.pdf",
+                "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
                 "description": "Een robuust en schaalbaar back-endsysteem voor een e-commerceplatform. Het systeem verwerkt diverse functies zoals gebruikersbeheer, organisatie van productinventaris, orderverwerking, betalingsafhandeling (via contant geld of kaart), toevoegen van coupons, beoordelingen, categorie- en merkbeheer, leveranciersbeheer en belastingregelgeving.",
@@ -463,7 +463,7 @@
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "El-Aaiun, Marokko",
-                "imageUrl": "/cmc-maroc.png"
+                "imageUrl": "/Education/cmc.png"
             },
             {
                 "institution": "Baba Ahmed bin Muhammad Yahdih Middelbare School",
@@ -471,7 +471,7 @@
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "El-Aaiun, Marokko",
-                "imageUrl": "/BabAhmedImage.jpg"
+                "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
     },
@@ -496,6 +496,10 @@
         "errorMessage": "Er is een fout opgetreden. Probeer het opnieuw."
     },
     "footer": {
+        "name": "Abdellah Edaoudi",
+        "tagline": "Full Stack Ontwikkelaar | Veilige & Moderne Webapps Bouwen",
+        "backToTop": "Terug naar boven",
+        "siteMapLabel": "Sitemap",
         "links": [
             {
                 "name": "Over mij",
@@ -508,9 +512,27 @@
             {
                 "name": "Projecten",
                 "path": "/Projects"
+            },
+            {
+                "name": "Opleiding",
+                "path": "/Education"
+            },
+            {
+                "name": "Ervaring",
+                "path": "/Experience"
+            },
+            {
+                "name": "Contact",
+                "path": "/Contact"
             }
         ],
-        "rights": "© Abdellah Edaoudi Alle rechten voorbehouden ©"
+        "connectLabel": "Verbinden",
+        "emailLabel": "E-mail",
+        "whatsappLabel": "WhatsApp",
+        "locationLabel": "Locatie",
+        "locationValue": "El-Aaiun, Marokko",
+        "copyright": "Auteursrecht",
+        "rights": "Alle rechten voorbehouden"
     },
     "scrollToTop": {
         "backToTop": "Terug naar boven"

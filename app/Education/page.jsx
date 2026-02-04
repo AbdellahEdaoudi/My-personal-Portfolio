@@ -1,8 +1,10 @@
+import { getTranslation } from "../translations/portfolio/load-translations";
 import t from "../translations/metadata/en.json";
-import React from "react";
+import Footer from "../Components/Pages/Footer";
+import Education from "../Components/Pages/Education";
+import Header from "../Components/Pages/Header";
 
 const meta = t.education;
-
 export const metadata = {
   title: meta.title,
   description: meta.description,
@@ -16,7 +18,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://abdellah-edaoudi.vercel.app/profile-pic.png',
+        url: 'https://abdellah-edaoudi.vercel.app/profile/profile.jpg',
         width: 1200,
         height: 630,
         alt: meta.title,
@@ -28,7 +30,7 @@ export const metadata = {
     title: meta.title,
     description: meta.description,
     creator: '@Edaoudi_abde',
-    images: ['https://abdellah-edaoudi.vercel.app/profile-pic.png'],
+    images: ['https://abdellah-edaoudi.vercel.app/profile/profile.jpg'],
   },
   alternates: {
     canonical: '/en/Education',
@@ -53,20 +55,14 @@ export const metadata = {
   },
 };
 
-import Footer from "../Components/Footer";
-import Education from "../Components/Education";
-import Header from "../Components/Header";
-import { getTranslation } from "../translations/portfolio/load-translations";
-
-
 async function page() {
   const dictionary = await getTranslation('en');
 
   return (
     <div>
-      <Header content={dictionary.header} />
-      <Education content={dictionary.education} />
-      <Footer />
+      <Header content={dictionary.header} lang="en" />
+      <Education content={dictionary.education} lang="en" />
+      <Footer content={dictionary.footer} lang="en" />
     </div>
   );
 }

@@ -118,7 +118,7 @@
                 "title": "ई-कॉमर्स बैक-एंड",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
-                "websiteUrl": "/Requirements.docx.pdf",
+                "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
                 "description": "ई-कॉमर्स प्लेटफॉर्म के लिए एक मजबूत और स्केलेबल बैक-एंड सिस्टम। सिस्टम उपयोगकर्ता प्रबंधन, उत्पाद सूची संगठन, ऑर्डर प्रोसेसिंग, भुगतान हैंडलिंग (नकद या कार्ड के माध्यम से), कूपन जोड़ना, समीक्षा, श्रेणी और ब्रांड प्रबंधन, आपूर्तिकर्ता प्रबंधन और कर विनियमन जैसे विभिन्न कार्यों को संभालता है।",
@@ -463,7 +463,7 @@
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "एल-आयुन, मोरक्को",
-                "imageUrl": "/cmc-maroc.png"
+                "imageUrl": "/Education/cmc.png"
             },
             {
                 "institution": "बाबा अहमद बिन मुहम्मद यहदीह हाई स्कूल",
@@ -471,7 +471,7 @@
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "एल-आयुन, मोरक्को",
-                "imageUrl": "/BabAhmedImage.jpg"
+                "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
     },
@@ -496,6 +496,10 @@
         "errorMessage": "एक त्रुटि हुई। कृपया पुन: प्रयास करें।"
     },
     "footer": {
+        "name": "अब्दुल्लाह एदाउदी",
+        "tagline": "फुल स्टैक डेवलपर | सुरक्षित और आधुनिक वेब ऐप्स बनाना",
+        "backToTop": "ऊपर वापस जाएँ",
+        "siteMapLabel": "साइट मैप",
         "links": [
             {
                 "name": "मेरे बारे में",
@@ -508,9 +512,27 @@
             {
                 "name": "प्रोजेक्ट्स",
                 "path": "/Projects"
+            },
+            {
+                "name": "शिक्षा",
+                "path": "/Education"
+            },
+            {
+                "name": "अनुभव",
+                "path": "/Experience"
+            },
+            {
+                "name": "संपर्क",
+                "path": "/Contact"
             }
         ],
-        "rights": "© अब्दुल्लाह एदाउदी सर्वाधिकार सुरक्षित ©"
+        "connectLabel": "संपर्क करें",
+        "emailLabel": "ईमेल",
+        "whatsappLabel": "व्हाट्सएप",
+        "locationLabel": "स्थान",
+        "locationValue": "अल-अयून, मोरक्को",
+        "copyright": "कॉपीराइट",
+        "rights": "सर्वाधिकार सुरक्षित"
     },
     "scrollToTop": {
         "backToTop": "ऊपर वापस जाएँ"
