@@ -1,13 +1,13 @@
-import Home from "./Components/Home";
-import About from "./Components/About";
-import Skills from "./Components/Skills";
-import Projects from "./Components/Projects";
-import Education from "./Components/Education";
-import Experience from "./Components/Experience";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
+import Home from "./Components/Pages/Home";
+import About from "./Components/Pages/About";
+import Skills from "./Components/Pages/Skills";
+import Projects from "./Components/Pages/Projects";
+import Education from "./Components/Pages/Education";
+import Experience from "./Components/Pages/Experience";
+import Contact from "./Components/Pages/Contact";
+import Footer from "./Components/Pages/Footer";
 import { getTranslation } from "./translations/portfolio/load-translations";
-import Header from "./Components/Header";
+import Header from "./Components/Pages/Header";
 
 export const metadata = {
   alternates: {
@@ -39,15 +39,15 @@ export default async function Page() {
 
   return (
     <div>
-      <Header content={dictionary.header} />
-      <Home lang="en" />
-      <About lang="en" />
-      <Skills lang="en" />
-      <Projects lang="en" />
-      <Experience lang="en" />
-      <Education lang="en" />
-      <Contact content={dictionary.contact} />
-      <Footer />
+      <Header content={dictionary.header} lang="en" />
+      <Home content={dictionary.home} lang="en" />
+      <About content={dictionary.about} lang="en" />
+      <Skills content={dictionary.skills} lang="en" />
+      <Projects content={dictionary.projects} lang="en" />
+      <Experience content={dictionary.experience} lang="en" />
+      <Education content={dictionary.education} lang="en" />
+      <Contact content={dictionary.contact} lang="en" />
+      <Footer content={dictionary.footer} lang="en" />
     </div>
   );
 }

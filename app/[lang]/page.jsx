@@ -1,13 +1,13 @@
 
-import Home from "../Components/Home";
-import About from "../Components/About";
-import Header from "../Components/Header";
-import Skills from "../Components/Skills";
-import Projects from "../Components/Projects";
-import Education from "../Components/Education";
-import Experience from "../Components/Experience";
-import Contact from "../Components/Contact";
-import Footer from "../Components/Footer";
+import Home from "../Components/Pages/Home";
+import About from "../Components/Pages/About";
+import Header from "../Components/Pages/Header";
+import Skills from "../Components/Pages/Skills";
+import Projects from "../Components/Pages/Projects";
+import Education from "../Components/Pages/Education";
+import Experience from "../Components/Pages/Experience";
+import Contact from "../Components/Pages/Contact";
+import Footer from "../Components/Pages/Footer";
 import { getTranslation } from "../translations/portfolio/load-translations";
 import { getMetadata } from "../translations/metadata/load-metadata";
 
@@ -94,15 +94,15 @@ export default async function Page({ params }) {
     const dictionary = await getTranslation(lang);
     return (
         <>
-            <Header content={dictionary.header} />
-            <Home lang={lang} />
-            <About lang={lang} />
-            <Skills lang={lang} />
-            <Projects lang={lang} />
-            <Experience lang={lang} />
-            <Education lang={lang} />
-            <Contact content={dictionary.contact} />
-            <Footer lang={lang} />
+            <Header content={dictionary.header} lang={lang} />
+            <Home content={dictionary.home} lang={lang} />
+            <About content={dictionary.about} lang={lang} />
+            <Skills content={dictionary.skills} lang={lang} />
+            <Projects content={dictionary.projects} lang={lang} />
+            <Experience content={dictionary.experience} lang={lang} />
+            <Education content={dictionary.education} lang={lang} />
+            <Contact content={dictionary.contact} lang={lang} />
+            <Footer content={dictionary.footer} lang={lang} />
         </>
     );
 }

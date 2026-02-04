@@ -16,7 +16,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://abdellah-edaoudi.vercel.app/profile-pic.png',
+        url: 'https://abdellah-edaoudi.vercel.app/profile/profile.jpg',
         width: 1200,
         height: 630,
         alt: meta.title,
@@ -28,7 +28,7 @@ export const metadata = {
     title: meta.title,
     description: meta.description,
     creator: '@Edaoudi_abde',
-    images: ['https://abdellah-edaoudi.vercel.app/profile-pic.png'],
+    images: ['https://abdellah-edaoudi.vercel.app/profile/profile.jpg'],
   },
   alternates: {
     canonical: '/en/Projects',
@@ -53,9 +53,9 @@ export const metadata = {
   },
 };
 
-import Projects from "../Components/Projects";
-import Footer from "../Components/Footer";
-import Header from "../Components/Header";
+import Projects from "../Components/Pages/Projects";
+import Footer from "../Components/Pages/Footer";
+import Header from "../Components/Pages/Header";
 import { getTranslation } from "../translations/portfolio/load-translations";
 
 async function page() {
@@ -63,9 +63,9 @@ async function page() {
 
   return (
     <div>
-      <Header content={dictionary.header} />
-      <Projects lang="en" />
-      <Footer />
+      <Header content={dictionary.header} lang="en" />
+      <Projects content={dictionary.projects} lang="en" />
+      <Footer content={dictionary.footer} lang="en" />
     </div>
   );
 }

@@ -4,7 +4,7 @@ export default function robots() {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: ['/Admin','/Admin/','/Login','/Login/','/Register','/Register/'],
+            disallow: ['/Admin', '/Admin/', '/Admin/Login', '/Admin/Login/', '/Admin/Register', '/Admin/Register/'],
         },
         sitemap: 'https://abdellah-edaoudi.vercel.app/sitemap.xml',
     }
