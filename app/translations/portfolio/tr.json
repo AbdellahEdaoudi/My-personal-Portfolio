@@ -118,7 +118,7 @@
                 "title": "E-Ticaret Back-End",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
-                "websiteUrl": "/Requirements.docx.pdf",
+                "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
                 "description": "Bir e-ticaret platformu için sağlam ve ölçeklenebilir bir arka uç sistemi. Sistem, kullanıcı yönetimi, ürün envanteri organizasyonu, sipariş işleme, ödeme işleme (nakit veya kart ile), kupon ekleme, incelemeler, kategori ve marka yönetimi, tedarikçi yönetimi ve vergi düzenlemesi gibi çeşitli işlevleri yerine getirir.",
@@ -463,7 +463,7 @@
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "El-Aaiun , Fas",
-                "imageUrl": "/cmc-maroc.png"
+                "imageUrl": "/Education/cmc.png"
             },
             {
                 "institution": "Baba Ahmed bin Muhammad Yahdih Lisesi",
@@ -471,7 +471,7 @@
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "El-Aaiun , Fas",
-                "imageUrl": "/BabAhmedImage.jpg"
+                "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
     },
@@ -496,6 +496,10 @@
         "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin."
     },
     "footer": {
+        "name": "Abdellah Edaoudi",
+        "tagline": "Full Stack Geliştirici | Güvenli ve Modern Web Uygulamaları Oluşturma",
+        "backToTop": "Başa dön",
+        "siteMapLabel": "Site Haritası",
         "links": [
             {
                 "name": "Hakkımda",
@@ -508,9 +512,27 @@
             {
                 "name": "Projeler",
                 "path": "/Projects"
+            },
+            {
+                "name": "Eğitim",
+                "path": "/Education"
+            },
+            {
+                "name": "Deneyim",
+                "path": "/Experience"
+            },
+            {
+                "name": "İletişim",
+                "path": "/Contact"
             }
         ],
-        "rights": "© Abdellah Edaoudi Tüm hakları saklıdır ©"
+        "connectLabel": "Bağlan",
+        "emailLabel": "E-posta",
+        "whatsappLabel": "WhatsApp",
+        "locationLabel": "Konum",
+        "locationValue": "El-Aaiun, Fas",
+        "copyright": "Telif Hakkı",
+        "rights": "Tüm hakları saklıdır"
     },
     "scrollToTop": {
         "backToTop": "Başa dön"

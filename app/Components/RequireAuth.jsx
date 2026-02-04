@@ -10,7 +10,7 @@ const RequireAuth = ({ children }) => {
 
   useEffect(() => {
     if (!token) {
-      router.push('/Login');
+      router.push('/Admin/Login');
     }
     setIsAuthChecked(true);
   }, [token, router]);

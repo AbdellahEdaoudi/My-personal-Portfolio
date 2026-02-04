@@ -118,7 +118,7 @@
                 "title": "Backend التجارة الإلكترونية",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
-                "websiteUrl": "/Requirements.docx.pdf",
+                "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
                 "description": "نظام خلفي قوي وقابل للتوسع لمنصة التجارة الإلكترونية. يتعامل النظام مع وظائف مختلفة مثل إدارة المستخدمين، وتنظيم مخزون المنتجات، ومعالجة الطلبات، والتعامل مع المدفوعات (سواء نقداً أو بالبطاقة)، وإضافة القسائم، والمراجعات، وإدارة الفئات والعلامات التجارية، وإدارة الموردين، والتنظيم الضريبي.",
@@ -463,7 +463,7 @@
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "العيون، المغرب",
-                "imageUrl": "/cmc-maroc.png"
+                "imageUrl": "/Education/cmc.png"
             },
             {
                 "institution": "ثانوية بابا أحمد بن محمد يحظيه",
@@ -471,7 +471,7 @@
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "العيون، المغرب",
-                "imageUrl": "/BabAhmedImage.jpg"
+                "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
     },
@@ -496,6 +496,10 @@
         "errorMessage": "حدث خطأ. حاول مرة أخرى."
     },
     "footer": {
+        "name": "عبد الله الداودي",
+        "tagline": "مطور Full Stack | بناء تطبيقات ويب حديثة وآمنة",
+        "backToTop": "الرجوع للأعلى",
+        "siteMapLabel": "خريطة الموقع",
         "links": [
             {
                 "name": "نبذة عني",
@@ -508,9 +512,27 @@
             {
                 "name": "المشاريع",
                 "path": "/Projects"
+            },
+            {
+                "name": "التعليم",
+                "path": "/Education"
+            },
+            {
+                "name": "الخبرة",
+                "path": "/Experience"
+            },
+            {
+                "name": "تواصل معي",
+                "path": "/Contact"
             }
         ],
-        "rights": "© Abdellah Edaoudi جميع الحقوق محفوظة ©"
+        "connectLabel": "تواصل معي",
+        "emailLabel": "البريد الإلكتروني",
+        "whatsappLabel": "واتساب",
+        "locationLabel": "الموقع",
+        "locationValue": "العيون، المغرب",
+        "copyright": "حقوق الطبع والنشر",
+        "rights": "جميع الحقوق محفوظة"
     },
     "scrollToTop": {
         "backToTop": "الرجوع للأعلى"

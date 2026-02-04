@@ -118,7 +118,7 @@
                 "title": "E-Commerce Back-End",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
-                "websiteUrl": "/Requirements.docx.pdf",
+                "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
                 "description": "Sistem back-end yang tangguh dan dapat diskalakan untuk platform e-commerce. Sistem menangani berbagai fungsi seperti manajemen pengguna, organisasi inventaris produk, pemrosesan pesanan, penanganan pembayaran (baik melalui uang tunai atau kartu), penambahan kupon, ulasan, manajemen kategori dan merek, manajemen pemasok, dan peraturan pajak.",
@@ -463,7 +463,7 @@
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "El-Aaiun , Maroko",
-                "imageUrl": "/cmc-maroc.png"
+                "imageUrl": "/Education/cmc.png"
             },
             {
                 "institution": "Sekolah Menengah Baba Ahmed bin Muhammad Yahdih",
@@ -471,7 +471,7 @@
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "El-Aaiun , Maroko",
-                "imageUrl": "/BabAhmedImage.jpg"
+                "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
     },
@@ -496,6 +496,10 @@
         "errorMessage": "Terjadi kesalahan. Silakan coba lagi."
     },
     "footer": {
+        "name": "Abdellah Edaoudi",
+        "tagline": "Pengembang Full Stack | Membangun Aplikasi Web yang Aman & Modern",
+        "backToTop": "Kembali ke atas",
+        "siteMapLabel": "Peta Situs",
         "links": [
             {
                 "name": "Tentang Saya",
@@ -508,9 +512,27 @@
             {
                 "name": "Proyek",
                 "path": "/Projects"
+            },
+            {
+                "name": "Pendidikan",
+                "path": "/Education"
+            },
+            {
+                "name": "Pengalaman",
+                "path": "/Experience"
+            },
+            {
+                "name": "Kontak",
+                "path": "/Contact"
             }
         ],
-        "rights": "© Abdellah Edaoudi Hak cipta dilindungi undang-undang ©"
+        "connectLabel": "Hubungkan",
+        "emailLabel": "Email",
+        "whatsappLabel": "WhatsApp",
+        "locationLabel": "Lokasi",
+        "locationValue": "El-Aaiun, Maroko",
+        "copyright": "Hak Cipta",
+        "rights": "Hak cipta dilindungi undang-undang"
     },
     "scrollToTop": {
         "backToTop": "Kembali ke atas"
