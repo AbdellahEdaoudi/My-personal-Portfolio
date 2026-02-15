@@ -68,6 +68,99 @@
         "showLess": "Pokaż mniej",
         "items": [
             {
+                "title": "System Rezerwacji Hoteli",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "System zarządzania hotelem zapewnia kompleksowe rozwiązanie do zarządzania rezerwacjami pokoi i płatnościami. Pozwala użytkownikom na łatwą rezerwację pokoi i otrzymywanie biletu elektronicznego w celu potwierdzenia. System zawiera pulpit nawigacyjny do zarządzania rezerwacjami, płatnościami i odpowiedziami klientów za pośrednictwem poczty elektronicznej.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Bezpieczny System Czatu w Czasie Rzeczywistym",
+                "type": "fullstack",
+                "image": "/Projects/edchatflow.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "Bezpieczny System Czatu w Czasie Rzeczywistym to wydajna aplikacja do przesyłania wiadomości błyskawicznych z zaawansowanymi funkcjami bezpieczeństwa. Wykorzystuje Socket.io do komunikacji w czasie rzeczywistym i wdraża szyfrowanie end-to-end (E2EE), aby zapewnić prywatność wiadomości. Zawiera również solidny system uwierzytelniania wykorzystujący JWT i haszowanie haseł za pomocą Bcrypt, gwarantując ochronę danych użytkowników na najwyższym poziomie。",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
                 "title": "Kreator Portfolio DGT",
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
@@ -95,10 +188,6 @@
                     {
                         "name": "Tailwind CSS",
                         "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
                     },
                     {
                         "name": "PayPal",
@@ -158,44 +247,6 @@
                 ]
             },
             {
-                "title": "Rezerwacja Hotelu",
-                "image": "/Projects/HotelDash.png",
-                "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "System zarządzania hotelem zapewnia kompleksowe rozwiązanie do zarządzania rezerwacjami pokoi i płatnościami. Pozwala użytkownikom na łatwą rezerwację pokoi i otrzymywanie biletu elektronicznego w celu potwierdzenia. System zawiera pulpit nawigacyjny do zarządzania rezerwacjami, płatnościami i odpowiedziami klientów za pośrednictwem poczty elektronicznej.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    }
-                ]
-            },
-            {
                 "title": "Platforma CV",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
@@ -228,84 +279,8 @@
                         "logo": "/Skills/Socket.io.png"
                     },
                     {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
                         "name": "Git",
                         "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "Shadcn/ui ",
-                        "logo": "/Skills/shadcn.png"
-                    }
-                ]
-            },
-            {
-                "title": "Aplikacja Zakupowa",
-                "image": "/Projects/EcomApp.png",
-                "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
-                "description": "Aplikacja, która oferuje bezproblemowe zakupy, ułatwiając użytkownikom przeglądanie produktów i dodawanie przedmiotów do koszyka. Aplikacja charakteryzuje się nowoczesnym i innowacyjnym wyglądem, który poprawia wrażenia użytkownika, z natychmiastową reakcją i interaktywnymi elementami, które sprawiają, że zakupy są przyjemniejsze.",
-                "technologies": [
-                    {
-                        "name": "React.js",
-                        "logo": "/Skills/reactjs.png"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    }
-                ]
-            },
-            {
-                "title": "Aplikacja Czat",
-                "image": "/Projects/ChatApp.png",
-                "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "Aplikacja czatu oferująca płynną i przyjazną dla użytkownika komunikację. Umożliwia użytkownikom łatwe łączenie się za pomocą wiadomości błyskawicznych, ułatwiając płynną wymianę wiadomości i pomysłów.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "Socket.IO",
-                        "logo": "/Skills/Socket.io.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
-                        "name": "Shadcn/ui ",
-                        "logo": "/Skills/shadcn.png"
                     }
                 ]
             },
@@ -347,6 +322,28 @@
                         "name": "Next.js",
                         "logo": "/Skills/Nextjs.jpg"
                     },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Aplikacja Zakupowa",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "Aplikacja, która oferuje bezproblemowe zakupy, ułatwiając użytkownikom przeglądanie produktów i dodawanie przedmiotów do koszyka. Aplikacja charakteryzuje się nowoczesnym i innowacyjnym wyglądem, który poprawia wrażenia użytkownika, z natychmiastową reakcją i interaktywnymi elementami, które sprawiają, że zakupy są przyjemniejsze.",
+                "technologies": [
                     {
                         "name": "React.js",
                         "logo": "/Skills/reactjs.png"

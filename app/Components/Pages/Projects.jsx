@@ -22,11 +22,11 @@ function Projects({ content }) {
               />
             </Link>
             <div>
-              <div className="flex justify-around items-center px-1 text-[16px] p-3">
-                <h1 className=" underline ">{p.title}</h1>
-                <Link href={p.websiteUrl} className="flex items-center gap-1 hover:scale-105 duration-300 hover:text-sky-500 hover:bg-sky-50 border p-1 rounded-md bg-gray-100" target="_blank">
+              <div className="flex justify-between items-start gap-2 px-3 py-3">
+                <h1 className="text-[16px] underline flex-1 leading-snug">{p.title}</h1>
+                <Link href={p.websiteUrl} className="flex-shrink-0 flex items-center gap-1 hover:scale-105 duration-300 hover:text-sky-500 hover:bg-sky-50 border p-1 rounded-md bg-gray-100" target="_blank">
                   <Image src="/Projects/WebSite.png" width={17} height={17} alt="WebSite" />
-                  <span className="ml-1 text-sm">{liveDemo}</span>
+                  <span className="ml-1 text-xs sm:text-sm font-medium whitespace-nowrap">{liveDemo}</span>
                 </Link>
               </div>
               {/* Description */}

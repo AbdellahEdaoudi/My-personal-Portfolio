@@ -72,8 +72,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
                 "description": "A comprehensive SaaS platform empowering users to build professional portfolios effortlessly. It features multi-language support, custom domain integration, dynamic theme selection, real-time resume generation, and an intuitive admin dashboard for managing content, subscriptions, and analytics.",
                 "technologies": [
                     {
@@ -97,10 +97,6 @@
                         "logo": "/Skills/Tailwind.png"
                     },
                     {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
                         "name": "PayPal",
                         "logo": "/Skills/paypal.png"
                     },
@@ -111,6 +107,99 @@
                     {
                         "name": "Git",
                         "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Hotel Reservation System",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "The hotel management system provides a comprehensive solution for managing room bookings and payments. It allows users to easily book rooms and receive an electronic ticket for confirmation. The system includes a dashboard for managing bookings, payments, and customer responses via email.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Secure Real-time Chat System",
+                "type": "fullstack",
+                "image": "/Projects/edchatflow.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "Secure Real-time Chat System is a high-performance instant messaging application featuring advanced security. It uses Socket.io for real-time communication and implements End-to-End Encryption (E2EE) to ensure message privacy. It also includes a robust authentication system using JWT and password hashing with Bcrypt, ensuring user data protection at the highest standards.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
                     }
                 ]
             },
@@ -158,44 +247,6 @@
                 ]
             },
             {
-                "title": "Hotel Booking",
-                "image": "/Projects/HotelDash.png",
-                "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "The hotel management system provides a comprehensive solution for managing room bookings and payments. It allows users to easily book rooms and receive an electronic ticket for confirmation. The system includes a dashboard for managing bookings, payments, and customer responses via email.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    }
-                ]
-            },
-            {
                 "title": "Resume Platform",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
@@ -228,84 +279,8 @@
                         "logo": "/Skills/Socket.io.png"
                     },
                     {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
                         "name": "Git",
                         "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "Shadcn/ui ",
-                        "logo": "/Skills/shadcn.png"
-                    }
-                ]
-            },
-            {
-                "title": "Shopping App",
-                "image": "/Projects/EcomApp.png",
-                "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
-                "description": "An app that offers a seamless shopping experience, making it easy for users to browse products and add items to their cart. The app features a modern and innovative design that enhances the user experience, with instant responsiveness and interactive elements that make shopping more enjoyable.",
-                "technologies": [
-                    {
-                        "name": "React.js",
-                        "logo": "/Skills/reactjs.png"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    }
-                ]
-            },
-            {
-                "title": "Chat App",
-                "image": "/Projects/ChatApp.png",
-                "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "A chat application offering a seamless and user-friendly communication experience. It enables users to easily connect through instant messaging, facilitating smooth exchanges of messages and ideas.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "Socket.IO",
-                        "logo": "/Skills/Socket.io.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
-                        "name": "Shadcn/ui ",
-                        "logo": "/Skills/shadcn.png"
                     }
                 ]
             },
@@ -361,6 +336,28 @@
                     }
                 ],
                 "Rapport": " "
+            },
+            {
+                "title": "Shopping App",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "An app that offers a seamless shopping experience, making it easy for users to browse products and add items to their cart. The app features a modern and innovative design that enhances the user experience, with instant responsiveness and interactive elements that make shopping more enjoyable.",
+                "technologies": [
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
             }
         ]
     },

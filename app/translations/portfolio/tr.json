@@ -68,6 +68,99 @@
         "showLess": "Daha az göster",
         "items": [
             {
+                "title": "Otel Rezervasyon Sistemi",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "Otel yönetim sistemi, oda rezervasyonlarını ve ödemeleri yönetmek için kapsamlı bir çözüm sunar. Kullanıcıların kolayca oda ayırtmasına ve onay için elektronik bir bilet almasına olanak tanır. Sistem, rezervasyonları, ödemeleri ve e-posta yoluyla müşteri yanıtlarını yönetmek için bir panel içerir.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Güvenli Gerçek Zamanlı Sohbet Sistemi",
+                "type": "fullstack",
+                "image": "/Projects/edchatflow.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "Güvenli Gerçek Zamanlı Sohbet Sistemi, gelişmiş güvenlik özelliklerine sahip yüksek performanslı bir anlık mesajlaşma uygulamasıdır. Gerçek zamanlı iletişim için Socket.io kullanır ve mesaj gizliliğini sağlamak için Uçtan Uca Şifreleme (E2EE) uygular. Ayrıca JWT kullanarak güçlü bir kimlik doğrulama sistemi ve Bcrypt ile şifre karma yöntemi içerir; bu da kullanıcı verilerinin en yüksek standartlarda korunmasını sağlar.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
                 "title": "DGT Portföy Oluşturucu",
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
@@ -95,10 +188,6 @@
                     {
                         "name": "Tailwind CSS",
                         "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
                     },
                     {
                         "name": "PayPal",
@@ -158,44 +247,6 @@
                 ]
             },
             {
-                "title": "Otel Rezervasyonu",
-                "image": "/Projects/HotelDash.png",
-                "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "Otel yönetim sistemi, oda rezervasyonlarını ve ödemeleri yönetmek için kapsamlı bir çözüm sunar. Kullanıcıların kolayca oda ayırtmasına ve onay için elektronik bir bilet almasına olanak tanır. Sistem, rezervasyonları, ödemeleri ve e-posta yoluyla müşteri yanıtlarını yönetmek için bir panel içerir.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    }
-                ]
-            },
-            {
                 "title": "Özgeçmiş Platformu",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
@@ -228,84 +279,8 @@
                         "logo": "/Skills/Socket.io.png"
                     },
                     {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
                         "name": "Git",
                         "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "Shadcn/ui ",
-                        "logo": "/Skills/shadcn.png"
-                    }
-                ]
-            },
-            {
-                "title": "Alışveriş Uygulaması",
-                "image": "/Projects/EcomApp.png",
-                "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
-                "description": "Kullanıcıların ürünlere kolayca göz atmasını ve sepetlerine ürün eklemesini sağlayan, sorunsuz bir alışveriş deneyimi sunan bir uygulama. Uygulama, anında yanıt verebilirlik ve alışverişi daha keyifli hale getiren etkileşimli öğelerle kullanıcı deneyimini geliştiren modern ve yenilikçi bir tasarıma sahiptir.",
-                "technologies": [
-                    {
-                        "name": "React.js",
-                        "logo": "/Skills/reactjs.png"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    }
-                ]
-            },
-            {
-                "title": "Sohbet Uygulaması",
-                "image": "/Projects/ChatApp.png",
-                "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "Sorunsuz ve kullanıcı dostu bir iletişim deneyimi sunan bir sohbet uygulaması. Kullanıcıların anlık mesajlaşma yoluyla kolayca bağlantı kurmasını sağlayarak mesaj ve fikir alışverişini kolaylaştırır.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "Socket.IO",
-                        "logo": "/Skills/Socket.io.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
-                        "name": "Shadcn/ui ",
-                        "logo": "/Skills/shadcn.png"
                     }
                 ]
             },
@@ -347,6 +322,28 @@
                         "name": "Next.js",
                         "logo": "/Skills/Nextjs.jpg"
                     },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Alışveriş Uygulaması",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "Kullanıcıların ürünlere kolayca göz atmasını ve sepetlerine ürün eklemesini sağlayan, sorunsuz bir alışveriş deneyimi sunan bir uygulama. Uygulama, anında yanıt verebilirlik ve alışverişi daha keyifli hale getiren etkileşimli öğelerle kullanıcı deneyimini geliştiren modern ve yenilikçi bir tasarıma sahiptir.",
+                "technologies": [
                     {
                         "name": "React.js",
                         "logo": "/Skills/reactjs.png"

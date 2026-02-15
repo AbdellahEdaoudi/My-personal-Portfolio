@@ -72,8 +72,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
                 "description": "منصة SaaS شاملة تمكن المستخدمين من بناء محافظ احترافية دون عناء. تتميز بدعم متعدد اللغات، وتكامل النطاق المخصص، واختيار السمات الديناميكية، وإنشاء السيرة الذاتية في الوقت الفعلي، ولوحة تحكم إدارية بديهية لإدارة المحتوى والاشتراكات والتحليلات.",
                 "technologies": [
                     {
@@ -97,10 +97,6 @@
                         "logo": "/Skills/Tailwind.png"
                     },
                     {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
                         "name": "PayPal",
                         "logo": "/Skills/paypal.png"
                     },
@@ -111,6 +107,99 @@
                     {
                         "name": "Git",
                         "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "نظام حجز الفنادق",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "يوفر نظام إدارة الفنادق حلاً شاملاً لإدارة حجوزات الغرف والمدفوعات. يسمح للمستخدمين بحجز الغرف بسهولة وتلقي تذكرة إلكترونية للتأكيد. يتضمن النظام لوحة تحكم لإدارة الحجوزات والمدفوعات وردود العملاء عبر البريد الإلكتروني.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "نظام دردشة آمن فوري",
+                "type": "fullstack",
+                "image": "/Projects/edchatflow.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "نظام دردشة آمن فوري هو تطبيق دردشة فورية يتميز بالأداء العالي ومستوى أمان متقدم. يعتمد على Socket.io للتواصل اللحظي بين المستخدمين، ويطبق تشفير طرف إلى طرف (E2EE) لضمان سرية الرسائل وعدم تمكن أي جهة خارجية من الاطلاع عليها. كما يحتوي على نظام مصادقة قوي باستخدام JWT وتشفير كلمات المرور بـ Bcrypt، ليضمن حماية بيانات المستخدمين بأعلى المعايير.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
                     }
                 ]
             },
@@ -158,44 +247,6 @@
                 ]
             },
             {
-                "title": "حجز الفنادق",
-                "image": "/Projects/HotelDash.png",
-                "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "يوفر نظام إدارة الفنادق حلاً شاملاً لإدارة حجوزات الغرف والمدفوعات. يسمح للمستخدمين بحجز الغرف بسهولة وتلقي تذكرة إلكترونية للتأكيد. يتضمن النظام لوحة تحكم لإدارة الحجوزات والمدفوعات وردود العملاء عبر البريد الإلكتروني.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    }
-                ]
-            },
-            {
                 "title": "منصة السيرة الذاتية",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
@@ -226,36 +277,6 @@
                     {
                         "name": "Socket.IO",
                         "logo": "/Skills/Socket.io.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "Shadcn/ui",
-                        "logo": "/Skills/shadcn.png"
-                    }
-                ]
-            },
-            {
-                "title": "تطبيق التسوق",
-                "image": "/Projects/EcomApp.png",
-                "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
-                "description": "تطبيق يوفر تجربة تسوق سلسة، مما يسهل على المستخدمين تصفح المنتجات وإضافة العناصر إلى عربة التسوق الخاصة بهم. يتميز التطبيق بتصميم حديث ومبتكر يعزز تجربة المستخدم، مع استجابة فورية وعناصر تفاعلية تجعل التسوق أكثر متعة.",
-                "technologies": [
-                    {
-                        "name": "React.js",
-                        "logo": "/Skills/reactjs.png"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
                     },
                     {
                         "name": "Git",
@@ -290,52 +311,6 @@
                 ]
             },
             {
-                "title": "تطبيق الدردشة",
-                "image": "/Projects/ChatApp.png",
-                "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "تطبيق دردشة يوفر تجربة تواصل سلسة وسهلة الاستخدام. يتيح للمستخدمين التواصل بسهولة من خلال المراسلة الفورية، مما يسهل التبادل السلس للرسائل والأفكار.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "Socket.IO",
-                        "logo": "/Skills/Socket.io.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
-                        "name": "Shadcn/ui",
-                        "logo": "/Skills/shadcn.png"
-                    }
-                ]
-            },
-            {
                 "title": "تطبيق إدارة رمز QR",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
@@ -347,6 +322,28 @@
                         "name": "Next.js",
                         "logo": "/Skills/Nextjs.jpg"
                     },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "تطبيق التسوق",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "تطبيق يوفر تجربة تسوق سلسة، مما يسهل على المستخدمين تصفح المنتجات وإضافة العناصر إلى عربة التسوق الخاصة بهم. يتميز التطبيق بتصميم حديث ومبتكر يعزز تجربة المستخدم، مع استجابة فورية وعناصر تفاعلية تجعل التسوق أكثر متعة.",
+                "technologies": [
                     {
                         "name": "React.js",
                         "logo": "/Skills/reactjs.png"

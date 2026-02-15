@@ -72,8 +72,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com/nl",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
                 "description": "Een uitgebreid SaaS-platform waarmee gebruikers moeiteloos professionele portfolio's kunnen maken. Het biedt meertalige ondersteuning, integratie van aangepaste domeinen, dynamische themaselectie, realtime CV-generatie en een intuïtief beheerdersdashboard voor het beheren van inhoud, abonnementen en analyses.",
                 "technologies": [
                     {
@@ -97,10 +97,6 @@
                         "logo": "/Skills/Tailwind.png"
                     },
                     {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
                         "name": "PayPal",
                         "logo": "/Skills/paypal.png"
                     },
@@ -111,6 +107,99 @@
                     {
                         "name": "Git",
                         "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Hotelreserveringssysteem",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "Het hotelmanagementsysteem biedt een uitgebreide oplossing voor het beheren van kamerboekingen en betalingen. Het stelt gebruikers in staat eenvoudig kamers te boeken en een elektronisch ticket ter bevestiging te ontvangen. Het systeem bevat een dashboard voor het beheren van boekingen, betalingen en klantreacties via e-mail.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Veilig Real-time Chat Systeem",
+                "type": "fullstack",
+                "image": "/Projects/edchatflow.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "Veilig Real-time Chat Systeem is een hoogwaardige instant messaging-applicatie met geavanceerde beveiliging. Het maakt gebruik van Socket.io voor realtime communicatie en implementeert End-to-End Encryption (E2EE) om berichtprivacy te garanderen. Het bevat ook een robuust authenticatiesysteem met JWT en wachtwoord-hashing met Bcrypt, wat de bescherming van gebruikersgegevens volgens de hoogste standaarden waarborgt.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
                     }
                 ]
             },
@@ -158,44 +247,6 @@
                 ]
             },
             {
-                "title": "Hotel Boeking",
-                "image": "/Projects/HotelDash.png",
-                "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "Het hotelmanagementsysteem biedt een uitgebreide oplossing voor het beheren van kamerboekingen en betalingen. Het stelt gebruikers in staat eenvoudig kamers te boeken en een elektronisch ticket ter bevestiging te ontvangen. Het systeem bevat een dashboard voor het beheren van boekingen, betalingen en klantreacties via e-mail.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    }
-                ]
-            },
-            {
                 "title": "CV Platform",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
@@ -228,84 +279,8 @@
                         "logo": "/Skills/Socket.io.png"
                     },
                     {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
                         "name": "Git",
                         "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "Shadcn/ui ",
-                        "logo": "/Skills/shadcn.png"
-                    }
-                ]
-            },
-            {
-                "title": "Winkel App",
-                "image": "/Projects/EcomApp.png",
-                "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
-                "description": "Een app die een naadloze winkelervaring biedt, waardoor gebruikers eenvoudig door producten kunnen bladeren en items aan hun winkelwagen kunnen toevoegen. De app heeft een modern en innovatief ontwerp dat de gebruikerservaring verbetert, met directe responsiviteit en interactieve elementen die winkelen leuker maken.",
-                "technologies": [
-                    {
-                        "name": "React.js",
-                        "logo": "/Skills/reactjs.png"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    }
-                ]
-            },
-            {
-                "title": "Chat App",
-                "image": "/Projects/ChatApp.png",
-                "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "Een chatapplicatie die een naadloze en gebruiksvriendelijke communicatie-ervaring biedt. Het stelt gebruikers in staat eenvoudig verbinding te maken via instant messaging, wat een soepele uitwisseling van berichten en ideeën mogelijk maakt.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "Socket.IO",
-                        "logo": "/Skills/Socket.io.png"
-                    },
-                    {
-                        "name": "NextAuth",
-                        "logo": "/Skills/nextauth.jpg"
-                    },
-                    {
-                        "name": "Shadcn/ui ",
-                        "logo": "/Skills/shadcn.png"
                     }
                 ]
             },
@@ -347,6 +322,28 @@
                         "name": "Next.js",
                         "logo": "/Skills/Nextjs.jpg"
                     },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Winkel App",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "Een app die een naadloze winkelervaring biedt, waardoor gebruikers eenvoudig door producten kunnen bladeren en items aan hun winkelwagen kunnen toevoegen. De app heeft een modern en innovatief ontwerp dat de gebruikerservaring verbetert, met directe responsiviteit en interactieve elementen die winkelen leuker maken.",
+                "technologies": [
                     {
                         "name": "React.js",
                         "logo": "/Skills/reactjs.png"
