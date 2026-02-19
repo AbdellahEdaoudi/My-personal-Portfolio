@@ -369,24 +369,21 @@
         "subtitle": "Pengalaman profesional saya",
         "items": [
             {
-                "title": "Pendiri & Pengembang DGT Portfolio",
+                "title": "Pendiri & Pengembang Full Stack – DGT Portfolio",
                 "company": "Dgt Portfolio",
                 "location": "El-Aaiun , Maroko",
                 "startDate": "Okt 2024",
                 "endDate": "Sekarang",
-                "duration": "+ 2 bln",
+                "duration": "+ 4 bln",
                 "type": "Pendiri & Pengembang",
                 "workType": "Hibrida",
                 "achievementsLabel": "Prestasi :",
                 "responsibilities": [
-                    "Cara profesional untuk membuat portofolio digital Anda tanpa keahlian coding atau desain apa pun.",
-                    "Subdomain khusus: namasaya.dgtportfolio.com",
-                    "Domain khusus: namasaya.com",
-                    "Visibilitas SEO yang ditingkatkan untuk portofolio Anda",
-                    "Kode QR siap untuk berbagi dengan mudah",
-                    "Beberapa tema yang sesuai dengan gaya Anda",
-                    "Tampilkan portofolio Anda dalam bahasa apa pun yang Anda pilih",
-                    "Pengalaman cepat, lancar, dan ramah pengguna"
+                    "Merancang dan mengembangkan platform SaaS untuk membangun portofolio online profesional.",
+                    "Menerapkan otentikasi dan otorisasi menggunakan JWT.",
+                    "Membangun RESTful API dan mengintegrasikan sistem pembayaran.",
+                    "Men-deploy aplikasi di Vercel dan mengelola basis kode menggunakan Git/GitHub.",
+                    "Meningkatkan kinerja, SEO, dan pengalaman pengguna."
                 ]
             },
             {

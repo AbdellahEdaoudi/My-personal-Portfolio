@@ -369,24 +369,21 @@
         "subtitle": "Profesyonel deneyimim",
         "items": [
             {
-                "title": "DGT Portföy'ün Kurucusu ve Geliştiricisi",
+                "title": "Kurucu & Full Stack Geliştirici – DGT Portfolio",
                 "company": "Dgt Portfolio",
                 "location": "El-Aaiun , Fas",
                 "startDate": "Ekim 2024",
                 "endDate": "Günümüz",
-                "duration": "+ 2 ay",
+                "duration": "+ 4 ay",
                 "type": "Kurucu & Geliştirici",
                 "workType": "Hibrit",
                 "achievementsLabel": "Başarılar :",
                 "responsibilities": [
-                    "Herhangi bir kodlama veya tasarım becerisi olmadan dijital portföyünüzü oluşturmanın profesyonel yolu.",
-                    "Özel alt alan adı: adiniz.dgtportfolio.com",
-                    "Özel alan adı: adiniz.com",
-                    "Portföyünüz için geliştirilmiş SEO görünürlüğü",
-                    "Kolay paylaşım için hazır QR Kodu",
-                    "Tarzınıza uygun birden fazla tema",
-                    "Portföyünüzü seçtiğiniz herhangi bir dilde görüntüleyin",
-                    "Hızlı, sorunsuz ve kullanıcı dostu deneyim"
+                    "Profesyonel çevrimiçi portföyler oluşturmak için bir SaaS platformu tasarladı ve geliştirdi.",
+                    "JWT kullanarak kimlik doğrulama ve yetkilendirme uyguladı.",
+                    "RESTful API'ler oluşturdu ve ödeme sistemlerini entegre etti.",
+                    "Uygulamayı Vercel'de yayınladı ve kod tabanını Git/GitHub kullanarak yönetti.",
+                    "Performansı, SEO'yu ve kullanıcı deneyimini iyileştirdi."
                 ]
             },
             {

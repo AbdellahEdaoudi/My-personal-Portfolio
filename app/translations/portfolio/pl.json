@@ -369,24 +369,21 @@
         "subtitle": "Moje doświadczenie zawodowe",
         "items": [
             {
-                "title": "Założyciel i Developer DGT Portfolio",
+                "title": "Założyciel i Full Stack Developer – DGT Portfolio",
                 "company": "Dgt Portfolio",
                 "location": "El-Aaiun , Maroko",
                 "startDate": "Paź 2024",
                 "endDate": "Obecnie",
-                "duration": "+ 2 mies.",
+                "duration": "+ 4 mies.",
                 "type": "Założyciel & Developer",
                 "workType": "Hybrydowo",
                 "achievementsLabel": "Osiągnięcia :",
                 "responsibilities": [
-                    "Profesjonalny sposób na stworzenie cyfrowego portfolio bez żadnych umiejętności kodowania lub projektowania.",
-                    "Niestandardowa subdomena: twojeimie.dgtportfolio.com",
-                    "Niestandardowa domena: twojeimie.com",
-                    "Ulepszona widoczność SEO dla Twojego portfolio",
-                    "Kod QR gotowy do łatwego udostępniania",
-                    "Wiele motywów pasujących do Twojego stylu",
-                    "Wyświetl swoje portfolio w dowolnym języku",
-                    "Szybkie, płynne i przyjazne dla użytkownika doświadczenie"
+                    "Zaprojektowano i opracowano platformę SaaS do tworzenia profesjonalnych portfolio online.",
+                    "Wdrożono uwierzytelnianie i autoryzację przy użyciu JWT.",
+                    "Zbudowano RESTful API i zintegrowano systemy płatności.",
+                    "Wdrożono aplikację na Vercel i zarządzano bazą kodu za pomocą Git/GitHub.",
+                    "Poprawiono wydajność, SEO i doświadczenie użytkownika."
                 ]
             },
             {

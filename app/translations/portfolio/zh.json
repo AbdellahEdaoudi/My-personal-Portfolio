@@ -369,24 +369,21 @@
         "subtitle": "我的专业经验",
         "items": [
             {
-                "title": "DGT Portfolio 创始人兼开发人员",
+                "title": "创始人兼全栈开发人员 – DGT Portfolio",
                 "company": "Dgt Portfolio",
                 "location": "摩洛哥阿尤恩",
                 "startDate": "2024年10月",
                 "endDate": "至今",
-                "duration": "+ 2 个月",
+                "duration": "+ 4 个月",
                 "type": "创始人兼开发人员",
                 "workType": "混合办公",
                 "achievementsLabel": "成就：",
                 "responsibilities": [
-                    "无需任何编码或设计技能即可创建数字作品集的专业方式。",
-                    "自定义子域名：yourname.dgtportfolio.com",
-                    "自定义域名：yourname.com",
-                    "提高作品集的 SEO 可见性",
-                    "二维码就绪，方便分享",
-                    "多种主题以匹配您的风格",
-                    "以您选择的任何语言展示您的作品集",
-                    "快速、流畅且用户友好的体验"
+                    "设计并开发了一个用于构建专业在线作品集的 SaaS 平台。",
+                    "使用 JWT 实现了身份验证和授权。",
+                    "构建了 RESTful API 并集成了支付系统。",
+                    "在 Vercel 上部署了应用程序，并使用 Git/GitHub 管理代码库。",
+                    "提高了性能、SEO 和用户体验。"
                 ]
             },
             {
