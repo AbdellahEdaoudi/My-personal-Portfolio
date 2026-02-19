@@ -8,6 +8,8 @@
         "experience": "Experiência",
         "contact": "Contato",
         "admin": "Admin",
+        "developer": "Desenvolvedor",
+        "fullStack": "Full Stack",
         "mobileMenu": {
             "navigation": "Navegação",
             "explore": "Explorar esta seção",
@@ -32,7 +34,7 @@
         "supportDetail": "Online 24/7",
         "description": "Tenho ampla experiência em transformar ideias em aplicativos inovadores, seguros e eficazes. Meu foco combina melhorar a experiência do usuário e criar interfaces atraentes com a garantia de segurança robusta e alto desempenho.",
         "downloadCv": "Currículo",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Habilidades",
@@ -371,7 +373,7 @@
             {
                 "title": "Fundador e Desenvolvedor Full Stack – DGT Portfolio",
                 "company": "Dgt Portfolio",
-                "location": "El-Aaiun , Marrocos",
+                "location": "Laayoune , Marrocos",
                 "startDate": "Out 2024",
                 "endDate": "Presente",
                 "duration": "+ 4 meses",
@@ -389,7 +391,7 @@
             {
                 "title": "Desenvolvedor Full Stack MERN",
                 "company": "Academia Regional de Educação e Formação",
-                "location": "El-Aaiun , Marrocos",
+                "location": "Laayoune , Marrocos",
                 "startDate": "Mar 2024",
                 "endDate": "Abr 2024",
                 "duration": "2 meses",
@@ -407,7 +409,7 @@
             {
                 "title": "Desenvolvedor Web Full Stack",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "El-Aaiun , Marrocos",
+                "location": "Laayoune , Marrocos",
                 "startDate": "Set 2023",
                 "endDate": "Jun 2024",
                 "duration": "10 meses",
@@ -429,7 +431,7 @@
             {
                 "title": "Estagiário de Desenvolvimento Digital",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "El-Aaiun , Marrocos",
+                "location": "Laayoune , Marrocos",
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 meses",
@@ -460,7 +462,7 @@
                 "degree": "Diploma em Desenvolvimento Digital (Opção Web Full Stack)",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "El Aaiún, Marrocos",
+                "location": "Laayoune, Marrocos",
                 "imageUrl": "/Education/cmc.png"
             },
             {
@@ -468,7 +470,7 @@
                 "degree": "Bacharelado, Ciências Físicas",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "El Aaiún, Marrocos",
+                "location": "Laayoune, Marrocos",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -528,7 +530,7 @@
         "emailLabel": "E-mail",
         "whatsappLabel": "WhatsApp",
         "locationLabel": "Localização",
-        "locationValue": "El-Aaiun, Marrocos",
+        "locationValue": "Laayoune, Marrocos",
         "copyright": "Direito autoral",
         "rights": "Todos os direitos reservados"
     },

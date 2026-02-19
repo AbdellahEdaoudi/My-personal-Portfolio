@@ -8,6 +8,8 @@
         "experience": "経験",
         "contact": "お問い合わせ",
         "admin": "管理",
+        "developer": "開発者",
+        "fullStack": "フルスタック",
         "mobileMenu": {
             "navigation": "ナビゲーション",
             "explore": "このセクションを探索",
@@ -32,7 +34,7 @@
         "supportDetail": "24時間年中無休オンライン",
         "description": "私はアイデアを革新的で安全かつ効果的なアプリケーションに変える豊富な経験を持っています。私の焦点は、ユーザーエクスペリエンスの向上と魅力的なインターフェースの作成、そして堅牢なセキュリティと高いパフォーマンスの確保を融合させることです。",
         "downloadCv": "履歴書",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "スキル",
@@ -371,7 +373,7 @@
             {
                 "title": "創設者兼フルスタック開発者 – DGT Portfolio",
                 "company": "Dgt Portfolio",
-                "location": "El-Aaiun , モロッコ",
+                "location": "Laayoune , モロッコ",
                 "startDate": "2024年10月",
                 "endDate": "現在",
                 "duration": "+ 4ヶ月",
@@ -389,7 +391,7 @@
             {
                 "title": "フルスタックMERN開発者",
                 "company": "地域教育訓練アカデミー",
-                "location": "El-Aaiun , モロッコ",
+                "location": "Laayoune , モロッコ",
                 "startDate": "2024年3月",
                 "endDate": "2024年4月",
                 "duration": "2ヶ月",
@@ -407,7 +409,7 @@
             {
                 "title": "フルスタックWeb開発者",
                 "company": "職業と能力の都市",
-                "location": "El-Aaiun , モロッコ",
+                "location": "Laayoune , モロッコ",
                 "startDate": "2023年9月",
                 "endDate": "2024年6月",
                 "duration": "10ヶ月",
@@ -429,7 +431,7 @@
             {
                 "title": "デジタル開発者インターン",
                 "company": "職業と能力の都市",
-                "location": "El-Aaiun , モロッコ",
+                "location": "Laayoune , モロッコ",
                 "startDate": "2022年11月",
                 "endDate": "2023年6月",
                 "duration": "8ヶ月",
@@ -460,7 +462,7 @@
                 "degree": "デジタル開発の卒業証書（フルスタックWebオプション）",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "El-Aaiun , モロッコ",
+                "location": "Laayoune , モロッコ",
                 "imageUrl": "/Education/cmc.png"
             },
             {
@@ -468,7 +470,7 @@
                 "degree": "学士号、物理科学",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "El-Aaiun , モロッコ",
+                "location": "Laayoune , モロッコ",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]

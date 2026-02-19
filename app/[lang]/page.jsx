@@ -29,6 +29,8 @@ export async function generateStaticParams() {
         { lang: 'hi' },
         { lang: 'id' },
         { lang: 'pl' },
+        { lang: 'sv' },
+        { lang: 'vi' },
     ];
 }
 
@@ -83,6 +85,8 @@ export async function generateMetadata({ params }) {
                 'ko': '/ko',
                 'id': '/id',
                 'pl': '/pl',
+                'sv': '/sv',
+                'vi': '/vi',
                 'ar': '/ar',
             },
         },

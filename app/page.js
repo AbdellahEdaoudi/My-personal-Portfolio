@@ -29,6 +29,8 @@ export const metadata = {
       'ko': '/ko',
       'id': '/id',
       'pl': '/pl',
+      'sv': '/sv',
+      'vi': '/vi',
     },
   },
 }

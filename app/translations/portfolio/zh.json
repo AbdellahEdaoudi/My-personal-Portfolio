@@ -6,8 +6,10 @@
         "projects": "项目",
         "education": "教育",
         "experience": "经验",
-        "contact": "联系",
-        "admin": "管理",
+        "contact": "联系方式",
+        "admin": "Admin",
+        "developer": "开发人员",
+        "fullStack": "全栈",
         "mobileMenu": {
             "navigation": "导航",
             "explore": "探索此部分",
@@ -32,7 +34,7 @@
         "supportDetail": "24/7 在线",
         "description": "我在将想法转化为创新、安全且有效的应用程序方面拥有丰富的经验。我的重点是将增强用户体验和制作有吸引力的界面与确保强大的安全性和高性能相结合。",
         "downloadCv": "简历",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "技能",
@@ -371,7 +373,7 @@
             {
                 "title": "创始人兼全栈开发人员 – DGT Portfolio",
                 "company": "Dgt Portfolio",
-                "location": "摩洛哥阿尤恩",
+                "location": "摩洛哥, Laayoune",
                 "startDate": "2024年10月",
                 "endDate": "至今",
                 "duration": "+ 4 个月",
@@ -389,7 +391,7 @@
             {
                 "title": "MERN 全栈开发人员",
                 "company": "区域教育培训学院",
-                "location": "摩洛哥阿尤恩",
+                "location": "摩洛哥, Laayoune",
                 "startDate": "2024年3月",
                 "endDate": "2024年4月",
                 "duration": "2 个月",
@@ -407,7 +409,7 @@
             {
                 "title": "全栈 Web 开发人员",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "摩洛哥阿尤恩",
+                "location": "摩洛哥, Laayoune",
                 "startDate": "2023年9月",
                 "endDate": "2024年6月",
                 "duration": "10 个月",
@@ -429,7 +431,7 @@
             {
                 "title": "数字开发实习生",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "摩洛哥阿尤恩",
+                "location": "摩洛哥, Laayoune",
                 "startDate": "2022年11月",
                 "endDate": "2023年6月",
                 "duration": "8 个月",
@@ -460,7 +462,7 @@
                 "degree": "数字开发文凭（全栈网络选项）",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "阿尤恩，摩洛哥",
+                "location": "摩洛哥, Laayoune",
                 "imageUrl": "/Education/cmc.png"
             },
             {
@@ -468,7 +470,7 @@
                 "degree": "理学学士学位，物理科学",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "阿尤恩，摩洛哥",
+                "location": "摩洛哥, Laayoune",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -528,7 +530,7 @@
         "emailLabel": "电子邮件",
         "whatsappLabel": "WhatsApp",
         "locationLabel": "地点",
-        "locationValue": "摩洛哥, 阿尤恩",
+        "locationValue": "摩洛哥, Laayoune",
         "copyright": "版权所有",
         "rights": "版权所有"
     },

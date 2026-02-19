@@ -56,6 +56,8 @@ export async function generateMetadata({ params }) {
                 'ko': '/ko/Education',
                 'id': '/id/Education',
                 'pl': '/pl/Education',
+                'sv': '/sv/Education',
+                'vi': '/vi/Education',
             },
         },
     }

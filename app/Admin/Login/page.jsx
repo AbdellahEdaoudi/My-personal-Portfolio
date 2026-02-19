@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Link from "next/link";
-import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useToast } from "../../Components/Toast";
@@ -10,7 +9,7 @@ import { Mail, Lock, Eye, EyeOff, User, ArrowBigRight } from "../../Components/I
 
 const Login = () => {
   const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
+  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const router = useRouter();
@@ -20,17 +19,10 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/login`, {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/login`, {
         email,
-        pass,
+        password,
       }, { withCredentials: true });
-
-      Cookies.set("token", response.data.accessToken, {
-        expires: 7,
-        secure: process.env.NODE_ENV === "production",
-        sameSite: "Strict",
-      });
-
       toast.success("Welcome back! Login successful.");
       router.push("/Admin");
     } catch (error) {
@@ -42,134 +34,104 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center p-4 relative overflow-hidden bg-slate-50">
-      {/* Background Decoration */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
-        <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-indigo-100/50 rounded-full blur-[120px]" />
-        <div className="absolute -bottom-[10%] -right-[10%] w-[40%] h-[40%] bg-blue-100/50 rounded-full blur-[120px]" />
+    <div className="min-h-screen w-full flex items-center justify-center bg-slate-50 relative overflow-hidden">
+      {/* Abstract Background Shapes */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-indigo-200/20 rounded-full blur-[100px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-blue-200/20 rounded-full blur-[100px]" />
       </div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="w-full max-w-[420px]"
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="w-full max-w-md px-6 z-10"
       >
-        <div className="bg-white rounded-[2.5rem] shadow-2xl shadow-indigo-100/50 border border-slate-100 overflow-hidden relative">
-          {/* Header Image/Pattern */}
-          <div className="h-32 bg-gradient-to-br from-indigo-600 to-blue-700 p-8 flex flex-col justify-end">
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              <h2 className="text-3xl font-black text-white tracking-tight">Login</h2>
-              <p className="text-white/70 text-sm font-medium">Access your admin dashboard</p>
-            </motion.div>
+        <div className="bg-white rounded-3xl shadow-xl shadow-slate-200/60 border border-slate-100 p-8 md:p-10 relative overflow-hidden">
+          {/* Top Decorative Line */}
+          <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500" />
+
+          <div className="text-center mb-8">
+            <div className="mx-auto w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 mb-4 shadow-sm border border-indigo-100">
+              <Lock className="w-6 h-6" />
+            </div>
+            <h1 className="text-2xl font-bold text-slate-800 tracking-tight">Admin Access</h1>
+            <p className="text-slate-500 text-sm mt-2">Enter credentials to unlock dashboard</p>
           </div>
 
-          <div className="p-8 md:p-10">
-            <form onSubmit={LoginAdmin} className="space-y-6">
-              {/* Email Field */}
-              <div className="space-y-2">
-                <label className="text-[11px] font-black uppercase tracking-widest text-slate-400 ml-1">
-                  Email Address
-                </label>
-                <div className="relative group">
-                  <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-indigo-500 transition-colors">
-                    <Mail className="w-5 h-5" />
-                  </div>
-                  <input
-                    type="email"
-                    placeholder="name@example.com"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    className="w-full bg-slate-50 border border-slate-100 rounded-2xl py-4 pl-12 pr-4 text-sm text-slate-700 outline-none focus:bg-white focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/5 transition-all placeholder:text-slate-300"
-                  />
+          <form onSubmit={LoginAdmin} className="space-y-5">
+            <div className="space-y-1.5">
+              <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider ml-1">
+                Email Address
+              </label>
+              <div className="relative group">
+                <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-indigo-500 transition-colors">
+                  <Mail className="w-5 h-5" />
                 </div>
+                <input
+                  type="email"
+                  placeholder="admin@portfolio.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-xl px-11 py-3.5 outline-none focus:bg-white focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all placeholder:text-slate-400"
+                  required
+                />
               </div>
-
-              {/* Password Field */}
-              <div className="space-y-2">
-                <div className="flex justify-between items-center ml-1">
-                  <label className="text-[11px] font-black uppercase tracking-widest text-slate-400">
-                    Password
-                  </label>
-                  <Link href="/ResetPassword">
-                    <span className="text-[11px] font-bold text-indigo-500 hover:text-indigo-600 transition-colors cursor-pointer">
-                      Forgot?
-                    </span>
-                  </Link>
-                </div>
-                <div className="relative group">
-                  <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-indigo-500 transition-colors">
-                    <Lock className="w-5 h-5" />
-                  </div>
-                  <input
-                    type={showPassword ? "text" : "password"}
-                    placeholder="Enter your password"
-                    value={pass}
-                    onChange={(e) => setPass(e.target.value)}
-                    required
-                    className="w-full bg-slate-50 border border-slate-100 rounded-2xl py-4 pl-12 pr-12 text-sm text-slate-700 outline-none focus:bg-white focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/5 transition-all placeholder:text-slate-300"
-                  />
-                  <button
-                    type="button"
-                    onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-indigo-500 transition-colors"
-                  >
-                    {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
-                  </button>
-                </div>
-              </div>
-
-              {/* Submit Button */}
-              <button
-                type="submit"
-                disabled={loading}
-                className="w-full relative group overflow-hidden"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-blue-600 group-hover:from-indigo-700 group-hover:to-blue-700 transition-all rounded-2xl" />
-                <div className="relative py-4 flex items-center justify-center gap-2 text-white font-bold text-sm tracking-wide">
-                  {loading ? (
-                    <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                  ) : (
-                    <>
-                      Sign In
-                      <ArrowBigRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </>
-                  )}
-                </div>
-              </button>
-            </form>
-
-            {/* Footer */}
-            <div className="mt-10 pt-8 border-t border-slate-50 text-center">
-              <p className="text-slate-500 text-xs font-medium">
-                Don't have an account?{" "}
-                <Link href="/Admin/Register">
-                  <span className="text-indigo-600 font-black hover:text-indigo-700 transition-colors cursor-pointer ml-1">
-                    Create Account
-                  </span>
-                </Link>
-              </p>
             </div>
+
+            <div className="space-y-1.5">
+              <div className="flex items-center justify-between ml-1">
+                <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  Password
+                </label>
+                {/* <Link href="/Admin/Forgot" className="text-xs font-medium text-indigo-500 hover:text-indigo-600 transition-colors">
+                  Forgot Password?
+                </Link> */}
+              </div>
+              <div className="relative group">
+                <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-indigo-500 transition-colors">
+                  <Lock className="w-5 h-5" />
+                </div>
+                <input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="••••••••"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-xl px-11 py-3.5 outline-none focus:bg-white focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all placeholder:text-slate-400"
+                  required
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-indigo-600 transition-colors p-1"
+                >
+                  {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                </button>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full bg-slate-900 hover:bg-slate-800 text-white font-medium py-3.5 rounded-xl transition-all transform active:scale-[0.98] shadow-lg shadow-slate-900/20 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 mt-6"
+            >
+              {loading ? (
+                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+              ) : (
+                <>
+                  <span>Sign In</span>
+                  <ArrowBigRight className="w-4 h-4" />
+                </>
+              )}
+            </button>
+          </form>
+
+          <div className="mt-8 pt-6 border-t border-slate-100 text-center">
+            <p className="text-slate-400 text-xs">
+              Protected Area. Authorized Personnel Only.
+            </p>
           </div>
         </div>
-
-        {/* Optional Branding */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mt-8 flex flex-col items-center gap-1"
-        >
-          <div className="flex items-center gap-1.5 grayscale opacity-30">
-            <div className="w-6 h-6 bg-slate-900 rounded-lg" />
-            <span className="font-black text-slate-900 tracking-tighter text-lg">DGT PORTFOLIO</span>
-          </div>
-          <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Premium Admin Experience</p>
-        </motion.div>
       </motion.div>
     </div>
   );

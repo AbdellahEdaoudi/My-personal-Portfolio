@@ -8,6 +8,8 @@
         "experience": "الخبرة",
         "contact": "تواصل",
         "admin": "Admin",
+        "developer": "مطور",
+        "fullStack": "Full Stack",
         "mobileMenu": {
             "navigation": "التنقل",
             "explore": "استكشف هذا القسم",
@@ -32,7 +34,7 @@
         "supportDetail": "متصل 24/7",
         "description": "أمتلك خبرة واسعة في تحويل الأفكار إلى تطبيقات مبتكرة، آمنة، وفعالة. ينصب تركيزي على المزج بين تحسين تجربة المستخدم وتصميم واجهات جذابة، وبين ضمان أمان قوي وأداء عالي للتطبيقات.",
         "downloadCv": "السيرة الذاتية",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "المهارات",

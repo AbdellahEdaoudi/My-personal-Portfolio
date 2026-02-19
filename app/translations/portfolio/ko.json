@@ -7,7 +7,9 @@
         "education": "교육",
         "experience": "경력",
         "contact": "연락처",
-        "admin": "관리자",
+        "admin": "Admin",
+        "developer": "개발자",
+        "fullStack": "풀스택",
         "mobileMenu": {
             "navigation": "네비게이션",
             "explore": "이 섹션 탐색",
@@ -32,7 +34,7 @@
         "supportDetail": "연중무휴 온라인",
         "description": "저는 아이디어를 혁신적이고 안전하며 효과적인 애플리케이션으로 변환하는 데 광범위한 경험을 가지고 있습니다. 저의 초점은 사용자 경험을 향상시키고 매력적인 인터페이스를 만드는 것과 강력한 보안 및 고성능을 보장하는 것을 융합하는 것입니다.",
         "downloadCv": "이력서",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "기술",
@@ -371,7 +373,7 @@
             {
                 "title": "창립자 및 풀 스택 개발자 – DGT Portfolio",
                 "company": "Dgt Portfolio",
-                "location": "El-Aaiun , 모로코",
+                "location": "Laayoune , 모로코",
                 "startDate": "2024년 10월",
                 "endDate": "현재",
                 "duration": "+ 4개월",
@@ -389,7 +391,7 @@
             {
                 "title": "풀 스택 MERN 개발자",
                 "company": "지역 교육 훈련 아카데미",
-                "location": "El-Aaiun , 모로코",
+                "location": "Laayoune , 모로코",
                 "startDate": "2024년 3월",
                 "endDate": "2024년 4월",
                 "duration": "2개월",
@@ -407,7 +409,7 @@
             {
                 "title": "풀 스택 웹 개발자",
                 "company": "직업 및 역량 도시",
-                "location": "El-Aaiun , 모로코",
+                "location": "Laayoune , 모로코",
                 "startDate": "2023년 9월",
                 "endDate": "2024년 6월",
                 "duration": "10개월",
@@ -429,7 +431,7 @@
             {
                 "title": "디지털 개발자 인턴",
                 "company": "직업 및 역량 도시",
-                "location": "El-Aaiun , 모로코",
+                "location": "Laayoune , 모로코",
                 "startDate": "2022년 11월",
                 "endDate": "2023년 6월",
                 "duration": "8개월",
@@ -460,7 +462,7 @@
                 "degree": "디지털 개발 디플로마 (풀 스택 웹 옵션)",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "El-Aaiun , 모로코",
+                "location": "Laayoune , 모로코",
                 "imageUrl": "/Education/cmc.png"
             },
             {
@@ -468,7 +470,7 @@
                 "degree": "학사 학위, 물리 과학",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "El-Aaiun , 모로코",
+                "location": "Laayoune , 모로코",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
