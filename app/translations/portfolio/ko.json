@@ -369,24 +369,21 @@
         "subtitle": "나의 전문 경력",
         "items": [
             {
-                "title": "DGT 포트폴리오 창립자 및 개발자",
+                "title": "창립자 및 풀 스택 개발자 – DGT Portfolio",
                 "company": "Dgt Portfolio",
                 "location": "El-Aaiun , 모로코",
                 "startDate": "2024년 10월",
                 "endDate": "현재",
-                "duration": "+ 2개월",
+                "duration": "+ 4개월",
                 "type": "창립자 및 개발자",
                 "workType": "하이브리드",
                 "achievementsLabel": "성과 :",
                 "responsibilities": [
-                    "코딩이나 디자인 기술 없이 디지털 포트폴리오를 만드는 전문적인 방법입니다.",
-                    "맞춤형 하위 도메인: yourname.dgtportfolio.com",
-                    "맞춤형 도메인: yourname.com",
-                    "포트폴리오의 SEO 가시성 향상",
-                    "쉬운 공유를 위한 QR 코드 준비",
-                    "스타일에 맞는 다양한 테마",
-                    "선택한 언어로 포트폴리오 표시",
-                    "빠르고 원활하며 사용자 친화적인 경험"
+                    "전문 온라인 포트폴리오를 구축하기 위한 SaaS 플랫폼을 설계하고 개발했습니다。",
+                    "JWT를 사용하여 인증 및 권한 부여를 구현했습니다。",
+                    "RESTful API를 구축하고 결제 시스템을 통합했습니다。",
+                    "Vercel에 애플리케이션을 배포하고 Git/GitHub를 사용하여 코드베이스를 관리했습니다。",
+                    "성능, SEO 및 사용자 경험을 개선했습니다。"
                 ]
             },
             {
