@@ -39,6 +39,10 @@
         "subtitle": "मेरा तकनीकी स्तर",
         "frontendTitle": "फ्रंटएंड डेवलपर",
         "backendTitle": "बैकएंड डेवलपर",
+        "databaseTitle": "डेटाबेस प्रबंधन",
+        "authTitle": "प्रमाणीकरण और सुरक्षा",
+        "paymentsTitle": "भुगतान और एकीकरण",
+        "otherTitle": "अन्य",
         "toolsTitle": "विकास उपकरण",
         "softSkillsTitle": "सॉफ्ट स्किल्स",
         "softSkills": [

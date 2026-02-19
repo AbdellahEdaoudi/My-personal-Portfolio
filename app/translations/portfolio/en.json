@@ -37,9 +37,13 @@
     "skills": {
         "title": "Skills",
         "subtitle": "My technical level",
-        "frontendTitle": "Frontend Developer",
-        "backendTitle": "Backend Developer",
-        "toolsTitle": "Development Tools",
+        "frontendTitle": "Front-End Technologies",
+        "backendTitle": "Back-End Technologies",
+        "databaseTitle": "Database Management",
+        "authTitle": "Authentication & Security",
+        "paymentsTitle": "Payments & Integrations",
+        "toolsTitle": "DevOps & Tools",
+        "otherTitle": "Other",
         "softSkillsTitle": "Soft Skills",
         "softSkills": [
             {

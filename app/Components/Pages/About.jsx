@@ -16,7 +16,7 @@ function About({ content, lang }) {
       <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 pt-2 md:pt-7 px-4">
         <div className="flex flex-col-reverse  md:items-start items-center md:flex-row gap-6 md:gap-28">
           {/* Image Section - About Page Premium Version */}
-          <div className="relative group md:block hidde">
+          <div className="relative group animate-float md:block hidden">
             <div className="absolute -top-6 -left-6 text-blue-600/10 text-[6rem] font-serif transition-all duration-700 group-hover:-translate-x-3 group-hover:-translate-y-3 select-none leading-none">
               {lang === 'ar' ? '}' : '{'}
             </div>

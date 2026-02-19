@@ -39,6 +39,10 @@
         "subtitle": "Mijn technisch niveau",
         "frontendTitle": "Frontend Ontwikkelaar",
         "backendTitle": "Backend Ontwikkelaar",
+        "databaseTitle": "Databasebeheer",
+        "authTitle": "Authenticatie en Veiligheid",
+        "paymentsTitle": "Betalingen en Integratie",
+        "otherTitle": "Overige",
         "toolsTitle": "Ontwikkeltools",
         "softSkillsTitle": "Soft Skills",
         "softSkills": [
