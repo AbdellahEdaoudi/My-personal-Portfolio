@@ -369,24 +369,21 @@
         "subtitle": "Mijn Professionele Ervaring",
         "items": [
             {
-                "title": "Oprichter & Ontwikkelaar van DGT Portfolio",
+                "title": "Oprichter & Full Stack Ontwikkelaar – DGT Portfolio",
                 "company": "Dgt Portfolio",
                 "location": "El-Aaiun , Marokko",
                 "startDate": "Okt 2024",
                 "endDate": "Heden",
-                "duration": "+ 2 mnd",
+                "duration": "+ 4 mnd",
                 "type": "Oprichter & Ontwikkelaar",
                 "workType": "Hybride",
                 "achievementsLabel": "Prestaties:",
                 "responsibilities": [
-                    "Professionele manier om uw digitale portfolio te maken zonder codeer- of ontwerpvaardigheden.",
-                    "Aangepast subdomein: uwname.dgtportfolio.com",
-                    "Aangepast domein: uwname.com",
-                    "Verbeterde SEO-zichtbaarheid voor uw portfolio",
-                    "QR-code klaar voor eenvoudig delen",
-                    "Meerdere thema's die bij uw stijl passen",
-                    "Toon uw portfolio in elke taal die u kiest",
-                    "Snelle, soepele en gebruiksvriendelijke ervaring"
+                    "Ontwierp en ontwikkelde een SaaS-platform voor het bouwen van professionele online portfolio's.",
+                    "Implementeerde authenticatie en autorisatie met behulp van JWT.",
+                    "Bouwde RESTful API's en integreerde betalingssystemen.",
+                    "De applicatie geïmplementeerd op Vercel en de codebase beheerd met Git/GitHub.",
+                    "Verbeterde prestaties, SEO en gebruikerservaring."
                 ]
             },
             {

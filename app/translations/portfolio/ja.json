@@ -369,24 +369,21 @@
         "subtitle": "私の職業経験",
         "items": [
             {
-                "title": "DGT Portfolioの創設者兼開発者",
+                "title": "創設者兼フルスタック開発者 – DGT Portfolio",
                 "company": "Dgt Portfolio",
                 "location": "El-Aaiun , モロッコ",
                 "startDate": "2024年10月",
                 "endDate": "現在",
-                "duration": "+ 2ヶ月",
+                "duration": "+ 4ヶ月",
                 "type": "創設者 & 開発者",
                 "workType": "ハイブリッド",
                 "achievementsLabel": "実績 :",
                 "responsibilities": [
-                    "コーディングやデザインのスキルなしでデジタルポートフォリオを作成する専門的な方法。",
-                    "カスタムサブドメイン: yourname.dgtportfolio.com",
-                    "カスタムドメイン: yourname.com",
-                    "ポートフォリオのSEO可視性の向上",
-                    "簡単に共有できるQRコード",
-                    "あなたのスタイルに合わせた複数のテーマ",
-                    "選択した言語でポートフォリオを表示",
-                    "高速でスムーズ、そしてユーザーフレンドリーな体験"
+                    "プロフェッショナルなオンラインポートフォリオを構築するためのSaaSプラットフォームを設計および開発しました。",
+                    "JWTを使用して認証と認可を実装しました。",
+                    "RESTful APIを構築し、決済システムを統合しました。",
+                    "Vercelにアプリケーションを展開し、Git/GitHubを使用してコードベースを管理しました。",
+                    "パフォーマンス、SEO、およびユーザーエクスペリエンスを向上させました。"
                 ]
             },
             {
