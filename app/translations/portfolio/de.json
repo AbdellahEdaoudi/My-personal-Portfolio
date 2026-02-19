@@ -8,6 +8,8 @@
         "experience": "Erfahrung",
         "contact": "Kontakt",
         "admin": "Admin",
+        "developer": "Entwickler",
+        "fullStack": "Full Stack",
         "mobileMenu": {
             "navigation": "Navigation",
             "explore": "Diesen Bereich erkunden",
@@ -32,7 +34,7 @@
         "supportDetail": "Online 24/7",
         "description": "Ich verfüge über umfangreiche Erfahrung in der Umsetzung von Ideen in innovative, sichere und effektive Anwendungen. Mein Fokus liegt auf der Verbesserung der Benutzererfahrung und der Gestaltung attraktiver Schnittstellen bei gleichzeitiger Gewährleistung robuster Sicherheit und hoher Leistung.",
         "downloadCv": "Lebenslauf",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Fähigkeiten",
@@ -532,7 +534,7 @@
         "emailLabel": "E-Mail",
         "whatsappLabel": "WhatsApp",
         "locationLabel": "Standort",
-        "locationValue": "El-Aaiun, Marokko",
+        "locationValue": "Laayoune, Marokko",
         "copyright": "Urheberrecht",
         "rights": "Alle Rechte vorbehalten"
     },

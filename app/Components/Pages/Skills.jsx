@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { FaReact, FaNodeJs, FaGitAlt, FaDocker, FaStripe, FaPaypal, FaLock, FaUserShield, FaCloud, FaSitemap, FaGithub } from "react-icons/fa";
 import { SiNextdotjs, SiMongodb, SiTailwindcss, SiBootstrap, SiPostman, SiMongoose, SiJsonwebtokens, SiCloudinary, SiSocketdotio, SiVercel } from "react-icons/si";
@@ -53,7 +51,7 @@ function Skills({ content }) {
   };
 
   const renderSection = (title, items) => (
-    <div className='bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-2xl flex flex-col items-center h-full shadow-md'>
+    <div className='bg-white border border-gray-200 dark:border-gray-700 p-6 rounded-2xl flex flex-col items-center h-full shadow-md'>
       <h1 className='pb-4 font-bold text-gray-900 dark:text-white text-lg border-b border-gray-200 dark:border-gray-700 w-full text-center mb-6'>
         {title}
       </h1>
@@ -68,7 +66,7 @@ function Skills({ content }) {
               <span className={`flex items-center justify-center w-8 h-8 ${item.color || ''}`}>
                 {item.isImage ? (
                   <div className="relative w-8 h-8 rounded-full overflow-hidden">
-                    <Image fill src={item.src} alt={item.name} className="object-cover" />
+                    <Image width={50} height={50} src={item.src} alt={item.name} className="" />
                   </div>
                 ) : (
                   <span className="text-3xl">{item.icon}</span>
@@ -89,7 +87,7 @@ function Skills({ content }) {
   );
 
   return (
-    <section id='skill' className='pt-4 pb-10 flex flex-col items-center md:px-10 px-5 bg-gray-50 dark:bg-gray-900'>
+    <section id='skill' className='pt-4 pb-10 flex flex-col items-center md:px-10 px-5'>
       <div className="text-center mb-10">
         <p className="text-4xl font-bold">{content.title}</p>
         <p className="text-gray-400 text-sm">{content.subtitle}</p>
@@ -105,7 +103,7 @@ function Skills({ content }) {
         {renderSection(content.otherTitle, skillsData.other)}
 
         {/* SoftSkills */}
-        <div className='bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-2xl flex flex-col items-center h-full shadow-md'>
+        <div className='bg-white border border-gray-200 dark:border-gray-700 p-6 rounded-2xl flex flex-col items-center h-full shadow-md'>
           <h1 className='pb-4 font-bold text-gray-900 dark:text-white text-lg border-b border-gray-200 dark:border-gray-700 w-full text-center mb-6'>
             {content.softSkillsTitle}
           </h1>
@@ -114,7 +112,7 @@ function Skills({ content }) {
               <div key={i} className="flex flex-col items-center gap-2 group cursor-default">
                 <div className="p-1 rounded-full border-2 border-transparent group-hover:border-blue-500 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 group-hover:shadow-lg group-hover:shadow-blue-200 dark:group-hover:shadow-blue-900/30 transition-all duration-300">
                   <div className="w-14 h-14 relative rounded-full overflow-hidden border border-gray-200 dark:border-gray-600">
-                    <Image fill src={tl.image} alt={tl.name} className="object-cover" />
+                    <Image width={50} height={50} src={tl.image} alt={tl.name} className="object-cover w-[50px] h-[50px]" />
                   </div>
                 </div>
                 <span className='text-gray-900 dark:text-gray-100 text-sm font-bold whitespace-nowrap mt-1 group-hover:text-blue-500 transition-colors duration-300'>

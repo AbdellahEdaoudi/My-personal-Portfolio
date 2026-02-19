@@ -7,7 +7,9 @@
         "education": "Opleiding",
         "experience": "Ervaring",
         "contact": "Contact",
-        "admin": "Beheerder",
+        "admin": "Admin",
+        "developer": "Ontwikkelaar",
+        "fullStack": "Full Stack",
         "mobileMenu": {
             "navigation": "Navigatie",
             "explore": "Verken deze sectie",
@@ -32,7 +34,7 @@
         "supportDetail": "24/7 Online",
         "description": "Ik heb uitgebreide ervaring in het omzetten van ideeën in innovatieve, veilige en effectieve applicaties. Mijn focus combineert het verbeteren van de gebruikerservaring en het creëren van aantrekkelijke interfaces met het waarborgen van robuuste beveiliging en hoge prestaties.",
         "downloadCv": "CV",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Vaardigheden",
@@ -371,7 +373,7 @@
             {
                 "title": "Oprichter & Full Stack Ontwikkelaar – DGT Portfolio",
                 "company": "Dgt Portfolio",
-                "location": "El-Aaiun , Marokko",
+                "location": "Laayoune , Marokko",
                 "startDate": "Okt 2024",
                 "endDate": "Heden",
                 "duration": "+ 4 mnd",
@@ -389,7 +391,7 @@
             {
                 "title": "Full Stack MERN-ontwikkelaar",
                 "company": "Regionale Academie voor Onderwijs en Opleiding",
-                "location": "El-Aaiun , Marokko",
+                "location": "Laayoune , Marokko",
                 "startDate": "Mrt 2024",
                 "endDate": "Apr 2024",
                 "duration": "2 mnd",
@@ -407,7 +409,7 @@
             {
                 "title": "Full Stack Webontwikkelaar",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "El-Aaiun , Marokko",
+                "location": "Laayoune , Marokko",
                 "startDate": "Sep 2023",
                 "endDate": "Jun 2024",
                 "duration": "10 mnd",
@@ -429,7 +431,7 @@
             {
                 "title": "Stagiair Digitaal Ontwikkelaar",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "El-Aaiun , Marokko",
+                "location": "Laayoune , Marokko",
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 mnd",
@@ -460,7 +462,7 @@
                 "degree": "Diploma in Digitale Ontwikkeling (Full Stack Web Optie)",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "El-Aaiun, Marokko",
+                "location": "Laayoune, Marokko",
                 "imageUrl": "/Education/cmc.png"
             },
             {
@@ -468,7 +470,7 @@
                 "degree": "Bachelor, Natuurwetenschappen",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "El-Aaiun, Marokko",
+                "location": "Laayoune, Marokko",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -528,7 +530,7 @@
         "emailLabel": "E-mail",
         "whatsappLabel": "WhatsApp",
         "locationLabel": "Locatie",
-        "locationValue": "El-Aaiun, Marokko",
+        "locationValue": "Laayoune, Marokko",
         "copyright": "Auteursrecht",
         "rights": "Alle rechten voorbehouden"
     },

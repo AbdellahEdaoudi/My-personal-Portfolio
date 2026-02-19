@@ -8,6 +8,8 @@
         "experience": "Doświadczenie",
         "contact": "Kontakt",
         "admin": "Admin",
+        "developer": "Programista",
+        "fullStack": "Full Stack",
         "mobileMenu": {
             "navigation": "Nawigacja",
             "explore": "Eksploruj tę sekcję",
@@ -32,7 +34,7 @@
         "supportDetail": "Online 24/7",
         "description": "Mam bogate doświadczenie w przekształcaniu pomysłów w innowacyjne, bezpieczne i skuteczne aplikacje. Moja praca łączy ulepszanie doświadczenia użytkownika i tworzenie atrakcyjnych interfejsów z zapewnieniem solidnego bezpieczeństwa i wysokiej wydajności.",
         "downloadCv": "CV",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Umiejętności",
@@ -371,7 +373,7 @@
             {
                 "title": "Założyciel i Full Stack Developer – DGT Portfolio",
                 "company": "Dgt Portfolio",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "startDate": "Paź 2024",
                 "endDate": "Obecnie",
                 "duration": "+ 4 mies.",
@@ -389,7 +391,7 @@
             {
                 "title": "Full Stack MERN Developer",
                 "company": "Regionalna Akademia Edukacji i Szkoleń",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "startDate": "Mar 2024",
                 "endDate": "Kwi 2024",
                 "duration": "2 mies.",
@@ -407,7 +409,7 @@
             {
                 "title": "Full Stack Web Developer",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "startDate": "Wrz 2023",
                 "endDate": "Cze 2024",
                 "duration": "10 mies.",
@@ -429,7 +431,7 @@
             {
                 "title": "Stażysta Deweloper Cyfrowy",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "startDate": "Lis 2022",
                 "endDate": "Cze 2023",
                 "duration": "8 mies.",
@@ -460,7 +462,7 @@
                 "degree": "Dyplom Rozwoju Cyfrowego (Opcja Full Stack Web)",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "imageUrl": "/Education/cmc.png"
             },
             {
@@ -468,7 +470,7 @@
                 "degree": "Licencjat, Nauki Fizyczne",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]

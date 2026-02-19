@@ -6,8 +6,10 @@
         "projects": "प्रोजेक्ट्स",
         "education": "शिक्षा",
         "experience": "अनुभव",
-        "contact": "संपर्क",
-        "admin": "व्यवस्थापक",
+        "contact": "संपर्क करें",
+        "admin": "Admin",
+        "developer": "डेवलपर",
+        "fullStack": "फुल स्टैक",
         "mobileMenu": {
             "navigation": "नेविगेशन",
             "explore": "इस अनुभाग का अन्वेषण करें",
@@ -32,7 +34,7 @@
         "supportDetail": "ऑनलाइन 24/7",
         "description": "मुझे विचारों को नवीन, सुरक्षित और प्रभावी अनुप्रयोगों में बदलने का व्यापक अनुभव है। मेरा ध्यान उपयोगकर्ता अनुभव को बढ़ाने और आकर्षक इंटरफेस तैयार करने के साथ-साथ मजबूत सुरक्षा और उच्च प्रदर्शन सुनिश्चित करने पर केंद्रित है।",
         "downloadCv": "बायोडेटा",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "कौशल",

@@ -42,13 +42,7 @@ function Contact({ content }) {
         setLoading(true);
 
         try {
-            await axios.post(
-                '/api/Contact',
-                { subject, email, message },
-                {
-                    headers: { "Content-Type": "application/json" },
-                }
-            );
+            await axios.post('/api/contact', { subject, email, message });
             setSubject("");
             setEmail("");
             setMessage("");

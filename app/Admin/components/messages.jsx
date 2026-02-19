@@ -7,6 +7,7 @@ import {
     MessageSquare, Trash2, Search, Plus, MessageCircle, ChevronLeft, ChevronRight,
     User, Mail, Clock, RefreshCcw
 } from "../../Components/Icons";
+import { useRouter } from "next/navigation";
 
 export default function Messages() {
     const toast = useToast();
@@ -15,6 +16,7 @@ export default function Messages() {
     const [searchTerm, setSearchTerm] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
     const [expandedMessage, setExpandedMessage] = useState(null);
+    const router = useRouter();
     const itemsPerPage = 6;
 
     // Delete Modal State
@@ -30,13 +32,24 @@ export default function Messages() {
         try {
             const response = await apiRequest({
                 method: "get",
-                url: '/api/Contact',
+                url: '/api/contact',
             });
             setContacts(Array.isArray(response.data) ? response.data.reverse() : []);
             if (silent) toast.success("Inbox updated.");
         } catch (error) {
-            console.error("Fetch error:", error);
-            toast.error("Failed to fetch messages.");
+            console.error("Fetch error details:", error);
+            if (error.response) {
+                if (error.response.status === 401) {
+                    toast.error("Unauthorized: Please login again.");
+                    router.push("/Admin/Login");
+                } else {
+                    toast.error(`Error: ${error.response.data?.message || "Failed to fetch messages."}`);
+                }
+            } else if (error.request) {
+                toast.error("Network error: No response received.");
+            } else {
+                toast.error("Error setting up request.");
+            }
         } finally {
             setIsLoading(false);
         }
@@ -59,16 +72,31 @@ export default function Messages() {
         setDeleteModal(prev => ({ ...prev, isDeleting: true }));
         try {
             if (deleteModal.type === "all") {
-                await apiRequest({ method: "delete", url: '/api/Contact' });
+                await apiRequest({ method: "delete", url: '/api/contact' });
                 setContacts([]);
                 toast.success("All messages deleted successfully.");
             } else if (deleteModal.type === "single" && deleteModal.id) {
-                await apiRequest({ method: "delete", url: `/api/Contact/${deleteModal.id}` });
+                await apiRequest({ method: "delete", url: `/api/contact/${deleteModal.id}` });
                 setContacts((prev) => prev.filter((contact) => contact._id !== deleteModal.id));
                 toast.success("Message deleted successfully.");
             }
         } catch (error) {
-            toast.error(deleteModal.type === "all" ? "Failed to delete messages." : "Failed to delete contact.");
+            console.error("Delete error details:", error);
+            if (error.response) {
+                const errorMsg = error.response.data?.message || "Delete failed.";
+                if (error.response.status === 401) {
+                    toast.error("Unauthorized: Please login again.");
+                    router.push("/Admin/Login");
+                } else if (error.response.status === 403) {
+                    toast.error("Forbidden: You don't have permission.");
+                } else {
+                    toast.error(`Error: ${errorMsg}`);
+                }
+            } else if (error.request) {
+                toast.error("Network error: No response received.");
+            } else {
+                toast.error("Error setting up delete request.");
+            }
         } finally {
             setDeleteModal(prev => ({ ...prev, isOpen: false, isDeleting: false }));
         }
@@ -80,14 +108,13 @@ export default function Messages() {
                 subject: "أستغفر الله",
                 email: "شهادة.عبدالله@portfolio.com",
                 message: "لا اله الا الله محمد رسول الله",
-                created_at: new Date().toISOString(),
             };
-            await apiRequest({ method: "post", url: '/api/Contact', data: newMsg });
-            setContacts((prev) => [...prev, newMsg]);
-            toast.success("New message simulated successfully.");
+            const res = await apiRequest({ method: "post", url: '/api/contact', data: newMsg });
+            setContacts((prev) => [...prev, res.data]);
+            toast.success("Added successfully.");
         } catch (error) {
             console.error("Add message error:", error);
-            toast.error("Failed to add simulation message.");
+            toast.error("Failed to add message.");
         }
     };
 
