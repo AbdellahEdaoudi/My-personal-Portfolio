@@ -47,7 +47,7 @@ function Home({ content, lang }) {
           </div>
         </div>
         {/* Image Section - Premium Tech Glow Design */}
-        <div className="relative group">
+        <div className="relative group animate-float">
           {/* Decorative Brackets - Reverted to TL/BR but symbols flipped for AR */}
           <div className="absolute -top-6 -left-6 text-blue-600/10 text-[7rem] font-serif transition-all duration-700 group-hover:-translate-x-3 group-hover:-translate-y-3 select-none leading-none">
             {lang === 'ar' ? '}' : '{'}

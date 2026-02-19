@@ -220,12 +220,12 @@ export default function Header({ content, lang }) {
                                         className="flex items-center justify-between"
                                     >
                                         <div className="flex flex-col">
-                                            <span className={`text-2xl font-bold tracking-tight transition-colors duration-300 ${pathname === `/${lang}${ln.path}` ? 'text-emerald-600' : 'text-slate-900 group-hover:text-emerald-500'}`}>
+                                            <span className={`text-2xl font-bold tracking-tight transition-colors duration-300 ${pathname === `/${lang}${ln.path}` || pathname === `${ln.path}` ? 'text-emerald-600' : 'text-slate-900 group-hover:text-emerald-500'}`}>
                                                 {ln.name}
                                             </span>
                                             <span className="text-[10px] text-slate-400 font-medium uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300">{content?.mobileMenu?.explore || "Explore this section"}</span>
                                         </div>
-                                        <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-500 ${pathname === `/${lang}${ln.path}` ? 'bg-emerald-600 text-white' : 'bg-slate-50 text-slate-400 group-hover:bg-emerald-50 group-hover:text-emerald-600'}`}>
+                                        <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-500 ${pathname === `/${lang}${ln.path}` || pathname === `${ln.path}` ? 'bg-emerald-600 text-white' : 'bg-slate-50 text-slate-400 group-hover:bg-emerald-50 group-hover:text-emerald-600'}`}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                                         </div>
                                     </Link>
@@ -236,12 +236,12 @@ export default function Header({ content, lang }) {
                         {/* Section 2: Quick Career Info */}
                         <div className="grid grid-cols-2 gap-3">
                             <Link href={getPath(lang, "/Experience")}
-                                onClick={() => setMenu(false)} className={`p-5 rounded-3xl transition-all duration-300 ${pathname === `/${lang}/Experience` ? 'bg-slate-900 text-white shadow-xl' : 'bg-slate-50 text-slate-900 hover:bg-white border border-slate-100 shadow-sm'}`}>
+                                onClick={() => setMenu(false)} className={`p-5 rounded-3xl transition-all duration-300 ${pathname === `/${lang}/Experience` || pathname === `/Experience` ? 'bg-slate-900 text-white shadow-xl' : 'bg-slate-50 text-slate-900 hover:bg-white border border-slate-100 shadow-sm'}`}>
                                 <div className="text-[10px] font-bold opacity-60 uppercase mb-2">{content?.mobileMenu?.history || "History"}</div>
                                 <div className="text-sm font-black italic">{content?.experience || "Experience"}</div>
                             </Link>
                             <Link href={getPath(lang, "/Education")}
-                                onClick={() => setMenu(false)} className={`p-5 rounded-3xl transition-all duration-300 ${pathname === `/${lang}/Education` ? 'bg-slate-900 text-white shadow-xl' : 'bg-slate-50 text-slate-900 hover:bg-white border border-slate-100 shadow-sm'}`}>
+                                onClick={() => setMenu(false)} className={`p-5 rounded-3xl transition-all duration-300 ${pathname === `/${lang}/Education` || pathname === `/Education` ? 'bg-slate-900 text-white shadow-xl' : 'bg-slate-50 text-slate-900 hover:bg-white border border-slate-100 shadow-sm'}`}>
                                 <div className="text-[10px] font-bold opacity-60 uppercase mb-2">{content?.mobileMenu?.learning || "Learning"}</div>
                                 <div className="text-sm font-black italic">{content?.education || "Education"}</div>
                             </Link>

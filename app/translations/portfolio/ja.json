@@ -39,6 +39,10 @@
         "subtitle": "私の技術レベル",
         "frontendTitle": "フロントエンド開発者",
         "backendTitle": "バックエンド開発者",
+        "databaseTitle": "データベース管理",
+        "authTitle": "認証とセキュリティ",
+        "paymentsTitle": "支払いと統合",
+        "otherTitle": "その他",
         "toolsTitle": "開発ツール",
         "softSkillsTitle": "ソフトスキル",
         "softSkills": [
