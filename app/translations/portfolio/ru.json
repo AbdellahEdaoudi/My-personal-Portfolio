@@ -39,6 +39,10 @@
         "subtitle": "Мой технический уровень",
         "frontendTitle": "Frontend Разработчик",
         "backendTitle": "Backend Разработчик",
+        "databaseTitle": "Управление Базами Данных",
+        "authTitle": "Аутентификация и Безопасность",
+        "paymentsTitle": "Платежи и Интеграция",
+        "otherTitle": "Другое",
         "toolsTitle": "Инструменты разработки",
         "softSkillsTitle": "Софт скиллы",
         "softSkills": [

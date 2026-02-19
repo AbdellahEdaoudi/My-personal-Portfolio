@@ -39,6 +39,10 @@
         "subtitle": "나의 기술 수준",
         "frontendTitle": "프론트엔드 개발자",
         "backendTitle": "백엔드 개발자",
+        "databaseTitle": "데이터베이스 관리",
+        "authTitle": "인증 및 보안",
+        "paymentsTitle": "결제 및 통합",
+        "otherTitle": "기타",
         "toolsTitle": "개발 도구",
         "softSkillsTitle": "소프트 스킬",
         "softSkills": [

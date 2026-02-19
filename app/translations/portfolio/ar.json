@@ -37,9 +37,13 @@
     "skills": {
         "title": "المهارات",
         "subtitle": "المستوى التقني",
-        "frontendTitle": "مطور واجهة أمامية",
-        "backendTitle": "مطور واجهة خلفية",
-        "toolsTitle": "أدوات التطوير",
+        "frontendTitle": "تقنيات الواجهة الأمامية",
+        "backendTitle": "تقنيات الواجهة الخلفية",
+        "databaseTitle": "إدارة قواعد البيانات",
+        "authTitle": "المصادقة والأمان",
+        "paymentsTitle": "الدفع والتكامل",
+        "toolsTitle": "DevOps والأدوات",
+        "otherTitle": "أخرى",
         "softSkillsTitle": "المهارات الشخصية",
         "softSkills": [
             {

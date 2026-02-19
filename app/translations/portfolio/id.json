@@ -39,6 +39,10 @@
         "subtitle": "Level teknis saya",
         "frontendTitle": "Pengembang Frontend",
         "backendTitle": "Pengembang Backend",
+        "databaseTitle": "Manajemen Basis Data",
+        "authTitle": "Otentikasi dan Keamanan",
+        "paymentsTitle": "Pembayaran dan Integrasi",
+        "otherTitle": "Lainnya",
         "toolsTitle": "Alat Pengembangan",
         "softSkillsTitle": "Keterampilan lunak",
         "softSkills": [

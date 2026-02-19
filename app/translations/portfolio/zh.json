@@ -39,6 +39,10 @@
         "subtitle": "我的技术水平",
         "frontendTitle": "前端开发人员",
         "backendTitle": "后端开发人员",
+        "databaseTitle": "数据库管理",
+        "authTitle": "认证与安全",
+        "paymentsTitle": "支付与集成",
+        "otherTitle": "其他",
         "toolsTitle": "开发工具",
         "softSkillsTitle": "软技能",
         "softSkills": [

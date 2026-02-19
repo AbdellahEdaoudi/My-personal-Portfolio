@@ -39,6 +39,10 @@
         "subtitle": "Mon niveau technique",
         "frontendTitle": "Développeur Frontend",
         "backendTitle": "Développeur Backend",
+        "databaseTitle": "Gestion de Bases de Données",
+        "authTitle": "Authentification et Sécurité",
+        "paymentsTitle": "Paiements et Intégration",
+        "otherTitle": "Autre",
         "toolsTitle": "Outils de Développement",
         "softSkillsTitle": "Soft Skills",
         "softSkills": [

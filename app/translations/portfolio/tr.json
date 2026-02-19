@@ -39,6 +39,10 @@
         "subtitle": "Teknik seviyem",
         "frontendTitle": "Frontend Geliştirici",
         "backendTitle": "Backend Geliştirici",
+        "databaseTitle": "Veritabanı Yönetimi",
+        "authTitle": "Kimlik Doğrulama ve Güvenlik",
+        "paymentsTitle": "Ödemeler ve Entegrasyon",
+        "otherTitle": "Diğer",
         "toolsTitle": "Geliştirme Araçları",
         "softSkillsTitle": "Sosyal Beceriler",
         "softSkills": [
