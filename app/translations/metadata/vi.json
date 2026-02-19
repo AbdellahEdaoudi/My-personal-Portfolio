@@ -1,0 +1,85 @@
+{
+    "home": {
+        "title": "Abdellah Edaoudi | Lập trình viên Full Stack",
+        "description": "Portfolio chính thức của Abdellah Edaoudi, một Lập trình viên Full Stack chuyên về MERN stack, Next.js, Nest.js và xây dựng các ứng dụng web an toàn, có khả năng mở rộng.",
+        "keywords": "Abdellah Edaoudi, Lập trình viên Full Stack, MERN Stack, Next.js, Nest.js, Bảo mật ứng dụng, Phát triển Web, React, Node.js, MongoDB, JavaScript, Kỹ sư phần mềm, Mở rộng ứng dụng, Lập trình viên Ma-rốc",
+        "openGraph": {
+            "title": "Abdellah Edaoudi - Lập trình viên Full Stack",
+            "description": "Portfolio chính thức của Abdellah Edaoudi, một Lập trình viên Full Stack chuyên về MERN stack, Next.js, Nest.js và xây dựng các ứng dụng web an toàn, có khả năng mở rộng."
+        },
+        "twitter": {
+            "title": "Abdellah Edaoudi | Lập trình viên Full Stack & Chuyên gia Bảo mật",
+            "description": "Portfolio chính thức của Abdellah Edaoudi, một Lập trình viên Full Stack chuyên về MERN stack, Next.js, Nest.js và xây dựng các ứng dụng web an toàn, có khả năng mở rộng."
+        },
+        "google": {
+            "name": "Abdellah Edaoudi | Lập trình viên Full Stack",
+            "description": "Portfolio chính thức của Abdellah Edaoudi, một Lập trình viên Full Stack chuyên về MERN stack, Next.js, Nest.js và xây dựng các ứng dụng web an toàn, có khả năng mở rộng."
+        }
+    },
+    "about": {
+        "title": "Abdellah Edaoudi | Giới thiệu",
+        "description": "Khám phá hành trình của Abdellah Edaoudi. Một Lập trình viên Full Stack hàng đầu chuyên về các ứng dụng MERN có thể mở rộng, hiệu suất Next.js và các giải pháp kỹ thuật số sáng tạo.",
+        "keywords": [
+            "Về Abdellah Edaoudi",
+            "Chuyên gia Full Stack",
+            "Lập trình viên MERN Stack",
+            "Kiến trúc sư Next.js",
+            "Thương hiệu Phát triển Web"
+        ]
+    },
+    "contact": {
+        "title": "Abdellah Edaoudi | Liên hệ",
+        "description": "Sẵn sàng xây dựng những điều tuyệt vời? Liên hệ với Abdellah Edaoudi cho các yêu cầu freelance, hợp tác hoặc các vai trò phát triển Full Stack toàn thời gian. Hãy cùng trò chuyện.",
+        "keywords": [
+            "Tuyển Lập trình viên Full Stack",
+            "Liên hệ Lập trình viên Web",
+            "Lập trình viên MERN Freelance",
+            "Liên hệ Abdellah Edaoudi",
+            "Dịch vụ Phát triển Web"
+        ]
+    },
+    "education": {
+        "title": "Abdellah Edaoudi | Học vấn",
+        "description": "Khám phá nền tảng học thuật của một chuyên gia Full Stack. Bằng cấp chuyên môn về Phát triển Kỹ thuật số, các kỹ năng được chứng nhận về React, Node.js và kiến trúc web hiện đại.",
+        "keywords": [
+            "Bằng cấp Phát triển Kỹ thuật số",
+            "Chứng chỉ Full Stack",
+            "Giáo dục Phát triển Web",
+            "Bằng cấp Abdellah Edaoudi",
+            "Đào tạo MERN"
+        ]
+    },
+    "experience": {
+        "title": "Abdellah Edaoudi | Kinh nghiệm",
+        "description": "Theo dõi sự nghiệp của Abdellah Edaoudi. Người sáng lập DGT Portfolio và lập trình viên giàu kinh nghiệm cung cấp các ứng dụng web có tác động cao cho các ngành công nghiệp khác nhau.",
+        "keywords": [
+            "Kinh nghiệm Full Stack",
+            "Sự nghiệp Lập trình viên Web",
+            "Người sáng lập DGT Portfolio",
+            "Việc làm MERN Stack",
+            "Lập trình viên Web Chuyên nghiệp"
+        ]
+    },
+    "projects": {
+        "title": "Abdellah Edaoudi | Dự án",
+        "description": "Duyệt qua bộ sưu tập chọn lọc các ứng dụng web hiệu suất cao. Trưng bày chuyên môn về MERN stack, nền tảng SaaS và thiết kế đáp ứng bởi Abdellah Edaoudi.",
+        "keywords": [
+            "Portfolio Phát triển Web",
+            "Dự án MERN Stack",
+            "Ứng dụng React",
+            "Trưng bày Next.js",
+            "Dự án Abdellah Edaoudi"
+        ]
+    },
+    "skills": {
+        "title": "Abdellah Edaoudi | Kỹ năng",
+        "description": "Đi sâu vào kho vũ khí kỹ thuật của Abdellah Edaoudi. Làm chủ JavaScript, React, Node.js, MongoDB, Docker và các công cụ xây dựng web hiện đại.",
+        "keywords": [
+            "Kỹ năng MERN Stack",
+            "Chuyên môn Next.js",
+            "Làm chủ JavaScript",
+            "Công cụ DevOps",
+            "Công nghệ Phát triển Web"
+        ]
+    }
+}

@@ -1,0 +1,541 @@
+{
+    "header": {
+        "home": "Trang chủ",
+        "about": "Giới thiệu",
+        "skills": "Kỹ năng",
+        "projects": "Dự án",
+        "education": "Học vấn",
+        "experience": "Kinh nghiệm",
+        "contact": "Liên hệ",
+        "admin": "Quản trị",
+        "developer": "Nhà phát triển",
+        "fullStack": "Full Stack",
+        "mobileMenu": {
+            "navigation": "Điều hướng",
+            "explore": "Khám phá phần này",
+            "history": "Lịch sử",
+            "learning": "Học tập"
+        }
+    },
+    "home": {
+        "greeting": "Xin chào, tôi là Abdellah Edaoudi",
+        "role": "🔷 Lập trình viên Full Stack 🔷",
+        "description": "Tôi chuyên xây dựng các ứng dụng web full-stack an toàn sử dụng bộ công nghệ MERN, cũng như các framework tiên tiến như Next.js và NestJS. Tôi tập trung cung cấp các giải pháp hiệu suất cao, có khả năng mở rộng với mã nguồn sạch và trải nghiệm người dùng tuyệt vời.",
+        "portfolio": "Danh mục đầu tư"
+    },
+    "about": {
+        "title": "Về tôi",
+        "subtitle": "Giới thiệu",
+        "experience": "Kinh nghiệm",
+        "experienceDetail": "năm làm việc",
+        "completed": "Hoàn thành",
+        "completedDetail": "+22 Dự án",
+        "support": "Hỗ trợ",
+        "supportDetail": "Trực tuyến 24/7",
+        "description": "Tôi có kinh nghiệm sâu rộng trong việc biến ý tưởng thành các ứng dụng sáng tạo, an toàn và hiệu quả. Trọng tâm của tôi là kết hợp nâng cao trải nghiệm người dùng và tạo ra giao diện hấp dẫn với việc đảm bảo bảo mật mạnh mẽ và hiệu suất cao.",
+        "downloadCv": "Hồ sơ",
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
+    },
+    "skills": {
+        "title": "Kỹ năng",
+        "subtitle": "Trình độ kỹ thuật của tôi",
+        "frontendTitle": "Lập trình viên Front-End",
+        "backendTitle": "Lập trình viên Back-End",
+        "databaseTitle": "Quản lý Cơ sở dữ liệu",
+        "authTitle": "Xác thực & Bảo mật",
+        "paymentsTitle": "Thanh toán & Tích hợp",
+        "toolsTitle": "DevOps & Công cụ",
+        "otherTitle": "Khác",
+        "softSkillsTitle": "Kỹ năng mềm",
+        "softSkills": [
+            {
+                "name": "Giải quyết vấn đề",
+                "image": "/Skills/Problem Solving.png"
+            },
+            {
+                "name": "Làm việc nhóm",
+                "image": "/Skills/Teamwork.jpg"
+            },
+            {
+                "name": "Giao tiếp",
+                "image": "/Skills/Communication.png"
+            },
+            {
+                "name": "Thích nghi",
+                "image": "/Skills/Adaptability.png"
+            }
+        ]
+    },
+    "projects": {
+        "title": "Dự án",
+        "subtitle": "Công việc gần đây",
+        "liveDemo": "Demo",
+        "readMore": "Đọc thêm",
+        "showLess": "Thu gọn",
+        "items": [
+            {
+                "title": "DGT Portfolio Builder",
+                "type": "fullstack",
+                "image": "/Projects/dgtportfolio.png",
+                "websiteUrl": "https://dgtportfolio.com/vi",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "description": "Một nền tảng SaaS toàn diện giúp người dùng xây dựng danh mục đầu tư chuyên nghiệp một cách dễ dàng. Nó có hỗ trợ đa ngôn ngữ, tích hợp tên miền tùy chỉnh, lựa chọn chủ đề động, tạo sơ yếu lý lịch thời gian thực và bảng điều khiển quản trị trực quan để quản lý nội dung, đăng ký và phân tích.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "PayPal",
+                        "logo": "/Skills/paypal.png"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Hệ thống đặt phòng khách sạn",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "Hệ thống quản lý khách sạn cung cấp giải pháp toàn diện để quản lý đặt phòng và thanh toán. Nó cho phép người dùng dễ dàng đặt phòng và nhận vé xác nhận điện tử. Hệ thống bao gồm bảng điều khiển để quản lý đặt phòng, thanh toán và phản hồi khách hàng qua email.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Hệ thống Chat thời gian thực an toàn",
+                "type": "fullstack",
+                "image": "/Projects/edchatflow.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "Hệ thống Chat thời gian thực an toàn là ứng dụng nhắn tin tức thì hiệu suất cao với bảo mật nâng cao. Nó sử dụng Socket.io để giao tiếp thời gian thực và triển khai Mã hóa đầu cuối (E2EE) để đảm bảo quyền riêng tư của tin nhắn. Nó cũng bao gồm hệ thống xác thực mạnh mẽ sử dụng JWT và băm mật khẩu với Bcrypt, đảm bảo bảo vệ dữ liệu người dùng ở tiêu chuẩn cao nhất.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Back-End Thương mại điện tử",
+                "type": "backend",
+                "image": "/Projects/Ecom-backend.png",
+                "websiteUrl": "/Projects/Requirements.docx.pdf",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubUrls": "",
+                "description": "Một hệ thống back-end mạnh mẽ và có thể mở rộng cho nền tảng thương mại điện tử. Hệ thống xử lý các chức năng khác nhau như quản lý người dùng, tổ chức kho sản phẩm, xử lý đơn hàng, xử lý thanh toán (bằng tiền mặt hoặc thẻ), thêm phiếu giảm giá, đánh giá, quản lý danh mục và thương hiệu, quản lý nhà cung cấp và quy định thuế.",
+                "technologies": [
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Typescript ",
+                        "logo": "/Skills/typescript.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Nền tảng Hồ sơ cá nhân",
+                "image": "/Projects/Linkerfolio.png",
+                "websiteUrl": "https://linkerfolio.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "description": "Ứng dụng sáng tạo tôi đã phát triển, cho phép người dùng giới thiệu Hồ sơ chuyên nghiệp và các liên kết mạng xã hội ở một nơi. Ứng dụng này giúp người dùng quản lý danh tính kỹ thuật số hiệu quả, biến nó thành công cụ lý tưởng cho người tìm việc hoặc bất kỳ ai muốn nâng cao sự hiện diện trực tuyến và ảnh hưởng kỹ thuật số.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Công cụ nén ảnh",
+                "image": "/Projects/image-compressor.png",
+                "websiteUrl": "https://image-compressor-aed.vercel.app",
+                "githubUrl": "",
+                "githubUrls": "",
+                "description": "Một công cụ nén ảnh dựa trên trình duyệt mạnh mẽ và an toàn. Nó cho phép người dùng nén không giới hạn hình ảnh JPG, PNG và WebP lên đến 90% mà không làm giảm chất lượng. Các tính năng bao gồm nén hàng loạt, tạo PDF, giao diện kéo và thả, và bảo mật hoàn toàn vì tất cả quá trình xử lý diễn ra cục bộ trong trình duyệt.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Ứng dụng quản lý mã QR",
+                "image": "/Projects/EdQrcode.png",
+                "websiteUrl": "https://edqrcode.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubUrls": "",
+                "description": "Một ứng dụng quản lý mã QR cho phép bạn tạo mã QR với logo tùy chỉnh, đọc mã QR từ hình ảnh và quét mã QR qua camera để hiển thị dữ liệu ngay lập tức. Có thiết kế hấp dẫn và đáp ứng.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ],
+                "Rapport": " "
+            },
+            {
+                "title": "Ứng dụng mua sắm",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubUrls": "",
+                "description": "Một ứng dụng cung cấp trải nghiệm mua sắm liền mạch, giúp người dùng dễ dàng duyệt sản phẩm và thêm mặt hàng vào giỏ hàng. Ứng dụng có thiết kế hiện đại và sáng tạo nâng cao trải nghiệm người dùng, với khả năng phản hồi tức thì và các yếu tố tương tác làm cho việc mua sắm thú vị hơn.",
+                "technologies": [
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "experience": {
+        "title": "Kinh nghiệm",
+        "subtitle": "Kinh nghiệm làm việc của tôi",
+        "items": [
+            {
+                "title": "Người sáng lập & Lập trình viên Full Stack – DGT Portfolio",
+                "company": "Dgt Portfolio",
+                "location": "Laayoune, Ma-rốc",
+                "startDate": "Tháng 10 2024",
+                "endDate": "Hiện tại",
+                "duration": "+ 4 tháng",
+                "type": "Người sáng lập & Lập trình viên",
+                "workType": "Kết hợp",
+                "achievementsLabel": "Thành tựu:",
+                "responsibilities": [
+                    "Thiết kế và phát triển nền tảng SaaS để xây dựng danh mục đầu tư trực tuyến chuyên nghiệp.",
+                    "Triển khai xác thực và ủy quyền bằng JWT.",
+                    "Xây dựng API RESTful và tích hợp hệ thống thanh toán.",
+                    "Triển khai ứng dụng trên Vercel và quản lý mã nguồn bằng Git/GitHub.",
+                    "Cải thiện hiệu suất, SEO và trải nghiệm người dùng."
+                ]
+            },
+            {
+                "title": "Lập trình viên Full Stack MERN",
+                "company": "Regional Academy of Education and Training",
+                "location": "Laayoune, Ma-rốc",
+                "startDate": "Tháng 3 2024",
+                "endDate": "Tháng 4 2024",
+                "duration": "2 tháng",
+                "type": "Thực tập",
+                "workType": "Kết hợp",
+                "achievementsLabel": "Thành tựu:",
+                "responsibilities": [
+                    "Thiết kế và phát triển ứng dụng quản lý tác vụ cho phép người dùng thêm, sửa và xóa tác vụ.",
+                    "Triển khai xác thực và ủy quyền bằng JWT để đảm bảo an toàn cho ứng dụng.",
+                    "Kiểm tra các điểm cuối API bằng Postman để đảm bảo chức năng phù hợp.",
+                    "Cải thiện trải nghiệm người dùng bằng cách thiết kế giao diện đơn giản và thân thiện.",
+                    "Triển khai ứng dụng trên Vercel và quản lý mã nguồn bằng Git/GitHub."
+                ]
+            },
+            {
+                "title": "Lập trình viên Full Stack Web",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Laayoune, Ma-rốc",
+                "startDate": "Tháng 9 2023",
+                "endDate": "Tháng 6 2024",
+                "duration": "10 tháng",
+                "type": "Thực tập",
+                "workType": "Tại văn phòng",
+                "achievementsLabel": "Thành tựu:",
+                "description": [
+                    "Đạt được kỹ năng phát triển web thiết yếu bằng cách kết hợp lý thuyết với thực hành trong môi trường chuyên nghiệp.",
+                    "Thiết kế giao diện người dùng tương tác và hấp dẫn trong phát triển front-end.",
+                    "Có kinh nghiệm trong phát triển back-end và quản lý cơ sở dữ liệu.",
+                    "Phát triển kỹ năng tạo và duy trì các ứng dụng web động.",
+                    "Áp dụng phương pháp Agile để cải thiện hiệu quả và tăng cường làm việc nhóm.",
+                    "Có kinh nghiệm sử dụng Git và GitHub để quản lý mã và dự án hiệu quả.",
+                    "Sử dụng SonarQube để phân tích chất lượng mã và đảm bảo cải tiến liên tục.",
+                    "Sử dụng Docker để tối ưu hóa quản lý môi trường và phát triển ứng dụng.",
+                    "Nâng cao kỹ năng giao tiếp, bao gồm làm việc nhóm, để chuẩn bị tốt hơn trong các môi trường làm việc đa dạng."
+                ]
+            },
+            {
+                "title": "Thực tập sinh Lập trình kỹ thuật số",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Laayoune, Ma-rốc",
+                "startDate": "Tháng 11 2022",
+                "endDate": "Tháng 6 2023",
+                "duration": "8 tháng",
+                "type": "Thực tập",
+                "workType": "Tại văn phòng",
+                "keyResponsibilities": "Trách nhiệm chính:",
+                "description": [
+                    "Văn hóa và kỹ thuật tiên tiến trong lĩnh vực kỹ thuật số",
+                    "Hiểu quy mô nghề nghiệp và lộ trình học tập",
+                    "Nắm vững cơ bản về thuật toán",
+                    "Kỹ năng hành vi và xã hội",
+                    "Phát triển kỹ năng lập trình hướng đối tượng",
+                    "Thiết kế và xây dựng trang web tĩnh",
+                    "Sử dụng JavaScript để phát triển ứng dụng",
+                    "Làm việc với cơ sở dữ liệu và thực hiện các thao tác cơ bản",
+                    "Xây dựng trang web động tương tác với người dùng",
+                    "Làm quen với các nguyên tắc bảo mật hệ thống thông tin"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "Học vấn",
+        "subtitle": "Hành trình cá nhân của tôi",
+        "items": [
+            {
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
+                "degree": "Bằng cử nhân Phát triển kỹ thuật số (Full Stack Web)",
+                "startDate": "2022",
+                "endDate": "2024",
+                "location": "Laayoune, Ma-rốc",
+                "imageUrl": "/Education/cmc.png"
+            },
+            {
+                "institution": "Trường Trung học Baba Ahmed bin Muhammad Yahdih",
+                "degree": "Bằng tú tài, Khoa học Vật lý",
+                "startDate": "2021",
+                "endDate": "2022",
+                "location": "Laayoune, Ma-rốc",
+                "imageUrl": "/Education/BabAhmedImage.jpg"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Liên hệ với tôi",
+        "subtitle": "Giữ liên lạc",
+        "subjectPlaceholder": "Nhập chủ đề",
+        "emailPlaceholder": "Nhập email của bạn",
+        "messagePlaceholder": "Viết tin nhắn",
+        "sendButton": "Gửi tin nhắn",
+        "sendingButton": "Đang gửi...",
+        "writeMe": "Viết cho tôi",
+        "email": "Email",
+        "whatsapp": "WhatsApp",
+        "validationError": "Vui lòng điền vào tất cả các trường và cung cấp địa chỉ email hợp lệ.",
+        "formError": "Vui lòng sửa các lỗi trong biểu mẫu.",
+        "subjectRequired": "Chủ đề là bắt buộc",
+        "emailRequired": "Email là bắt buộc",
+        "emailInvalid": "Vui lòng nhập một địa chỉ email hợp lệ",
+        "messageRequired": "Tin nhắn là bắt buộc",
+        "successMessage": "Gửi thành công",
+        "errorMessage": "Đã xảy ra lỗi. Vui lòng thử lại."
+    },
+    "footer": {
+        "name": "Abdellah Edaoudi",
+        "tagline": "Lập trình viên Full Stack | Xây dựng ứng dụng web hiện đại & bảo mật",
+        "backToTop": "Về đầu trang",
+        "siteMapLabel": "Sơ đồ trang web",
+        "links": [
+            {
+                "name": "Về tôi",
+                "path": "/About"
+            },
+            {
+                "name": "Kỹ năng",
+                "path": "/Skills"
+            },
+            {
+                "name": "Dự án",
+                "path": "/Projects"
+            },
+            {
+                "name": "Học vấn",
+                "path": "/Education"
+            },
+            {
+                "name": "Kinh nghiệm",
+                "path": "/Experience"
+            },
+            {
+                "name": "Liên hệ",
+                "path": "/Contact"
+            }
+        ],
+        "connectLabel": "Kết nối",
+        "emailLabel": "Email",
+        "whatsappLabel": "WhatsApp",
+        "locationLabel": "Vị trí",
+        "locationValue": "Laayoune, Ma-rốc",
+        "copyright": "Bản quyền",
+        "rights": "Mọi quyền được bảo lưu"
+    },
+    "scrollToTop": {
+        "backToTop": "Về đầu trang"
+    }
+}

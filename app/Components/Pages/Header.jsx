@@ -15,6 +15,8 @@ const languages = [
     { code: 'de', name: 'Deutsch', countryCode: 'de' },
     { code: 'fr', name: 'Français', countryCode: 'fr' },
     { code: 'es', name: 'Español', countryCode: 'es' },
+    { code: 'sv', name: 'Svenska', countryCode: 'se' },
+    { code: 'vi', name: 'Tiếng Việt', countryCode: 'vn' },
     { code: 'pt', name: 'Português', countryCode: 'pt' },
     { code: 'it', name: 'Italiano', countryCode: 'it' },
     { code: 'nl', name: 'Nederlands', countryCode: 'nl' },
@@ -42,10 +44,6 @@ export default function Header({ content, lang }) {
     const pathLength = pathname.split('/').filter(Boolean).length;
     if (!content) return null;
 
-    // Helper to get path without current language
-    const getPathWithoutLang = (path) => {
-        return path.replace(/^\/(en|fr|de|zh|nl|es|pt|ar|ru|ja|it|hi|tr|ko|id|pl)/, '');
-    }
 
     const LinksHeader = [
         { name: content?.home || "Home", path: "/" },
@@ -101,12 +99,22 @@ export default function Header({ content, lang }) {
             <div className='flex items-center py-4 justify-evenly text-gray-800 rounded-sm relative z-50'>
                 <div className='hover:scale-105 duration-300'>
                     <Link href={`/`}>
-                        <div className="flex items-center gap-1 hover:bg-slate-50 px-3 py-1 rounded-lg transition-all duration-300">
-                            <span className="text-emerald-700 font-semibold text-xl group-hover:text-emerald-600 transition-colors duration-300">&lt;</span>
-                            <span className="text-2xl font-bold text-slate-900 tracking-tight">
-                                A<span className="text-emerald-600">.</span>Ed<span className="font-medium text-slate-600">Portfolio</span>
-                            </span>
-                            <span className="text-emerald-700 font-semibold text-xl group-hover:text-emerald-600 transition-colors duration-300">/&gt;</span>
+                        <div className="flex items-center gap-2.5 group">
+                            {/* Minimalist Logo Mark */}
+                            <div className="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-emerald-500/25 transition-all duration-300 group-hover:scale-105 group-hover:bg-emerald-600 relative overflow-hidden">
+                                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <span className="font-bold text-white text-lg tracking-tighter group-hover:text-white transition-colors relative z-10">AE</span>
+                            </div>
+
+                            {/* Text Brand - Hidden on mobile, visible on desktop */}
+                            <div className="flex flex-col">
+                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] leading-none group-hover:text-emerald-600 transition-colors duration-300">
+                                    {content.fullStack || "Full Stack"}
+                                </span>
+                                <span className="text-sm font-black text-slate-900 uppercase tracking-wider leading-none mt-0.5 group-hover:text-emerald-700 transition-colors duration-300">
+                                    {content.developer || "Developer"}
+                                </span>
+                            </div>
                         </div>
                     </Link>
                 </div>

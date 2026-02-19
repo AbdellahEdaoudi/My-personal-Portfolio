@@ -22,7 +22,7 @@ export const apiRequest = async (config) => {
   } catch (error) {
     if (error.response && error.response.status === 403) {
       try {
-        const refreshResponse = await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/refresh`, {}, {
+        const refreshResponse = await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`, {}, {
           withCredentials: true,
         });
         const newToken = refreshResponse.data.accessToken;

@@ -8,6 +8,8 @@
         "experience": "Pengalaman",
         "contact": "Kontak",
         "admin": "Admin",
+        "developer": "Pengembang",
+        "fullStack": "Full Stack",
         "mobileMenu": {
             "navigation": "Navigasi",
             "explore": "Jelajahi bagian ini",
@@ -32,7 +34,7 @@
         "supportDetail": "Online 24/7",
         "description": "Saya memiliki pengalaman luas dalam mengubah ide menjadi aplikasi yang inovatif, aman, dan efektif. Fokus saya memadukan peningkatan pengalaman pengguna dan pembuatan antarmuka yang menarik dengan memastikan keamanan yang kuat dan kinerja tinggi.",
         "downloadCv": "Resume",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Keahlian",
@@ -371,7 +373,7 @@
             {
                 "title": "Pendiri & Pengembang Full Stack – DGT Portfolio",
                 "company": "Dgt Portfolio",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "startDate": "Okt 2024",
                 "endDate": "Sekarang",
                 "duration": "+ 4 bln",
@@ -389,7 +391,7 @@
             {
                 "title": "Pengembang Full Stack MERN",
                 "company": "Akademi Regional Pendidikan dan Pelatihan",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "startDate": "Mar 2024",
                 "endDate": "Apr 2024",
                 "duration": "2 bln",
@@ -407,7 +409,7 @@
             {
                 "title": "Pengembang Web Full Stack",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "startDate": "Sep 2023",
                 "endDate": "Jun 2024",
                 "duration": "10 bln",
@@ -429,7 +431,7 @@
             {
                 "title": "Magang Pengembang Digital",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 bln",
@@ -460,7 +462,7 @@
                 "degree": "Diploma Pengembangan Digital (Opsi Web Full Stack)",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "imageUrl": "/Education/cmc.png"
             },
             {
@@ -468,7 +470,7 @@
                 "degree": "Gelar Sarjana, Ilmu Fisika",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "El-Aaiun , Maroko",
+                "location": "Laayoune , Maroko",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -528,7 +530,7 @@
         "emailLabel": "Email",
         "whatsappLabel": "WhatsApp",
         "locationLabel": "Lokasi",
-        "locationValue": "El-Aaiun, Maroko",
+        "locationValue": "Laayoune, Maroko",
         "copyright": "Hak Cipta",
         "rights": "Hak cipta dilindungi undang-undang"
     },

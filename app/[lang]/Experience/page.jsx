@@ -57,6 +57,8 @@ export async function generateMetadata({ params }) {
                 'ko': '/ko/Experience',
                 'id': '/id/Experience',
                 'pl': '/pl/Experience',
+                'sv': '/sv/Experience',
+                'vi': '/vi/Experience',
             },
         },
     }

@@ -56,7 +56,25 @@ const CustomCursor = () => {
     }, []);
 
     useEffect(() => {
-        setMounted(true);
+        const checkDevice = () => {
+            if (window.innerWidth >= 768) {
+                setMounted(true);
+            } else {
+                setMounted(false);
+            }
+        };
+
+        checkDevice();
+        window.addEventListener('resize', checkDevice);
+
+        return () => {
+            window.removeEventListener('resize', checkDevice);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!mounted) return;
+
         window.addEventListener('mousemove', handleMouseMove);
 
         const handleMouseOver = (e) => {
@@ -85,12 +103,12 @@ const CustomCursor = () => {
             window.removeEventListener('mousedown', handleMouseDown);
             window.removeEventListener('mouseup', handleMouseUp);
         };
-    }, [handleMouseMove, playClickSound]);
+    }, [mounted, handleMouseMove, playClickSound]);
 
     if (!mounted) return null;
 
     return (
-        <div className="fixed inset-0 pointer-events-none z-[9999999] hidden md:block">
+        <div className="fixed inset-0 pointer-events-none z-[9999999]">
             {/* 1. The Trailing Professional Glow */}
             <motion.div
                 className="fixed w-12 h-12 rounded-full"

@@ -1,0 +1,85 @@
+{
+    "home": {
+        "title": "Abdellah Edaoudi | Full Stack Utvecklare",
+        "description": "Officiell portfölj av Abdellah Edaoudi, en Full Stack-utvecklare specialiserad på MERN-stack, Next.js, Nest.js och att bygga säkra och skalbara webbapplikationer.",
+        "keywords": "Abdellah Edaoudi, Full Stack Utvecklare, MERN Backend, Next.js, Nest.js, Applikationssäkerhet, Webbutveckling, React, Node.js, MongoDB, JavaScript, Mjukvaruingenjör, Skalbara Applikationer, Utvecklare Marocko",
+        "openGraph": {
+            "title": "Abdellah Edaoudi - Full Stack Utvecklare",
+            "description": "Officiell portfölj av Abdellah Edaoudi, en Full Stack-utvecklare specialiserad på MERN-stack, Next.js, Nest.js och att bygga säkra och skalbara webbapplikationer."
+        },
+        "twitter": {
+            "title": "Abdellah Edaoudi | Full Stack Utvecklare & Säkerhetsexpert",
+            "description": "Officiell portfölj av Abdellah Edaoudi, en Full Stack-utvecklare specialiserad på MERN-stack, Next.js, Nest.js och att bygga säkra och skalbara webbapplikationer."
+        },
+        "google": {
+            "name": "Abdellah Edaoudi | Full Stack Utvecklare",
+            "description": "Officiell portfölj av Abdellah Edaoudi, en Full Stack-utvecklare specialiserad på MERN-stack, Next.js, Nest.js och att bygga säkra och skalbara webbapplikationer."
+        }
+    },
+    "about": {
+        "title": "Abdellah Edaoudi | Om",
+        "description": "Upptäck Abdellah Edaoudis resa. En toppklassig Full Stack-utvecklare som specialiserar sig på skalbara MERN-applikationer, Next.js-prestanda och innovativa digitala lösningar.",
+        "keywords": [
+            "Om Abdellah Edaoudi",
+            "Full Stack Expert",
+            "MERN Stack Utvecklare",
+            "Next.js Arkitekt",
+            "Webbutveckling Varumärke"
+        ]
+    },
+    "contact": {
+        "title": "Abdellah Edaoudi | Kontakt",
+        "description": "Redo att bygga något fantastiskt? Kontakta Abdellah Edaoudi för frilansförfrågningar, samarbeten eller heltidsroller inom Full Stack-utveckling. Låt oss prata.",
+        "keywords": [
+            "Anställ Full Stack Utvecklare",
+            "Webbutvecklare Kontakt",
+            "Frilans MERN Utvecklare",
+            "Abdellah Edaoudi Kontakt",
+            "Webbutvecklingstjänster"
+        ]
+    },
+    "education": {
+        "title": "Abdellah Edaoudi | Utbildning",
+        "description": "Utforska den akademiska grunden hos en Full Stack-expert. Specialiserat diplom i Digital Utveckling, certifierade färdigheter i React, Node.js och modern webbarkitektur.",
+        "keywords": [
+            "Digital Utveckling Diplom",
+            "Full Stack Certifiering",
+            "Webbutvecklingsutbildning",
+            "Abdellah Edaoudi Examina",
+            "MERN Utbildning"
+        ]
+    },
+    "experience": {
+        "title": "Abdellah Edaoudi | Erfarenhet",
+        "description": "Följ Abdellah Edaoudis karriär. Grundare av DGT Portfolio och erfaren utvecklare som levererar webbapplikationer med stor inverkan för olika branscher.",
+        "keywords": [
+            "Full Stack Erfarenhet",
+            "Webbutvecklare Karriär",
+            "DGT Portfolio Grundare",
+            "MERN Stack Jobb",
+            "Professionell Webbutvecklare"
+        ]
+    },
+    "projects": {
+        "title": "Abdellah Edaoudi | Projekt",
+        "description": "Bläddra i ett kurerat galleri av högpresterande webbapplikationer. Visar expertis inom MERN-stack, SaaS-plattformar och responsiv design av Abdellah Edaoudi.",
+        "keywords": [
+            "Webbutvecklingsportfölj",
+            "MERN Stack Projekt",
+            "React Applikationer",
+            "Next.js Showcase",
+            "Abdellah Edaoudi Projekt"
+        ]
+    },
+    "skills": {
+        "title": "Abdellah Edaoudi | Färdigheter",
+        "description": "Djupdyk i Abdellah Edaoudis tekniska arsenal. Behärskar JavaScript, React, Node.js, MongoDB, Docker och verktygen som bygger den moderna webben.",
+        "keywords": [
+            "MERN Stack Färdigheter",
+            "Next.js Expertis",
+            "JavaScript Behärskning",
+            "DevOps Verktyg",
+            "Webbutvecklingsteknologier"
+        ]
+    }
+}

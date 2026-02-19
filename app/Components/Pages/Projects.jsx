@@ -50,7 +50,7 @@ function Projects({ content }) {
               <div className="flex flex-wrap gap-2 justify-around py-2 px-1 border">
                 {p.technologies.map((tech, i) => (
                   <div key={i} className="flex items-center gap-1 bg-gray-100 rounded-full px-1 py-0.5 shadow-sm hover:shadow-md transition-shadow duration-300 text-xs">
-                    <Image src={tech.logo} alt={tech.name} width={18} height={18} className="rounded-full" />
+                    <Image src={tech.logo} alt={tech.name} width={18} height={18} className="rounded-full w-[18px] h-[18px]" />
                     <p className="text-xs text-gray-700">{tech.name}</p>
                   </div>
                 ))}

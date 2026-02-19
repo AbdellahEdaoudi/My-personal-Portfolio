@@ -6,8 +6,10 @@
         "projects": "Проекты",
         "education": "Образование",
         "experience": "Опыт",
-        "contact": "Контакты",
-        "admin": "Админ",
+        "contact": "Контакт",
+        "admin": "Admin",
+        "developer": "Разработчик",
+        "fullStack": "Full Stack",
         "mobileMenu": {
             "navigation": "Навигация",
             "explore": "Изучить этот раздел",
@@ -32,7 +34,7 @@
         "supportDetail": "Онлайн 24/7",
         "description": "У меня обширный опыт превращения идей в инновационные, безопасные и эффективные приложения. Мой подход сочетает в себе улучшение пользовательского опыта и создание привлекательных интерфейсов с обеспечением надежной безопасности и высокой производительности.",
         "downloadCv": "Резюме",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Навыки",
@@ -371,7 +373,7 @@
             {
                 "title": "Основатель и Full Stack Разработчик – DGT Portfolio",
                 "company": "Dgt Portfolio",
-                "location": "El-Aaiun , Марокко",
+                "location": "Laayoune , Марокко",
                 "startDate": "Окт 2024",
                 "endDate": "Настоящее время",
                 "duration": "+ 4 мес",
@@ -389,7 +391,7 @@
             {
                 "title": "Full Stack MERN Разработчик",
                 "company": "Региональная академия образования и обучения",
-                "location": "El-Aaiun , Марокко",
+                "location": "Laayoune , Марокко",
                 "startDate": "Мар 2024",
                 "endDate": "Апр 2024",
                 "duration": "2 мес",
@@ -407,7 +409,7 @@
             {
                 "title": "Full Stack Web Разработчик",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "El-Aaiun , Марокко",
+                "location": "Laayoune , Марокко",
                 "startDate": "Сен 2023",
                 "endDate": "Июн 2024",
                 "duration": "10 мес",
@@ -429,7 +431,7 @@
             {
                 "title": "Стажер цифровой разработчик",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "El-Aaiun , Марокко",
+                "location": "Laayoune , Марокко",
                 "startDate": "Ноя 2022",
                 "endDate": "Июн 2023",
                 "duration": "8 мес",
@@ -460,7 +462,7 @@
                 "degree": "Диплом в области цифрового развития (Опция Full Stack Web)",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "El-Aaiun , Марокко",
+                "location": "Laayoune , Марокко",
                 "imageUrl": "/Education/cmc.png"
             },
             {
@@ -468,7 +470,7 @@
                 "degree": "Степень бакалавра, Физические науки",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "El-Aaiun , Марокко",
+                "location": "Laayoune , Марокко",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]

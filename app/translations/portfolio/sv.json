@@ -1,59 +1,59 @@
 {
     "header": {
-        "home": "Startseite",
-        "about": "Über mich",
-        "skills": "Fähigkeiten",
-        "projects": "Projekte",
-        "education": "Bildung",
-        "experience": "Erfahrung",
+        "home": "Hem",
+        "about": "Om mig",
+        "skills": "Färdigheter",
+        "projects": "Projekt",
+        "education": "Utbildning",
+        "experience": "Erfarenhet",
         "contact": "Kontakt",
         "admin": "Admin",
-        "developer": "Entwickler",
+        "developer": "Utvecklare",
         "fullStack": "Full Stack",
         "mobileMenu": {
-            "navigation": "Navigation",
-            "explore": "Diesen Bereich erkunden",
-            "history": "Verlauf",
-            "learning": "Lernen"
+            "navigation": "Navigering",
+            "explore": "Utforska denna sektion",
+            "history": "Historik",
+            "learning": "Inlärning"
         }
     },
     "home": {
-        "greeting": "Hallo, ich bin Abdellah Edaoudi",
-        "role": "🔷 Full Stack Entwickler 🔷",
-        "description": "Ich spezialisiere mich auf den Aufbau sicherer Full-Stack-Webanwendungen mit dem MERN-Stack sowie fortgeschrittenen Frameworks wie Next.js und NestJS. Ich konzentriere mich darauf, hochperformante, skalierbare Lösungen mit sauberem Code und einer großartigen Benutzererfahrung zu liefern.",
-        "portfolio": "Portfolio"
+        "greeting": "Hej, jag är Abdellah Edaoudi",
+        "role": "🔷 Full Stack Utvecklare 🔷",
+        "description": "Jag specialiserar mig på att bygga säkra full-stack webbapplikationer med hjälp av MERN-stacken, samt avancerade ramverk som Next.js och NestJS. Jag fokuserar på att leverera högpresterande, skalbara lösningar med ren kod och bra användarupplevelse.",
+        "portfolio": "Portfölj"
     },
     "about": {
-        "title": "Über mich",
-        "subtitle": "Einführung",
-        "experience": "Erfahrung",
-        "experienceDetail": "Jahre Arbeit",
-        "completed": "Abgeschlossen",
-        "completedDetail": "+22 Projekte",
-        "support": "Unterstützung",
+        "title": "Om mig",
+        "subtitle": "Introduktion",
+        "experience": "Erfarenhet",
+        "experienceDetail": "år i branschen",
+        "completed": "Slutförda",
+        "completedDetail": "+22 Projekt",
+        "support": "Support",
         "supportDetail": "Online 24/7",
-        "description": "Ich verfüge über umfangreiche Erfahrung in der Umsetzung von Ideen in innovative, sichere und effektive Anwendungen. Mein Fokus liegt auf der Verbesserung der Benutzererfahrung und der Gestaltung attraktiver Schnittstellen bei gleichzeitiger Gewährleistung robuster Sicherheit und hoher Leistung.",
-        "downloadCv": "Lebenslauf",
+        "description": "Jag har omfattande erfarenhet av att omvandla idéer till innovativa, säkra och effektiva applikationer. Mitt fokus kombinerar att förbättra användarupplevelsen och skapa attraktiva gränssnitt med att säkerställa robust säkerhet och hög prestanda.",
+        "downloadCv": "CV",
         "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
-        "title": "Fähigkeiten",
-        "subtitle": "Mein technisches Niveau",
-        "frontendTitle": "Frontend Entwickler",
-        "backendTitle": "Backend Entwickler",
-        "databaseTitle": "Datenbankverwaltung",
-        "authTitle": "Authentifizierung und Sicherheit",
-        "paymentsTitle": "Zahlungen und Integration",
-        "otherTitle": "Andere",
-        "toolsTitle": "Entwicklungswerkzeuge",
-        "softSkillsTitle": "Soft Skills",
+        "title": "Färdigheter",
+        "subtitle": "Min tekniska nivå",
+        "frontendTitle": "Front-End Utvecklare",
+        "backendTitle": "Back-End Utvecklare",
+        "databaseTitle": "Databashantering",
+        "authTitle": "Autentisering & Säkerhet",
+        "paymentsTitle": "Betalningar & Integration",
+        "toolsTitle": "DevOps & Verktyg",
+        "otherTitle": "Annat",
+        "softSkillsTitle": "Mjuka färdigheter",
         "softSkills": [
             {
-                "name": "Problemlösung",
+                "name": "Problemlösning",
                 "image": "/Skills/Problem Solving.png"
             },
             {
-                "name": "Teamarbeit",
+                "name": "Teamarbete",
                 "image": "/Skills/Teamwork.jpg"
             },
             {
@@ -61,26 +61,26 @@
                 "image": "/Skills/Communication.png"
             },
             {
-                "name": "Anpassungsfähigkeit",
+                "name": "Anpassningsförmåga",
                 "image": "/Skills/Adaptability.png"
             }
         ]
     },
     "projects": {
-        "title": "Projekte",
-        "subtitle": "Neueste Arbeiten",
+        "title": "Projekt",
+        "subtitle": "Senaste arbetet",
         "liveDemo": "Demo",
-        "readMore": "Mehr lesen",
-        "showLess": "Weniger anzeigen",
+        "readMore": "Läs mer",
+        "showLess": "Visa mindre",
         "items": [
             {
                 "title": "DGT Portfolio Builder",
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com/de",
+                "websiteUrl": "https://dgtportfolio.com/sv",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
                 "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "description": "Eine umfassende SaaS-Plattform, die es Benutzern ermöglicht, professionelle Portfolios mühelos zu erstellen. Sie bietet mehrsprachige Unterstützung, benutzerdefinierte Domain-Integration, dynamische Themenauswahl, Echtzeit-Lebenslauf-Generierung und ein intuitives Admin-Dashboard zur Verwaltung von Inhalten, Abonnements und Analysen.",
+                "description": "En omfattande SaaS-plattform som ger användare möjlighet att bygga professionella portföljer utan ansträngning. Den har flerspråksstöd, anpassad domänintegration, dynamiskt temaval, realtidsgenerering av CV och en intuitiv administrationspanel för hantering av innehåll, prenumerationer och analys.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -117,12 +117,12 @@
                 ]
             },
             {
-                "title": "Hotelreservierungssystem",
+                "title": "Hotellbokningssystem",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
                 "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "Das Hotelmanagementsystem bietet eine umfassende Lösung für die Verwaltung von Zimmerbuchungen und Zahlungen. Es ermöglicht Benutzern, Zimmer einfach zu buchen und ein elektronisches Ticket zur Bestätigung zu erhalten. Das System umfasst ein Dashboard zur Verwaltung von Buchungen, Zahlungen und Kundenantworten per E-Mail.",
+                "description": "Hotellhanteringssystemet erbjuder en komplett lösning för hantering av rumsbokningar och betalningar. Det låter användare enkelt boka rum och ta emot en elektronisk bekräftelsebiljett. Systemet inkluderar en instrumentpanel för hantering av bokningar, betalningar och kundsvar via e-post.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -160,17 +160,16 @@
                         "name": "cloudinary",
                         "logo": "/Skills/cloudinary.jpg"
                     }
-                ],
-                "Rapport": " "
+                ]
             },
             {
-                "title": "Sicheres Echtzeit-Chat-System",
+                "title": "Säkert Realtids Chattsystem",
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
                 "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "Sicheres Echtzeit-Chat-System ist eine leistungsstarke Instant-Messaging-Anwendung mit fortschrittlicher Sicherheit. Sie nutzt Socket.io für die Echtzeitkommunikation und implementiert eine Ende-zu-Ende-Verschlüsselung (E2EE), um die Privatsphäre der Nachrichten zu gewährleisten. Außerdem verfügt sie über ein robustes Authentifizierungssystem mit JWT und Passwort-Hasching mit Bcrypt, das den Schutz der Benutzerdaten auf höchstem Niveau garantiert.",
+                "description": "Säkert Realtids Chattsystem är en högpresterande snabbmeddelandeapplikation med avancerad säkerhet. Den använder Socket.io för realtidskommunikation och implementerar End-to-End-kryptering (E2EE) för att säkerställa meddelandesekretess. Den inkluderar också ett robust autentiseringssystem med JWT och lösenordshashning med Bcrypt, vilket säkerställer skydd av användardata enligt högsta standard.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -211,13 +210,13 @@
                 ]
             },
             {
-                "title": "E-Commerce Back-End",
+                "title": "E-handels Backend",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
-                "description": "Ein robustes und skalierbares Back-End-System für eine E-Commerce-Plattform. Das System übernimmt verschiedene Funktionen wie Benutzerverwaltung, Organisation des Produktbestands, Auftragsabwicklung, Zahlungsabwicklung (entweder bar oder per Karte), Hinzufügen von Gutscheinen, Bewertungen, Kategorie- und Markenmanagement, Lieferantenmanagement und Steuerregulierung.",
+                "description": "Ett robust och skalbart backend-system för en e-handelsplattform. Systemet hanterar olika funktioner såsom användarhantering, produktlagerorganisation, orderbehandling, betalningshantering (kontant eller kort), tillägg av kuponger, recensioner, kategorier och varumärkeshantering, leverantörshantering och skattereglering.",
                 "technologies": [
                     {
                         "name": "Nestjs",
@@ -228,15 +227,15 @@
                         "logo": "/Skills/Nodejs.png"
                     },
                     {
-                        "name": "MongoDB",
+                        "name": "MongoDB ",
                         "logo": "/Skills/Mongodb.png"
                     },
                     {
-                        "name": "Typescript",
+                        "name": "Typescript ",
                         "logo": "/Skills/typescript.png"
                     },
                     {
-                        "name": "jwt",
+                        "name": "jwt ",
                         "logo": "/Skills/jwt.jpg"
                     },
                     {
@@ -254,12 +253,12 @@
                 ]
             },
             {
-                "title": "Lebenslauf-Plattform",
+                "title": "CV-plattform",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
                 "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
-                "description": "Innovative Anwendung, die ich entwickelt habe und die es Benutzern ermöglicht, ihren professionellen Lebenslauf und ihre Social-Media-Links an einem Ort zu präsentieren. Diese App hilft Benutzern, ihre digitale Identität effektiv zu verwalten, was sie zu einem idealen Werkzeug für Arbeitssuchende oder jeden macht, der seine Online-Präsenz und seinen digitalen Einfluss verbessern möchte.",
+                "description": "En innovativ applikation jag utvecklat som låter användare visa upp sina professionella CV och länkar till sociala medier på ett ställe. Denna app hjälper användare att hantera sin digitala identitet effektivt, vilket gör den till ett idealiskt verktyg för arbetssökande eller alla som vill förbättra sin närvaro och sitt digitala inflytande online.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -289,16 +288,15 @@
                         "name": "Git",
                         "logo": "/Skills/Git.png"
                     }
-                ],
-                "Rapport": " "
+                ]
             },
             {
-                "title": "Bildkompressor",
+                "title": "Bildkomprimerare",
                 "image": "/Projects/image-compressor.png",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubUrl": "",
                 "githubUrls": "",
-                "description": "Ein leistungsstarkes und sicheres browserbasiertes Bildkomprimierungstool. Es ermöglicht Benutzern, unbegrenzt viele JPG-, PNG- und WebP-Bilder um bis zu 90 % ohne Qualitätsverlust zu komprimieren. Zu den Funktionen gehören Massenkomprimierung, PDF-Erstellung, Drag-and-Drop-Oberfläche und vollständige Privatsphäre, da die gesamte Verarbeitung lokal erfolgt.",
+                "description": "Ett kraftfullt och säkert webbläsarbaserat verktyg för bildkomprimering. Det låter användare komprimera obegränsat antal JPG-, PNG- och WebP-bilder med upp till 90% utan kvalitetsförlust. Funktionerna inkluderar masskomprimering, PDF-generering, dra-och-släpp-gränssnitt och fullständig integritet eftersom all behandling sker lokalt i webbläsaren.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -319,12 +317,12 @@
                 ]
             },
             {
-                "title": "QR-Code-Manager-App",
+                "title": "QR-kodhanteringsapp",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
                 "githubUrls": "",
-                "description": "Eine QR-Code-Management-App, mit der Sie QR-Codes mit benutzerdefinierten Logos erstellen, QR-Codes aus Bildern lesen und QR-Codes über die Kamera scannen können, um Daten sofort anzuzeigen. Verfügt über ein attraktives und reaktionsschnelles Design.",
+                "description": "En QR-kodhanteringsapp som låter dig skapa QR-koder med anpassade logotyper, läsa QR-koder från bilder och skanna QR-koder via kameran för att visa data direkt. Har en attraktiv och responsiv design.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -346,12 +344,12 @@
                 "Rapport": " "
             },
             {
-                "title": "Shopping-App",
+                "title": "Shoppingapp",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
                 "githubUrls": "",
-                "description": "Eine App, die ein nahtloses Einkaufserlebnis bietet und es Benutzern erleichtert, Produkte zu durchsuchen und Artikel in ihren Warenkorb zu legen. Die App zeichnet sich durch ein modernes und innovatives Design aus, das die Benutzererfahrung mit sofortiger Reaktionsfähigkeit und interaktiven Elementen bereichert und das Einkaufen angenehmer macht.",
+                "description": "En app som erbjuder en smidig shoppingupplevelse och gör det enkelt för användare att bläddra bland produkter och lägga till varor i sin kundvagn. Appen har en modern och innovativ design som förbättrar användarupplevelsen, med omedelbar respons och interaktiva element som gör shoppingen roligare.",
                 "technologies": [
                     {
                         "name": "React.js",
@@ -365,164 +363,163 @@
                         "name": "Git",
                         "logo": "/Skills/Git.png"
                     }
-                ],
-                "Rapport": " "
+                ]
             }
         ]
     },
     "experience": {
-        "title": "Erfahrung",
-        "subtitle": "Meine Berufserfahrung",
+        "title": "Erfarenhet",
+        "subtitle": "Min yrkeserfarenhet",
         "items": [
             {
-                "title": "Gründer & Full Stack Entwickler – DGT Portfolio",
+                "title": "Grundare & Full Stack Utvecklare – DGT Portfolio",
                 "company": "Dgt Portfolio",
-                "location": "Laayoune , Marokko",
+                "location": "Laayoune, Marocko",
                 "startDate": "Okt 2024",
-                "endDate": "Gegenwart",
-                "duration": "+ 4 Mon.",
-                "type": "Gründer & Entwickler",
+                "endDate": "Nuvarande",
+                "duration": "+ 4 mån",
+                "type": "Grundare & Utvecklare",
                 "workType": "Hybrid",
-                "achievementsLabel": "Erfolge:",
+                "achievementsLabel": "Achievements :",
                 "responsibilities": [
-                    "Entwicklung einer SaaS-Plattform zur Erstellung professioneller Online-Portfolios.",
-                    "Implementierung von Authentifizierung und Autorisierung mit JWT.",
-                    "Erstellung von RESTful APIs und Integration von Zahlungssystemen.",
-                    "Bereitstellung der Anwendung auf Vercel und Verwaltung der Codebasis mit Git/GitHub.",
-                    "Verbesserung von Leistung, SEO und Benutzererfahrung."
+                    "Designade och utvecklade en SaaS-plattform för att bygga professionella onlineportföljer.",
+                    "Implementerade autentisering och auktorisering med JWT.",
+                    "Byggde RESTful API:er och integrerade betalningssystem.",
+                    "Distribuerade applikationen på Vercel och hanterade kodbasen med Git/GitHub.",
+                    "Förbättrade prestanda, SEO och användarupplevelse. "
                 ]
             },
             {
-                "title": "Full Stack MERN Entwickler",
-                "company": "Regionale Akademie für Bildung und Ausbildung",
-                "location": "Laayoune , Marokko",
-                "startDate": "Mär 2024",
+                "title": "Full Stack MERN Utvecklare",
+                "company": "Regional Academy of Education and Training",
+                "location": "Laayoune, Marocko",
+                "startDate": "Mar 2024",
                 "endDate": "Apr 2024",
-                "duration": "2 Mon",
-                "type": "Praktikum",
+                "duration": "2 mån",
+                "type": "Praktik",
                 "workType": "Hybrid",
-                "achievementsLabel": "Erfolge:",
+                "achievementsLabel": "Achievements :",
                 "responsibilities": [
-                    "Entwurf und Entwicklung einer Aufgabenverwaltungsanwendung, mit der Benutzer Aufgaben hinzufügen, bearbeiten und löschen können.",
-                    "Implementierung von Authentifizierung und Autorisierung mit JWT zur Gewährleistung der Sicherheit der Anwendung.",
-                    "Testen von API-Endpunkten mit Postman zur Sicherstellung der ordnungsgemäßen Funktionalität.",
-                    "Verbesserung der Benutzererfahrung durch Gestaltung einer einfachen und benutzerfreundlichen Oberfläche.",
-                    "Bereitstellung der Anwendung auf Vercel und Verwaltung der Codebasis mit Git/GitHub."
+                    "Designade och utvecklade en uppgiftshanteringsapplikation som låter användare lägga till, redigera och ta bort uppgifter.",
+                    "Implementerade autentisering och auktorisering med JWT för att säkerställa applikationens säkerhet.",
+                    "Testade API-slutpunkter med Postman för att säkerställa korrekt funktionalitet.",
+                    "Förbättrade användarupplevelsen genom att designa ett enkelt och användarvänligt gränssnitt.",
+                    "Distribuerade applikationen på Vercel och hanterade kodbasen med Git/GitHub."
                 ]
             },
             {
-                "title": "Full Stack Webentwickler",
+                "title": "Full Stack Webb Utvecklare",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Marokko",
+                "location": "Laayoune, Marocko",
                 "startDate": "Sep 2023",
                 "endDate": "Jun 2024",
-                "duration": "10 Mon",
-                "type": "Praktikant",
-                "workType": "Vor Ort",
-                "achievementsLabel": "Erfolge:",
+                "duration": "10 mån",
+                "type": "Praktik",
+                "workType": "På plats",
+                "achievementsLabel": "Achievements :",
                 "description": [
-                    "Erwerb wesentlicher Webentwicklungskenntnisse durch Kombination von Theorie und praktischer Anwendung in einem professionellen Umfeld.",
-                    "Gestaltung interaktiver und attraktiver Benutzeroberflächen in der Frontend-Entwicklung.",
-                    "Erfahrung in der Backend-Entwicklung und Datenbankverwaltung gesammelt.",
-                    "Entwicklung von Fähigkeiten zur Erstellung und Wartung dynamischer Webanwendungen.",
-                    "Anwendung der Agilen Methodik zur Verbesserung der Effizienz und Stärkung der Teamarbeit.",
-                    "Erfahrung mit Git und GitHub für effektives Code- und Projektmanagement gesammelt.",
-                    "Verwendung von SonarQube zur Analyse der Codequalität und Sicherstellung kontinuierlicher Verbesserung.",
-                    "Verwendung von Docker zur Optimierung der Umgebungsverwaltung und Anwendungsentwicklung.",
-                    "Verbesserung zwischenmenschlicher Fähigkeiten wie Kommunikation und Teamarbeit zur besseren Vorbereitung auf diverse Arbeitsumgebungen."
+                    "Fick väsentliga webbutvecklingskunskaper genom att kombinera teori med praktisk tillämpning i en professionell miljö.",
+                    "Designade interaktiva och attraktiva användargränssnitt inom frontend-utveckling.",
+                    "Skaffade erfarenhet inom backend-utveckling och databashantering.",
+                    "Utvecklade färdigheter i att skapa och underhålla dynamiska webbapplikationer.",
+                    "Tillämpade Agile-metodik för att förbättra effektiviteten och stärka samarbetet i teamet.",
+                    "Fick erfarenhet av att använda Git och GitHub för effektiv kod- och projekthantering.",
+                    "Använde SonarQube för att analysera kodkvalitet och säkerställa kontinuerlig förbättring.",
+                    "Använde Docker för att effektivisera miljöhantering och applikationsutveckling.",
+                    "Förbättrade interpersonella färdigheter, inklusive kommunikation och teamarbete, för bättre beredskap i olika arbetsmiljöer."
                 ]
             },
             {
-                "title": "Praktikant Digitalentwickler",
+                "title": "Digital Utvecklare Praktikant",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Marokko",
+                "location": "Laayoune, Marocko",
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
-                "duration": "8 Mon",
-                "type": "Praktikant",
-                "workType": "Vor Ort",
-                "keyResponsibilities": "Hauptverantwortlichkeiten:",
+                "duration": "8 mån",
+                "type": "Praktik",
+                "workType": "På plats",
+                "keyResponsibilities": "Huvudansvar:",
                 "description": [
-                    "Kultur und fortgeschrittene Techniken des digitalen Bereichs",
-                    "Verständnis der Dimensionen des Berufs und des Lernpfades",
-                    "Erwerb der Grundlagen der Algorithmik",
-                    "Verhaltens- und Sozialkompetenzen",
-                    "Entwicklung von Fähigkeiten in der objektorientierten Programmierung",
-                    "Konzeption und Erstellung statischer Websites",
-                    "Verwendung von JavaScript für die Anwendungsentwicklung",
-                    "Arbeiten mit Datenbanken und Ausführen grundlegender Operationen",
-                    "Erstellung dynamischer Websites, die mit Benutzern interagieren",
-                    "Vertrautmachen mit den Prinzipien der Informationssicherheit"
+                    "Kultur och avancerade tekniker inom det digitala området",
+                    "Förståelse för yrkets dimensioner och inlärningsvägen",
+                    "Förvärv av grunderna i algoritmik",
+                    "Beteendemässiga och sociala färdigheter",
+                    "Utveckling av färdigheter i objektorienterad programmering",
+                    "Design och byggande av statiska webbplatser",
+                    "Användning av JavaScript för applikationsutveckling",
+                    "Arbeta med databaser och utföra grundläggande operationer",
+                    "Bygga dynamiska webbplatser som interagerar med användare",
+                    "Bekanta sig med principerna för informationssystemsäkerhet"
                 ]
             }
         ]
     },
     "education": {
-        "title": "Bildung",
-        "subtitle": "Mein persönlicher Werdegang",
+        "title": "Utbildning",
+        "subtitle": "Min personliga resa",
         "items": [
             {
                 "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "Diplom in Digitaler Entwicklung (Option Full Stack Web)",
+                "degree": "Diplom i Digital Utveckling (Full Stack Webb)",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "Laayoune , Marokko",
+                "location": "Laayoune, Marocko",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Baba Ahmed bin Muhammad Yahdih Gymnasium",
-                "degree": "Abitur, Physikalische Wissenschaften",
+                "institution": "Baba Ahmed bin Muhammad Yahdih High School",
+                "degree": "Kandidatexamen, Fysik",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "Laayoune , Marokko",
+                "location": "Laayoune, Marocko",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
     },
     "contact": {
-        "title": "Kontaktieren Sie mich",
-        "subtitle": "Kontaktieren Sie mich",
-        "subjectPlaceholder": "Geben Sie Ihren Betreff ein",
-        "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
-        "messagePlaceholder": "Schreiben Sie Ihre Nachricht",
-        "sendButton": "Nachricht senden",
-        "sendingButton": "Senden...",
-        "writeMe": "Schreiben Sie mir",
-        "email": "E-Mail",
+        "title": "Kom i kontakt",
+        "subtitle": "Kontakta mig",
+        "subjectPlaceholder": "Ange ämne",
+        "emailPlaceholder": "Ange din e-post",
+        "messagePlaceholder": "Skriv ditt meddelande",
+        "sendButton": "Skicka meddelande",
+        "sendingButton": "Skickar...",
+        "writeMe": "Skriv till mig",
+        "email": "E-post",
         "whatsapp": "WhatsApp",
-        "validationError": "Bitte füllen Sie alle Felder aus und geben Sie eine gültige E-Mail-Adresse an.",
-        "formError": "Bitte korrigieren Sie die Fehler im Formular.",
-        "subjectRequired": "Betreff ist erforderlich",
-        "emailRequired": "E-Mail ist erforderlich",
-        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-        "messageRequired": "Nachricht ist erforderlich",
-        "successMessage": "Erfolgreich gesendet",
-        "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+        "validationError": "Vänligen fyll i alla fält och ange en giltig e-postadress.",
+        "formError": "Vänligen korrigera felen i formuläret.",
+        "subjectRequired": "Ämne krävs",
+        "emailRequired": "E-post krävs",
+        "emailInvalid": "Vänligen ange en giltig e-postadress",
+        "messageRequired": "Meddelande krävs",
+        "successMessage": "Skickades framgångsrikt",
+        "errorMessage": "Ett fel uppstod. Försök igen."
     },
     "footer": {
         "name": "Abdellah Edaoudi",
-        "tagline": "Full Stack Entwickler | Erstellung sicherer und moderner Web-Apps",
-        "backToTop": "Zurück nach oben",
-        "siteMapLabel": "Seitenübersicht",
+        "tagline": "Full Stack Utvecklare | Bygger Säkra & Moderna Webbappar",
+        "backToTop": "Tillbaka till toppen",
+        "siteMapLabel": "Webbplatskarta",
         "links": [
             {
-                "name": "Über mich",
+                "name": "Om mig",
                 "path": "/About"
             },
             {
-                "name": "Fähigkeiten",
+                "name": "Färdigheter",
                 "path": "/Skills"
             },
             {
-                "name": "Projekte",
+                "name": "Projekt",
                 "path": "/Projects"
             },
             {
-                "name": "Bildung",
+                "name": "Utbildning",
                 "path": "/Education"
             },
             {
-                "name": "Erfahrung",
+                "name": "Erfarenhet",
                 "path": "/Experience"
             },
             {
@@ -530,15 +527,15 @@
                 "path": "/Contact"
             }
         ],
-        "connectLabel": "Kontakt",
-        "emailLabel": "E-Mail",
+        "connectLabel": "Anslut",
+        "emailLabel": "E-post",
         "whatsappLabel": "WhatsApp",
-        "locationLabel": "Standort",
-        "locationValue": "Laayoune, Marokko",
-        "copyright": "Urheberrecht",
-        "rights": "Alle Rechte vorbehalten"
+        "locationLabel": "Plats",
+        "locationValue": "Laayoune, Marocko",
+        "copyright": "Upphovsrätt",
+        "rights": "Alla rättigheter förbehållna"
     },
     "scrollToTop": {
-        "backToTop": "Zurück nach oben"
+        "backToTop": "Tillbaka till toppen"
     }
 }

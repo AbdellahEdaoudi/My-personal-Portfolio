@@ -8,6 +8,8 @@
         "experience": "Deneyim",
         "contact": "İletişim",
         "admin": "Yönetici",
+        "developer": "Geliştirici",
+        "fullStack": "Full Stack",
         "mobileMenu": {
             "navigation": "Navigasyon",
             "explore": "Bu bölümü keşfet",
@@ -32,7 +34,7 @@
         "supportDetail": "7/24 Çevrimiçi",
         "description": "Fikirleri yenilikçi, güvenli ve etkili uygulamalara dönüştürme konusunda geniş deneyime sahibim. Odak noktam, kullanıcı deneyimini geliştirmeyi ve çekici arayüzler oluşturmayı, sağlam güvenlik ve yüksek performans sağlamakla harmanlıyor.",
         "downloadCv": "Özgeçmiş",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi.en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Yetenekler",
@@ -371,7 +373,7 @@
             {
                 "title": "Kurucu & Full Stack Geliştirici – DGT Portfolio",
                 "company": "Dgt Portfolio",
-                "location": "El-Aaiun , Fas",
+                "location": "Laayoune , Fas",
                 "startDate": "Ekim 2024",
                 "endDate": "Günümüz",
                 "duration": "+ 4 ay",
@@ -389,7 +391,7 @@
             {
                 "title": "Full Stack MERN Geliştirici",
                 "company": "Bölgesel Eğitim ve Öğretim Akademisi",
-                "location": "El-Aaiun , Fas",
+                "location": "Laayoune , Fas",
                 "startDate": "Mart 2024",
                 "endDate": "Nisan 2024",
                 "duration": "2 ay",
@@ -407,7 +409,7 @@
             {
                 "title": "Full Stack Web Geliştirici",
                 "company": "Meslekler ve Yetkinlikler Şehirleri",
-                "location": "El-Aaiun , Fas",
+                "location": "Laayoune , Fas",
                 "startDate": "Eylül 2023",
                 "endDate": "Haziran 2024",
                 "duration": "10 ay",
@@ -429,7 +431,7 @@
             {
                 "title": "Dijital Geliştirici Stajyeri",
                 "company": "Meslekler ve Yetkinlikler Şehirleri",
-                "location": "El-Aaiun , Fas",
+                "location": "Laayoune , Fas",
                 "startDate": "Kasım 2022",
                 "endDate": "Haziran 2023",
                 "duration": "8 ay",
@@ -460,7 +462,7 @@
                 "degree": "Dijital Geliştirme Diploması (Full Stack Web Seçeneği)",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "El-Aaiun , Fas",
+                "location": "Laayoune , Fas",
                 "imageUrl": "/Education/cmc.png"
             },
             {
@@ -468,7 +470,7 @@
                 "degree": "Lisans, Fizik Bilimleri",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "El-Aaiun , Fas",
+                "location": "Laayoune , Fas",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -528,7 +530,7 @@
         "emailLabel": "E-posta",
         "whatsappLabel": "WhatsApp",
         "locationLabel": "Konum",
-        "locationValue": "El-Aaiun, Fas",
+        "locationValue": "Laayoune, Fas",
         "copyright": "Telif Hakkı",
         "rights": "Tüm hakları saklıdır"
     },
