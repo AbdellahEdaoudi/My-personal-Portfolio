@@ -34,7 +34,9 @@
         "supportDetail": "Online 24/7",
         "description": "Tenho ampla experiência em transformar ideias em aplicativos inovadores, seguros e eficazes. Meu foco combina melhorar a experiência do usuário e criar interfaces atraentes com a garantia de segurança robusta e alto desempenho.",
         "downloadCv": "Currículo",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf",
+        "downloadCoverLetter": "Carta de apresentação",
+        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Habilidades",

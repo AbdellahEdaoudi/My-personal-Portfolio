@@ -34,7 +34,9 @@
         "supportDetail": "Online 24/7",
         "description": "Saya memiliki pengalaman luas dalam mengubah ide menjadi aplikasi yang inovatif, aman, dan efektif. Fokus saya memadukan peningkatan pengalaman pengguna dan pembuatan antarmuka yang menarik dengan memastikan keamanan yang kuat dan kinerja tinggi.",
         "downloadCv": "Resume",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf",
+        "downloadCoverLetter": "Surat Lamaran",
+        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Keahlian",
