@@ -34,7 +34,9 @@
         "supportDetail": "Online 24/7",
         "description": "Jag har omfattande erfarenhet av att omvandla idéer till innovativa, säkra och effektiva applikationer. Mitt fokus kombinerar att förbättra användarupplevelsen och skapa attraktiva gränssnitt med att säkerställa robust säkerhet och hög prestanda.",
         "downloadCv": "CV",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf",
+        "downloadCoverLetter": "Personligt brev",
+        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Färdigheter",
