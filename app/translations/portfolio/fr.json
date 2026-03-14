@@ -34,7 +34,9 @@
         "supportDetail": "En ligne 24/7",
         "description": "J'ai une vaste expérience dans la transformation d'idées en applications innovantes, sécurisées et efficaces. Mon approche allie l'amélioration de l'expérience utilisateur et la création d'interfaces attrayantes à la garantie d'une sécurité robuste et de hautes performances.",
         "downloadCv": "Résumé",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi_fr.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_fr.pdf",
+        "downloadCoverLetter": "Lettre de motivation",
+        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_fr.pdf"
     },
     "skills": {
         "title": "Compétences",

@@ -14,9 +14,9 @@ function About({ content, lang }) {
         <p className="text-gray-400 text-sm">{content.subtitle}</p>
       </div>
       <div className="md:flex md:items-center md:justify-center space-y-4 md:space-x-28 pt-2 md:pt-7 px-4">
-        <div className="flex flex-col-reverse  md:items-start items-center md:flex-row gap-6 md:gap-28">
+        <div className="flex flex-col  md:items-start items-center md:flex-row gap-6 md:gap-28">
           {/* Image Section - About Page Premium Version */}
-          <div className="relative group animate-float md:block hidden">
+          <div className="relative group animate-float">
             <div className="absolute -top-6 -left-6 text-blue-600/10 text-[6rem] font-serif transition-all duration-700 group-hover:-translate-x-3 group-hover:-translate-y-3 select-none leading-none">
               {lang === 'ar' ? '}' : '{'}
             </div>
@@ -76,14 +76,20 @@ function About({ content, lang }) {
             <p className="text-justify md:w-[400px] text-gray-700 px-2">
               {content.description}
             </p>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center flex-wrap justify-center gap-4">
               <Link
                 href={content.Cv}
                 target="_blank"
-                // download={content.Cv}
                 className="flex p-3 rounded-lg bg-black hover:scale-[1.03] duration-300 text-white gap-2"
               >
                 {content.downloadCv} <StickyNote />
+              </Link>
+              <Link
+                href={content.coverLetter}
+                target="_blank"
+                className="flex p-3 rounded-lg border-2 border-black hover:scale-[1.03] duration-300 text-black gap-2"
+              >
+                {content.downloadCoverLetter} <StickyNote />
               </Link>
             </div>
           </div>

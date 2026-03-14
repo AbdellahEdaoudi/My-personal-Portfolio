@@ -34,7 +34,9 @@
         "supportDetail": "Online 24/7",
         "description": "Mam bogate doświadczenie w przekształcaniu pomysłów w innowacyjne, bezpieczne i skuteczne aplikacje. Moja praca łączy ulepszanie doświadczenia użytkownika i tworzenie atrakcyjnych interfejsów z zapewnieniem solidnego bezpieczeństwa i wysokiej wydajności.",
         "downloadCv": "CV",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf",
+        "downloadCoverLetter": "List motywacyjny",
+        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Umiejętności",

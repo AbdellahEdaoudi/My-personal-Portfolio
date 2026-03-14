@@ -34,7 +34,9 @@
         "supportDetail": "Online 24/7",
         "description": "I have extensive experience in transforming ideas into innovative, secure, and effective applications. My focus blends enhancing user experience and crafting attractive interfaces with ensuring robust security and high performance.",
         "downloadCv": "Résumé",
-        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf"
+        "Cv": "/Resume/Cv_Abdellah_Edaoudi_en.pdf",
+        "downloadCoverLetter": "Cover Letter",
+        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
     },
     "skills": {
         "title": "Skills",
