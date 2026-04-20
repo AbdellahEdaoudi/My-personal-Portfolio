@@ -16,7 +16,7 @@ function Home({ content, lang }) {
           <h2 className="text-2xl">
             {content.role}
           </h2>
-          <p className="border border-white/40 rounded-2xl md:w-[420px] text-justify p-4 bg-white/30 backdrop-blur-xl shadow-2xl text-gray-800 leading-relaxed transition-all duration-500 hover:bg-white/40">
+          <p className="border border-white/40 rounded-2xl md:w-[420px] text-justify p-4 bg-white/70 backdrop-blur-sm shadow-2xl text-gray-800 leading-relaxed transition-all duration-500 hover:bg-white/80">
             {content.description}
           </p>
           {/* Social Links - Refactored with map */}

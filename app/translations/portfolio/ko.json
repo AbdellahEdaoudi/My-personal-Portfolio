@@ -215,6 +215,7 @@
                 "title": "전자 상거래 백엔드",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
+                "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
@@ -294,7 +295,7 @@
             },
             {
                 "title": "이미지 압축기",
-                "image": "/Projects/image-compressor.png",
+                "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubUrl": "",
                 "githubUrls": "",
@@ -366,7 +367,11 @@
                     }
                 ]
             }
-        ]
+        ],
+        "requirementsLabel": "요구 사항",
+        "githubView": "GitHub에서 보기",
+        "frontendLabel": "프론트엔드",
+        "backendLabel": "백엔드"
     },
     "experience": {
         "title": "경력",

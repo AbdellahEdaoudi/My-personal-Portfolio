@@ -4,7 +4,7 @@ import { Prompt } from 'next/font/google'
 import ScrollToTop from './Components/ScrollToTop'
 import { ToastProvider } from './Components/Toast'
 import CinematicBackground from './Components/CinematicBackground'
-import CustomCursor from './Components/CustomCursor'
+
 
 export const metadata = {
   metadataBase: new URL('https://abdellah-edaoudi.vercel.app'),
@@ -119,7 +119,6 @@ export default function RootLayout({ children }) {
         </ToastProvider>
         <Analytics />
         <ScrollToTop />
-        <CustomCursor />
       </body>
     </html>
   )
