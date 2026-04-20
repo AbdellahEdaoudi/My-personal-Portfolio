@@ -215,6 +215,7 @@
                 "title": "Eコマースバックエンド",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
+                "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
@@ -294,7 +295,7 @@
             },
             {
                 "title": "画像圧縮機",
-                "image": "/Projects/image-compressor.png",
+                "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubUrl": "",
                 "githubUrls": "",
@@ -366,7 +367,11 @@
                     }
                 ]
             }
-        ]
+        ],
+        "requirementsLabel": "要件",
+        "githubView": "GitHubで見る",
+        "frontendLabel": "フロントエンド",
+        "backendLabel": "バックエンド"
     },
     "experience": {
         "title": "経験",

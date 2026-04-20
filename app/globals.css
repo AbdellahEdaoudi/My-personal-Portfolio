@@ -35,21 +35,3 @@
         transform: rotate(360deg);
     }
 }
-
-/* Custom Cursor Styles */
-@media (min-width: 768px) and (hover: hover) and (pointer: fine) {
-
-    html,
-    body {
-        cursor: none !important;
-    }
-
-    a,
-    button,
-    [role="button"],
-    input,
-    textarea,
-    select {
-        cursor: none !important;
-    }
-}
