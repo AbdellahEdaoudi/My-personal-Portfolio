@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Projects({ content }) {
   if (!content) return null;
-  const { items: projects, title, subtitle, liveDemo, readMore, showLess } = content;
+  const { items: projects, title, subtitle, liveDemo, readMore, showLess, requirementsLabel, githubView, frontendLabel, backendLabel } = content;
 
   return (
     <section id="prtfl" className="pb-7 pt-4">
@@ -13,9 +13,9 @@ function Projects({ content }) {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 justify-items-center px-4">
         {projects?.map((p, i) => (
-          <div key={i} className="bg-white/40 backdrop-blur-xl flex flex-col w-80 hover:scale-[1.03] border border-white/40 duration-300 rounded-lg shadow-2xl pb-4 mb-5 overflow-hidden transition-all hover:bg-white/50">
+          <div key={i} className="bg-white/70 backdrop-blur-sm flex flex-col w-80 hover:scale-[1.03] border border-white/40 duration-300 rounded-lg shadow-2xl pb-4 mb-5 overflow-hidden transition-all hover:bg-white/80">
             <Link href={p.websiteUrl} target="_blank" rel="noopener noreferrer">
-              <Image width={1000} height={200}
+              <Image width={800} height={450}
                 className="w-96 rounded-md border-b-2 cursor-pointer"
                 src={p.image}
                 alt="E-commerce App"
@@ -55,20 +55,26 @@ function Projects({ content }) {
                   </div>
                 ))}
               </div>
-              {/* githubUrl */}
-              <div className="flex justify-around items-center mt-3 space-x-4">
+              {/* githubUrl and Requirements */}
+              <div className="flex flex-wrap justify-around items-center mt-3 gap-2 px-2">
                 {p.githubUrl && (
                   <Link href={p.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
-                    <Image src={"/icons/github.svg"} alt={"Github Logo"} width={25} height={25} className="mr-2 rounded-full" />
+                    <Image src={"/icons/github.svg"} alt={"Github Logo"} width={20} height={20} className="mr-1 rounded-full" />
                     <span className="text-sm">
-                      {p.type === "backend" ? "View on GitHub" : "Frontend"}
+                      {p.type === "backend" ? githubView : frontendLabel}
                     </span>
                   </Link>
                 )}
                 {p.githubUrls && (
                   <Link href={p.githubUrls} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
-                    <Image src={"/icons/github.svg"} alt={"Github Logo"} width={25} height={25} className="mr-2 rounded-full" />
-                    <span className="text-sm">Backend</span>
+                    <Image src={"/icons/github.svg"} alt={"Github Logo"} width={20} height={20} className="mr-1 rounded-full" />
+                    <span className="text-sm">{backendLabel}</span>
+                  </Link>
+                )}
+                {p.Requirements && (
+                  <Link href={p.Requirements} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-700 hover:text-black transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-black shadow-sm hover:shadow-md">
+                    <Image src={"/Projects/WebSite.png"} alt={"Requirements Icon"} width={18} height={18} className="brightness-0" />
+                    <span className="text-sm">{requirementsLabel}</span>
                   </Link>
                 )}
               </div>

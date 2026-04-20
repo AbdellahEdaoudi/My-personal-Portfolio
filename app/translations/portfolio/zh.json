@@ -215,6 +215,7 @@
                 "title": "电子商务后端",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
+                "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
@@ -294,7 +295,7 @@
             },
             {
                 "title": "图片压缩器",
-                "image": "/Projects/image-compressor.png",
+                "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubUrl": "",
                 "githubUrls": "",
@@ -366,7 +367,11 @@
                     }
                 ]
             }
-        ]
+        ],
+        "requirementsLabel": "要求",
+        "githubView": "在 GitHub 上查看",
+        "frontendLabel": "前端",
+        "backendLabel": "后端"
     },
     "experience": {
         "title": "经验",

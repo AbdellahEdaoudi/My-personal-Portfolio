@@ -88,7 +88,7 @@ export default function ScrollToTop() {
                 </svg>
 
                 {/* Main Button Shell */}
-                <div className="relative w-11 h-11 bg-white/40 backdrop-blur-xl border border-white/40 rounded-full flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.1)] group-hover:bg-emerald-500 group-hover:border-emerald-400 transition-all duration-500">
+                <div className="relative w-11 h-11 bg-white/70 backdrop-blur-sm border border-white/40 rounded-full flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.1)] group-hover:bg-emerald-500 group-hover:border-emerald-400 transition-all duration-500">
                     <ArrowUp aria-hidden="true" className="w-5 h-5 text-emerald-600 group-hover:text-white transition-colors duration-500 group-hover:-translate-y-1" />
 
                     {/* Ripple Effect Animation */}

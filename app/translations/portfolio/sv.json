@@ -215,6 +215,7 @@
                 "title": "E-handels Backend",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
+                "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
@@ -294,7 +295,7 @@
             },
             {
                 "title": "Bildkomprimerare",
-                "image": "/Projects/image-compressor.png",
+                "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubUrl": "",
                 "githubUrls": "",
@@ -367,7 +368,11 @@
                     }
                 ]
             }
-        ]
+        ],
+        "requirementsLabel": "Krav",
+        "githubView": "Visa på GitHub",
+        "frontendLabel": "Frontend",
+        "backendLabel": "Backend"
     },
     "experience": {
         "title": "Erfarenhet",

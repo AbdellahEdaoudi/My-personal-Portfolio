@@ -215,6 +215,7 @@
                 "title": "Back-End Thương mại điện tử",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
+                "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
@@ -294,7 +295,7 @@
             },
             {
                 "title": "Công cụ nén ảnh",
-                "image": "/Projects/image-compressor.png",
+                "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubUrl": "",
                 "githubUrls": "",
@@ -367,7 +368,11 @@
                     }
                 ]
             }
-        ]
+        ],
+        "requirementsLabel": "Yêu cầu",
+        "githubView": "Xem trên GitHub",
+        "frontendLabel": "Frontend",
+        "backendLabel": "Backend"
     },
     "experience": {
         "title": "Kinh nghiệm",

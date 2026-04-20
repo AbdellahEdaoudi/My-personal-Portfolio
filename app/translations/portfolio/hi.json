@@ -215,6 +215,7 @@
                 "title": "ई-कॉमर्स बैक-एंड",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
+                "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubUrls": "",
@@ -294,7 +295,7 @@
             },
             {
                 "title": "इमेज कंप्रेसर",
-                "image": "/Projects/image-compressor.png",
+                "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubUrl": "",
                 "githubUrls": "",
@@ -366,7 +367,11 @@
                     }
                 ]
             }
-        ]
+        ],
+        "requirementsLabel": "आवश्यकताएं",
+        "githubView": "GitHub पर देखें",
+        "frontendLabel": "फ्रंटएंड",
+        "backendLabel": "बैकएंड"
     },
     "experience": {
         "title": "अनुभव",

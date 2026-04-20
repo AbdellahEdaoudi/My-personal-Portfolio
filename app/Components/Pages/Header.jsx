@@ -95,7 +95,7 @@ export default function Header({ content, lang }) {
     const selectedLang = languages.find(l => l.code === currentLang) || languages[0];
 
     return (
-        <header className="sticky top-0 z-50 bg-white/40 backdrop-blur-xl border-b border-white/20 shadow-sm transition-all duration-300">
+        <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-md border-b border-white/20 shadow-sm transition-all duration-300">
             <div className='flex items-center py-4 justify-evenly text-gray-800 rounded-sm relative z-50'>
                 <div className='hover:scale-105 duration-300'>
                     <Link href={`/`}>
