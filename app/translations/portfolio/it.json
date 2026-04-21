@@ -378,33 +378,69 @@
         "subtitle": "La mia esperienza professionale",
         "items": [
             {
-                "title": "Fondatore & Sviluppatore Full Stack – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "Laayoune , Marocco",
-                "startDate": "Ott 2024",
+                "title": "Sviluppatore Full Stack (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "Remoto",
+                "startDate": "Ott 2025",
                 "endDate": "Presente",
-                "duration": "+ 4 mesi",
-                "type": "Fondatore & Sviluppatore",
-                "workType": "Ibrido",
-                "achievementsLabel": "Risultati :",
+                "duration": "7 mesi",
+                "type": "Tempo pieno",
+                "workType": "Remoto",
+                "achievementsLabel": "Responsabilità principali:",
                 "responsibilities": [
-                    "Progettazione e sviluppo di una piattaforma SaaS per la creazione di portafogli professionali online.",
-                    "Implementazione di autenticazione e autorizzazione tramite JWT.",
-                    "Creazione di API RESTful e integrazione di sistemi di pagamento.",
-                    "Distribuzione dell'applicazione su Vercel e gestione del codice con Git/GitHub.",
-                    "Miglioramento delle prestazioni, SEO e dell'esperienza utente."
+                    "Sviluppata una piattaforma SaaS Next.js per portfolio professionali con pagamenti PayPal integrati.",
+                    "Progettate API Node.js sicure utilizzando JWT/NextAuth, garantendo una robusta protezione dei dati e scalabilità.",
+                    "Ottimizzate prestazioni e SEO tramite Server-Side Rendering (SSR), offrendo una UX premium ad alta velocità.",
+                    "Gestito il deployment Full-Stack su Vercel con Git/GitHub per l'integrazione e la consegna continua."
+                ]
+            },
+            {
+                "title": "Sviluppo professionale",
+                "company": "Pausa di carriera",
+                "location": "Remoto",
+                "startDate": "Nov 2024",
+                "endDate": "Gen 2025",
+                "duration": "3 mesi",
+                "type": "Formazione",
+                "workType": "Remoto",
+                "achievementsLabel": "Aree di interesse e progetti:",
+                "responsibilities": [
+                    "Completato un programma intensivo di formazione sullo sviluppo backend focalizzato su NestJS (Node.js + TypeScript) per la creazione di applicazioni lato server scalabili e ad alte prestazioni.",
+                    "Concetti avanzati: sviluppo di API RESTful, autenticazione e autorizzazione (JWT, OAuth, RBAC), comunicazione in tempo reale tramite Socket.io, integrazione GraphQL, internazionalizzazione (i18n), MongoDB e architettura a microservizi.",
+                    "Sviluppato un sistema di e-commerce completo che include: gestione utenti (RBAC), autenticazione sicura (JWT/OAuth), gestione prodotti/categorie/marchi, elaborazione carrello e ordini, gestione pagamenti, gestione coupon, sistema di recensioni e configurazione fiscale."
+                ]
+            },
+            {
+                "title": "Tirocinante Sviluppatore Full Stack",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Laayoune, Marocco",
+                "startDate": "Set 2023",
+                "endDate": "Giu 2024",
+                "duration": "10 mesi",
+                "type": "Tirocinio",
+                "workType": "In loco",
+                "achievementsLabel": "Risultati:",
+                "responsibilities": [
+                    "Progettate interfacce utente interattive e accattivanti nello sviluppo front-end.",
+                    "Acquisita esperienza nello sviluppo back-end e nella gestione di database.",
+                    "Sviluppate competenze nella creazione e manutenzione di applicazioni web dinamiche.",
+                    "Applicata la metodologia Agile per migliorare l'efficienza e rafforzare il lavoro di squadra.",
+                    "Acquisita esperienza nell'uso di Git e GitHub per un'efficace gestione del codice e dei progetti.",
+                    "Utilizzato SonarQube per analizzare la qualità del codice e garantire un miglioramento continuo.",
+                    "Utilizzato Docker per semplificare la gestione dell'ambiente e lo sviluppo delle applicazioni.",
+                    "Migliorate le competenze interpersonali, tra cui comunicazione e lavoro di squadra."
                 ]
             },
             {
                 "title": "Sviluppatore Full Stack MERN",
                 "company": "Accademia Regionale di Istruzione e Formazione",
-                "location": "Laayoune , Marocco",
+                "location": "Laayoune, Marocco",
                 "startDate": "Mar 2024",
-                "endDate": "Apr 2024",
-                "duration": "2 mesi",
+                "endDate": "Mar 2024",
+                "duration": "1 mese",
                 "type": "Tirocinio",
-                "workType": "Ibrido",
-                "achievementsLabel": "Risultati :",
+                "workType": "In loco",
+                "achievementsLabel": "Compiti principali:",
                 "responsibilities": [
                     "Progettato e sviluppato un'applicazione di gestione delle attività che consente agli utenti di aggiungere, modificare ed eliminare attività.",
                     "Implementata l'autenticazione e l'autorizzazione utilizzando JWT per garantire la sicurezza dell'applicazione.",
@@ -414,48 +450,22 @@
                 ]
             },
             {
-                "title": "Sviluppatore Web Full Stack",
-                "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Marocco",
-                "startDate": "Set 2023",
-                "endDate": "Giu 2024",
-                "duration": "10 mesi",
-                "type": "Tirocinante",
-                "workType": "In loco",
-                "achievementsLabel": "Risultati :",
-                "description": [
-                    "Acquisite competenze essenziali di sviluppo web combinando teoria con applicazione pratica in un ambiente professionale.",
-                    "Progettate interfacce utente interattive e accattivanti nello sviluppo front-end.",
-                    "Acquisita esperienza nello sviluppo back-end e nella gestione di database.",
-                    "Sviluppate competenze nella creazione e manutenzione di applicazioni web dinamiche.",
-                    "Applicata la metodologia Agile per migliorare l'efficienza e rafforzare il lavoro di squadra.",
-                    "Acquisita esperienza nell'uso di Git e GitHub per un'efficace gestione del codice e dei progetti.",
-                    "Utilizzato SonarQube per analizzare la qualità del codice e garantire un miglioramento continuo.",
-                    "Utilizzato Docker per semplificare la gestione dell'ambiente e lo sviluppo delle applicazioni.",
-                    "Migliorate le competenze interpersonali, tra cui comunicazione e lavoro di squadra, per una migliore preparazione in diversi ambienti di lavoro."
-                ]
-            },
-            {
                 "title": "Tirocinante Sviluppatore Digitale",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Marocco",
+                "location": "Laayoune, Marocco",
                 "startDate": "Nov 2022",
                 "endDate": "Giu 2023",
                 "duration": "8 mesi",
-                "type": "Tirocinante",
+                "type": "Tirocinio",
                 "workType": "In loco",
-                "achievementsLabel": "Risultati :",
-                "description": [
-                    "Cultura e tecniche avanzate del campo digitale",
-                    "Comprensione delle dimensioni della professione e del percorso di apprendimento",
-                    "Acquisizione delle basi dell'algoritmica",
-                    "Competenze comportamentali e sociali",
-                    "Sviluppo di competenze nella programmazione orientata agli oggetti",
-                    "Progettazione e costruzione di siti web statici",
-                    "Uso di JavaScript per lo sviluppo di applicazioni",
-                    "Lavorare con database ed eseguire operazioni di base",
-                    "Costruzione di siti web dinamici che interagiscono con gli utenti",
-                    "Familiarizzazione con i principi di sicurezza dei sistemi informativi"
+                "achievementsLabel": "Apprendimento fondamentale:",
+                "responsibilities": [
+                    "Acquisite le basi della programmazione algoritmica e orientata agli oggetti.",
+                    "Progettati e realizzati siti web statici e dinamici che interagiscono con gli utenti.",
+                    "Lavorato con database ed eseguite operazioni di base.",
+                    "Imparato JavaScript per lo sviluppo di applicazioni.",
+                    "Familiarizzato con i principi di sicurezza dei sistemi informativi.",
+                    "Sviluppate competenze comportamentali e sociali essenziali per un ambiente professionale."
                 ]
             }
         ]

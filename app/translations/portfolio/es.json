@@ -375,87 +375,97 @@
     },
     "experience": {
         "title": "Experiencia",
-        "subtitle": "Mi Experiencia Profesional",
+        "subtitle": "Mi experiencia profesional",
         "items": [
             {
-                "title": "Fundador y Desarrollador Full Stack – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "Laayoune, Marruecos",
-                "startDate": "Oct 2024",
+                "title": "Desarrollador Full Stack (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "Remoto",
+                "startDate": "Oct 2025",
                 "endDate": "Presente",
-                "duration": "+ 4 meses",
-                "type": "Fundador y Desarrollador",
-                "workType": "Híbrido",
-                "achievementsLabel": "Logros:",
+                "duration": "7 meses",
+                "type": "Tiempo completo",
+                "workType": "Remoto",
+                "achievementsLabel": "Responsabilidades principales:",
                 "responsibilities": [
-                    "Diseño y desarrollo de una plataforma SaaS para crear portafolios profesionales en línea.",
-                    "Implementación de autenticación y autorización utilizando JWT.",
-                    "Creación de APIs RESTful e integración de sistemas de pago.",
-                    "Despliegue de la aplicación en Vercel y gestión del código con Git/GitHub.",
-                    "Mejora del rendimiento, SEO y experiencia del usuario."
+                    "Desarrollo de una plataforma SaaS Next.js para portafolios profesionales con pagos PayPal integrados.",
+                    "Diseño de APIs Node.js seguras utilizando JWT/NextAuth, garantizando una protección de datos robusta y escalabilidad.",
+                    "Optimización de rendimiento y SEO a través de Server-Side Rendering (SSR), ofreciendo una UX premium de alta velocidad.",
+                    "Gestión de despliegue Full-Stack en Vercel con Git/GitHub para integración y entrega continuas."
                 ]
             },
             {
-                "title": "Desarrollador Full Stack MERN",
-                "company": "Academia Regional de Educación y Formación",
-                "location": "Laayoune, Marruecos",
-                "startDate": "Mar 2024",
-                "endDate": "Abr 2024",
-                "duration": "2 meses",
-                "type": "Pasantía",
-                "workType": "Híbrido",
-                "achievementsLabel": "Logros:",
+                "title": "Desarrollo profesional",
+                "company": "Pausa en la carrera",
+                "location": "Remoto",
+                "startDate": "Nov 2024",
+                "endDate": "Ene 2025",
+                "duration": "3 meses",
+                "type": "Capacitación",
+                "workType": "Remoto",
+                "achievementsLabel": "Áreas de enfoque y proyectos:",
                 "responsibilities": [
-                    "Diseñé y desarrollé una aplicación de gestión de tareas que permite a los usuarios agregar, editar y eliminar tareas.",
-                    "Implementé autenticación y autorización usando JWT para garantizar la seguridad de la aplicación.",
-                    "Probé los endpoints de la API usando Postman para asegurar su correcto funcionamiento.",
-                    "Mejoré la experiencia del usuario diseñando una interfaz simple y amigable.",
-                    "Desplegué la aplicación en Vercel y gestioné el código base usando Git/GitHub."
+                    "Finalización de un programa intensivo de capacitación en desarrollo backend enfocado en NestJS (Node.js + TypeScript) para construir aplicaciones escalables y de alto rendimiento en el lado del servidor.",
+                    "Conceptos avanzados: desarrollo de APIs RESTful, autenticación y autorización (JWT, OAuth, RBAC), comunicación en tiempo real usando Socket.io, integración GraphQL, internacionalización (i18n), MongoDB y arquitectura de microservicios.",
+                    "Desarrollo de un sistema completo de comercio electrónico que abarca: gestión de usuarios (RBAC), autenticación segura (JWT/OAuth), gestión de productos/categorías/marcas, procesamiento de carrito y pedidos, gestión de pagos, gestión de cupones, sistema de reseñas y configuración de impuestos."
                 ]
             },
             {
-                "title": "Desarrollador Web Full Stack",
+                "title": "Pasante de Desarrollo Full Stack",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune, Marruecos",
+                "location": "El Aaiún, Marruecos",
                 "startDate": "Sep 2023",
                 "endDate": "Jun 2024",
                 "duration": "10 meses",
                 "type": "Pasantía",
                 "workType": "Presencial",
                 "achievementsLabel": "Logros:",
-                "description": [
-                    "Adquirí habilidades esenciales de desarrollo web combinando teoría con aplicación práctica en un entorno profesional.",
-                    "Diseñé interfaces de usuario interactivas y atractivas en desarrollo frontend.",
-                    "Adquirí experiencia en desarrollo backend y gestión de bases de datos.",
-                    "Desarrollé habilidades en la creación y mantenimiento de aplicaciones web dinámicas.",
-                    "Apliqué la metodología Agile para mejorar la eficiencia y fortalecer el trabajo en equipo.",
-                    "Gané experiencia usando Git y GitHub para una gestión efectiva del código y proyectos.",
-                    "Usé SonarQube para analizar la calidad del código y asegurar la mejora continua.",
-                    "Usé Docker para agilizar la gestión de entornos y el desarrollo de aplicaciones.",
-                    "Mejoré habilidades interpersonales, como comunicación y trabajo en equipo, para una mejor preparación en diversos entornos laborales."
+                "responsibilities": [
+                    "Diseño de interfaces de usuario interactivas y atractivas en el desarrollo front-end.",
+                    "Adquisición de experiencia en desarrollo back-end y gestión de bases de datos.",
+                    "Desarrollo de habilidades en la creación y mantenimiento de aplicaciones web dinámicas.",
+                    "Aplicación de la metodología Agile para mejorar la eficiencia y fortalecer el trabajo en equipo.",
+                    "Ganancia de experiencia en el uso de Git y GitHub para una gestión eficaz del código y de proyectos.",
+                    "Uso de SonarQube para analizar la calidad del código y asegurar la mejora continua.",
+                    "Uso de Docker para agilizar la gestión del entorno y el desarrollo de aplicaciones.",
+                    "Mejora de las habilidades interpersonales, incluyendo la comunicación y el trabajo en equipo."
                 ]
             },
             {
-                "title": "Pasante de Desarrollador Digital",
+                "title": "Desarrollador Full Stack MERN",
+                "company": "Academia Regional de Educación y Formación",
+                "location": "El Aaiún, Marruecos",
+                "startDate": "Mar 2024",
+                "endDate": "Mar 2024",
+                "duration": "1 mes",
+                "type": "Pasantía",
+                "workType": "Híbrido",
+                "achievementsLabel": "Tareas principales:",
+                "responsibilities": [
+                    "Diseño y desarrollo de una aplicación de gestión de tareas que permite a los usuarios agregar, editar y eliminar tareas.",
+                    "Implementación de autenticación y autorización mediante JWT para garantizar la seguridad de la aplicación.",
+                    "Prueba de endpoints de API con Postman para asegurar el funcionamiento correcto.",
+                    "Mejora de la experiencia del usuario diseñando una interfaz sencilla y amigable.",
+                    "Despliegue de la aplicación en Vercel y gestión de la base de código mediante Git/GitHub."
+                ]
+            },
+            {
+                "title": "Pasante de Desarrollo Digital",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune, Marruecos",
+                "location": "El Aaiún, Marruecos",
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 meses",
                 "type": "Pasantía",
                 "workType": "Presencial",
-                "keyResponsibilities": "Responsabilidades clave:",
-                "description": [
-                    "Cultura y técnicas avanzadas del campo digital",
-                    "Comprensión de las dimensiones de la profesión y el camino de aprendizaje",
-                    "Adquisición de los conceptos básicos de algoritmia",
-                    "Habilidades conductuales y sociales",
-                    "Desarrollo de habilidades en programación orientada a objetos",
-                    "Diseño y construcción de sitios web estáticos",
-                    "Uso de JavaScript para el desarrollo de aplicaciones",
-                    "Trabajar con bases de datos y ejecutar operaciones básicas",
-                    "Construcción de sitios web dinámicos que interactúan con los usuarios",
-                    "Familiarización con los principios de seguridad de sistemas de información"
+                "achievementsLabel": "Aprendizajes fundamentales:",
+                "responsibilities": [
+                    "Adquisición de fundamentos de algoritmia y programación orientada a objetos.",
+                    "Diseño y construcción de sitios web estáticos y dinámicos que interactúan con los usuarios.",
+                    "Trabajo con bases de datos y ejecución de operaciones básicas.",
+                    "Aprendizaje de JavaScript para el desarrollo de aplicaciones.",
+                    "Familiarización con los principios de seguridad de los sistemas de información.",
+                    "Desarrollo de habilidades conductuales y sociales esenciales en el entorno profesional."
                 ]
             }
         ]
