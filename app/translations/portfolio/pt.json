@@ -375,87 +375,97 @@
     },
     "experience": {
         "title": "Experiência",
-        "subtitle": "Minha Experiência Profissional",
+        "subtitle": "Minha experiência profissional",
         "items": [
             {
-                "title": "Fundador e Desenvolvedor Full Stack – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "Laayoune , Marrocos",
-                "startDate": "Out 2024",
+                "title": "Desenvolvedor Full Stack (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "Remoto",
+                "startDate": "Out 2025",
                 "endDate": "Presente",
-                "duration": "+ 4 meses",
-                "type": "Fundador e Desenvolvedor",
-                "workType": "Híbrido",
-                "achievementsLabel": "Conquistas:",
+                "duration": "7 meses",
+                "type": "Tempo integral",
+                "workType": "Remoto",
+                "achievementsLabel": "Principais responsabilidades:",
                 "responsibilities": [
-                    "Concepção e desenvolvimento de uma plataforma SaaS para a criação de portfólios profissionais online.",
-                    "Implementação de autenticação e autorização usando JWT.",
-                    "Criação de APIs RESTful e integração de sistemas de pagamento.",
-                    "Implantação da aplicação na Vercel e gestão do código com Git/GitHub.",
-                    "Melhoria do desempenho, SEO e experiência do usuário."
+                    "Desenvolvimento de uma plataforma SaaS Next.js para portfólios profissionais com pagamentos PayPal integrados.",
+                    "Projetista de APIs Node.js seguras usando JWT/NextAuth, garantindo proteção de datos robusta e escalabilidade.",
+                    "Otimização de Performance e SEO através de Server-Side Rendering (SSR), entregando uma UX premium de alta velocidade.",
+                    "Gerenciamento de Implantação Full-Stack na Vercel com Git/GitHub para integração e entrega contínuas."
                 ]
             },
             {
-                "title": "Desenvolvedor Full Stack MERN",
-                "company": "Academia Regional de Educação e Formação",
-                "location": "Laayoune , Marrocos",
-                "startDate": "Mar 2024",
-                "endDate": "Abr 2024",
-                "duration": "2 meses",
-                "type": "Estágio",
-                "workType": "Híbrido",
-                "achievementsLabel": "Conquistas:",
+                "title": "Desenvolvimento profissional",
+                "company": "Pausa na carreira",
+                "location": "Remoto",
+                "startDate": "Nov 2024",
+                "endDate": "Jan 2025",
+                "duration": "3 meses",
+                "type": "Treinamento",
+                "workType": "Remoto",
+                "achievementsLabel": "Áreas de foco e projetos:",
                 "responsibilities": [
-                    "Projetei e desenvolvi um aplicativo de gerenciamento de tarefas permitindo aos usuários adicionar, editar e excluir tarefas.",
-                    "Implementei autenticação e autorização usando JWT para garantir a segurança do aplicativo.",
-                    "Testei endpoints de API usando Postman para garantir o funcionamento correto.",
-                    "Melhorei a experiência do usuário projetando uma interface simples e amigável.",
-                    "Implantei o aplicativo na Vercel e gerenciei a base de código usando Git/GitHub."
+                    "Conclusão de um programa de treinamento intensivo em desenvolvimento backend focado em NestJS (Node.js + TypeScript) para construir aplicações escaláveis e de alto desempenho no lado do servidor.",
+                    "Conceitos avançados: desenvolvimento de APIs RESTful, autenticação e autorização (JWT, OAuth, RBAC), comunicação em tempo real usando Socket.io, integração GraphQL, internacionalização (i18n), MongoDB e arquitetura de microsserviços.",
+                    "Desenvolvimento de um sistema completo de e-commerce abrangendo: gestão de usuários (RBAC), autenticação segura (JWT/OAuth), gestão de produtos/categorias/marcas, processamento de carrinho e pedidos, manuseio de pagamentos, gestão de cupons, sistema de avaliações e configuração de impostos."
                 ]
             },
             {
-                "title": "Desenvolvedor Web Full Stack",
+                "title": "Estagiário de Desenvolvimento Full Stack",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Marrocos",
+                "location": "Laayoune, Marrocos",
                 "startDate": "Set 2023",
                 "endDate": "Jun 2024",
                 "duration": "10 meses",
                 "type": "Estágio",
                 "workType": "Presencial",
                 "achievementsLabel": "Conquistas:",
-                "description": [
-                    "Adquiri habilidades essenciais de desenvolvimento web combinando teoria com aplicação prática em um ambiente profissional.",
-                    "Projetei interfaces de usuário interativas e atraentes no desenvolvimento frontend.",
-                    "Adquiri experiência em desenvolvimento backend e gerenciamento de banco de dados.",
-                    "Desenvolvi habilidades na criação e manutenção de aplicações web dinâmicas.",
-                    "Apliquei a metodologia Agile para melhorar a eficiência e fortalecer o trabalho em equipe.",
-                    "Ganhei experiência usando Git e GitHub para gerenciamento eficaz de código e projetos.",
-                    "Usei SonarQube para analisar a qualidade do código e garantir melhoria contínua.",
-                    "Usei Docker para agilizar o gerenciamento de ambiente e desenvolvimento de aplicativos.",
-                    "Aprimorei habilidades interpessoais, como comunicação e trabalho em equipe, para melhor preparação em diversos ambientes de trabalho."
+                "responsibilities": [
+                    "Projeto de interfaces de usuário interativas e atraentes no desenvolvimento front-end.",
+                    "Aquisição de experiência em desenvolvimento back-end e gerenciamento de bancos de dados.",
+                    "Desenvolvimento de habilidades na criação e manutenção de aplicações web dinâmicas.",
+                    "Aplicação da metodologia Agile para melhorar a eficiência e fortalecer o trabalho em equipe.",
+                    "Ganho de experiência no uso de Git e GitHub para gerenciamento eficaz de código e projetos.",
+                    "Uso do SonarQube para analisar a qualidade do código e garantir a melhoria contínua.",
+                    "Uso do Docker para agilizar o gerenciamento do ambiente e o desenvolvimento de aplicações.",
+                    "Melhoria de habilidades interpessoais, incluindo comunicação e trabalho em equipe."
+                ]
+            },
+            {
+                "title": "Desenvolvedor Full Stack MERN",
+                "company": "Academia Regional de Educação e Formação",
+                "location": "Laayoune, Marrocos",
+                "startDate": "Mar 2024",
+                "endDate": "Mar 2024",
+                "duration": "1 mês",
+                "type": "Estágio",
+                "workType": "Híbrido",
+                "achievementsLabel": "Principais tarefas:",
+                "responsibilities": [
+                    "Concepção e desenvolvimento de uma aplicação de gestão de tarefas que permite aos utilizadores adicionar, editar e eliminar tarefas.",
+                    "Implementação de autenticação e autorização utilizando JWT para garantir a segurança da aplicação.",
+                    "Teste de endpoints de API usando Postman para garantir a funcionalidade correta.",
+                    "Melhoria da experiência do utilizador através da conceção de uma interface simples e amigável.",
+                    "Implantação da aplicação na Vercel e gestão da base de código utilizando Git/GitHub."
                 ]
             },
             {
                 "title": "Estagiário de Desenvolvimento Digital",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Marrocos",
+                "location": "Laayoune, Marrocos",
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 meses",
-                "type": "Estagiário",
+                "type": "Estágio",
                 "workType": "Presencial",
-                "keyResponsibilities": "Principais responsabilidades:",
-                "description": [
-                    "Cultura e técnicas avançadas do campo digital",
-                    "Compreensão das dimensões da profissão e do caminho de aprendizado",
-                    "Aquisição dos fundamentos da algoritmia",
-                    "Habilidades comportamentais e sociais",
-                    "Desenvolvimento de habilidades em programação orientada a objetos",
-                    "Design e construção de sites estáticos",
-                    "Uso de JavaScript para desenvolvimento de aplicativos",
-                    "Trabalhar com bancos de dados e executar operações básicas",
-                    "Construção de sites dinâmicos que interagem com os usuários",
-                    "Familiarização com os princípios de segurança de sistemas de informação"
+                "achievementsLabel": "Aprendizados fundamentais:",
+                "responsibilities": [
+                    "Aquisição de fundamentos de algoritmia e programação orientada a objetos.",
+                    "Concepção e construção de sites estáticos e dinâmicos que interagem com os utilizadores.",
+                    "Trabalho com bases de dados e execução de operações básicas.",
+                    "Aprendizagem de JavaScript para desenvolvimento de aplicações.",
+                    "Familiarização com os princípios de segurança dos sistemas de informação.",
+                    "Desenvolvimento de competências comportamentais e sociais essenciais no ambiente profissional."
                 ]
             }
         ]

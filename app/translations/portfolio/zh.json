@@ -378,84 +378,94 @@
         "subtitle": "我的专业经验",
         "items": [
             {
-                "title": "创始人兼全栈开发人员 – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "摩洛哥, Laayoune",
-                "startDate": "2024年10月",
+                "title": "全栈开发人员 (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "远程",
+                "startDate": "2025年10月",
                 "endDate": "至今",
-                "duration": "+ 4 个月",
-                "type": "创始人兼开发人员",
-                "workType": "混合办公",
+                "duration": "7个月",
+                "type": "全职",
+                "workType": "远程",
+                "achievementsLabel": "主要职责：",
+                "responsibilities": [
+                    "开发了一个集成了 PayPal 支付功能的 Next.js SaaS 专业作品集平台。",
+                    "使用 JWT/NextAuth 设计了安全的 Node.js API，确保了强大的数据保护和可扩展性。",
+                    "通过服务器端渲染 (SSR) 优化了性能和 SEO，提供了高速且优质的用户体验。",
+                    "在 Vercel 上管理全栈部署，使用 Git/GitHub 进行持续集成和交付。"
+                ]
+            },
+            {
+                "title": "职业发展",
+                "company": "职业间歇期",
+                "location": "远程",
+                "startDate": "2024年11月",
+                "endDate": "2025年1月",
+                "duration": "3个月",
+                "type": "培训",
+                "workType": "远程",
+                "achievementsLabel": "重点领域与项目：",
+                "responsibilities": [
+                    "完成了专注于 NestJS (Node.js + TypeScript) 的密集后端开发培训计划，用于构建可扩展且高性能的服务器端应用程序。",
+                    "高级概念：RESTful API 开发、身份验证与授权 (JWT, OAuth, RBAC)、使用 Socket.io 的实时通信、GraphQL 集成、国际化 (i18n)、MongoDB 和微服务架构。",
+                    "开发了一个完整的电子商务系统，涵盖：用户管理 (RBAC)、安全身份验证 (JWT/OAuth)、产品/类别/品牌管理、购物车和订单处理、支付处理、优惠券管理、评论系统和税务配置。"
+                ]
+            },
+            {
+                "title": "全栈开发实习生",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "摩洛哥, 阿尤恩",
+                "startDate": "2023年9月",
+                "endDate": "2024年6月",
+                "duration": "10个月",
+                "type": "实习",
+                "workType": "现场办公",
                 "achievementsLabel": "成就：",
                 "responsibilities": [
-                    "设计并开发了一个用于构建专业在线作品集的 SaaS 平台。",
-                    "使用 JWT 实现了身份验证和授权。",
-                    "构建了 RESTful API 并集成了支付系统。",
-                    "在 Vercel 上部署了应用程序，并使用 Git/GitHub 管理代码库。",
-                    "提高了性能、SEO 和用户体验。"
+                    "在前端开发中设计了交互式且具有吸引力的用户界面。",
+                    "获得了后端开发和数据库管理方面的经验。",
+                    "培养了创建和维护动态 Web 应用程序的技能。",
+                    "应用敏捷方法论以提高效率并加强团队合作。",
+                    "积累了使用 Git 和 GitHub 进行有效代码和项目管理的经验。",
+                    "使用 SonarQube 分析代码质量并确保持续改进。",
+                    "使用 Docker 简化环境管理和应用程序开发。",
+                    "增强了人际交往能力，包括沟通和团队合作。"
                 ]
             },
             {
                 "title": "MERN 全栈开发人员",
                 "company": "区域教育培训学院",
-                "location": "摩洛哥, Laayoune",
+                "location": "摩洛哥, 阿尤恩",
                 "startDate": "2024年3月",
                 "endDate": "2024年4月",
-                "duration": "2 个月",
+                "duration": "1个月",
                 "type": "实习",
                 "workType": "混合办公",
-                "achievementsLabel": "成就：",
+                "achievementsLabel": "主要任务：",
                 "responsibilities": [
                     "设计并开发了一个任务管理应用程序，允许用户添加、编辑和删除任务。",
-                    "使用 JWT 实现身份验证和授权，以确保应用程序的安全性。",
-                    "使用 Postman 测试 API 端点以确保功能正常。",
-                    "通过设计简单且用户友好的界面改善用户体验。",
-                    "将应用程序部署在 Vercel 上，并使用 Git/GitHub 管理代码库。"
-                ]
-            },
-            {
-                "title": "全栈 Web 开发人员",
-                "company": "Cités des Métiers et des Compétences",
-                "location": "摩洛哥, Laayoune",
-                "startDate": "2023年9月",
-                "endDate": "2024年6月",
-                "duration": "10 个月",
-                "type": "实习",
-                "workType": "现场办公",
-                "achievementsLabel": "成就：",
-                "description": [
-                    "在专业环境中结合理论与实践，获得了重要的 Web 开发技能。",
-                    "在前端开发中设计了交互式且有吸引力的用户界面。",
-                    "获得了后端开发和数据库管理方面的经验。",
-                    "培养了创建和维护动态 Web 应用程序的技能。",
-                    "应用敏捷方法提高效率并加强团队合作。",
-                    "获得了使用 Git 和 GitHub 进行有效代码和项目管理的经验。",
-                    "使用 SonarQube 分析代码质量并确保持续改进。",
-                    "使用 Docker 以此简化环境管理和应用程序开发。",
-                    "增强了人际交往能力，如沟通和团队合作，以便更好地适应多样化的工作环境。"
+                    "使用 JWT 实现了身份验证和授权，以确保应用程序的安全性。",
+                    "使用 Postman 测试 API 端点以确保功能正确。",
+                    "通过设计简单且用户友好的界面提升了用户体验。",
+                    "在 Vercel 上部署了应用程序，并使用 Git/GitHub 管理代码库。"
                 ]
             },
             {
                 "title": "数字开发实习生",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "摩洛哥, Laayoune",
+                "location": "摩洛哥, 阿尤恩",
                 "startDate": "2022年11月",
                 "endDate": "2023年6月",
-                "duration": "8 个月",
+                "duration": "8个月",
                 "type": "实习",
                 "workType": "现场办公",
-                "keyResponsibilities": "主要职责：",
-                "description": [
-                    "数字领域的文化和先进技术",
-                    "了解职业的维度和学习路径",
-                    "掌握算法基础",
-                    "行为和社交技能",
-                    "培养面向对象编程技能",
-                    "设计和构建静态网站",
-                    "使用 JavaScript 进行应用程序开发",
-                    "使用数据库并执行基本操作",
-                    "构建与用户交互的动态网站",
-                    "熟悉信息系统安全原则"
+                "achievementsLabel": "主要学习内容：",
+                "responsibilities": [
+                    "掌握算法基础和面向对象编程。",
+                    "设计并构建与用户交互的静态和动态网站。",
+                    "操作数据库并执行基本操作。",
+                    "学习用于应用程序开发的 JavaScript。",
+                    "熟悉信息系统安全原则。",
+                    "培养了职业环境所需的行为和社会技能。"
                 ]
             }
         ]

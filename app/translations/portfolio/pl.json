@@ -378,84 +378,94 @@
         "subtitle": "Moje doświadczenie zawodowe",
         "items": [
             {
-                "title": "Założyciel i Full Stack Developer – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "Laayoune , Maroko",
-                "startDate": "Paź 2024",
+                "title": "Full Stack Developer (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "Zdalnie",
+                "startDate": "Paź 2025",
                 "endDate": "Obecnie",
-                "duration": "+ 4 mies.",
-                "type": "Założyciel & Developer",
-                "workType": "Hybrydowo",
-                "achievementsLabel": "Osiągnięcia :",
+                "duration": "7 mies.",
+                "type": "Pełny etat",
+                "workType": "Zdalnie",
+                "achievementsLabel": "Główne obowiązki:",
                 "responsibilities": [
-                    "Zaprojektowano i opracowano platformę SaaS do tworzenia profesjonalnych portfolio online.",
-                    "Wdrożono uwierzytelnianie i autoryzację przy użyciu JWT.",
-                    "Zbudowano RESTful API i zintegrowano systemy płatności.",
-                    "Wdrożono aplikację na Vercel i zarządzano bazą kodu za pomocą Git/GitHub.",
-                    "Poprawiono wydajność, SEO i doświadczenie użytkownika."
+                    "Opracowanie platformy SaaS Next.js dla profesjonalnych portfolio ze zintegrowanymi płatnościami PayPal.",
+                    "Zaprojektowanie bezpiecznych interfejsów API Node.js przy użyciu JWT/NextAuth, zapewniających solidną ochronę danych i skalowalność.",
+                    "Optymalizacja wydajności i SEO poprzez Server-Side Rendering (SSR), zapewniająca wysoką prędkość i jakość UX.",
+                    "Zarządzanie wdrożeniem Full-Stack na Vercel z wykorzystaniem Git/GitHub w celu ciągłej integracji i dostarczania."
+                ]
+            },
+            {
+                "title": "Rozwój zawodowy",
+                "company": "Przerwa w karierze",
+                "location": "Zdalnie",
+                "startDate": "Lis 2024",
+                "endDate": "Sty 2025",
+                "duration": "3 mies.",
+                "type": "Szkolenie",
+                "workType": "Zdalnie",
+                "achievementsLabel": "Obszary koncentracji i projekty:",
+                "responsibilities": [
+                    "Ukończenie intensywnego programu szkoleniowego z zakresu rozwoju backendu skoncentrowanego na NestJS (Node.js + TypeScript) do budowy skalowalnych i wydajnych aplikacji po stronie serwera.",
+                    "Zaawansowane koncepcje: rozwój RESTful API, uwierzytelnianie i autoryzacja (JWT, OAuth, RBAC), komunikacja w czasie rzeczywistym przy użyciu Socket.io, integracja GraphQL, internacjonalizacja (i18n), MongoDB oraz architektura mikroserwisów.",
+                    "Opracowanie kompletnego systemu e-commerce obejmującego: zarządzanie użytkownikami (RBAC), bezpieczne uwierzytelnianie (JWT/OAuth), zarządzanie produktami/kategoriami/markami, przetwarzanie koszyka i zamówień, obsługę płatności, zarządzanie kuponami, system opinii i konfigurację podatkową."
+                ]
+            },
+            {
+                "title": "Stażysta Full Stack Developer",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Laayoune, Maroko",
+                "startDate": "Wrz 2023",
+                "endDate": "Cze 2024",
+                "duration": "10 mies.",
+                "type": "Staż",
+                "workType": "Stacjonarnie",
+                "achievementsLabel": "Osiągnięcia:",
+                "responsibilities": [
+                    "Projektowanie interaktywnych i atrakcyjnych interfejsów użytkownika w rozwoju front-endu.",
+                    "Zdobycie doświadczenia w rozwoju back-endu i zarządzaniu bazami danych.",
+                    "Rozwijanie umiejętności tworzenia i utrzymywania dynamicznych aplikacji internetowych.",
+                    "Stosowanie metodologii Agile w celu poprawy wydajności i wzmocnienia pracy zespołowej.",
+                    "Zdobycie doświadczenia w korzystaniu z Git i GitHub w celu efektywnego zarządzania kodem i projektami.",
+                    "Wykorzystanie SonarQube do analizy jakości kodu i zapewnienia ciągłego doskonalenia.",
+                    "Wykorzystanie Dockera do usprawnienia zarządzania środowiskiem i rozwoju aplikacji.",
+                    "Rozwijanie umiejętności interpersonalnych, w tym komunikacji i pracy zespołowej."
                 ]
             },
             {
                 "title": "Full Stack MERN Developer",
                 "company": "Regionalna Akademia Edukacji i Szkoleń",
-                "location": "Laayoune , Maroko",
+                "location": "Laayoune, Maroko",
                 "startDate": "Mar 2024",
-                "endDate": "Kwi 2024",
-                "duration": "2 mies.",
+                "endDate": "Mar 2024",
+                "duration": "1 mies.",
                 "type": "Staż",
-                "workType": "Hybrydowo",
-                "achievementsLabel": "Osiągnięcia :",
+                "workType": "Stacjonarnie",
+                "achievementsLabel": "Główne zadania:",
                 "responsibilities": [
-                    "Zaprojektowano i opracowano aplikację do zarządzania zadaniami, umożliwiającą użytkownikom dodawanie, edytowanie i usuwanie zadań.",
-                    "Wdrożono uwierzytelnianie i autoryzację przy użyciu JWT w celu zapewnienia bezpieczeństwa aplikacji.",
-                    "Przetestowano punkty końcowe API za pomocą Postman, aby zapewnić prawidłową funkcjonalność.",
-                    "Poprawiono doświadczenie użytkownika, projektując prosty i przyjazny dla użytkownika interfejs.",
-                    "Wdrożono aplikację na Vercel i zarządzano bazą kodu za pomocą Git/GitHub."
+                    "Zaprojektowanie i opracowanie aplikacji do zarządzania zadaniami, która pozwala użytkownikom na dodawanie, edytowanie i usuwanie zadań.",
+                    "Wdrożenie uwierzytelniania i autoryzacji przy użyciu JWT w celu zapewnienia bezpieczeństwa aplikacji.",
+                    "Testowanie punktów końcowych API przy użyciu Postman w celu zapewnienia prawidłowej funkcjonalności.",
+                    "Poprawa doświadczenia użytkownika poprzez zaprojektowanie prostego i przyjaznego dla użytkownika interfejsu.",
+                    "Wdrożenie aplikacji na Vercel i zarządzanie bazą kodu przy użyciu Git/GitHub."
                 ]
             },
             {
-                "title": "Full Stack Web Developer",
+                "title": "Stażysta Digital Developer",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Maroko",
-                "startDate": "Wrz 2023",
-                "endDate": "Cze 2024",
-                "duration": "10 mies.",
-                "type": "Stażysta",
-                "workType": "Na miejscu",
-                "achievementsLabel": "Osiągnięcia :",
-                "description": [
-                    "Zdobyto niezbędne umiejętności tworzenia stron internetowych, łącząc teorię z praktycznym zastosowaniem w profesjonalnym środowisku.",
-                    "Zaprojektowano interaktywne i atrakcyjne interfejsy użytkownika w zakresie rozwoju front-endu.",
-                    "Zdobyto doświadczenie w rozwoju back-endu i zarządzaniu bazami danych.",
-                    "Rozwinięto umiejętności w tworzeniu i utrzymywaniu dynamicznych aplikacji internetowych.",
-                    "Zastosowano metodologię Agile w celu poprawy wydajności i wzmocnienia pracy zespołowej.",
-                    "Zdobyto doświadczenie w korzystaniu z Git i GitHub do efektywnego zarządzania kodem i projektami.",
-                    "Użyto SonarQube do analizy jakości kodu i zapewnienia ciągłego doskonalenia.",
-                    "Użyto Docker do usprawnienia zarządzania środowiskiem i rozwoju aplikacji.",
-                    "Ulepszono umiejętności interpersonalne, w tym komunikację i pracę zespołową, dla lepszego przygotowania w różnorodnych środowiskach pracy."
-                ]
-            },
-            {
-                "title": "Stażysta Deweloper Cyfrowy",
-                "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Maroko",
+                "location": "Laayoune, Maroko",
                 "startDate": "Lis 2022",
                 "endDate": "Cze 2023",
                 "duration": "8 mies.",
-                "type": "Stażysta",
-                "workType": "Na miejscu",
-                "achievementsLabel": "Osiągnięcia :",
-                "description": [
-                    "Kultura i zaawansowane techniki w dziedzinie cyfrowej",
-                    "Zrozumienie wymiarów zawodu i ścieżki uczenia się",
-                    "Nabycie podstaw algorytmiki",
-                    "Umiejętności behawioralne i społeczne",
-                    "Rozwijanie umiejętności w programowaniu obiektowym",
-                    "Projektowanie i budowanie statycznych stron internetowych",
-                    "Używanie JavaScript do tworzenia aplikacji",
-                    "Praca z bazami danych i wykonywanie podstawowych operacji",
-                    "Budowanie dynamicznych stron internetowych wchodzących w interakcję z użytkownikami",
-                    "Zapoznanie z zasadami bezpieczeństwa systemów informatycznych"
+                "type": "Staż",
+                "workType": "Stacjonarnie",
+                "achievementsLabel": "Kluczowa nauka:",
+                "responsibilities": [
+                    "Zdobycie podstaw programowania algorytmicznego i obiektowego.",
+                    "Projektowanie i budowa statycznych i dynamicznych witryn internetowych wchodzących w interakcję z użytkownikami.",
+                    "Praca z bazami danych i wykonywanie podstawowych operacji.",
+                    "Nauka JavaScript na potrzeby tworzenia aplikacji.",
+                    "Zapoznanie się z zasadami bezpieczeństwa systemów informatycznych.",
+                    "Rozwijanie umiejętności behawioralnych i społecznych niezbędnych w środowisku zawodowym."
                 ]
             }
         ]

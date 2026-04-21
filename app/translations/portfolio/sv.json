@@ -374,26 +374,62 @@
         "frontendLabel": "Frontend",
         "backendLabel": "Backend"
     },
-    "experience": {
+           "experience": {
         "title": "Erfarenhet",
         "subtitle": "Min yrkeserfarenhet",
         "items": [
             {
-                "title": "Grundare & Full Stack Utvecklare – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "Laayoune, Marocko",
-                "startDate": "Okt 2024",
+                "title": "Full Stack Utvecklare (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "Distans",
+                "startDate": "Okt 2025",
                 "endDate": "Nuvarande",
-                "duration": "+ 4 mån",
-                "type": "Grundare & Utvecklare",
-                "workType": "Hybrid",
-                "achievementsLabel": "Achievements :",
+                "duration": "7 mån.",
+                "type": "Heltid",
+                "workType": "Distans",
+                "achievementsLabel": "Huvudsakliga ansvarsområden:",
                 "responsibilities": [
-                    "Designade och utvecklade en SaaS-plattform för att bygga professionella onlineportföljer.",
-                    "Implementerade autentisering och auktorisering med JWT.",
-                    "Byggde RESTful API:er och integrerade betalningssystem.",
-                    "Distribuerade applikationen på Vercel och hanterade kodbasen med Git/GitHub.",
-                    "Förbättrade prestanda, SEO och användarupplevelse. "
+                    "Utvecklade en Next.js SaaS-plattform för professionella portföljer med integrerade PayPal-betalningar.",
+                    "Konstruerade säkra Node.js-API:er med JWT/NextAuth, vilket säkerställer robust dataskydd och skalbarhet.",
+                    "Optimerade prestanda och SEO via Server-Side Rendering (SSR), vilket levererar en snabb och premium användarupplevelse.",
+                    "Hanterade Full-Stack-distribution på Vercel med Git/GitHub för kontinuerlig integration och leverans."
+                ]
+            },
+            {
+                "title": "Yrkesmässig utveckling",
+                "company": "Karriäruppehåll",
+                "location": "Distans",
+                "startDate": "Nov 2024",
+                "endDate": "Jan 2025",
+                "duration": "3 mån.",
+                "type": "Utbildning",
+                "workType": "Distans",
+                "achievementsLabel": "Fokusområden och projekt:",
+                "responsibilities": [
+                    "Slutförde ett intensivt utbildningsprogram för backend-utveckling med fokus på NestJS (Node.js + TypeScript) för att bygga skalbara och högpresterande serverapplikationer.",
+                    "Avancerade koncept: utveckling av RESTful API, autentisering och auktorisering (JWT, OAuth, RBAC), realtidskommunikation med hjälp av Socket.io, GraphQL-integration, internationalisering (i18n), MongoDB och mikroservicearkitektur.",
+                    "Utvecklade ett komplett e-handelssystem som omfattar: användarhantering (RBAC), säker autentisering (JWT/OAuth), produkt-/kategori-/varumärkeshantering, varukorgs- och orderhantering, betalningshantering, kuponghantering, recensionssystem och skattekonfiguration."
+                ]
+            },
+            {
+                "title": "Full Stack Utvecklare Praktikant",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Laayoune, Marocko",
+                "startDate": "Sep 2023",
+                "endDate": "Jun 2024",
+                "duration": "10 mån.",
+                "type": "Praktik",
+                "workType": "På plats",
+                "achievementsLabel": "Prestationer:",
+                "responsibilities": [
+                    "Designade interaktiva och attraktiva användargränssnitt inom frontend-utveckling.",
+                    "Skaffade erfarenhet inom backend-utveckling och databashantering.",
+                    "Utvecklade färdigheter i att skapa och underhålla dynamiska webbapplikationer.",
+                    "Tillämpade Agile-metodik för att förbättra effektiviteten och stärka samarbetet i teamet.",
+                    "Fick erfarenhet av att använda Git och GitHub för effektiv kod- och projekthantering.",
+                    "Använde SonarQube för att analysera kodkvalitet och säkerställa kontinuerlig förbättring.",
+                    "Använde Docker för att effektivisera miljöhantering och applikationsutveckling.",
+                    "Förbättrade interpersonella färdigheter, inklusive kommunikation och teamarbete."
                 ]
             },
             {
@@ -401,11 +437,11 @@
                 "company": "Regional Academy of Education and Training",
                 "location": "Laayoune, Marocko",
                 "startDate": "Mar 2024",
-                "endDate": "Apr 2024",
-                "duration": "2 mån",
+                "endDate": "Mar 2024",
+                "duration": "1 mån.",
                 "type": "Praktik",
                 "workType": "Hybrid",
-                "achievementsLabel": "Achievements :",
+                "achievementsLabel": "Huvudsakliga uppgifter:",
                 "responsibilities": [
                     "Designade och utvecklade en uppgiftshanteringsapplikation som låter användare lägga till, redigera och ta bort uppgifter.",
                     "Implementerade autentisering och auktorisering med JWT för att säkerställa applikationens säkerhet.",
@@ -415,48 +451,22 @@
                 ]
             },
             {
-                "title": "Full Stack Webb Utvecklare",
-                "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune, Marocko",
-                "startDate": "Sep 2023",
-                "endDate": "Jun 2024",
-                "duration": "10 mån",
-                "type": "Praktik",
-                "workType": "På plats",
-                "achievementsLabel": "Achievements :",
-                "description": [
-                    "Fick väsentliga webbutvecklingskunskaper genom att kombinera teori med praktisk tillämpning i en professionell miljö.",
-                    "Designade interaktiva och attraktiva användargränssnitt inom frontend-utveckling.",
-                    "Skaffade erfarenhet inom backend-utveckling och databashantering.",
-                    "Utvecklade färdigheter i att skapa och underhålla dynamiska webbapplikationer.",
-                    "Tillämpade Agile-metodik för att förbättra effektiviteten och stärka samarbetet i teamet.",
-                    "Fick erfarenhet av att använda Git och GitHub för effektiv kod- och projekthantering.",
-                    "Använde SonarQube för att analysera kodkvalitet och säkerställa kontinuerlig förbättring.",
-                    "Använde Docker för att effektivisera miljöhantering och applikationsutveckling.",
-                    "Förbättrade interpersonella färdigheter, inklusive kommunikation och teamarbete, för bättre beredskap i olika arbetsmiljöer."
-                ]
-            },
-            {
                 "title": "Digital Utvecklare Praktikant",
                 "company": "Cités des Métiers et des Compétences",
                 "location": "Laayoune, Marocko",
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
-                "duration": "8 mån",
+                "duration": "8 mån.",
                 "type": "Praktik",
                 "workType": "På plats",
-                "keyResponsibilities": "Huvudansvar:",
-                "description": [
-                    "Kultur och avancerade tekniker inom det digitala området",
-                    "Förståelse för yrkets dimensioner och inlärningsvägen",
-                    "Förvärv av grunderna i algoritmik",
-                    "Beteendemässiga och sociala färdigheter",
-                    "Utveckling av färdigheter i objektorienterad programmering",
-                    "Design och byggande av statiska webbplatser",
-                    "Användning av JavaScript för applikationsutveckling",
-                    "Arbeta med databaser och utföra grundläggande operationer",
-                    "Bygga dynamiska webbplatser som interagerar med användare",
-                    "Bekanta sig med principerna för informationssystemsäkerhet"
+                "achievementsLabel": "Viktiga lärdomar:",
+                "responsibilities": [
+                    "Förvärv av grunderna i algoritmer och objektorienterad programmering.",
+                    "Design och byggande av statiska och dynamiska webbplatser som interagerar med användare.",
+                    "Arbeta med databaser och utföra grundläggande operationer.",
+                    "Inlärning av JavaScript för applikationsutveckling.",
+                    "Bekanta sig med principerna för informationssäkerhet.",
+                    "Utveckling av beteendemässiga och sociala färdigheter som är nödvändiga i en professionell miljö."
                 ]
             }
         ]

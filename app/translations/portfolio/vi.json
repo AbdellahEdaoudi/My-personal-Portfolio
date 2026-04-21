@@ -379,43 +379,40 @@
         "subtitle": "Kinh nghiệm làm việc của tôi",
         "items": [
             {
-                "title": "Người sáng lập & Lập trình viên Full Stack – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "Laayoune, Ma-rốc",
-                "startDate": "Tháng 10 2024",
+                "title": "Lập trình viên Full Stack (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "Từ xa",
+                "startDate": "Tháng 10 2025",
                 "endDate": "Hiện tại",
-                "duration": "+ 4 tháng",
-                "type": "Người sáng lập & Lập trình viên",
-                "workType": "Kết hợp",
-                "achievementsLabel": "Thành tựu:",
+                "duration": "7 tháng",
+                "type": "Toàn thời gian",
+                "workType": "Từ xa",
+                "achievementsLabel": "Trách nhiệm chính:",
                 "responsibilities": [
-                    "Thiết kế và phát triển nền tảng SaaS để xây dựng danh mục đầu tư trực tuyến chuyên nghiệp.",
-                    "Triển khai xác thực và ủy quyền bằng JWT.",
-                    "Xây dựng API RESTful và tích hợp hệ thống thanh toán.",
-                    "Triển khai ứng dụng trên Vercel và quản lý mã nguồn bằng Git/GitHub.",
-                    "Cải thiện hiệu suất, SEO và trải nghiệm người dùng."
+                    "Phát triển nền tảng SaaS Next.js cho các hồ sơ năng lực chuyên nghiệp với tích hợp thanh toán PayPal.",
+                    "Thiết kế các API Node.js an toàn sử dụng JWT/NextAuth, đảm bảo bảo vệ dữ liệu mạnh mẽ và khả năng mở rộng.",
+                    "Tối ưu hóa hiệu suất & SEO thông qua Server-Side Rendering (SSR), mang lại trải nghiệm người dùng cao cấp, tốc độ cao.",
+                    "Quản lý triển khai Full-Stack trên Vercel với Git/GitHub để tích hợp và phân phối liên tục."
                 ]
             },
             {
-                "title": "Lập trình viên Full Stack MERN",
-                "company": "Regional Academy of Education and Training",
-                "location": "Laayoune, Ma-rốc",
-                "startDate": "Tháng 3 2024",
-                "endDate": "Tháng 4 2024",
-                "duration": "2 tháng",
-                "type": "Thực tập",
-                "workType": "Kết hợp",
-                "achievementsLabel": "Thành tựu:",
+                "title": "Phát triển chuyên môn",
+                "company": "Nghỉ giai đoạn sự nghiệp",
+                "location": "Từ xa",
+                "startDate": "Tháng 11 2024",
+                "endDate": "Tháng 1 2025",
+                "duration": "3 tháng",
+                "type": "Đào tạo",
+                "workType": "Từ xa",
+                "achievementsLabel": "Các lĩnh vực tập trung và dự án:",
                 "responsibilities": [
-                    "Thiết kế và phát triển ứng dụng quản lý tác vụ cho phép người dùng thêm, sửa và xóa tác vụ.",
-                    "Triển khai xác thực và ủy quyền bằng JWT để đảm bảo an toàn cho ứng dụng.",
-                    "Kiểm tra các điểm cuối API bằng Postman để đảm bảo chức năng phù hợp.",
-                    "Cải thiện trải nghiệm người dùng bằng cách thiết kế giao diện đơn giản và thân thiện.",
-                    "Triển khai ứng dụng trên Vercel và quản lý mã nguồn bằng Git/GitHub."
+                    "Hoàn thành chương trình đào tạo chuyên sâu về phát triển backend tập trung vào NestJS (Node.js + TypeScript) để xây dựng các ứng dụng phía máy chủ có khả năng mở rộng và hiệu suất cao.",
+                    "Các khái niệm nâng cao: phát triển API RESTful, xác thực và phân quyền (JWT, OAuth, RBAC), giao tiếp thời gian thực sử dụng Socket.io, tích hợp GraphQL, quốc tế hóa (i18n), MongoDB và kiến trúc microservices.",
+                    "Phát triển hệ thống thương mại điện tử hoàn chỉnh bao gồm: quản lý người dùng (RBAC), xác thực an toàn (JWT/OAuth), quản lý sản phẩm/danh mục/thương hiệu, xử lý giỏ hàng và đơn hàng, xử lý thanh toán, quản lý mã giảm giá, hệ thống đánh giá và cấu hình thuế."
                 ]
             },
             {
-                "title": "Lập trình viên Full Stack Web",
+                "title": "Thực tập sinh Lập trình viên Full Stack",
                 "company": "Cités des Métiers et des Compétences",
                 "location": "Laayoune, Ma-rốc",
                 "startDate": "Tháng 9 2023",
@@ -424,16 +421,33 @@
                 "type": "Thực tập",
                 "workType": "Tại văn phòng",
                 "achievementsLabel": "Thành tựu:",
-                "description": [
-                    "Đạt được kỹ năng phát triển web thiết yếu bằng cách kết hợp lý thuyết với thực hành trong môi trường chuyên nghiệp.",
+                "responsibilities": [
                     "Thiết kế giao diện người dùng tương tác và hấp dẫn trong phát triển front-end.",
-                    "Có kinh nghiệm trong phát triển back-end và quản lý cơ sở dữ liệu.",
+                    "Đạt được kinh nghiệm trong phát triển back-end và quản lý cơ sở dữ liệu.",
                     "Phát triển kỹ năng tạo và duy trì các ứng dụng web động.",
                     "Áp dụng phương pháp Agile để cải thiện hiệu quả và tăng cường làm việc nhóm.",
                     "Có kinh nghiệm sử dụng Git và GitHub để quản lý mã và dự án hiệu quả.",
                     "Sử dụng SonarQube để phân tích chất lượng mã và đảm bảo cải tiến liên tục.",
                     "Sử dụng Docker để tối ưu hóa quản lý môi trường và phát triển ứng dụng.",
-                    "Nâng cao kỹ năng giao tiếp, bao gồm làm việc nhóm, để chuẩn bị tốt hơn trong các môi trường làm việc đa dạng."
+                    "Nâng cao kỹ năng giao tiếp và làm việc nhóm."
+                ]
+            },
+            {
+                "title": "Lập trình viên Full Stack MERN",
+                "company": "Regional Academy of Education and Training",
+                "location": "Laayoune, Ma-rốc",
+                "startDate": "Tháng 3 2024",
+                "endDate": "Tháng 3 2024",
+                "duration": "1 tháng",
+                "type": "Thực tập",
+                "workType": "Kết hợp",
+                "achievementsLabel": "Nhiệm vụ chính:",
+                "responsibilities": [
+                    "Thiết kế và phát triển ứng dụng quản lý tác vụ cho phép người dùng thêm, sửa và xóa tác vụ.",
+                    "Triển khai xác thực và ủy quyền bằng JWT để đảm bảo an toàn cho ứng dụng.",
+                    "Kiểm tra các điểm cuối API bằng Postman để đảm bảo chức năng phù hợp.",
+                    "Cải thiện trải nghiệm người dùng bằng cách thiết kế giao diện đơn giản và thân thiện.",
+                    "Triển khai ứng dụng trên Vercel và quản lý mã nguồn bằng Git/GitHub."
                 ]
             },
             {
@@ -445,18 +459,14 @@
                 "duration": "8 tháng",
                 "type": "Thực tập",
                 "workType": "Tại văn phòng",
-                "keyResponsibilities": "Trách nhiệm chính:",
-                "description": [
-                    "Văn hóa và kỹ thuật tiên tiến trong lĩnh vực kỹ thuật số",
-                    "Hiểu quy mô nghề nghiệp và lộ trình học tập",
-                    "Nắm vững cơ bản về thuật toán",
-                    "Kỹ năng hành vi và xã hội",
-                    "Phát triển kỹ năng lập trình hướng đối tượng",
-                    "Thiết kế và xây dựng trang web tĩnh",
-                    "Sử dụng JavaScript để phát triển ứng dụng",
-                    "Làm việc với cơ sở dữ liệu và thực hiện các thao tác cơ bản",
-                    "Xây dựng trang web động tương tác với người dùng",
-                    "Làm quen với các nguyên tắc bảo mật hệ thống thông tin"
+                "achievementsLabel": "Các nội dung học tập chính:",
+                "responsibilities": [
+                    "Nắm vững nền tảng về thuật toán và lập trình hướng đối tượng.",
+                    "Thiết kế và xây dựng các trang web tĩnh và động tương tác với người dùng.",
+                    "Làm việc với cơ sở dữ liệu và thực hiện các thao tác cơ bản.",
+                    "Học JavaScript để phát triển ứng dụng.",
+                    "Làm quen với các nguyên tắc bảo mật hệ thống thông tin.",
+                    "Phát triển các kỹ năng hành vi và xã hội cần thiết trong môi trường chuyên nghiệp."
                 ]
             }
         ]

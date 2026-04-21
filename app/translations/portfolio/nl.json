@@ -375,87 +375,97 @@
     },
     "experience": {
         "title": "Ervaring",
-        "subtitle": "Mijn Professionele Ervaring",
+        "subtitle": "Mijn professionele ervaring",
         "items": [
             {
-                "title": "Oprichter & Full Stack Ontwikkelaar – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "Laayoune , Marokko",
-                "startDate": "Okt 2024",
+                "title": "Full Stack Developer (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "Op afstand",
+                "startDate": "okt 2025",
                 "endDate": "Heden",
-                "duration": "+ 4 mnd",
-                "type": "Oprichter & Ontwikkelaar",
-                "workType": "Hybride",
-                "achievementsLabel": "Prestaties:",
+                "duration": "7 mnd",
+                "type": "Fulltime",
+                "workType": "Op afstand",
+                "achievementsLabel": "Belangrijkste verantwoordelijkheden:",
                 "responsibilities": [
-                    "Ontwierp en ontwikkelde een SaaS-platform voor het bouwen van professionele online portfolio's.",
-                    "Implementeerde authenticatie en autorisatie met behulp van JWT.",
-                    "Bouwde RESTful API's en integreerde betalingssystemen.",
-                    "De applicatie geïmplementeerd op Vercel en de codebase beheerd met Git/GitHub.",
-                    "Verbeterde prestaties, SEO en gebruikerservaring."
+                    "Ontwikkelde een Next.js SaaS-platform voor professionele portfolio's met geïntegreerde PayPal-betalingen.",
+                    "Ontworpen veilige Node.js API's met JWT/NextAuth, wat zorgt voor robuuste gegevensbescherming en schaalbaarheid.",
+                    "Prestaties & SEO geoptimaliseerd via Server-Side Rendering (SSR), wat zorgt voor een snelle, premium UX.",
+                    "Beheerde Full-Stack Deployment op Vercel met Git/GitHub voor continue integratie en levering."
                 ]
             },
             {
-                "title": "Full Stack MERN-ontwikkelaar",
-                "company": "Regionale Academie voor Onderwijs en Opleiding",
-                "location": "Laayoune , Marokko",
-                "startDate": "Mrt 2024",
-                "endDate": "Apr 2024",
-                "duration": "2 mnd",
-                "type": "Stage",
-                "workType": "Hybride",
-                "achievementsLabel": "Prestaties:",
+                "title": "Professionele ontwikkeling",
+                "company": "Sabbatical",
+                "location": "Op afstand",
+                "startDate": "nov 2024",
+                "endDate": "jan 2025",
+                "duration": "3 mnd",
+                "type": "Training",
+                "workType": "Op afstand",
+                "achievementsLabel": "Focusgebieden & Projecten:",
                 "responsibilities": [
-                    "Ontworpen en ontwikkeld een taakbeheerapplicatie waarmee gebruikers taken kunnen toevoegen, bewerken en verwijderen.",
-                    "Authenticatie en autorisatie geïmplementeerd met behulp van JWT om de beveiliging van de applicatie te garanderen.",
-                    "API-eindpunten getest met Postman om een correcte functionaliteit te garanderen.",
-                    "Gebruikerservaring verbeterd door een eenvoudige en gebruiksvriendelijke interface te ontwerpen.",
-                    "De applicatie geïmplementeerd op Vercel en de codebase beheerd met behulp van Git/GitHub."
+                    "Een intensief trainingsprogramma voor backend-ontwikkeling voltooid, gericht op NestJS (Node.js + TypeScript) voor het bouwen van schaalbare en krachtige server-side applicaties.",
+                    "Geavanceerde concepten: RESTful API-ontwikkeling, Authenticatie & Autorisatie (JWT, OAuth, RBAC), Real-time communicatie met Socket.io, GraphQL-integratie, Internationalisering (i18n), MongoDB en Microservices-architectuur.",
+                    "Een compleet e-commercesysteem ontwikkeld met: Gebruikersbeheer (RBAC), Veilige Auth (JWT/OAuth), Product/Categorie/Merkbeheer, Winkelwagen & Orderverwerking, Betalingsafhandeling, Couponbeheer, Review-systeem en Belastingconfiguratie."
                 ]
             },
             {
-                "title": "Full Stack Webontwikkelaar",
+                "title": "Stagiair Full Stack Developer",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Marokko",
-                "startDate": "Sep 2023",
-                "endDate": "Jun 2024",
+                "location": "Laayoune, Marokko",
+                "startDate": "sep 2023",
+                "endDate": "jun 2024",
                 "duration": "10 mnd",
-                "type": "Stagiair",
+                "type": "Stage",
                 "workType": "Op locatie",
                 "achievementsLabel": "Prestaties:",
-                "description": [
-                    "Essentiële webontwikkelingsvaardigheden opgedaan door theorie te combineren met praktische toepassing in een professionele omgeving.",
-                    "Interactieve en aantrekkelijke gebruikersinterfaces ontworpen in frontend-ontwikkeling.",
-                    "Ervaring opgedaan in backend-ontwikkeling en databasebeheer.",
-                    "Vaardigheden ontwikkeld in het creëren en onderhouden van dynamische webapplicaties.",
-                    "Agile-methodologie toegepast om de efficiëntie te verbeteren en teamwork te versterken.",
-                    "Ervaring opgedaan met Git en GitHub voor effectief code- en projectbeheer.",
-                    "SonarQube gebruikt om de codekwaliteit te analyseren en continue verbetering te garanderen.",
-                    "Docker gebruikt om omgevingsbeheer en applicatieontwikkeling te stroomlijnen.",
-                    "Interpersoonlijke vaardigheden verbeterd, zoals communicatie en teamwork, voor een betere voorbereiding in diverse werkomgevingen."
+                "responsibilities": [
+                    "Interactieve en aantrekkelijke gebruikersinterfaces ontworpen in front-end ontwikkeling.",
+                    "Ervaring opgedaan in back-end ontwikkeling en databasebeheer.",
+                    "Vaardigheden ontwikkeld in het maken en onderhouden van dynamische webapplicaties.",
+                    "Agile-methodologie toegepast om de efficiëntie te verbeteren en het teamwerk te versterken.",
+                    "Ervaring opgedaan met het gebruik van Git en GitHub voor effectief code- en projectbeheer.",
+                    "SonarQube gebruikt om de codekwaliteit te analyseren en continue verbetering te waarborgen.",
+                    "Docker gebruikt om het omgevingsbeheer en de applicatieontwikkeling te stroomlijnen.",
+                    "Interpersoonlijke vaardigheden verbeterd, waaronder communicatie en teamwerk."
+                ]
+            },
+            {
+                "title": "Full Stack MERN Developer",
+                "company": "Regionale Academie voor Onderwijs en Training",
+                "location": "Laayoune, Marokko",
+                "startDate": "mrt 2024",
+                "endDate": "mrt 2024",
+                "duration": "1 maand",
+                "type": "Stage",
+                "workType": "Op locatie",
+                "achievementsLabel": "Belangrijkste taken:",
+                "responsibilities": [
+                    "Een taakbeheerapplicatie ontworpen en ontwikkeld waarmee gebruikers taken kunnen toevoegen, bewerken en verwijderen.",
+                    "Authenticatie en autorisatie geïmplementeerd met JWT om de veiligheid van de applicatie te waarborgen.",
+                    "API-eindpunten getest met Postman om de juiste functionaliteit te garanderen.",
+                    "Gebruikerservaring verbeterd door een eenvoudige en gebruiksvriendelijke interface te ontwerpen.",
+                    "De applicatie geïmplementeerd op Vercel en de codebase beheerd met Git/GitHub."
                 ]
             },
             {
                 "title": "Stagiair Digitaal Ontwikkelaar",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Marokko",
-                "startDate": "Nov 2022",
-                "endDate": "Jun 2023",
+                "location": "Laayoune, Marokko",
+                "startDate": "nov 2022",
+                "endDate": "jun 2023",
                 "duration": "8 mnd",
-                "type": "Stagiair",
+                "type": "Stage",
                 "workType": "Op locatie",
-                "keyResponsibilities": "Belangrijkste verantwoordelijkheden:",
-                "description": [
-                    "Cultuur en geavanceerde technieken van het digitale veld",
-                    "Begrip van de dimensies van het beroep en het leertraject",
-                    "De basisprincipes van algoritmiek verwerven",
-                    "Gedrags- en sociale vaardigheden",
-                    "Ontwikkelen van vaardigheden in objectgeoriënteerd programmeren",
-                    "Ontwerpen en bouwen van statische websites",
-                    "Gebruik van JavaScript voor applicatieontwikkeling",
-                    "Werken met databases en uitvoeren van basisbewerkingen",
-                    "Bouwen van dynamische websites die communiceren met gebruikers",
-                    "Kennismaken met de principes van informatiebeveiliging"
+                "achievementsLabel": "Kernleerpunten:",
+                "responsibilities": [
+                    "De basis van algoritmisch en objectgeoriënteerd programmeren verworven.",
+                    "Statische en dynamische websites ontworpen en gebouwd die interactie met gebruikers hebben.",
+                    "Gewerkt met databases en basisbewerkingen uitgevoerd.",
+                    "JavaScript geleerd voor applicatieontwikkeling.",
+                    "Vertrouwd geraakt met de principes van informatiebeveiliging.",
+                    "Essentiële gedrags- en sociale vaardigheden ontwikkeld voor een professionele omgeving."
                 ]
             }
         ]
