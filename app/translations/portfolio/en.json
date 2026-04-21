@@ -379,33 +379,69 @@
         "subtitle": "My professional experience",
         "items": [
             {
-                "title": "Founder & Full Stack Developer – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "Laayoune , Morocco",
-                "startDate": "Oct 2024",
+                "title": "Full Stack Developer (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "Remote",
+                "startDate": "Oct 2025",
                 "endDate": "Present",
-                "duration": "+ 4 mos",
-                "type": "Founder & Developer",
-                "workType": "Hybrid",
-                "achievementsLabel": "Achievements :",
+                "duration": "7 mos",
+                "type": "Full-time",
+                "workType": "Remote",
+                "achievementsLabel": "Key Responsibilities:",
                 "responsibilities": [
-                    "Designed and developed a SaaS platform for building professional online portfolios.",
-                    "Implemented authentication and authorization using JWT.",
-                    "Built RESTful APIs and integrated payment systems.",
-                    "Deployed the application on Vercel and managed the codebase using Git/GitHub.",
-                    "Improved performance, SEO, and user experience."
+                    "Developed a Next.js SaaS platform for professional portfolios with integrated PayPal payments.",
+                    "Engineered secure Node.js APIs using JWT/NextAuth, ensuring robust data protection and scalability.",
+                    "Optimized Performance & SEO via Server-Side Rendering (SSR), delivering a high-speed, premium UX.",
+                    "Managed Full-Stack Deployment on Vercel with Git/GitHub for continuous integration and delivery."
+                ]
+            },
+            {
+                "title": "Professional development",
+                "company": "Career Break",
+                "location": "Remote",
+                "startDate": "Nov 2024",
+                "endDate": "Jan 2025",
+                "duration": "3 mos",
+                "type": "Training",
+                "workType": "Remote",
+                "achievementsLabel": "Focus Areas & Projects:",
+                "responsibilities": [
+                    "Completed an intensive backend development training program focused on NestJS (Node.js + TypeScript) for building scalable and high-performance server-side applications.",
+                    "Advanced concepts: RESTful API development, Authentication & Authorization (JWT, OAuth, RBAC), Real-time communication using Socket.io, GraphQL integration, Internationalization (i18n), MongoDB, and Microservices architecture.",
+                    "Developed a complete e-commerce system including: User management (RBAC), Secure Auth (JWT/OAuth), Product/Category/Brand mgmt, Cart & Order processing, Payment handling, Coupon mgmt, Reviews system, and Tax configuration."
+                ]
+            },
+            {
+                "title": "Full Stack Developer Intern",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Laayoune, Morocco",
+                "startDate": "Sep 2023",
+                "endDate": "Jun 2024",
+                "duration": "10 mos",
+                "type": "Internship",
+                "workType": "On-site",
+                "achievementsLabel": "Achievements:",
+                "responsibilities": [
+                    "Designed interactive and attractive user interfaces in front-end development.",
+                    "Acquired experience in back-end development and database management.",
+                    "Developed skills in creating and maintaining dynamic web applications.",
+                    "Applied Agile methodology to improve efficiency and strengthen teamwork.",
+                    "Gained experience using Git and GitHub for effective code and project management.",
+                    "Used SonarQube to analyze code quality and ensure continuous improvement.",
+                    "Used Docker to streamline environment management and application development.",
+                    "Enhanced interpersonal skills, including communication and teamwork."
                 ]
             },
             {
                 "title": "Full Stack MERN Developer",
-                "company": "Regional Academy of Education and Training",
-                "location": "Laayoune , Morocco",
+                "company": "Académie Régionale d'Éducation et de Formation",
+                "location": "Laayoune, Morocco",
                 "startDate": "Mar 2024",
-                "endDate": "Apr 2024",
-                "duration": "2 mos",
+                "endDate": "Mar 2024",
+                "duration": "1 mo",
                 "type": "Internship",
-                "workType": "Hybrid",
-                "achievementsLabel": "Achievements :",
+                "workType": "On-site",
+                "achievementsLabel": "Key Tasks:",
                 "responsibilities": [
                     "Designed and developed a task management application allowing users to add, edit, and delete tasks.",
                     "Implemented authentication and authorization using JWT to ensure the security of the application.",
@@ -415,48 +451,22 @@
                 ]
             },
             {
-                "title": "Full Stack Web Developer",
-                "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Morocco",
-                "startDate": "Sep 2023",
-                "endDate": "Jun 2024",
-                "duration": "10 mos",
-                "type": "Internship",
-                "workType": "On-site",
-                "achievementsLabel": "Achievements :",
-                "description": [
-                    "Gained essential web development skills by combining theory with practical application in a professional environment.",
-                    "Designed interactive and attractive user interfaces in front-end development.",
-                    "Acquired experience in back-end development and database management.",
-                    "Developed skills in creating and maintaining dynamic web applications.",
-                    "Applied Agile methodology to improve efficiency and strengthen teamwork.",
-                    "Gained experience using Git and GitHub for effective code and project management.",
-                    "Used SonarQube to analyze code quality and ensure continuous improvement.",
-                    "Used Docker to streamline environment management and application development.",
-                    "Enhanced interpersonal skills, including communication and teamwork, for better preparedness in diverse work environments."
-                ]
-            },
-            {
                 "title": "Digital Developer Intern",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Morocco",
+                "location": "Laayoune, Morocco",
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 mos",
                 "type": "Internship",
                 "workType": "On-site",
-                "achievementsLabel": "Achievements :",
-                "description": [
-                    "Culture and advanced techniques of the digital field",
-                    "Understanding the dimensions of the profession and the learning path",
-                    "Acquiring the basics of algorithmic",
-                    "Behavioral and social skills",
-                    "Developing skills in object-oriented programming",
-                    "Designing and building static websites",
-                    "Using JavaScript for application development",
-                    "Working with databases and executing basic operations",
-                    "Building dynamic websites that interact with users",
-                    "Familiarizing with information system security principles"
+                "achievementsLabel": "Core Learning:",
+                "responsibilities": [
+                    "Acquired the basics of algorithmic and object-oriented programming.",
+                    "Designed and built static and dynamic websites that interact with users.",
+                    "Worked with databases and executed basic operations.",
+                    "Learned JavaScript for application development.",
+                    "Familiarized with information system security principles.",
+                    "Developed behavioral and social skills essential for a professional environment."
                 ]
             }
         ]

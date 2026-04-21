@@ -382,84 +382,94 @@
         "subtitle": "Meine Berufserfahrung",
         "items": [
             {
-                "title": "Gründer & Full Stack Entwickler – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "Laayoune , Marokko",
-                "startDate": "Okt 2024",
+                "title": "Full Stack Entwickler (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "Remote",
+                "startDate": "Okt 2025",
                 "endDate": "Gegenwart",
-                "duration": "+ 4 Mon.",
-                "type": "Gründer & Entwickler",
-                "workType": "Hybrid",
+                "duration": "7 Mon.",
+                "type": "Vollzeit",
+                "workType": "Remote",
+                "achievementsLabel": "Hauptverantwortlichkeiten:",
+                "responsibilities": [
+                    "Entwicklung einer Next.js SaaS-Plattform für professionelle Portfolios mit integrierten PayPal-Zahlungen.",
+                    "Entwurf sicherer Node.js-APIs mit JWT/NextAuth, um robusten Datenschutz und Skalierbarkeit zu gewährleisten.",
+                    "Optimierung von Performance und SEO durch Server-Side Rendering (SSR), um eine schnelle und erstklassige UX zu bieten.",
+                    "Verwaltung des Full-Stack-Deployments auf Vercel mit Git/GitHub für kontinuierliche Integration und Auslieferung."
+                ]
+            },
+            {
+                "title": "Berufliche Weiterentwicklung",
+                "company": "Karrierepause",
+                "location": "Remote",
+                "startDate": "Nov 2024",
+                "endDate": "Jan 2025",
+                "duration": "3 Mon.",
+                "type": "Weiterbildung",
+                "workType": "Remote",
+                "achievementsLabel": "Schwerpunkte und Projekte:",
+                "responsibilities": [
+                    "Abschluss eines intensiven Backend-Entwicklungstrainingsprogramms mit Fokus auf NestJS (Node.js + TypeScript) für den Aufbau skalierbarer und hochperformanter serverseitiger Anwendungen.",
+                    "Fortgeschrittene Konzepte: RESTful API-Entwicklung, Authentifizierung und Autorisierung (JWT, OAuth, RBAC), Echtzeitkommunikation mit Socket.io, GraphQL-Integration, Internationalisierung (i18n), MongoDB und Microservices-Architektur.",
+                    "Entwicklung eines vollständigen E-Commerce-Systems, umfassend: Benutzerverwaltung (RBAC), sichere Authentifizierung (JWT/OAuth), Produkt-/Kategorie-/Markenverwaltung, Warenkorb- und Bestellabwicklung, Zahlungsabwicklung, Gutscheinverwaltung, Bewertungssystem und Steuerkonfiguration."
+                ]
+            },
+            {
+                "title": "Full Stack Entwickler Praktikant",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Laayoune, Marokko",
+                "startDate": "Sep 2023",
+                "endDate": "Jun 2024",
+                "duration": "10 Mon.",
+                "type": "Praktikum",
+                "workType": "Vor Ort",
                 "achievementsLabel": "Erfolge:",
                 "responsibilities": [
-                    "Entwicklung einer SaaS-Plattform zur Erstellung professioneller Online-Portfolios.",
-                    "Implementierung von Authentifizierung und Autorisierung mit JWT.",
-                    "Erstellung von RESTful APIs und Integration von Zahlungssystemen.",
-                    "Bereitstellung der Anwendung auf Vercel und Verwaltung der Codebasis mit Git/GitHub.",
-                    "Verbesserung von Leistung, SEO und Benutzererfahrung."
+                    "Entwurf interaktiver und ansprechender Benutzeroberflächen in der Frontend-Entwicklung.",
+                    "Erwerb von Erfahrung in der Backend-Entwicklung und Datenbankverwaltung.",
+                    "Entwicklung von Fähigkeiten bei der Erstellung und Wartung dynamischer Webanwendungen.",
+                    "Anwendung der Agile-Methodik zur Verbesserung der Effizienz und Stärkung der Teamarbeit.",
+                    "Erwerb von Erfahrung im Umgang mit Git und GitHub für ein effektives Code- und Projektmanagement.",
+                    "Einsatz von SonarQube zur Analyse der Codequalität und zur Sicherstellung einer kontinuierlichen Verbesserung.",
+                    "Einsatz von Docker zur Rationalisierung der Umgebungsverwaltung und Anwendungsentwicklung.",
+                    "Verbesserung der zwischenmenschlichen Fähigkeiten, einschließlich Kommunikation und Teamarbeit."
                 ]
             },
             {
                 "title": "Full Stack MERN Entwickler",
                 "company": "Regionale Akademie für Bildung und Ausbildung",
-                "location": "Laayoune , Marokko",
+                "location": "Laayoune, Marokko",
                 "startDate": "Mär 2024",
-                "endDate": "Apr 2024",
-                "duration": "2 Mon",
+                "endDate": "Mär 2024",
+                "duration": "1 Mon.",
                 "type": "Praktikum",
                 "workType": "Hybrid",
-                "achievementsLabel": "Erfolge:",
+                "achievementsLabel": "Hauptaufgaben:",
                 "responsibilities": [
-                    "Entwurf und Entwicklung einer Aufgabenverwaltungsanwendung, mit der Benutzer Aufgaben hinzufügen, bearbeiten und löschen können.",
-                    "Implementierung von Authentifizierung und Autorisierung mit JWT zur Gewährleistung der Sicherheit der Anwendung.",
-                    "Testen von API-Endpunkten mit Postman zur Sicherstellung der ordnungsgemäßen Funktionalität.",
+                    "Konzeption und Entwicklung einer Aufgabenverwaltungsanwendung, die es Benutzern ermöglicht, Aufgaben hinzuzufügen, zu bearbeiten und zu löschen.",
+                    "Implementierung von Authentifizierung und Autorisierung mittels JWT zur Gewährleistung der Anwendungssicherheit.",
+                    "Testen von API-Endpunkten mit Postman, um die korrekte Funktionalität sicherzustellen.",
                     "Verbesserung der Benutzererfahrung durch Gestaltung einer einfachen und benutzerfreundlichen Oberfläche.",
-                    "Bereitstellung der Anwendung auf Vercel und Verwaltung der Codebasis mit Git/GitHub."
+                    "Deployment der Anwendung auf Vercel und Verwaltung der Codebasis mittels Git/GitHub."
                 ]
             },
             {
-                "title": "Full Stack Webentwickler",
+                "title": "Digitalentwickler Praktikant",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Marokko",
-                "startDate": "Sep 2023",
-                "endDate": "Jun 2024",
-                "duration": "10 Mon",
-                "type": "Praktikant",
-                "workType": "Vor Ort",
-                "achievementsLabel": "Erfolge:",
-                "description": [
-                    "Erwerb wesentlicher Webentwicklungskenntnisse durch Kombination von Theorie und praktischer Anwendung in einem professionellen Umfeld.",
-                    "Gestaltung interaktiver und attraktiver Benutzeroberflächen in der Frontend-Entwicklung.",
-                    "Erfahrung in der Backend-Entwicklung und Datenbankverwaltung gesammelt.",
-                    "Entwicklung von Fähigkeiten zur Erstellung und Wartung dynamischer Webanwendungen.",
-                    "Anwendung der Agilen Methodik zur Verbesserung der Effizienz und Stärkung der Teamarbeit.",
-                    "Erfahrung mit Git und GitHub für effektives Code- und Projektmanagement gesammelt.",
-                    "Verwendung von SonarQube zur Analyse der Codequalität und Sicherstellung kontinuierlicher Verbesserung.",
-                    "Verwendung von Docker zur Optimierung der Umgebungsverwaltung und Anwendungsentwicklung.",
-                    "Verbesserung zwischenmenschlicher Fähigkeiten wie Kommunikation und Teamarbeit zur besseren Vorbereitung auf diverse Arbeitsumgebungen."
-                ]
-            },
-            {
-                "title": "Praktikant Digitalentwickler",
-                "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Marokko",
+                "location": "Laayoune, Marokko",
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
-                "duration": "8 Mon",
-                "type": "Praktikant",
+                "duration": "8 Mon.",
+                "type": "Praktikum",
                 "workType": "Vor Ort",
-                "keyResponsibilities": "Hauptverantwortlichkeiten:",
-                "description": [
-                    "Kultur und fortgeschrittene Techniken des digitalen Bereichs",
-                    "Verständnis der Dimensionen des Berufs und des Lernpfades",
-                    "Erwerb der Grundlagen der Algorithmik",
-                    "Verhaltens- und Sozialkompetenzen",
-                    "Entwicklung von Fähigkeiten in der objektorientierten Programmierung",
-                    "Konzeption und Erstellung statischer Websites",
-                    "Verwendung von JavaScript für die Anwendungsentwicklung",
-                    "Arbeiten mit Datenbanken und Ausführen grundlegender Operationen",
-                    "Erstellung dynamischer Websites, die mit Benutzern interagieren",
-                    "Vertrautmachen mit den Prinzipien der Informationssicherheit"
+                "achievementsLabel": "Grundlegende Lernergebnisse:",
+                "responsibilities": [
+                    "Erwerb von Grundlagen der Algorithmik und objektorientierten Programmierung.",
+                    "Konzeption und Erstellung statischer und dynamischer Websites, die mit Benutzern interagieren.",
+                    "Arbeit mit Datenbanken und Ausführung grundlegender Operationen.",
+                    "Erlernen von JavaScript für die Anwendungsentwicklung.",
+                    "Vertrautmachen mit den Prinzipien der Informationssystemsicherheit.",
+                    "Entwicklung von Verhaltens- und Sozialkompetenzen, die im beruflichen Umfeld unerlässlich sind."
                 ]
             }
         ]

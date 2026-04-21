@@ -378,35 +378,71 @@
         "subtitle": "Profesyonel deneyimim",
         "items": [
             {
-                "title": "Kurucu & Full Stack Geliştirici – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "Laayoune , Fas",
-                "startDate": "Ekim 2024",
+                "title": "Full Stack Geliştirici (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "Uzaktan",
+                "startDate": "Eki 2025",
                 "endDate": "Günümüz",
-                "duration": "+ 4 ay",
-                "type": "Kurucu & Geliştirici",
-                "workType": "Hibrit",
-                "achievementsLabel": "Başarılar :",
+                "duration": "7 ay",
+                "type": "Tam zamanlı",
+                "workType": "Uzaktan",
+                "achievementsLabel": "Temel sorumluluklar:",
                 "responsibilities": [
-                    "Profesyonel çevrimiçi portföyler oluşturmak için bir SaaS platformu tasarladı ve geliştirdi.",
-                    "JWT kullanarak kimlik doğrulama ve yetkilendirme uyguladı.",
-                    "RESTful API'ler oluşturdu ve ödeme sistemlerini entegre etti.",
-                    "Uygulamayı Vercel'de yayınladı ve kod tabanını Git/GitHub kullanarak yönetti.",
-                    "Performansı, SEO'yu ve kullanıcı deneyimini iyileştirdi."
+                    "Entegre PayPal ödemeleri ile profesyonel portföyler için bir Next.js SaaS platformu geliştirdi.",
+                    "JWT/NextAuth kullanarak güvenli Node.js API'leri tasarladı, sağlam veri koruması ve ölçeklenebilirlik sağladı.",
+                    "Sunucu Tarafı İşleme (SSR) aracılığıyla Performans ve SEO'yu optimize etti, yüksek hızlı ve premium bir kullanıcı deneyimi sundu.",
+                    "Sürekli entegrasyon ve dağıtım için Git/GitHub ile Vercel'de Full-Stack dağıtımını yönetti."
+                ]
+            },
+            {
+                "title": "Mesleki gelişim",
+                "company": "Kariyer Molası",
+                "location": "Uzaktan",
+                "startDate": "Kas 2024",
+                "endDate": "Oca 2025",
+                "duration": "3 ay",
+                "type": "Eğitim",
+                "workType": "Uzaktan",
+                "achievementsLabel": "Odak alanları ve projeler:",
+                "responsibilities": [
+                    "Ölçeklenebilir ve yüksek performanslı sunucu tarafı uygulamaları oluşturmak için NestJS (Node.js + TypeScript) odaklı yoğun bir arka uç geliştirme eğitim programını tamamladı.",
+                    "Gelişmiş kavramlar: RESTful API geliştirme, kimlik doğrulama ve yetkilendirme (JWT, OAuth, RBAC), Socket.io kullanarak gerçek zamanlı iletişim, GraphQL entegrasyonu, yerelleştirme (i18n), MongoDB ve mikro hizmet mimarisi.",
+                    "Şunları kapsayan eksiksiz bir e-ticaret sistemi geliştirdi: kullanıcı yönetimi (RBAC), güvenli kimlik doğrulama (JWT/OAuth), ürün/kategori/marka yönetimi, sepet ve sipariş işleme, ödeme yönetimi, kupon yönetimi, inceleme sistemi ve vergi yapılandırması."
+                ]
+            },
+            {
+                "title": "Full Stack Geliştirici Stajyeri",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Layun, Fas",
+                "startDate": "Eyl 2023",
+                "endDate": "Haz 2024",
+                "duration": "10 ay",
+                "type": "Staj",
+                "workType": "Yerinde",
+                "achievementsLabel": "Başarılar:",
+                "responsibilities": [
+                    "Ön uç geliştirmede etkileşimli ve ilgi çekici kullanıcı arayüzleri tasarımı.",
+                    "Arka uç geliştirme ve veritabanı yönetiminde deneyim kazanımı.",
+                    "Dinamik web uygulamaları oluşturma ve sürdürme becerilerinin geliştirilmesi.",
+                    "Verimliliği artırmak ve ekip çalışmasını güçlendirmek için Çevik metodolojinin uygulanması.",
+                    "Etkili kod ve proje yönetimi için Git ve GitHub kullanımında deneyim kazanımı.",
+                    "Kod kalitesini analiz etmek ve sürekli iyileştirmeyi sağlamak için SonarQube kullanımı.",
+                    "Ortam yönetimini ve uygulama geliştirmeyi kolaylaştırmak için Docker kullanımı.",
+                    "İletişim ve ekip çalışması dahil olmak üzere kişilerarası becerilerin geliştirilmesi."
                 ]
             },
             {
                 "title": "Full Stack MERN Geliştirici",
                 "company": "Bölgesel Eğitim ve Öğretim Akademisi",
-                "location": "Laayoune , Fas",
-                "startDate": "Mart 2024",
-                "endDate": "Nisan 2024",
-                "duration": "2 ay",
+                "location": "Layun, Fas",
+                "startDate": "Mar 2024",
+                "endDate": "Mar 2024",
+                "duration": "1 ay",
                 "type": "Staj",
                 "workType": "Hibrit",
-                "achievementsLabel": "Başarılar :",
+                "achievementsLabel": "Temel görevler:",
                 "responsibilities": [
-                    "Kullanıcıların görev eklemesine, düzenlemesine ve silmesine olanak tanıyan bir görev yönetim uygulaması tasarladı ve geliştirdi.",
+                    "Kullanıcıların görev eklemesine, düzenlemesine ve silmesine olanak tanıyan bir görev yönetimi uygulaması tasarladı ve geliştirdi.",
                     "Uygulamanın güvenliğini sağlamak için JWT kullanarak kimlik doğrulama ve yetkilendirme uyguladı.",
                     "Uygun işlevselliği sağlamak için Postman kullanarak API uç noktalarını test etti.",
                     "Basit ve kullanıcı dostu bir arayüz tasarlayarak kullanıcı deneyimini iyileştirdi.",
@@ -414,48 +450,22 @@
                 ]
             },
             {
-                "title": "Full Stack Web Geliştirici",
-                "company": "Meslekler ve Yetkinlikler Şehirleri",
-                "location": "Laayoune , Fas",
-                "startDate": "Eylül 2023",
-                "endDate": "Haziran 2024",
-                "duration": "10 ay",
-                "type": "Stajyer",
-                "workType": "Yerinde",
-                "achievementsLabel": "Başarılar :",
-                "description": [
-                    "Profesyonel bir ortamda teori ile pratik uygulamayı birleştirerek temel web geliştirme becerileri kazandı.",
-                    "Ön uç geliştirmede etkileşimli ve çekici kullanıcı arayüzleri tasarladı.",
-                    "Arka uç geliştirme ve veritabanı yönetiminde deneyim kazandı.",
-                    "Dinamik web uygulamaları oluşturma ve sürdürme becerileri geliştirdi.",
-                    "Verimliliği artırmak ve ekip çalışmasını güçlendirmek için Çevik metodolojiyi uyguladı.",
-                    "Etkili kod ve proje yönetimi için Git ve GitHub kullanma deneyimi kazandı.",
-                    "Kod kalitesini analiz etmek ve sürekli iyileştirmeyi sağlamak için SonarQube kullandı.",
-                    "Ortam yönetimini ve uygulama geliştirmeyi kolaylaştırmak için Docker kullandı.",
-                    "Çeşitli çalışma ortamlarına daha iyi hazırlanmak için iletişim ve ekip çalışması dahil olmak üzere kişilerarası becerileri geliştirdi."
-                ]
-            },
-            {
                 "title": "Dijital Geliştirici Stajyeri",
-                "company": "Meslekler ve Yetkinlikler Şehirleri",
-                "location": "Laayoune , Fas",
-                "startDate": "Kasım 2022",
-                "endDate": "Haziran 2023",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Layun, Fas",
+                "startDate": "Kas 2022",
+                "endDate": "Haz 2023",
                 "duration": "8 ay",
-                "type": "Stajyer",
+                "type": "Staj",
                 "workType": "Yerinde",
-                "achievementsLabel": "Başarılar :",
-                "description": [
-                    "Dijital alanın kültürü ve ileri teknikleri",
-                    "Mesleğin boyutlarını ve öğrenme yolunu anlama",
-                    "Algoritma temellerini edinme",
-                    "Davranışsal ve sosyal beceriler",
-                    "Nesne yönelimli programlamada beceri geliştirme",
-                    "Statik web siteleri tasarlama ve oluşturma",
-                    "Uygulama geliştirme için JavaScript kullanma",
-                    "Veritabanları ile çalışma ve temel işlemleri yürütme",
-                    "Kullanıcılarla etkileşime giren dinamik web siteleri oluşturma",
-                    "Bilgi sistemi güvenliği ilkelerine aşinalık"
+                "achievementsLabel": "Temel öğrenimler:",
+                "responsibilities": [
+                    "Algoritma temelleri ve nesne yönelimli programlama kazanımı.",
+                    "Kullanıcılarla etkileşime giren statik ve dinamik web sitelerinin tasarımı ve inşası.",
+                    "Veritabanları ile çalışma ve temel işlemlerin yürütülmesi.",
+                    "Uygulama geliştirme için JavaScript öğrenimi.",
+                    "Bilgi sistemleri güvenliği ilkeleriyle tanışma.",
+                    "Profesyonel ortamda gerekli olan davranışsal ve sosyal becerilerin geliştirilmesi."
                 ]
             }
         ]

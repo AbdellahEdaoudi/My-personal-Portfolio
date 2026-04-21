@@ -378,33 +378,69 @@
         "subtitle": "Pengalaman profesional saya",
         "items": [
             {
-                "title": "Pendiri & Pengembang Full Stack – DGT Portfolio",
-                "company": "Dgt Portfolio",
-                "location": "Laayoune , Maroko",
-                "startDate": "Okt 2024",
+                "title": "Full Stack Developer (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "Remote",
+                "startDate": "Okt 2025",
                 "endDate": "Sekarang",
-                "duration": "+ 4 bln",
-                "type": "Pendiri & Pengembang",
-                "workType": "Hibrida",
-                "achievementsLabel": "Prestasi :",
+                "duration": "7 bln",
+                "type": "Penuh waktu",
+                "workType": "Remote",
+                "achievementsLabel": "Tanggung Jawab Utama:",
                 "responsibilities": [
-                    "Merancang dan mengembangkan platform SaaS untuk membangun portofolio online profesional.",
-                    "Menerapkan otentikasi dan otorisasi menggunakan JWT.",
-                    "Membangun RESTful API dan mengintegrasikan sistem pembayaran.",
-                    "Men-deploy aplikasi di Vercel dan mengelola basis kode menggunakan Git/GitHub.",
-                    "Meningkatkan kinerja, SEO, dan pengalaman pengguna."
+                    "Mengembangkan platform Next.js SaaS untuk portofolio profesional dengan pembayaran PayPal terintegrasi.",
+                    "Merekayasa API Node.js yang aman menggunakan JWT/NextAuth, memastikan perlindungan data dan skalabilitas yang kuat.",
+                    "Mengoptimalkan Performa & SEO melalui Server-Side Rendering (SSR), memberikan UX premium berkecepatan tinggi.",
+                    "Mengelola Penerapan Full-Stack di Vercel dengan Git/GitHub untuk integrasi dan pengiriman berkelanjutan."
                 ]
             },
             {
-                "title": "Pengembang Full Stack MERN",
-                "company": "Akademi Regional Pendidikan dan Pelatihan",
-                "location": "Laayoune , Maroko",
-                "startDate": "Mar 2024",
-                "endDate": "Apr 2024",
-                "duration": "2 bln",
+                "title": "Pengembangan profesional",
+                "company": "Jeda Karir",
+                "location": "Remote",
+                "startDate": "Nov 2024",
+                "endDate": "Jan 2025",
+                "duration": "3 bln",
+                "type": "Pelatihan",
+                "workType": "Remote",
+                "achievementsLabel": "Area Fokus & Proyek:",
+                "responsibilities": [
+                    "Menyelesaikan program pelatihan pengembangan backend intensif yang berfokus pada NestJS (Node.js + TypeScript) untuk membangun aplikasi sisi server yang terukur dan berkinerja tinggi.",
+                    "Konsep lanjutan: Pengembangan API RESTful, Otentikasi & Otorisasi (JWT, OAuth, RBAC), Komunikasi real-time menggunakan Socket.io, integrasi GraphQL, Internasionalisasi (i18n), MongoDB, dan arsitektur Microservices.",
+                    "Mengembangkan sistem e-commerce lengkap termasuk: Manajemen pengguna (RBAC), Auth Aman (JWT/OAuth), Manajemen Produk/Kategori/Merek, Pemrosesan Keranjang & Pesanan, Penanganan pembayaran, Manajemen kupon, Sistem ulasan, dan Konfigurasi pajak."
+                ]
+            },
+            {
+                "title": "Full Stack Developer Intern",
+                "company": "Cités des Métiers et des Compétences",
+                "location": "Laayoune, Maroko",
+                "startDate": "Sep 2023",
+                "endDate": "Jun 2024",
+                "duration": "10 bln",
                 "type": "Magang",
-                "workType": "Hibrida",
-                "achievementsLabel": "Prestasi :",
+                "workType": "Di lokasi",
+                "achievementsLabel": "Prestasi:",
+                "responsibilities": [
+                    "Merancang antarmuka pengguna interaktif dan menarik dalam pengembangan front-end.",
+                    "Memperoleh pengalaman dalam pengembangan back-end dan manajemen basis data.",
+                    "Mengembangkan keterampilan dalam membuat dan memelihara aplikasi web dinamis.",
+                    "Menerapkan metodologi Agile untuk meningkatkan efisiensi dan memperkuat kerja tim.",
+                    "Memperoleh pengalaman menggunakan Git dan GitHub untuk manajemen kode dan proyek yang efektif.",
+                    "Menggunakan SonarQube untuk menganalisis kualitas kode dan memastikan peningkatan berkelanjutan.",
+                    "Menggunakan Docker untuk merampingkan manajemen lingkungan dan pengembangan aplikasi.",
+                    "Meningkatkan keterampilan interpersonal, termasuk komunikasi dan kerja tim."
+                ]
+            },
+            {
+                "title": "Full Stack MERN Developer",
+                "company": "Akademi Regional Pendidikan dan Pelatihan",
+                "location": "Laayoune, Maroko",
+                "startDate": "Mar 2024",
+                "endDate": "Mar 2024",
+                "duration": "1 bln",
+                "type": "Magang",
+                "workType": "Di lokasi",
+                "achievementsLabel": "Tugas Utama:",
                 "responsibilities": [
                     "Merancang dan mengembangkan aplikasi manajemen tugas yang memungkinkan pengguna menambah, mengedit, dan menghapus tugas.",
                     "Menerapkan otentikasi dan otorisasi menggunakan JWT untuk memastikan keamanan aplikasi.",
@@ -414,48 +450,22 @@
                 ]
             },
             {
-                "title": "Pengembang Web Full Stack",
-                "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Maroko",
-                "startDate": "Sep 2023",
-                "endDate": "Jun 2024",
-                "duration": "10 bln",
-                "type": "Magang",
-                "workType": "Di lokasi",
-                "achievementsLabel": "Prestasi :",
-                "description": [
-                    "Memperoleh keterampilan pengembangan web penting dengan menggabungkan teori dan aplikasi praktis di lingkungan profesional.",
-                    "Merancang antarmuka pengguna interaktif dan menarik dalam pengembangan front-end.",
-                    "Memperoleh pengalaman dalam pengembangan back-end dan manajemen basis data.",
-                    "Mengembangkan keterampilan dalam membuat dan memelihara aplikasi web dinamis.",
-                    "Menerapkan metodologi Agile untuk meningkatkan efisiensi dan memperkuat kerja tim.",
-                    "Memperoleh pengalaman menggunakan Git dan GitHub untuk manajemen kode dan proyek yang efektif.",
-                    "Menggunakan SonarQube untuk menganalisis kualitas kode dan memastikan peningkatan berkelanjutan.",
-                    "Menggunakan Docker untuk merampingkan manajemen lingkungan dan pengembangan aplikasi.",
-                    "Meningkatkan keterampilan interpersonal, termasuk komunikasi dan kerja tim, untuk kesiapan yang lebih baik di lingkungan kerja yang beragam."
-                ]
-            },
-            {
                 "title": "Magang Pengembang Digital",
                 "company": "Cités des Métiers et des Compétences",
-                "location": "Laayoune , Maroko",
+                "location": "Laayoune, Maroko",
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 bln",
                 "type": "Magang",
                 "workType": "Di lokasi",
-                "achievementsLabel": "Prestasi :",
-                "description": [
-                    "Budaya dan teknik canggih di bidang digital",
-                    "Memahami dimensi profesi dan jalur pembelajaran",
-                    "Memperoleh dasar-dasar algoritmik",
-                    "Keterampilan perilaku dan sosial",
-                    "Mengembangkan keterampilan dalam pemrograman berorientasi objek",
-                    "Merancang dan membangun situs web statis",
-                    "Menggunakan JavaScript untuk pengembangan aplikasi",
-                    "Bekerja dengan basis data dan mengeksekusi operasi dasar",
-                    "Membangun situs web dinamis yang berinteraksi dengan pengguna",
-                    "Mengenal prinsip-prinsip keamanan sistem informasi"
+                "achievementsLabel": "Pembelajaran Inti:",
+                "responsibilities": [
+                    "Memperoleh dasar-dasar pemrograman algoritmik dan berorientasi objek.",
+                    "Merancang dan membangun situs web statis dan dinamis yang berinteraksi dengan pengguna.",
+                    "Bekerja dengan basis data dan mengeksekusi operasi dasar.",
+                    "Mempelajari JavaScript untuk pengembangan aplikasi.",
+                    "Mengenal prinsip-prinsip keamanan sistem informasi.",
+                    "Mengembangkan keterampilan perilaku dan sosial yang penting untuk lingkungan profesional."
                 ]
             }
         ]
