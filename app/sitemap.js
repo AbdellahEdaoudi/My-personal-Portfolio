@@ -1,4 +1,3 @@
-
 const BASE_URL = 'https://abdellah-edaoudi.vercel.app';
 const LANGUAGES = ['ar', 'es', 'fr', 'ru', 'ja', 'zh', 'de', 'nl', 'pt', 'it', 'hi', 'tr', 'ko', 'en', 'id', 'pl', 'sv', 'vi'];
 const ROUTES = ['', 'About', 'Skills', 'Projects', 'Experience', 'Education', 'Contact'];
@@ -6,7 +5,12 @@ const ROUTES = ['', 'About', 'Skills', 'Projects', 'Experience', 'Education', 'C
 export default function sitemap() {
     const urls = [];
 
-    // Base routes (without language prefix)
+    const CV = {
+        en: "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        fr: "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_FR.pdf",
+    };
+
+    // Base routes
     ROUTES.forEach((route) => {
         const isHome = route === '';
         const url = isHome
@@ -21,6 +25,7 @@ export default function sitemap() {
         });
     });
 
+    // Language routes
     LANGUAGES.forEach((lang) => {
         ROUTES.forEach((route) => {
             const isHome = route === '';
@@ -34,6 +39,16 @@ export default function sitemap() {
                 changeFrequency: isHome ? 'weekly' : 'monthly',
                 priority: isHome ? 1 : 0.8,
             });
+        });
+    });
+
+    // ✅ Add CV routes
+    Object.entries(CV).forEach(([lang, path]) => {
+        urls.push({
+            url: `${BASE_URL}${path}`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.7,
         });
     });
 
