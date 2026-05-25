@@ -48,6 +48,7 @@ export default function Header({ content, lang }) {
     const LinksHeader = [
         { name: content?.home || "Home", path: "/" },
         { name: content?.about || "About", path: "/About" },
+        { name: content?.services || "Services", path: "/Services" },
         { name: content?.skills || "Skills", path: "/Skills" },
         { name: content?.projects || "Projects", path: "/Projects" },
         { name: content?.experience || "Experience", path: "/Experience" },

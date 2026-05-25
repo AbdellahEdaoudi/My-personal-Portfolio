@@ -15,7 +15,8 @@
             "explore": "Khám phá phần này",
             "history": "Lịch sử",
             "learning": "Học tập"
-        }
+        },
+        "services": "Dịch vụ"
     },
     "home": {
         "greeting": "Xin chào, tôi là Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "Trực tuyến 24/7",
         "description": "Tôi có kinh nghiệm sâu rộng trong việc biến ý tưởng thành các ứng dụng sáng tạo, an toàn và hiệu quả. Trọng tâm của tôi là kết hợp nâng cao trải nghiệm người dùng và tạo ra giao diện hấp dẫn với việc đảm bảo bảo mật mạnh mẽ và hiệu suất cao.",
         "downloadCv": "Hồ sơ",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "Thư xin việc",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "Kỹ năng",
@@ -384,7 +385,7 @@
                 "location": "Từ xa",
                 "startDate": "Tháng 10 2025",
                 "endDate": "Hiện tại",
-                "duration": "7 tháng",
+                "duration": "+7 tháng",
                 "type": "Toàn thời gian",
                 "workType": "Từ xa",
                 "achievementsLabel": "Trách nhiệm chính:",
@@ -554,5 +555,41 @@
     },
     "scrollToTop": {
         "backToTop": "Về đầu trang"
+    },
+    "services": {
+        "title": "Dịch vụ",
+        "subtitle": "Những gì tôi cung cấp",
+        "items": [
+            {
+                "title": "Phát triển Web & Ứng dụng",
+                "description": "Xây dựng các ứng dụng di động và web full-stack đáp ứng, nhanh chóng và có tính tương tác cao bằng cách sử dụng các công nghệ hiện đại.",
+                "icon": "Code"
+            },
+            {
+                "title": "Giải pháp SaaS",
+                "description": "Thiết kế và phát triển các nền tảng Phần mềm dưới dạng dịch vụ có thể mở rộng phù hợp với nhu cầu kinh doanh của bạn.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Phần mềm tùy chỉnh",
+                "description": "Tạo các giải pháp phần mềm phù hợp để tự động hóa quy trình, giải quyết các vấn đề phức tạp và tăng năng suất.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Kiến trúc cơ sở dữ liệu",
+                "description": "Thiết kế các lược đồ cơ sở dữ liệu an toàn và hiệu quả cũng như quản lý luồng dữ liệu cho các ứng dụng hiệu suất cao.",
+                "icon": "Database"
+            },
+            {
+                "title": "Bảo mật thông tin",
+                "description": "Triển khai xác thực, ủy quyền và mã hóa dữ liệu mạnh mẽ để đảm bảo ứng dụng của bạn được an toàn.",
+                "icon": "Shield"
+            },
+            {
+                "title": "Thiết kế UX/UI",
+                "description": "Tạo ra trải nghiệm người dùng trực quan, hấp dẫn và dễ tiếp cận bằng thiết kế giao diện hoàn hảo đến từng pixel.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

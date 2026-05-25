@@ -15,7 +15,8 @@
             "explore": "이 섹션 탐색",
             "history": "기록",
             "learning": "학습"
-        }
+        },
+        "services": "서비스"
     },
     "home": {
         "greeting": "안녕하세요, 저는 아브델라 에다우디입니다",
@@ -34,9 +35,9 @@
         "supportDetail": "연중무휴 온라인",
         "description": "저는 아이디어를 혁신적이고 안전하며 효과적인 애플리케이션으로 변환하는 데 광범위한 경험을 가지고 있습니다. 저의 초점은 사용자 경험을 향상시키고 매력적인 인터페이스를 만드는 것과 강력한 보안 및 고성능을 보장하는 것을 융합하는 것입니다.",
         "downloadCv": "이력서",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "자기소개서",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "기술",
@@ -383,7 +384,7 @@
                 "location": "원격",
                 "startDate": "2025년 10월",
                 "endDate": "현재",
-                "duration": "7개월",
+                "duration": "+7개월",
                 "type": "정규직",
                 "workType": "원격",
                 "achievementsLabel": "주요 책임:",
@@ -547,11 +548,47 @@
         "emailLabel": "이메일",
         "whatsappLabel": "WhatsApp",
         "locationLabel": "위치",
-        "locationValue": "모로코 엘아이운",
+        "locationValue": "Laayoune, Morocco",
         "copyright": "저작권",
         "rights": "모든 권리 보유"
     },
     "scrollToTop": {
         "backToTop": "맨 위로"
+    },
+    "services": {
+        "title": "서비스",
+        "subtitle": "내가 제공하는 것",
+        "items": [
+            {
+                "title": "웹 및 앱 개발",
+                "description": "최신 기술을 사용하여 반응성이 뛰어나고 빠르며 고도로 대화형인 풀스택 웹 및 모바일 애플리케이션을 구축합니다.",
+                "icon": "Code"
+            },
+            {
+                "title": "SaaS 솔루션",
+                "description": "귀하의 비즈니스 요구에 맞는 확장 가능한 SaaS(Software-as-a-Service) 플랫폼을 설계하고 개발합니다.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "맞춤형 소프트웨어",
+                "description": "프로세스를 자동화하고, 복잡한 문제를 해결하고, 생산성을 높이기 위한 맞춤형 소프트웨어 솔루션을 만듭니다.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "데이터베이스 아키텍처",
+                "description": "안전하고 효율적인 데이터베이스 스키마를 설계하고 고성능 애플리케이션을 위한 데이터 흐름을 관리합니다.",
+                "icon": "Database"
+            },
+            {
+                "title": "정보 보안",
+                "description": "강력한 인증, 승인 및 데이터 암호화를 구현하여 애플리케이션의 보안을 보장합니다.",
+                "icon": "Shield"
+            },
+            {
+                "title": "UX/UI 디자인",
+                "description": "완벽한 픽셀 인터페이스 디자인으로 직관적이고 매력적이며 접근 가능한 사용자 경험을 제작합니다.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

@@ -81,5 +81,10 @@
             "DevOps Verktyg",
             "Webbutvecklingsteknologier"
         ]
+    },
+    "services": {
+        "title": "Tjänster | Abdellah Edaoudi",
+        "description": "Abdellah Edaoudi - Tjänster: Webb- och apputveckling, SaaS-lösningar, anpassad programvara, databasarkitektur, informationssäkerhet, UX/UI-design.",
+        "keywords": "Tjänster, webb- och apputveckling, SaaS-lösningar, anpassad programvara, databasarkitektur, informationssäkerhet, UX/UI-design"
     }
 }

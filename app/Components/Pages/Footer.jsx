@@ -20,7 +20,7 @@ export default function Footer({ content, lang }) {
   const quickConnect = [
     { label: content.emailLabel, value: 'abdellahedaoudi80@gmail.com', href: 'mailto:abdellahedaoudi80@gmail.com' },
     { label: content.whatsappLabel, value: '+212 607071966', href: 'https://wa.me/212607071966' },
-    { label: content.locationLabel, value: content.locationValue, href: '#Cnt' },
+    { label: content.locationLabel, value: content.locationValue, href: 'https://www.google.com/search?q=Laayoune+Morocco' },
   ];
 
   return (
@@ -98,6 +98,8 @@ export default function Footer({ content, lang }) {
                     <p className="text-gray-500 text-[10px] uppercase font-bold tracking-tighter mb-1">{item.label}</p>
                     <Link
                       href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-400 hover:text-white transition-colors duration-200 text-sm font-medium"
                     >
                       {item.value}

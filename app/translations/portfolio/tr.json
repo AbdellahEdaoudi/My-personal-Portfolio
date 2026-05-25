@@ -15,7 +15,8 @@
             "explore": "Bu bölümü keşfet",
             "history": "Geçmiş",
             "learning": "Öğrenme"
-        }
+        },
+        "services": "Hizmetler"
     },
     "home": {
         "greeting": "Merhaba, Ben Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "7/24 Çevrimiçi",
         "description": "Fikirleri yenilikçi, güvenli ve etkili uygulamalara dönüştürme konusunda geniş deneyime sahibim. Odak noktam, kullanıcı deneyimini geliştirmeyi ve çekici arayüzler oluşturmayı, sağlam güvenlik ve yüksek performans sağlamakla harmanlıyor.",
         "downloadCv": "Özgeçmiş",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "Ön Yazı",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "Yetenekler",
@@ -383,7 +384,7 @@
                 "location": "Uzaktan",
                 "startDate": "Eki 2025",
                 "endDate": "Günümüz",
-                "duration": "7 ay",
+                "duration": "+7 ay",
                 "type": "Tam zamanlı",
                 "workType": "Uzaktan",
                 "achievementsLabel": "Temel sorumluluklar:",
@@ -553,5 +554,41 @@
     },
     "scrollToTop": {
         "backToTop": "Başa dön"
+    },
+    "services": {
+        "title": "Hizmetler",
+        "subtitle": "Ne Teklif Ediyorum",
+        "items": [
+            {
+                "title": "Web ve Uygulama Geliştirme",
+                "description": "Modern teknolojileri kullanarak duyarlı, hızlı ve son derece etkileşimli tam yığın web ve mobil uygulamalar oluşturma.",
+                "icon": "Code"
+            },
+            {
+                "title": "SaaS Çözümleri",
+                "description": "İş ihtiyaçlarınıza göre uyarlanmış, ölçeklenebilir Hizmet Olarak Yazılım platformları tasarlamak ve geliştirmek.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Özel Yazılım",
+                "description": "Süreçleri otomatikleştirmek, karmaşık sorunları çözmek ve verimliliği artırmak için özel yazılım çözümleri oluşturmak.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Veritabanı Mimarisi",
+                "description": "Yüksek performanslı uygulamalar için güvenli ve verimli veritabanı şemaları tasarlama ve veri akışını yönetme.",
+                "icon": "Database"
+            },
+            {
+                "title": "Bilgi Güvenliği",
+                "description": "Uygulamalarınızın güvenli olmasını sağlamak için güçlü kimlik doğrulama, yetkilendirme ve veri şifreleme uygulamak.",
+                "icon": "Shield"
+            },
+            {
+                "title": "Kullanıcı Deneyimi/UI Tasarımı",
+                "description": "Piksel açısından mükemmel arayüz tasarımlarıyla sezgisel, ilgi çekici ve erişilebilir kullanıcı deneyimleri oluşturmak.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

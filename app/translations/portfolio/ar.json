@@ -15,7 +15,8 @@
             "explore": "استكشف هذا القسم",
             "history": "المسيرة",
             "learning": "التعليم"
-        }
+        },
+        "services": "خدمات"
     },
     "home": {
         "greeting": "مرحباً، أنا عبد الله الداودي (Abdellah Edaoudi)",
@@ -34,9 +35,9 @@
         "supportDetail": "متصل 24/7",
         "description": "أمتلك خبرة واسعة في تحويل الأفكار إلى تطبيقات مبتكرة، آمنة، وفعالة. ينصب تركيزي على المزج بين تحسين تجربة المستخدم وتصميم واجهات جذابة، وبين ضمان أمان قوي وأداء عالي للتطبيقات.",
         "downloadCv": "السيرة الذاتية",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "رسالة تحفيزية",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "المهارات",
@@ -383,7 +384,7 @@
                 "location": "عن بعد",
                 "startDate": "أكتوبر 2025",
                 "endDate": "الحاضر",
-                "duration": "7 أشهر",
+                "duration": "+7 أشهر",
                 "type": "دوام كامل",
                 "workType": "عن بعد",
                 "achievementsLabel": "المسؤوليات الرئيسية:",
@@ -553,5 +554,41 @@
     },
     "scrollToTop": {
         "backToTop": "الرجوع للأعلى"
+    },
+    "services": {
+        "title": "خدمات",
+        "subtitle": "ما أقدمه",
+        "items": [
+            {
+                "title": "تطوير الويب والتطبيقات",
+                "description": "بناء تطبيقات الويب والهواتف المحمولة سريعة الاستجابة وسريعة وتفاعلية للغاية باستخدام التقنيات الحديثة.",
+                "icon": "Code"
+            },
+            {
+                "title": "حلول SaaS",
+                "description": "تصميم وتطوير منصات برمجية كخدمة قابلة للتطوير ومصممة خصيصًا لتلبية احتياجات عملك.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "برامج مخصصة",
+                "description": "إنشاء حلول برمجية مخصصة لأتمتة العمليات وحل المشكلات المعقدة وزيادة الإنتاجية.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "هندسة قاعدة البيانات",
+                "description": "تصميم مخططات قاعدة بيانات آمنة وفعالة وإدارة تدفق البيانات للتطبيقات عالية الأداء.",
+                "icon": "Database"
+            },
+            {
+                "title": "أمن المعلومات",
+                "description": "تنفيذ مصادقة قوية وتفويض وتشفير البيانات لضمان أمان تطبيقاتك.",
+                "icon": "Shield"
+            },
+            {
+                "title": "تصميم تجربة المستخدم/واجهة المستخدم",
+                "description": "صياغة تجارب مستخدم بديهية وجذابة ويمكن الوصول إليها باستخدام تصميمات واجهة مثالية للبيكسل.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

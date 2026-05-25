@@ -15,7 +15,8 @@
             "explore": "Explore this section",
             "history": "History",
             "learning": "Learning"
-        }
+        },
+        "services": "Services"
     },
     "home": {
         "greeting": "Hi, I'm Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "Online 24/7",
         "description": "I have extensive experience in transforming ideas into innovative, secure, and effective applications. My focus blends enhancing user experience and crafting attractive interfaces with ensuring robust security and high performance.",
         "downloadCv": "Résumé",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "Cover Letter",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "Skills",
@@ -384,7 +385,7 @@
                 "location": "Remote",
                 "startDate": "Oct 2025",
                 "endDate": "Present",
-                "duration": "7 mos",
+                "duration": "+7 mos",
                 "type": "Full-time",
                 "workType": "Remote",
                 "achievementsLabel": "Key Responsibilities:",
@@ -554,5 +555,41 @@
     },
     "scrollToTop": {
         "backToTop": "Back to Top"
+    },
+    "services": {
+        "title": "Services",
+        "subtitle": "What I Offer",
+        "items": [
+            {
+                "title": "Web & App Development",
+                "description": "Building responsive, fast, and highly interactive full-stack web and mobile applications using modern technologies.",
+                "icon": "Code"
+            },
+            {
+                "title": "SaaS Solutions",
+                "description": "Designing and developing scalable Software-as-a-Service platforms tailored to your business needs.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Custom Software",
+                "description": "Creating tailored software solutions to automate processes, solve complex problems, and increase productivity.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Database Architecture",
+                "description": "Designing secure and efficient database schemas and managing data flow for high-performance applications.",
+                "icon": "Database"
+            },
+            {
+                "title": "Information Security",
+                "description": "Implementing robust authentication, authorization, and data encryption to ensure your applications are secure.",
+                "icon": "Shield"
+            },
+            {
+                "title": "UX/UI Design",
+                "description": "Crafting intuitive, engaging, and accessible user experiences with pixel-perfect interface designs.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

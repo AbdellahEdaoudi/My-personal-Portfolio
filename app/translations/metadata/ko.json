@@ -81,5 +81,10 @@
             "DevOps 도구",
             "웹 개발 기술"
         ]
+    },
+    "services": {
+        "title": "서비스 | 압델라 에다우디",
+        "description": "Abdellah Edaoudi - 서비스: 웹 및 앱 개발, SaaS 솔루션, 맞춤형 소프트웨어, 데이터베이스 아키텍처, 정보 보안, UX/UI 디자인.",
+        "keywords": "서비스, ​​웹 및 앱 개발, SaaS 솔루션, 맞춤형 소프트웨어, 데이터베이스 아키텍처, 정보 보안, UX/UI 디자인"
     }
 }
