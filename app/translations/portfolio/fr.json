@@ -15,7 +15,8 @@
             "explore": "Explorer cette section",
             "history": "Histoire",
             "learning": "Apprentissage"
-        }
+        },
+        "services": "Services"
     },
     "home": {
         "greeting": "Salut, je suis Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "En ligne 24/7",
         "description": "J'ai une vaste expérience dans la transformation d'idées en applications innovantes, sécurisées et efficaces. Mon approche allie l'amélioration de l'expérience utilisateur et la création d'interfaces attrayantes à la garantie d'une sécurité robuste et de hautes performances.",
         "downloadCv": "Résumé",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_FR.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-fr.pdf",
         "downloadCoverLetter": "Lettre de motivation",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_fr.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-fr.pdf"
     },
     "skills": {
         "title": "Compétences",
@@ -387,7 +388,7 @@
                 "location": "À distance",
                 "startDate": "Oct 2025",
                 "endDate": "Présent",
-                "duration": "7 mois",
+                "duration": "+7 mois",
                 "type": "Full-time",
                 "workType": "À distance",
                 "achievementsLabel": "Responsabilités clés :",
@@ -557,5 +558,41 @@
     },
     "scrollToTop": {
         "backToTop": "Retour en haut"
+    },
+    "services": {
+        "title": "Services",
+        "subtitle": "Ce que je propose",
+        "items": [
+            {
+                "title": "Développement Web et applications",
+                "description": "Création d'applications Web et mobiles full-stack réactives, rapides et hautement interactives à l'aide de technologies modernes.",
+                "icon": "Code"
+            },
+            {
+                "title": "Solutions SaaS",
+                "description": "Concevoir et développer des plateformes Software-as-a-Service évolutives et adaptées aux besoins de votre entreprise.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Logiciel personnalisé",
+                "description": "Créer des solutions logicielles sur mesure pour automatiser les processus, résoudre des problèmes complexes et augmenter la productivité.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Architecture de base de données",
+                "description": "Concevoir des schémas de bases de données sécurisés et efficaces et gérer le flux de données pour des applications hautes performances.",
+                "icon": "Database"
+            },
+            {
+                "title": "Sécurité des informations",
+                "description": "Mettre en œuvre une authentification, une autorisation et un cryptage de données robustes pour garantir la sécurité de vos applications.",
+                "icon": "Shield"
+            },
+            {
+                "title": "Conception UX/UI",
+                "description": "Créer des expériences utilisateur intuitives, engageantes et accessibles avec des conceptions d'interface au pixel près.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

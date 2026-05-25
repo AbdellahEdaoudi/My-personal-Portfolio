@@ -15,7 +15,8 @@
             "explore": "Explorar esta sección",
             "history": "Historia",
             "learning": "Aprendizaje"
-        }
+        },
+        "services": "Servicios"
     },
     "home": {
         "greeting": "Hola, soy Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "En línea 24/7",
         "description": "Tengo una amplia experiencia en transformar ideas en aplicaciones innovadoras, seguras y efectivas. Mi enfoque combina mejorar la experiencia del usuario y crear interfaces atractivas con garantizar una seguridad robusta y un alto rendimiento.",
         "downloadCv": "Currículum",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "Carta de presentación",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "Habilidades",
@@ -383,7 +384,7 @@
                 "location": "Remoto",
                 "startDate": "Oct 2025",
                 "endDate": "Presente",
-                "duration": "7 meses",
+                "duration": "+7 meses",
                 "type": "Tiempo completo",
                 "workType": "Remoto",
                 "achievementsLabel": "Responsabilidades principales:",
@@ -553,5 +554,41 @@
     },
     "scrollToTop": {
         "backToTop": "Volver arriba"
+    },
+    "services": {
+        "title": "Servicios",
+        "subtitle": "Lo que ofrezco",
+        "items": [
+            {
+                "title": "Desarrollo web y de aplicaciones",
+                "description": "Creación de aplicaciones web y móviles de pila completa, responsivas, rápidas y altamente interactivas utilizando tecnologías modernas.",
+                "icon": "Code"
+            },
+            {
+                "title": "Soluciones SaaS",
+                "description": "Diseño y desarrollo de plataformas de software como servicio escalables adaptadas a las necesidades de su negocio.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Software personalizado",
+                "description": "Creación de soluciones de software personalizadas para automatizar procesos, resolver problemas complejos y aumentar la productividad.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Arquitectura de base de datos",
+                "description": "Diseño de esquemas de bases de datos seguros y eficientes y gestión del flujo de datos para aplicaciones de alto rendimiento.",
+                "icon": "Database"
+            },
+            {
+                "title": "Seguridad de la información",
+                "description": "Implementar autenticación, autorización y cifrado de datos sólidos para garantizar que sus aplicaciones sean seguras.",
+                "icon": "Shield"
+            },
+            {
+                "title": "Diseño UX/UI",
+                "description": "Creando experiencias de usuario intuitivas, atractivas y accesibles con diseños de interfaz perfectos en píxeles.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

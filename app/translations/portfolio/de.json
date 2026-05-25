@@ -15,7 +15,8 @@
             "explore": "Diesen Bereich erkunden",
             "history": "Verlauf",
             "learning": "Lernen"
-        }
+        },
+        "services": "Dienstleistungen"
     },
     "home": {
         "greeting": "Hallo, ich bin Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "Online 24/7",
         "description": "Ich verfüge über umfangreiche Erfahrung in der Umsetzung von Ideen in innovative, sichere und effektive Anwendungen. Mein Fokus liegt auf der Verbesserung der Benutzererfahrung und der Gestaltung attraktiver Schnittstellen bei gleichzeitiger Gewährleistung robuster Sicherheit und hoher Leistung.",
         "downloadCv": "Lebenslauf",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "Anschreiben",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "Fähigkeiten",
@@ -387,7 +388,7 @@
                 "location": "Remote",
                 "startDate": "Okt 2025",
                 "endDate": "Gegenwart",
-                "duration": "7 Mon.",
+                "duration": "+7 Mon.",
                 "type": "Vollzeit",
                 "workType": "Remote",
                 "achievementsLabel": "Hauptverantwortlichkeiten:",
@@ -557,5 +558,41 @@
     },
     "scrollToTop": {
         "backToTop": "Zurück nach oben"
+    },
+    "services": {
+        "title": "Dienstleistungen",
+        "subtitle": "Was ich anbiete",
+        "items": [
+            {
+                "title": "Web- und App-Entwicklung",
+                "description": "Erstellen Sie reaktionsfähige, schnelle und hochgradig interaktive Full-Stack-Web- und Mobilanwendungen mithilfe moderner Technologien.",
+                "icon": "Code"
+            },
+            {
+                "title": "SaaS-Lösungen",
+                "description": "Entwurf und Entwicklung skalierbarer Software-as-a-Service-Plattformen, die auf Ihre Geschäftsanforderungen zugeschnitten sind.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Kundenspezifische Software",
+                "description": "Erstellen maßgeschneiderter Softwarelösungen zur Automatisierung von Prozessen, zur Lösung komplexer Probleme und zur Steigerung der Produktivität.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Datenbankarchitektur",
+                "description": "Entwerfen sicherer und effizienter Datenbankschemata und Verwalten des Datenflusses für Hochleistungsanwendungen.",
+                "icon": "Database"
+            },
+            {
+                "title": "Informationssicherheit",
+                "description": "Implementieren Sie eine robuste Authentifizierung, Autorisierung und Datenverschlüsselung, um die Sicherheit Ihrer Anwendungen zu gewährleisten.",
+                "icon": "Shield"
+            },
+            {
+                "title": "UX/UI-Design",
+                "description": "Erstellen Sie intuitive, ansprechende und zugängliche Benutzererlebnisse mit pixelgenauen Schnittstellendesigns.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

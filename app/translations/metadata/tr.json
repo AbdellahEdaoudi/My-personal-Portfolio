@@ -81,5 +81,10 @@
             "DevOps Araçları",
             "Web Geliştirme Teknolojileri"
         ]
+    },
+    "services": {
+        "title": "Hizmetler | Abdellah Edaoudi",
+        "description": "Abdellah Edaoudi - Hizmetler: Web ve Uygulama Geliştirme, SaaS Çözümleri, Özel Yazılım, Veritabanı Mimarisi, Bilgi Güvenliği, UX/UI Tasarımı.",
+        "keywords": "Hizmetler, Web ve Uygulama Geliştirme, SaaS Çözümleri, Özel Yazılım, Veritabanı Mimarisi, Bilgi Güvenliği, UX/UI Tasarımı"
     }
 }

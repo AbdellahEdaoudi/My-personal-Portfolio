@@ -15,7 +15,8 @@
             "explore": "このセクションを探索",
             "history": "履歴",
             "learning": "学習"
-        }
+        },
+        "services": "サービス"
     },
     "home": {
         "greeting": "こんにちは、アブデラ・エダウディです",
@@ -34,9 +35,9 @@
         "supportDetail": "24時間年中無休オンライン",
         "description": "私はアイデアを革新的で安全かつ効果的なアプリケーションに変える豊富な経験を持っています。私の焦点は、ユーザーエクスペリエンスの向上と魅力的なインターフェースの作成、そして堅牢なセキュリティと高いパフォーマンスの確保を融合させることです。",
         "downloadCv": "履歴書",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "カバーレター",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "スキル",
@@ -383,7 +384,7 @@
                 "location": "リモート",
                 "startDate": "2025年10月",
                 "endDate": "現在",
-                "duration": "7ヶ月",
+                "duration": "+7ヶ月",
                 "type": "正社員",
                 "workType": "リモート",
                 "achievementsLabel": "主な責任:",
@@ -547,11 +548,47 @@
         "emailLabel": "メール",
         "whatsappLabel": "WhatsApp",
         "locationLabel": "場所",
-        "locationValue": "モロッコ、エルアイウン",
+        "locationValue": "Laayoune, Morocco",
         "copyright": "著作権",
         "rights": "全著作権所有"
     },
     "scrollToTop": {
         "backToTop": "トップに戻る"
+    },
+    "services": {
+        "title": "サービス",
+        "subtitle": "私が提供するもの",
+        "items": [
+            {
+                "title": "ウェブとアプリの開発",
+                "description": "最新のテクノロジーを使用して、応答性が高く、高速で、高度にインタラクティブなフルスタックの Web およびモバイル アプリケーションを構築します。",
+                "icon": "Code"
+            },
+            {
+                "title": "SaaS ソリューション",
+                "description": "ビジネス ニーズに合わせたスケーラブルな Software-as-a-Service プラットフォームの設計と開発。",
+                "icon": "Cloud"
+            },
+            {
+                "title": "カスタムソフトウェア",
+                "description": "プロセスを自動化し、複雑な問題を解決し、生産性を向上させるためのカスタマイズされたソフトウェア ソリューションを作成します。",
+                "icon": "Cpu"
+            },
+            {
+                "title": "データベースのアーキテクチャ",
+                "description": "安全で効率的なデータベース スキーマを設計し、高性能アプリケーションのデータ フローを管理します。",
+                "icon": "Database"
+            },
+            {
+                "title": "情報セキュリティ",
+                "description": "堅牢な認証、認可、データ暗号化を実装して、アプリケーションの安全性を確保します。",
+                "icon": "Shield"
+            },
+            {
+                "title": "UX/UIデザイン",
+                "description": "ピクセルパーフェクトなインターフェイス設計により、直感的で魅力的でアクセスしやすいユーザー エクスペリエンスを実現します。",
+                "icon": "Layout"
+            }
+        ]
     }
 }

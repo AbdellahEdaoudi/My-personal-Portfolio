@@ -81,5 +81,10 @@
             "Narzędzia DevOps",
             "Technologie Tworzenia Stron WWW"
         ]
+    },
+    "services": {
+        "title": "Usługi | Abdellaha Edaoudiego",
+        "description": "Abdellah Edaoudi - Usługi: Tworzenie stron internetowych i aplikacji, Rozwiązania SaaS, Oprogramowanie na zamówienie, Architektura baz danych, Bezpieczeństwo informacji, Projektowanie UX/UI.",
+        "keywords": "Usługi, Tworzenie stron internetowych i aplikacji, Rozwiązania SaaS, Oprogramowanie na zamówienie, Architektura baz danych, Bezpieczeństwo informacji, Projektowanie UX/UI"
     }
 }

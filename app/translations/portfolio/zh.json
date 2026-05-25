@@ -15,7 +15,8 @@
             "explore": "探索此部分",
             "history": "历史",
             "learning": "学习"
-        }
+        },
+        "services": "服务"
     },
     "home": {
         "greeting": "你好, 我是 Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "24/7 在线",
         "description": "我在将想法转化为创新、安全且有效的应用程序方面拥有丰富的经验。我的重点是将增强用户体验和制作有吸引力的界面与确保强大的安全性和高性能相结合。",
         "downloadCv": "简历",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "求职信",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "技能",
@@ -383,7 +384,7 @@
                 "location": "远程",
                 "startDate": "2025年10月",
                 "endDate": "至今",
-                "duration": "7个月",
+                "duration": "+7个月",
                 "type": "全职",
                 "workType": "远程",
                 "achievementsLabel": "主要职责：",
@@ -553,5 +554,41 @@
     },
     "scrollToTop": {
         "backToTop": "返回顶部"
+    },
+    "services": {
+        "title": "服务",
+        "subtitle": "我提供什么",
+        "items": [
+            {
+                "title": "网页和应用程序开发",
+                "description": "使用现代技术构建响应灵敏、快速且高度交互的全栈 Web 和移动应用程序。",
+                "icon": "Code"
+            },
+            {
+                "title": "SaaS 解决方案",
+                "description": "设计和开发适合您业务需求的可扩展软件即服务平台。",
+                "icon": "Cloud"
+            },
+            {
+                "title": "定制软件",
+                "description": "创建定制的软件解决方案来自动化流程、解决复杂问题并提高生产力。",
+                "icon": "Cpu"
+            },
+            {
+                "title": "数据库架构",
+                "description": "设计安全高效的数据库模式并管理高性能应用程序的数据流。",
+                "icon": "Database"
+            },
+            {
+                "title": "信息安全",
+                "description": "实施强大的身份验证、授权和数据加密，以确保您的应用程序安全。",
+                "icon": "Shield"
+            },
+            {
+                "title": "用户体验/用户界面设计",
+                "description": "通过像素完美的界面设计打造直观、引人入胜且易于访问的用户体验。",
+                "icon": "Layout"
+            }
+        ]
     }
 }

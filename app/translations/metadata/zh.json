@@ -81,5 +81,10 @@
             "DevOps 工具",
             "Web 开发技术"
         ]
+    },
+    "services": {
+        "title": "服务 |阿卜杜拉·埃杜迪",
+        "description": "Abdellah Edaoudi - 服务：Web 和应用程序开发、SaaS 解决方案、定制软件、数据库架构、信息安全、UX/UI 设计。",
+        "keywords": "服务、Web 和应用程序开发、SaaS 解决方案、定制软件、数据库架构、信息安全、UX/UI 设计"
     }
 }

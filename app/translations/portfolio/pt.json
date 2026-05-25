@@ -15,7 +15,8 @@
             "explore": "Explorar esta seção",
             "history": "História",
             "learning": "Aprendizagem"
-        }
+        },
+        "services": "Serviços"
     },
     "home": {
         "greeting": "Olá, sou Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "Online 24/7",
         "description": "Tenho ampla experiência em transformar ideias em aplicativos inovadores, seguros e eficazes. Meu foco combina melhorar a experiência do usuário e criar interfaces atraentes com a garantia de segurança robusta e alto desempenho.",
         "downloadCv": "Currículo",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "Carta de apresentação",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "Habilidades",
@@ -383,7 +384,7 @@
                 "location": "Remoto",
                 "startDate": "Out 2025",
                 "endDate": "Presente",
-                "duration": "7 meses",
+                "duration": "+7 meses",
                 "type": "Tempo integral",
                 "workType": "Remoto",
                 "achievementsLabel": "Principais responsabilidades:",
@@ -553,5 +554,41 @@
     },
     "scrollToTop": {
         "backToTop": "Voltar para o topo"
+    },
+    "services": {
+        "title": "Serviços",
+        "subtitle": "O que eu ofereço",
+        "items": [
+            {
+                "title": "Desenvolvimento de sites e aplicativos",
+                "description": "Construindo aplicativos web e móveis full-stack responsivos, rápidos e altamente interativos usando tecnologias modernas.",
+                "icon": "Code"
+            },
+            {
+                "title": "Soluções SaaS",
+                "description": "Projetar e desenvolver plataformas de software como serviço escaláveis, adaptadas às necessidades do seu negócio.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Software personalizado",
+                "description": "Criação de soluções de software personalizadas para automatizar processos, resolver problemas complexos e aumentar a produtividade.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Arquitetura de banco de dados",
+                "description": "Projetar esquemas de banco de dados seguros e eficientes e gerenciar fluxo de dados para aplicativos de alto desempenho.",
+                "icon": "Database"
+            },
+            {
+                "title": "Segurança da Informação",
+                "description": "Implementar autenticação robusta, autorização e criptografia de dados para garantir que seus aplicativos estejam seguros.",
+                "icon": "Shield"
+            },
+            {
+                "title": "Design de UX/UI",
+                "description": "Crie experiências de usuário intuitivas, envolventes e acessíveis com designs de interface perfeitos.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

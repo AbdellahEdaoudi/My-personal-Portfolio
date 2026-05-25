@@ -15,7 +15,8 @@
             "explore": "Esplora questa sezione",
             "history": "Storia",
             "learning": "Apprendimento"
-        }
+        },
+        "services": "Servizi"
     },
     "home": {
         "greeting": "Ciao, sono Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "Online 24/7",
         "description": "Ho una vasta esperienza nel trasformare idee in applicazioni innovative, sicure ed efficaci. Il mio focus combina il miglioramento dell'esperienza utente e la creazione di interfacce accattivanti con la garanzia di una solida sicurezza e alte prestazioni.",
         "downloadCv": "Curriculum",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "Lettera di presentazione",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "Competenze",
@@ -383,7 +384,7 @@
                 "location": "Remoto",
                 "startDate": "Ott 2025",
                 "endDate": "Presente",
-                "duration": "7 mesi",
+                "duration": "+7 mesi",
                 "type": "Tempo pieno",
                 "workType": "Remoto",
                 "achievementsLabel": "Responsabilità principali:",
@@ -553,5 +554,41 @@
     },
     "scrollToTop": {
         "backToTop": "Torna su"
+    },
+    "services": {
+        "title": "Servizi",
+        "subtitle": "Cosa offro",
+        "items": [
+            {
+                "title": "Sviluppo Web e App",
+                "description": "Creazione di applicazioni Web e mobili full-stack reattive, veloci e altamente interattive utilizzando tecnologie moderne.",
+                "icon": "Code"
+            },
+            {
+                "title": "Soluzioni SaaS",
+                "description": "Progettazione e sviluppo di piattaforme Software-as-a-Service scalabili su misura per le vostre esigenze aziendali.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Software personalizzato",
+                "description": "Creazione di soluzioni software su misura per automatizzare processi, risolvere problemi complessi e aumentare la produttività.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Architettura della banca dati",
+                "description": "Progettare schemi di database sicuri ed efficienti e gestire il flusso di dati per applicazioni ad alte prestazioni.",
+                "icon": "Database"
+            },
+            {
+                "title": "Sicurezza delle informazioni",
+                "description": "Implementazione di una solida autenticazione, autorizzazione e crittografia dei dati per garantire la sicurezza delle tue applicazioni.",
+                "icon": "Shield"
+            },
+            {
+                "title": "Progettazione dell'esperienza utente/interfaccia utente",
+                "description": "Creare esperienze utente intuitive, coinvolgenti e accessibili con design dell'interfaccia pixel-perfect.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

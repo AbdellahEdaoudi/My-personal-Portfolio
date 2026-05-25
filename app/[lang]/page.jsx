@@ -1,6 +1,7 @@
 
 import Home from "../Components/Pages/Home";
 import About from "../Components/Pages/About";
+import Services from "../Components/Pages/Services";
 import Header from "../Components/Pages/Header";
 import Skills from "../Components/Pages/Skills";
 import Projects from "../Components/Pages/Projects";
@@ -101,6 +102,7 @@ export default async function Page({ params }) {
             <Header content={dictionary.header} lang={lang} />
             <Home content={dictionary.home} lang={lang} />
             <About content={dictionary.about} lang={lang} />
+            <Services content={dictionary.services} lang={lang} />
             <Skills content={dictionary.skills} lang={lang} />
             <Projects content={dictionary.projects} lang={lang} />
             <Experience content={dictionary.experience} lang={lang} />

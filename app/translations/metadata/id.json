@@ -81,5 +81,10 @@
             "Alat DevOps",
             "Teknologi Pengembangan Web"
         ]
+    },
+    "services": {
+        "title": "Layanan | Abdellah Edaoudi",
+        "description": "Abdellah Edaoudi - Layanan: Pengembangan Web & Aplikasi, Solusi SaaS, Perangkat Lunak Khusus, Arsitektur Basis Data, Keamanan Informasi, Desain UX/UI.",
+        "keywords": "Layanan, Pengembangan Web & Aplikasi, Solusi SaaS, Perangkat Lunak Khusus, Arsitektur Basis Data, Keamanan Informasi, Desain UX/UI"
     }
 }
