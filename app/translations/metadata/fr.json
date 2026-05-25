@@ -81,5 +81,10 @@
             "Outils DevOps",
             "Technologies Développement Web"
         ]
+    },
+    "services": {
+        "title": "Prestations | Abdellah Edaoudi",
+        "description": "Abdellah Edaoudi - Services : développement Web et applications, solutions SaaS, logiciels personnalisés, architecture de base de données, sécurité de l'information, conception UX/UI.",
+        "keywords": "Services, développement Web et applications, solutions SaaS, logiciels personnalisés, architecture de base de données, sécurité de l'information, conception UX/UI"
     }
 }

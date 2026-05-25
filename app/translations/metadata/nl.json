@@ -81,5 +81,10 @@
             "DevOps Tools",
             "Webontwikkelingstechnologieën"
         ]
+    },
+    "services": {
+        "title": "Diensten | Abdellah Edaoudi",
+        "description": "Abdellah Edaoudi - Diensten: web- en app-ontwikkeling, SaaS-oplossingen, maatwerksoftware, database-architectuur, informatiebeveiliging, UX/UI-ontwerp.",
+        "keywords": "Services, Web & App Development, SaaS Solutions, Custom Software, Database Architecture, Information Security, UX/UI Design"
     }
 }

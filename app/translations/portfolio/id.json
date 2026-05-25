@@ -15,7 +15,8 @@
             "explore": "Jelajahi bagian ini",
             "history": "Riwayat",
             "learning": "Pembelajaran"
-        }
+        },
+        "services": "Layanan"
     },
     "home": {
         "greeting": "Hai, Saya Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "Online 24/7",
         "description": "Saya memiliki pengalaman luas dalam mengubah ide menjadi aplikasi yang inovatif, aman, dan efektif. Fokus saya memadukan peningkatan pengalaman pengguna dan pembuatan antarmuka yang menarik dengan memastikan keamanan yang kuat dan kinerja tinggi.",
         "downloadCv": "Resume",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "Surat Lamaran",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "Keahlian",
@@ -383,7 +384,7 @@
                 "location": "Remote",
                 "startDate": "Okt 2025",
                 "endDate": "Sekarang",
-                "duration": "7 bln",
+                "duration": "+7 bln",
                 "type": "Penuh waktu",
                 "workType": "Remote",
                 "achievementsLabel": "Tanggung Jawab Utama:",
@@ -553,5 +554,41 @@
     },
     "scrollToTop": {
         "backToTop": "Kembali ke atas"
+    },
+    "services": {
+        "title": "Layanan",
+        "subtitle": "Apa yang Saya Tawarkan",
+        "items": [
+            {
+                "title": "Pengembangan Web & Aplikasi",
+                "description": "Membangun aplikasi web dan seluler full-stack yang responsif, cepat, dan sangat interaktif menggunakan teknologi modern.",
+                "icon": "Code"
+            },
+            {
+                "title": "Solusi SaaS",
+                "description": "Merancang dan mengembangkan platform Perangkat Lunak sebagai Layanan yang dapat diskalakan dan disesuaikan dengan kebutuhan bisnis Anda.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Perangkat Lunak Khusus",
+                "description": "Menciptakan solusi perangkat lunak yang disesuaikan untuk mengotomatisasi proses, memecahkan masalah kompleks, dan meningkatkan produktivitas.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Arsitektur Basis Data",
+                "description": "Merancang skema database yang aman dan efisien serta mengelola aliran data untuk aplikasi berkinerja tinggi.",
+                "icon": "Database"
+            },
+            {
+                "title": "Keamanan Informasi",
+                "description": "Menerapkan autentikasi, otorisasi, dan enkripsi data yang kuat untuk memastikan aplikasi Anda aman.",
+                "icon": "Shield"
+            },
+            {
+                "title": "Desain UX/UI",
+                "description": "Menciptakan pengalaman pengguna yang intuitif, menarik, dan mudah diakses dengan desain antarmuka piksel sempurna.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

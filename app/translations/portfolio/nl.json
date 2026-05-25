@@ -15,7 +15,8 @@
             "explore": "Verken deze sectie",
             "history": "Geschiedenis",
             "learning": "Leren"
-        }
+        },
+        "services": "Diensten"
     },
     "home": {
         "greeting": "Hallo, ik ben Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "24/7 Online",
         "description": "Ik heb uitgebreide ervaring in het omzetten van ideeën in innovatieve, veilige en effectieve applicaties. Mijn focus combineert het verbeteren van de gebruikerservaring en het creëren van aantrekkelijke interfaces met het waarborgen van robuuste beveiliging en hoge prestaties.",
         "downloadCv": "CV",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "Sollicitatiebrief",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "Vaardigheden",
@@ -383,7 +384,7 @@
                 "location": "Op afstand",
                 "startDate": "okt 2025",
                 "endDate": "Heden",
-                "duration": "7 mnd",
+                "duration": "+7 mnd",
                 "type": "Fulltime",
                 "workType": "Op afstand",
                 "achievementsLabel": "Belangrijkste verantwoordelijkheden:",
@@ -553,5 +554,41 @@
     },
     "scrollToTop": {
         "backToTop": "Terug naar boven"
+    },
+    "services": {
+        "title": "Diensten",
+        "subtitle": "Wat ik bied",
+        "items": [
+            {
+                "title": "Web- en app-ontwikkeling",
+                "description": "Het bouwen van responsieve, snelle en zeer interactieve full-stack web- en mobiele applicaties met behulp van moderne technologieën.",
+                "icon": "Code"
+            },
+            {
+                "title": "SaaS-oplossingen",
+                "description": "Het ontwerpen en ontwikkelen van schaalbare Software-as-a-Service-platforms, afgestemd op uw zakelijke behoeften.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Aangepaste software",
+                "description": "Het creëren van op maat gemaakte softwareoplossingen om processen te automatiseren, complexe problemen op te lossen en de productiviteit te verhogen.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Database-architectuur",
+                "description": "Het ontwerpen van veilige en efficiënte databaseschema's en het beheren van de gegevensstroom voor krachtige applicaties.",
+                "icon": "Database"
+            },
+            {
+                "title": "Informatiebeveiliging",
+                "description": "Implementeer robuuste authenticatie, autorisatie en gegevensversleuteling om ervoor te zorgen dat uw applicaties veilig zijn.",
+                "icon": "Shield"
+            },
+            {
+                "title": "UX/UI-ontwerp",
+                "description": "Creëer intuïtieve, boeiende en toegankelijke gebruikerservaringen met pixel-perfecte interface-ontwerpen.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

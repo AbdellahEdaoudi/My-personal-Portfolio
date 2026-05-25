@@ -15,7 +15,8 @@
             "explore": "Eksploruj tę sekcję",
             "history": "Historia",
             "learning": "Nauka"
-        }
+        },
+        "services": "Usługi"
     },
     "home": {
         "greeting": "Cześć, jestem Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "Online 24/7",
         "description": "Mam bogate doświadczenie w przekształcaniu pomysłów w innowacyjne, bezpieczne i skuteczne aplikacje. Moja praca łączy ulepszanie doświadczenia użytkownika i tworzenie atrakcyjnych interfejsów z zapewnieniem solidnego bezpieczeństwa i wysokiej wydajności.",
         "downloadCv": "CV",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "List motywacyjny",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "Umiejętności",
@@ -383,7 +384,7 @@
                 "location": "Zdalnie",
                 "startDate": "Paź 2025",
                 "endDate": "Obecnie",
-                "duration": "7 mies.",
+                "duration": "+7 mies.",
                 "type": "Pełny etat",
                 "workType": "Zdalnie",
                 "achievementsLabel": "Główne obowiązki:",
@@ -547,11 +548,47 @@
         "emailLabel": "E-mail",
         "whatsappLabel": "WhatsApp",
         "locationLabel": "Lokalizacja",
-        "locationValue": "Al-Ajun, Maroko",
+        "locationValue": "Laayoune, Maroko",
         "copyright": "Prawa autorskie",
         "rights": "Wszelkie prawa zastrzeżone"
     },
     "scrollToTop": {
         "backToTop": "Powrót na górę"
+    },
+    "services": {
+        "title": "Usługi",
+        "subtitle": "Co oferuję",
+        "items": [
+            {
+                "title": "Tworzenie stron internetowych i aplikacji",
+                "description": "Tworzenie responsywnych, szybkich i wysoce interaktywnych, kompleksowych aplikacji internetowych i mobilnych przy użyciu nowoczesnych technologii.",
+                "icon": "Code"
+            },
+            {
+                "title": "Rozwiązania SaaS",
+                "description": "Projektowanie i rozwój skalowalnych platform Software-as-a-Service dostosowanych do Twoich potrzeb biznesowych.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Oprogramowanie niestandardowe",
+                "description": "Tworzenie dostosowanych rozwiązań programowych w celu automatyzacji procesów, rozwiązywania złożonych problemów i zwiększania produktywności.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Architektura bazy danych",
+                "description": "Projektowanie bezpiecznych i wydajnych schematów baz danych oraz zarządzanie przepływem danych dla aplikacji o wysokiej wydajności.",
+                "icon": "Database"
+            },
+            {
+                "title": "Bezpieczeństwo Informacji",
+                "description": "Wdrożenie niezawodnego uwierzytelniania, autoryzacji i szyfrowania danych, aby zapewnić bezpieczeństwo aplikacji.",
+                "icon": "Shield"
+            },
+            {
+                "title": "Projekt UX/UI",
+                "description": "Twórz intuicyjne, wciągające i dostępne doświadczenia użytkownika dzięki projektom interfejsów dopracowanym w pikselach.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

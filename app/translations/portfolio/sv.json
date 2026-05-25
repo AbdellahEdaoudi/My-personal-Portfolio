@@ -15,7 +15,8 @@
             "explore": "Utforska denna sektion",
             "history": "Historik",
             "learning": "Inlärning"
-        }
+        },
+        "services": "Tjänster"
     },
     "home": {
         "greeting": "Hej, jag är Abdellah Edaoudi",
@@ -34,9 +35,9 @@
         "supportDetail": "Online 24/7",
         "description": "Jag har omfattande erfarenhet av att omvandla idéer till innovativa, säkra och effektiva applikationer. Mitt fokus kombinerar att förbättra användarupplevelsen och skapa attraktiva gränssnitt med att säkerställa robust säkerhet och hög prestanda.",
         "downloadCv": "CV",
-        "Cv": "/Abdellah_Edaoudi_CV/Abdellah_Edaoudi_CV_EN.pdf",
+        "Cv": "/cv/abdellah-edaoudi-cv-en.pdf",
         "downloadCoverLetter": "Personligt brev",
-        "coverLetter": "/Resume/Cover_letter_Abdellah_Edaoudi_en.pdf"
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
     },
     "skills": {
         "title": "Färdigheter",
@@ -374,7 +375,7 @@
         "frontendLabel": "Frontend",
         "backendLabel": "Backend"
     },
-           "experience": {
+    "experience": {
         "title": "Erfarenhet",
         "subtitle": "Min yrkeserfarenhet",
         "items": [
@@ -384,7 +385,7 @@
                 "location": "Distans",
                 "startDate": "Okt 2025",
                 "endDate": "Nuvarande",
-                "duration": "7 mån.",
+                "duration": "+7 mån.",
                 "type": "Heltid",
                 "workType": "Distans",
                 "achievementsLabel": "Huvudsakliga ansvarsområden:",
@@ -554,5 +555,41 @@
     },
     "scrollToTop": {
         "backToTop": "Tillbaka till toppen"
+    },
+    "services": {
+        "title": "Tjänster",
+        "subtitle": "Vad jag erbjuder",
+        "items": [
+            {
+                "title": "Webb- och apputveckling",
+                "description": "Skapa responsiva, snabba och mycket interaktiva fullstack-webb- och mobilapplikationer med modern teknik.",
+                "icon": "Code"
+            },
+            {
+                "title": "SaaS-lösningar",
+                "description": "Designa och utveckla skalbara Software-as-a-Service-plattformar skräddarsydda för dina affärsbehov.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "Anpassad programvara",
+                "description": "Skapa skräddarsydda mjukvarulösningar för att automatisera processer, lösa komplexa problem och öka produktiviteten.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "Databasarkitektur",
+                "description": "Designa säkra och effektiva databasscheman och hantera dataflöden för högpresterande applikationer.",
+                "icon": "Database"
+            },
+            {
+                "title": "Informationssäkerhet",
+                "description": "Implementera robust autentisering, auktorisering och datakryptering för att säkerställa att dina applikationer är säkra.",
+                "icon": "Shield"
+            },
+            {
+                "title": "UX/UI-design",
+                "description": "Skapa intuitiva, engagerande och tillgängliga användarupplevelser med pixelperfekta gränssnittsdesigner.",
+                "icon": "Layout"
+            }
+        ]
     }
 }

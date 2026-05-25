@@ -81,5 +81,10 @@
             "Công cụ DevOps",
             "Công nghệ Phát triển Web"
         ]
+    },
+    "services": {
+        "title": "Dịch vụ | Abdellah Edaoudi",
+        "description": "Abdellah Edaoudi - Dịch vụ: Phát triển ứng dụng và web, Giải pháp SaaS, Phần mềm tùy chỉnh, Kiến trúc cơ sở dữ liệu, Bảo mật thông tin, Thiết kế UX/UI.",
+        "keywords": "Dịch vụ, Phát triển Web & Ứng dụng, Giải pháp SaaS, Phần mềm tùy chỉnh, Kiến trúc cơ sở dữ liệu, Bảo mật thông tin, Thiết kế UX/UI"
     }
 }
