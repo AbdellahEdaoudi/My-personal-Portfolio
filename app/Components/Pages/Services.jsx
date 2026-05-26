@@ -5,7 +5,7 @@ function Services({ content }) {
   const { title, subtitle, items } = content;
 
   return (
-    <section id="services" className="pb-7 pt-4 mx-7">
+    <section id="services" className="pb-7 pt-4 md:mx-7">
       <div className="text-center mb-6">
         <p className="text-4xl font-bold">{title}</p>
         <p className="text-gray-400 text-sm">{subtitle}</p>
