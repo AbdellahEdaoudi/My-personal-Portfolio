@@ -78,7 +78,7 @@ front/
 
 I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
 
--   **Email**: [abdellahedaoudi80@gmail.com](mailto:abdellahedaoudi80@gmail.com)
+-   **Email**: [abdellahedaoudi.dev@gmail.com](mailto:abdellahedaoudi.dev@gmail.com)
 -   **LinkedIn**: [Abdellah Edaoudi](https://www.linkedin.com/in/abdellah-edaoudi)
 -   **GitHub**: [@AbdellahEdaoudi](https://github.com/AbdellahEdaoudi)
 
