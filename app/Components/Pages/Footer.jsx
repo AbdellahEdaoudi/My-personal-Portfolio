@@ -18,8 +18,8 @@ export default function Footer({ content, lang }) {
   ];
 
   const quickConnect = [
-    { label: content.emailLabel, value: 'abdellahedaoudi80@gmail.com', href: 'mailto:abdellahedaoudi80@gmail.com' },
-    { label: content.whatsappLabel, value: '+212 607071966', href: 'https://wa.me/212607071966' },
+    { label: content.emailLabel, value: 'abdellahedaoudi.dev@gmail.com', href: 'mailto:abdellahedaoudi.dev@gmail.com' },
+    { label: content.whatsappLabel, value: '+212 609085357', href: 'https://wa.me/212609085357' },
     { label: content.locationLabel, value: content.locationValue, href: 'https://www.google.com/search?q=Laayoune+Morocco' },
   ];
 

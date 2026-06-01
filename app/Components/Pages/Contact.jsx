@@ -75,7 +75,7 @@ function Contact({ content }) {
                         </li>
                         <li>{content.email}</li>
                         <li className="text-[12px] text-gray-400">
-                            abdellahedaoudi80@gmail.com
+                            abdellahedaoudi.dev@gmail.com
                         </li>
                         <li className="flex items-center text-gray-400 justify-center text-[12px]">
                             {content.writeMe} <ArrowBigRight />
@@ -86,7 +86,7 @@ function Contact({ content }) {
                             <Image src="/icons/whatsapp.png" width={25} height={25} alt="whatsapp" />
                         </li>
                         <li>{content.whatsapp}</li>
-                        <li className="text-[12px] text-gray-400">+212 607071966</li>
+                        <li className="text-[12px] text-gray-400">+212 609085357</li>
                         <li className="flex items-center text-gray-400 justify-center text-[12px]">
                             {content.writeMe} <ArrowBigRight />
                         </li>
