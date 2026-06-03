@@ -28,9 +28,9 @@
         "title": "关于我",
         "subtitle": "简介",
         "experience": "经验",
-        "experienceDetail": "年工作经验",
+        "experienceDetail": "年",
         "completed": "已完成",
-        "completedDetail": "+22 个项目",
+        "completedDetail": "个项目",
         "support": "支持",
         "supportDetail": "24/7 在线",
         "description": "我在将想法转化为创新、安全且有效的应用程序方面拥有丰富的经验。我的重点是将增强用户体验和制作有吸引力的界面与确保强大的安全性和高性能相结合。",
@@ -80,8 +80,8 @@
                 "title": "酒店预订系统",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
                 "description": "酒店管理系统为管理客房预订和付款提供了全面的解决方案。它允许用户轻松预订房间并接收电子确认票。该系统包括一个用于管理预订、付款和通过电子邮件回复客户的仪表板。",
                 "technologies": [
                     {
@@ -127,8 +127,8 @@
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
                 "description": "安全实时聊天系统 是一款具有先进安全性且高性能的即时通讯应用程序。它使用 Socket.io 进行实时通信，并实施端到端加密 (E2EE) 以确保消息隐私。它还包括一个使用 JWT 和 Bcrypt 密码哈希的强大的身份验证系统，以最高标准确保用户数据安全。",
                 "technologies": [
                     {
@@ -174,8 +174,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com/zh",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "一个全面的 SaaS 平台，使用户能够轻松创建专业的作品集。它提供多语言支持、自定义域名集成、动态主题选择、实时简历生成以及直观的管理仪表板来管理内容、订阅和分析。",
                 "technologies": [
                     {
@@ -218,8 +218,8 @@
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
                 "description": "一个强大且可扩展的电子商务平台后端系统。该系统处理各种功能，如用户管理、产品库存组织、订单处理、支付处理（现金或银行卡）、优惠券添加、评论、类别和品牌管理、供应商管理以及税务监管。",
                 "technologies": [
                     {
@@ -260,8 +260,8 @@
                 "title": "简历平台",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "我开发的创新应用程序，允许用户在一个地方展示他们的专业简历和社交媒体链接。该应用程序帮助用户有效地管理他们的数字身份，使其成为求职者或任何希望增强在线形象和数字影响力的人的理想工具。",
                 "technologies": [
                     {
@@ -298,8 +298,8 @@
                 "title": "图片压缩器",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "一个强大且安全的基于浏览器的图像压缩工具。它允许用户将无限量的 JPG、PNG 和 WebP 图像压缩高达 90% 而不损失质量。功能包括批量压缩、PDF 生成、拖放界面以及完全的隐私保护，因为所有处理都在浏览器本地进行。",
                 "technologies": [
                     {
@@ -324,8 +324,8 @@
                 "title": "二维码管理应用",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
                 "description": "一个二维码管理应用程序，允许您使用自定义徽标创建二维码、从图像读取二维码以及通过相机扫描二维码以立即显示数据。设计美观且响应灵敏。",
                 "technologies": [
                     {
@@ -350,8 +350,8 @@
                 "title": "购物应用",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
                 "description": "一个提供无缝购物体验的应用程序，使用户可以轻松浏览产品并将商品添加到购物车。该应用程序具有现代和创新的设计，增强了用户体验，具有即时响应能力和交互式元素，使购物更加愉快。",
                 "technologies": [
                     {

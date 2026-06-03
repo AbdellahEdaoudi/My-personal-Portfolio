@@ -221,7 +221,7 @@ export default function Header({ content, lang }) {
                                 <span className="w-8 h-[1px] bg-emerald-100"></span> {content?.mobileMenu?.navigation || "Navigation"}
                             </p>
                             <nav className="space-y-4">
-                                {LinksHeader.slice(0, 4).map((ln, i) => (
+                                {LinksHeader.slice(0, 5).map((ln, i) => (
                                     <Link
                                         key={i}
                                         href={getPath(lang, ln.path)}

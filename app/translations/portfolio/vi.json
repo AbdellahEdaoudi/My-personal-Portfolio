@@ -28,9 +28,9 @@
         "title": "Về tôi",
         "subtitle": "Giới thiệu",
         "experience": "Kinh nghiệm",
-        "experienceDetail": "năm làm việc",
+        "experienceDetail": "năm",
         "completed": "Hoàn thành",
-        "completedDetail": "+22 Dự án",
+        "completedDetail": "Dự án",
         "support": "Hỗ trợ",
         "supportDetail": "Trực tuyến 24/7",
         "description": "Tôi có kinh nghiệm sâu rộng trong việc biến ý tưởng thành các ứng dụng sáng tạo, an toàn và hiệu quả. Trọng tâm của tôi là kết hợp nâng cao trải nghiệm người dùng và tạo ra giao diện hấp dẫn với việc đảm bảo bảo mật mạnh mẽ và hiệu suất cao.",
@@ -81,8 +81,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com/vi",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
                 "description": "Một nền tảng SaaS toàn diện giúp người dùng xây dựng danh mục đầu tư chuyên nghiệp một cách dễ dàng. Nó có hỗ trợ đa ngôn ngữ, tích hợp tên miền tùy chỉnh, lựa chọn chủ đề động, tạo sơ yếu lý lịch thời gian thực và bảng điều khiển quản trị trực quan để quản lý nội dung, đăng ký và phân tích.",
                 "technologies": [
                     {
@@ -123,8 +123,8 @@
                 "title": "Hệ thống đặt phòng khách sạn",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
                 "description": "Hệ thống quản lý khách sạn cung cấp giải pháp toàn diện để quản lý đặt phòng và thanh toán. Nó cho phép người dùng dễ dàng đặt phòng và nhận vé xác nhận điện tử. Hệ thống bao gồm bảng điều khiển để quản lý đặt phòng, thanh toán và phản hồi khách hàng qua email.",
                 "technologies": [
                     {
@@ -170,8 +170,8 @@
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
                 "description": "Hệ thống Chat thời gian thực an toàn là ứng dụng nhắn tin tức thì hiệu suất cao với bảo mật nâng cao. Nó sử dụng Socket.io để giao tiếp thời gian thực và triển khai Mã hóa đầu cuối (E2EE) để đảm bảo quyền riêng tư của tin nhắn. Nó cũng bao gồm hệ thống xác thực mạnh mẽ sử dụng JWT và băm mật khẩu với Bcrypt, đảm bảo bảo vệ dữ liệu người dùng ở tiêu chuẩn cao nhất.",
                 "technologies": [
                     {
@@ -218,8 +218,8 @@
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
                 "description": "Một hệ thống back-end mạnh mẽ và có thể mở rộng cho nền tảng thương mại điện tử. Hệ thống xử lý các chức năng khác nhau như quản lý người dùng, tổ chức kho sản phẩm, xử lý đơn hàng, xử lý thanh toán (bằng tiền mặt hoặc thẻ), thêm phiếu giảm giá, đánh giá, quản lý danh mục và thương hiệu, quản lý nhà cung cấp và quy định thuế.",
                 "technologies": [
                     {
@@ -260,8 +260,8 @@
                 "title": "Nền tảng Hồ sơ cá nhân",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "Ứng dụng sáng tạo tôi đã phát triển, cho phép người dùng giới thiệu Hồ sơ chuyên nghiệp và các liên kết mạng xã hội ở một nơi. Ứng dụng này giúp người dùng quản lý danh tính kỹ thuật số hiệu quả, biến nó thành công cụ lý tưởng cho người tìm việc hoặc bất kỳ ai muốn nâng cao sự hiện diện trực tuyến và ảnh hưởng kỹ thuật số.",
                 "technologies": [
                     {
@@ -298,8 +298,8 @@
                 "title": "Công cụ nén ảnh",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "Một công cụ nén ảnh dựa trên trình duyệt mạnh mẽ và an toàn. Nó cho phép người dùng nén không giới hạn hình ảnh JPG, PNG và WebP lên đến 90% mà không làm giảm chất lượng. Các tính năng bao gồm nén hàng loạt, tạo PDF, giao diện kéo và thả, và bảo mật hoàn toàn vì tất cả quá trình xử lý diễn ra cục bộ trong trình duyệt.",
                 "technologies": [
                     {
@@ -324,8 +324,8 @@
                 "title": "Ứng dụng quản lý mã QR",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
                 "description": "Một ứng dụng quản lý mã QR cho phép bạn tạo mã QR với logo tùy chỉnh, đọc mã QR từ hình ảnh và quét mã QR qua camera để hiển thị dữ liệu ngay lập tức. Có thiết kế hấp dẫn và đáp ứng.",
                 "technologies": [
                     {
@@ -351,8 +351,8 @@
                 "title": "Ứng dụng mua sắm",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
                 "description": "Một ứng dụng cung cấp trải nghiệm mua sắm liền mạch, giúp người dùng dễ dàng duyệt sản phẩm và thêm mặt hàng vào giỏ hàng. Ứng dụng có thiết kế hiện đại và sáng tạo nâng cao trải nghiệm người dùng, với khả năng phản hồi tức thì và các yếu tố tương tác làm cho việc mua sắm thú vị hơn.",
                 "technologies": [
                     {

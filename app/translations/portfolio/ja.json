@@ -28,9 +28,9 @@
         "title": "私について",
         "subtitle": "自己紹介",
         "experience": "経験",
-        "experienceDetail": "年間の勤務",
+        "experienceDetail": "年",
         "completed": "完了",
-        "completedDetail": "+22 プロジェクト",
+        "completedDetail": "プロジェクト",
         "support": "サポート",
         "supportDetail": "24時間年中無休オンライン",
         "description": "私はアイデアを革新的で安全かつ効果的なアプリケーションに変える豊富な経験を持っています。私の焦点は、ユーザーエクスペリエンスの向上と魅力的なインターフェースの作成、そして堅牢なセキュリティと高いパフォーマンスの確保を融合させることです。",
@@ -80,8 +80,8 @@
                 "title": "ホテル予約システム",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
                 "description": "ホテル管理システムは、部屋の予約と支払いを管理するための包括的なソリューションを提供します。ユーザーは簡単に部屋を予約し、確認のための電子チケットを受け取ることができます。システムには、予約、支払い、および電子メールによる顧客への返信を管理するためのダッシュボードが含まれています。",
                 "technologies": [
                     {
@@ -127,8 +127,8 @@
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
                 "description": "安全なリアルタイムチャットシステムは、高度なセキュリティを備えた高性能インスタントメッセージングアプリケーションです。リアルタイム通信にSocket.ioを使用し、メッセージのプライバシーを確​​保するためにエンドツーエンド暗号化 (E2EE) を実装しています。また、JWTを使用した堅牢な認証システムとBcryptによるパスワードハッシュ化を備えており、最高水準でユーザーデータを保護します。",
                 "technologies": [
                     {
@@ -174,8 +174,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com/ja",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "ユーザーが専門的なポートフォリオを簡単に構築できるようにする包括的なSaaSプラットフォーム。多言語サポート、カスタムドメイン統合、動的テーマ選択、リアルタイムの履歴書生成、コンテンツ、サブスクリプション、分析を管理するための直感的な管理ダッシュボードを備えています。",
                 "technologies": [
                     {
@@ -218,8 +218,8 @@
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
                 "description": "Eコマースプラットフォーム向けの堅牢でスケーラブルなバックエンドシステム。このシステムは、ユーザー管理、製品在庫整理、注文処理、支払い処理（現金またはカード）、クーポンの追加、レビュー、カテゴリとブランドの管理、サプライヤー管理、税規制など、さまざまな機能を処理します。",
                 "technologies": [
                     {
@@ -260,8 +260,8 @@
                 "title": "履歴書プラットフォーム",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "私が開発した革新的なアプリケーションで、ユーザーはプロフェッショナルな履歴書とソーシャルメディアのリンクを1か所で表示できます。このアプリは、ユーザーがデジタルアイデンティティを効果的に管理するのに役立ち、求職者やオンラインプレゼンスとデジタル影響力を強化したい人にとって理想的なツールです。",
                 "technologies": [
                     {
@@ -298,8 +298,8 @@
                 "title": "画像圧縮機",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "強力で安全なブラウザベースの画像圧縮ツール。品質を損なうことなく、無制限のJPG、PNG、WebP画像を最大90%圧縮できます。機能には、一括圧縮、PDF生成、ドラッグアンドドロップインターフェイス、完全なプライバシー（すべての処理がブラウザでローカルに行われるため）が含まれます。",
                 "technologies": [
                     {
@@ -324,8 +324,8 @@
                 "title": "QRコード管理アプリ",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
                 "description": "カスタムロゴ付きのQRコードを作成し、画像からQRコードを読み取り、カメラでQRコードをスキャンしてデータを即座に表示できるQRコード管理アプリ。魅力的でレスポンシブなデザインが特徴です。",
                 "technologies": [
                     {
@@ -350,8 +350,8 @@
                 "title": "ショッピングアプリ",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
                 "description": "シームレスなショッピング体験を提供するアプリで、ユーザーは製品を簡単に閲覧し、カートにアイテムを追加できます。このアプリは、ユーザー体験を向上させるモダンで革新的なデザインを備えており、即時の応答性とインタラクティブな要素により、ショッピングがより楽しくなります。",
                 "technologies": [
                     {
