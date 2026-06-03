@@ -28,9 +28,9 @@
         "title": "Tentang Saya",
         "subtitle": "Pengantar",
         "experience": "Pengalaman",
-        "experienceDetail": "tahun Bekerja",
+        "experienceDetail": "tahun",
         "completed": "Selesai",
-        "completedDetail": "+22 Proyek",
+        "completedDetail": "Proyek",
         "support": "Dukungan",
         "supportDetail": "Online 24/7",
         "description": "Saya memiliki pengalaman luas dalam mengubah ide menjadi aplikasi yang inovatif, aman, dan efektif. Fokus saya memadukan peningkatan pengalaman pengguna dan pembuatan antarmuka yang menarik dengan memastikan keamanan yang kuat dan kinerja tinggi.",
@@ -81,8 +81,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com/id",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
                 "description": "Platform SaaS komprehensif yang memberdayakan pengguna untuk membangun portofolio profesional dengan mudah. Ini fitur dukungan multi-bahasa, integrasi domain kustom, pemilihan tema dinamis, pembuatan resume real-time, dan dasbor admin intuitif untuk mengelola konten, langganan, dan analitik.",
                 "technologies": [
                     {
@@ -123,8 +123,8 @@
                 "title": "Sistem Reservasi Hotel",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
                 "description": "Sistem manajemen hotel memberikan solusi komprehensif untuk mengelola pemesanan kamar dan pembayaran. Ini memungkinkan pengguna untuk dengan mudah memesan kamar dan menerima tiket elektronik untuk konfirmasi. Sistem mencakup dasbor untuk mengelola pemesanan, pembayaran, dan tanggapan pelanggan melalui email.",
                 "technologies": [
                     {
@@ -170,8 +170,8 @@
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
                 "description": "Sistem Obrolan Real-time Aman adalah aplikasi pesan instan berperforma tinggi yang dilengkapi dengan keamanan tingkat lanjut. Menggunakan Socket.io untuk komunikasi real-time dan menerapkan Enkripsi End-to-End (E2EE) untuk menjamin privasi pesan. Aplikasi ini juga memiliki sistem autentikasi yang kuat menggunakan JWT dan hashing kata sandi dengan Bcrypt, memastikan perlindungan data pengguna dengan standar tertinggi。",
                 "technologies": [
                     {
@@ -218,8 +218,8 @@
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
                 "description": "Sistem back-end yang tangguh dan dapat diskalakan untuk platform e-commerce. Sistem menangani berbagai fungsi seperti manajemen pengguna, organisasi inventaris produk, pemrosesan pesanan, penanganan pembayaran (baik melalui uang tunai atau kartu), penambahan kupon, ulasan, manajemen kategori dan merek, manajemen pemasok, dan peraturan pajak.",
                 "technologies": [
                     {
@@ -260,8 +260,8 @@
                 "title": "Platform Resume",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "Aplikasi inovatif yang saya kembangkan, memungkinkan pengguna untuk memamerkan resume profesional dan tautan media sosial mereka di satu tempat. Aplikasi ini membantu pengguna mengelola identitas digital mereka secara efektif, menjadikannya alat yang ideal bagi pencari kerja atau siapa pun yang ingin meningkatkan kehadiran online dan pengaruh digital mereka.",
                 "technologies": [
                     {
@@ -298,8 +298,8 @@
                 "title": "Kompresor Gambar",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "Alat kompresi gambar berbasis browser yang kuat dan aman. Ini memungkinkan pengguna untuk mengompres gambar JPG, PNG, dan WebP tanpa batas hingga 90% tanpa kehilangan kualitas. Fitur termasuk kompresi massal, pembuatan PDF, antarmuka seret dan lepas, dan privasi lengkap karena semua pemrosesan terjadi secara lokal di browser.",
                 "technologies": [
                     {
@@ -324,8 +324,8 @@
                 "title": "Aplikasi Manajemen Kode QR",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
                 "description": "Aplikasi manajemen Kode QR yang memungkinkan Anda membuat kode QR dengan logo kustom, membaca kode QR dari gambar, dan memindai kode QR melalui kamera untuk menampilkan data secara instan. Menampilkan desain yang menarik dan responsif.",
                 "technologies": [
                     {
@@ -350,8 +350,8 @@
                 "title": "Aplikasi Belanja",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
                 "description": "Aplikasi yang menawarkan pengalaman berbelanja yang mulus, memudahkan pengguna untuk menelusuri produk dan menambahkan item ke keranjang mereka. Aplikasi ini memiliki desain modern dan inovatif yang meningkatkan pengalaman pengguna, dengan daya tanggap instan dan elemen interaktif yang membuat belanja lebih menyenangkan.",
                 "technologies": [
                     {

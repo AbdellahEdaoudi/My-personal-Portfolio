@@ -28,9 +28,9 @@
         "title": "Hakkımda",
         "subtitle": "Giriş",
         "experience": "Deneyim",
-        "experienceDetail": "yıl Çalışma",
+        "experienceDetail": "yıl",
         "completed": "Tamamlandı",
-        "completedDetail": "+22 Proje",
+        "completedDetail": "Proje",
         "support": "Destek",
         "supportDetail": "7/24 Çevrimiçi",
         "description": "Fikirleri yenilikçi, güvenli ve etkili uygulamalara dönüştürme konusunda geniş deneyime sahibim. Odak noktam, kullanıcı deneyimini geliştirmeyi ve çekici arayüzler oluşturmayı, sağlam güvenlik ve yüksek performans sağlamakla harmanlıyor.",
@@ -80,8 +80,8 @@
                 "title": "Otel Rezervasyon Sistemi",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
                 "description": "Otel yönetim sistemi, oda rezervasyonlarını ve ödemeleri yönetmek için kapsamlı bir çözüm sunar. Kullanıcıların kolayca oda ayırtmasına ve onay için elektronik bir bilet almasına olanak tanır. Sistem, rezervasyonları, ödemeleri ve e-posta yoluyla müşteri yanıtlarını yönetmek için bir panel içerir.",
                 "technologies": [
                     {
@@ -127,8 +127,8 @@
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
                 "description": "Güvenli Gerçek Zamanlı Sohbet Sistemi, gelişmiş güvenlik özelliklerine sahip yüksek performanslı bir anlık mesajlaşma uygulamasıdır. Gerçek zamanlı iletişim için Socket.io kullanır ve mesaj gizliliğini sağlamak için Uçtan Uca Şifreleme (E2EE) uygular. Ayrıca JWT kullanarak güçlü bir kimlik doğrulama sistemi ve Bcrypt ile şifre karma yöntemi içerir; bu da kullanıcı verilerinin en yüksek standartlarda korunmasını sağlar.",
                 "technologies": [
                     {
@@ -174,8 +174,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com/tr",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "Kullanıcıların profesyonel portföyleri zahmetsizce oluşturmasını sağlayan kapsamlı bir SaaS platformu. Çoklu dil desteği, özel alan adı entegrasyonu, dinamik tema seçimi, gerçek zamanlı özgeçmiş oluşturma ve içerik, abonelikler ve analizleri yönetmek için sezgisel bir yönetici paneli içerir.",
                 "technologies": [
                     {
@@ -218,8 +218,8 @@
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
                 "description": "Bir e-ticaret platformu için sağlam ve ölçeklenebilir bir arka uç sistemi. Sistem, kullanıcı yönetimi, ürün envanteri organizasyonu, sipariş işleme, ödeme işleme (nakit veya kart ile), kupon ekleme, incelemeler, kategori ve marka yönetimi, tedarikçi yönetimi ve vergi düzenlemesi gibi çeşitli işlevleri yerine getirir.",
                 "technologies": [
                     {
@@ -260,8 +260,8 @@
                 "title": "Özgeçmiş Platformu",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "Geliştirdiğim yenilikçi uygulama, kullanıcıların profesyonel özgeçmişlerini ve sosyal medya bağlantılarını tek bir yerde sergilemelerine olanak tanır. Bu uygulama, kullanıcıların dijital kimliklerini etkili bir şekilde yönetmelerine yardımcı olur, bu da onu iş arayanlar veya çevrimiçi varlıklarını ve dijital etkilerini artırmak isteyen herkes için ideal bir araç haline getirir.",
                 "technologies": [
                     {
@@ -298,8 +298,8 @@
                 "title": "Görüntü Sıkıştırıcı",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "Güçlü ve güvenli bir tarayıcı tabanlı görüntü sıkıştırma aracı. Kullanıcıların sınırsız JPG, PNG ve WebP görüntüsünü kalite kaybı olmadan %90'a kadar sıkıştırmasına olanak tanır. Özellikler arasında toplu sıkıştırma, PDF oluşturma, sürükle ve bırak arayüzü ve tüm işlemler yerel olarak tarayıcıda gerçekleştiği için tam gizlilik bulunur.",
                 "technologies": [
                     {
@@ -324,8 +324,8 @@
                 "title": "QR Kod Yönetim Uygulaması",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
                 "description": "Özel logolarla QR kodları oluşturmanıza, görüntülerden QR kodları okumanıza ve verileri anında görüntülemek için kamera aracılığıyla QR kodlarını taramanıza olanak tanıyan bir QR Kod yönetim uygulaması. Çekici ve duyarlı bir tasarıma sahiptir.",
                 "technologies": [
                     {
@@ -350,8 +350,8 @@
                 "title": "Alışveriş Uygulaması",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
                 "description": "Kullanıcıların ürünlere kolayca göz atmasını ve sepetlerine ürün eklemesini sağlayan, sorunsuz bir alışveriş deneyimi sunan bir uygulama. Uygulama, anında yanıt verebilirlik ve alışverişi daha keyifli hale getiren etkileşimli öğelerle kullanıcı deneyimini geliştiren modern ve yenilikçi bir tasarıma sahiptir.",
                 "technologies": [
                     {

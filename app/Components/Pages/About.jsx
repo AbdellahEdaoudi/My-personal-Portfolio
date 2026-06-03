@@ -55,14 +55,14 @@ function About({ content, lang }) {
                 <Award />
                 <span className="text-[13px]">{content.experience}</span>
                 <span className="text-[10px] text-gray-500">
-                  {new Date().getFullYear() - 2024} {content.experienceDetail}
+                  +{new Date().getFullYear() - 2024} {content.experienceDetail}
                 </span>
               </li>
               <li className="flex flex-col items-center text-center bg-white/70 backdrop-blur-sm py-4 md:px-4 px-2 rounded-2xl border border-white/40 shadow-lg transition-all hover:bg-white/80">
                 <Briefcase />
                 <span className="text-[13px]">{content.completed}</span>
                 <span className="text-[10px] text-gray-500">
-                  {content.completedDetail}
+                  +23 {content.completedDetail}
                 </span>
               </li>
               <li className="flex flex-col items-center text-center bg-white/70 backdrop-blur-sm px-5 duration-300 md:px-6 py-4 rounded-2xl border border-white/40 shadow-lg transition-all hover:bg-white/80">

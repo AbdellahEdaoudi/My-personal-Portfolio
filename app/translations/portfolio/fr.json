@@ -28,9 +28,9 @@
         "title": "À propos",
         "subtitle": "Présentation",
         "experience": "Expérience",
-        "experienceDetail": "ans de travail",
+        "experienceDetail": "ans",
         "completed": "Réalisé",
-        "completedDetail": "+22 Projets",
+        "completedDetail": "Projets",
         "support": "Assistance",
         "supportDetail": "En ligne 24/7",
         "description": "J'ai une vaste expérience dans la transformation d'idées en applications innovantes, sécurisées et efficaces. Mon approche allie l'amélioration de l'expérience utilisateur et la création d'interfaces attrayantes à la garantie d'une sécurité robuste et de hautes performances.",
@@ -81,8 +81,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com/fr",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
                 "description": "Une plateforme SaaS complète permettant aux utilisateurs de créer des portfolios professionnels sans effort. Elle propose un support multilingue, l'intégration de domaines personnalisés, une sélection de thèmes dynamiques, la génération de CV en temps réel et un tableau de bord administratif intuitif pour gérer le contenu, les abonnements et les analyses.",
                 "technologies": [
                     {
@@ -123,8 +123,8 @@
                 "title": "Système de Réservation d'Hôtel",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
                 "description": "Le système de gestion de l’hôtel offre une solution complète pour gérer les réservations de chambres et les paiements. Il permet aux utilisateurs de réserver facilement des chambres et de recevoir une carte électronique de confirmation. Le système comprend un tableau de bord pour gérer les réservations, les paiements et les réponses des clients par e-mail.",
                 "technologies": [
                     {
@@ -171,8 +171,8 @@
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
                 "description": "Système de Chat Sécurisé en Temps Réel est une application de messagerie instantanée haute performance dotée d'une sécurité avancée. Elle utilise Socket.io pour la communication en temps réel et implémente le cryptage de bout en bout (E2EE) pour garantir la confidentialité des messages. Elle comprend également un système d'authentification robuste utilisant JWT et le hachage de mots de passe avec Bcrypt, assurant la protection des données utilisateur selon les normes les plus élevées.",
                 "technologies": [
                     {
@@ -219,8 +219,8 @@
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
                 "description": "Un système back-end robuste et évolutif pour une plateforme de commerce électronique. Le système gère diverses fonctions telles que la gestion des utilisateurs, l'organisation de l'inventaire des produits, le traitement des commandes, la gestion des paiements (soit par carte ou par espèces), l'ajout de coupons, les avis, la gestion des catégories et des marques, la gestion des fournisseurs et la régulation des taxes.",
                 "technologies": [
                     {
@@ -261,8 +261,8 @@
                 "title": "Plateforme de Resume",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "Une application innovante que j'ai développée, permettant aux utilisateurs de présenter leur Resume professionnel et leurs liens de réseaux sociaux en un seul endroit. Cette application aide les utilisateurs à gérer efficacement leur identité numérique, ce qui en fait un outil idéal pour les chercheurs d'emploi ou toute personne souhaitant améliorer sa visibilité et son influence dans le monde numérique.",
                 "technologies": [
                     {
@@ -300,8 +300,8 @@
                 "title": "Compresseur d'Images",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "Un outil de compression d'images puissant et sécurisé basé sur le navigateur. Il permet aux utilisateurs de compresser un nombre illimité d'images JPG, PNG et WebP jusqu'à 90 % sans perte de qualité. Les fonctionnalités incluent la compression en masse, la génération de PDF, une interface glisser-déposer et une confidentialité totale car tout le traitement s'effectue localement.",
                 "technologies": [
                     {
@@ -326,8 +326,8 @@
                 "title": "App de Gestion des QR Codes",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
                 "description": "Une application de gestion des QR codes permettant de créer des QR codes avec des logos personnalisés, de lire des QR codes à partir d’images et de scanner des QR codes via la caméra pour afficher instantanément les données. Dispose d’un design attrayant et réactif.",
                 "technologies": [
                     {
@@ -353,8 +353,8 @@
                 "title": "App de shopping",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
                 "description": "Une application offrant une expérience de shopping fluide, facilitant la navigation des utilisateurs parmi les produits et l’ajout d’articles au panier. L’application se distingue par un design moderne et innovant, enrichissant l’expérience utilisateur avec une réactivité instantanée et des éléments interactifs, rendant ainsi le shopping plus agréable.",
                 "technologies": [
                     {

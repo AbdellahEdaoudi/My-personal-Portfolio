@@ -28,9 +28,9 @@
         "title": "Over mij",
         "subtitle": "Introductie",
         "experience": "Ervaring",
-        "experienceDetail": "jaar werkervaring",
+        "experienceDetail": "jaar",
         "completed": "Voltooid",
-        "completedDetail": "+22 Projecten",
+        "completedDetail": "Projecten",
         "support": "Ondersteuning",
         "supportDetail": "24/7 Online",
         "description": "Ik heb uitgebreide ervaring in het omzetten van ideeën in innovatieve, veilige en effectieve applicaties. Mijn focus combineert het verbeteren van de gebruikerservaring en het creëren van aantrekkelijke interfaces met het waarborgen van robuuste beveiliging en hoge prestaties.",
@@ -81,8 +81,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com/nl",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
                 "description": "Een uitgebreid SaaS-platform waarmee gebruikers moeiteloos professionele portfolio's kunnen maken. Het biedt meertalige ondersteuning, integratie van aangepaste domeinen, dynamische themaselectie, realtime CV-generatie en een intuïtief beheerdersdashboard voor het beheren van inhoud, abonnementen en analyses.",
                 "technologies": [
                     {
@@ -123,8 +123,8 @@
                 "title": "Hotelreserveringssysteem",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
                 "description": "Het hotelmanagementsysteem biedt een uitgebreide oplossing voor het beheren van kamerboekingen en betalingen. Het stelt gebruikers in staat eenvoudig kamers te boeken en een elektronisch ticket ter bevestiging te ontvangen. Het systeem bevat een dashboard voor het beheren van boekingen, betalingen en klantreacties via e-mail.",
                 "technologies": [
                     {
@@ -170,8 +170,8 @@
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
                 "description": "Veilig Real-time Chat Systeem is een hoogwaardige instant messaging-applicatie met geavanceerde beveiliging. Het maakt gebruik van Socket.io voor realtime communicatie en implementeert End-to-End Encryption (E2EE) om berichtprivacy te garanderen. Het bevat ook een robuust authenticatiesysteem met JWT en wachtwoord-hashing met Bcrypt, wat de bescherming van gebruikersgegevens volgens de hoogste standaarden waarborgt.",
                 "technologies": [
                     {
@@ -218,8 +218,8 @@
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
                 "description": "Een robuust en schaalbaar back-endsysteem voor een e-commerceplatform. Het systeem verwerkt diverse functies zoals gebruikersbeheer, organisatie van productinventaris, orderverwerking, betalingsafhandeling (via contant geld of kaart), toevoegen van coupons, beoordelingen, categorie- en merkbeheer, leveranciersbeheer en belastingregelgeving.",
                 "technologies": [
                     {
@@ -260,8 +260,8 @@
                 "title": "CV Platform",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "Een innovatieve applicatie die ik heb ontwikkeld, waarmee gebruikers hun professionele CV en links naar sociale media op één plek kunnen presenteren. Deze app helpt gebruikers hun digitale identiteit effectief te beheren, waardoor het een ideaal hulpmiddel is voor werkzoekenden of iedereen die zijn online aanwezigheid en digitale invloed wil vergroten.",
                 "technologies": [
                     {
@@ -298,8 +298,8 @@
                 "title": "Afbeelding Compressor",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "Een krachtige en veilige browsergebaseerde tool voor beeldcompressie. Hiermee kunnen gebruikers onbeperkt JPG-, PNG- en WebP-afbeeldingen tot 90% comprimeren zonder kwaliteitsverlies. Functies omvatten bulkcompressie, PDF-generatie, drag-and-drop-interface en volledige privacy omdat alle verwerking lokaal in de browser plaatsvindt.",
                 "technologies": [
                     {
@@ -324,8 +324,8 @@
                 "title": "QR-code Beheer App",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
                 "description": "Een app voor het beheren van QR-codes, waarmee u QR-codes met aangepaste logo's kunt maken, QR-codes van afbeeldingen kunt lezen en QR-codes via de camera kunt scannen om gegevens direct weer te geven. Heeft een aantrekkelijk en responsief ontwerp.",
                 "technologies": [
                     {
@@ -350,8 +350,8 @@
                 "title": "Winkel App",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
                 "description": "Een app die een naadloze winkelervaring biedt, waardoor gebruikers eenvoudig door producten kunnen bladeren en items aan hun winkelwagen kunnen toevoegen. De app heeft een modern en innovatief ontwerp dat de gebruikerservaring verbetert, met directe responsiviteit en interactieve elementen die winkelen leuker maken.",
                 "technologies": [
                     {

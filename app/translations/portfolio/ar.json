@@ -28,9 +28,9 @@
         "title": "نبذة عني",
         "subtitle": "نبذة تعريفية",
         "experience": "خبرة",
-        "experienceDetail": "سنة من العمل",
+        "experienceDetail": "سنوات",
         "completed": "منجز",
-        "completedDetail": "+22 مشروع",
+        "completedDetail": "مشروع",
         "support": "دعم",
         "supportDetail": "متصل 24/7",
         "description": "أمتلك خبرة واسعة في تحويل الأفكار إلى تطبيقات مبتكرة، آمنة، وفعالة. ينصب تركيزي على المزج بين تحسين تجربة المستخدم وتصميم واجهات جذابة، وبين ضمان أمان قوي وأداء عالي للتطبيقات.",
@@ -81,8 +81,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
                 "description": "منصة SaaS شاملة تمكن المستخدمين من بناء محافظ احترافية دون عناء. تتميز بدعم متعدد اللغات، وتكامل النطاق المخصص، واختيار السمات الديناميكية، وإنشاء السيرة الذاتية في الوقت الفعلي، ولوحة تحكم إدارية بديهية لإدارة المحتوى والاشتراكات والتحليلات.",
                 "technologies": [
                     {
@@ -123,8 +123,8 @@
                 "title": "نظام حجز الفنادق",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
                 "description": "يوفر نظام إدارة الفنادق حلاً شاملاً لإدارة حجوزات الغرف والمدفوعات. يسمح للمستخدمين بحجز الغرف بسهولة وتلقي تذكرة إلكترونية للتأكيد. يتضمن النظام لوحة تحكم لإدارة الحجوزات والمدفوعات وردود العملاء عبر البريد الإلكتروني.",
                 "technologies": [
                     {
@@ -170,8 +170,8 @@
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
                 "description": "نظام دردشة آمن فوري هو تطبيق دردشة فورية يتميز بالأداء العالي ومستوى أمان متقدم. يعتمد على Socket.io للتواصل اللحظي بين المستخدمين، ويطبق تشفير طرف إلى طرف (E2EE) لضمان سرية الرسائل وعدم تمكن أي جهة خارجية من الاطلاع عليها. كما يحتوي على نظام مصادقة قوي باستخدام JWT وتشفير كلمات المرور بـ Bcrypt، ليضمن حماية بيانات المستخدمين بأعلى المعايير.",
                 "technologies": [
                     {
@@ -218,8 +218,8 @@
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
                 "description": "نظام خلفي قوي وقابل للتوسع لمنصة التجارة الإلكترونية. يتعامل النظام مع وظائف مختلفة مثل إدارة المستخدمين، وتنظيم مخزون المنتجات، ومعالجة الطلبات، والتعامل مع المدفوعات (سواء نقداً أو بالبطاقة)، وإضافة القسائم، والمراجعات، وإدارة الفئات والعلامات التجارية، وإدارة الموردين، والتنظيم الضريبي.",
                 "technologies": [
                     {
@@ -260,8 +260,8 @@
                 "title": "منصة السيرة الذاتية",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "تطبيق مبتكر قمت بتطويره، يسمح للمستخدمين بعرض سيرتهم الذاتية المهنية وروابط وسائل التواصل الاجتماعي في مكان واحد. يساعد هذا التطبيق المستخدمين على إدارة هويتهم الرقمية بفعالية، مما يجعله أداة مثالية للباحثين عن عمل أو أي شخص يتطلع إلى تعزيز تواجده عبر الإنترنت وتأثيره الرقمي.",
                 "technologies": [
                     {
@@ -298,8 +298,8 @@
                 "title": "ضاغط الصور",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "أداة قوية وآمنة لضغط الصور تعتمد على المتصفح. تتيح للمستخدمين ضغط عدد غير محدود من صور JPG و PNG و WebP بنسبة تصل إلى 90٪ دون فقدان الجودة. تشمل الميزات الضغط الجماعي، وإنشاء PDF، وواجهة السحب والإفلات، والخصوصية الكاملة حيث تتم جميع المعالجة محلياً في المتصفح.",
                 "technologies": [
                     {
@@ -324,8 +324,8 @@
                 "title": "تطبيق إدارة رمز QR",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
                 "description": "تطبيق لإدارة رموز QR يسمح لك بإنشاء رموز QR مع شعارات مخصصة، وقراءة رموز QR من الصور، ومسح رموز QR عبر الكاميرا لعرض البيانات على الفور. يتميز بتصميم جذاب وسريع الاستجابة.",
                 "technologies": [
                     {
@@ -350,8 +350,8 @@
                 "title": "تطبيق التسوق",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
                 "description": "تطبيق يوفر تجربة تسوق سلسة، مما يسهل على المستخدمين تصفح المنتجات وإضافة العناصر إلى عربة التسوق الخاصة بهم. يتميز التطبيق بتصميم حديث ومبتكر يعزز تجربة المستخدم، مع استجابة فورية وعناصر تفاعلية تجعل التسوق أكثر متعة.",
                 "technologies": [
                     {
