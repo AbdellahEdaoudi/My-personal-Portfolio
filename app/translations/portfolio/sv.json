@@ -28,9 +28,9 @@
         "title": "Om mig",
         "subtitle": "Introduktion",
         "experience": "Erfarenhet",
-        "experienceDetail": "år i branschen",
+        "experienceDetail": "År",
         "completed": "Slutförda",
-        "completedDetail": "+22 Projekt",
+        "completedDetail": "Projekt",
         "support": "Support",
         "supportDetail": "Online 24/7",
         "description": "Jag har omfattande erfarenhet av att omvandla idéer till innovativa, säkra och effektiva applikationer. Mitt fokus kombinerar att förbättra användarupplevelsen och skapa attraktiva gränssnitt med att säkerställa robust säkerhet och hög prestanda.",
@@ -81,8 +81,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com/sv",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
                 "description": "En omfattande SaaS-plattform som ger användare möjlighet att bygga professionella portföljer utan ansträngning. Den har flerspråksstöd, anpassad domänintegration, dynamiskt temaval, realtidsgenerering av CV och en intuitiv administrationspanel för hantering av innehåll, prenumerationer och analys.",
                 "technologies": [
                     {
@@ -123,8 +123,8 @@
                 "title": "Hotellbokningssystem",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
                 "description": "Hotellhanteringssystemet erbjuder en komplett lösning för hantering av rumsbokningar och betalningar. Det låter användare enkelt boka rum och ta emot en elektronisk bekräftelsebiljett. Systemet inkluderar en instrumentpanel för hantering av bokningar, betalningar och kundsvar via e-post.",
                 "technologies": [
                     {
@@ -170,8 +170,8 @@
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
                 "description": "Säkert Realtids Chattsystem är en högpresterande snabbmeddelandeapplikation med avancerad säkerhet. Den använder Socket.io för realtidskommunikation och implementerar End-to-End-kryptering (E2EE) för att säkerställa meddelandesekretess. Den inkluderar också ett robust autentiseringssystem med JWT och lösenordshashning med Bcrypt, vilket säkerställer skydd av användardata enligt högsta standard.",
                 "technologies": [
                     {
@@ -218,8 +218,8 @@
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
                 "description": "Ett robust och skalbart backend-system för en e-handelsplattform. Systemet hanterar olika funktioner såsom användarhantering, produktlagerorganisation, orderbehandling, betalningshantering (kontant eller kort), tillägg av kuponger, recensioner, kategorier och varumärkeshantering, leverantörshantering och skattereglering.",
                 "technologies": [
                     {
@@ -260,8 +260,8 @@
                 "title": "CV-plattform",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "En innovativ applikation jag utvecklat som låter användare visa upp sina professionella CV och länkar till sociala medier på ett ställe. Denna app hjälper användare att hantera sin digitala identitet effektivt, vilket gör den till ett idealiskt verktyg för arbetssökande eller alla som vill förbättra sin närvaro och sitt digitala inflytande online.",
                 "technologies": [
                     {
@@ -298,8 +298,8 @@
                 "title": "Bildkomprimerare",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "Ett kraftfullt och säkert webbläsarbaserat verktyg för bildkomprimering. Det låter användare komprimera obegränsat antal JPG-, PNG- och WebP-bilder med upp till 90% utan kvalitetsförlust. Funktionerna inkluderar masskomprimering, PDF-generering, dra-och-släpp-gränssnitt och fullständig integritet eftersom all behandling sker lokalt i webbläsaren.",
                 "technologies": [
                     {
@@ -324,8 +324,8 @@
                 "title": "QR-kodhanteringsapp",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
                 "description": "En QR-kodhanteringsapp som låter dig skapa QR-koder med anpassade logotyper, läsa QR-koder från bilder och skanna QR-koder via kameran för att visa data direkt. Har en attraktiv och responsiv design.",
                 "technologies": [
                     {
@@ -351,8 +351,8 @@
                 "title": "Shoppingapp",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
                 "description": "En app som erbjuder en smidig shoppingupplevelse och gör det enkelt för användare att bläddra bland produkter och lägga till varor i sin kundvagn. Appen har en modern och innovativ design som förbättrar användarupplevelsen, med omedelbar respons och interaktiva element som gör shoppingen roligare.",
                 "technologies": [
                     {

@@ -28,9 +28,9 @@
         "title": "O mnie",
         "subtitle": "Wprowadzenie",
         "experience": "Doświadczenie",
-        "experienceDetail": "lata pracy",
+        "experienceDetail": "lata",
         "completed": "Ukończono",
-        "completedDetail": "+22 Projektów",
+        "completedDetail": "Projektów",
         "support": "Wsparcie",
         "supportDetail": "Online 24/7",
         "description": "Mam bogate doświadczenie w przekształcaniu pomysłów w innowacyjne, bezpieczne i skuteczne aplikacje. Moja praca łączy ulepszanie doświadczenia użytkownika i tworzenie atrakcyjnych interfejsów z zapewnieniem solidnego bezpieczeństwa i wysokiej wydajności.",
@@ -80,8 +80,8 @@
                 "title": "System Rezerwacji Hoteli",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
                 "description": "System zarządzania hotelem zapewnia kompleksowe rozwiązanie do zarządzania rezerwacjami pokoi i płatnościami. Pozwala użytkownikom na łatwą rezerwację pokoi i otrzymywanie biletu elektronicznego w celu potwierdzenia. System zawiera pulpit nawigacyjny do zarządzania rezerwacjami, płatnościami i odpowiedziami klientów za pośrednictwem poczty elektronicznej.",
                 "technologies": [
                     {
@@ -127,8 +127,8 @@
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
                 "description": "Bezpieczny System Czatu w Czasie Rzeczywistym to wydajna aplikacja do przesyłania wiadomości błyskawicznych z zaawansowanymi funkcjami bezpieczeństwa. Wykorzystuje Socket.io do komunikacji w czasie rzeczywistym i wdraża szyfrowanie end-to-end (E2EE), aby zapewnić prywatność wiadomości. Zawiera również solidny system uwierzytelniania wykorzystujący JWT i haszowanie haseł za pomocą Bcrypt, gwarantując ochronę danych użytkowników na najwyższym poziomie。",
                 "technologies": [
                     {
@@ -174,8 +174,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com/pl",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "Kompleksowa platforma SaaS umożliwiająca użytkownikom łatwe tworzenie profesjonalnych portfolio. Posiada obsługę wielu języków, integrację niestandardowych domen, dynamiczny wybór motywów, generowanie CV w czasie rzeczywistym oraz intuicyjny panel administracyjny do zarządzania treścią, subskrypcjami i analizami.",
                 "technologies": [
                     {
@@ -218,8 +218,8 @@
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
                 "description": "Solidny i skalowalny system zaplecza dla platformy e-commerce. System obsługuje różne funkcje, takie jak zarządzanie użytkownikami, organizacja zapasów produktów, przetwarzanie zamówień, obsługa płatności (gotówką lub kartą), dodawanie kuponów, recenzje, zarządzanie kategoriami i markami, zarządzanie dostawcami i regulacje podatkowe.",
                 "technologies": [
                     {
@@ -260,8 +260,8 @@
                 "title": "Platforma CV",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "Innowacyjna aplikacja, którą opracowałem, umożliwiająca użytkownikom prezentację profesjonalnego CV i linków do mediów społecznościowych w jednym miejscu. Ta aplikacja pomaga użytkownikom skutecznie zarządzać swoją cyfrową tożsamością, dzięki czemu jest idealnym narzędziem dla osób poszukujących pracy lub każdego, kto chce zwiększyć swoją obecność w Internecie i wpływ cyfrowy.",
                 "technologies": [
                     {
@@ -298,8 +298,8 @@
                 "title": "Kompresor Obrazów",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "Potężne i bezpieczne narzędzie do kompresji obrazów oparte na przeglądarce. Pozwala użytkownikom kompresować nieograniczoną liczbę obrazów JPG, PNG i WebP nawet o 90% bez utraty jakości. Funkcje obejmują kompresję masową, generowanie plików PDF, interfejs typu „przeciągnij i upuść” oraz pełną prywatność, ponieważ całe przetwarzanie odbywa się lokalnie w przeglądarce.",
                 "technologies": [
                     {
@@ -324,8 +324,8 @@
                 "title": "Aplikacja do Zarządzania Kodami QR",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
                 "description": "Aplikacja do zarządzania kodami QR, która pozwala tworzyć kody QR z niestandardowymi logo, odczytywać kody QR z obrazów i skanować kody QR za pomocą aparatu, aby natychmiast wyświetlać dane. Posiada atrakcyjny i responsywny wygląd.",
                 "technologies": [
                     {
@@ -350,8 +350,8 @@
                 "title": "Aplikacja Zakupowa",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
                 "description": "Aplikacja, która oferuje bezproblemowe zakupy, ułatwiając użytkownikom przeglądanie produktów i dodawanie przedmiotów do koszyka. Aplikacja charakteryzuje się nowoczesnym i innowacyjnym wyglądem, który poprawia wrażenia użytkownika, z natychmiastową reakcją i interaktywnymi elementami, które sprawiają, że zakupy są przyjemniejsze.",
                 "technologies": [
                     {

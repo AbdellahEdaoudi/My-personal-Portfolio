@@ -28,9 +28,9 @@
         "title": "Über mich",
         "subtitle": "Einführung",
         "experience": "Erfahrung",
-        "experienceDetail": "Jahre Arbeit",
+        "experienceDetail": "Jahre",
         "completed": "Abgeschlossen",
-        "completedDetail": "+22 Projekte",
+        "completedDetail": "Projekte",
         "support": "Unterstützung",
         "supportDetail": "Online 24/7",
         "description": "Ich verfüge über umfangreiche Erfahrung in der Umsetzung von Ideen in innovative, sichere und effektive Anwendungen. Mein Fokus liegt auf der Verbesserung der Benutzererfahrung und der Gestaltung attraktiver Schnittstellen bei gleichzeitiger Gewährleistung robuster Sicherheit und hoher Leistung.",
@@ -81,8 +81,8 @@
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com/de",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
                 "description": "Eine umfassende SaaS-Plattform, die es Benutzern ermöglicht, professionelle Portfolios mühelos zu erstellen. Sie bietet mehrsprachige Unterstützung, benutzerdefinierte Domain-Integration, dynamische Themenauswahl, Echtzeit-Lebenslauf-Generierung und ein intuitives Admin-Dashboard zur Verwaltung von Inhalten, Abonnements und Analysen.",
                 "technologies": [
                     {
@@ -123,8 +123,8 @@
                 "title": "Hotelreservierungssystem",
                 "image": "/Projects/HotelDash.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
                 "description": "Das Hotelmanagementsystem bietet eine umfassende Lösung für die Verwaltung von Zimmerbuchungen und Zahlungen. Es ermöglicht Benutzern, Zimmer einfach zu buchen und ein elektronisches Ticket zur Bestätigung zu erhalten. Das System umfasst ein Dashboard zur Verwaltung von Buchungen, Zahlungen und Kundenantworten per E-Mail.",
                 "technologies": [
                     {
@@ -171,8 +171,8 @@
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
                 "description": "Sicheres Echtzeit-Chat-System ist eine leistungsstarke Instant-Messaging-Anwendung mit fortschrittlicher Sicherheit. Sie nutzt Socket.io für die Echtzeitkommunikation und implementiert eine Ende-zu-Ende-Verschlüsselung (E2EE), um die Privatsphäre der Nachrichten zu gewährleisten. Außerdem verfügt sie über ein robustes Authentifizierungssystem mit JWT und Passwort-Hasching mit Bcrypt, das den Schutz der Benutzerdaten auf höchstem Niveau garantiert.",
                 "technologies": [
                     {
@@ -219,8 +219,8 @@
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
                 "description": "Ein robustes und skalierbares Back-End-System für eine E-Commerce-Plattform. Das System übernimmt verschiedene Funktionen wie Benutzerverwaltung, Organisation des Produktbestands, Auftragsabwicklung, Zahlungsabwicklung (entweder bar oder per Karte), Hinzufügen von Gutscheinen, Bewertungen, Kategorie- und Markenmanagement, Lieferantenmanagement und Steuerregulierung.",
                 "technologies": [
                     {
@@ -261,8 +261,8 @@
                 "title": "Lebenslauf-Plattform",
                 "image": "/Projects/Linkerfolio.png",
                 "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubUrls": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "Innovative Anwendung, die ich entwickelt habe und die es Benutzern ermöglicht, ihren professionellen Lebenslauf und ihre Social-Media-Links an einem Ort zu präsentieren. Diese App hilft Benutzern, ihre digitale Identität effektiv zu verwalten, was sie zu einem idealen Werkzeug für Arbeitssuchende oder jeden macht, der seine Online-Präsenz und seinen digitalen Einfluss verbessern möchte.",
                 "technologies": [
                     {
@@ -300,8 +300,8 @@
                 "title": "Bildkompressor",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubUrl": "",
-                "githubUrls": "",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
                 "description": "Ein leistungsstarkes und sicheres browserbasiertes Bildkomprimierungstool. Es ermöglicht Benutzern, unbegrenzt viele JPG-, PNG- und WebP-Bilder um bis zu 90 % ohne Qualitätsverlust zu komprimieren. Zu den Funktionen gehören Massenkomprimierung, PDF-Erstellung, Drag-and-Drop-Oberfläche und vollständige Privatsphäre, da die gesamte Verarbeitung lokal erfolgt.",
                 "technologies": [
                     {
@@ -326,8 +326,8 @@
                 "title": "QR-Code-Manager-App",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
                 "description": "Eine QR-Code-Management-App, mit der Sie QR-Codes mit benutzerdefinierten Logos erstellen, QR-Codes aus Bildern lesen und QR-Codes über die Kamera scannen können, um Daten sofort anzuzeigen. Verfügt über ein attraktives und reaktionsschnelles Design.",
                 "technologies": [
                     {
@@ -353,8 +353,8 @@
                 "title": "Shopping-App",
                 "image": "/Projects/EcomApp.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
-                "githubUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
-                "githubUrls": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
                 "description": "Eine App, die ein nahtloses Einkaufserlebnis bietet und es Benutzern erleichtert, Produkte zu durchsuchen und Artikel in ihren Warenkorb zu legen. Die App zeichnet sich durch ein modernes und innovatives Design aus, das die Benutzererfahrung mit sofortiger Reaktionsfähigkeit und interaktiven Elementen bereichert und das Einkaufen angenehmer macht.",
                 "technologies": [
                     {

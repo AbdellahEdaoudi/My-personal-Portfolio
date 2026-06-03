@@ -55,18 +55,18 @@ function Projects({ content }) {
                   </div>
                 ))}
               </div>
-              {/* githubUrl and Requirements */}
+              {/* github urls and Requirements */}
               <div className="flex flex-wrap justify-around items-center mt-3 gap-2 px-2">
-                {p.githubUrl && (
-                  <Link href={p.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
+                {p.githubFrontendUrl && (
+                  <Link href={p.githubFrontendUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
                     <Image src={"/icons/github.svg"} alt={"Github Logo"} width={20} height={20} className="mr-1 rounded-full" />
                     <span className="text-sm">
                       {p.type === "backend" ? githubView : frontendLabel}
                     </span>
                   </Link>
                 )}
-                {p.githubUrls && (
-                  <Link href={p.githubUrls} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
+                {p.githubBackendUrl && (
+                  <Link href={p.githubBackendUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2 rounded-md border border-gray-300 hover:border-blue-500 shadow-sm hover:shadow-md">
                     <Image src={"/icons/github.svg"} alt={"Github Logo"} width={20} height={20} className="mr-1 rounded-full" />
                     <span className="text-sm">{backendLabel}</span>
                   </Link>
