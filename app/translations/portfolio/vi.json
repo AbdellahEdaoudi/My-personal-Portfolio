@@ -90,6 +90,14 @@
                         "logo": "/Skills/Nextjs.jpg"
                     },
                     {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
                         "name": "Node.js",
                         "logo": "/Skills/Nodejs.png"
                     },
@@ -102,10 +110,6 @@
                         "logo": "/Skills/Mongodb.png"
                     },
                     {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
                         "name": "PayPal",
                         "logo": "/Skills/paypal.png"
                     },
@@ -116,8 +120,13 @@
                     {
                         "name": "Git",
                         "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
                     }
-                ]
+                ],
+                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
             },
             {
                 "title": "Hệ thống đặt phòng khách sạn",

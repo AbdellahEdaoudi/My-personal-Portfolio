@@ -149,6 +149,7 @@ export default function Header({ content, lang }) {
                                 >
                                     {languages.map((lang) => (
                                         <Link
+                                            prefetch={false}
                                             href={LanguageChange(lang.code)}
                                             key={lang.code}
                                             onClick={() => {
@@ -193,6 +194,7 @@ export default function Header({ content, lang }) {
                                 >
                                     {languages.map((lang) => (
                                         <Link
+                                            prefetch={false}
                                             href={LanguageChange(lang.code)}
                                             key={lang.code}
                                             onClick={() => {
