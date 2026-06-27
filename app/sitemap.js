@@ -7,8 +7,8 @@ export default function sitemap() {
 
     const DOCUMENTS = {
     cv: {
-        en: "/cv/abdellah-edaoudi-cv-en.pdf",
-        fr: "/cv/abdellah-edaoudi-cv-fr.pdf",
+        en: "/cv/cv-abdellah-edaoudi-en.pdf",
+        fr: "/cv/cv-abdellah-edaoudi-fr.pdf",
     },
     coverLetter: {
         en: "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf",
