@@ -10,7 +10,7 @@ import Cookies from 'js-cookie';
 
 export const apiRequest = async (config) => {
   try {
-    const token = Cookies.get("token");
+    const token = Cookies.get("accessToken");
     if (token) {
       config.headers = {
         ...config.headers,
@@ -26,7 +26,7 @@ export const apiRequest = async (config) => {
           withCredentials: true,
         });
         const newToken = refreshResponse.data.accessToken;
-        Cookies.set("token", newToken);
+        Cookies.set("accessToken", newToken);
         config.headers = {
           ...config.headers,
           Authorization: `Bearer ${newToken}`,
