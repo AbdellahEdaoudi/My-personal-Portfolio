@@ -52,6 +52,9 @@ export const metadata = {
       'ko': '/ko/About',
       'id': '/id/About',
       'pl': '/pl/About',
+      'sv': '/sv/About',
+      'vi': '/vi/About',
+      'fa': '/fa/About',
     },
   },
 };
