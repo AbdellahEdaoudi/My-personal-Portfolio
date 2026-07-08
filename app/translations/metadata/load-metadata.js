@@ -18,6 +18,7 @@ const metadataFiles = {
     id: () => import('./id.json').then((module) => module.default),
     sv: () => import('./sv.json').then((module) => module.default),
     vi: () => import('./vi.json').then((module) => module.default),
+    fa: () => import('./fa.json').then((module) => module.default),
 }
 
 export const getMetadata = async (locale) => {

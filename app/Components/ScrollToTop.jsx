@@ -10,7 +10,7 @@ export default function ScrollToTop() {
     const [scrollProgress, setScrollProgress] = useState(0);
     const [t, setT] = useState("Back to Top");
 
-    const isAr = lang === 'ar';
+    const isAr = lang === 'ar' || lang === 'fa';
 
     useEffect(() => {
         const fetchTranslation = async () => {

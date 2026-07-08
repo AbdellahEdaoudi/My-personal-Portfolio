@@ -51,6 +51,9 @@ export const metadata = {
       'ko': '/ko/Education',
       'id': '/id/Education',
       'pl': '/pl/Education',
+      'sv': '/sv/Education',
+      'vi': '/vi/Education',
+      'fa': '/fa/Education',
     },
   },
 };

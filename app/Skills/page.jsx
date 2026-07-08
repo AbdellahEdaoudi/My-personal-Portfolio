@@ -49,6 +49,9 @@ export const metadata = {
       'ko': '/ko/Skills',
       'id': '/id/Skills',
       'pl': '/pl/Skills',
+      'sv': '/sv/Skills',
+      'vi': '/vi/Skills',
+      'fa': '/fa/Skills',
     },
   },
 };

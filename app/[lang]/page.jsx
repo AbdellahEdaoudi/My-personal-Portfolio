@@ -32,6 +32,7 @@ export async function generateStaticParams() {
         { lang: 'pl' },
         { lang: 'sv' },
         { lang: 'vi' },
+        { lang: 'fa' },
     ];
 }
 
@@ -88,6 +89,7 @@ export async function generateMetadata({ params }) {
                 'pl': '/pl',
                 'sv': '/sv',
                 'vi': '/vi',
+                'fa': '/fa',
                 'ar': '/ar',
             },
         },

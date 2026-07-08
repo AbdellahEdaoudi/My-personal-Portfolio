@@ -52,6 +52,9 @@ export const metadata = {
       'ko': '/ko/Experience',
       'id': '/id/Experience',
       'pl': '/pl/Experience',
+      'sv': '/sv/Experience',
+      'vi': '/vi/Experience',
+      'fa': '/fa/Experience',
     },
   },
 };

@@ -59,6 +59,7 @@ export async function generateMetadata({ params }) {
                 'pl': '/pl/Projects',
                 'sv': '/sv/Projects',
                 'vi': '/vi/Projects',
+                'fa': '/fa/Projects',
             },
         },
     }

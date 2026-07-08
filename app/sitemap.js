@@ -1,5 +1,5 @@
 const BASE_URL = 'https://abdellah-edaoudi.vercel.app';
-const LANGUAGES = ['ar', 'es', 'fr', 'ru', 'ja', 'zh', 'de', 'nl', 'pt', 'it', 'hi', 'tr', 'ko', 'en', 'id', 'pl', 'sv', 'vi'];
+const LANGUAGES = ['ar', 'es', 'fr', 'ru', 'ja', 'zh', 'de', 'nl', 'pt', 'it', 'hi', 'tr', 'ko', 'en', 'id', 'pl', 'sv', 'vi', 'fa'];
 const ROUTES = ['', 'About', 'Services', 'Skills', 'Projects', 'Experience', 'Education', 'Contact'];
 
 export default function sitemap() {

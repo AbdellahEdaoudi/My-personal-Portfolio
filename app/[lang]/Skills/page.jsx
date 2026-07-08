@@ -59,6 +59,7 @@ export async function generateMetadata({ params }) {
                 'pl': '/pl/Skills',
                 'sv': '/sv/Skills',
                 'vi': '/vi/Skills',
+                'fa': '/fa/Skills',
             },
         },
     }

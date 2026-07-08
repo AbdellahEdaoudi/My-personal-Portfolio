@@ -18,13 +18,13 @@ function About({ content, lang }) {
           {/* Image Section - About Page Premium Version */}
           <div className="relative group animate-float">
             <div className="absolute -top-6 -left-6 text-blue-600/10 text-[6rem] font-serif transition-all duration-700 group-hover:-translate-x-3 group-hover:-translate-y-3 select-none leading-none">
-              {lang === 'ar' ? '}' : '{'}
+              {lang === 'ar' || lang === 'fa' ? '}' : '{'}
             </div>
             <div className="absolute -bottom-6 -right-6 text-purple-600/10 text-[6rem] font-serif transition-all duration-700 group-hover:translate-x-3 group-hover:translate-y-3 select-none leading-none">
-              {lang === 'ar' ? '{' : '}'}
+              {lang === 'ar' || lang === 'fa' ? '{' : '}'}
             </div>
             <div className="absolute -inset-6 bg-gradient-to-br from-blue-100/30 via-purple-50/30 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-            <div className={`absolute top-4 ${lang === 'ar' ? 'left-4' : 'right-4'} w-full h-full border border-gray-100 rounded-[2.5rem] transition-transform duration-500 ${lang === 'ar' ? 'group-hover:translate-x-2' : 'group-hover:-translate-x-2'} group-hover:translate-y-2`}></div>
+            <div className={`absolute top-4 ${lang === 'ar' || lang === 'fa' ? 'left-4' : 'right-4'} w-full h-full border border-gray-100 rounded-[2.5rem] transition-transform duration-500 ${lang === 'ar' || lang === 'fa' ? 'group-hover:translate-x-2' : 'group-hover:-translate-x-2'} group-hover:translate-y-2`}></div>
 
             <div className="relative z-10 p-[1px] bg-gradient-to-bl from-gray-200 via-white to-gray-100 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
               <div className="relative bg-white p-2 rounded-[2.5rem] overflow-hidden">
