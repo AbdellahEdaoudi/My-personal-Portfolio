@@ -57,6 +57,7 @@ export async function generateMetadata({ params }) {
                 'pl': '/pl/Contact',
                 'sv': '/sv/Contact',
                 'vi': '/vi/Contact',
+                'fa': '/fa/Contact',
             },
         },
     }

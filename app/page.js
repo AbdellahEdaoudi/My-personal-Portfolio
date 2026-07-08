@@ -32,6 +32,7 @@ export const metadata = {
       'pl': '/pl',
       'sv': '/sv',
       'vi': '/vi',
+      'fa': '/fa',
     },
   },
 }

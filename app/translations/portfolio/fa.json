@@ -1,0 +1,603 @@
+{
+    "header": {
+        "home": "خانه",
+        "about": "درباره من",
+        "skills": "مهارت‌ها",
+        "projects": "پروژه‌ها",
+        "education": "تحصیلات",
+        "experience": "تجربه",
+        "contact": "تماس",
+        "admin": "مدیر",
+        "developer": "توسعه‌دهنده",
+        "fullStack": "فول‌استک",
+        "mobileMenu": {
+            "navigation": "ناوبری",
+            "explore": "بخش‌ها را کاوش کنید",
+            "history": "سابقه",
+            "learning": "یادگیری"
+        },
+        "services": "خدمات"
+    },
+    "home": {
+        "greeting": "سلام، من عبدالله داوودی (Abdellah Edaoudi) هستم",
+        "role": "🔷 توسعه‌دهنده فول‌استک 🔷",
+        "description": "من در توسعه برنامه‌های وب کامل (Full-Stack) و ایمن با استفاده از پشته MERN و فریم‌ورک‌های پیشرفته‌ای مانند Next.js و NestJS تخصص دارم. تمرکز من بر ارائه راهکارهای مقیاس‌پذیر، با کارایی بالا، کد تمیز و تجربه کاربری عالی است.",
+        "portfolio": "نمونه‌کارها"
+    },
+    "about": {
+        "title": "درباره من",
+        "subtitle": "معرفی",
+        "experience": "تجربه",
+        "experienceDetail": "سال",
+        "completed": "تکمیل شده",
+        "completedDetail": "پروژه",
+        "support": "پشتیبانی",
+        "supportDetail": "آنلاین ۲۴/۷",
+        "description": "من تجربه گسترده‌ای در تبدیل ایده‌ها به برنامه‌های نوآورانه، ایمن و کارآمد دارم. تمرکز من بر ترکیب بهبود تجربه کاربری و طراحی رابط جذاب با تضمین امنیت قوی و عملکرد بالا برای برنامه‌هاست.",
+        "downloadCv": "رزومه (CV)",
+        "Cv": "/cv/cv-abdellah-edaoudi-en.pdf",
+        "downloadCoverLetter": "انگیزه‌نامه",
+        "coverLetter": "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf"
+    },
+    "skills": {
+        "title": "مهارت‌ها",
+        "subtitle": "سطح فنی",
+        "frontendTitle": "فناوری‌های فرانت‌اند",
+        "backendTitle": "فناوری‌های بک‌اند",
+        "databaseTitle": "مدیریت پایگاه داده",
+        "authTitle": "احراز هویت و امنیت",
+        "paymentsTitle": "پرداخت و یکپارچه‌سازی",
+        "toolsTitle": "دواپس و ابزارها (DevOps)",
+        "otherTitle": "سایر",
+        "softSkillsTitle": "مهارت‌های نرم",
+        "softSkills": [
+            {
+                "name": "حل مسئله",
+                "image": "/Skills/Problem Solving.png"
+            },
+            {
+                "name": "کار تیمی",
+                "image": "/Skills/Teamwork.jpg"
+            },
+            {
+                "name": "ارتباطات",
+                "image": "/Skills/Communication.png"
+            },
+            {
+                "name": "سازگاری",
+                "image": "/Skills/Adaptability.png"
+            }
+        ]
+    },
+    "projects": {
+        "title": "پروژه‌ها",
+        "subtitle": "آخرین کارها",
+        "liveDemo": "پیش‌نمایش",
+        "readMore": "بیشتر بخوانید",
+        "showLess": "نمایش کمتر",
+        "items": [
+            {
+                "title": "DGT Portfolio Builder",
+                "type": "fullstack",
+                "image": "/Projects/dgtportfolio.png",
+                "websiteUrl": "https://dgtportfolio.com",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "description": "یک پلتفرم SaaS جامع که به کاربران امکان می‌دهد به راحتی رزومه و نمونه‌کارهای حرفه‌ای بسازند. از ویژگی‌های آن می‌توان به پشتیبانی چندزبانه، یکپارچه‌سازی دامنه سفارشی، انتخاب تم پویا، تولید رزومه به صورت بلادرنگ و داشبورد مدیریتی بصری برای مدیریت محتوا، اشتراک‌ها و آمار اشاره کرد.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "PayPal",
+                        "logo": "/Skills/paypal.png"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    }
+                ],
+                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
+            },
+            {
+                "title": "سیستم رزرو هتل",
+                "image": "/Projects/HotelDash.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "سیستم مدیریت هتل یک راه‌حل جامع برای مدیریت رزرو اتاق‌ها و پرداخت‌ها ارائه می‌دهد. این سیستم به کاربران اجازه می‌دهد به راحتی اتاق‌ها را رزرو کرده و یک بلیط الکترونیکی تایید دریافت کنند. این سیستم شامل داشبوردی برای مدیریت رزروها، پرداخت‌ها و بازخوردهای ایمیلی مشتریان است.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "سیستم چت امن و بلادرنگ",
+                "type": "fullstack",
+                "image": "/Projects/edchatflow.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "یک برنامه چت بلادرنگ که عملکرد بالا و سطح پیشرفته‌ای از امنیت را ارائه می‌دهد. این سیستم به Socket.io برای ارتباطات بلادرنگ تکیه دارد و رمزگذاری سرتاسر (E2EE) را برای تضمین محرمانه بودن پیام‌ها پیاده‌سازی می‌کند. همچنین شامل یک سیستم احراز هویت قوی با استفاده از JWT و رمزگذاری Bcrypt است.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "بک‌اند فروشگاه اینترنتی",
+                "type": "backend",
+                "image": "/Projects/Ecom-backend.png",
+                "Requirements": "/Projects/Requirements.docx.pdf",
+                "websiteUrl": "/Projects/Requirements.docx.pdf",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
+                "githubBackendUrl": "",
+                "description": "یک سیستم بک‌اند قوی و مقیاس‌پذیر برای پلتفرم تجارت الکترونیک. این سیستم عملکردهای مختلفی مانند مدیریت کاربران، موجودی محصولات، پردازش سفارشات، تراکنش‌های پرداخت (نقدی و کارت)، کوپن‌ها، نقد و بررسی‌ها، مدیریت دسته‌بندی‌ها و برندها، مدیریت تامین‌کنندگان و مالیات را کنترل می‌کند.",
+                "technologies": [
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Typescript",
+                        "logo": "/Skills/typescript.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "پلتفرم رزومه",
+                "image": "/Projects/Linkerfolio.png",
+                "websiteUrl": "https://linkerfolio.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "description": "یک اپلیکیشن نوآورانه که توسعه داده‌ام و به کاربران امکان می‌دهد رزومه حرفه‌ای و پیوندهای شبکه‌های اجتماعی خود را در یک مکان نمایش دهند. این اپلیکیشن به کاربران کمک می‌کند هویت دیجیتال خود را مدیریت کنند و آن را به ابزاری ایده‌آل برای جویندگان کار تبدیل می‌کند.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "فشرده‌ساز تصویر",
+                "image": "/Projects/image-compressor.jpg",
+                "websiteUrl": "https://image-compressor-aed.vercel.app",
+                "githubFrontendUrl": "",
+                "githubBackendUrl": "",
+                "description": "یک ابزار قدرتمند و امن برای فشرده‌سازی تصویر در مرورگر. این ابزار به کاربران اجازه می‌دهد تا تصاویر JPG، PNG و WebP را تا ۹۰٪ بدون کاهش کیفیت فشرده کنند. پردازش به صورت محلی و کاملاً ایمن انجام می‌شود.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "مدیریت کد QR",
+                "image": "/Projects/EdQrcode.png",
+                "websiteUrl": "https://edqrcode.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
+                "githubBackendUrl": "",
+                "description": "اپلیکیشنی برای مدیریت کدهای QR که به شما امکان می‌دهد کدهای QR با لوگوهای سفارشی بسازید، آنها را از تصاویر بخوانید یا با دوربین اسکن کنید. این اپلیکیشن طراحی جذاب و واکنش‌گرایی دارد.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "اپلیکیشن خرید",
+                "image": "/Projects/EcomApp.png",
+                "websiteUrl": "https://edmarkeet.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
+                "githubBackendUrl": "",
+                "description": "اپلیکیشنی که تجربه خرید بی‌نظیری را ارائه می‌دهد. این اپلیکیشن با طراحی مدرن و عناصر تعاملی، مرور محصولات و افزودن به سبد خرید را لذت‌بخش و ساده می‌سازد.",
+                "technologies": [
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            }
+        ],
+        "requirementsLabel": "نیازمندی‌ها",
+        "githubView": "مشاهده در گیت‌هاب",
+        "frontendLabel": "فرانت‌اند (Frontend)",
+        "backendLabel": "بک‌اند (Backend)"
+    },
+    "experience": {
+        "title": "تجربه",
+        "subtitle": "سوابق حرفه‌ای من",
+        "items": [
+            {
+                "title": "توسعه‌دهنده فول‌استک (MERN)",
+                "company": "DGT PORTFOLIO",
+                "location": "دورکاری",
+                "startDate": "اکتبر ۲۰۲۵",
+                "endDate": "اکنون",
+                "duration": "۷+ ماه",
+                "type": "تمام وقت",
+                "workType": "دورکاری",
+                "achievementsLabel": "مسئولیت‌های اصلی:",
+                "responsibilities": [
+                    "توسعه یک پلتفرم SaaS با استفاده از Next.js برای ساخت پروفایل‌های حرفه‌ای و یکپارچه‌سازی با سیستم پرداخت PayPal.",
+                    "ساخت APIهای امن با استفاده از Node.js و JWT/NextAuth برای اطمینان از حفاظت قوی داده‌ها.",
+                    "بهینه‌سازی عملکرد و سئو (SEO) از طریق SSR برای ارائه یک تجربه کاربری سریع.",
+                    "مدیریت استقرار کامل روی Vercel با استفاده از Git/GitHub."
+                ]
+            },
+            {
+                "title": "توسعه حرفه‌ای",
+                "company": "وقفه کاری",
+                "location": "دورکاری",
+                "startDate": "نوامبر ۲۰۲۴",
+                "endDate": "ژانویه ۲۰۲۵",
+                "duration": "۳ ماه",
+                "type": "آموزش",
+                "workType": "دورکاری",
+                "achievementsLabel": "حوزه‌های تمرکز و پروژه‌ها:",
+                "responsibilities": [
+                    "تکمیل یک برنامه آموزشی فشرده در توسعه بک‌اند با NestJS (Node.js + TypeScript).",
+                    "مفاهیم پیشرفته: توسعه RESTful API، احراز هویت (JWT, OAuth, RBAC)، ارتباطات بلادرنگ با Socket.io، یکپارچه‌سازی GraphQL، چندزبانگی (i18n)، MongoDB و معماری میکروسرویس.",
+                    "توسعه یک سیستم کامل تجارت الکترونیک شامل: مدیریت کاربران، احراز هویت امن، مدیریت محصولات و پرداخت‌ها."
+                ]
+            },
+            {
+                "title": "کارآموز توسعه‌دهنده فول‌استک",
+                "company": "شهرهای مشاغل و مهارت‌ها (CMC)",
+                "location": "العیون، مراکش",
+                "startDate": "سپتامبر ۲۰۲۳",
+                "endDate": "ژوئن ۲۰۲۴",
+                "duration": "۱۰ ماه",
+                "type": "کارآموزی",
+                "workType": "حضوری",
+                "achievementsLabel": "دستاوردها:",
+                "responsibilities": [
+                    "طراحی رابط‌های کاربری تعاملی و جذاب.",
+                    "کسب تجربه در توسعه بک‌اند و مدیریت پایگاه داده.",
+                    "توسعه مهارت‌ها در ایجاد و نگهداری برنامه‌های وب پویا.",
+                    "به‌کارگیری متدولوژی Agile برای بهبود کارایی تیم.",
+                    "کسب تجربه در استفاده از Git و GitHub برای مدیریت پروژه.",
+                    "استفاده از SonarQube برای تجزیه و تحلیل کیفیت کد.",
+                    "استفاده از Docker برای ساده‌سازی مدیریت محیط توسعه.",
+                    "ارتقاء مهارت‌های نرم مانند ارتباطات و کار تیمی."
+                ]
+            },
+            {
+                "title": "توسعه‌دهنده فول‌استک MERN",
+                "company": "آکادمی منطقه‌ای آموزش و پرورش",
+                "location": "العیون، مراکش",
+                "startDate": "مارس ۲۰۲۴",
+                "endDate": "مارس ۲۰۲۴",
+                "duration": "۱ ماه",
+                "type": "کارآموزی",
+                "workType": "حضوری",
+                "achievementsLabel": "وظایف اصلی:",
+                "responsibilities": [
+                    "طراحی و توسعه یک برنامه مدیریت وظایف (Task Manager).",
+                    "پیاده‌سازی احراز هویت و مجوزدهی با استفاده از JWT.",
+                    "آزمایش API با استفاده از Postman برای اطمینان از عملکرد صحیح.",
+                    "بهبود تجربه کاربری از طریق طراحی رابط کاربری ساده.",
+                    "استقرار اپلیکیشن در Vercel و مدیریت کد با Git/GitHub."
+                ]
+            },
+            {
+                "title": "کارآموز توسعه دیجیتال",
+                "company": "شهرهای مشاغل و مهارت‌ها (CMC)",
+                "location": "العیون، مراکش",
+                "startDate": "نوامبر ۲۰۲۲",
+                "endDate": "ژوئن ۲۰۲۳",
+                "duration": "۸ ماه",
+                "type": "کارآموزی",
+                "workType": "حضوری",
+                "achievementsLabel": "یادگیری پایه‌ای:",
+                "responsibilities": [
+                    "کسب مبانی الگوریتم‌ها و برنامه‌نویسی شی‌گرا.",
+                    "طراحی و ساخت وب‌سایت‌های ثابت و پویا.",
+                    "کار با پایگاه‌های داده و انجام عملیات پایه‌ای.",
+                    "یادگیری JavaScript برای توسعه اپلیکیشن.",
+                    "آشنایی با اصول امنیت سیستم‌های اطلاعاتی.",
+                    "توسعه مهارت‌های رفتاری و اجتماعی برای محیط حرفه‌ای."
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": "تحصیلات",
+        "subtitle": "مسیر شخصی من",
+        "items": [
+            {
+                "institution": "<a href='https://cmc.ac.ma/fr'>شهرهای مشاغل و مهارت‌ها (CMC)</a>",
+                "degree": "دیپلم توسعه دیجیتال (گرایش توسعه وب فول‌استک)",
+                "startDate": "۲۰۲۲",
+                "endDate": "۲۰۲۴",
+                "location": "العیون، مراکش",
+                "imageUrl": "/Education/cmc.png"
+            },
+            {
+                "institution": "دبیرستان بابا احمد بن محمد یحظیه",
+                "degree": "دیپلم پایان دوره متوسطه (باکالوریا)، علوم فیزیک",
+                "startDate": "۲۰۲۱",
+                "endDate": "۲۰۲۲",
+                "location": "العیون، مراکش",
+                "imageUrl": "/Education/BabAhmedImage.jpg"
+            }
+        ]
+    },
+    "contact": {
+        "title": "تماس",
+        "subtitle": "در تماس باشید",
+        "subjectPlaceholder": "موضوع را وارد کنید",
+        "emailPlaceholder": "ایمیل خود را وارد کنید",
+        "messagePlaceholder": "پیام خود را وارد کنید",
+        "sendButton": "ارسال پیام",
+        "sendingButton": "در حال ارسال...",
+        "writeMe": "به من پیام دهید",
+        "email": "ایمیل",
+        "whatsapp": "واتس‌اپ",
+        "validationError": "لطفاً تمام فیلدها را پر کرده و یک ایمیل معتبر وارد کنید.",
+        "formError": "لطفاً خطاهای فرم را برطرف کنید.",
+        "subjectRequired": "موضوع الزامی است",
+        "emailRequired": "ایمیل الزامی است",
+        "emailInvalid": "لطفاً یک ایمیل معتبر وارد کنید",
+        "messageRequired": "پیام الزامی است",
+        "successMessage": "با موفقیت ارسال شد",
+        "errorMessage": "خطایی رخ داد. دوباره امتحان کنید."
+    },
+    "footer": {
+        "name": "عبدالله داوودی",
+        "tagline": "توسعه‌دهنده فول‌استک | ساخت برنامه‌های وب مدرن و ایمن",
+        "backToTop": "بازگشت به بالا",
+        "siteMapLabel": "نقشه سایت",
+        "links": [
+            {
+                "name": "درباره من",
+                "path": "/About"
+            },
+            {
+                "name": "مهارت‌ها",
+                "path": "/Skills"
+            },
+            {
+                "name": "پروژه‌ها",
+                "path": "/Projects"
+            },
+            {
+                "name": "تحصیلات",
+                "path": "/Education"
+            },
+            {
+                "name": "تجربه",
+                "path": "/Experience"
+            },
+            {
+                "name": "تماس با من",
+                "path": "/Contact"
+            }
+        ],
+        "connectLabel": "تماس با من",
+        "emailLabel": "ایمیل",
+        "whatsappLabel": "واتس‌اپ",
+        "locationLabel": "موقعیت",
+        "locationValue": "العیون، مراکش",
+        "copyright": "حق نشر",
+        "rights": "تمامی حقوق محفوظ است"
+    },
+    "scrollToTop": {
+        "backToTop": "بازگشت به بالا"
+    },
+    "services": {
+        "title": "خدمات",
+        "subtitle": "آنچه ارائه می‌دهم",
+        "items": [
+            {
+                "title": "توسعه وب و اپلیکیشن",
+                "description": "ساخت برنامه‌های وب و موبایل واکنش‌گرا، سریع و کاملاً تعاملی با استفاده از فناوری‌های مدرن.",
+                "icon": "Code"
+            },
+            {
+                "title": "راهکارهای SaaS",
+                "description": "طراحی و توسعه پلتفرم‌های نرم‌افزاری مقیاس‌پذیر به عنوان سرویس (SaaS) متناسب با نیازهای کسب‌وکار شما.",
+                "icon": "Cloud"
+            },
+            {
+                "title": "نرم‌افزار سفارشی",
+                "description": "ایجاد راه‌حل‌های نرم‌افزاری سفارشی برای خودکارسازی فرآیندها، حل مشکلات پیچیده و افزایش بهره‌وری.",
+                "icon": "Cpu"
+            },
+            {
+                "title": "مهندسی پایگاه داده",
+                "description": "طراحی طرح‌های پایگاه داده ایمن و کارآمد و مدیریت جریان داده‌ها برای برنامه‌های با عملکرد بالا.",
+                "icon": "Database"
+            },
+            {
+                "title": "امنیت اطلاعات",
+                "description": "پیاده‌سازی احراز هویت قوی، مجوزدهی و رمزگذاری داده‌ها برای تضمین امنیت برنامه‌های شما.",
+                "icon": "Shield"
+            },
+            {
+                "title": "طراحی رابط/تجربه کاربری (UI/UX)",
+                "description": "طراحی تجربیات کاربری بصری، جذاب و قابل دسترس با رابط‌های کاربری بی‌نقص (Pixel-Perfect).",
+                "icon": "Layout"
+            }
+        ]
+    }
+}

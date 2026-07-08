@@ -49,6 +49,9 @@ export const metadata = {
       'ko': '/ko/Projects',
       'id': '/id/Projects',
       'pl': '/pl/Projects',
+      'sv': '/sv/Projects',
+      'vi': '/vi/Projects',
+      'fa': '/fa/Projects',
     },
   },
 };

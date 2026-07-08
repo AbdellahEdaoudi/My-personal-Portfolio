@@ -50,10 +50,10 @@ function Home({ content, lang }) {
         <div className="relative group animate-float">
           {/* Decorative Brackets - Reverted to TL/BR but symbols flipped for AR */}
           <div className="absolute -top-6 -left-6 text-blue-600/10 text-[7rem] font-serif transition-all duration-700 group-hover:-translate-x-3 group-hover:-translate-y-3 select-none leading-none">
-            {lang === 'ar' ? '}' : '{'}
+            {lang === 'ar' || lang === 'fa' ? '}' : '{'}
           </div>
           <div className="absolute -bottom-6 -right-6 text-purple-600/10 text-[7rem] font-serif transition-all duration-700 group-hover:translate-x-3 group-hover:translate-y-3 select-none leading-none">
-            {lang === 'ar' ? '{' : '}'}
+            {lang === 'ar' || lang === 'fa' ? '{' : '}'}
           </div>
 
           <div className="absolute -inset-6 bg-gradient-to-br from-blue-100/30 via-purple-50/30 to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
@@ -82,9 +82,9 @@ function Home({ content, lang }) {
           </div>
 
           {/* Vertical Text - Left side for Arabic, rotated to look right */}
-          <div className={`absolute ${lang === 'ar' ? '-left-6' : '-right-6'} top-10 flex flex-col items-center gap-4 z-20`}>
+          <div className={`absolute ${lang === 'ar' || lang === 'fa' ? '-left-6' : '-right-6'} top-10 flex flex-col items-center gap-4 z-20`}>
             <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-blue-500"></div>
-            <span className={`[writing-mode:vertical-lr] ${lang === 'ar' ? 'rotate-180' : ''} text-[10px] uppercase tracking-[0.4em] font-bold text-blue-600 bg-white/80 backdrop-blur-sm p-2 rounded-full border border-blue-100 shadow-sm transition-transform duration-500 group-hover:-translate-y-2`}>
+            <span className={`[writing-mode:vertical-lr] ${lang === 'ar' || lang === 'fa' ? 'rotate-180' : ''} text-[10px] uppercase tracking-[0.4em] font-bold text-blue-600 bg-white/80 backdrop-blur-sm p-2 rounded-full border border-blue-100 shadow-sm transition-transform duration-500 group-hover:-translate-y-2`}>
               {content.portfolio || "Portfolio"} {new Date().getFullYear()}
             </span>
           </div>
