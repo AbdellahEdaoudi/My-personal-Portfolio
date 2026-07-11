@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { apiRequest } from "../../Components/apiRequest";
+import axios from "axios";
 import { AnimatePresence, motion } from "framer-motion";
 import { useToast } from "../../Components/Toast";
 import {
-    MessageSquare, Trash2, Search, Plus, MessageCircle, ChevronLeft, ChevronRight,
+    MessageSquare, Trash2, Search, Plus, ChevronLeft, ChevronRight,
     User, Mail, Clock, RefreshCcw
 } from "../../Components/Icons";
 import { useRouter } from "next/navigation";
@@ -30,18 +30,35 @@ export default function Messages() {
     const fetchContacts = async (silent = false) => {
         if (!silent) setIsLoading(true);
         try {
-            const response = await apiRequest({
-                method: "get",
-                url: '/api/contact',
-            });
-            setContacts(Array.isArray(response.data) ? response.data.reverse() : []);
-            if (silent) toast.success("Inbox updated.");
+            const response = await
+                axios.get(
+                    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`,
+                    { withCredentials: true }
+                );
+            const contactsData = response.data.contacts || response.data;
+            setContacts(Array.isArray(contactsData) ? contactsData.reverse() : []);
+            if (silent) toast.success("token refreshed");
         } catch (error) {
             console.error("Fetch error details:", error);
             if (error.response) {
-                if (error.response.status === 401) {
+                const errorCode = error.response.data?.code;
+                if (errorCode === "ACCESS_TOKEN_EXPIRED") {
+                    try {
+                        await axios.post(
+                            `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`, 
+                            {},
+                            {withCredentials: true}
+                        );
+                        fetchContacts(true);
+                    } catch(refreshError) {
+                        toast.error("Session expired. Please login again.");
+                        router.push("/Admin/Login");
+                    }
+                } else if (["TOKEN_MISSING", "ACCESS_TOKEN_INVALID"].includes(errorCode) || error.response.status === 401) {
                     toast.error("Unauthorized: Please login again.");
                     router.push("/Admin/Login");
+                } else if (error.response.status === 403) {
+                    toast.error("Forbidden: You don't have permission.");
                 } else {
                     toast.error(`Error: ${error.response.data?.message || "Failed to fetch messages."}`);
                 }
@@ -72,19 +89,41 @@ export default function Messages() {
         setDeleteModal(prev => ({ ...prev, isDeleting: true }));
         try {
             if (deleteModal.type === "all") {
-                await apiRequest({ method: "delete", url: '/api/contact' });
+                await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`, withCredentials: true });
                 setContacts([]);
                 toast.success("All messages deleted successfully.");
             } else if (deleteModal.type === "single" && deleteModal.id) {
-                await apiRequest({ method: "delete", url: `/api/contact/${deleteModal.id}` });
+                await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${deleteModal.id}`, withCredentials: true });
                 setContacts((prev) => prev.filter((contact) => contact._id !== deleteModal.id));
                 toast.success("Message deleted successfully.");
             }
         } catch (error) {
             console.error("Delete error details:", error);
             if (error.response) {
+                const errorCode = error.response.data?.code;
                 const errorMsg = error.response.data?.message || "Delete failed.";
-                if (error.response.status === 401) {
+                if (errorCode === "ACCESS_TOKEN_EXPIRED") {
+                    try {
+                        await axios.post(
+                            `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`, 
+                            {},
+                            {withCredentials: true}
+                        );
+                        // Retry delete action
+                        if (deleteModal.type === "all") {
+                            await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`, withCredentials: true });
+                            setContacts([]);
+                            toast.success("All messages deleted successfully.");
+                        } else if (deleteModal.type === "single" && deleteModal.id) {
+                            await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${deleteModal.id}`, withCredentials: true });
+                            setContacts((prev) => prev.filter((contact) => contact._id !== deleteModal.id));
+                            toast.success("Message deleted successfully.");
+                        }
+                    } catch(refreshError) {
+                        toast.error("Session expired. Please login again.");
+                        router.push("/Admin/Login");
+                    }
+                } else if (["TOKEN_MISSING", "ACCESS_TOKEN_INVALID"].includes(errorCode) || error.response.status === 401) {
                     toast.error("Unauthorized: Please login again.");
                     router.push("/Admin/Login");
                 } else if (error.response.status === 403) {
@@ -109,7 +148,7 @@ export default function Messages() {
                 email: "شهادة.عبدالله@portfolio.com",
                 message: "لا اله الا الله محمد رسول الله",
             };
-            const res = await apiRequest({ method: "post", url: '/api/contact', data: newMsg });
+            const res = await axios({ method: "post", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`, data: newMsg, withCredentials: true });
             setContacts((prev) => [...prev, res.data]);
             toast.success("Added successfully.");
         } catch (error) {
