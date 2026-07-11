@@ -9,7 +9,7 @@ import {
 } from "../../Components/Icons";
 import { useRouter } from "next/navigation";
 
-export default function Messages() {
+export default function Messages({ isForbidden, setIsForbidden }) {
     const toast = useToast();
     const [contacts, setContacts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -18,12 +18,10 @@ export default function Messages() {
     const [expandedMessage, setExpandedMessage] = useState(null);
     const router = useRouter();
     const itemsPerPage = 6;
-
-    // Delete Modal State
     const [deleteModal, setDeleteModal] = useState({
         isOpen: false,
-        type: null, // "single" or "all"
-        id: null, // id for single delete
+        type: null,
+        id: null,
         isDeleting: false
     });
 
@@ -45,12 +43,12 @@ export default function Messages() {
                 if (errorCode === "ACCESS_TOKEN_EXPIRED") {
                     try {
                         await axios.post(
-                            `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`, 
+                            `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`,
                             {},
-                            {withCredentials: true}
+                            { withCredentials: true }
                         );
                         fetchContacts(true);
-                    } catch(refreshError) {
+                    } catch (refreshError) {
                         toast.error("Session expired. Please login again.");
                         router.push("/Admin/Login");
                     }
@@ -58,7 +56,9 @@ export default function Messages() {
                     toast.error("Unauthorized: Please login again.");
                     router.push("/Admin/Login");
                 } else if (error.response.status === 403) {
+                    setIsForbidden(true);
                     toast.error("Forbidden: You don't have permission.");
+                    router.push("/");
                 } else {
                     toast.error(`Error: ${error.response.data?.message || "Failed to fetch messages."}`);
                 }
@@ -105,9 +105,9 @@ export default function Messages() {
                 if (errorCode === "ACCESS_TOKEN_EXPIRED") {
                     try {
                         await axios.post(
-                            `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`, 
+                            `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`,
                             {},
-                            {withCredentials: true}
+                            { withCredentials: true }
                         );
                         // Retry delete action
                         if (deleteModal.type === "all") {
@@ -119,7 +119,7 @@ export default function Messages() {
                             setContacts((prev) => prev.filter((contact) => contact._id !== deleteModal.id));
                             toast.success("Message deleted successfully.");
                         }
-                    } catch(refreshError) {
+                    } catch (refreshError) {
                         toast.error("Session expired. Please login again.");
                         router.push("/Admin/Login");
                     }
@@ -127,7 +127,9 @@ export default function Messages() {
                     toast.error("Unauthorized: Please login again.");
                     router.push("/Admin/Login");
                 } else if (error.response.status === 403) {
+                    setIsForbidden(true);
                     toast.error("Forbidden: You don't have permission.");
+                    router.push("/");
                 } else {
                     toast.error(`Error: ${errorMsg}`);
                 }

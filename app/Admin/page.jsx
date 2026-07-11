@@ -11,6 +11,8 @@ function Admin() {
   const router = useRouter();
   const toast = useToast();
   const [loading, setLoading] = useState(false);
+  const [isForbidden, setIsForbidden] = useState(false);
+  
 
   const Logout = async () => {
     setLoading(true);
@@ -27,6 +29,35 @@ function Admin() {
       setLoading(false);
     }
   };
+
+  if (isForbidden) {
+    return (
+      <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 flex items-center justify-center overflow-hidden">
+        <div className="absolute top-1/4 left-1/6 w-80 h-80 rounded-full bg-indigo-500/10 animate-pulse blur-3xl pointer-events-none" />
+        <div className="absolute bottom-1/4 right-1/6 w-72 h-72 rounded-full bg-purple-500/10 animate-pulse blur-3xl pointer-events-none [animation-delay:2s]" />
+        <div className="relative z-10 flex flex-col items-center text-center px-10 py-12 rounded-3xl bg-white/[0.04] border border-white/[0.08] backdrop-blur-2xl max-w-sm w-full mx-4 animate-[fadeInUp_0.6s_ease_both]">
+          <div className="relative w-24 h-24 mb-8">
+            <div className="absolute inset-0 rounded-full border-[3px] border-transparent border-t-indigo-500 border-r-indigo-500/30 animate-spin" />
+            <div className="absolute inset-[10px] rounded-full border-2 border-transparent border-t-violet-400 border-l-violet-400/30 animate-[spin_1.8s_linear_infinite_reverse]" />
+            <div className="absolute inset-5 rounded-full bg-indigo-500/15 flex items-center justify-center animate-pulse">
+              <svg
+                width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="#a78bfa"
+                strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <span className="w-2 h-2 rounded-full bg-indigo-500 animate-bounce [animation-delay:0ms]" />
+            <span className="w-2 h-2 rounded-full bg-indigo-500 animate-bounce [animation-delay:150ms]" />
+            <span className="w-2 h-2 rounded-full bg-indigo-500 animate-bounce [animation-delay:300ms]" />
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans selection:bg-indigo-500/20 selection:text-indigo-700">
@@ -84,7 +115,7 @@ function Admin() {
 
       {/* Main Content Area */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Messages />
+        <Messages isForbidden={isForbidden} setIsForbidden={setIsForbidden} />
       </main>
     </div>
   );
