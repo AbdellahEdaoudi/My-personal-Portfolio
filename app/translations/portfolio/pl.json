@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "Umiejętności",
-        "subtitle": "Mój poziom techniczny",
+        "subtitle": "Moje Kompetencje Techniczne",
         "frontendTitle": "Frontend Developer",
         "backendTitle": "Backend Developer",
         "databaseTitle": "Zarządzanie Bazami Danych",
@@ -388,7 +388,7 @@
         "subtitle": "Moje doświadczenie zawodowe",
         "items": [
             {
-                "title": "Full Stack Developer (MERN)",
+                "title": "Założyciel i Full Stack Developer (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "Zdalnie",
                 "startDate": "Paź 2025",
@@ -405,8 +405,8 @@
                 ]
             },
             {
-                "title": "Rozwój zawodowy",
-                "company": "Przerwa w karierze",
+                "title": "Szkolenie z Programowania Backend",
+                "company": "Samokształcenie i Rozwój Zawodowy",
                 "location": "Zdalnie",
                 "startDate": "Lis 2024",
                 "endDate": "Sty 2025",
@@ -429,16 +429,15 @@
                 "duration": "10 mies.",
                 "type": "Staż",
                 "workType": "Stacjonarnie",
-                "achievementsLabel": "Osiągnięcia:",
+                "achievementsLabel": "Rozwijałem umiejętności tworzenia aplikacji internetowych typu full-stack podczas profesjonalnego stażu, stosując koncepcje poznane w zakresie:",
                 "responsibilities": [
-                    "Projektowanie interaktywnych i atrakcyjnych interfejsów użytkownika w rozwoju front-endu.",
-                    "Zdobycie doświadczenia w rozwoju back-endu i zarządzaniu bazami danych.",
-                    "Rozwijanie umiejętności tworzenia i utrzymywania dynamicznych aplikacji internetowych.",
-                    "Stosowanie metodologii Agile w celu poprawy wydajności i wzmocnienia pracy zespołowej.",
-                    "Zdobycie doświadczenia w korzystaniu z Git i GitHub w celu efektywnego zarządzania kodem i projektami.",
-                    "Wykorzystanie SonarQube do analizy jakości kodu i zapewnienia ciągłego doskonalenia.",
-                    "Wykorzystanie Dockera do usprawnienia zarządzania środowiskiem i rozwoju aplikacji.",
-                    "Rozwijanie umiejętności interpersonalnych, w tym komunikacji i pracy zespołowej."
+                    "Przygotowanie i planowanie projektów internetowych.",
+                    "Metodologia Agile i praktyki zarządzania projektami.",
+                    "Zarządzanie bazami danych i obsługa danych.",
+                    "Programowanie front-end dla interaktywnych i responsywnych interfejsów użytkownika.",
+                    "Programowanie back-end i logika aplikacji po stronie serwera.",
+                    "Koncepcje tworzenia i wdrażania aplikacji chmurowych.",
+                    "Kompleksowe tworzenie aplikacji internetowych w ramach końcowego projektu syntezy."
                 ]
             },
             {
@@ -466,38 +465,39 @@
                 "startDate": "Lis 2022",
                 "endDate": "Cze 2023",
                 "duration": "8 mies.",
-                "type": "Staż",
+                "type": "Pełny etat",
                 "workType": "Stacjonarnie",
-                "achievementsLabel": "Kluczowa nauka:",
+                "achievementsLabel": "Rozwijałem podstawowe umiejętności programowania cyfrowego poprzez praktyczne szkolenie, obejmujące:",
                 "responsibilities": [
-                    "Zdobycie podstaw programowania algorytmicznego i obiektowego.",
-                    "Projektowanie i budowa statycznych i dynamicznych witryn internetowych wchodzących w interakcję z użytkownikami.",
-                    "Praca z bazami danych i wykonywanie podstawowych operacji.",
-                    "Nauka JavaScript na potrzeby tworzenia aplikacji.",
-                    "Zapoznanie się z zasadami bezpieczeństwa systemów informatycznych.",
-                    "Rozwijanie umiejętności behawioralnych i społecznych niezbędnych w środowisku zawodowym."
+                    "Podstawy algorytmiki i techniki rozwiązywania problemów.",
+                    "Koncepcje programowania obiektowego (OOP).",
+                    "Tworzenie statycznych i dynamicznych stron internetowych.",
+                    "Programowanie w JavaScript i interaktywność internetowa.",
+                    "Manipulacja bazami danych i zarządzanie danymi.",
+                    "Podstawy bezpieczeństwa systemów informatycznych.",
+                    "Zrozumienie cyfrowych procesów rozwoju i praktyk zawodowych."
                 ]
             }
         ]
     },
     "education": {
         "title": "Edukacja",
-        "subtitle": "Moja osobista podróż",
+        "subtitle": "Wykształcenie",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "Dyplom Rozwoju Cyfrowego (Opcja Full Stack Web)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "Dyplom Rozwoju Cyfrowego - Opcja Full Stack Web",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "Laayoune , Maroko",
+                "location": "Laayoune, Maroko",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Liceum Baba Ahmed bin Muhammad Yahdih",
-                "degree": "Licencjat, Nauki Fizyczne",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "Świadectwo Ukończenia Szkoły Średniej w Zakresie Nauk Fizycznych",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "Laayoune , Maroko",
+                "location": "Laayoune, Maroko",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -589,7 +589,7 @@
                 "icon": "Database"
             },
             {
-                "title": "Bezpieczeństwo Informacji",
+                "title": "Bezpieczeństwo Aplikacji",
                 "description": "Wdrożenie niezawodnego uwierzytelniania, autoryzacji i szyfrowania danych, aby zapewnić bezpieczeństwo aplikacji.",
                 "icon": "Shield"
             },

@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "Competenze",
-        "subtitle": "Il mio livello tecnico",
+        "subtitle": "La mia Competenza Tecnica",
         "frontendTitle": "Sviluppatore Frontend",
         "backendTitle": "Sviluppatore Backend",
         "databaseTitle": "Gestione Database",
@@ -388,7 +388,7 @@
         "subtitle": "La mia esperienza professionale",
         "items": [
             {
-                "title": "Sviluppatore Full Stack (MERN)",
+                "title": "Fondatore e Sviluppatore Full Stack (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "Remoto",
                 "startDate": "Ott 2025",
@@ -405,8 +405,8 @@
                 ]
             },
             {
-                "title": "Sviluppo professionale",
-                "company": "Pausa di carriera",
+                "title": "Formazione in Sviluppo Backend",
+                "company": "Autoapprendimento e Sviluppo Professionale",
                 "location": "Remoto",
                 "startDate": "Nov 2024",
                 "endDate": "Gen 2025",
@@ -429,16 +429,15 @@
                 "duration": "10 mesi",
                 "type": "Tirocinio",
                 "workType": "In loco",
-                "achievementsLabel": "Risultati:",
+                "achievementsLabel": "Sviluppate competenze di sviluppo web full-stack attraverso uno stage professionale, applicando concetti appresi in:",
                 "responsibilities": [
-                    "Progettate interfacce utente interattive e accattivanti nello sviluppo front-end.",
-                    "Acquisita esperienza nello sviluppo back-end e nella gestione di database.",
-                    "Sviluppate competenze nella creazione e manutenzione di applicazioni web dinamiche.",
-                    "Applicata la metodologia Agile per migliorare l'efficienza e rafforzare il lavoro di squadra.",
-                    "Acquisita esperienza nell'uso di Git e GitHub per un'efficace gestione del codice e dei progetti.",
-                    "Utilizzato SonarQube per analizzare la qualità del codice e garantire un miglioramento continuo.",
-                    "Utilizzato Docker per semplificare la gestione dell'ambiente e lo sviluppo delle applicazioni.",
-                    "Migliorate le competenze interpersonali, tra cui comunicazione e lavoro di squadra."
+                    "Preparazione e pianificazione di progetti web.",
+                    "Metodologia Agile e pratiche di gestione dei progetti.",
+                    "Gestione dei database e manipolazione dei dati.",
+                    "Sviluppo front-end per interfacce utente interattive e reattive.",
+                    "Sviluppo back-end e logica delle applicazioni lato server.",
+                    "Concetti di sviluppo e distribuzione di applicazioni cloud-native.",
+                    "Sviluppo end-to-end di applicazioni web tramite un progetto di sintesi finale."
                 ]
             },
             {
@@ -466,38 +465,39 @@
                 "startDate": "Nov 2022",
                 "endDate": "Giu 2023",
                 "duration": "8 mesi",
-                "type": "Tirocinio",
+                "type": "Tempo pieno",
                 "workType": "In loco",
-                "achievementsLabel": "Apprendimento fondamentale:",
+                "achievementsLabel": "Sviluppate competenze fondamentali nello sviluppo digitale attraverso una formazione pratica, che copre:",
                 "responsibilities": [
-                    "Acquisite le basi della programmazione algoritmica e orientata agli oggetti.",
-                    "Progettati e realizzati siti web statici e dinamici che interagiscono con gli utenti.",
-                    "Lavorato con database ed eseguite operazioni di base.",
-                    "Imparato JavaScript per lo sviluppo di applicazioni.",
-                    "Familiarizzato con i principi di sicurezza dei sistemi informativi.",
-                    "Sviluppate competenze comportamentali e sociali essenziali per un ambiente professionale."
+                    "Fondamenti algoritmici e tecniche di risoluzione dei problemi.",
+                    "Concetti di Programmazione Orientata agli Oggetti (OOP).",
+                    "Creazione di siti web statici e dinamici.",
+                    "Programmazione JavaScript e interattività web.",
+                    "Manipolazione di database e gestione dei dati.",
+                    "Fondamenti di sicurezza dei sistemi informativi.",
+                    "Comprensione dei processi di sviluppo digitale e delle pratiche professionali."
                 ]
             }
         ]
     },
     "education": {
         "title": "Istruzione",
-        "subtitle": "Il mio percorso personale",
+        "subtitle": "Percorso Accademico",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "Diploma in Sviluppo Digitale (Opzione Web Full Stack)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "Diploma in Sviluppo Digitale - Opzione Web Full Stack",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "Laayoune , Marocco",
+                "location": "Laayoune, Marocco",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Scuola Superiore Baba Ahmed bin Muhammad Yahdih",
-                "degree": "Laurea triennale, Scienze Fisiche",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "Diploma di Scuola Superiore in Scienze Fisiche",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "Laayoune , Marocco",
+                "location": "Laayoune, Marocco",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -589,7 +589,7 @@
                 "icon": "Database"
             },
             {
-                "title": "Sicurezza delle informazioni",
+                "title": "Sicurezza delle Applicazioni",
                 "description": "Implementazione di una solida autenticazione, autorizzazione e crittografia dei dati per garantire la sicurezza delle tue applicazioni.",
                 "icon": "Shield"
             },

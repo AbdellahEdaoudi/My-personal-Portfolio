@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "Färdigheter",
-        "subtitle": "Min tekniska nivå",
+        "subtitle": "Min Tekniska Expertis",
         "frontendTitle": "Front-End Utvecklare",
         "backendTitle": "Back-End Utvecklare",
         "databaseTitle": "Databashantering",
@@ -389,7 +389,7 @@
         "subtitle": "Min yrkeserfarenhet",
         "items": [
             {
-                "title": "Full Stack Utvecklare (MERN)",
+                "title": "Grundare & Full Stack Utvecklare (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "Distans",
                 "startDate": "Okt 2025",
@@ -406,8 +406,8 @@
                 ]
             },
             {
-                "title": "Yrkesmässig utveckling",
-                "company": "Karriäruppehåll",
+                "title": "Backend-utbildning",
+                "company": "Självstudier & Professionell Utveckling",
                 "location": "Distans",
                 "startDate": "Nov 2024",
                 "endDate": "Jan 2025",
@@ -430,16 +430,15 @@
                 "duration": "10 mån.",
                 "type": "Praktik",
                 "workType": "På plats",
-                "achievementsLabel": "Prestationer:",
+                "achievementsLabel": "Utvecklade full-stack webbutvecklingsfärdigheter genom en professionell praktik, tillämpade koncept som lärts i:",
                 "responsibilities": [
-                    "Designade interaktiva och attraktiva användargränssnitt inom frontend-utveckling.",
-                    "Skaffade erfarenhet inom backend-utveckling och databashantering.",
-                    "Utvecklade färdigheter i att skapa och underhålla dynamiska webbapplikationer.",
-                    "Tillämpade Agile-metodik för att förbättra effektiviteten och stärka samarbetet i teamet.",
-                    "Fick erfarenhet av att använda Git och GitHub för effektiv kod- och projekthantering.",
-                    "Använde SonarQube för att analysera kodkvalitet och säkerställa kontinuerlig förbättring.",
-                    "Använde Docker för att effektivisera miljöhantering och applikationsutveckling.",
-                    "Förbättrade interpersonella färdigheter, inklusive kommunikation och teamarbete."
+                    "Förberedelse och planering av webbprojekt.",
+                    "Agil metodik och projektledningsmetoder.",
+                    "Databashantering och datahantering.",
+                    "Front-end-utveckling för interaktiva och responsiva användargränssnitt.",
+                    "Back-end-utveckling och applikationslogik på serversidan.",
+                    "Koncept för utveckling och distribution av molnbaserade applikationer.",
+                    "End-to-end webbapplikationsutveckling genom ett slutligt syntesprojekt."
                 ]
             },
             {
@@ -467,35 +466,36 @@
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 mån.",
-                "type": "Praktik",
+                "type": "Heltid",
                 "workType": "På plats",
-                "achievementsLabel": "Viktiga lärdomar:",
+                "achievementsLabel": "Utvecklade grundläggande färdigheter i digital utveckling genom praktisk träning, som omfattar:",
                 "responsibilities": [
-                    "Förvärv av grunderna i algoritmer och objektorienterad programmering.",
-                    "Design och byggande av statiska och dynamiska webbplatser som interagerar med användare.",
-                    "Arbeta med databaser och utföra grundläggande operationer.",
-                    "Inlärning av JavaScript för applikationsutveckling.",
-                    "Bekanta sig med principerna för informationssäkerhet.",
-                    "Utveckling av beteendemässiga och sociala färdigheter som är nödvändiga i en professionell miljö."
+                    "Algoritmiska grunder och problemlösningstekniker.",
+                    "Objektorienterad programmering (OOP)-koncept.",
+                    "Skapande av statiska och dynamiska webbplatser.",
+                    "JavaScript-programmering och webbinteraktivitet.",
+                    "Databasmanipulation och datahantering.",
+                    "Grunderna i informationssystemens säkerhet.",
+                    "Förståelse för digitala utvecklingsprocesser och professionell praxis."
                 ]
             }
         ]
     },
     "education": {
         "title": "Utbildning",
-        "subtitle": "Min personliga resa",
+        "subtitle": "Akademisk Bakgrund",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "Diplom i Digital Utveckling (Full Stack Webb)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "Diplom i Digital Utveckling - Full Stack Webb",
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "Laayoune, Marocko",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Baba Ahmed bin Muhammad Yahdih High School",
-                "degree": "Kandidatexamen, Fysik",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "Gymnasieexamen i Fysik",
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "Laayoune, Marocko",
@@ -590,7 +590,7 @@
                 "icon": "Database"
             },
             {
-                "title": "Informationssäkerhet",
+                "title": "Applikationssäkerhet",
                 "description": "Implementera robust autentisering, auktorisering och datakryptering för att säkerställa att dina applikationer är säkra.",
                 "icon": "Shield"
             },

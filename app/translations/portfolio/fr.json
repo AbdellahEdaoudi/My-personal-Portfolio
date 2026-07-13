@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "Compétences",
-        "subtitle": "Mon niveau technique",
+        "subtitle": "Mon Expertise Technique",
         "frontendTitle": "Développeur Frontend",
         "backendTitle": "Développeur Backend",
         "databaseTitle": "Gestion de Bases de Données",
@@ -392,7 +392,7 @@
         "subtitle": "Mon expérience professionnelle",
         "items": [
             {
-                "title": "Développeur Full Stack (MERN)",
+                "title": "Fondateur & Développeur Full Stack (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "À distance",
                 "startDate": "Oct 2025",
@@ -409,8 +409,8 @@
                 ]
             },
             {
-                "title": "Développement professionnel",
-                "company": "Pause carrière",
+                "title": "Formation en Développement Backend",
+                "company": "Auto-apprentissage & Développement Professionnel",
                 "location": "À distance",
                 "startDate": "Nov 2024",
                 "endDate": "Jan 2025",
@@ -433,16 +433,15 @@
                 "duration": "10 mois",
                 "type": "Stage",
                 "workType": "Sur site",
-                "achievementsLabel": "Réalisations :",
+                "achievementsLabel": "Développement de compétences en développement web full-stack à travers un stage professionnel, en appliquant les concepts appris en :",
                 "responsibilities": [
-                    "Conception d'interfaces utilisateur interactives et attrayantes dans le développement frontend.",
-                    "Acquisition d'expérience en développement backend et en gestion de bases de données.",
-                    "Développement de compétences dans la création et la maintenance d'applications web dynamiques.",
-                    "Application de la méthodologie Agile pour améliorer l'efficacité et renforcer le travail d'équipe.",
-                    "Acquisition d'expérience avec Git et GitHub pour une gestion efficace du code et des projets.",
-                    "Utilisation de SonarQube pour analyser la qualité du code et garantir une amélioration continue.",
-                    "Utilisation de Docker pour rationaliser la gestion de l'environnement et le développement des applications.",
-                    "Amélioration des compétences interpersonnelles, y compris la communication et le travail d'équipe."
+                    "Préparation et planification de projets web.",
+                    "Méthodologie Agile et pratiques de gestion de projet.",
+                    "Gestion de bases de données et manipulation des données.",
+                    "Développement front-end pour des interfaces utilisateur interactives et réactives.",
+                    "Développement back-end et logique d'application côté serveur.",
+                    "Concepts de développement et de déploiement d'applications cloud-natives.",
+                    "Développement d'applications web de bout en bout à travers un projet de synthèse final."
                 ]
             },
             {
@@ -470,38 +469,39 @@
                 "startDate": "Nov 2022",
                 "endDate": "Juin 2023",
                 "duration": "8 mois",
-                "type": "Stage",
+                "type": "Temps plein",
                 "workType": "Sur site",
-                "achievementsLabel": "Apprentissage de base :",
+                "achievementsLabel": "Développement de compétences fondamentales en développement digital à travers une formation pratique, couvrant :",
                 "responsibilities": [
-                    "Acquisition des bases de l'algorithmique et de la programmation orientée objet.",
-                    "Conception et création de sites web statiques et dynamiques interagissant avec les utilisateurs.",
-                    "Travail avec des bases de données et exécution d'opérations de base.",
-                    "Apprentissage de JavaScript pour le développement d'applications.",
-                    "Familiarisation avec les principes de sécurité des systèmes d'information.",
-                    "Développement de compétences comportementales et sociales essentielles au milieu professionnel."
+                    "Fondamentaux de l'algorithmique et techniques de résolution de problèmes.",
+                    "Concepts de la Programmation Orientée Objet (POO).",
+                    "Création de sites web statiques et dynamiques.",
+                    "Programmation JavaScript et interactivité web.",
+                    "Manipulation de bases de données et gestion des données.",
+                    "Fondamentaux de la sécurité des systèmes d'information.",
+                    "Compréhension des processus de développement digital et des pratiques professionnelles."
                 ]
             }
         ]
     },
     "education": {
         "title": "Éducation",
-        "subtitle": "Mon parcours personnel",
+        "subtitle": "Parcours Académique",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "Diplôme en Développement Digital (Option Web Full Stack)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "Diplôme en Développement Digital - Option Web Full Stack",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "Laayoune , Maroc",
+                "location": "Laayoune, Maroc",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Baba Ahmed bin Muhammad Yahdih High School",
-                "degree": "Baccalauréat, Sciences Physiques",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "Baccalauréat en Sciences Physiques",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "Laayoune , Maroc",
+                "location": "Laayoune, Maroc",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -573,33 +573,33 @@
         "subtitle": "Ce que je propose",
         "items": [
             {
-                "title": "Développement Web et applications",
-                "description": "Création d'applications Web et mobiles full-stack réactives, rapides et hautement interactives à l'aide de technologies modernes.",
+                "title": "Développement Web & Mobile",
+                "description": "Création d'applications web et mobiles full-stack réactives, rapides et interactives à l'aide des dernières technologies.",
                 "icon": "Code"
             },
             {
                 "title": "Solutions SaaS",
-                "description": "Concevoir et développer des plateformes Software-as-a-Service évolutives et adaptées aux besoins de votre entreprise.",
+                "description": "Conception et développement de plateformes Software-as-a-Service (SaaS) évolutives et adaptées aux besoins de votre entreprise.",
                 "icon": "Cloud"
             },
             {
-                "title": "Logiciel personnalisé",
-                "description": "Créer des solutions logicielles sur mesure pour automatiser les processus, résoudre des problèmes complexes et augmenter la productivité.",
+                "title": "Logiciels Sur Mesure",
+                "description": "Création de solutions logicielles personnalisées pour automatiser les processus, résoudre des problèmes complexes et augmenter la productivité.",
                 "icon": "Cpu"
             },
             {
-                "title": "Architecture de base de données",
-                "description": "Concevoir des schémas de bases de données sécurisés et efficaces et gérer le flux de données pour des applications hautes performances.",
+                "title": "Architecture de Bases de Données",
+                "description": "Conception de schémas de bases de données sécurisés et efficaces et gestion des flux de données pour des applications hautement performantes.",
                 "icon": "Database"
             },
             {
-                "title": "Sécurité des informations",
-                "description": "Mettre en œuvre une authentification, une autorisation et un cryptage de données robustes pour garantir la sécurité de vos applications.",
+                "title": "Sécurité des Applications",
+                "description": "Mise en œuvre de systèmes d'authentification, d'autorisation et d'un cryptage des données robustes pour garantir la sécurité de vos applications.",
                 "icon": "Shield"
             },
             {
-                "title": "Conception UX/UI",
-                "description": "Créer des expériences utilisateur intuitives, engageantes et accessibles avec des conceptions d'interface au pixel près.",
+                "title": "Conception UI/UX",
+                "description": "Création d'interfaces utilisateur intuitives, attrayantes et accessibles pour offrir une expérience utilisateur exceptionnelle et soignée.",
                 "icon": "Layout"
             }
         ]

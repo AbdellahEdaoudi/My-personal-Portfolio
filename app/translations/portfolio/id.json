@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "Keahlian",
-        "subtitle": "Level teknis saya",
+        "subtitle": "Keahlian Teknis Saya",
         "frontendTitle": "Pengembang Frontend",
         "backendTitle": "Pengembang Backend",
         "databaseTitle": "Manajemen Basis Data",
@@ -388,7 +388,7 @@
         "subtitle": "Pengalaman profesional saya",
         "items": [
             {
-                "title": "Full Stack Developer (MERN)",
+                "title": "Pendiri & Full Stack Developer (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "Remote",
                 "startDate": "Okt 2025",
@@ -405,8 +405,8 @@
                 ]
             },
             {
-                "title": "Pengembangan profesional",
-                "company": "Jeda Karir",
+                "title": "Pelatihan Pengembangan Backend",
+                "company": "Belajar Mandiri & Pengembangan Profesional",
                 "location": "Remote",
                 "startDate": "Nov 2024",
                 "endDate": "Jan 2025",
@@ -429,16 +429,15 @@
                 "duration": "10 bln",
                 "type": "Magang",
                 "workType": "Di lokasi",
-                "achievementsLabel": "Prestasi:",
+                "achievementsLabel": "Mengembangkan keterampilan pengembangan web full-stack melalui magang profesional, menerapkan konsep-konsep yang dipelajari di:",
                 "responsibilities": [
-                    "Merancang antarmuka pengguna interaktif dan menarik dalam pengembangan front-end.",
-                    "Memperoleh pengalaman dalam pengembangan back-end dan manajemen basis data.",
-                    "Mengembangkan keterampilan dalam membuat dan memelihara aplikasi web dinamis.",
-                    "Menerapkan metodologi Agile untuk meningkatkan efisiensi dan memperkuat kerja tim.",
-                    "Memperoleh pengalaman menggunakan Git dan GitHub untuk manajemen kode dan proyek yang efektif.",
-                    "Menggunakan SonarQube untuk menganalisis kualitas kode dan memastikan peningkatan berkelanjutan.",
-                    "Menggunakan Docker untuk merampingkan manajemen lingkungan dan pengembangan aplikasi.",
-                    "Meningkatkan keterampilan interpersonal, termasuk komunikasi dan kerja tim."
+                    "Persiapan dan perencanaan proyek web.",
+                    "Metodologi Agile dan praktik manajemen proyek.",
+                    "Manajemen basis data dan penanganan data.",
+                    "Pengembangan front-end untuk antarmuka pengguna yang interaktif dan responsif.",
+                    "Pengembangan back-end dan logika aplikasi sisi server.",
+                    "Konsep pengembangan dan penerapan aplikasi cloud-native.",
+                    "Pengembangan aplikasi web end-to-end melalui proyek sintesis akhir."
                 ]
             },
             {
@@ -466,38 +465,39 @@
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 bln",
-                "type": "Magang",
+                "type": "Penuh waktu",
                 "workType": "Di lokasi",
-                "achievementsLabel": "Pembelajaran Inti:",
+                "achievementsLabel": "Mengembangkan keterampilan dasar dalam pengembangan digital melalui pelatihan langsung, yang mencakup:",
                 "responsibilities": [
-                    "Memperoleh dasar-dasar pemrograman algoritmik dan berorientasi objek.",
-                    "Merancang dan membangun situs web statis dan dinamis yang berinteraksi dengan pengguna.",
-                    "Bekerja dengan basis data dan mengeksekusi operasi dasar.",
-                    "Mempelajari JavaScript untuk pengembangan aplikasi.",
-                    "Mengenal prinsip-prinsip keamanan sistem informasi.",
-                    "Mengembangkan keterampilan perilaku dan sosial yang penting untuk lingkungan profesional."
+                    "Dasar-dasar algoritmik dan teknik pemecahan masalah.",
+                    "Konsep Pemrograman Berorientasi Objek (OOP).",
+                    "Pembuatan situs web statis dan dinamis.",
+                    "Pemrograman JavaScript dan interaktivitas web.",
+                    "Manipulasi basis data dan manajemen data.",
+                    "Dasar-dasar keamanan sistem informasi.",
+                    "Pemahaman tentang proses pengembangan digital dan praktik profesional."
                 ]
             }
         ]
     },
     "education": {
         "title": "Pendidikan",
-        "subtitle": "Perjalanan pribadi saya",
+        "subtitle": "Latar Belakang Akademis",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "Diploma Pengembangan Digital (Opsi Web Full Stack)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "Diploma Pengembangan Digital - Opsi Web Full Stack",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "Laayoune , Maroko",
+                "location": "Laayoune, Maroko",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Sekolah Menengah Baba Ahmed bin Muhammad Yahdih",
-                "degree": "Gelar Sarjana, Ilmu Fisika",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "Ijazah Sekolah Menengah dalam Ilmu Fisika",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "Laayoune , Maroko",
+                "location": "Laayoune, Maroko",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -589,7 +589,7 @@
                 "icon": "Database"
             },
             {
-                "title": "Keamanan Informasi",
+                "title": "Keamanan Aplikasi",
                 "description": "Menerapkan autentikasi, otorisasi, dan enkripsi data yang kuat untuk memastikan aplikasi Anda aman.",
                 "icon": "Shield"
             },

@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "Habilidades",
-        "subtitle": "Meu nível técnico",
+        "subtitle": "Minha Expertise Técnica",
         "frontendTitle": "Desenvolvedor Frontend",
         "backendTitle": "Desenvolvedor Backend",
         "databaseTitle": "Gestão de Banco de Dados",
@@ -388,7 +388,7 @@
         "subtitle": "Minha experiência profissional",
         "items": [
             {
-                "title": "Desenvolvedor Full Stack (MERN)",
+                "title": "Fundador e Desenvolvedor Full Stack (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "Remoto",
                 "startDate": "Out 2025",
@@ -405,8 +405,8 @@
                 ]
             },
             {
-                "title": "Desenvolvimento profissional",
-                "company": "Pausa na carreira",
+                "title": "Treinamento em Desenvolvimento Backend",
+                "company": "Autoestudo e Desenvolvimento Profissional",
                 "location": "Remoto",
                 "startDate": "Nov 2024",
                 "endDate": "Jan 2025",
@@ -429,16 +429,15 @@
                 "duration": "10 meses",
                 "type": "Estágio",
                 "workType": "Presencial",
-                "achievementsLabel": "Conquistas:",
+                "achievementsLabel": "Desenvolvi habilidades de desenvolvimento web full-stack através de um estágio profissional, aplicando conceitos aprendidos em:",
                 "responsibilities": [
-                    "Projeto de interfaces de usuário interativas e atraentes no desenvolvimento front-end.",
-                    "Aquisição de experiência em desenvolvimento back-end e gerenciamento de bancos de dados.",
-                    "Desenvolvimento de habilidades na criação e manutenção de aplicações web dinâmicas.",
-                    "Aplicação da metodologia Agile para melhorar a eficiência e fortalecer o trabalho em equipe.",
-                    "Ganho de experiência no uso de Git e GitHub para gerenciamento eficaz de código e projetos.",
-                    "Uso do SonarQube para analisar a qualidade do código e garantir a melhoria contínua.",
-                    "Uso do Docker para agilizar o gerenciamento do ambiente e o desenvolvimento de aplicações.",
-                    "Melhoria de habilidades interpessoais, incluindo comunicação e trabalho em equipe."
+                    "Preparação e planejamento de projetos web.",
+                    "Metodologia Ágil e práticas de gestão de projetos.",
+                    "Gestão de banco de dados e manipulação de dados.",
+                    "Desenvolvimento front-end para interfaces de usuário interativas e responsivas.",
+                    "Desenvolvimento back-end e lógica de aplicação no lado do servidor.",
+                    "Conceitos de desenvolvimento e implantação de aplicações nativas da nuvem.",
+                    "Desenvolvimento de aplicações web de ponta a ponta através de um projeto final de síntese."
                 ]
             },
             {
@@ -466,35 +465,36 @@
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 meses",
-                "type": "Estágio",
+                "type": "Tempo integral",
                 "workType": "Presencial",
-                "achievementsLabel": "Aprendizados fundamentais:",
+                "achievementsLabel": "Desenvolvi habilidades fundamentais em desenvolvimento digital através de treinamento prático, cobrindo:",
                 "responsibilities": [
-                    "Aquisição de fundamentos de algoritmia e programação orientada a objetos.",
-                    "Concepção e construção de sites estáticos e dinâmicos que interagem com os utilizadores.",
-                    "Trabalho com bases de dados e execução de operações básicas.",
-                    "Aprendizagem de JavaScript para desenvolvimento de aplicações.",
-                    "Familiarização com os princípios de segurança dos sistemas de informação.",
-                    "Desenvolvimento de competências comportamentais e sociais essenciais no ambiente profissional."
+                    "Fundamentos algorítmici e técnicas de resolução de problemas.",
+                    "Conceitos de Programação Orientada a Objetos (POO).",
+                    "Criação de sites estáticos e dinâmicos.",
+                    "Programação JavaScript e interatividade web.",
+                    "Manipulação de banco de dados e gestão de dados.",
+                    "Fundamentos de segurança de sistemas de informação.",
+                    "Compreensão de processos de desenvolvimento digital e práticas profissionais."
                 ]
             }
         ]
     },
     "education": {
         "title": "Educação",
-        "subtitle": "Minha jornada pessoal",
+        "subtitle": "Formação Acadêmica",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "Diploma em Desenvolvimento Digital (Opção Web Full Stack)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "Diploma em Desenvolvimento Digital - Opção Web Full Stack",
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "Laayoune, Marrocos",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Escola Secundária Baba Ahmed bin Muhammad Yahdih",
-                "degree": "Bacharelado, Ciências Físicas",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "Diploma de Ensino Médio em Ciências Físicas",
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "Laayoune, Marrocos",
@@ -589,7 +589,7 @@
                 "icon": "Database"
             },
             {
-                "title": "Segurança da Informação",
+                "title": "Segurança de Aplicações",
                 "description": "Implementar autenticação robusta, autorização e criptografia de dados para garantir que seus aplicativos estejam seguros.",
                 "icon": "Shield"
             },
