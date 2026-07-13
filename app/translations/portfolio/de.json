@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "Fähigkeiten",
-        "subtitle": "Mein technisches Niveau",
+        "subtitle": "Meine technische Expertise",
         "frontendTitle": "Frontend Entwickler",
         "backendTitle": "Backend Entwickler",
         "databaseTitle": "Datenbankverwaltung",
@@ -392,7 +392,7 @@
         "subtitle": "Meine Berufserfahrung",
         "items": [
             {
-                "title": "Full Stack Entwickler (MERN)",
+                "title": "Gründer & Full Stack Entwickler (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "Remote",
                 "startDate": "Okt 2025",
@@ -409,8 +409,8 @@
                 ]
             },
             {
-                "title": "Berufliche Weiterentwicklung",
-                "company": "Karrierepause",
+                "title": "Backend-Entwicklungs-Training",
+                "company": "Selbststudium & berufliche Weiterentwicklung",
                 "location": "Remote",
                 "startDate": "Nov 2024",
                 "endDate": "Jan 2025",
@@ -433,16 +433,15 @@
                 "duration": "10 Mon.",
                 "type": "Praktikum",
                 "workType": "Vor Ort",
-                "achievementsLabel": "Erfolge:",
+                "achievementsLabel": "Entwicklung von Full-Stack-Webentwicklungsfähigkeiten durch ein professionelles Praktikum unter Anwendung der erlernten Konzepte in:",
                 "responsibilities": [
-                    "Entwurf interaktiver und ansprechender Benutzeroberflächen in der Frontend-Entwicklung.",
-                    "Erwerb von Erfahrung in der Backend-Entwicklung und Datenbankverwaltung.",
-                    "Entwicklung von Fähigkeiten bei der Erstellung und Wartung dynamischer Webanwendungen.",
-                    "Anwendung der Agile-Methodik zur Verbesserung der Effizienz und Stärkung der Teamarbeit.",
-                    "Erwerb von Erfahrung im Umgang mit Git und GitHub für ein effektives Code- und Projektmanagement.",
-                    "Einsatz von SonarQube zur Analyse der Codequalität und zur Sicherstellung einer kontinuierlichen Verbesserung.",
-                    "Einsatz von Docker zur Rationalisierung der Umgebungsverwaltung und Anwendungsentwicklung.",
-                    "Verbesserung der zwischenmenschlichen Fähigkeiten, einschließlich Kommunikation und Teamarbeit."
+                    "Vorbereitung und Planung von Webprojekten.",
+                    "Agile Methodik und Projektmanagementpraktiken.",
+                    "Datenbankmanagement und Datenverarbeitung.",
+                    "Front-End-Entwicklung für interaktive und reaktionsschnelle Benutzeroberflächen.",
+                    "Back-End-Entwicklung und serverseitige Anwendungslogik.",
+                    "Konzepte für die Entwicklung und Bereitstellung Cloud-nativer Anwendungen.",
+                    "End-to-End-Entwicklung von Webanwendungen durch ein abschließendes Syntheseprojekt."
                 ]
             },
             {
@@ -470,38 +469,39 @@
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 Mon.",
-                "type": "Praktikum",
+                "type": "Vollzeit",
                 "workType": "Vor Ort",
-                "achievementsLabel": "Grundlegende Lernergebnisse:",
+                "achievementsLabel": "Entwicklung grundlegender Fähigkeiten in der digitalen Entwicklung durch praktische Schulungen in den Bereichen:",
                 "responsibilities": [
-                    "Erwerb von Grundlagen der Algorithmik und objektorientierten Programmierung.",
-                    "Konzeption und Erstellung statischer und dynamischer Websites, die mit Benutzern interagieren.",
-                    "Arbeit mit Datenbanken und Ausführung grundlegender Operationen.",
-                    "Erlernen von JavaScript für die Anwendungsentwicklung.",
-                    "Vertrautmachen mit den Prinzipien der Informationssystemsicherheit.",
-                    "Entwicklung von Verhaltens- und Sozialkompetenzen, die im beruflichen Umfeld unerlässlich sind."
+                    "Algorithmische Grundlagen und Problemlösungstechniken.",
+                    "Konzepte der objektorientierten Programmierung (OOP).",
+                    "Erstellung statischer und dynamischer Websites.",
+                    "JavaScript-Programmierung und Web-Interaktivität.",
+                    "Datenbankmanipulation und Datenmanagement.",
+                    "Grundlagen der Sicherheit von Informationssystemen.",
+                    "Verständnis für digitale Entwicklungsprozesse und berufliche Praktiken."
                 ]
             }
         ]
     },
     "education": {
         "title": "Bildung",
-        "subtitle": "Mein persönlicher Werdegang",
+        "subtitle": "Akademischer Werdegang",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "Diplom in Digitaler Entwicklung (Option Full Stack Web)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "Diplom in digitaler Entwicklung - Option Full-Stack-Web",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "Laayoune , Marokko",
+                "location": "Laayoune, Marokko",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Baba Ahmed bin Muhammad Yahdih Gymnasium",
-                "degree": "Abitur, Physikalische Wissenschaften",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "Abitur in physikalischen Wissenschaften",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "Laayoune , Marokko",
+                "location": "Laayoune, Marokko",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -593,7 +593,7 @@
                 "icon": "Database"
             },
             {
-                "title": "Informationssicherheit",
+                "title": "Anwendungssicherheit",
                 "description": "Implementieren Sie eine robuste Authentifizierung, Autorisierung und Datenverschlüsselung, um die Sicherheit Ihrer Anwendungen zu gewährleisten.",
                 "icon": "Shield"
             },

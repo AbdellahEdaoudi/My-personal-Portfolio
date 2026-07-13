@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "Kỹ năng",
-        "subtitle": "Trình độ kỹ thuật của tôi",
+        "subtitle": "Chuyên môn Kỹ thuật của tôi",
         "frontendTitle": "Lập trình viên Front-End",
         "backendTitle": "Lập trình viên Back-End",
         "databaseTitle": "Quản lý Cơ sở dữ liệu",
@@ -389,7 +389,7 @@
         "subtitle": "Kinh nghiệm làm việc của tôi",
         "items": [
             {
-                "title": "Lập trình viên Full Stack (MERN)",
+                "title": "Người sáng lập & Lập trình viên Full Stack (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "Từ xa",
                 "startDate": "Tháng 10 2025",
@@ -406,8 +406,8 @@
                 ]
             },
             {
-                "title": "Phát triển chuyên môn",
-                "company": "Nghỉ giai đoạn sự nghiệp",
+                "title": "Đào tạo Phát triển Backend",
+                "company": "Tự học và Phát triển Chuyên môn",
                 "location": "Từ xa",
                 "startDate": "Tháng 11 2024",
                 "endDate": "Tháng 1 2025",
@@ -430,16 +430,15 @@
                 "duration": "10 tháng",
                 "type": "Thực tập",
                 "workType": "Tại văn phòng",
-                "achievementsLabel": "Thành tựu:",
+                "achievementsLabel": "Phát triển các kỹ năng lập trình web full-stack thông qua kỳ thực tập chuyên nghiệp, áp dụng các khái niệm đã học vào:",
                 "responsibilities": [
-                    "Thiết kế giao diện người dùng tương tác và hấp dẫn trong phát triển front-end.",
-                    "Đạt được kinh nghiệm trong phát triển back-end và quản lý cơ sở dữ liệu.",
-                    "Phát triển kỹ năng tạo và duy trì các ứng dụng web động.",
-                    "Áp dụng phương pháp Agile để cải thiện hiệu quả và tăng cường làm việc nhóm.",
-                    "Có kinh nghiệm sử dụng Git và GitHub để quản lý mã và dự án hiệu quả.",
-                    "Sử dụng SonarQube để phân tích chất lượng mã và đảm bảo cải tiến liên tục.",
-                    "Sử dụng Docker để tối ưu hóa quản lý môi trường và phát triển ứng dụng.",
-                    "Nâng cao kỹ năng giao tiếp và làm việc nhóm."
+                    "Chuẩn bị và lập kế hoạch cho dự án web.",
+                    "Phương pháp Agile và các thực tiễn quản lý dự án.",
+                    "Quản lý cơ sở dữ liệu và xử lý dữ liệu.",
+                    "Lập trình front-end cho giao diện người dùng tương tác và đáp ứng.",
+                    "Lập trình back-end và logic ứng dụng phía máy chủ.",
+                    "Các khái niệm lập trình và triển khai ứng dụng cloud-native.",
+                    "Lập trình ứng dụng web end-to-end thông qua dự án tổng hợp cuối cùng."
                 ]
             },
             {
@@ -467,35 +466,36 @@
                 "startDate": "Tháng 11 2022",
                 "endDate": "Tháng 6 2023",
                 "duration": "8 tháng",
-                "type": "Thực tập",
+                "type": "Toàn thời gian",
                 "workType": "Tại văn phòng",
-                "achievementsLabel": "Các nội dung học tập chính:",
+                "achievementsLabel": "Phát triển các kỹ năng nền tảng trong lập trình kỹ thuật số thông qua đào tạo thực hành, bao gồm:",
                 "responsibilities": [
-                    "Nắm vững nền tảng về thuật toán và lập trình hướng đối tượng.",
-                    "Thiết kế và xây dựng các trang web tĩnh và động tương tác với người dùng.",
-                    "Làm việc với cơ sở dữ liệu và thực hiện các thao tác cơ bản.",
-                    "Học JavaScript để phát triển ứng dụng.",
-                    "Làm quen với các nguyên tắc bảo mật hệ thống thông tin.",
-                    "Phát triển các kỹ năng hành vi và xã hội cần thiết trong môi trường chuyên nghiệp."
+                    "Nguyên tắc cơ bản về thuật toán và kỹ thuật giải quyết vấn đề.",
+                    "Các khái niệm Lập trình hướng đối tượng (OOP).",
+                    "Tạo các trang web tĩnh và động.",
+                    "Lập trình JavaScript và tính tương tác web.",
+                    "Thao tác với cơ sở dữ liệu và quản lý dữ liệu.",
+                    "Nguyên tắc cơ bản về bảo mật hệ thống thông tin.",
+                    "Hiểu biết về các quy trình lập trình kỹ thuật số và thực tiễn chuyên môn."
                 ]
             }
         ]
     },
     "education": {
         "title": "Học vấn",
-        "subtitle": "Hành trình cá nhân của tôi",
+        "subtitle": "Quá trình Học tập",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "Bằng cử nhân Phát triển kỹ thuật số (Full Stack Web)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "Bằng tốt nghiệp Phát triển Kỹ thuật số - Chuyên ngành Web Full Stack",
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "Laayoune, Ma-rốc",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Trường Trung học Baba Ahmed bin Muhammad Yahdih",
-                "degree": "Bằng tú tài, Khoa học Vật lý",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "Bằng Tốt nghiệp Trung học phổ thông chuyên ngành Khoa học Vật lý",
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "Laayoune, Ma-rốc",
@@ -590,7 +590,7 @@
                 "icon": "Database"
             },
             {
-                "title": "Bảo mật thông tin",
+                "title": "Bảo mật Ứng dụng",
                 "description": "Triển khai xác thực, ủy quyền và mã hóa dữ liệu mạnh mẽ để đảm bảo ứng dụng của bạn được an toàn.",
                 "icon": "Shield"
             },
