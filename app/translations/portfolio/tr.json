@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "Yetenekler",
-        "subtitle": "Teknik seviyem",
+        "subtitle": "Teknik Uzmanlığım",
         "frontendTitle": "Frontend Geliştirici",
         "backendTitle": "Backend Geliştirici",
         "databaseTitle": "Veritabanı Yönetimi",
@@ -388,7 +388,7 @@
         "subtitle": "Profesyonel deneyimim",
         "items": [
             {
-                "title": "Full Stack Geliştirici (MERN)",
+                "title": "Kurucu & Full Stack Geliştirici (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "Uzaktan",
                 "startDate": "Eki 2025",
@@ -405,8 +405,8 @@
                 ]
             },
             {
-                "title": "Mesleki gelişim",
-                "company": "Kariyer Molası",
+                "title": "Backend Geliştirme Eğitimi",
+                "company": "Kendi Kendine Öğrenme ve Mesleki Gelişim",
                 "location": "Uzaktan",
                 "startDate": "Kas 2024",
                 "endDate": "Oca 2025",
@@ -429,16 +429,15 @@
                 "duration": "10 ay",
                 "type": "Staj",
                 "workType": "Yerinde",
-                "achievementsLabel": "Başarılar:",
+                "achievementsLabel": "Öğrenilen kavramları aşağıdaki alanlarda uygulayarak profesyonel bir stajla full-stack web geliştirme becerilerini geliştirdi:",
                 "responsibilities": [
-                    "Ön uç geliştirmede etkileşimli ve ilgi çekici kullanıcı arayüzleri tasarımı.",
-                    "Arka uç geliştirme ve veritabanı yönetiminde deneyim kazanımı.",
-                    "Dinamik web uygulamaları oluşturma ve sürdürme becerilerinin geliştirilmesi.",
-                    "Verimliliği artırmak ve ekip çalışmasını güçlendirmek için Çevik metodolojinin uygulanması.",
-                    "Etkili kod ve proje yönetimi için Git ve GitHub kullanımında deneyim kazanımı.",
-                    "Kod kalitesini analiz etmek ve sürekli iyileştirmeyi sağlamak için SonarQube kullanımı.",
-                    "Ortam yönetimini ve uygulama geliştirmeyi kolaylaştırmak için Docker kullanımı.",
-                    "İletişim ve ekip çalışması dahil olmak üzere kişilerarası becerilerin geliştirilmesi."
+                    "Web projesi hazırlama ve planlama.",
+                    "Çevik (Agile) metodoloji ve proje yönetimi uygulamaları.",
+                    "Veritabanı yönetimi ve veri işleme.",
+                    "Etkileşimli ve duyarlı kullanıcı arayüzleri için Front-end geliştirme.",
+                    "Back-end geliştirme ve sunucu tarafı uygulama mantığı.",
+                    "Bulut tabanlı uygulama geliştirme ve dağıtım konseptleri.",
+                    "Nihai bir sentez projesi aracılığıyla uçtan uca web uygulaması geliştirme."
                 ]
             },
             {
@@ -466,38 +465,39 @@
                 "startDate": "Kas 2022",
                 "endDate": "Haz 2023",
                 "duration": "8 ay",
-                "type": "Staj",
+                "type": "Tam zamanlı",
                 "workType": "Yerinde",
-                "achievementsLabel": "Temel öğrenimler:",
+                "achievementsLabel": "Aşağıdakileri kapsayan uygulamalı eğitimle dijital geliştirmede temel beceriler geliştirdi:",
                 "responsibilities": [
-                    "Algoritma temelleri ve nesne yönelimli programlama kazanımı.",
-                    "Kullanıcılarla etkileşime giren statik ve dinamik web sitelerinin tasarımı ve inşası.",
-                    "Veritabanları ile çalışma ve temel işlemlerin yürütülmesi.",
-                    "Uygulama geliştirme için JavaScript öğrenimi.",
-                    "Bilgi sistemleri güvenliği ilkeleriyle tanışma.",
-                    "Profesyonel ortamda gerekli olan davranışsal ve sosyal becerilerin geliştirilmesi."
+                    "Algoritmik temeller ve problem çözme teknikleri.",
+                    "Nesne Yönelimli Programlama (OOP) kavramları.",
+                    "Statik ve dinamik web sitelerinin oluşturulması.",
+                    "JavaScript programlama ve web etkileşimi.",
+                    "Veritabanı manipülasyonu ve veri yönetimi.",
+                    "Bilgi sistemleri güvenliği temelleri.",
+                    "Dijital geliştirme süreçlerinin ve profesyonel uygulamaların anlaşılması."
                 ]
             }
         ]
     },
     "education": {
         "title": "Eğitim",
-        "subtitle": "Kişisel yolculuğum",
+        "subtitle": "Akademik Geçmiş",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Meslekler ve Yetkinlikler Şehirleri</a>",
-                "degree": "Dijital Geliştirme Diploması (Full Stack Web Seçeneği)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "Dijital Geliştirme Diploması - Full Stack Web Seçeneği",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "Laayoune , Fas",
+                "location": "Laayoune, Fas",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Baba Ahmed bin Muhammad Yahdih Lisesi",
-                "degree": "Lisans, Fizik Bilimleri",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "Fizik Bilimleri Alanında Lise Diploması",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "Laayoune , Fas",
+                "location": "Laayoune, Fas",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -589,7 +589,7 @@
                 "icon": "Database"
             },
             {
-                "title": "Bilgi Güvenliği",
+                "title": "Uygulama Güvenliği",
                 "description": "Uygulamalarınızın güvenli olmasını sağlamak için güçlü kimlik doğrulama, yetkilendirme ve veri şifreleme uygulamak.",
                 "icon": "Shield"
             },

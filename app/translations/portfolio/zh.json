@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "技能",
-        "subtitle": "我的技术水平",
+        "subtitle": "我的技术专长",
         "frontendTitle": "前端开发人员",
         "backendTitle": "后端开发人员",
         "databaseTitle": "数据库管理",
@@ -388,7 +388,7 @@
         "subtitle": "我的专业经验",
         "items": [
             {
-                "title": "全栈开发人员 (MERN)",
+                "title": "创始人兼全栈开发人员 (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "远程",
                 "startDate": "2025年10月",
@@ -405,8 +405,8 @@
                 ]
             },
             {
-                "title": "职业发展",
-                "company": "职业间歇期",
+                "title": "后端开发培训",
+                "company": "自学与职业发展",
                 "location": "远程",
                 "startDate": "2024年11月",
                 "endDate": "2025年1月",
@@ -429,16 +429,15 @@
                 "duration": "10个月",
                 "type": "实习",
                 "workType": "现场办公",
-                "achievementsLabel": "成就：",
+                "achievementsLabel": "通过专业实习培养全栈Web开发技能，应用以下学到的概念：",
                 "responsibilities": [
-                    "在前端开发中设计了交互式且具有吸引力的用户界面。",
-                    "获得了后端开发和数据库管理方面的经验。",
-                    "培养了创建和维护动态 Web 应用程序的技能。",
-                    "应用敏捷方法论以提高效率并加强团队合作。",
-                    "积累了使用 Git 和 GitHub 进行有效代码和项目管理的经验。",
-                    "使用 SonarQube 分析代码质量并确保持续改进。",
-                    "使用 Docker 简化环境管理和应用程序开发。",
-                    "增强了人际交往能力，包括沟通和团队合作。"
+                    "Web项目的准备和规划。",
+                    "敏捷方法论和项目管理实践。",
+                    "数据库管理和数据处理。",
+                    "用于交互式和响应式用户界面的前端开发。",
+                    "后端开发和服务器端应用程序逻辑。",
+                    "云原生应用程序开发和部署概念。",
+                    "通过最终综合项目进行端到端Web应用程序开发。"
                 ]
             },
             {
@@ -466,35 +465,36 @@
                 "startDate": "2022年11月",
                 "endDate": "2023年6月",
                 "duration": "8个月",
-                "type": "实习",
+                "type": "全职",
                 "workType": "现场办公",
-                "achievementsLabel": "主要学习内容：",
+                "achievementsLabel": "通过实践培训培养了数字开发方面的基础技能，包括：",
                 "responsibilities": [
-                    "掌握算法基础和面向对象编程。",
-                    "设计并构建与用户交互的静态和动态网站。",
-                    "操作数据库并执行基本操作。",
-                    "学习用于应用程序开发的 JavaScript。",
-                    "熟悉信息系统安全原则。",
-                    "培养了职业环境所需的行为和社会技能。"
+                    "算法基础和解决问题的技巧。",
+                    "面向对象编程（OOP）概念。",
+                    "静态和动态网站的创建。",
+                    "JavaScript编程和Web交互性。",
+                    "数据库操作和数据管理。",
+                    "信息系统安全基础。",
+                    "了解数字开发流程和专业实践。"
                 ]
             }
         ]
     },
     "education": {
         "title": "教育",
-        "subtitle": "我的个人旅程",
+        "subtitle": "教育背景",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "数字开发文凭（全栈网络选项）",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "数字开发文凭 - 全栈 Web 方向",
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "摩洛哥, Laayoune",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "巴巴艾哈迈德·本·穆罕默德·亚赫迪高中",
-                "degree": "理学学士学位，物理科学",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "物理科学高中毕业证书",
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "摩洛哥, Laayoune",
@@ -589,7 +589,7 @@
                 "icon": "Database"
             },
             {
-                "title": "信息安全",
+                "title": "应用程序安全",
                 "description": "实施强大的身份验证、授权和数据加密，以确保您的应用程序安全。",
                 "icon": "Shield"
             },

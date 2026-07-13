@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "Vaardigheden",
-        "subtitle": "Mijn technisch niveau",
+        "subtitle": "Mijn Technische Expertise",
         "frontendTitle": "Frontend Ontwikkelaar",
         "backendTitle": "Backend Ontwikkelaar",
         "databaseTitle": "Databasebeheer",
@@ -388,7 +388,7 @@
         "subtitle": "Mijn professionele ervaring",
         "items": [
             {
-                "title": "Full Stack Developer (MERN)",
+                "title": "Oprichter & Full Stack Developer (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "Op afstand",
                 "startDate": "okt 2025",
@@ -405,8 +405,8 @@
                 ]
             },
             {
-                "title": "Professionele ontwikkeling",
-                "company": "Sabbatical",
+                "title": "Backend Ontwikkeling Training",
+                "company": "Zelfstudie & Professionele Ontwikkeling",
                 "location": "Op afstand",
                 "startDate": "nov 2024",
                 "endDate": "jan 2025",
@@ -429,16 +429,15 @@
                 "duration": "10 mnd",
                 "type": "Stage",
                 "workType": "Op locatie",
-                "achievementsLabel": "Prestaties:",
+                "achievementsLabel": "Ontwikkelde full-stack webontwikkelingsvaardigheden via een professionele stage en paste concepten toe die waren geleerd in:",
                 "responsibilities": [
-                    "Interactieve en aantrekkelijke gebruikersinterfaces ontworpen in front-end ontwikkeling.",
-                    "Ervaring opgedaan in back-end ontwikkeling en databasebeheer.",
-                    "Vaardigheden ontwikkeld in het maken en onderhouden van dynamische webapplicaties.",
-                    "Agile-methodologie toegepast om de efficiëntie te verbeteren en het teamwerk te versterken.",
-                    "Ervaring opgedaan met het gebruik van Git en GitHub voor effectief code- en projectbeheer.",
-                    "SonarQube gebruikt om de codekwaliteit te analyseren en continue verbetering te waarborgen.",
-                    "Docker gebruikt om het omgevingsbeheer en de applicatieontwikkeling te stroomlijnen.",
-                    "Interpersoonlijke vaardigheden verbeterd, waaronder communicatie en teamwerk."
+                    "Voorbereiding en planning van webprojecten.",
+                    "Agile methodologie en projectmanagementpraktijken.",
+                    "Databasebeheer en gegevensverwerking.",
+                    "Front-end ontwikkeling voor interactieve en responsieve gebruikersinterfaces.",
+                    "Back-end ontwikkeling en server-side applicatielogica.",
+                    "Cloud-native applicatie-ontwikkeling en implementatieconcepten.",
+                    "End-to-end ontwikkeling van webapplicaties via een afrondend syntheseproject."
                 ]
             },
             {
@@ -466,35 +465,36 @@
                 "startDate": "nov 2022",
                 "endDate": "jun 2023",
                 "duration": "8 mnd",
-                "type": "Stage",
+                "type": "Fulltime",
                 "workType": "Op locatie",
-                "achievementsLabel": "Kernleerpunten:",
+                "achievementsLabel": "Ontwikkelde fundamentele vaardigheden in digitale ontwikkeling door praktische training, gericht op:",
                 "responsibilities": [
-                    "De basis van algoritmisch en objectgeoriënteerd programmeren verworven.",
-                    "Statische en dynamische websites ontworpen en gebouwd die interactie met gebruikers hebben.",
-                    "Gewerkt met databases en basisbewerkingen uitgevoerd.",
-                    "JavaScript geleerd voor applicatieontwikkeling.",
-                    "Vertrouwd geraakt met de principes van informatiebeveiliging.",
-                    "Essentiële gedrags- en sociale vaardigheden ontwikkeld voor een professionele omgeving."
+                    "Algoritmische fundamenten en probleemoplossende technieken.",
+                    "Concepten van Object-Georiënteerd Programmeren (OOP).",
+                    "Creatie van statische en dynamische websites.",
+                    "JavaScript-programmering en webinteractiviteit.",
+                    "Databasemanipulatie en gegevensbeheer.",
+                    "Fundamenten van de beveiliging van informatiesystemen.",
+                    "Begrip van digitale ontwikkelingsprocessen en professionele praktijken."
                 ]
             }
         ]
     },
     "education": {
         "title": "Opleiding",
-        "subtitle": "Mijn persoonlijke reis",
+        "subtitle": "Academische Achtergrond",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "Diploma in Digitale Ontwikkeling (Full Stack Web Optie)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "Diploma in Digitale Ontwikkeling - Full Stack Web Optie",
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "Laayoune, Marokko",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Baba Ahmed bin Muhammad Yahdih Middelbare School",
-                "degree": "Bachelor, Natuurwetenschappen",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "Middelbareschooldiploma in Fysische Wetenschappen",
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "Laayoune, Marokko",
@@ -589,7 +589,7 @@
                 "icon": "Database"
             },
             {
-                "title": "Informatiebeveiliging",
+                "title": "Applicatiebeveiliging",
                 "description": "Implementeer robuuste authenticatie, autorisatie en gegevensversleuteling om ervoor te zorgen dat uw applicaties veilig zijn.",
                 "icon": "Shield"
             },

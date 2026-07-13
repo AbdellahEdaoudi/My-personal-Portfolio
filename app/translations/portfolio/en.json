@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "Skills",
-        "subtitle": "My technical level",
+        "subtitle": "My Technical Expertise",
         "frontendTitle": "Front-End Technologies",
         "backendTitle": "Back-End Technologies",
         "databaseTitle": "Database Management",
@@ -389,7 +389,7 @@
         "subtitle": "My professional experience",
         "items": [
             {
-                "title": "Full Stack Developer (MERN)",
+                "title": "Founder & Full Stack Developer (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "Remote",
                 "startDate": "Oct 2025",
@@ -406,8 +406,8 @@
                 ]
             },
             {
-                "title": "Professional development",
-                "company": "Career Break",
+                "title": "Backend Development Training",
+                "company": "Self-Learning & Professional Development",
                 "location": "Remote",
                 "startDate": "Nov 2024",
                 "endDate": "Jan 2025",
@@ -422,7 +422,7 @@
                 ]
             },
             {
-                "title": "Full Stack Developer Intern",
+                "title": "Full Stack Web Developer Intern",
                 "company": "Cités des Métiers et des Compétences",
                 "location": "Laayoune, Morocco",
                 "startDate": "Sep 2023",
@@ -430,16 +430,15 @@
                 "duration": "10 mos",
                 "type": "Internship",
                 "workType": "On-site",
-                "achievementsLabel": "Achievements:",
+                "achievementsLabel": "Developed full-stack web development skills through a professional internship, applying concepts learned in:",
                 "responsibilities": [
-                    "Designed interactive and attractive user interfaces in front-end development.",
-                    "Acquired experience in back-end development and database management.",
-                    "Developed skills in creating and maintaining dynamic web applications.",
-                    "Applied Agile methodology to improve efficiency and strengthen teamwork.",
-                    "Gained experience using Git and GitHub for effective code and project management.",
-                    "Used SonarQube to analyze code quality and ensure continuous improvement.",
-                    "Used Docker to streamline environment management and application development.",
-                    "Enhanced interpersonal skills, including communication and teamwork."
+                    "Web project preparation and planning.",
+                    "Agile methodology and project management practices.",
+                    "Database management and data handling.",
+                    "Front-end development for interactive and responsive user interfaces.",
+                    "Back-end development and server-side application logic.",
+                    "Cloud-native application development and deployment concepts.",
+                    "End-to-end web application development through a final synthesis project."
                 ]
             },
             {
@@ -467,38 +466,39 @@
                 "startDate": "Nov 2022",
                 "endDate": "Jun 2023",
                 "duration": "8 mos",
-                "type": "Internship",
+                "type": "Full-time",
                 "workType": "On-site",
-                "achievementsLabel": "Core Learning:",
+                "achievementsLabel": "Developed foundational skills in digital development through hands-on training, covering:",
                 "responsibilities": [
-                    "Acquired the basics of algorithmic and object-oriented programming.",
-                    "Designed and built static and dynamic websites that interact with users.",
-                    "Worked with databases and executed basic operations.",
-                    "Learned JavaScript for application development.",
-                    "Familiarized with information system security principles.",
-                    "Developed behavioral and social skills essential for a professional environment."
+                    "Algorithmic fundamentals and problem-solving techniques.",
+                    "Object-Oriented Programming (OOP) concepts.",
+                    "Creation of static and dynamic websites.",
+                    "JavaScript programming and web interactivity.",
+                    "Database manipulation and data management.",
+                    "Information systems security fundamentals.",
+                    "Understanding of digital development processes and professional practices."
                 ]
             }
         ]
     },
     "education": {
         "title": "Education",
-        "subtitle": "My personal journey",
+        "subtitle": "Academic Background",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences</a>",
-                "degree": "Diploma in Digital Development (Full Stack Web Option)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "Diploma in Digital Development - Full Stack Web Option",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "Laayoune , Morocco",
+                "location": "Laayoune, Morocco",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "Baba Ahmed bin Muhammad Yahdih High School",
-                "degree": "Bachelor's degree, Physical Sciences",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "High School Diploma in Physical Sciences",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "Laayoune , Morocco",
+                "location": "Laayoune, Morocco",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -590,7 +590,7 @@
                 "icon": "Database"
             },
             {
-                "title": "Information Security",
+                "title": "Application Security",
                 "description": "Implementing robust authentication, authorization, and data encryption to ensure your applications are secure.",
                 "icon": "Shield"
             },

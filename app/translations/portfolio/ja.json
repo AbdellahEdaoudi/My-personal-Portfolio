@@ -41,7 +41,7 @@
     },
     "skills": {
         "title": "スキル",
-        "subtitle": "私の技術レベル",
+        "subtitle": "私の技術的専門知識",
         "frontendTitle": "フロントエンド開発者",
         "backendTitle": "バックエンド開発者",
         "databaseTitle": "データベース管理",
@@ -388,7 +388,7 @@
         "subtitle": "私の職業経験",
         "items": [
             {
-                "title": "フルスタック開発者 (MERN)",
+                "title": "創設者兼フルスタック開発者 (MERN)",
                 "company": "DGT PORTFOLIO",
                 "location": "リモート",
                 "startDate": "2025年10月",
@@ -405,8 +405,8 @@
                 ]
             },
             {
-                "title": "専門能力開発",
-                "company": "キャリアブレイク",
+                "title": "バックエンド開発トレーニング",
+                "company": "自己学習と専門能力開発",
                 "location": "リモート",
                 "startDate": "2024年11月",
                 "endDate": "2025年1月",
@@ -429,16 +429,15 @@
                 "duration": "10ヶ月",
                 "type": "インターンシップ",
                 "workType": "オンサイト",
-                "achievementsLabel": "実績:",
+                "achievementsLabel": "プロとしてのインターンシップを通じてフルスタックWeb開発スキルを習得し、以下の概念を適用しました：",
                 "responsibilities": [
-                    "フロントエンド開発においてインタラクティブで魅力的なユーザーインターフェイスを設計。",
-                    "バックエンド開発とデータベース管理の経験を習得。",
-                    "動的なWebアプリケーションの作成と保守に関するスキルを開発。",
-                    "効率を向上させ、チームワークを強化するためにアジャイル手法を適用。",
-                    "効果的なコードとプロジェクト管理のためにGitとGitHubを使用する経験を習得。",
-                    "SonarQubeを使用してコード品質を分析し、継続的な改善を確保。",
-                    "Dockerを使用して環境管理とアプリケーション開発を合理化。",
-                    "コミュニケーションやチームワークなどの対人スキルを向上。"
+                    "Webプロジェクトの準備と計画。",
+                    "アジャイル手法とプロジェクト管理の実践。",
+                    "データベース管理とデータ処理。",
+                    "インタラクティブでレスポンシブなユーザーインターフェースのフロントエンド開発。",
+                    "バックエンド開発とサーバーサイドのアプリケーションロジック。",
+                    "クラウドネイティブなアプリケーション開発とデプロイの概念。",
+                    "最終的な統合プロジェクトを通じたエンドツーエンドのWebアプリケーション開発。"
                 ]
             },
             {
@@ -466,38 +465,39 @@
                 "startDate": "2022年11月",
                 "endDate": "2023年6月",
                 "duration": "8ヶ月",
-                "type": "インターンシップ",
+                "type": "フルタイム",
                 "workType": "オンサイト",
-                "achievementsLabel": "コア学習:",
+                "achievementsLabel": "実践的なトレーニングを通じて、以下の分野をカバーするデジタル開発の基礎スキルを習得しました：",
                 "responsibilities": [
-                    "アルゴリズムとオブジェクト指向プログラミングの基礎を習得。",
-                    "ユーザーと対話する静的および動的なウェブサイトを設計および構築。",
-                    "データベースを操作し、基本的な操作を実行。",
-                    "アプリケーション開発のためのJavaScriptを学習。",
-                    "情報システムセキュリティの原則に習熟。",
-                    "プロフェッショナルな環境に不可欠な行動的および社会的スキルを開発。"
+                    "アルゴリズムの基礎と問題解決手法。",
+                    "オブジェクト指向プログラミング（OOP）の概念。",
+                    "静的および動的Webサイトの作成。",
+                    "JavaScriptプログラミングとWebのインタラクティブ性。",
+                    "データベースの操作とデータ管理。",
+                    "情報システムセキュリティの基礎。",
+                    "デジタル開発プロセスと専門的な実践への理解。"
                 ]
             }
         ]
     },
     "education": {
         "title": "教育",
-        "subtitle": "私の個人的な旅",
+        "subtitle": "学歴",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>職業と能力の都市</a>",
-                "degree": "デジタル開発の卒業証書（フルスタックWebオプション）",
+                "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
+                "degree": "デジタル開発のディプロマ - フルスタックWebオプション",
                 "startDate": "2022",
                 "endDate": "2024",
-                "location": "Laayoune , モロッコ",
+                "location": "Laayoune, モロッコ",
                 "imageUrl": "/Education/cmc.png"
             },
             {
-                "institution": "ババ・アーメド・ビン・ムハンマド・ヤハディ高校",
-                "degree": "学士号、物理科学",
+                "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
+                "degree": "物理科学専攻高校卒業資格",
                 "startDate": "2021",
                 "endDate": "2022",
-                "location": "Laayoune , モロッコ",
+                "location": "Laayoune, モロッコ",
                 "imageUrl": "/Education/BabAhmedImage.jpg"
             }
         ]
@@ -589,7 +589,7 @@
                 "icon": "Database"
             },
             {
-                "title": "情報セキュリティ",
+                "title": "アプリケーションセキュリティ",
                 "description": "堅牢な認証、認可、データ暗号化を実装して、アプリケーションの安全性を確保します。",
                 "icon": "Shield"
             },
