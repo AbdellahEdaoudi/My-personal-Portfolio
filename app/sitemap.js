@@ -9,10 +9,12 @@ export default function sitemap() {
     cv: {
         en: "/cv/cv-abdellah-edaoudi-en.pdf",
         fr: "/cv/cv-abdellah-edaoudi-fr.pdf",
+        es: "/cv/cv-abdellah-edaoudi-es.pdf",
     },
     coverLetter: {
-        en: "/cover-letter/abdellah-edaoudi-cover-letter-en.pdf",
-        fr: "/cover-letter/abdellah-edaoudi-cover-letter-fr.pdf",
+        en: "/cl/Cover-Letter-Abdellah-Edaoudi-EN.pdf",
+        fr: "/cl/Lettre-de-Motivation-Abdellah-Edaoudi-FR.pdf",
+        es: "/cl/Carta-de-Presentacion-Abdellah-Edaoudi-ES.pdf",
     }
 };
 
