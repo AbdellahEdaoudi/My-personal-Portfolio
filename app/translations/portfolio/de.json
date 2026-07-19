@@ -568,7 +568,12 @@
         "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
         "messageRequired": "Nachricht ist erforderlich",
         "successMessage": "Erfolgreich gesendet",
-        "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+        "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+        "attachImage": "Bild anhängen (optional)",
+        "imageCompressing": "Komprimieren...",
+        "imageAttached": "Bild angehängt und komprimiert ✓",
+        "imageTypeError": "Bitte wählen Sie eine gültige Bilddatei aus.",
+        "imageError": "Bildverarbeitung fehlgeschlagen."
     },
     "footer": {
         "name": "Abdellah Edaoudi",

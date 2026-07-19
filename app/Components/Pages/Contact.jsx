@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import axios from "axios";
 import { useToast } from "../Toast";
 import Image from "next/image";
 import { ArrowBigRight, MailMinus, Send } from "../Icons";
+import imageCompression from "browser-image-compression";
 
 function Contact({ content }) {
     const toast = useToast();
@@ -13,6 +14,11 @@ function Contact({ content }) {
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
     const [errors, setErrors] = useState({});
+    const [imageFile, setImageFile] = useState(null);
+    const [imagePreview, setImagePreview] = useState(null);
+    const [imageLoading, setImageLoading] = useState(false);
+    const [imageModal, setImageModal] = useState(false);
+    const fileInputRef = useRef(null);
 
     if (!content) return null;
 
@@ -30,6 +36,47 @@ function Contact({ content }) {
         return Object.keys(tempErrors).length === 0;
     };
 
+    const ImageChange = async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        // Validate file type
+        if (!file.type.startsWith("image/")) {
+            toast.error(content.imageTypeError || "Please select a valid image file.");
+            return;
+        }
+
+        setImageLoading(true);
+        try {
+            const options = {
+                maxSizeMB: 0.8,
+                maxWidthOrHeight: 1280,
+                useWebWorker: true,
+            };
+
+            const compressedFile = await imageCompression(file, options);
+
+            // Convert to base64
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setImageFile(reader.result);
+                setImagePreview(reader.result);
+                setImageLoading(false);
+            };
+            reader.readAsDataURL(compressedFile);
+        } catch (error) {
+            console.error("Compression error:", error);
+            toast.error(content.imageError || "Failed to process image.");
+            setImageLoading(false);
+        }
+    };
+
+    const removeImage = () => {
+        setImageFile(null);
+        setImagePreview(null);
+        if (fileInputRef.current) fileInputRef.current.value = "";
+    };
+
     const PostContact = async (e) => {
         e.preventDefault();
         setErrors({});
@@ -42,11 +89,15 @@ function Contact({ content }) {
         setLoading(true);
 
         try {
-            await axios.post('/api/contact', { subject, email, message });
+            const payload = { subject, email, message };
+            if (imageFile) payload.image = imageFile;
+
+            await axios.post('/api/contact', payload);
             setSubject("");
             setEmail("");
             setMessage("");
             setErrors({});
+            removeImage();
             toast.success(content.successMessage || "Sent successfully");
         } catch (error) {
             console.error(error);
@@ -59,8 +110,46 @@ function Contact({ content }) {
     return (
         <section
             id="Cnt"
-            className=" pb-10 flex flex-col items-center pt-4 min-h-screen"
+            className=" pb-10 flex flex-col items-center pt-4 min-h-screen relative"
         >
+            {/* Image Lightbox Modal */}
+            <AnimatePresence>
+                {imageModal && imagePreview && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={() => setImageModal(false)}
+                        className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md cursor-zoom-out"
+                    >
+                        <motion.div
+                            initial={{ scale: 0.85, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.85, opacity: 0 }}
+                            transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                            onClick={(e) => e.stopPropagation()}
+                            className="relative max-w-3xl w-full cursor-default"
+                        >
+                            {/* Close Button */}
+                            <button
+                                type="button"
+                                onClick={() => setImageModal(false)}
+                                className="absolute -top-3 -right-3 z-10 w-8 h-8 bg-white text-slate-700 rounded-full shadow-lg flex items-center justify-center hover:bg-red-50 hover:text-red-500 transition-colors border border-slate-200"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                            <img
+                                src={imagePreview}
+                                alt="Full size preview"
+                                className="w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl border border-white/10"
+                            />
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
             <div className="text-center pb-10">
                 <p className="text-4xl font-bold">{content.title}</p>
                 <p className="text-gray-400 text-sm">{content.subtitle}</p>
@@ -175,9 +264,69 @@ function Contact({ content }) {
                             </AnimatePresence>
                         </div>
 
+                        {/* Image Attachment */}
+                        <div>
+                            <input
+                                ref={fileInputRef}
+                                type="file"
+                                accept="image/*"
+                                id="contact-image-input"
+                                className="hidden"
+                                onChange={ImageChange}
+                            />
+                            {!imagePreview ? (
+                                <button
+                                    type="button"
+                                    onClick={() => fileInputRef.current?.click()}
+                                    disabled={imageLoading}
+                                    className="flex items-center gap-2 text-[12px] text-gray-500 border border-dashed border-gray-300 rounded-lg px-4 py-2 w-72 hover:border-gray-500 hover:text-gray-700 transition-colors disabled:opacity-50"
+                                >
+                                    {imageLoading ? (
+                                        <>
+                                            <div className="w-3 h-3 border-2 border-gray-400 border-t-gray-700 rounded-full animate-spin" />
+                                            {content.imageCompressing || "Compressing..."}
+                                        </>
+                                    ) : (
+                                        <>
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                                            </svg>
+                                            {content.attachImage || "Attach an image (optional)"}
+                                        </>
+                                    )}
+                                </button>
+                            ) : (
+                                <AnimatePresence>
+                                    <motion.div
+                                        initial={{ opacity: 0, scale: 0.95 }}
+                                        animate={{ opacity: 1, scale: 1 }}
+                                        exit={{ opacity: 0, scale: 0.95 }}
+                                        className="relative w-72 rounded-lg overflow-hidden border border-gray-200"
+                                    >
+                                        <img
+                                            src={imagePreview}
+                                            alt="Preview"
+                                            onClick={() => setImageModal(true)}
+                                            className="w-full h-36 object-cover cursor-zoom-in hover:opacity-90 transition-opacity"
+                                        />
+                                        <button
+                                            type="button"
+                                            onClick={removeImage}
+                                            className="absolute top-1 right-1 bg-black/60 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs hover:bg-black/80 transition-colors"
+                                        >
+                                            ✕
+                                        </button>
+                                        <p className="text-[10px] text-gray-400 text-center py-1 bg-gray-50">
+                                            {content.imageAttached || "Image attached & compressed ✓"}
+                                        </p>
+                                    </motion.div>
+                                </AnimatePresence>
+                            )}
+                        </div>
+
                         <button
                             type="submit"
-                            disabled={loading}
+                            disabled={loading || imageLoading}
                             className="flex gap-2 bg-gray-800 text-white px-5 py-3 rounded-lg items-center text-[14px] disabled:opacity-50"
                         >
                             {loading ? (

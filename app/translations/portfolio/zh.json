@@ -568,7 +568,12 @@
         "emailInvalid": "请输入有效的电子邮件地址",
         "messageRequired": "消息是必填项",
         "successMessage": "发送成功",
-        "errorMessage": "发生错误。请重试。"
+        "errorMessage": "发生错误。请重试。",
+        "attachImage": "附加图片（可选）",
+        "imageCompressing": "压缩中...",
+        "imageAttached": "图片已附加并压缩 ✓",
+        "imageTypeError": "请选择有效的图像文件。",
+        "imageError": "图像处理失败。"
     },
     "footer": {
         "name": "Abdellah Edaoudi",

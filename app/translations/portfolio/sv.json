@@ -568,7 +568,12 @@
         "emailInvalid": "Vänligen ange en giltig e-postadress",
         "messageRequired": "Meddelande krävs",
         "successMessage": "Skickades framgångsrikt",
-        "errorMessage": "Ett fel uppstod. Försök igen."
+        "errorMessage": "Ett fel uppstod. Försök igen.",
+        "attachImage": "Bifoga en bild (valfritt)",
+        "imageCompressing": "Komprimerar...",
+        "imageAttached": "Bild bifogad och komprimerad ✓",
+        "imageTypeError": "Välj en giltig bildfil.",
+        "imageError": "Det gick inte att bearbeta bilden."
     },
     "footer": {
         "name": "Abdellah Edaoudi",
