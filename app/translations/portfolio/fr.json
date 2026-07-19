@@ -72,18 +72,19 @@
     "projects": {
         "title": "Projets",
         "subtitle": "Travaux les plus récents",
-        "liveDemo": "Démo",
+        "preview": "Aperçu",
         "readMore": "Lire la suite",
         "showLess": "Afficher moins",
         "items": [
             {
-                "title": "DGT Portfolio Builder",
+                "title": "Créateur de Portfolio DGT",
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com/fr",
+                "websiteUrl": "https://dgtportfolio.com",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "description": "Une plateforme SaaS complète permettant aux utilisateurs de créer des portfolios professionnels sans effort. Elle propose un support multilingue, l'intégration de domaines personnalisés, une sélection de thèmes dynamiques, la génération de CV en temps réel et un tableau de bord administratif intuitif pour gérer le contenu, les abonnements et les analyses.",
+                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "description": "Une plateforme SaaS complète permettant aux utilisateurs de créer des portfolios professionnels sans effort. Elle offre un support multilingue, une intégration de domaine personnalisé, une sélection de thèmes dynamiques, une génération de CV en temps réel et un tableau de bord d'administration intuitif pour gérer le contenu, les abonnements et les analyses.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -125,16 +126,15 @@
                         "name": "jwt",
                         "logo": "/Skills/jwt.jpg"
                     }
-                ],
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
+                ]
             },
             {
                 "title": "Système de Réservation d'Hôtel",
-                "image": "/Projects/HotelDash.png",
+                "image": "/Projects/EdHotel.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "Le système de gestion de l’hôtel offre une solution complète pour gérer les réservations de chambres et les paiements. Il permet aux utilisateurs de réserver facilement des chambres et de recevoir une carte électronique de confirmation. Le système comprend un tableau de bord pour gérer les réservations, les paiements et les réponses des clients par e-mail.",
+                "description": "Le système de gestion hôtelière fournit une solution complète pour gérer les réservations de chambres et les paiements. Il permet aux utilisateurs de réserver facilement des chambres et de recevoir un billet électronique de confirmation. Le système comprend un tableau de bord pour gérer les réservations, les paiements et les réponses aux clients par e-mail.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -172,8 +172,7 @@
                         "name": "cloudinary",
                         "logo": "/Skills/cloudinary.jpg"
                     }
-                ],
-                "Rapport": " "
+                ]
             },
             {
                 "title": "Système de Chat Sécurisé en Temps Réel",
@@ -182,7 +181,7 @@
                 "websiteUrl": "https://edchatflow.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "Système de Chat Sécurisé en Temps Réel est une application de messagerie instantanée haute performance dotée d'une sécurité avancée. Elle utilise Socket.io pour la communication en temps réel et implémente le cryptage de bout en bout (E2EE) pour garantir la confidentialité des messages. Elle comprend également un système d'authentification robuste utilisant JWT et le hachage de mots de passe avec Bcrypt, assurant la protection des données utilisateur selon les normes les plus élevées.",
+                "description": "Le Système de Chat Sécurisé en Temps Réel est une application de messagerie instantanée haute performance avec une sécurité avancée. Il utilise Socket.io pour la communication en temps réel et implémente le chiffrement de bout en bout (E2EE) pour garantir la confidentialité des messages. Il comprend également un système d'authentification robuste via JWT et le hachage des mots de passe avec Bcrypt, assurant la protection des données utilisateur aux normes les plus élevées.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -230,7 +229,7 @@
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubBackendUrl": "",
-                "description": "Un système back-end robuste et évolutif pour une plateforme de commerce électronique. Le système gère diverses fonctions telles que la gestion des utilisateurs, l'organisation de l'inventaire des produits, le traitement des commandes, la gestion des paiements (soit par carte ou par espèces), l'ajout de coupons, les avis, la gestion des catégories et des marques, la gestion des fournisseurs et la régulation des taxes.",
+                "description": "Un système backend robuste et évolutif pour une plateforme de commerce électronique. Le système gère diverses fonctions telles que la gestion des utilisateurs, l'organisation de l'inventaire des produits, le traitement des commandes, la gestion des paiements (en espèces ou par carte), l'ajout de coupons, les avis, la gestion des catégories et des marques, la gestion des fournisseurs et la réglementation fiscale.",
                 "technologies": [
                     {
                         "name": "Nestjs",
@@ -241,15 +240,15 @@
                         "logo": "/Skills/Nodejs.png"
                     },
                     {
-                        "name": "MongoDB",
+                        "name": "MongoDB ",
                         "logo": "/Skills/Mongodb.png"
                     },
                     {
-                        "name": "Typescript",
+                        "name": "Typescript ",
                         "logo": "/Skills/typescript.png"
                     },
                     {
-                        "name": "jwt",
+                        "name": "jwt ",
                         "logo": "/Skills/jwt.jpg"
                     },
                     {
@@ -267,12 +266,12 @@
                 ]
             },
             {
-                "title": "Plateforme de Resume",
-                "image": "/Projects/Linkerfolio.png",
+                "title": "Plateforme de CV",
+                "image": "/Projects/Linkerfolio.jpg",
                 "websiteUrl": "https://linkerfolio.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
-                "description": "Une application innovante que j'ai développée, permettant aux utilisateurs de présenter leur Resume professionnel et leurs liens de réseaux sociaux en un seul endroit. Cette application aide les utilisateurs à gérer efficacement leur identité numérique, ce qui en fait un outil idéal pour les chercheurs d'emploi ou toute personne souhaitant améliorer sa visibilité et son influence dans le monde numérique.",
+                "description": "Application innovante que j'ai développée, permettant aux utilisateurs de présenter leur CV professionnel et leurs liens de réseaux sociaux en un seul endroit. Cette application aide les utilisateurs à gérer efficacement leur identité numérique, en en faisant un outil idéal pour les chercheurs d'emploi ou toute personne souhaitant améliorer sa présence en ligne et son influence numérique.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -302,8 +301,54 @@
                         "name": "Git",
                         "logo": "/Skills/Git.png"
                     }
-                ],
-                "Rapport": " "
+                ]
+            },
+            {
+                "title": "Portfolio Personnel de Développeur",
+                "type": "fullstack",
+                "image": "/Projects/EdPortfolio.png",
+                "websiteUrl": "/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
+                "description": "Un portfolio personnel moderne, hautement interactif et réactif construit avec Next.js et Tailwind CSS. Il dispose de l'internationalisation (i18n) prenant en charge plusieurs langues.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
             },
             {
                 "title": "Compresseur d'Images",
@@ -311,7 +356,7 @@
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubFrontendUrl": "",
                 "githubBackendUrl": "",
-                "description": "Un outil de compression d'images puissant et sécurisé basé sur le navigateur. Il permet aux utilisateurs de compresser un nombre illimité d'images JPG, PNG et WebP jusqu'à 90 % sans perte de qualité. Les fonctionnalités incluent la compression en masse, la génération de PDF, une interface glisser-déposer et une confidentialité totale car tout le traitement s'effectue localement.",
+                "description": "Un outil de compression d'images puissant et sécurisé basé sur le navigateur. Il permet aux utilisateurs de compresser des images JPG, PNG et WebP illimitées jusqu'à 90% sans perte de qualité. Les fonctionnalités comprennent la compression en masse, la génération de PDF, une interface glisser-déposer et une confidentialité totale puisque tout le traitement se fait localement dans le navigateur.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -332,12 +377,12 @@
                 ]
             },
             {
-                "title": "App de Gestion des QR Codes",
+                "title": "App de Gestion de Codes QR",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
                 "githubBackendUrl": "",
-                "description": "Une application de gestion des QR codes permettant de créer des QR codes avec des logos personnalisés, de lire des QR codes à partir d’images et de scanner des QR codes via la caméra pour afficher instantanément les données. Dispose d’un design attrayant et réactif.",
+                "description": "Une application de gestion de codes QR qui vous permet de créer des codes QR avec des logos personnalisés, lire des codes QR depuis des images et scanner des codes QR via la caméra pour afficher des données instantanément. Elle présente un design attrayant et réactif.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -359,12 +404,12 @@
                 "Rapport": " "
             },
             {
-                "title": "App de shopping",
-                "image": "/Projects/EcomApp.png",
+                "title": "Application de Shopping",
+                "image": "/Projects/EdMarket.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
                 "githubBackendUrl": "",
-                "description": "Une application offrant une expérience de shopping fluide, facilitant la navigation des utilisateurs parmi les produits et l’ajout d’articles au panier. L’application se distingue par un design moderne et innovant, enrichissant l’expérience utilisateur avec une réactivité instantanée et des éléments interactifs, rendant ainsi le shopping plus agréable.",
+                "description": "Une application qui offre une expérience d'achat fluide, facilitant la navigation dans les produits et l'ajout d'articles au panier pour les utilisateurs. L'application dispose d'un design moderne et innovant qui améliore l'expérience utilisateur, avec une réactivité instantanée et des éléments interactifs qui rendent les achats plus agréables.",
                 "technologies": [
                     {
                         "name": "React.js",
@@ -378,8 +423,7 @@
                         "name": "Git",
                         "logo": "/Skills/Git.png"
                     }
-                ],
-                "Rapport": " "
+                ]
             }
         ],
         "requirementsLabel": "Exigences",

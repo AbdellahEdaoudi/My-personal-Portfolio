@@ -72,7 +72,7 @@
     "projects": {
         "title": "Projects",
         "subtitle": "Most recent work",
-        "liveDemo": "Demo",
+        "preview": "Preview",
         "readMore": "Read more",
         "showLess": "Show less",
         "items": [
@@ -83,7 +83,7 @@
                 "websiteUrl": "https://dgtportfolio.com",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "description": "A comprehensive SaaS platform empowering users to build professional portfolios effortlessly. It features multi-language support, custom domain integration, dynamic theme selection, real-time resume generation, and an intuitive admin dashboard for managing content, subscriptions, and analytics.",
+                "description": "A comprehensive SaaS platform that allows users to create professional portfolios without programming. It features multilingual support, custom subdomains, a built-in resume generator, multiple modern themes, and an intuitive dashboard to manage portfolio content.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -130,7 +130,7 @@
             },
             {
                 "title": "Hotel Reservation System",
-                "image": "/Projects/HotelDash.png",
+                "image": "/Projects/EdHotel.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
@@ -267,7 +267,7 @@
             },
             {
                 "title": "Resume Platform",
-                "image": "/Projects/Linkerfolio.png",
+                "image": "/Projects/Linkerfolio.jpg",
                 "websiteUrl": "https://linkerfolio.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
@@ -300,6 +300,53 @@
                     {
                         "name": "Git",
                         "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Personal Developer Portfolio",
+                "type": "fullstack",
+                "image": "/Projects/EdPortfolio.png",
+                "websiteUrl": "/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
+                "description": "A modern, highly interactive, and responsive personal portfolio built with Next.js and Tailwind CSS. It features internationalization (i18n) supporting multiple languages, and smooth animations to showcase my skills, projects, and professional experience in an engaging way.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
                     }
                 ]
             },
@@ -358,7 +405,7 @@
             },
             {
                 "title": "Shopping App",
-                "image": "/Projects/EcomApp.png",
+                "image": "/Projects/EdMarket.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
                 "githubBackendUrl": "",

@@ -72,18 +72,19 @@
     "projects": {
         "title": "المشاريع",
         "subtitle": "أحدث الأعمال",
-        "liveDemo": "معاينة",
+        "preview": "معاينة",
         "readMore": "اقرأ المزيد",
         "showLess": "عرض أقل",
         "items": [
             {
-                "title": "DGT Portfolio Builder",
+                "title": "منشئ بورتفوليو",
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "description": "منصة SaaS شاملة تمكن المستخدمين من بناء محافظ احترافية دون عناء. تتميز بدعم متعدد اللغات، وتكامل النطاق المخصص، واختيار السمات الديناميكية، وإنشاء السيرة الذاتية في الوقت الفعلي، ولوحة تحكم إدارية بديهية لإدارة المحتوى والاشتراكات والتحليلات.",
+                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "description": "منصة SaaS شاملة تتيح للمستخدمين إنشاء محافظ احترافية بسهولة تامة. توفر دعمًا متعدد اللغات، وتكامل نطاق مخصص، واختيار سمات ديناميكية، وإنشاء سيرة ذاتية في الوقت الفعلي، ولوحة إدارة بديهية لإدارة المحتوى والاشتراكات والتحليلات.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -125,16 +126,15 @@
                         "name": "jwt",
                         "logo": "/Skills/jwt.jpg"
                     }
-                ],
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
+                ]
             },
             {
                 "title": "نظام حجز الفنادق",
-                "image": "/Projects/HotelDash.png",
+                "image": "/Projects/EdHotel.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "يوفر نظام إدارة الفنادق حلاً شاملاً لإدارة حجوزات الغرف والمدفوعات. يسمح للمستخدمين بحجز الغرف بسهولة وتلقي تذكرة إلكترونية للتأكيد. يتضمن النظام لوحة تحكم لإدارة الحجوزات والمدفوعات وردود العملاء عبر البريد الإلكتروني.",
+                "description": "يوفر نظام إدارة الفنادق حلاً شاملاً لإدارة حجوزات الغرف والمدفوعات. يتيح للمستخدمين حجز الغرف بسهولة وتلقي تذكرة إلكترونية للتأكيد. يتضمن النظام لوحة تحكم لإدارة الحجوزات والمدفوعات والردود على العملاء عبر البريد الإلكتروني.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -153,7 +153,7 @@
                         "logo": "/Skills/ExpressJs.png"
                     },
                     {
-                        "name": "MongoDB",
+                        "name": "MongoDB ",
                         "logo": "/Skills/Mongodb.png"
                     },
                     {
@@ -175,13 +175,13 @@
                 ]
             },
             {
-                "title": "نظام دردشة آمن فوري",
+                "title": "نظام دردشة آمن في الوقت الفعلي",
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "نظام دردشة آمن فوري هو تطبيق دردشة فورية يتميز بالأداء العالي ومستوى أمان متقدم. يعتمد على Socket.io للتواصل اللحظي بين المستخدمين، ويطبق تشفير طرف إلى طرف (E2EE) لضمان سرية الرسائل وعدم تمكن أي جهة خارجية من الاطلاع عليها. كما يحتوي على نظام مصادقة قوي باستخدام JWT وتشفير كلمات المرور بـ Bcrypt، ليضمن حماية بيانات المستخدمين بأعلى المعايير.",
+                "description": "نظام الدردشة الآمن في الوقت الفعلي هو تطبيق مراسلة فورية عالي الأداء بأمان متقدم. يستخدم Socket.io للاتصال في الوقت الفعلي ويطبق التشفير من طرف إلى طرف (E2EE) لضمان خصوصية الرسائل. كما يتضمن نظام مصادقة قويًا باستخدام JWT وتجزئة كلمات المرور باستخدام Bcrypt، مما يضمن حماية بيانات المستخدم بأعلى المعايير.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -222,14 +222,14 @@
                 ]
             },
             {
-                "title": "Backend التجارة الإلكترونية",
+                "title": "نظام الواجهة الخلفية للتجارة الإلكترونية",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubBackendUrl": "",
-                "description": "نظام خلفي قوي وقابل للتوسع لمنصة التجارة الإلكترونية. يتعامل النظام مع وظائف مختلفة مثل إدارة المستخدمين، وتنظيم مخزون المنتجات، ومعالجة الطلبات، والتعامل مع المدفوعات (سواء نقداً أو بالبطاقة)، وإضافة القسائم، والمراجعات، وإدارة الفئات والعلامات التجارية، وإدارة الموردين، والتنظيم الضريبي.",
+                "description": "نظام خلفي قوي وقابل للتطوير لمنصة التجارة الإلكترونية. يتعامل النظام مع وظائف متعددة مثل إدارة المستخدمين، وتنظيم مخزون المنتجات، ومعالجة الطلبات، ومعالجة المدفوعات (نقدًا أو بالبطاقة)، وإضافة القسائم، والمراجعات، وإدارة الفئات والعلامات التجارية، وإدارة الموردين، وتنظيم الضرائب.",
                 "technologies": [
                     {
                         "name": "Nestjs",
@@ -240,15 +240,15 @@
                         "logo": "/Skills/Nodejs.png"
                     },
                     {
-                        "name": "MongoDB",
+                        "name": "MongoDB ",
                         "logo": "/Skills/Mongodb.png"
                     },
                     {
-                        "name": "Typescript",
+                        "name": "Typescript ",
                         "logo": "/Skills/typescript.png"
                     },
                     {
-                        "name": "jwt",
+                        "name": "jwt ",
                         "logo": "/Skills/jwt.jpg"
                     },
                     {
@@ -266,12 +266,12 @@
                 ]
             },
             {
-                "title": "منصة السيرة الذاتية",
-                "image": "/Projects/Linkerfolio.png",
+                "title": "منصة السير الذاتية",
+                "image": "/Projects/Linkerfolio.jpg",
                 "websiteUrl": "https://linkerfolio.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
-                "description": "تطبيق مبتكر قمت بتطويره، يسمح للمستخدمين بعرض سيرتهم الذاتية المهنية وروابط وسائل التواصل الاجتماعي في مكان واحد. يساعد هذا التطبيق المستخدمين على إدارة هويتهم الرقمية بفعالية، مما يجعله أداة مثالية للباحثين عن عمل أو أي شخص يتطلع إلى تعزيز تواجده عبر الإنترنت وتأثيره الرقمي.",
+                "description": "تطبيق مبتكر قمت بتطويره، يتيح للمستخدمين عرض سيرتهم الذاتية المهنية وروابط وسائل التواصل الاجتماعي في مكان واحد. يساعد هذا التطبيق المستخدمين على إدارة هويتهم الرقمية بشكل فعال، مما يجعله أداة مثالية للباحثين عن عمل أو أي شخص يسعى إلى تعزيز حضوره الرقمي وتأثيره على الإنترنت.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -290,7 +290,7 @@
                         "logo": "/Skills/ExpressJs.png"
                     },
                     {
-                        "name": "MongoDB",
+                        "name": "MongoDB ",
                         "logo": "/Skills/Mongodb.png"
                     },
                     {
@@ -304,12 +304,59 @@
                 ]
             },
             {
+                "title": "بورتفوليو شخصي تفاعلي",
+                "type": "fullstack",
+                "image": "/Projects/EdPortfolio.png",
+                "websiteUrl": "/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
+                "description": "بورتفوليو شخصي حديث ومتجاوب وتفاعلي بالكامل تم بناؤه باستخدام Next.js و Tailwind CSS. يتميز بدعم التدويل (i18n) لدعم لغات متعددة، مع حركات سلسة لعرض مهاراتي ومشاريعي وخبراتي المهنية بطريقة جذابة ومميزة.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
                 "title": "ضاغط الصور",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubFrontendUrl": "",
                 "githubBackendUrl": "",
-                "description": "أداة قوية وآمنة لضغط الصور تعتمد على المتصفح. تتيح للمستخدمين ضغط عدد غير محدود من صور JPG و PNG و WebP بنسبة تصل إلى 90٪ دون فقدان الجودة. تشمل الميزات الضغط الجماعي، وإنشاء PDF، وواجهة السحب والإفلات، والخصوصية الكاملة حيث تتم جميع المعالجة محلياً في المتصفح.",
+                "description": "أداة قوية وآمنة لضغط الصور تعمل في المتصفح. تتيح للمستخدمين ضغط عدد غير محدود من صور JPG وPNG وWebP بنسبة تصل إلى 90% دون فقدان الجودة. تشمل الميزات الضغط الجماعي، وإنشاء ملفات PDF، وواجهة السحب والإفلات والخصوصية الكاملة حيث تتم جميع عمليات المعالجة محليًا في المتصفح.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -335,7 +382,7 @@
                 "websiteUrl": "https://edqrcode.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
                 "githubBackendUrl": "",
-                "description": "تطبيق لإدارة رموز QR يسمح لك بإنشاء رموز QR مع شعارات مخصصة، وقراءة رموز QR من الصور، ومسح رموز QR عبر الكاميرا لعرض البيانات على الفور. يتميز بتصميم جذاب وسريع الاستجابة.",
+                "description": "تطبيق لإدارة رموز QR يتيح لك إنشاء رموز QR مع شعارات مخصصة، وقراءة رموز QR من الصور، ومسح رموز QR عبر الكاميرا لعرض البيانات فورًا. يتميز بتصميم جذاب وسريع الاستجابة.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -353,11 +400,12 @@
                         "name": "Git",
                         "logo": "/Skills/Git.png"
                     }
-                ]
+                ],
+                "Rapport": " "
             },
             {
                 "title": "تطبيق التسوق",
-                "image": "/Projects/EcomApp.png",
+                "image": "/Projects/EdMarket.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
                 "githubBackendUrl": "",
