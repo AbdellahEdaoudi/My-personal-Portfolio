@@ -568,7 +568,12 @@
         "emailInvalid": "يرجى إدخال بريد إلكتروني صالح",
         "messageRequired": "الرسالة مطلوبة",
         "successMessage": "تم الإرسال بنجاح",
-        "errorMessage": "حدث خطأ. حاول مرة أخرى."
+        "errorMessage": "حدث خطأ. حاول مرة أخرى.",
+        "attachImage": "إرفاق صورة (اختياري)",
+        "imageCompressing": "جارٍ الضغط...",
+        "imageAttached": "تم إرفاق الصورة وضغطها ✓",
+        "imageTypeError": "يرجى اختيار ملف صورة صحيح.",
+        "imageError": "فشل معالجة الصورة."
     },
     "footer": {
         "name": "عبد الله الداودي",

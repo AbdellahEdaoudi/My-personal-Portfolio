@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { AnimatePresence, motion } from "framer-motion";
+
 import { useToast } from "../../Components/Toast";
 import {
     MessageSquare, Trash2, Search, Plus, ChevronLeft, ChevronRight,
@@ -15,15 +15,16 @@ export default function Messages({ isForbidden, setIsForbidden }) {
     const [isLoading, setIsLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
-    const [expandedMessage, setExpandedMessage] = useState(null);
+    const [selectedId, setSelectedId] = useState(null);
     const router = useRouter();
-    const itemsPerPage = 6;
+    const itemsPerPage = 8;
     const [deleteModal, setDeleteModal] = useState({
         isOpen: false,
         type: null,
         id: null,
         isDeleting: false
     });
+    const [imageModal, setImageModal] = useState(null); // stores image URL when open
 
     const fetchContacts = async (silent = false) => {
         if (!silent) setIsLoading(true);
@@ -35,7 +36,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                 );
             const contactsData = response.data.contacts || response.data;
             setContacts(Array.isArray(contactsData) ? contactsData.reverse() : []);
-            if (silent) toast.success("token refreshed");
+            if (silent) toast.success("Token refreshed");
         } catch (error) {
             console.error("Fetch error details:", error);
             if (error.response) {
@@ -81,7 +82,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
     };
 
     const handleDeleteByIdClick = (e, id) => {
-        e.stopPropagation();
+        if (e) e.stopPropagation();
         setDeleteModal({ isOpen: true, type: "single", id, isDeleting: false });
     };
 
@@ -91,10 +92,12 @@ export default function Messages({ isForbidden, setIsForbidden }) {
             if (deleteModal.type === "all") {
                 await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`, withCredentials: true });
                 setContacts([]);
+                setSelectedId(null);
                 toast.success("All messages deleted successfully.");
             } else if (deleteModal.type === "single" && deleteModal.id) {
                 await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${deleteModal.id}`, withCredentials: true });
                 setContacts((prev) => prev.filter((contact) => contact._id !== deleteModal.id));
+                if (selectedId === deleteModal.id) setSelectedId(null);
                 toast.success("Message deleted successfully.");
             }
         } catch (error) {
@@ -109,14 +112,15 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                             {},
                             { withCredentials: true }
                         );
-                        // Retry delete action
                         if (deleteModal.type === "all") {
                             await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`, withCredentials: true });
                             setContacts([]);
+                            setSelectedId(null);
                             toast.success("All messages deleted successfully.");
                         } else if (deleteModal.type === "single" && deleteModal.id) {
                             await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${deleteModal.id}`, withCredentials: true });
                             setContacts((prev) => prev.filter((contact) => contact._id !== deleteModal.id));
+                            if (selectedId === deleteModal.id) setSelectedId(null);
                             toast.success("Message deleted successfully.");
                         }
                     } catch (refreshError) {
@@ -143,12 +147,12 @@ export default function Messages({ isForbidden, setIsForbidden }) {
         }
     };
 
-    const handleAddDummyMessage = async () => {
+    const AddMessage = async () => {
         try {
             const newMsg = {
-                subject: "أستغفر الله",
-                email: "شهادة.عبدالله@portfolio.com",
-                message: "لا اله الا الله محمد رسول الله",
+                subject: "New message",
+                email: "[EMAIL_ADDRESS]",
+                message: "Hi, I came across your portfolio and I'm impressed with your work. I'm looking for a developer to work on a project, and I think you'd be a great fit.",
             };
             const res = await axios({ method: "post", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`, data: newMsg, withCredentials: true });
             setContacts((prev) => [...prev, res.data]);
@@ -166,14 +170,25 @@ export default function Messages({ isForbidden, setIsForbidden }) {
             contact.message?.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    const totalPages = Math.ceil(filteredContacts.length / itemsPerPage);
+    const totalPages = Math.ceil(filteredContacts.length / itemsPerPage) || 1;
     const paginatedContacts = filteredContacts.slice(
         (currentPage - 1) * itemsPerPage,
         currentPage * itemsPerPage
     );
 
+    // Ledger index — position of a message within the full (unfiltered) inbox,
+    // oldest = 001. This is the page's signature device: every message carries
+    // a fixed reference number, independent of search/filter/page.
+    const indexOf = (id) => {
+        const pos = contacts.findIndex((c) => c._id === id);
+        if (pos === -1) return null;
+        return String(contacts.length - pos).padStart(3, "0");
+    };
+
+    const selectedContact = contacts.find((c) => c._id === selectedId) || null;
+
     const formatDate = (dateString) => {
-        if (!dateString) return "";
+        if (!dateString) return "—";
         const date = new Date(dateString);
         return new Intl.DateTimeFormat('en-US', {
             year: 'numeric',
@@ -184,6 +199,12 @@ export default function Messages({ isForbidden, setIsForbidden }) {
         }).format(date);
     };
 
+    const formatShortDate = (dateString) => {
+        if (!dateString) return "—";
+        const date = new Date(dateString);
+        return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' }).format(date);
+    };
+
     const highlightText = (text, highlight) => {
         if (!text) return "";
         if (!highlight.trim()) return text;
@@ -191,7 +212,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
         const parts = text.split(regex);
         return parts.map((part, i) =>
             regex.test(part) ? (
-                <span key={i} className="text-indigo-600 bg-indigo-50/50 px-0.5 rounded font-bold">
+                <span key={i} className="text-[#E8A33D] bg-[#E8A33D]/10 px-0.5 rounded-sm font-semibold">
                     {part}
                 </span>
             ) : part
@@ -199,50 +220,88 @@ export default function Messages({ isForbidden, setIsForbidden }) {
     };
 
     return (
-        <div className="min-h-full flex flex-col max-w-5xl mx-auto w-full relative font-sans text-slate-900">
-            {/* Background Decoration */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-48 bg-gradient-to-b from-indigo-50/50 to-transparent -z-10 pointer-events-none" />
+        <div className="w-full max-w-6xl mx-auto h-full flex flex-col font-sans">
+            {/* Custom scrollbar — replaces the default browser scrollbar wherever .custom-scroll is used */}
+            <style jsx global>{`
+                .custom-scroll::-webkit-scrollbar {
+                    width: 6px;
+                }
+                .custom-scroll::-webkit-scrollbar-track {
+                    background: transparent;
+                }
+                .custom-scroll::-webkit-scrollbar-thumb {
+                    background-color: rgba(232, 163, 61, 0.3);
+                    border-radius: 999px;
+                }
+                .custom-scroll::-webkit-scrollbar-thumb:hover {
+                    background-color: rgba(232, 163, 61, 0.55);
+                }
+                .custom-scroll {
+                    scrollbar-width: thin;
+                    scrollbar-color: rgba(232, 163, 61, 0.3) transparent;
+                }
+            `}</style>
+            {/* Image Lightbox Modal */}
+                {imageModal && (
+                    <div
+                        onClick={() => setImageModal(null)}
+                        className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/85 backdrop-blur-md cursor-zoom-out"
+                    >
+                        <div
+                            onClick={(e) => e.stopPropagation()}
+                            className="relative max-w-3xl w-full cursor-default"
+                        >
+                            <button
+                                onClick={() => setImageModal(null)}
+                                className="absolute -top-3 -right-3 z-10 w-8 h-8 bg-[#F5F3EE] text-[#0B0D12] rounded-full shadow-lg flex items-center justify-center hover:bg-[#E5484D] hover:text-white transition-colors"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                            <img
+                                src={imageModal}
+                                alt="Full size attachment"
+                                className="w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+                            />
+                        </div>
+                    </div>
+                )}
 
-            <AnimatePresence>
+            {/* Delete Confirmation Modal */}
                 {deleteModal.isOpen && (
                     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
+                        <div
                             onClick={() => !deleteModal.isDeleting && setDeleteModal({ ...deleteModal, isOpen: false })}
-                            className="absolute inset-0 bg-slate-900/40 backdrop-blur-md"
+                            className="absolute inset-0 bg-black/60 backdrop-blur-md"
                         />
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-                            animate={{ opacity: 1, scale: 1, y: 0 }}
-                            exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                            className="relative bg-white rounded-3xl shadow-2xl p-8 w-full max-w-sm overflow-hidden border border-slate-100"
+                        <div
+                            className="relative bg-white dark:bg-[#14171F] rounded-2xl shadow-2xl p-8 w-full max-w-sm overflow-hidden border border-slate-200 dark:border-white/10 transition-colors"
                         >
                             <div className="flex flex-col items-center text-center">
-                                <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-5 border border-red-100 shadow-inner rotate-3">
-                                    <Trash2 className="w-7 h-7 text-red-500" />
+                                <div className="w-14 h-14 bg-red-100 dark:bg-[#E5484D]/10 rounded-full flex items-center justify-center mb-5 border border-red-200 dark:border-[#E5484D]/20 transition-colors">
+                                    <Trash2 className="w-6 h-6 text-red-500 dark:text-[#E5484D]" />
                                 </div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-2">
-                                    {deleteModal.type === "all" ? "Clear Inbox?" : "Delete Message?"}
+                                <h3 className="text-lg font-bold text-slate-900 dark:text-[#F5F3EE] mb-2 transition-colors">
+                                    {deleteModal.type === "all" ? "Clear the entire inbox?" : "Delete this message?"}
                                 </h3>
-                                <p className="text-slate-500 mb-6 leading-relaxed px-4 text-xs">
+                                <p className="text-slate-500 dark:text-[#8B93A7] mb-6 leading-relaxed px-2 text-xs transition-colors">
                                     {deleteModal.type === "all"
-                                        ? "Permanently delete all messages? This action cannot be reversed."
-                                        : "Remove this specific message permanently?"}
+                                        ? "Every message will be permanently removed. This cannot be undone."
+                                        : "This message will be permanently removed."}
                                 </p>
                                 <div className="flex gap-3 w-full">
                                     <button
                                         disabled={deleteModal.isDeleting}
                                         onClick={() => setDeleteModal({ ...deleteModal, isOpen: false })}
-                                        className="flex-1 px-4 py-3 bg-slate-50 text-slate-600 rounded-xl hover:bg-slate-100 font-bold transition-all text-xs disabled:opacity-50"
+                                        className="flex-1 px-4 py-3 bg-white/5 text-[#F5F3EE]/80 rounded-lg hover:bg-white/10 font-semibold transition-all text-xs disabled:opacity-50"
                                     >
                                         Cancel
                                     </button>
                                     <button
                                         disabled={deleteModal.isDeleting}
                                         onClick={confirmDelete}
-                                        className="flex-1 px-4 py-3 bg-red-500 text-white rounded-xl hover:bg-red-600 font-bold transition-all shadow-lg shadow-red-200 text-xs disabled:opacity-70 flex justify-center items-center gap-2"
+                                        className="flex-1 px-4 py-3 bg-[#E5484D] text-white rounded-lg hover:bg-[#c93d42] font-semibold transition-all shadow-lg shadow-[#E5484D]/20 text-xs disabled:opacity-70 flex justify-center items-center gap-2"
                                     >
                                         {deleteModal.isDeleting ? (
                                             <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -252,191 +311,222 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                                     </button>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     </div>
                 )}
-            </AnimatePresence>
 
-            {/* Header Section */}
-            <div className="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center mb-4">
-                <div className="space-y-0.5">
-                    <h2 className="text-2xl font-extrabold tracking-tight text-slate-900 flex items-center gap-2.5">
-                    </h2>
-                    <p className="text-slate-500 text-sm font-bold uppercase tracking-wider flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                        {contacts.length} Messages
-                    </p>
-                </div>
+            {/* App shell */}
+            <div className="rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 shadow-2xl bg-white dark:bg-[#0B0D12] flex flex-col flex-1 min-h-0 transition-colors duration-300">
 
-                <div className="flex items-center gap-2 w-full md:w-auto">
-                    <div className="relative flex-1 md:w-64 group">
-                        <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 group-focus-within:text-indigo-500 transition-colors" />
-                        <input
-                            type="text"
-                            placeholder="Find a message..."
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                            className="w-full bg-white border border-slate-200 rounded-xl py-2 pl-10 pr-4 text-xs text-slate-700 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all placeholder:text-slate-400 shadow-sm shadow-slate-50"
-                        />
+                {/* Top bar */}
+                <div className="flex items-center justify-between gap-4 px-5 py-4 border-b border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#0E1016] transition-colors duration-300">
+                    <div>
+                        <h2 className="text-xl font-bold text-slate-900 dark:text-[#F5F3EE] tracking-tight transition-colors">Inbox</h2>
+                        <p className="text-[10px] font-mono text-slate-500 dark:text-[#8B93A7] uppercase tracking-[0.2em] mt-0.5 transition-colors">
+                            {contacts.length} received
+                        </p>
                     </div>
                     <div className="flex gap-1.5">
                         <button
                             onClick={() => fetchContacts()}
-                            className="p-2.5 bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 rounded-xl transition-all shadow-sm active:scale-95"
+                            className="p-2.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-500 dark:text-[#F5F3EE]/70 hover:bg-slate-200 dark:hover:bg-white/10 hover:text-slate-900 dark:hover:text-[#F5F3EE] rounded-lg transition-all active:scale-95"
                             title="Refresh"
                         >
                             <RefreshCcw className={`w-4 h-4 ${isLoading ? 'animate-spin' : ''}`} />
                         </button>
                         <button
-                            onClick={handleAddDummyMessage}
-                            className="p-2.5 bg-white border border-slate-200 text-indigo-600 hover:bg-indigo-50 rounded-xl transition-all shadow-sm active:scale-95"
-                            title="Simulate"
+                            onClick={AddMessage}
+                            className="p-2.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-indigo-600 dark:text-[#E8A33D] hover:bg-indigo-50 dark:hover:bg-[#E8A33D]/10 rounded-lg transition-all active:scale-95"
+                            title="Add sample message"
                         >
                             <Plus className="w-4 h-4" />
                         </button>
                         <button
                             onClick={handleDeleteAllClick}
-                            className={`p-2.5 border transition-all rounded-xl shadow-sm active:scale-95 ${contacts.length > 0 ? 'bg-white border-slate-200 text-red-500 hover:bg-red-50' : 'bg-slate-50 border-slate-100 text-slate-300 cursor-not-allowed'}`}
-                            title="Clear All"
+                            className={`p-2.5 border transition-all rounded-lg active:scale-95 ${contacts.length > 0 ? 'bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 text-red-500 dark:text-[#E5484D] hover:bg-red-50 dark:hover:bg-[#E5484D]/10' : 'bg-slate-50 dark:bg-white/[0.02] border-slate-100 dark:border-white/5 text-slate-300 dark:text-white/15 cursor-not-allowed'}`}
+                            title="Clear all"
                             disabled={contacts.length === 0}
                         >
                             <Trash2 className="w-4 h-4" />
                         </button>
                     </div>
                 </div>
-            </div>
 
-            {/* List Section */}
-            <div className="flex-1 space-y-3">
-                {isLoading ? (
-                    <div className="space-y-3">
-                        {[1, 2, 3, 4].map(i => (
-                            <div key={i} className="bg-white border border-slate-100 rounded-2xl p-2.5 md:p-4 flex items-start gap-3 md:gap-4 animate-pulse">
-                                {/* Avatar Skeleton */}
-                                <div className="w-8 h-8 md:w-10 md:h-10 bg-slate-100 rounded-lg md:rounded-xl shrink-0" />
+                {/* Split pane body */}
+                <div className="flex-1 flex min-h-0">
 
-                                {/* Content Skeleton */}
-                                <div className="flex-1 space-y-2.5 md:space-y-3 py-0.5 md:py-1">
-                                    <div className="flex justify-between items-center">
-                                        <div className="h-3.5 md:h-4 bg-slate-100 rounded-md w-1/3" />
-                                        <div className="h-2.5 md:h-3 bg-slate-50 rounded-md w-20" />
-                                    </div>
-                                    <div className="h-2.5 md:h-3 bg-slate-50 rounded-md w-1/2" />
-                                    <div className="space-y-2">
-                                        <div className="h-2.5 md:h-3 bg-slate-100/50 rounded-md w-full" />
-                                        <div className="h-2.5 md:h-3 bg-slate-100/50 rounded-md w-[90%]" />
-                                    </div>
-                                    <div className="pt-1">
-                                        <div className="h-2.5 bg-slate-50 rounded-md w-24" />
-                                    </div>
+                    {/* LIST PANE */}
+                    <div className={`w-full md:w-[340px] md:shrink-0 border-r border-slate-200 dark:border-white/10 flex-col bg-slate-50 dark:bg-[#0E1016] transition-colors duration-300 ${selectedId ? 'hidden md:flex' : 'flex'}`}>
+                        {/* Search */}
+                        <div className="p-3 border-b border-slate-200 dark:border-white/10 transition-colors">
+                            <div className="relative group">
+                                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 dark:text-[#8B93A7] group-focus-within:text-indigo-600 dark:group-focus-within:text-[#E8A33D] transition-colors" />
+                                <input
+                                    type="text"
+                                    placeholder="Search messages…"
+                                    value={searchTerm}
+                                    onChange={(e) => { setSearchTerm(e.target.value); setCurrentPage(1); }}
+                                    className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg py-2 pl-9 pr-3 text-xs text-slate-900 dark:text-[#F5F3EE] outline-none focus:border-indigo-300 dark:focus:border-[#E8A33D]/50 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-[#E8A33D]/10 transition-all placeholder:text-slate-400 dark:placeholder:text-[#8B93A7]"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Rows */}
+                        <div className="flex-1 overflow-y-auto custom-scroll">
+                            {isLoading ? (
+                                <div className="p-3 space-y-2">
+                                    {[1, 2, 3, 4, 5].map(i => (
+                                        <div key={i} className="p-3 rounded-lg animate-pulse space-y-2">
+                                            <div className="h-3 bg-white/5 rounded w-2/3" />
+                                            <div className="h-2.5 bg-white/5 rounded w-1/2" />
+                                            <div className="h-2.5 bg-white/5 rounded w-full" />
+                                        </div>
+                                    ))}
                                 </div>
+                            ) : paginatedContacts.length > 0 ? (
+                                <div>
+                                    {paginatedContacts.map((contact) => {
+                                        const isActive = selectedId === contact._id;
+                                        return (
+                                            <div
+                                                key={contact._id}
+                                                onClick={() => setSelectedId(contact._id)}
+                                                className={`relative w-full cursor-pointer text-left px-4 py-3 border-b border-slate-100 dark:border-white/5 transition-colors ${isActive ? 'bg-indigo-50 dark:bg-[#E8A33D]/[0.08]' : 'hover:bg-slate-100 dark:hover:bg-white/[0.03]'}`}
+                                            >
+                                                {isActive && <span className="absolute left-0 top-0 h-full w-[3px] bg-indigo-600 dark:bg-[#E8A33D]" />}
+                                                <div className="flex items-start justify-between gap-2 mb-1">
+                                                    <span className="text-[10px] font-mono text-slate-400 dark:text-[#8B93A7]">#{indexOf(contact._id)}</span>
+                                                    <span className="text-[10px] font-mono text-slate-400 dark:text-[#8B93A7] shrink-0">{formatShortDate(contact.createdAt)}</span>
+                                                </div>
+                                                <h4 className="text-[13px] font-semibold text-slate-900 dark:text-[#F5F3EE] truncate mb-0.5">
+                                                    {highlightText(contact.subject || "No subject", searchTerm)}
+                                                </h4>
+                                                <p className="text-[11px] text-slate-500 dark:text-[#8B93A7] truncate mb-1">{highlightText(contact.email, searchTerm)}</p>
+                                                <p className="text-[11px] text-slate-400 dark:text-[#8B93A7]/70 truncate">{highlightText(contact.message, searchTerm)}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            ) : (
+                                <div className="flex flex-col items-center justify-center h-full text-center px-6">
+                                    <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mb-4">
+                                        <MessageSquare className="w-5 h-5 text-white/20" />
+                                    </div>
+                                    <p className="text-[#F5F3EE] font-semibold text-sm mb-1">Inbox is empty</p>
+                                    <p className="text-[#8B93A7] text-[11px] leading-relaxed">
+                                        Messages from your portfolio will appear here.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
 
-                                {/* Action Skeleton */}
-                                <div className="flex shrink-0 items-start pt-0.5 md:pt-1 pl-2 md:pl-4 border-l border-slate-50">
-                                    <div className="w-8 h-8 md:w-9 md:h-9 bg-slate-50 rounded-lg md:rounded-xl" />
+                        {/* Pagination */}
+                        {totalPages > 1 && (
+                            <div className="flex items-center justify-between px-4 py-3 border-t border-slate-200 dark:border-white/10 transition-colors">
+                                <span className="text-[10px] font-mono text-slate-500 dark:text-[#8B93A7] uppercase tracking-widest transition-colors">
+                                    {currentPage} / {totalPages}
+                                </span>
+                                <div className="flex items-center gap-1.5">
+                                    <button
+                                        disabled={currentPage === 1}
+                                        onClick={() => setCurrentPage(c => Math.max(1, c - 1))}
+                                        className="p-1.5 rounded-md bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-500 dark:text-[#F5F3EE]/70 hover:bg-slate-50 dark:hover:bg-white/10 disabled:opacity-30 transition-all"
+                                    >
+                                        <ChevronLeft className="w-3.5 h-3.5" />
+                                    </button>
+                                    <button
+                                        disabled={currentPage === totalPages}
+                                        onClick={() => setCurrentPage(c => Math.min(totalPages, c + 1))}
+                                        className="p-1.5 rounded-md bg-indigo-600 dark:bg-[#E8A33D] text-white dark:text-[#0B0D12] hover:bg-indigo-700 dark:hover:bg-[#c97f22] disabled:opacity-30 transition-all"
+                                    >
+                                        <ChevronRight className="w-3.5 h-3.5" />
+                                    </button>
                                 </div>
                             </div>
-                        ))}
+                        )}
                     </div>
-                ) : paginatedContacts.length > 0 ? (
-                    <div className="grid grid-cols-1 gap-3">
-                        <AnimatePresence mode="popLayout">
-                            {paginatedContacts.map((contact, index) => (
-                                <motion.div
-                                    key={contact._id || index}
-                                    layout
-                                    initial={{ opacity: 0, y: 10 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    exit={{ opacity: 0, scale: 0.98 }}
-                                    transition={{ delay: index * 0.03 }}
-                                    onClick={() => setExpandedMessage(expandedMessage === contact._id ? null : contact._id)}
-                                    className={`relative group bg-white border rounded-2xl p-2.5 md:p-4 transition-all cursor-pointer overflow-hidden ${expandedMessage === contact._id ? 'border-indigo-400 shadow-lg shadow-indigo-50 ring-1 ring-indigo-400' : 'border-slate-100 hover:border-indigo-200 hover:shadow-md'}`}
-                                >
-                                    <div className="relative flex items-start gap-3 md:gap-4">
-                                        {/* Avatar */}
-                                        <div className="w-8 h-8 md:w-10 md:h-10 shrink-0 rounded-lg md:rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-md shadow-indigo-100 relative">
-                                            {contact.subject ? contact.subject.charAt(0).toUpperCase() : <User className="w-4 h-4" />}
+
+                    {/* DETAIL PANE */}
+                    <div className={`flex-1 flex-col bg-white dark:bg-[#14171F] min-w-0 transition-colors duration-300 ${selectedId ? 'flex' : 'hidden md:flex'}`}>
+                        {selectedContact ? (
+                            <>
+                                {/* Detail header */}
+                                <div className="px-6 py-5 border-b border-slate-200 dark:border-white/10 flex items-start gap-4 transition-colors">
+                                    <button
+                                        onClick={() => setSelectedId(null)}
+                                        className="md:hidden p-2 -ml-2 mr-1 text-slate-500 dark:text-[#8B93A7] hover:text-slate-900 dark:hover:text-[#F5F3EE] shrink-0 transition-colors"
+                                        title="Back to inbox"
+                                    >
+                                        <ChevronLeft className="w-5 h-5" />
+                                    </button>
+
+                                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 dark:from-[#E8A33D] to-indigo-600 dark:to-[#c97f22] flex items-center justify-center text-white dark:text-[#0B0D12] font-bold text-lg shrink-0">
+                                        {selectedContact.subject ? selectedContact.subject.charAt(0).toUpperCase() : <User className="w-5 h-5" />}
+                                    </div>
+
+                                    <div className="min-w-0 flex-1">
+                                        <div className="flex items-start justify-between gap-3">
+                                            <h3 className="text-lg font-bold text-slate-900 dark:text-[#F5F3EE] leading-snug transition-colors">
+                                                {selectedContact.subject || "No subject"}
+                                            </h3>
+                                            <span className="shrink-0 text-[10px] font-mono text-slate-500 dark:text-[#8B93A7] border border-slate-200 dark:border-white/10 rounded-full px-2 py-1 transition-colors">
+                                                NO. {indexOf(selectedContact._id)}
+                                            </span>
                                         </div>
-
-                                        <div className="min-w-0 flex-1">
-                                            <div className="flex items-center justify-between mb-0.5">
-                                                <h3 className="font-bold text-slate-900 truncate text-[11px] md:text-[13px] uppercase tracking-tight">
-                                                    {highlightText(contact.subject || "No Subject", searchTerm)}
-                                                </h3>
-                                                <span className="text-[9px] md:text-[10px] font-bold text-slate-400">
-                                                    {formatDate(contact.createdAt)}
-                                                </span>
-                                            </div>
-
-                                            <div className="flex items-center gap-1.5 mb-1 md:mb-2">
-                                                <Mail className="w-2.5 h-2.5 md:w-3 md:h-3 text-slate-400" />
-                                                <span className="text-[10px] md:text-[11px] font-medium text-slate-500 truncate">
-                                                    {highlightText(contact.email, searchTerm)}
-                                                </span>
-                                            </div>
-
-                                            <div className="text-slate-600 text-[9px] md:text-[13px] leading-normal break-words whitespace-pre-wrap">
-                                                {highlightText(contact.message, searchTerm)}
-                                            </div>
-
-                                            <div className="mt-2 md:mt-4 flex items-center gap-2 text-[9px] md:text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                                                <Clock className="w-2.5 h-2.5 md:w-3 md:h-3" />
-                                                {formatDate(contact.createdAt || contact.created_at)}
-                                            </div>
+                                        <div className="flex items-center gap-1.5 mt-1.5">
+                                            <Mail className="w-3 h-3 text-slate-400 dark:text-[#8B93A7]" />
+                                            <span className="text-[12px] font-mono text-slate-500 dark:text-[#8B93A7] transition-colors">{selectedContact.email}</span>
                                         </div>
-
-                                        {/* Actions */}
-                                        <div className="flex shrink-0 items-start pt-0.5 md:pt-1 pl-2 md:pl-4 border-l border-slate-50">
-                                            <button
-                                                onClick={(e) => handleDeleteByIdClick(e, contact._id)}
-                                                className="w-8 h-8 md:w-9 md:h-9 flex items-center justify-center text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-lg md:rounded-xl transition-all border border-transparent hover:border-red-100 bg-slate-50/50"
-                                                title="Delete Message"
-                                            >
-                                                <Trash2 className="w-4 h-4 md:w-4.5 md:h-4.5" />
-                                            </button>
+                                        <div className="flex items-center gap-1.5 mt-1">
+                                            <Clock className="w-3 h-3 text-slate-400 dark:text-[#8B93A7]" />
+                                            <span className="text-[11px] text-slate-500 dark:text-[#8B93A7] transition-colors">{formatDate(selectedContact.createdAt)}</span>
                                         </div>
                                     </div>
-                                </motion.div>
-                            ))}
-                        </AnimatePresence>
-                    </div>
-                ) : (
-                    <div className="flex flex-col items-center justify-center py-20 text-center">
-                        <div className="w-16 h-16 bg-slate-50 rounded-3xl flex items-center justify-center mb-6 border border-slate-100 shadow-sm">
-                            <MessageSquare className="w-7 h-7 text-slate-200" />
-                        </div>
-                        <h3 className="text-lg font-bold text-slate-900 mb-1">Inbox is empty</h3>
-                        <p className="text-slate-400 max-w-xs mx-auto text-[11px] font-medium leading-relaxed">
-                            Messages from your portfolio will appear here. Click refresh to check for new ones.
-                        </p>
-                    </div>
-                )}
-            </div>
 
-            {/* Pagination Section */}
-            {totalPages > 1 && (
-                <div className="mt-8 flex items-center justify-between px-1">
-                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                        Page {currentPage} / {totalPages}
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <button
-                            disabled={currentPage === 1}
-                            onClick={() => setCurrentPage(c => Math.max(1, c - 1))}
-                            className="p-2 rounded-xl bg-white border border-slate-200 text-slate-600 disabled:opacity-40 transition-all shadow-sm"
-                        >
-                            <ChevronLeft className="w-4 h-4" />
-                        </button>
-                        <button
-                            disabled={currentPage === totalPages}
-                            onClick={() => setCurrentPage(c => Math.min(totalPages, c + 1))}
-                            className="p-2 rounded-xl bg-indigo-600 text-white disabled:opacity-40 transition-all shadow-md shadow-indigo-100"
-                        >
-                            <ChevronRight className="w-4 h-4" />
-                        </button>
+                                    {selectedContact.image && (
+                                        <button
+                                            onClick={() => setImageModal(selectedContact.image)}
+                                            className="w-11 h-11 rounded-lg overflow-hidden border border-slate-200 dark:border-white/10 shrink-0 hover:border-indigo-300 dark:hover:border-[#E8A33D]/50 transition-colors"
+                                            title="View attached image"
+                                        >
+                                            <img
+                                                src={selectedContact.image}
+                                                alt="Attached"
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </button>
+                                    )}
+
+                                    <button
+                                        onClick={(e) => handleDeleteByIdClick(e, selectedContact._id)}
+                                        className="p-2.5 text-slate-400 dark:text-[#8B93A7] hover:text-red-500 dark:hover:text-[#E5484D] hover:bg-red-50 dark:hover:bg-[#E5484D]/10 rounded-lg transition-all shrink-0"
+                                        title="Delete message"
+                                    >
+                                        <Trash2 className="w-4 h-4" />
+                                    </button>
+                                </div>
+
+                                {/* Detail body */}
+                                <div className="flex-1 overflow-y-auto custom-scroll px-6 py-6">
+                                    <p className="text-[14px] leading-relaxed text-slate-700 dark:text-[#F5F3EE]/90 whitespace-pre-wrap break-words max-w-2xl transition-colors">
+                                        {selectedContact.message}
+                                    </p>
+                                </div>
+                            </>
+                        ) : (
+                            <div className="flex-1 flex flex-col items-center justify-center text-center px-6">
+                                <div className="w-14 h-14 bg-slate-100 dark:bg-white/5 rounded-full flex items-center justify-center mb-4 transition-colors">
+                                    <Mail className="w-6 h-6 text-slate-300 dark:text-white/20" />
+                                </div>
+                                <p className="text-slate-900 dark:text-[#F5F3EE] font-semibold text-sm mb-1 transition-colors">No message selected</p>
+                                <p className="text-slate-500 dark:text-[#8B93A7] text-[11px] leading-relaxed max-w-xs transition-colors">
+                                    Choose a message from the list to read it here.
+                                </p>
+                            </div>
+                        )}
                     </div>
                 </div>
-            )}
+            </div>
         </div>
     );
 }

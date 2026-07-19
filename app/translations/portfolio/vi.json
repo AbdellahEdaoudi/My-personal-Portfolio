@@ -568,7 +568,12 @@
         "emailInvalid": "Vui lòng nhập một địa chỉ email hợp lệ",
         "messageRequired": "Tin nhắn là bắt buộc",
         "successMessage": "Gửi thành công",
-        "errorMessage": "Đã xảy ra lỗi. Vui lòng thử lại."
+        "errorMessage": "Đã xảy ra lỗi. Vui lòng thử lại.",
+        "attachImage": "Đính kèm ảnh (tùy chọn)",
+        "imageCompressing": "Đang nén...",
+        "imageAttached": "Ảnh đã đính kèm & nén thành công ✓",
+        "imageTypeError": "Vui lòng chọn tệp ảnh hợp lệ.",
+        "imageError": "Xử lý ảnh thất bại."
     },
     "footer": {
         "name": "Abdellah Edaoudi",

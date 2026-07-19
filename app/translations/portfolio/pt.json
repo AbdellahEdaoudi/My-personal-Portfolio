@@ -568,7 +568,12 @@
         "emailInvalid": "Por favor, insira um endereço de e-mail válido",
         "messageRequired": "A mensagem é obrigatória",
         "successMessage": "Enviado com sucesso",
-        "errorMessage": "Ocorreu um erro. Tente novamente."
+        "errorMessage": "Ocorreu um erro. Tente novamente.",
+        "attachImage": "Anexar uma imagem (opcional)",
+        "imageCompressing": "Comprimindo...",
+        "imageAttached": "Imagem anexada e comprimida ✓",
+        "imageTypeError": "Por favor, selecione um arquivo de imagem válido.",
+        "imageError": "Falha ao processar a imagem."
     },
     "footer": {
         "name": "Abdellah Edaoudi",

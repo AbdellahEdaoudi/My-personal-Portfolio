@@ -568,7 +568,12 @@
         "emailInvalid": "Voer een geldig e-mailadres in",
         "messageRequired": "Bericht is verplicht",
         "successMessage": "Succesvol verzonden",
-        "errorMessage": "Er is een fout opgetreden. Probeer het opnieuw."
+        "errorMessage": "Er is een fout opgetreden. Probeer het opnieuw.",
+        "attachImage": "Een afbeelding bijvoegen (optioneel)",
+        "imageCompressing": "Comprimeren...",
+        "imageAttached": "Afbeelding bijgevoegd en gecomprimeerd ✓",
+        "imageTypeError": "Selecteer een geldig afbeeldingsbestand.",
+        "imageError": "Verwerking van afbeelding mislukt."
     },
     "footer": {
         "name": "Abdellah Edaoudi",
