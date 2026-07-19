@@ -568,7 +568,12 @@
         "emailInvalid": "유효한 이메일 주소를 입력하십시오",
         "messageRequired": "메시지는 필수입니다",
         "successMessage": "성공적으로 전송됨",
-        "errorMessage": "오류가 발생했습니다. 다시 시도하십시오."
+        "errorMessage": "오류가 발생했습니다. 다시 시도하십시오.",
+        "attachImage": "이미지 첨부 (선택사항)",
+        "imageCompressing": "압축 중...",
+        "imageAttached": "이미지 첨부 및 압축 완료 ✓",
+        "imageTypeError": "유효한 이미지 파일을 선택하세요.",
+        "imageError": "이미지 처리에 실패했습니다."
     },
     "footer": {
         "name": "Abdellah Edaoudi",

@@ -568,7 +568,12 @@
         "emailInvalid": "Harap masukkan alamat email yang valid",
         "messageRequired": "Pesan wajib diisi",
         "successMessage": "Berhasil dikirim",
-        "errorMessage": "Terjadi kesalahan. Silakan coba lagi."
+        "errorMessage": "Terjadi kesalahan. Silakan coba lagi.",
+        "attachImage": "Lampirkan gambar (opsional)",
+        "imageCompressing": "Mengompresi...",
+        "imageAttached": "Gambar dilampirkan & dikompres ✓",
+        "imageTypeError": "Silakan pilih file gambar yang valid.",
+        "imageError": "Gagal memproses gambar."
     },
     "footer": {
         "name": "Abdellah Edaoudi",

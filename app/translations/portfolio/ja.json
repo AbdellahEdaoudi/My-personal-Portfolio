@@ -568,7 +568,12 @@
         "emailInvalid": "有効なメールアドレスを入力してください",
         "messageRequired": "メッセージは必須です",
         "successMessage": "正常に送信されました",
-        "errorMessage": "エラーが発生しました。もう一度お試しください。"
+        "errorMessage": "エラーが発生しました。もう一度お試しください。",
+        "attachImage": "画像を添付する（任意）",
+        "imageCompressing": "圧縮中...",
+        "imageAttached": "画像が添付・圧縮されました ✓",
+        "imageTypeError": "有効な画像ファイルを選択してください。",
+        "imageError": "画像の処理に失敗しました。"
     },
     "footer": {
         "name": "Abdellah Edaoudi",
