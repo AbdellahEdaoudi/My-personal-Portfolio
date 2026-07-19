@@ -72,7 +72,7 @@
     "projects": {
         "title": "Projecten",
         "subtitle": "Meest recente werk",
-        "liveDemo": "Demo",
+        "preview": "Voorbeeld",
         "readMore": "Lees meer",
         "showLess": "Toon minder",
         "items": [
@@ -80,10 +80,11 @@
                 "title": "DGT Portfolio Builder",
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com/nl",
+                "websiteUrl": "https://dgtportfolio.com",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "description": "Een uitgebreid SaaS-platform waarmee gebruikers moeiteloos professionele portfolio's kunnen maken. Het biedt meertalige ondersteuning, integratie van aangepaste domeinen, dynamische themaselectie, realtime CV-generatie en een intuïtief beheerdersdashboard voor het beheren van inhoud, abonnementen en analyses.",
+                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "description": "Een compleet SaaS-platform waarmee gebruikers moeiteloos professionele portfolio's kunnen maken. Het biedt meertalige ondersteuning, integratie van een aangepast domein, dynamische themaselectie, realtime CV-generatie en een intuïtief beheerderspaneel voor het beheren van inhoud, abonnementen en analyses.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -125,16 +126,15 @@
                         "name": "jwt",
                         "logo": "/Skills/jwt.jpg"
                     }
-                ],
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
+                ]
             },
             {
                 "title": "Hotelreserveringssysteem",
-                "image": "/Projects/HotelDash.png",
+                "image": "/Projects/EdHotel.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "Het hotelmanagementsysteem biedt een uitgebreide oplossing voor het beheren van kamerboekingen en betalingen. Het stelt gebruikers in staat eenvoudig kamers te boeken en een elektronisch ticket ter bevestiging te ontvangen. Het systeem bevat een dashboard voor het beheren van boekingen, betalingen en klantreacties via e-mail.",
+                "description": "Het hotelbeheersysteem biedt een uitgebreide oplossing voor het beheren van kamerboekingen en betalingen. Het stelt gebruikers in staat gemakkelijk kamers te boeken en een elektronisch bevestigingsticket te ontvangen. Het systeem bevat een dashboard voor het beheren van boekingen, betalingen en klantreacties via e-mail.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -175,13 +175,13 @@
                 ]
             },
             {
-                "title": "Veilig Real-time Chat Systeem",
+                "title": "Veilig Real-time Chatsysteem",
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "Veilig Real-time Chat Systeem is een hoogwaardige instant messaging-applicatie met geavanceerde beveiliging. Het maakt gebruik van Socket.io voor realtime communicatie en implementeert End-to-End Encryption (E2EE) om berichtprivacy te garanderen. Het bevat ook een robuust authenticatiesysteem met JWT en wachtwoord-hashing met Bcrypt, wat de bescherming van gebruikersgegevens volgens de hoogste standaarden waarborgt.",
+                "description": "Veilig Realtime-Chatsysteem is een krachtige instant messaging-applicatie met geavanceerde beveiliging. Het gebruikt Socket.io voor realtime communicatie en implementeert End-to-End Encryptie (E2EE) om de privacy van berichten te waarborgen. Het bevat ook een robuust authenticatiesysteem via JWT en wachtwoordhashing met Bcrypt, waarmee de bescherming van gebruikersgegevens op de hoogste standaarden wordt gewaarborgd.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -229,7 +229,7 @@
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubBackendUrl": "",
-                "description": "Een robuust en schaalbaar back-endsysteem voor een e-commerceplatform. Het systeem verwerkt diverse functies zoals gebruikersbeheer, organisatie van productinventaris, orderverwerking, betalingsafhandeling (via contant geld of kaart), toevoegen van coupons, beoordelingen, categorie- en merkbeheer, leveranciersbeheer en belastingregelgeving.",
+                "description": "Een robuust en schaalbaar backendsysteem voor een e-commerceplatform. Het systeem verwerkt diverse functies zoals gebruikersbeheer, organisatie van productinventaris, orderverwerking, betalingsafhandeling (contant of met kaart), toevoeging van coupons, beoordelingen, beheer van categorieën en merken, leveranciersbeheer en belastingregulering.",
                 "technologies": [
                     {
                         "name": "Nestjs",
@@ -266,12 +266,12 @@
                 ]
             },
             {
-                "title": "CV Platform",
-                "image": "/Projects/Linkerfolio.png",
+                "title": "CV-platform",
+                "image": "/Projects/Linkerfolio.jpg",
                 "websiteUrl": "https://linkerfolio.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
-                "description": "Een innovatieve applicatie die ik heb ontwikkeld, waarmee gebruikers hun professionele CV en links naar sociale media op één plek kunnen presenteren. Deze app helpt gebruikers hun digitale identiteit effectief te beheren, waardoor het een ideaal hulpmiddel is voor werkzoekenden of iedereen die zijn online aanwezigheid en digitale invloed wil vergroten.",
+                "description": "Een innovatieve applicatie die ik heb ontwikkeld, waarmee gebruikers hun professioneel cv en sociale media-links op één plek kunnen presenteren. Deze applicatie helpt gebruikers hun digitale identiteit effectief te beheren, waardoor het een ideale tool is voor werkzoekenden of iedereen die zijn online aanwezigheid en digitale invloed wil verbeteren.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -304,12 +304,59 @@
                 ]
             },
             {
-                "title": "Afbeelding Compressor",
+                "title": "Persoonlijk Ontwikkelaarsportfolio",
+                "type": "fullstack",
+                "image": "/Projects/EdPortfolio.png",
+                "websiteUrl": "/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
+                "description": "Een modern, zeer interactief en responsief persoonlijk portfolio gebouwd met Next.js en Tailwind CSS. Voorzien van internationalisatie (i18n).",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Beeldcompressor",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubFrontendUrl": "",
                 "githubBackendUrl": "",
-                "description": "Een krachtige en veilige browsergebaseerde tool voor beeldcompressie. Hiermee kunnen gebruikers onbeperkt JPG-, PNG- en WebP-afbeeldingen tot 90% comprimeren zonder kwaliteitsverlies. Functies omvatten bulkcompressie, PDF-generatie, drag-and-drop-interface en volledige privacy omdat alle verwerking lokaal in de browser plaatsvindt.",
+                "description": "Een krachtig en veilig browsergebaseerd tool voor beeldcompressie. Het stelt gebruikers in staat om onbeperkte JPG-, PNG- en WebP-afbeeldingen tot 90% te comprimeren zonder kwaliteitsverlies. Functies zijn onder meer bulkcompressie, PDF-generatie, drag-and-drop-interface en volledige privacy omdat alle verwerking lokaal in de browser plaatsvindt.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -335,7 +382,7 @@
                 "websiteUrl": "https://edqrcode.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
                 "githubBackendUrl": "",
-                "description": "Een app voor het beheren van QR-codes, waarmee u QR-codes met aangepaste logo's kunt maken, QR-codes van afbeeldingen kunt lezen en QR-codes via de camera kunt scannen om gegevens direct weer te geven. Heeft een aantrekkelijk en responsief ontwerp.",
+                "description": "Een QR-codebeheertoepassing waarmee u QR-codes met aangepaste logo's kunt maken, QR-codes uit afbeeldingen kunt lezen en QR-codes via de camera kunt scannen om gegevens onmiddellijk weer te geven. Het heeft een aantrekkelijk en responsief ontwerp.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -353,15 +400,16 @@
                         "name": "Git",
                         "logo": "/Skills/Git.png"
                     }
-                ]
+                ],
+                "Rapport": " "
             },
             {
-                "title": "Winkel App",
-                "image": "/Projects/EcomApp.png",
+                "title": "Winkel-app",
+                "image": "/Projects/EdMarket.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
                 "githubBackendUrl": "",
-                "description": "Een app die een naadloze winkelervaring biedt, waardoor gebruikers eenvoudig door producten kunnen bladeren en items aan hun winkelwagen kunnen toevoegen. De app heeft een modern en innovatief ontwerp dat de gebruikerservaring verbetert, met directe responsiviteit en interactieve elementen die winkelen leuker maken.",
+                "description": "Een applicatie die een naadloze winkelervaring biedt, waardoor het voor gebruikers gemakkelijker is om door producten te bladeren en artikelen aan hun winkelwagentje toe te voegen. De app heeft een modern en innovatief design dat de gebruikerservaring verbetert, met onmiddellijke responsiviteit en interactieve elementen die winkelen aangenamer maken.",
                 "technologies": [
                     {
                         "name": "React.js",

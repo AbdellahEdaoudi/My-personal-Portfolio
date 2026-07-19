@@ -72,111 +72,19 @@
     "projects": {
         "title": "Проекты",
         "subtitle": "Последние работы",
-        "liveDemo": "Демо",
+        "preview": "Предпросмотр",
         "readMore": "Читать далее",
         "showLess": "Показать меньше",
         "items": [
             {
-                "title": "Система бронирования отелей",
-                "image": "/Projects/HotelDash.png",
-                "websiteUrl": "https://edhotel.vercel.app/",
-                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
-                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "Система управления отелем предоставляет комплексное решение для управления бронированием номеров и платежами. Она позволяет пользователям легко бронировать номера и получать электронный билет для подтверждения. Система включает панель управления для управления бронированиями, платежами и ответами клиентам по электронной почте.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "jwt ",
-                        "logo": "/Skills/jwt.jpg"
-                    },
-                    {
-                        "name": "stripe",
-                        "logo": "/Skills/stripe.jpg"
-                    },
-                    {
-                        "name": "cloudinary",
-                        "logo": "/Skills/cloudinary.jpg"
-                    }
-                ]
-            },
-            {
-                "title": "Безопасная чат-система в реальном времени",
-                "type": "fullstack",
-                "image": "/Projects/edchatflow.png",
-                "websiteUrl": "https://edchatflow.vercel.app",
-                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
-                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "Безопасная чат-система в реальном времени — это высокопроизводительное приложение для мгновенного обмена сообщениями с повышенным уровнем безопасности. Оно использует Socket.io для связи в реальном времени и реализует сквозное шифрование (E2EE) для обеспечения конфиденциальности сообщений. Также имеется надежная система аутентификации на основе JWT и хеширование паролей с помощью Bcrypt, что гарантирует защиту пользовательских данных по самым высоким стандартам.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "Socket.IO",
-                        "logo": "/Skills/Socket.io.png"
-                    },
-                    {
-                        "name": "jwt ",
-                        "logo": "/Skills/jwt.jpg"
-                    },
-                    {
-                        "name": "cloudinary",
-                        "logo": "/Skills/cloudinary.jpg"
-                    }
-                ]
-            },
-            {
-                "title": "Конструктор портфолио DGT",
+                "title": "Создатель портфолио DGT",
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com/ru",
-                "githubFrontendUrl": "",
-                "githubBackendUrl": "",
-                "description": "Комплексная SaaS-платформа, позволяющая пользователям без усилий создавать профессиональные портфолио. Она включает многоязычную поддержку, интеграцию пользовательских доменов, динамический выбор тем, генерацию резюме в реальном времени и интуитивно понятную панель администратора для управления контентом, подписками и аналитикой.",
+                "websiteUrl": "https://dgtportfolio.com",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "description": "Полная SaaS-платформа, позволяющая пользователям без труда создавать профессиональные портфолио. Предлагает многоязычную поддержку, интеграцию пользовательского домена, динамический выбор тем, создание резюме в реальном времени и интуитивно понятную панель администратора для управления контентом, подписками и аналитикой.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -218,18 +126,110 @@
                         "name": "jwt",
                         "logo": "/Skills/jwt.jpg"
                     }
-                ],
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
+                ]
             },
             {
-                "title": "E-Commerce Back-End",
+                "title": "Система бронирования отелей",
+                "image": "/Projects/EdHotel.png",
+                "websiteUrl": "https://edhotel.vercel.app/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
+                "description": "Система управления отелем предоставляет комплексное решение для управления бронированием номеров и платежами. Позволяет пользователям легко бронировать номера и получать электронный подтверждающий билет. Система включает панель управления для управления бронированием, платежами и ответами клиентам по электронной почте.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "stripe",
+                        "logo": "/Skills/stripe.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Безопасная система чата в реальном времени",
+                "type": "fullstack",
+                "image": "/Projects/edchatflow.png",
+                "websiteUrl": "https://edchatflow.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
+                "description": "Безопасная система чата в реальном времени — высокопроизводительное приложение для обмена мгновенными сообщениями с расширенной безопасностью. Использует Socket.io для связи в реальном времени и реализует сквозное шифрование (E2EE) для обеспечения конфиденциальности сообщений. Также включает надёжную систему аутентификации с JWT и хэшированием паролей с помощью Bcrypt, обеспечивая защиту данных пользователей по самым высоким стандартам.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "jwt ",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Бэкэнд электронной коммерции",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubBackendUrl": "",
-                "description": "Надежная и масштабируемая бэкенд-система для платформы электронной коммерции. Система выполняет различные функции, такие как управление пользователями, организация инвентаря продуктов, обработка заказов, обработка платежей (наличными или картой), добавление купонов, отзывы, управление категориями и брендами, управление поставщиками и налоговое регулирование.",
+                "description": "Надёжная и масштабируемая серверная система для платформы электронной коммерции. Система обрабатывает различные функции, такие как управление пользователями, организация инвентаря продуктов, обработка заказов, обработка платежей (наличными или картой), добавление купонов, отзывы, управление категориями и брендами, управление поставщиками и налоговое регулирование.",
                 "technologies": [
                     {
                         "name": "Nestjs",
@@ -266,12 +266,12 @@
                 ]
             },
             {
-                "title": "Платформа Резюме",
-                "image": "/Projects/Linkerfolio.png",
+                "title": "Платформа для резюме",
+                "image": "/Projects/Linkerfolio.jpg",
                 "websiteUrl": "https://linkerfolio.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
-                "description": "Инновационное приложение, разработанное мной, позволяющее пользователям демонстрировать свое профессиональное резюме и ссылки на социальные сети в одном месте. Это приложение помогает пользователям эффективно управлять своей цифровой идентичностью, что делает его идеальным инструментом для соискателей или всех, кто хочет улучшить свое присутствие в Интернете и цифровое влияние.",
+                "description": "Инновационное приложение, которое я разработал, позволяющее пользователям представлять своё профессиональное резюме и ссылки на социальные сети в одном месте. Это приложение помогает пользователям эффективно управлять своей цифровой идентичностью, делая его идеальным инструментом для соискателей работы или всех, кто хочет улучшить своё присутствие в интернете и цифровое влияние.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -304,12 +304,59 @@
                 ]
             },
             {
+                "title": "Личное портфолио разработчика",
+                "type": "fullstack",
+                "image": "/Projects/EdPortfolio.png",
+                "websiteUrl": "/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
+                "description": "Современное, высокоинтерактивное и адаптивное личное портфолио, созданное с помощью Next.js и Tailwind CSS. Включает поддержку нескольких языков (i18n).",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
                 "title": "Компрессор изображений",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubFrontendUrl": "",
                 "githubBackendUrl": "",
-                "description": "Мощный и безопасный браузерный инструмент для сжатия изображений. Он позволяет пользователям без потери качества сжимать неограниченное количество изображений JPG, PNG и WebP до 90%. Функции включают массовое сжатие, генерацию PDF, интерфейс перетаскивания и полную конфиденциальность, так как вся обработка происходит локально в браузере.",
+                "description": "Мощный и безопасный инструмент сжатия изображений на основе браузера. Позволяет пользователям сжимать неограниченное количество изображений JPG, PNG и WebP на 90% без потери качества. Функции включают массовое сжатие, генерацию PDF, интерфейс перетаскивания и полную конфиденциальность, поскольку вся обработка выполняется локально в браузере.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -335,7 +382,7 @@
                 "websiteUrl": "https://edqrcode.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
                 "githubBackendUrl": "",
-                "description": "Приложение для управления QR-кодами, которое позволяет создавать QR-коды с пользовательскими логотипами, читать QR-коды из изображений и сканировать QR-коды через камеру для мгновенного отображения данных. Отличается привлекательным и адаптивным дизайном.",
+                "description": "Приложение для управления QR-кодами, которое позволяет создавать QR-коды с пользовательскими логотипами, считывать QR-коды из изображений и сканировать QR-коды через камеру для мгновенного отображения данных. Отличается привлекательным и адаптивным дизайном.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -353,15 +400,16 @@
                         "name": "Git",
                         "logo": "/Skills/Git.png"
                     }
-                ]
+                ],
+                "Rapport": " "
             },
             {
                 "title": "Приложение для покупок",
-                "image": "/Projects/EcomApp.png",
+                "image": "/Projects/EdMarket.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
                 "githubBackendUrl": "",
-                "description": "Приложение, предлагающее бесперебойный опыт покупок, позволяющее пользователям легко просматривать продукты и добавлять товары в корзину. Приложение отличается современным и инновационным дизайном, который улучшает взаимодействие с пользователем, с мгновенной отзывчивостью и интерактивными элементами, которые делают покупки более приятными.",
+                "description": "Приложение, обеспечивающее бесшовный опыт покупок, облегчая пользователям просмотр товаров и добавление позиций в корзину. Приложение имеет современный и инновационный дизайн, улучшающий пользовательский опыт, с мгновенной отзывчивостью и интерактивными элементами, делающими покупки более приятными.",
                 "technologies": [
                     {
                         "name": "React.js",

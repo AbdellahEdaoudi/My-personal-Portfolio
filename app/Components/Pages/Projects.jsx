@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Projects({ content }) {
   if (!content) return null;
-  const { items: projects, title, subtitle, liveDemo, readMore, showLess, requirementsLabel, githubView, frontendLabel, backendLabel } = content;
+  const { items: projects, title, subtitle, preview, readMore, showLess, requirementsLabel, githubView, frontendLabel, backendLabel } = content;
 
   return (
     <section id="prtfl" className="pb-7 pt-4">
@@ -18,15 +18,16 @@ function Projects({ content }) {
               <Image width={800} height={450}
                 className="w-96 rounded-md border-b-2 cursor-pointer"
                 src={p.image}
-                alt="E-commerce App"
+                alt={p.title || "Project Image"}
+                priority={i < 3}
               />
             </Link>
             <div>
               <div className="flex justify-between items-start gap-2 px-3 py-3">
-                <h1 className="text-[16px] underline flex-1 leading-snug">{p.title}</h1>
+                <h1 className="text-[16px] underline flex-1 leading-snug break-words min-w-0">{p.title}</h1>
                 <Link href={p.websiteUrl} className="flex-shrink-0 flex items-center gap-1 hover:scale-105 duration-300 hover:text-sky-500 hover:bg-sky-50 border p-1 rounded-md bg-gray-100" target="_blank">
                   <Image src="/Projects/WebSite.png" width={17} height={17} alt="WebSite" />
-                  <span className="ml-1 text-xs sm:text-sm font-medium whitespace-nowrap">{liveDemo}</span>
+                  <span className="ml-1 text-xs sm:text-sm font-medium whitespace-nowrap">{preview}</span>
                 </Link>
               </div>
               {/* Description */}

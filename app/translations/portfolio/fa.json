@@ -72,18 +72,19 @@
     "projects": {
         "title": "پروژه‌ها",
         "subtitle": "آخرین کارها",
-        "liveDemo": "پیش‌نمایش",
+        "preview": "پیش‌نمایش",
         "readMore": "بیشتر بخوانید",
         "showLess": "نمایش کمتر",
         "items": [
             {
-                "title": "DGT Portfolio Builder",
+                "title": "سازنده پورتفولیوی DGT",
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
                 "websiteUrl": "https://dgtportfolio.com",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "description": "یک پلتفرم SaaS جامع که به کاربران امکان می‌دهد به راحتی رزومه و نمونه‌کارهای حرفه‌ای بسازند. از ویژگی‌های آن می‌توان به پشتیبانی چندزبانه، یکپارچه‌سازی دامنه سفارشی، انتخاب تم پویا، تولید رزومه به صورت بلادرنگ و داشبورد مدیریتی بصری برای مدیریت محتوا، اشتراک‌ها و آمار اشاره کرد.",
+                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "description": "یک پلتفرم SaaS کامل که به کاربران اجازه می‌دهد بدون هیچ تلاشی پورتفولیوهای حرفه‌ای بسازند. از ویژگی‌های آن می‌توان به پشتیبانی چندزبانه، یکپارچه‌سازی دامنه سفارشی، انتخاب تم پویا، تولید رزومه در زمان واقعی و یک داشبورد مدیریتی بصری برای مدیریت محتوا، اشتراک‌ها و تحلیل‌ها اشاره کرد.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -125,16 +126,15 @@
                         "name": "jwt",
                         "logo": "/Skills/jwt.jpg"
                     }
-                ],
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
+                ]
             },
             {
                 "title": "سیستم رزرو هتل",
-                "image": "/Projects/HotelDash.png",
+                "image": "/Projects/EdHotel.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "سیستم مدیریت هتل یک راه‌حل جامع برای مدیریت رزرو اتاق‌ها و پرداخت‌ها ارائه می‌دهد. این سیستم به کاربران اجازه می‌دهد به راحتی اتاق‌ها را رزرو کرده و یک بلیط الکترونیکی تایید دریافت کنند. این سیستم شامل داشبوردی برای مدیریت رزروها، پرداخت‌ها و بازخوردهای ایمیلی مشتریان است.",
+                "description": "سیستم مدیریت هتل یک راه‌حل جامع برای مدیریت رزروهای اتاق و پرداخت‌ها ارائه می‌دهد. به کاربران اجازه می‌دهد به راحتی اتاق رزرو کنند و یک بلیط الکترونیکی تأییدیه دریافت کنند. این سیستم شامل یک پنل برای مدیریت رزروها، پرداخت‌ها و پاسخ به مشتریان از طریق ایمیل است.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -153,7 +153,7 @@
                         "logo": "/Skills/ExpressJs.png"
                     },
                     {
-                        "name": "MongoDB",
+                        "name": "MongoDB ",
                         "logo": "/Skills/Mongodb.png"
                     },
                     {
@@ -181,7 +181,7 @@
                 "websiteUrl": "https://edchatflow.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "یک برنامه چت بلادرنگ که عملکرد بالا و سطح پیشرفته‌ای از امنیت را ارائه می‌دهد. این سیستم به Socket.io برای ارتباطات بلادرنگ تکیه دارد و رمزگذاری سرتاسر (E2EE) را برای تضمین محرمانه بودن پیام‌ها پیاده‌سازی می‌کند. همچنین شامل یک سیستم احراز هویت قوی با استفاده از JWT و رمزگذاری Bcrypt است.",
+                "description": "سیستم چت امن در زمان واقعی یک برنامه پیام‌رسانی فوری با عملکرد بالا و امنیت پیشرفته است. از Socket.io برای ارتباط در زمان واقعی استفاده می‌کند و رمزگذاری انتها به انتها (E2EE) را برای اطمینان از حریم خصوصی پیام‌ها پیاده‌سازی می‌کند. همچنین شامل یک سیستم احراز هویت قوی با JWT و هش رمز عبور با Bcrypt است که حفاظت از داده‌های کاربر را با بالاترین استانداردها تضمین می‌کند.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -222,14 +222,14 @@
                 ]
             },
             {
-                "title": "بک‌اند فروشگاه اینترنتی",
+                "title": "بک‌اند تجارت الکترونیک",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubBackendUrl": "",
-                "description": "یک سیستم بک‌اند قوی و مقیاس‌پذیر برای پلتفرم تجارت الکترونیک. این سیستم عملکردهای مختلفی مانند مدیریت کاربران، موجودی محصولات، پردازش سفارشات، تراکنش‌های پرداخت (نقدی و کارت)، کوپن‌ها، نقد و بررسی‌ها، مدیریت دسته‌بندی‌ها و برندها، مدیریت تامین‌کنندگان و مالیات را کنترل می‌کند.",
+                "description": "یک سیستم بک‌اند قوی و مقیاس‌پذیر برای یک پلتفرم تجارت الکترونیک. این سیستم عملکردهای مختلفی مانند مدیریت کاربر، سازماندهی موجودی محصول، پردازش سفارش، مدیریت پرداخت (نقدی یا با کارت)، اضافه کردن کوپن، نظرات، مدیریت دسته‌بندی و برند، مدیریت تامین‌کننده و مقررات مالیاتی را مدیریت می‌کند.",
                 "technologies": [
                     {
                         "name": "Nestjs",
@@ -240,15 +240,15 @@
                         "logo": "/Skills/Nodejs.png"
                     },
                     {
-                        "name": "MongoDB",
+                        "name": "MongoDB ",
                         "logo": "/Skills/Mongodb.png"
                     },
                     {
-                        "name": "Typescript",
+                        "name": "Typescript ",
                         "logo": "/Skills/typescript.png"
                     },
                     {
-                        "name": "jwt",
+                        "name": "jwt ",
                         "logo": "/Skills/jwt.jpg"
                     },
                     {
@@ -267,11 +267,11 @@
             },
             {
                 "title": "پلتفرم رزومه",
-                "image": "/Projects/Linkerfolio.png",
+                "image": "/Projects/Linkerfolio.jpg",
                 "websiteUrl": "https://linkerfolio.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
-                "description": "یک اپلیکیشن نوآورانه که توسعه داده‌ام و به کاربران امکان می‌دهد رزومه حرفه‌ای و پیوندهای شبکه‌های اجتماعی خود را در یک مکان نمایش دهند. این اپلیکیشن به کاربران کمک می‌کند هویت دیجیتال خود را مدیریت کنند و آن را به ابزاری ایده‌آل برای جویندگان کار تبدیل می‌کند.",
+                "description": "یک اپلیکیشن نوآورانه که توسعه دادم، به کاربران اجازه می‌دهد رزومه حرفه‌ای و پیوندهای شبکه‌های اجتماعی خود را در یک مکان به نمایش بگذارند. این اپلیکیشن به کاربران کمک می‌کند هویت دیجیتال خود را به طور مؤثر مدیریت کنند و آن را به ابزاری ایده‌آل برای جویندگان کار یا هر کسی که می‌خواهد حضور آنلاین و تأثیر دیجیتال خود را بهبود بخشد، تبدیل کند.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -290,7 +290,7 @@
                         "logo": "/Skills/ExpressJs.png"
                     },
                     {
-                        "name": "MongoDB",
+                        "name": "MongoDB ",
                         "logo": "/Skills/Mongodb.png"
                     },
                     {
@@ -304,12 +304,59 @@
                 ]
             },
             {
+                "title": "پورتفولیوی شخصی توسعه‌دهنده",
+                "type": "fullstack",
+                "image": "/Projects/EdPortfolio.png",
+                "websiteUrl": "/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
+                "description": "یک پورتفولیوی شخصی مدرن، بسیار تعاملی و واکنش‌گرا که با Next.js و Tailwind CSS ساخته شده است. این شامل بین‌المللی‌سازی (i18n) برای پشتیبانی از چندین زبان است.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
                 "title": "فشرده‌ساز تصویر",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubFrontendUrl": "",
                 "githubBackendUrl": "",
-                "description": "یک ابزار قدرتمند و امن برای فشرده‌سازی تصویر در مرورگر. این ابزار به کاربران اجازه می‌دهد تا تصاویر JPG، PNG و WebP را تا ۹۰٪ بدون کاهش کیفیت فشرده کنند. پردازش به صورت محلی و کاملاً ایمن انجام می‌شود.",
+                "description": "یک ابزار قدرتمند و امن برای فشرده‌سازی تصویر مبتنی بر مرورگر. به کاربران اجازه می‌دهد تصاویر JPG، PNG و WebP نامحدود را تا 90 درصد بدون از دست دادن کیفیت فشرده کنند. ویژگی‌ها شامل فشرده‌سازی انبوه، تولید PDF، رابط کشیدن و رها کردن و حریم خصوصی کامل است زیرا تمام پردازش‌ها به صورت محلی در مرورگر انجام می‌شود.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -335,7 +382,7 @@
                 "websiteUrl": "https://edqrcode.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
                 "githubBackendUrl": "",
-                "description": "اپلیکیشنی برای مدیریت کدهای QR که به شما امکان می‌دهد کدهای QR با لوگوهای سفارشی بسازید، آنها را از تصاویر بخوانید یا با دوربین اسکن کنید. این اپلیکیشن طراحی جذاب و واکنش‌گرایی دارد.",
+                "description": "یک برنامه مدیریت کد QR که به شما امکان می‌دهد کدهای QR با لوگوهای سفارشی بسازید، کدهای QR را از روی تصاویر بخوانید و کدهای QR را از طریق دوربین اسکن کنید تا داده‌ها بلافاصله نمایش داده شوند. دارای طراحی جذاب و واکنش‌گرا است.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -353,15 +400,16 @@
                         "name": "Git",
                         "logo": "/Skills/Git.png"
                     }
-                ]
+                ],
+                "Rapport": " "
             },
             {
                 "title": "اپلیکیشن خرید",
-                "image": "/Projects/EcomApp.png",
+                "image": "/Projects/EdMarket.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
                 "githubBackendUrl": "",
-                "description": "اپلیکیشنی که تجربه خرید بی‌نظیری را ارائه می‌دهد. این اپلیکیشن با طراحی مدرن و عناصر تعاملی، مرور محصولات و افزودن به سبد خرید را لذت‌بخش و ساده می‌سازد.",
+                "description": "یک برنامه که تجربه خرید روان ارائه می‌دهد و مرور محصولات و افزودن اقلام به سبد خرید را برای کاربران آسان می‌کند. این برنامه دارای طراحی مدرن و نوآورانه‌ای است که تجربه کاربر را بهبود می‌بخشد، با پاسخگویی فوری و عناصر تعاملی که خرید را لذت‌بخش‌تر می‌کند.",
                 "technologies": [
                     {
                         "name": "React.js",
