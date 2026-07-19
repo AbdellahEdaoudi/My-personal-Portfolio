@@ -72,18 +72,19 @@
     "projects": {
         "title": "Dự án",
         "subtitle": "Công việc gần đây",
-        "liveDemo": "Demo",
+        "preview": "Xem trước",
         "readMore": "Đọc thêm",
         "showLess": "Thu gọn",
         "items": [
             {
-                "title": "DGT Portfolio Builder",
+                "title": "Trình tạo Portfolio DGT",
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com/vi",
+                "websiteUrl": "https://dgtportfolio.com",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "description": "Một nền tảng SaaS toàn diện giúp người dùng xây dựng danh mục đầu tư chuyên nghiệp một cách dễ dàng. Nó có hỗ trợ đa ngôn ngữ, tích hợp tên miền tùy chỉnh, lựa chọn chủ đề động, tạo sơ yếu lý lịch thời gian thực và bảng điều khiển quản trị trực quan để quản lý nội dung, đăng ký và phân tích.",
+                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "description": "Một nền tảng SaaS hoàn chỉnh cho phép người dùng tạo danh mục đầu tư chuyên nghiệp một cách dễ dàng. Cung cấp hỗ trợ đa ngôn ngữ, tích hợp tên miền tùy chỉnh, lựa chọn chủ đề động, tạo sơ yếu lý lịch theo thời gian thực và bảng quản trị trực quan để quản lý nội dung, đăng ký và phân tích.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -125,16 +126,15 @@
                         "name": "jwt",
                         "logo": "/Skills/jwt.jpg"
                     }
-                ],
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
+                ]
             },
             {
                 "title": "Hệ thống đặt phòng khách sạn",
-                "image": "/Projects/HotelDash.png",
+                "image": "/Projects/EdHotel.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "Hệ thống quản lý khách sạn cung cấp giải pháp toàn diện để quản lý đặt phòng và thanh toán. Nó cho phép người dùng dễ dàng đặt phòng và nhận vé xác nhận điện tử. Hệ thống bao gồm bảng điều khiển để quản lý đặt phòng, thanh toán và phản hồi khách hàng qua email.",
+                "description": "Hệ thống quản lý khách sạn cung cấp một giải pháp toàn diện để quản lý đặt phòng và thanh toán. Cho phép người dùng dễ dàng đặt phòng và nhận vé điện tử xác nhận. Hệ thống bao gồm bảng điều khiển để quản lý đặt phòng, thanh toán và phản hồi khách hàng qua email.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -175,13 +175,13 @@
                 ]
             },
             {
-                "title": "Hệ thống Chat thời gian thực an toàn",
+                "title": "Hệ thống trò chuyện an toàn theo thời gian thực",
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "Hệ thống Chat thời gian thực an toàn là ứng dụng nhắn tin tức thì hiệu suất cao với bảo mật nâng cao. Nó sử dụng Socket.io để giao tiếp thời gian thực và triển khai Mã hóa đầu cuối (E2EE) để đảm bảo quyền riêng tư của tin nhắn. Nó cũng bao gồm hệ thống xác thực mạnh mẽ sử dụng JWT và băm mật khẩu với Bcrypt, đảm bảo bảo vệ dữ liệu người dùng ở tiêu chuẩn cao nhất.",
+                "description": "Hệ thống Chat An toàn theo Thời gian thực là ứng dụng nhắn tin tức thời hiệu suất cao với bảo mật nâng cao. Sử dụng Socket.io để giao tiếp theo thời gian thực và triển khai mã hóa đầu cuối (E2EE) để đảm bảo quyền riêng tư của tin nhắn. Cũng bao gồm hệ thống xác thực mạnh mẽ qua JWT và băm mật khẩu với Bcrypt, đảm bảo bảo vệ dữ liệu người dùng ở tiêu chuẩn cao nhất.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -222,14 +222,14 @@
                 ]
             },
             {
-                "title": "Back-End Thương mại điện tử",
+                "title": "Back-End thương mại điện tử",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubBackendUrl": "",
-                "description": "Một hệ thống back-end mạnh mẽ và có thể mở rộng cho nền tảng thương mại điện tử. Hệ thống xử lý các chức năng khác nhau như quản lý người dùng, tổ chức kho sản phẩm, xử lý đơn hàng, xử lý thanh toán (bằng tiền mặt hoặc thẻ), thêm phiếu giảm giá, đánh giá, quản lý danh mục và thương hiệu, quản lý nhà cung cấp và quy định thuế.",
+                "description": "Một hệ thống backend mạnh mẽ và có thể mở rộng cho nền tảng thương mại điện tử. Hệ thống xử lý các chức năng khác nhau như quản lý người dùng, tổ chức hàng tồn kho sản phẩm, xử lý đơn hàng, xử lý thanh toán (bằng tiền mặt hoặc thẻ), thêm phiếu giảm giá, đánh giá, quản lý danh mục và thương hiệu, quản lý nhà cung cấp và quy định thuế.",
                 "technologies": [
                     {
                         "name": "Nestjs",
@@ -266,12 +266,12 @@
                 ]
             },
             {
-                "title": "Nền tảng Hồ sơ cá nhân",
-                "image": "/Projects/Linkerfolio.png",
+                "title": "Nền tảng Sơ yếu lý lịch",
+                "image": "/Projects/Linkerfolio.jpg",
                 "websiteUrl": "https://linkerfolio.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
-                "description": "Ứng dụng sáng tạo tôi đã phát triển, cho phép người dùng giới thiệu Hồ sơ chuyên nghiệp và các liên kết mạng xã hội ở một nơi. Ứng dụng này giúp người dùng quản lý danh tính kỹ thuật số hiệu quả, biến nó thành công cụ lý tưởng cho người tìm việc hoặc bất kỳ ai muốn nâng cao sự hiện diện trực tuyến và ảnh hưởng kỹ thuật số.",
+                "description": "Ứng dụng sáng tạo tôi đã phát triển, cho phép người dùng giới thiệu sơ yếu lý lịch chuyên nghiệp và các liên kết mạng xã hội của họ tại một nơi. Ứng dụng này giúp người dùng quản lý hiệu quả danh tính kỹ thuật số của họ, biến nó thành công cụ lý tưởng cho những người tìm việc hoặc bất kỳ ai muốn cải thiện sự hiện diện trực tuyến và tầm ảnh hưởng kỹ thuật số.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -304,12 +304,59 @@
                 ]
             },
             {
-                "title": "Công cụ nén ảnh",
+                "title": "Portfolio Lập Trình Viên Cá Nhân",
+                "type": "fullstack",
+                "image": "/Projects/EdPortfolio.png",
+                "websiteUrl": "/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
+                "description": "Một portfolio cá nhân hiện đại, tương tác cao và phản hồi tốt được xây dựng bằng Next.js và Tailwind CSS. Có tính năng quốc tế hóa (i18n).",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Trình nén ảnh",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubFrontendUrl": "",
                 "githubBackendUrl": "",
-                "description": "Một công cụ nén ảnh dựa trên trình duyệt mạnh mẽ và an toàn. Nó cho phép người dùng nén không giới hạn hình ảnh JPG, PNG và WebP lên đến 90% mà không làm giảm chất lượng. Các tính năng bao gồm nén hàng loạt, tạo PDF, giao diện kéo và thả, và bảo mật hoàn toàn vì tất cả quá trình xử lý diễn ra cục bộ trong trình duyệt.",
+                "description": "Công cụ nén ảnh mạnh mẽ và an toàn dựa trên trình duyệt. Cho phép người dùng nén hình ảnh JPG, PNG và WebP không giới hạn lên tới 90% mà không mất chất lượng. Các tính năng bao gồm nén hàng loạt, tạo PDF, giao diện kéo và thả và quyền riêng tư hoàn toàn vì tất cả quá trình xử lý xảy ra cục bộ trong trình duyệt.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -330,12 +377,12 @@
                 ]
             },
             {
-                "title": "Ứng dụng quản lý mã QR",
+                "title": "Ứng dụng Quản lý Mã QR",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
                 "githubBackendUrl": "",
-                "description": "Một ứng dụng quản lý mã QR cho phép bạn tạo mã QR với logo tùy chỉnh, đọc mã QR từ hình ảnh và quét mã QR qua camera để hiển thị dữ liệu ngay lập tức. Có thiết kế hấp dẫn và đáp ứng.",
+                "description": "Ứng dụng quản lý mã QR cho phép bạn tạo mã QR với logo tùy chỉnh, đọc mã QR từ hình ảnh và quét mã QR qua camera để hiển thị dữ liệu ngay lập tức. Có thiết kế hấp dẫn và phản hồi tốt.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -357,12 +404,12 @@
                 "Rapport": " "
             },
             {
-                "title": "Ứng dụng mua sắm",
-                "image": "/Projects/EcomApp.png",
+                "title": "Ứng dụng Mua sắm",
+                "image": "/Projects/EdMarket.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
                 "githubBackendUrl": "",
-                "description": "Một ứng dụng cung cấp trải nghiệm mua sắm liền mạch, giúp người dùng dễ dàng duyệt sản phẩm và thêm mặt hàng vào giỏ hàng. Ứng dụng có thiết kế hiện đại và sáng tạo nâng cao trải nghiệm người dùng, với khả năng phản hồi tức thì và các yếu tố tương tác làm cho việc mua sắm thú vị hơn.",
+                "description": "Một ứng dụng cung cấp trải nghiệm mua sắm liền mạch, giúp người dùng dễ dàng duyệt qua các sản phẩm và thêm mặt hàng vào giỏ hàng của họ. Ứng dụng có thiết kế hiện đại và sáng tạo giúp nâng cao trải nghiệm người dùng, với khả năng phản hồi tức thì và các yếu tố tương tác giúp việc mua sắm trở nên thú vị hơn.",
                 "technologies": [
                     {
                         "name": "React.js",

@@ -72,18 +72,19 @@
     "projects": {
         "title": "Proyek",
         "subtitle": "Pekerjaan terbaru",
-        "liveDemo": "Demo",
+        "preview": "Pratinjau",
         "readMore": "Baca selengkapnya",
         "showLess": "Tampilkan lebih sedikit",
         "items": [
             {
-                "title": "DGT Portfolio Builder",
+                "title": "Pembangun Portofolio DGT",
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com/id",
+                "websiteUrl": "https://dgtportfolio.com",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "description": "Platform SaaS komprehensif yang memberdayakan pengguna untuk membangun portofolio profesional dengan mudah. Ini fitur dukungan multi-bahasa, integrasi domain kustom, pemilihan tema dinamis, pembuatan resume real-time, dan dasbor admin intuitif untuk mengelola konten, langganan, dan analitik.",
+                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "description": "Platform SaaS lengkap yang memungkinkan pengguna membuat portofolio profesional dengan mudah. Menawarkan dukungan multibahasa, integrasi domain kustom, pemilihan tema dinamis, pembuatan resume real-time, dan panel admin intuitif untuk mengelola konten, langganan, dan analitik.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -125,16 +126,15 @@
                         "name": "jwt",
                         "logo": "/Skills/jwt.jpg"
                     }
-                ],
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
+                ]
             },
             {
                 "title": "Sistem Reservasi Hotel",
-                "image": "/Projects/HotelDash.png",
+                "image": "/Projects/EdHotel.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "Sistem manajemen hotel memberikan solusi komprehensif untuk mengelola pemesanan kamar dan pembayaran. Ini memungkinkan pengguna untuk dengan mudah memesan kamar dan menerima tiket elektronik untuk konfirmasi. Sistem mencakup dasbor untuk mengelola pemesanan, pembayaran, dan tanggapan pelanggan melalui email.",
+                "description": "Sistem manajemen hotel menyediakan solusi komprehensif untuk mengelola pemesanan kamar dan pembayaran. Memungkinkan pengguna untuk dengan mudah memesan kamar dan menerima tiket elektronik sebagai konfirmasi. Sistem ini mencakup panel untuk mengelola pemesanan, pembayaran, dan respons pelanggan melalui email.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -181,7 +181,7 @@
                 "websiteUrl": "https://edchatflow.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "Sistem Obrolan Real-time Aman adalah aplikasi pesan instan berperforma tinggi yang dilengkapi dengan keamanan tingkat lanjut. Menggunakan Socket.io untuk komunikasi real-time dan menerapkan Enkripsi End-to-End (E2EE) untuk menjamin privasi pesan. Aplikasi ini juga memiliki sistem autentikasi yang kuat menggunakan JWT dan hashing kata sandi dengan Bcrypt, memastikan perlindungan data pengguna dengan standar tertinggi。",
+                "description": "Sistem Chat Aman Real-time adalah aplikasi perpesanan instan berkinerja tinggi dengan keamanan canggih. Menggunakan Socket.io untuk komunikasi real-time dan mengimplementasikan Enkripsi End-to-End (E2EE) untuk memastikan privasi pesan. Juga mencakup sistem autentikasi yang kuat menggunakan JWT dan hashing kata sandi dengan Bcrypt, memastikan perlindungan data pengguna dengan standar tertinggi.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -222,14 +222,14 @@
                 ]
             },
             {
-                "title": "E-Commerce Back-End",
+                "title": "Back-End E-Commerce",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubBackendUrl": "",
-                "description": "Sistem back-end yang tangguh dan dapat diskalakan untuk platform e-commerce. Sistem menangani berbagai fungsi seperti manajemen pengguna, organisasi inventaris produk, pemrosesan pesanan, penanganan pembayaran (baik melalui uang tunai atau kartu), penambahan kupon, ulasan, manajemen kategori dan merek, manajemen pemasok, dan peraturan pajak.",
+                "description": "Sistem backend yang kuat dan skalabel untuk platform e-commerce. Sistem ini menangani berbagai fungsi seperti manajemen pengguna, organisasi inventaris produk, pemrosesan pesanan, penanganan pembayaran (tunai atau kartu), penambahan kupon, ulasan, manajemen kategori dan merek, manajemen pemasok, dan regulasi pajak.",
                 "technologies": [
                     {
                         "name": "Nestjs",
@@ -267,11 +267,11 @@
             },
             {
                 "title": "Platform Resume",
-                "image": "/Projects/Linkerfolio.png",
+                "image": "/Projects/Linkerfolio.jpg",
                 "websiteUrl": "https://linkerfolio.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
-                "description": "Aplikasi inovatif yang saya kembangkan, memungkinkan pengguna untuk memamerkan resume profesional dan tautan media sosial mereka di satu tempat. Aplikasi ini membantu pengguna mengelola identitas digital mereka secara efektif, menjadikannya alat yang ideal bagi pencari kerja atau siapa pun yang ingin meningkatkan kehadiran online dan pengaruh digital mereka.",
+                "description": "Aplikasi inovatif yang saya kembangkan, memungkinkan pengguna menampilkan curriculum vitae profesional dan tautan media sosial mereka di satu tempat. Aplikasi ini membantu pengguna mengelola identitas digital mereka secara efektif, menjadikannya alat yang ideal bagi pencari kerja atau siapa saja yang ingin meningkatkan kehadiran online dan pengaruh digital mereka.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -304,12 +304,59 @@
                 ]
             },
             {
+                "title": "Portofolio Pengembang Pribadi",
+                "type": "fullstack",
+                "image": "/Projects/EdPortfolio.png",
+                "websiteUrl": "/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
+                "description": "Portofolio pribadi yang modern, sangat interaktif, dan responsif yang dibangun dengan Next.js dan Tailwind CSS. Memiliki fitur internasionalisasi (i18n).",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
                 "title": "Kompresor Gambar",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubFrontendUrl": "",
                 "githubBackendUrl": "",
-                "description": "Alat kompresi gambar berbasis browser yang kuat dan aman. Ini memungkinkan pengguna untuk mengompres gambar JPG, PNG, dan WebP tanpa batas hingga 90% tanpa kehilangan kualitas. Fitur termasuk kompresi massal, pembuatan PDF, antarmuka seret dan lepas, dan privasi lengkap karena semua pemrosesan terjadi secara lokal di browser.",
+                "description": "Alat kompresi gambar yang kuat dan aman berbasis browser. Memungkinkan pengguna mengompres gambar JPG, PNG, dan WebP tanpa batas hingga 90% tanpa kehilangan kualitas. Fitur-fiturnya mencakup kompresi massal, pembuatan PDF, antarmuka drag-and-drop, dan privasi penuh karena semua pemrosesan terjadi secara lokal di browser.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -335,7 +382,7 @@
                 "websiteUrl": "https://edqrcode.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
                 "githubBackendUrl": "",
-                "description": "Aplikasi manajemen Kode QR yang memungkinkan Anda membuat kode QR dengan logo kustom, membaca kode QR dari gambar, dan memindai kode QR melalui kamera untuk menampilkan data secara instan. Menampilkan desain yang menarik dan responsif.",
+                "description": "Aplikasi manajemen kode QR yang memungkinkan Anda membuat kode QR dengan logo kustom, membaca kode QR dari gambar, dan memindai kode QR melalui kamera untuk menampilkan data secara instan. Menampilkan desain yang menarik dan responsif.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -353,15 +400,16 @@
                         "name": "Git",
                         "logo": "/Skills/Git.png"
                     }
-                ]
+                ],
+                "Rapport": " "
             },
             {
                 "title": "Aplikasi Belanja",
-                "image": "/Projects/EcomApp.png",
+                "image": "/Projects/EdMarket.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
                 "githubBackendUrl": "",
-                "description": "Aplikasi yang menawarkan pengalaman berbelanja yang mulus, memudahkan pengguna untuk menelusuri produk dan menambahkan item ke keranjang mereka. Aplikasi ini memiliki desain modern dan inovatif yang meningkatkan pengalaman pengguna, dengan daya tanggap instan dan elemen interaktif yang membuat belanja lebih menyenangkan.",
+                "description": "Sebuah aplikasi yang menawarkan pengalaman berbelanja yang mulus, memudahkan pengguna menjelajahi produk dan menambahkan barang ke keranjang mereka. Aplikasi ini menampilkan desain modern dan inovatif yang meningkatkan pengalaman pengguna, dengan responsivitas instan dan elemen interaktif yang membuat berbelanja lebih menyenangkan.",
                 "technologies": [
                     {
                         "name": "React.js",

@@ -12,16 +12,16 @@ import Image from 'next/image';
 
 const languages = [
     { code: 'en', name: 'English', countryCode: 'gb' },
+    { code: 'es', name: 'Español', countryCode: 'es' },
     { code: 'de', name: 'Deutsch', countryCode: 'de' },
     { code: 'fr', name: 'Français', countryCode: 'fr' },
-    { code: 'es', name: 'Español', countryCode: 'es' },
     { code: 'nl', name: 'Nederlands', countryCode: 'nl' },
     { code: 'it', name: 'Italiano', countryCode: 'it' },
     { code: 'pt', name: 'Português', countryCode: 'pt' },
+    { code: 'sv', name: 'Svenska', countryCode: 'se' },
     { code: 'ru', name: 'Русский', countryCode: 'ru' },
     { code: 'ar', name: 'العربية', countryCode: 'sa' },
     { code: 'fa', name: 'فارسی', countryCode: 'ir' },
-    { code: 'sv', name: 'Svenska', countryCode: 'se' },
     { code: 'vi', name: 'Tiếng Việt', countryCode: 'vn' },
     { code: 'zh', name: '中文', countryCode: 'cn' },
     { code: 'ja', name: '日本語', countryCode: 'jp' },

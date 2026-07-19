@@ -72,13 +72,65 @@
     "projects": {
         "title": "Proyectos",
         "subtitle": "Trabajos más recientes",
-        "liveDemo": "Demo",
+        "preview": "Vista previa",
         "readMore": "Leer más",
         "showLess": "Mostrar menos",
         "items": [
             {
+                "title": "Constructor de Portafolios DGT",
+                "type": "fullstack",
+                "image": "/Projects/dgtportfolio.png",
+                "websiteUrl": "https://dgtportfolio.com",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "description": "Una plataforma SaaS integral que permite a los usuarios crear portafolios profesionales sin necesidad de programar. Cuenta con soporte multilingüe, subdominios personalizados, un generador de currículums integrado, múltiples temas modernos y un panel intuitivo para gestionar el contenido del portafolio.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Nestjs",
+                        "logo": "/Skills/Nestjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "PayPal",
+                        "logo": "/Skills/paypal.png"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    }
+                ]
+            },
+            {
                 "title": "Sistema de Reservas de Hotel",
-                "image": "/Projects/HotelDash.png",
+                "image": "/Projects/EdHotel.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
@@ -170,58 +222,6 @@
                 ]
             },
             {
-                "title": "Constructor de Portafolios DGT",
-                "type": "fullstack",
-                "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com/es",
-                "githubFrontendUrl": "",
-                "githubBackendUrl": "",
-                "description": "Una plataforma SaaS completa que permite a los usuarios crear portafolios profesionales sin esfuerzo. Ofrece soporte multilingüe, integración de dominio personalizado, selección de temas dinámicos, generación de currículums en tiempo real y un panel de administración intuitivo para gestionar contenido, suscripciones y análisis.",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Nestjs",
-                        "logo": "/Skills/Nestjs.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "PayPal",
-                        "logo": "/Skills/paypal.png"
-                    },
-                    {
-                        "name": "cloudinary",
-                        "logo": "/Skills/cloudinary.jpg"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "jwt",
-                        "logo": "/Skills/jwt.jpg"
-                    }
-                ],
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
-            },
-            {
                 "title": "Backend de Comercio Electrónico",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
@@ -267,7 +267,7 @@
             },
             {
                 "title": "Plataforma de Currículum",
-                "image": "/Projects/Linkerfolio.png",
+                "image": "/Projects/Linkerfolio.jpg",
                 "websiteUrl": "https://linkerfolio.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
@@ -300,6 +300,53 @@
                     {
                         "name": "Git",
                         "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
+                "title": "Portafolio Personal de Desarrollador",
+                "type": "fullstack",
+                "image": "/Projects/EdPortfolio.png",
+                "websiteUrl": "/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
+                "description": "Un portafolio personal moderno, altamente interactivo y responsivo, construido con Next.js y Tailwind CSS. Cuenta con internacionalización (i18n) para soportar múltiples idiomas y animaciones fluidas.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
                     }
                 ]
             },
@@ -353,11 +400,12 @@
                         "name": "Git",
                         "logo": "/Skills/Git.png"
                     }
-                ]
+                ],
+                "Rapport": " "
             },
             {
                 "title": "App de Compras",
-                "image": "/Projects/EcomApp.png",
+                "image": "/Projects/EdMarket.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
                 "githubBackendUrl": "",

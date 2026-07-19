@@ -72,18 +72,19 @@
     "projects": {
         "title": "Projekt",
         "subtitle": "Senaste arbetet",
-        "liveDemo": "Demo",
+        "preview": "Förhandsvisning",
         "readMore": "Läs mer",
         "showLess": "Visa mindre",
         "items": [
             {
-                "title": "DGT Portfolio Builder",
+                "title": "DGT Portföljbyggare",
                 "type": "fullstack",
                 "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com/sv",
+                "websiteUrl": "https://dgtportfolio.com",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "description": "En omfattande SaaS-plattform som ger användare möjlighet att bygga professionella portföljer utan ansträngning. Den har flerspråksstöd, anpassad domänintegration, dynamiskt temaval, realtidsgenerering av CV och en intuitiv administrationspanel för hantering av innehåll, prenumerationer och analys.",
+                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "description": "En komplett SaaS-plattform som låter användare skapa professionella portföljer utan ansträngning. Den erbjuder flerspråksstöd, integration av anpassad domän, dynamiskt temaval, realtidsgenerering av CV och en intuitiv administrationspanel för att hantera innehåll, prenumerationer och analyser.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -125,16 +126,15 @@
                         "name": "jwt",
                         "logo": "/Skills/jwt.jpg"
                     }
-                ],
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
+                ]
             },
             {
                 "title": "Hotellbokningssystem",
-                "image": "/Projects/HotelDash.png",
+                "image": "/Projects/EdHotel.png",
                 "websiteUrl": "https://edhotel.vercel.app/",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Hotel-management-system",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-hotel-app.git",
-                "description": "Hotellhanteringssystemet erbjuder en komplett lösning för hantering av rumsbokningar och betalningar. Det låter användare enkelt boka rum och ta emot en elektronisk bekräftelsebiljett. Systemet inkluderar en instrumentpanel för hantering av bokningar, betalningar och kundsvar via e-post.",
+                "description": "Hotellhanteringssystemet erbjuder en komplett lösning för hantering av rumsbokningar och betalningar. Det gör det möjligt för användare att enkelt boka rum och få en elektronisk bekräftelsebiljett. Systemet inkluderar en panel för att hantera bokningar, betalningar och kundsvar via e-post.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -175,13 +175,13 @@
                 ]
             },
             {
-                "title": "Säkert Realtids Chattsystem",
+                "title": "Säkert Realtids-Chattsystem",
                 "type": "fullstack",
                 "image": "/Projects/edchatflow.png",
                 "websiteUrl": "https://edchatflow.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Chat-Application",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-Chat-Application",
-                "description": "Säkert Realtids Chattsystem är en högpresterande snabbmeddelandeapplikation med avancerad säkerhet. Den använder Socket.io för realtidskommunikation och implementerar End-to-End-kryptering (E2EE) för att säkerställa meddelandesekretess. Den inkluderar också ett robust autentiseringssystem med JWT och lösenordshashning med Bcrypt, vilket säkerställer skydd av användardata enligt högsta standard.",
+                "description": "Säkert Realtidschatt-System är en högpresterande snabbmeddelandeapplikation med avancerad säkerhet. Den använder Socket.io för realtidskommunikation och implementerar End-to-End-kryptering (E2EE) för att garantera meddelandenas integritet. Den inkluderar också ett robust autentiseringssystem via JWT och lösenordshashning med Bcrypt, vilket säkerställer skyddet av användardata med de högsta standarderna.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -222,14 +222,14 @@
                 ]
             },
             {
-                "title": "E-handels Backend",
+                "title": "E-Commerce Back-End",
                 "type": "backend",
                 "image": "/Projects/Ecom-backend.png",
                 "Requirements": "/Projects/Requirements.docx.pdf",
                 "websiteUrl": "/Projects/Requirements.docx.pdf",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/E-Commerce-Back-End-with-NestJS",
                 "githubBackendUrl": "",
-                "description": "Ett robust och skalbart backend-system för en e-handelsplattform. Systemet hanterar olika funktioner såsom användarhantering, produktlagerorganisation, orderbehandling, betalningshantering (kontant eller kort), tillägg av kuponger, recensioner, kategorier och varumärkeshantering, leverantörshantering och skattereglering.",
+                "description": "Ett robust och skalbart backendsystem för en e-handelsplattform. Systemet hanterar olika funktioner som användarhantering, organisation av produktlager, orderhantering, betalningshantering (kontant eller kort), tillägg av kuponger, recensioner, kategori- och varumärkeshantering, leverantörshantering och skattereglering.",
                 "technologies": [
                     {
                         "name": "Nestjs",
@@ -267,11 +267,11 @@
             },
             {
                 "title": "CV-plattform",
-                "image": "/Projects/Linkerfolio.png",
+                "image": "/Projects/Linkerfolio.jpg",
                 "websiteUrl": "https://linkerfolio.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
-                "description": "En innovativ applikation jag utvecklat som låter användare visa upp sina professionella CV och länkar till sociala medier på ett ställe. Denna app hjälper användare att hantera sin digitala identitet effektivt, vilket gör den till ett idealiskt verktyg för arbetssökande eller alla som vill förbättra sin närvaro och sitt digitala inflytande online.",
+                "description": "En innovativ applikation som jag utvecklade, som låter användare presentera sin professionella meritförteckning och sina sociala medielänkar på ett och samma ställe. Denna applikation hjälper användare att effektivt hantera sin digitala identitet, vilket gör den till ett idealiskt verktyg för arbetssökande eller vem som helst som vill förbättra sin närvaro online och sitt digitala inflytande.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -304,12 +304,59 @@
                 ]
             },
             {
-                "title": "Bildkomprimerare",
+                "title": "Personlig Utvecklarportfölj",
+                "type": "fullstack",
+                "image": "/Projects/EdPortfolio.png",
+                "websiteUrl": "/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
+                "description": "En modern, mycket interaktiv och responsiv personlig portfölj byggd med Next.js och Tailwind CSS. Den har internationalisering (i18n).",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "React.js",
+                        "logo": "/Skills/reactjs.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    },
+                    {
+                        "name": "jwt",
+                        "logo": "/Skills/jwt.jpg"
+                    },
+                    {
+                        "name": "cloudinary",
+                        "logo": "/Skills/cloudinary.jpg"
+                    }
+                ]
+            },
+            {
+                "title": "Bildkompressor",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
                 "githubFrontendUrl": "",
                 "githubBackendUrl": "",
-                "description": "Ett kraftfullt och säkert webbläsarbaserat verktyg för bildkomprimering. Det låter användare komprimera obegränsat antal JPG-, PNG- och WebP-bilder med upp till 90% utan kvalitetsförlust. Funktionerna inkluderar masskomprimering, PDF-generering, dra-och-släpp-gränssnitt och fullständig integritet eftersom all behandling sker lokalt i webbläsaren.",
+                "description": "Ett kraftfullt och säkert webbläsarbaserat bildkomprimeringsverktyg. Det låter användare komprimera obegränsade JPG-, PNG- och WebP-bilder med upp till 90% utan kvalitetsförlust. Funktioner inkluderar masskomprimering, PDF-generering, dra-och-släpp-gränssnitt och fullständig integritet eftersom all bearbetning sker lokalt i webbläsaren.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -330,12 +377,12 @@
                 ]
             },
             {
-                "title": "QR-kodhanteringsapp",
+                "title": "QR-kodshanteringsapp",
                 "image": "/Projects/EdQrcode.png",
                 "websiteUrl": "https://edqrcode.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/QR-Code-Management-App",
                 "githubBackendUrl": "",
-                "description": "En QR-kodhanteringsapp som låter dig skapa QR-koder med anpassade logotyper, läsa QR-koder från bilder och skanna QR-koder via kameran för att visa data direkt. Har en attraktiv och responsiv design.",
+                "description": "En QR-kods hanteringsapplikation som låter dig skapa QR-koder med anpassade logotyper, läsa QR-koder från bilder och skanna QR-koder via kameran för att visa data omedelbart. Den har en attraktiv och responsiv design.",
                 "technologies": [
                     {
                         "name": "Next.js",
@@ -358,11 +405,11 @@
             },
             {
                 "title": "Shoppingapp",
-                "image": "/Projects/EcomApp.png",
+                "image": "/Projects/EdMarket.png",
                 "websiteUrl": "https://edmarkeet.vercel.app",
                 "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Ecommerce-ReactApp.git",
                 "githubBackendUrl": "",
-                "description": "En app som erbjuder en smidig shoppingupplevelse och gör det enkelt för användare att bläddra bland produkter och lägga till varor i sin kundvagn. Appen har en modern och innovativ design som förbättrar användarupplevelsen, med omedelbar respons och interaktiva element som gör shoppingen roligare.",
+                "description": "En applikation som erbjuder en sömlös shoppingupplevelse, vilket gör det lättare för användare att bläddra bland produkter och lägga till artiklar i sin varukorg. Appen har en modern och innovativ design som förbättrar användarupplevelsen, med omedelbar responsivitet och interaktiva element som gör shopping mer njutbart.",
                 "technologies": [
                     {
                         "name": "React.js",
