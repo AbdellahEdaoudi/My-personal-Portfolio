@@ -4,8 +4,8 @@ import axios from "axios";
 
 import { useToast } from "../../Components/Toast";
 import {
-    MessageSquare, Trash2, Search, Plus, ChevronLeft, ChevronRight,
-    User, Mail, Clock, RefreshCcw
+    MessageSquare, Trash2, Search, Plus, ChevronLeft,
+    User, Mail, Clock, RefreshCcw, Star, MailOpen
 } from "../../Components/Icons";
 import { useRouter } from "next/navigation";
 
@@ -14,10 +14,9 @@ export default function Messages({ isForbidden, setIsForbidden }) {
     const [contacts, setContacts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState("");
-    const [currentPage, setCurrentPage] = useState(1);
+    const [filterTab, setFilterTab] = useState("all"); // "all", "unread", "starred"
     const [selectedId, setSelectedId] = useState(null);
     const router = useRouter();
-    const itemsPerPage = 8;
     const [deleteModal, setDeleteModal] = useState({
         isOpen: false,
         type: null,
@@ -26,48 +25,52 @@ export default function Messages({ isForbidden, setIsForbidden }) {
     });
     const [imageModal, setImageModal] = useState(null); // stores image URL when open
 
-    const fetchContacts = async (silent = false) => {
+    const handleApiError = async (error, retryCallback, defaultErrorMsg = "Operation failed.") => {
+        console.error("API error details:", error);
+        if (error.response) {
+            const errorCode = error.response.data?.code;
+            const errorMsg = error.response.data?.message || defaultErrorMsg;
+            if (errorCode === "ACCESS_TOKEN_EXPIRED") {
+                try {
+                    await axios.post(
+                        `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`,
+                        {},
+                        { withCredentials: true }
+                    );
+                    if (retryCallback) await retryCallback();
+                } catch (refreshError) {
+                    toast.error("Session expired. Please login again.");
+                    router.push("/Admin/Login");
+                }
+            } else if (["TOKEN_MISSING", "ACCESS_TOKEN_INVALID"].includes(errorCode) || error.response.status === 401) {
+                toast.error("Unauthorized: Please login again.");
+                router.push("/Admin/Login");
+            } else if (error.response.status === 403) {
+                setIsForbidden(true);
+                toast.error("Forbidden: You don't have permission.");
+                router.push("/");
+            } else {
+                toast.error(`Error: ${errorMsg}`);
+            }
+        } else if (error.request) {
+            toast.error("Network error: No response received.");
+        } else {
+            toast.error("Error setting up request.");
+        }
+    };
+
+     const fetchContacts = async (silent = false) => {
         if (!silent) setIsLoading(true);
         try {
-            const response = await
-                axios.get(
-                    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`,
-                    { withCredentials: true }
-                );
+            const response = await axios.get(
+                `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`,
+                { withCredentials: true }
+            );
             const contactsData = response.data.contacts || response.data;
             setContacts(Array.isArray(contactsData) ? contactsData.reverse() : []);
             if (silent) toast.success("Token refreshed");
         } catch (error) {
-            console.error("Fetch error details:", error);
-            if (error.response) {
-                const errorCode = error.response.data?.code;
-                if (errorCode === "ACCESS_TOKEN_EXPIRED") {
-                    try {
-                        await axios.post(
-                            `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`,
-                            {},
-                            { withCredentials: true }
-                        );
-                        fetchContacts(true);
-                    } catch (refreshError) {
-                        toast.error("Session expired. Please login again.");
-                        router.push("/Admin/Login");
-                    }
-                } else if (["TOKEN_MISSING", "ACCESS_TOKEN_INVALID"].includes(errorCode) || error.response.status === 401) {
-                    toast.error("Unauthorized: Please login again.");
-                    router.push("/Admin/Login");
-                } else if (error.response.status === 403) {
-                    setIsForbidden(true);
-                    toast.error("Forbidden: You don't have permission.");
-                    router.push("/");
-                } else {
-                    toast.error(`Error: ${error.response.data?.message || "Failed to fetch messages."}`);
-                }
-            } else if (error.request) {
-                toast.error("Network error: No response received.");
-            } else {
-                toast.error("Error setting up request.");
-            }
+            handleApiError(error, () => fetchContacts(true), "Failed to fetch messages.");
         } finally {
             setIsLoading(false);
         }
@@ -101,47 +104,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                 toast.success("Message deleted successfully.");
             }
         } catch (error) {
-            console.error("Delete error details:", error);
-            if (error.response) {
-                const errorCode = error.response.data?.code;
-                const errorMsg = error.response.data?.message || "Delete failed.";
-                if (errorCode === "ACCESS_TOKEN_EXPIRED") {
-                    try {
-                        await axios.post(
-                            `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`,
-                            {},
-                            { withCredentials: true }
-                        );
-                        if (deleteModal.type === "all") {
-                            await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`, withCredentials: true });
-                            setContacts([]);
-                            setSelectedId(null);
-                            toast.success("All messages deleted successfully.");
-                        } else if (deleteModal.type === "single" && deleteModal.id) {
-                            await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${deleteModal.id}`, withCredentials: true });
-                            setContacts((prev) => prev.filter((contact) => contact._id !== deleteModal.id));
-                            if (selectedId === deleteModal.id) setSelectedId(null);
-                            toast.success("Message deleted successfully.");
-                        }
-                    } catch (refreshError) {
-                        toast.error("Session expired. Please login again.");
-                        router.push("/Admin/Login");
-                    }
-                } else if (["TOKEN_MISSING", "ACCESS_TOKEN_INVALID"].includes(errorCode) || error.response.status === 401) {
-                    toast.error("Unauthorized: Please login again.");
-                    router.push("/Admin/Login");
-                } else if (error.response.status === 403) {
-                    setIsForbidden(true);
-                    toast.error("Forbidden: You don't have permission.");
-                    router.push("/");
-                } else {
-                    toast.error(`Error: ${errorMsg}`);
-                }
-            } else if (error.request) {
-                toast.error("Network error: No response received.");
-            } else {
-                toast.error("Error setting up delete request.");
-            }
+            handleApiError(error, confirmDelete, "Delete failed.");
         } finally {
             setDeleteModal(prev => ({ ...prev, isOpen: false, isDeleting: false }));
         }
@@ -163,18 +126,19 @@ export default function Messages({ isForbidden, setIsForbidden }) {
         }
     };
 
-    const filteredContacts = contacts.filter(
-        (contact) =>
+    const filteredContacts = contacts.filter((contact) => {
+        const matchesSearch =
             contact.subject?.toLowerCase().includes(searchTerm.toLowerCase()) ||
             contact.email?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            contact.message?.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+            contact.message?.toLowerCase().includes(searchTerm.toLowerCase());
 
-    const totalPages = Math.ceil(filteredContacts.length / itemsPerPage) || 1;
-    const paginatedContacts = filteredContacts.slice(
-        (currentPage - 1) * itemsPerPage,
-        currentPage * itemsPerPage
-    );
+        if (!matchesSearch) return false;
+        if (filterTab === "unread") return !contact.isRead;
+        if (filterTab === "starred") return contact.isStarred;
+        return true;
+    });
+
+
 
     // Ledger index — position of a message within the full (unfiltered) inbox,
     // oldest = 001. This is the page's signature device: every message carries
@@ -186,6 +150,63 @@ export default function Messages({ isForbidden, setIsForbidden }) {
     };
 
     const selectedContact = contacts.find((c) => c._id === selectedId) || null;
+    const unreadCount = contacts.filter((c) => !c.isRead).length;
+    const starredCount = contacts.filter((c) => c.isStarred).length;
+
+    const handleSelectContact = async (contact) => {
+        setSelectedId(contact._id);
+        if (!contact.isRead) {
+            try {
+                await axios.patch(
+                    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${contact._id}/read`,
+                    { isRead: true },
+                    { withCredentials: true }
+                );
+                setContacts((prev) =>
+                    prev.map((c) => (c._id === contact._id ? { ...c, isRead: true } : c))
+                );
+            } catch (error) {
+                handleApiError(error, () => handleSelectContact(contact), "Failed to mark message as read.");
+            }
+        }
+    };
+
+    const handleToggleRead = async (e, contact, targetStatus) => {
+        if (e) e.stopPropagation();
+        const nextStatus = targetStatus !== undefined ? targetStatus : !contact.isRead;
+        try {
+            await axios.patch(
+                `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${contact._id}/read`,
+                { isRead: nextStatus },
+                { withCredentials: true }
+            );
+            setContacts((prev) =>
+                prev.map((c) => (c._id === contact._id ? { ...c, isRead: nextStatus } : c))
+            );
+            toast.success(nextStatus ? "Marked as read" : "Marked as unread");
+        } catch (error) {
+            handleApiError(error, () => handleToggleRead(null, contact, targetStatus), "Failed to update read status.");
+        }
+    };
+
+    const handleToggleStar = async (e, contact) => {
+        if (e) e.stopPropagation();
+        const nextStarred = !contact.isStarred;
+        try {
+            await axios.patch(
+                `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${contact._id}/star`,
+                { isStarred: nextStarred },
+                { withCredentials: true }
+            );
+            setContacts((prev) =>
+                prev.map((c) => (c._id === contact._id ? { ...c, isStarred: nextStarred } : c))
+            );
+            toast.success(nextStarred ? "Starred message" : "Unstarred message");
+        } catch (error) {
+            handleApiError(error, () => handleToggleStar(null, contact), "Failed to update star status.");
+        }
+    };
+
 
     const formatDate = (dateString) => {
         if (!dateString) return "—";
@@ -323,7 +344,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                     <div>
                         <h2 className="text-xl font-bold text-slate-900 dark:text-[#F5F3EE] tracking-tight transition-colors">Inbox</h2>
                         <p className="text-[10px] font-mono text-slate-500 dark:text-[#8B93A7] uppercase tracking-[0.2em] mt-0.5 transition-colors">
-                            {contacts.length} received
+                            {contacts.length} received {unreadCount > 0 && <span className="text-amber-500 dark:text-[#E8A33D] font-bold">({unreadCount} new)</span>}
                         </p>
                     </div>
                     <div className="flex gap-1.5">
@@ -357,7 +378,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
 
                     {/* LIST PANE */}
                     <div className={`w-full md:w-[340px] md:shrink-0 border-r border-slate-200 dark:border-white/10 flex-col bg-slate-50 dark:bg-[#0E1016] transition-colors duration-300 ${selectedId ? 'hidden md:flex' : 'flex'}`}>
-                        {/* Search */}
+                        {/* Search & Filters */}
                         <div className="p-3 border-b border-slate-200 dark:border-white/10 transition-colors">
                             <div className="relative group">
                                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 dark:text-[#8B93A7] group-focus-within:text-indigo-600 dark:group-focus-within:text-[#E8A33D] transition-colors" />
@@ -365,9 +386,31 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                                     type="text"
                                     placeholder="Search messages…"
                                     value={searchTerm}
-                                    onChange={(e) => { setSearchTerm(e.target.value); setCurrentPage(1); }}
+                                    onChange={(e) => { setSearchTerm(e.target.value); }}
                                     className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg py-2 pl-9 pr-3 text-xs text-slate-900 dark:text-[#F5F3EE] outline-none focus:border-indigo-300 dark:focus:border-[#E8A33D]/50 focus:ring-4 focus:ring-indigo-100 dark:focus:ring-[#E8A33D]/10 transition-all placeholder:text-slate-400 dark:placeholder:text-[#8B93A7]"
                                 />
+                            </div>
+
+                            {/* Filter Tabs */}
+                            <div className="flex items-center gap-1 mt-2.5 pt-2 border-t border-slate-200/60 dark:border-white/5">
+                                <button
+                                    onClick={() => { setFilterTab("all"); }}
+                                    className={`px-2 py-1 text-[10px] font-semibold rounded-md transition-all ${filterTab === "all" ? "bg-slate-200 dark:bg-white/10 text-slate-900 dark:text-[#F5F3EE]" : "text-slate-500 dark:text-[#8B93A7] hover:text-slate-800 dark:hover:text-white"}`}
+                                >
+                                    All ({contacts.length})
+                                </button>
+                                <button
+                                    onClick={() => { setFilterTab("unread"); }}
+                                    className={`px-2 py-1 text-[10px] font-semibold rounded-md transition-all flex items-center gap-1 ${filterTab === "unread" ? "bg-amber-500/20 text-amber-600 dark:text-[#E8A33D]" : "text-slate-500 dark:text-[#8B93A7] hover:text-slate-800 dark:hover:text-white"}`}
+                                >
+                                    Unread ({unreadCount})
+                                </button>
+                                <button
+                                    onClick={() => { setFilterTab("starred"); }}
+                                    className={`px-2 py-1 text-[10px] font-semibold rounded-md transition-all flex items-center gap-1 ${filterTab === "starred" ? "bg-amber-500/20 text-amber-600 dark:text-[#E8A33D]" : "text-slate-500 dark:text-[#8B93A7] hover:text-slate-800 dark:hover:text-white"}`}
+                                >
+                                    ★ Starred ({starredCount})
+                                </button>
                             </div>
                         </div>
 
@@ -383,25 +426,40 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                                         </div>
                                     ))}
                                 </div>
-                            ) : paginatedContacts.length > 0 ? (
+                            ) : filteredContacts.length > 0 ? (
                                 <div>
-                                    {paginatedContacts.map((contact) => {
+                                    {filteredContacts.map((contact) => {
                                         const isActive = selectedId === contact._id;
+                                        const isUnread = !contact.isRead;
                                         return (
                                             <div
                                                 key={contact._id}
-                                                onClick={() => setSelectedId(contact._id)}
-                                                className={`relative w-full cursor-pointer text-left px-4 py-3 border-b border-slate-100 dark:border-white/5 transition-colors ${isActive ? 'bg-indigo-50 dark:bg-[#E8A33D]/[0.08]' : 'hover:bg-slate-100 dark:hover:bg-white/[0.03]'}`}
+                                                onClick={() => handleSelectContact(contact)}
+                                                className={`relative w-full cursor-pointer text-left px-4 py-3 border-b border-slate-100 dark:border-white/5 transition-colors ${isActive ? 'bg-indigo-50 dark:bg-[#E8A33D]/[0.08]' : isUnread ? 'bg-amber-500/[0.04] dark:bg-[#E8A33D]/[0.03] hover:bg-amber-500/[0.08]' : 'hover:bg-slate-100 dark:hover:bg-white/[0.03]'}`}
                                             >
                                                 {isActive && <span className="absolute left-0 top-0 h-full w-[3px] bg-indigo-600 dark:bg-[#E8A33D]" />}
                                                 <div className="flex items-start justify-between gap-2 mb-1">
                                                     <span className="text-[10px] font-mono text-slate-400 dark:text-[#8B93A7]">#{indexOf(contact._id)}</span>
-                                                    <span className="text-[10px] font-mono text-slate-400 dark:text-[#8B93A7] shrink-0">{formatShortDate(contact.createdAt)}</span>
+                                                    <div className="flex items-center gap-1.5 shrink-0">
+                                                        {isUnread && (
+                                                            <span className="px-1.5 py-0.5 text-[9px] font-extrabold uppercase tracking-wider rounded bg-amber-500/15 text-amber-600 dark:bg-[#E8A33D]/20 dark:text-[#E8A33D] border border-amber-500/30 dark:border-[#E8A33D]/30 shadow-sm animate-pulse">
+                                                                NEW
+                                                            </span>
+                                                        )}
+                                                        <span className="text-[10px] font-mono text-slate-400 dark:text-[#8B93A7]">{formatShortDate(contact.createdAt)}</span>
+                                                        <button
+                                                            onClick={(e) => handleToggleStar(e, contact)}
+                                                            className={`p-0.5 rounded hover:bg-amber-500/15 transition-colors shrink-0 ${contact.isStarred ? 'text-amber-500 dark:text-[#E8A33D]' : 'text-slate-300 dark:text-white/20 hover:text-amber-500 dark:hover:text-[#E8A33D]'}`}
+                                                            title={contact.isStarred ? "Unstar message" : "Star message"}
+                                                        >
+                                                            <Star className="w-3.5 h-3.5" filled={contact.isStarred} />
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                                <h4 className="text-[13px] font-semibold text-slate-900 dark:text-[#F5F3EE] truncate mb-0.5">
+                                                <h4 className={`text-[13px] truncate mb-0.5 ${isUnread ? 'font-bold text-slate-900 dark:text-white' : 'font-semibold text-slate-700 dark:text-[#F5F3EE]/80'}`}>
                                                     {highlightText(contact.subject || "No subject", searchTerm)}
                                                 </h4>
-                                                <p className="text-[11px] text-slate-500 dark:text-[#8B93A7] truncate mb-1">{highlightText(contact.email, searchTerm)}</p>
+                                                <p className={`text-[11px] truncate mb-1 ${isUnread ? 'font-medium text-slate-700 dark:text-slate-300' : 'text-slate-500 dark:text-[#8B93A7]'}`}>{highlightText(contact.email, searchTerm)}</p>
                                                 <p className="text-[11px] text-slate-400 dark:text-[#8B93A7]/70 truncate">{highlightText(contact.message, searchTerm)}</p>
                                             </div>
                                         );
@@ -420,30 +478,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                             )}
                         </div>
 
-                        {/* Pagination */}
-                        {totalPages > 1 && (
-                            <div className="flex items-center justify-between px-4 py-3 border-t border-slate-200 dark:border-white/10 transition-colors">
-                                <span className="text-[10px] font-mono text-slate-500 dark:text-[#8B93A7] uppercase tracking-widest transition-colors">
-                                    {currentPage} / {totalPages}
-                                </span>
-                                <div className="flex items-center gap-1.5">
-                                    <button
-                                        disabled={currentPage === 1}
-                                        onClick={() => setCurrentPage(c => Math.max(1, c - 1))}
-                                        className="p-1.5 rounded-md bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-500 dark:text-[#F5F3EE]/70 hover:bg-slate-50 dark:hover:bg-white/10 disabled:opacity-30 transition-all"
-                                    >
-                                        <ChevronLeft className="w-3.5 h-3.5" />
-                                    </button>
-                                    <button
-                                        disabled={currentPage === totalPages}
-                                        onClick={() => setCurrentPage(c => Math.min(totalPages, c + 1))}
-                                        className="p-1.5 rounded-md bg-indigo-600 dark:bg-[#E8A33D] text-white dark:text-[#0B0D12] hover:bg-indigo-700 dark:hover:bg-[#c97f22] disabled:opacity-30 transition-all"
-                                    >
-                                        <ChevronRight className="w-3.5 h-3.5" />
-                                    </button>
-                                </div>
-                            </div>
-                        )}
+
                     </div>
 
                     {/* DETAIL PANE */}
@@ -497,13 +532,29 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                                         </button>
                                     )}
 
-                                    <button
-                                        onClick={(e) => handleDeleteByIdClick(e, selectedContact._id)}
-                                        className="p-2.5 text-slate-400 dark:text-[#8B93A7] hover:text-red-500 dark:hover:text-[#E5484D] hover:bg-red-50 dark:hover:bg-[#E5484D]/10 rounded-lg transition-all shrink-0"
-                                        title="Delete message"
-                                    >
-                                        <Trash2 className="w-4 h-4" />
-                                    </button>
+                                    <div className="flex items-center gap-1 shrink-0">
+                                        <button
+                                            onClick={(e) => handleToggleStar(e, selectedContact)}
+                                            className={`p-2.5 rounded-lg transition-all ${selectedContact.isStarred ? 'text-amber-500 hover:bg-amber-500/10' : 'text-slate-400 dark:text-[#8B93A7] hover:text-amber-500 hover:bg-amber-500/10'}`}
+                                            title={selectedContact.isStarred ? "Unstar message" : "Star message"}
+                                        >
+                                            <Star className="w-4 h-4" filled={selectedContact.isStarred} />
+                                        </button>
+                                        <button
+                                            onClick={(e) => handleToggleRead(e, selectedContact, !selectedContact.isRead)}
+                                            className="p-2.5 text-slate-400 dark:text-[#8B93A7] hover:text-indigo-600 dark:hover:text-[#E8A33D] hover:bg-slate-100 dark:hover:bg-white/5 rounded-lg transition-all"
+                                            title={selectedContact.isRead ? "Mark as unread" : "Mark as read"}
+                                        >
+                                            {selectedContact.isRead ? <Mail className="w-4 h-4" /> : <MailOpen className="w-4 h-4" />}
+                                        </button>
+                                        <button
+                                            onClick={(e) => handleDeleteByIdClick(e, selectedContact._id)}
+                                            className="p-2.5 text-slate-400 dark:text-[#8B93A7] hover:text-red-500 dark:hover:text-[#E5484D] hover:bg-red-50 dark:hover:bg-[#E5484D]/10 rounded-lg transition-all"
+                                            title="Delete message"
+                                        >
+                                            <Trash2 className="w-4 h-4" />
+                                        </button>
+                                    </div>
                                 </div>
 
                                 {/* Detail body */}
