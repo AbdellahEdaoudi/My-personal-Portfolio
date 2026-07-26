@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useContext, useState, useCallback } from 'react';
+import { createContext, useContext, useState, useCallback, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const ToastContext = createContext(null);
@@ -12,18 +12,52 @@ export const useToast = () => {
 
 export function ToastProvider({ children }) {
     const [toasts, setToasts] = useState([]);
-
-    const addToast = useCallback((message, type = 'success') => {
-        const id = `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
-        setToasts((prev) => [...prev, { id, message, type }]);
-        setTimeout(() => {
-            setToasts((prev) => prev.filter((t) => t.id !== id));
-        }, 4000);
-    }, []);
+    const timerRef = useRef(null);
+    const isPausedRef = useRef(false);
+    const remainingRef = useRef(4000);
+    const startTimeRef = useRef(null);
+    const activeIdRef = useRef(null);
 
     const removeToast = useCallback((id) => {
         setToasts((prev) => prev.filter((t) => t.id !== id));
     }, []);
+
+    const startTimer = useCallback((id, duration) => {
+        if (timerRef.current) clearTimeout(timerRef.current);
+        startTimeRef.current = Date.now();
+        timerRef.current = setTimeout(() => {
+            setToasts((prev) => prev.filter((t) => t.id !== id));
+        }, duration);
+    }, []);
+
+    const addToast = useCallback((message, type = 'success') => {
+        const id = `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+        activeIdRef.current = id;
+        remainingRef.current = 4000;
+        isPausedRef.current = false;
+
+        // Show only 1 active toast at a time, replacing previous ones
+        setToasts([{ id, message, type }]);
+        startTimer(id, 4000);
+    }, [startTimer]);
+
+    const handleMouseEnter = useCallback(() => {
+        if (!isPausedRef.current && timerRef.current) {
+            isPausedRef.current = true;
+            clearTimeout(timerRef.current);
+            timerRef.current = null;
+            // Calculate how much time was remaining
+            const elapsed = Date.now() - (startTimeRef.current || Date.now());
+            remainingRef.current = Math.max(0, remainingRef.current - elapsed);
+        }
+    }, []);
+
+    const handleMouseLeave = useCallback(() => {
+        if (isPausedRef.current && activeIdRef.current) {
+            isPausedRef.current = false;
+            startTimer(activeIdRef.current, remainingRef.current);
+        }
+    }, [startTimer]);
 
     const toast = {
         success: (m) => addToast(m, 'success'),
@@ -60,25 +94,41 @@ export function ToastProvider({ children }) {
             {children}
             <div className="fixed top-6 right-6 z-[100] flex flex-col items-end gap-3 pointer-events-none">
                 <AnimatePresence mode="popLayout" initial={false}>
-                    {toasts.map((t, index) => (
+                    {toasts.map((t) => (
                         <motion.div
                             key={t.id}
                             layout
+                            drag
+                            dragSnapToOrigin
+                            dragElastic={0.4}
+                            whileDrag={{ scale: 1.03, cursor: 'grabbing' }}
+                            onDragEnd={(e, info) => {
+                                const swipeThreshold = 80;
+                                if (
+                                    Math.abs(info.offset.x) > swipeThreshold ||
+                                    Math.abs(info.offset.y) > swipeThreshold ||
+                                    Math.abs(info.velocity.x) > 400 ||
+                                    Math.abs(info.velocity.y) > 400
+                                ) {
+                                    removeToast(t.id);
+                                }
+                            }}
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
                             initial={{ opacity: 0, y: -20, scale: 0.8 }}
                             animate={{
                                 opacity: 1,
                                 y: 0,
-                                scale: 1,
-                                zIndex: toasts.length - index
+                                scale: 1
                             }}
-                            exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.15 } }}
+                            exit={{ opacity: 0, scale: 0.85, y: -10, transition: { duration: 0.15 } }}
                             transition={{
                                 type: "spring",
                                 stiffness: 400,
                                 damping: 25,
                                 mass: 0.8
                             }}
-                            className="pointer-events-auto"
+                            className="pointer-events-auto touch-none cursor-grab select-none"
                         >
                             <div className="relative group">
                                 {/* Thin, elegant border container */}
