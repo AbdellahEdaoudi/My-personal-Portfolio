@@ -60,7 +60,7 @@ export default function ScrollToTop() {
                 aria-label="Scroll to top"
             >
                 {/* Background Glow */}
-                <div className="absolute inset-0 bg-emerald-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-emerald-500/20 dark:bg-blue-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                 {/* Progress Ring */}
                 <svg className="absolute w-[60px] h-[60px] -rotate-90">
@@ -71,7 +71,7 @@ export default function ScrollToTop() {
                         stroke="currentColor"
                         strokeWidth="2"
                         fill="transparent"
-                        className="text-gray-200/20"
+                        className="text-gray-200/20 dark:text-slate-700/50"
                     />
                     <circle
                         cx="30"
@@ -83,20 +83,20 @@ export default function ScrollToTop() {
                         style={{ strokeDashoffset: offset, transition: 'stroke-dashoffset 0.1s linear' }}
                         strokeLinecap="round"
                         fill="transparent"
-                        className="text-emerald-500"
+                        className="text-emerald-500 dark:text-blue-400"
                     />
                 </svg>
 
                 {/* Main Button Shell */}
-                <div className="relative w-11 h-11 bg-white/70 backdrop-blur-sm border border-white/40 rounded-full flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.1)] group-hover:bg-emerald-500 group-hover:border-emerald-400 transition-all duration-500">
-                    <ArrowUp aria-hidden="true" className="w-5 h-5 text-emerald-600 group-hover:text-white transition-colors duration-500 group-hover:-translate-y-1" />
+                <div className="relative w-11 h-11 bg-white/70 dark:bg-slate-900/80 backdrop-blur-sm border border-white/40 dark:border-slate-800 rounded-full flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.1)] group-hover:bg-emerald-500 dark:group-hover:bg-blue-600 group-hover:border-emerald-400 dark:group-hover:border-blue-500 transition-all duration-500">
+                    <ArrowUp aria-hidden="true" className="w-5 h-5 text-emerald-600 dark:text-blue-400 group-hover:text-white transition-colors duration-500 group-hover:-translate-y-1" />
 
                     {/* Ripple Effect Animation */}
-                    <div className="absolute inset-0 rounded-full border-2 border-emerald-500 opacity-0 group-hover:animate-ping-slow"></div>
+                    <div className="absolute inset-0 rounded-full border-2 border-emerald-500 dark:border-blue-500 opacity-0 group-hover:animate-ping-slow"></div>
                 </div>
 
-                {/* Hint Text (Hidden by default, shown on hover for high-end feel) */}
-                <span className={`absolute ${isAr ? 'left-full ml-4' : 'right-full mr-4'} px-3 py-1 bg-slate-900 text-white text-[10px] font-bold uppercase tracking-widest rounded-lg opacity-0 group-hover:opacity-100 ${isAr ? '-translate-x-2 group-hover:translate-x-0' : 'translate-x-2 group-hover:translate-x-0'} transition-all duration-300 pointer-events-none whitespace-nowrap`}>
+                {/* Hint Text */}
+                <span className={`absolute ${isAr ? 'left-full ml-4' : 'right-full mr-4'} px-3 py-1 bg-slate-900 dark:bg-slate-800 text-white text-[10px] font-bold uppercase tracking-widest rounded-lg opacity-0 group-hover:opacity-100 ${isAr ? '-translate-x-2 group-hover:translate-x-0' : 'translate-x-2 group-hover:translate-x-0'} transition-all duration-300 pointer-events-none whitespace-nowrap shadow-md`}>
                     {t}
                 </span>
             </button>

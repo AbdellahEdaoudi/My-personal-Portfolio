@@ -231,38 +231,68 @@
                 "githubBackendUrl": "",
                 "description": "Надёжная и масштабируемая серверная система для платформы электронной коммерции. Система обрабатывает различные функции, такие как управление пользователями, организация инвентаря продуктов, обработка заказов, обработка платежей (наличными или картой), добавление купонов, отзывы, управление категориями и брендами, управление поставщиками и налоговое регулирование.",
                 "technologies": [
-                    {
-                        "name": "Nestjs",
-                        "logo": "/Skills/Nestjs.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Typescript ",
-                        "logo": "/Skills/typescript.png"
-                    },
-                    {
-                        "name": "jwt ",
-                        "logo": "/Skills/jwt.jpg"
-                    },
-                    {
-                        "name": "stripe",
-                        "logo": "/Skills/stripe.jpg"
-                    },
-                    {
-                        "name": "cloudinary",
-                        "logo": "/Skills/cloudinary.jpg"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    }
+                    { "name": "Nestjs", "logo": "/Skills/Nestjs.png" },
+                    { "name": "Node.js", "logo": "/Skills/Nodejs.png" },
+                    { "name": "MongoDB ", "logo": "/Skills/Mongodb.png" },
+                    { "name": "Typescript ", "logo": "/Skills/typescript.png" },
+                    { "name": "jwt ", "logo": "/Skills/jwt.jpg" },
+                    { "name": "stripe", "logo": "/Skills/stripe.jpg" },
+                    { "name": "cloudinary", "logo": "/Skills/cloudinary.jpg" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
+                ]
+            },
+            {
+                "title": "Институт дошкольного образования Мекка",
+                "type": "fullstack",
+                "image": "/Projects/etsmakka.png",
+                "websiteUrl": "https://etsmakka.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/etsmakka",
+                "githubBackendUrl": "",
+                "description": "Интегрированная образовательная и педагогическая платформа для Института дошкольного образования Мекка в Лаюне. Разработана для предоставления высококачественного раннего детского образования с образовательными программами (ясли, подготовительная группа, детский сад), интерактивными ценностями и системой запросов.",
+                "technologies": [
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "React.js", "logo": "/Skills/reactjs.png" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "Node.js", "logo": "/Skills/Nodejs.png" },
+                    { "name": "Express", "logo": "/Skills/ExpressJs.png" },
+                    { "name": "MongoDB", "logo": "/Skills/Mongodb.png" },
+                    { "name": "jwt", "logo": "/Skills/jwt.jpg" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
+                ]
+            },
+            {
+                "title": "Платформа мечети Хасан Аль-Дерхем",
+                "type": "frontend",
+                "image": "/Projects/mosque-hassan-alderhem.png",
+                "websiteUrl": "https://mosque-hassan-alderhem.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/mosque-hassan-alderhem",
+                "githubBackendUrl": "",
+                "description": "Интерактивная исламская платформа для мечети Хасан Аль-Дерхем в Лаюне, Марокко. Включает точное расписание ежедневных молитв, живой обратный отсчёт до следующей молитвы с марокканским азаном, компас направления Киблы и интеграцию с Google Maps.",
+                "technologies": [
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "React.js", "logo": "/Skills/reactjs.png" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
+                ]
+            },
+            {
+                "title": "Личное портфолио разработчика",
+                "type": "fullstack",
+                "image": "/Projects/EdPortfolio.png",
+                "websiteUrl": "/",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
+                "description": "Современное, высокоинтерактивное и адаптивное личное портфолио, созданное с помощью Next.js и Tailwind CSS. Включает поддержку нескольких языков (i18n) и плавные анимации для демонстрации моих навыков, проектов и профессионального опыта увлекательным способом.",
+                "technologies": [
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "React.js", "logo": "/Skills/reactjs.png" },
+                    { "name": "Node.js", "logo": "/Skills/Nodejs.png" },
+                    { "name": "Express", "logo": "/Skills/ExpressJs.png" },
+                    { "name": "MongoDB", "logo": "/Skills/Mongodb.png" },
+                    { "name": "Git", "logo": "/Skills/Git.png" },
+                    { "name": "jwt", "logo": "/Skills/jwt.jpg" },
+                    { "name": "cloudinary", "logo": "/Skills/cloudinary.jpg" }
                 ]
             },
             {
@@ -273,107 +303,27 @@
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
                 "description": "Инновационное приложение, которое я разработал, позволяющее пользователям представлять своё профессиональное резюме и ссылки на социальные сети в одном месте. Это приложение помогает пользователям эффективно управлять своей цифровой идентичностью, делая его идеальным инструментом для соискателей работы или всех, кто хочет улучшить своё присутствие в интернете и цифровое влияние.",
                 "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Socket.IO",
-                        "logo": "/Skills/Socket.io.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    }
-                ]
-            },
-            {
-                "title": "Личное портфолио разработчика",
-                "type": "fullstack",
-                "image": "/Projects/EdPortfolio.png",
-                "websiteUrl": "/",
-                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/My-personal-Portfolio",
-                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
-                "description": "Современное, высокоинтерактивное и адаптивное личное портфолио, созданное с помощью Next.js и Tailwind CSS. Включает поддержку нескольких языков (i18n).",
-                "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "React.js",
-                        "logo": "/Skills/reactjs.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "jwt",
-                        "logo": "/Skills/jwt.jpg"
-                    },
-                    {
-                        "name": "cloudinary",
-                        "logo": "/Skills/cloudinary.jpg"
-                    }
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "Node.js", "logo": "/Skills/Nodejs.png" },
+                    { "name": "Express", "logo": "/Skills/ExpressJs.png" },
+                    { "name": "MongoDB ", "logo": "/Skills/Mongodb.png" },
+                    { "name": "Socket.IO", "logo": "/Skills/Socket.io.png" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
                 ]
             },
             {
                 "title": "Компрессор изображений",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubFrontendUrl": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/image-compressor-pro",
                 "githubBackendUrl": "",
                 "description": "Мощный и безопасный инструмент сжатия изображений на основе браузера. Позволяет пользователям сжимать неограниченное количество изображений JPG, PNG и WebP на 90% без потери качества. Функции включают массовое сжатие, генерацию PDF, интерфейс перетаскивания и полную конфиденциальность, поскольку вся обработка выполняется локально в браузере.",
                 "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "React.js",
-                        "logo": "/Skills/reactjs.png"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    }
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "React.js", "logo": "/Skills/reactjs.png" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
                 ]
             },
             {
@@ -581,30 +531,13 @@
         "backToTop": "Наверх",
         "siteMapLabel": "Карта сайта",
         "links": [
-            {
-                "name": "Обо мне",
-                "path": "/About"
-            },
-            {
-                "name": "Навыки",
-                "path": "/Skills"
-            },
-            {
-                "name": "Проекты",
-                "path": "/Projects"
-            },
-            {
-                "name": "Образование",
-                "path": "/Education"
-            },
-            {
-                "name": "Опыт",
-                "path": "/Experience"
-            },
-            {
-                "name": "Контакты",
-                "path": "/Contact"
-            }
+            { "name": "Обо мне", "path": "/About" },
+            { "name": "Услуги", "path": "/Services" },
+            { "name": "Навыки", "path": "/Skills" },
+            { "name": "Проекты", "path": "/Projects" },
+            { "name": "Опыт", "path": "/Experience" },
+            { "name": "Образование", "path": "/Education" },
+            { "name": "Контакты", "path": "/Contact" }
         ],
         "connectLabel": "Связаться",
         "emailLabel": "Электронная почта",

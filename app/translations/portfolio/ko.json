@@ -231,76 +231,48 @@
                 "githubBackendUrl": "",
                 "description": "전자상거래 플랫폼을 위한 강력하고 확장 가능한 백엔드 시스템입니다. 시스템은 사용자 관리, 제품 재고 구성, 주문 처리, 결제 처리(현금 또는 카드), 쿠폰 추가, 리뷰, 카테고리 및 브랜드 관리, 공급업체 관리, 세금 규정과 같은 다양한 기능을 처리합니다.",
                 "technologies": [
-                    {
-                        "name": "Nestjs",
-                        "logo": "/Skills/Nestjs.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Typescript ",
-                        "logo": "/Skills/typescript.png"
-                    },
-                    {
-                        "name": "jwt ",
-                        "logo": "/Skills/jwt.jpg"
-                    },
-                    {
-                        "name": "stripe",
-                        "logo": "/Skills/stripe.jpg"
-                    },
-                    {
-                        "name": "cloudinary",
-                        "logo": "/Skills/cloudinary.jpg"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    }
+                    { "name": "Nestjs", "logo": "/Skills/Nestjs.png" },
+                    { "name": "Node.js", "logo": "/Skills/Nodejs.png" },
+                    { "name": "MongoDB ", "logo": "/Skills/Mongodb.png" },
+                    { "name": "Typescript ", "logo": "/Skills/typescript.png" },
+                    { "name": "jwt ", "logo": "/Skills/jwt.jpg" },
+                    { "name": "stripe", "logo": "/Skills/stripe.jpg" },
+                    { "name": "cloudinary", "logo": "/Skills/cloudinary.jpg" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
                 ]
             },
             {
-                "title": "이력서 플랫폼",
-                "image": "/Projects/Linkerfolio.jpg",
-                "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
-                "description": "제가 개발한 혁신적인 애플리케이션으로, 사용자가 한 곳에서 전문가용 이력서와 소셜 미디어 링크를 보여줄 수 있습니다. 이 애플리케이션은 사용자가 디지털 정체성을 효과적으로 관리하는 데 도움을 주어, 구직자나 온라인 존재감과 디지털 영향력을 향상시키려는 누구에게나 이상적인 도구가 됩니다.",
+                "title": "메카 유아 교육 기관",
+                "type": "fullstack",
+                "image": "/Projects/etsmakka.png",
+                "websiteUrl": "https://etsmakka.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/etsmakka",
+                "githubBackendUrl": "",
+                "description": "라서의 메카 유아 교육 기관을 위한 통합 교육 및 교순학 플랫폼입니다. 높은 품질의 유아 교육을 제공하기 위해 설계되었으며, 교육 프로그램(노리우원, 유치원 준비반, 유치원), 상호작용적 가치, 문의 시스템을 갖추고 있습니다.",
                 "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Socket.IO",
-                        "logo": "/Skills/Socket.io.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    }
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "React.js", "logo": "/Skills/reactjs.png" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "Node.js", "logo": "/Skills/Nodejs.png" },
+                    { "name": "Express", "logo": "/Skills/ExpressJs.png" },
+                    { "name": "MongoDB", "logo": "/Skills/Mongodb.png" },
+                    { "name": "jwt", "logo": "/Skills/jwt.jpg" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
+                ]
+            },
+            {
+                "title": "하산 알-데르헴 모스크 플랫폼",
+                "type": "frontend",
+                "image": "/Projects/mosque-hassan-alderhem.png",
+                "websiteUrl": "https://mosque-hassan-alderhem.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/mosque-hassan-alderhem",
+                "githubBackendUrl": "",
+                "description": "모로코 라웤에 위치한 하산 알-데르험 모스크를 위한 인터랙티브 이슬람 플랫폼입니다. 정확한 일일 기도 시간표, 모로코 아잔으로 다음 기도까지 라이브 카운트다운, 키블라 방향 컴퍼스, Google 지도 통합 기능을 제공합니다.",
+                "technologies": [
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "React.js", "logo": "/Skills/reactjs.png" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
                 ]
             },
             {
@@ -312,68 +284,46 @@
                 "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Server-My-personal-Portfolio",
                 "description": "Next.js와 Tailwind CSS로 구축된 현대적이고 대화형이며 반응형인 개인 포트폴리오입니다. 국제화(i18n)를 지원합니다.",
                 "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "React.js",
-                        "logo": "/Skills/reactjs.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    },
-                    {
-                        "name": "jwt",
-                        "logo": "/Skills/jwt.jpg"
-                    },
-                    {
-                        "name": "cloudinary",
-                        "logo": "/Skills/cloudinary.jpg"
-                    }
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "React.js", "logo": "/Skills/reactjs.png" },
+                    { "name": "Node.js", "logo": "/Skills/Nodejs.png" },
+                    { "name": "Express", "logo": "/Skills/ExpressJs.png" },
+                    { "name": "MongoDB", "logo": "/Skills/Mongodb.png" },
+                    { "name": "Git", "logo": "/Skills/Git.png" },
+                    { "name": "jwt", "logo": "/Skills/jwt.jpg" },
+                    { "name": "cloudinary", "logo": "/Skills/cloudinary.jpg" }
+                ]
+            },
+            {
+                "title": "이력서 플랫폼",
+                "image": "/Projects/Linkerfolio.jpg",
+                "websiteUrl": "https://linkerfolio.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "description": "제가 개발한 혁신적인 애플리케이션으로, 사용자가 한 곳에서 전문가용 이력서와 소셜 미디어 링크를 보여줄 수 있습니다. 이 애플리케이션은 사용자가 디지털 정체성을 효과적으로 관리하는 데 도움을 주어, 구직자나 온라인 존재감과 디지털 영향력을 향상시키려는 누구에게나 이상적인 도구가 됩니다.",
+                "technologies": [
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "Node.js", "logo": "/Skills/Nodejs.png" },
+                    { "name": "Express", "logo": "/Skills/ExpressJs.png" },
+                    { "name": "MongoDB ", "logo": "/Skills/Mongodb.png" },
+                    { "name": "Socket.IO", "logo": "/Skills/Socket.io.png" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
                 ]
             },
             {
                 "title": "이미지 압축기",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubFrontendUrl": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/image-compressor-pro",
                 "githubBackendUrl": "",
                 "description": "브라우저 기반의 강력하고 안전한 이미지 압축 도구입니다. 사용자가 JPG, PNG, WebP 이미지를 무제한으로 품질 손실 없이 90%까지 압축할 수 있습니다. 기능에는 대량 압축, PDF 생성, 드래그 앤 드롭 인터페이스, 모든 처리가 브라우저에서 로컬로 이루어지므로 완전한 개인 정보 보호가 포함됩니다.",
                 "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "React.js",
-                        "logo": "/Skills/reactjs.png"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    }
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "React.js", "logo": "/Skills/reactjs.png" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
                 ]
             },
             {
@@ -581,30 +531,13 @@
         "backToTop": "맨 위로",
         "siteMapLabel": "사이트 맵",
         "links": [
-            {
-                "name": "소개",
-                "path": "/About"
-            },
-            {
-                "name": "기술",
-                "path": "/Skills"
-            },
-            {
-                "name": "프로젝트",
-                "path": "/Projects"
-            },
-            {
-                "name": "교육",
-                "path": "/Education"
-            },
-            {
-                "name": "경력",
-                "path": "/Experience"
-            },
-            {
-                "name": "연락처",
-                "path": "/Contact"
-            }
+            { "name": "소개", "path": "/About" },
+            { "name": "서비스", "path": "/Services" },
+            { "name": "기술", "path": "/Skills" },
+            { "name": "프로젝트", "path": "/Projects" },
+            { "name": "경력", "path": "/Experience" },
+            { "name": "교육", "path": "/Education" },
+            { "name": "연락처", "path": "/Contact" }
         ],
         "connectLabel": "연결하다",
         "emailLabel": "이메일",

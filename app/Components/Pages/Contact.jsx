@@ -151,40 +151,40 @@ function Contact({ content }) {
             </AnimatePresence>
 
             <div className="text-center pb-10">
-                <p className="text-4xl font-bold">{content.title}</p>
+                <p className="text-4xl font-bold dark:text-white">{content.title}</p>
                 <p className="text-gray-400 text-sm">{content.subtitle}</p>
             </div>
             <div className="md:flex justify-center md:space-x-20 md:gap-20 md:space-y-0 space-y-5">
                 {/* Contact Information */}
-                <div className="w-64 mx-auto text-center space-y-2">
-                    <h4 className="text-center">{content.title}</h4>
-                    <ul className="bg-white space-y-1 py-4 rounded-lg border">
-                        <li className="flex justify-center">
+                <div className="w-64 mx-auto text-center space-y-3">
+                    <h4 className="text-center font-bold dark:text-slate-200">{content.title}</h4>
+                    <ul className="bg-white/70 dark:bg-slate-900/70 backdrop-blur-sm space-y-1.5 py-4 rounded-2xl border border-gray-100 dark:border-slate-800 shadow-md">
+                        <li className="flex justify-center dark:text-blue-400">
                             <MailMinus />
                         </li>
-                        <li>{content.email}</li>
-                        <li className="text-[12px] text-gray-400">
+                        <li className="font-semibold dark:text-gray-100">{content.email}</li>
+                        <li className="text-[12px] text-gray-500 dark:text-gray-400">
                             abdellahedaoudi.dev@gmail.com
                         </li>
-                        <li className="flex items-center text-gray-400 justify-center text-[12px]">
+                        <li className="flex items-center dark:text-blue-400 justify-center text-[12px] font-medium gap-1">
                             {content.writeMe} <ArrowBigRight />
                         </li>
                     </ul>
-                    <ul className="bg-white space-y-1 py-4 rounded-lg border">
+                    <ul className="bg-white/70 dark:bg-slate-900/70 backdrop-blur-sm space-y-1.5 py-4 rounded-2xl border border-gray-100 dark:border-slate-800 shadow-md">
                         <li className="flex justify-center">
                             <Image src="/icons/whatsapp.png" width={25} height={25} alt="whatsapp" />
                         </li>
-                        <li>{content.whatsapp}</li>
-                        <li className="text-[12px] text-gray-400">+212 609085357</li>
-                        <li className="flex items-center text-gray-400 justify-center text-[12px]">
+                        <li className="font-semibold dark:text-gray-100">{content.whatsapp}</li>
+                        <li className="text-[12px] text-gray-500 dark:text-gray-400">+212 609085357</li>
+                        <li className="flex items-center dark:text-blue-400 justify-center text-[12px] font-medium gap-1">
                             {content.writeMe} <ArrowBigRight />
                         </li>
                     </ul>
                 </div>
 
                 {/* Contact Form */}
-                <div className="w-72 space-y-6">
-                    <h4 className="text-center">{content.subtitle}</h4>
+                <div className="w-72 space-y-4">
+                    <h4 className="text-center font-bold dark:text-slate-200">{content.subtitle}</h4>
                     <form onSubmit={PostContact} className="space-y-4">
                         <div>
                             <input
@@ -196,7 +196,7 @@ function Contact({ content }) {
                                     setSubject(e.target.value);
                                     if (errors.subject) setErrors(prev => ({ ...prev, subject: null }));
                                 }}
-                                className={`text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2 ${errors.subject ? 'border-red-500 bg-red-50' : 'border-gray-200 focus:border-gray-800'}`}
+                                className={`text-[13px] bg-gray-50 dark:bg-slate-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 pl-4 pr-4 py-3 w-72 rounded-xl border-2 transition-colors ${errors.subject ? 'border-red-500 bg-red-50 dark:bg-red-950/20' : 'border-gray-200 dark:border-slate-800 dark:focus:border-blue-500'}`}
                             />
                             <AnimatePresence>
                                 {errors.subject && (
@@ -223,7 +223,7 @@ function Contact({ content }) {
                                     setEmail(e.target.value);
                                     if (errors.email) setErrors(prev => ({ ...prev, email: null }));
                                 }}
-                                className={`text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2 ${errors.email ? 'border-red-500 bg-red-50' : 'border-gray-200 focus:border-gray-800'}`}
+                                className={`text-[13px] bg-gray-50 dark:bg-slate-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 pl-4 pr-4 py-3 w-72 rounded-xl border-2 transition-colors ${errors.email ? 'border-red-500 bg-red-50 dark:bg-red-950/20' : 'border-gray-200 dark:border-slate-800 dark:focus:border-blue-500'}`}
                             />
                             <AnimatePresence>
                                 {errors.email && (
@@ -248,7 +248,7 @@ function Contact({ content }) {
                                     setMessage(e.target.value);
                                     if (errors.message) setErrors(prev => ({ ...prev, message: null }));
                                 }}
-                                className={`text-[13px] bg-gray-50 pl-4 pr-4 py-3 w-72 rounded-lg border-2 ${errors.message ? 'border-red-500 bg-red-50' : 'border-gray-200 focus:border-gray-800'}`}
+                                className={`text-[13px] bg-gray-50 dark:bg-slate-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 pl-4 pr-4 py-3 w-72 rounded-xl border-2 transition-colors ${errors.message ? 'border-red-500 bg-red-50 dark:bg-red-950/20' : 'border-gray-200 dark:border-slate-800 dark:focus:border-blue-500'}`}
                             />
                             <AnimatePresence>
                                 {errors.message && (
@@ -279,11 +279,11 @@ function Contact({ content }) {
                                     type="button"
                                     onClick={() => fileInputRef.current?.click()}
                                     disabled={imageLoading}
-                                    className="flex items-center gap-2 text-[12px] text-gray-500 border border-dashed border-gray-300 rounded-lg px-4 py-2 w-72 hover:border-gray-500 hover:text-gray-700 transition-colors disabled:opacity-50"
+                                    className="flex items-center gap-2 text-[12px] text-gray-500 dark:text-gray-400 border border-dashed border-gray-300 dark:border-slate-700 rounded-xl px-4 py-2.5 w-72 hover:border-gray-500 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-colors disabled:opacity-50"
                                 >
                                     {imageLoading ? (
                                         <>
-                                            <div className="w-3 h-3 border-2 border-gray-400 border-t-gray-700 rounded-full animate-spin" />
+                                            <div className="w-3 h-3 border-2 border-blue-400 border-t-blue-600 rounded-full animate-spin" />
                                             {content.imageCompressing || "Compressing..."}
                                         </>
                                     ) : (
@@ -301,7 +301,7 @@ function Contact({ content }) {
                                         initial={{ opacity: 0, scale: 0.95 }}
                                         animate={{ opacity: 1, scale: 1 }}
                                         exit={{ opacity: 0, scale: 0.95 }}
-                                        className="relative w-72 rounded-lg overflow-hidden border border-gray-200"
+                                        className="relative w-72 rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700"
                                     >
                                         <img
                                             src={imagePreview}
@@ -316,7 +316,7 @@ function Contact({ content }) {
                                         >
                                             ✕
                                         </button>
-                                        <p className="text-[10px] text-gray-400 text-center py-1 bg-gray-50">
+                                        <p className="text-[10px] text-gray-400 dark:text-gray-400 text-center py-1 bg-gray-50 dark:bg-slate-800">
                                             {content.imageAttached || "Image attached & compressed ✓"}
                                         </p>
                                     </motion.div>
@@ -327,7 +327,7 @@ function Contact({ content }) {
                         <button
                             type="submit"
                             disabled={loading || imageLoading}
-                            className="flex gap-2 bg-gray-800 text-white px-5 py-3 rounded-lg items-center text-[14px] disabled:opacity-50"
+                            className="flex gap-2 bg-gray-800 dark:bg-blue-800 hover:bg-gray-900 dark:hover:bg-blue-700 text-white px-5 py-3 rounded-lg items-center text-[14px] disabled:opacity-50 transition-all active:scale-95"
                         >
                             {loading ? (
                                 <div className="flex items-center gap-2">

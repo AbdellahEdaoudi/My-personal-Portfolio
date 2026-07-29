@@ -4,6 +4,8 @@ import { Prompt } from 'next/font/google'
 import ScrollToTop from './Components/ScrollToTop'
 import { ToastProvider } from './Components/Toast'
 import CinematicBackground from './Components/CinematicBackground'
+import { ThemeProvider } from './Components/ThemeProvider'
+
 
 
 export const metadata = {
@@ -76,49 +78,69 @@ const prompt = Prompt({ subsets: ["latin"], weight: '500' });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${prompt.className} relative`}>
-        <CinematicBackground />
+    <html lang="en" suppressHydrationWarning className="dark">
+      <head>
         <script
-          type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Abdellah Edaoudi",
-              "url": "https://abdellah-edaoudi.vercel.app",
-              "image": "https://abdellah-edaoudi.vercel.app/profile/profile.jpg",
-              "sameAs": [
-                "https://linkedin.com/in/abdellah-edaoudi/",
-                "https://github.com/AbdellahEdaoudi",
-                "https://x.com/Edaoudi_abde",
-                "https://instagram.com/edaoudi_abdellah/",
-                "https://youtube.com/channel/UCv3WeHVuX07Wo6WxWf5QTZw"
-              ],
-              "jobTitle": "Full Stack Developer",
-              "nationality": {
-                "@type": "Country",
-                "name": "Morocco"
-              },
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Laayoune",
-                "addressCountry": "MA"
-              },
-              "description": "Official portfolio of Abdellah Edaoudi, a Full Stack Developer specialized in MERN stack, Next.js, Nest.js, and building secure and scalable web applications.",
-              "disambiguatingDescription": "Full Stack Developer based in Morocco. Not to be confused with the Moroccan singer Abdellah Daoudi.",
-              "brand": {
-                "@type": "Brand",
-                "name": "Abdellah Edaoudi"
-              }
-            })
+            __html: `
+              (function() {
+                try {
+                  var savedTheme = localStorage.getItem('theme');
+                  if (savedTheme === 'light') {
+                    document.documentElement.classList.remove('dark');
+                  } else {
+                    document.documentElement.classList.add('dark');
+                  }
+                } catch (e) {}
+              })();
+            `,
           }}
         />
-        <ToastProvider>
-          {children}
-        </ToastProvider>
-        <Analytics />
-        <ScrollToTop />
+      </head>
+      <body className={`${prompt.className} relative bg-gray-50 dark:bg-[#090d16] text-gray-900 dark:text-gray-100 transition-colors duration-300`}>
+        <ThemeProvider>
+          <CinematicBackground />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Abdellah Edaoudi",
+                "url": "https://abdellah-edaoudi.vercel.app",
+                "image": "https://abdellah-edaoudi.vercel.app/profile/profile.jpg",
+                "sameAs": [
+                  "https://linkedin.com/in/abdellah-edaoudi/",
+                  "https://github.com/AbdellahEdaoudi",
+                  "https://x.com/Edaoudi_abde",
+                  "https://instagram.com/edaoudi_abdellah/",
+                  "https://www.youtube.com/@edaoudi.abdellah"
+                ],
+                "jobTitle": "Full Stack Developer",
+                "nationality": {
+                  "@type": "Country",
+                  "name": "Morocco"
+                },
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Laayoune",
+                  "addressCountry": "MA"
+                },
+                "description": "Official portfolio of Abdellah Edaoudi, a Full Stack Developer specialized in MERN stack, Next.js, Nest.js, and building secure and scalable web applications.",
+                "disambiguatingDescription": "Full Stack Developer based in Morocco. Not to be confused with the Moroccan singer Abdellah Daoudi.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Abdellah Edaoudi"
+                }
+              })
+            }}
+          />
+          <ToastProvider>
+            {children}
+          </ToastProvider>
+          <Analytics />
+          <ScrollToTop />
+        </ThemeProvider>
       </body>
     </html>
   )
