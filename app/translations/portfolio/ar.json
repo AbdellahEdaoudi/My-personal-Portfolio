@@ -16,7 +16,9 @@
             "history": "المسيرة",
             "learning": "التعليم"
         },
-        "services": "الخدمات"
+        "services": "الخدمات",
+        "switchToLight": "التبديل للوضع الفاتح",
+        "switchToDark": "التبديل للوضع الداكن"
     },
     "home": {
         "greeting": "مرحباً، أنا عبد الله الداودي (Abdellah Edaoudi)",

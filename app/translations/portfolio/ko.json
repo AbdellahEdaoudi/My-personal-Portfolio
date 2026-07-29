@@ -10,6 +10,8 @@
         "admin": "Admin",
         "developer": "개발자",
         "fullStack": "풀스택",
+        "switchToLight": "라이트 모드로 전환",
+        "switchToDark": "다크 모드로 전환",
         "mobileMenu": {
             "navigation": "네비게이션",
             "explore": "이 섹션 탐색",

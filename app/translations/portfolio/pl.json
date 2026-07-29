@@ -10,6 +10,8 @@
         "admin": "Admin",
         "developer": "Programista",
         "fullStack": "Full Stack",
+        "switchToLight": "Przełącz na tryb jasny",
+        "switchToDark": "Przełącz na tryb ciemny",
         "mobileMenu": {
             "navigation": "Nawigacja",
             "explore": "Eksploruj tę sekcję",

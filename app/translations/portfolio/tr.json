@@ -10,6 +10,8 @@
         "admin": "Yönetici",
         "developer": "Geliştirici",
         "fullStack": "Full Stack",
+        "switchToLight": "Açık Moda Geç",
+        "switchToDark": "Karanlık Moda Geç",
         "mobileMenu": {
             "navigation": "Navigasyon",
             "explore": "Bu bölümü keşfet",

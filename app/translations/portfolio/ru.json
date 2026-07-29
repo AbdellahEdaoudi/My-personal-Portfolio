@@ -10,6 +10,8 @@
         "admin": "Admin",
         "developer": "Разработчик",
         "fullStack": "Full Stack",
+        "switchToLight": "Переключиться на светлую тему",
+        "switchToDark": "Переключиться на темную тему",
         "mobileMenu": {
             "navigation": "Навигация",
             "explore": "Изучить этот раздел",

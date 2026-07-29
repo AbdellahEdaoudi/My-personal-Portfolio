@@ -10,6 +10,8 @@
         "admin": "Admin",
         "developer": "डेवलपर",
         "fullStack": "फुल स्टैक",
+        "switchToLight": "लाइट मोड पर स्विच करें",
+        "switchToDark": "डार्क मोड पर स्विच करें",
         "mobileMenu": {
             "navigation": "नेविगेशन",
             "explore": "इस अनुभाग का अन्वेषण करें",

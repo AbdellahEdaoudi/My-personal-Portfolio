@@ -3,14 +3,14 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const ThemeContext = createContext({
-    theme: 'dark',
+    theme: 'light',
     toggleTheme: () => {},
     setTheme: () => {},
     mounted: false
 });
 
 export const ThemeProvider = ({ children }) => {
-    const [theme, setThemeState] = useState('dark');
+    const [theme, setThemeState] = useState('light');
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -26,10 +26,10 @@ export const ThemeProvider = ({ children }) => {
                 document.documentElement.style.colorScheme = 'light';
             }
         } else {
-            // Default to dark mode for a sleek, modern portfolio experience
-            setThemeState('dark');
-            document.documentElement.classList.add('dark');
-            document.documentElement.style.colorScheme = 'dark';
+            // Default to light mode for a sleek, modern portfolio experience
+            setThemeState('light');
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
         }
     }, []);
 

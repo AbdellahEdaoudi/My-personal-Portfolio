@@ -10,6 +10,8 @@
         "admin": "Admin",
         "developer": "开发人员",
         "fullStack": "全栈",
+        "switchToLight": "切换到浅色模式",
+        "switchToDark": "切换到深色模式",
         "mobileMenu": {
             "navigation": "导航",
             "explore": "探索此部分",
