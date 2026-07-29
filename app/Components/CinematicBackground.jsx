@@ -10,36 +10,35 @@ const CinematicBackground = () => {
     }, []);
 
     return (
-        <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none bg-[#f9fafb]">
-            {/* Ambient Glows - Optimized Opacity and Count */}
+        <div className="fixed inset-0 w-full h-full -z-10 overflow-hidden pointer-events-none bg-[#f9fafb] dark:bg-[#090d16] transition-colors duration-500">
+            {/* Ambient Glow - Full Screen Coverage */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-[-10%] left-[-20%] w-[80%] h-[80%] bg-[radial-gradient(circle,rgba(59,130,246,0.06)_0%,transparent_70%)] animate-slow-drift"></div>
-                <div className="absolute bottom-[-10%] right-[-20%] w-[80%] h-[80%] bg-[radial-gradient(circle,rgba(167,139,250,0.06)_0%,transparent_70%)] animate-slow-drift-reverse"></div>
+                <div className="absolute inset-[-50%] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.07)_0%,rgba(59,130,246,0.03)_40%,transparent_70%)] dark:bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.22)_0%,rgba(37,99,235,0.10)_45%,transparent_75%)]"></div>
             </div>
 
-            {/* High Performance Noise Texture (Static PNG pattern instead of dynamic SVG filter) */}
-            <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url("https://www.transparenttextures.com/patterns/stardust.png")` }}></div>
+            {/* High Performance Noise Texture */}
+            <div className="absolute inset-0 opacity-[0.05] dark:opacity-[0.07] pointer-events-none" style={{ backgroundImage: `url("https://www.transparenttextures.com/patterns/stardust.png")` }}></div>
 
-            {/* Elegant Grid System - Increased size for fewer lines */}
+            {/* Elegant Grid System */}
             <div
-                className="absolute inset-0 opacity-[0.06]"
+                className="absolute inset-0 opacity-[0.06] dark:opacity-[0.10]"
                 style={{
-                    backgroundImage: `linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)`,
+                    backgroundImage: `linear-gradient(currentColor 1px, transparent 1px), linear-gradient(90deg, currentColor 1px, transparent 1px)`,
                     backgroundSize: '60px 60px'
                 }}
             ></div>
 
-            {/* Light Leaks - Reduced to 1 animated streak */}
+            {/* Light Leaks */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-0 left-1/3 w-[1px] h-full bg-gradient-to-b from-transparent via-blue-400/5 to-transparent animate-scan-slow"></div>
+                <div className="absolute top-0 left-1/3 w-[1px] h-full bg-gradient-to-b from-transparent via-blue-400/10 dark:via-blue-500/20 to-transparent animate-scan-slow"></div>
             </div>
 
-            {/* Fine Dust Particles - Reduced Count to 8 for maximum performance */}
+            {/* Fine Dust Particles */}
             <div className="absolute inset-0">
                 {mounted && [...Array(8)].map((_, i) => (
                     <div
                         key={i}
-                        className="absolute bg-blue-400/10 rounded-full blur-[1px] animate-dust"
+                        className="absolute bg-blue-400/20 dark:bg-blue-400/40 rounded-full blur-[1px] animate-dust"
                         style={{
                             width: `${Math.random() * 2 + 1}px`,
                             height: `${Math.random() * 2 + 1}px`,

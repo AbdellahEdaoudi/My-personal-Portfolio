@@ -266,41 +266,37 @@
                 ]
             },
             {
-                "title": "Piattaforma Curriculum",
-                "image": "/Projects/Linkerfolio.jpg",
-                "websiteUrl": "https://linkerfolio.vercel.app",
-                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
-                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
-                "description": "Applicazione innovativa che ho sviluppato, che consente agli utenti di mostrare il proprio curriculum professionale e i link ai social media in un unico posto. Questa applicazione aiuta gli utenti a gestire efficacemente la propria identità digitale, rendendola uno strumento ideale per chi cerca lavoro o per chiunque voglia migliorare la propria presenza online e influenza digitale.",
+                "title": "Istituto Mekka per l'Educazione dell'Infanzia",
+                "type": "fullstack",
+                "image": "/Projects/etsmakka.png",
+                "websiteUrl": "https://etsmakka.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/etsmakka",
+                "githubBackendUrl": "",
+                "description": "Una piattaforma educativa e pedagogica integrata per l'Istituto Mekka per l'Educazione dell'Infanzia a Laayoune. Progettata per fornire un'istruzione della prima infanzia di alta qualità, con programmi educativi (Asilo Nido, Scuola dell'Infanzia, Kindergarten), valori interattivi e un sistema di richieste informazioni.",
                 "technologies": [
-                    {
-                        "name": "Next.js",
-                        "logo": "/Skills/Nextjs.jpg"
-                    },
-                    {
-                        "name": "Tailwind CSS",
-                        "logo": "/Skills/Tailwind.png"
-                    },
-                    {
-                        "name": "Node.js",
-                        "logo": "/Skills/Nodejs.png"
-                    },
-                    {
-                        "name": "Express",
-                        "logo": "/Skills/ExpressJs.png"
-                    },
-                    {
-                        "name": "MongoDB ",
-                        "logo": "/Skills/Mongodb.png"
-                    },
-                    {
-                        "name": "Socket.IO",
-                        "logo": "/Skills/Socket.io.png"
-                    },
-                    {
-                        "name": "Git",
-                        "logo": "/Skills/Git.png"
-                    }
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "React.js", "logo": "/Skills/reactjs.png" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "Node.js", "logo": "/Skills/Nodejs.png" },
+                    { "name": "Express", "logo": "/Skills/ExpressJs.png" },
+                    { "name": "MongoDB", "logo": "/Skills/Mongodb.png" },
+                    { "name": "jwt", "logo": "/Skills/jwt.jpg" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
+                ]
+            },
+            {
+                "title": "Piattaforma della Moschea Hassan Al-Derhem",
+                "type": "frontend",
+                "image": "/Projects/mosque-hassan-alderhem.png",
+                "websiteUrl": "https://mosque-hassan-alderhem.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/mosque-hassan-alderhem",
+                "githubBackendUrl": "",
+                "description": "Una piattaforma islamica interattiva per la Moschea Hassan Al-Derhem a Laayoune, Marocco. Include orari di preghiera giornalieri precisi, conto alla rovescia in tempo reale per la prossima preghiera con audio dell'Adhan marocchino, bussola per la direzione della Qibla e integrazione con Google Maps.",
+                "technologies": [
+                    { "name": "Next.js", "logo": "/Skills/Nextjs.jpg" },
+                    { "name": "React.js", "logo": "/Skills/reactjs.png" },
+                    { "name": "Tailwind CSS", "logo": "/Skills/Tailwind.png" },
+                    { "name": "Git", "logo": "/Skills/Git.png" }
                 ]
             },
             {
@@ -351,10 +347,48 @@
                 ]
             },
             {
+                "title": "Piattaforma Curriculum",
+                "image": "/Projects/Linkerfolio.jpg",
+                "websiteUrl": "https://linkerfolio.vercel.app",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Front",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/Resume-Platform-Project-Server",
+                "description": "Applicazione innovativa che ho sviluppato, che consente agli utenti di mostrare il proprio curriculum professionale e i link ai social media in un unico posto. Questa applicazione aiuta gli utenti a gestire efficacemente la propria identità digitale, rendendola uno strumento ideale per chi cerca lavoro o per chiunque voglia migliorare la propria presenza online e influenza digitale.",
+                "technologies": [
+                    {
+                        "name": "Next.js",
+                        "logo": "/Skills/Nextjs.jpg"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "logo": "/Skills/Tailwind.png"
+                    },
+                    {
+                        "name": "Node.js",
+                        "logo": "/Skills/Nodejs.png"
+                    },
+                    {
+                        "name": "Express",
+                        "logo": "/Skills/ExpressJs.png"
+                    },
+                    {
+                        "name": "MongoDB ",
+                        "logo": "/Skills/Mongodb.png"
+                    },
+                    {
+                        "name": "Socket.IO",
+                        "logo": "/Skills/Socket.io.png"
+                    },
+                    {
+                        "name": "Git",
+                        "logo": "/Skills/Git.png"
+                    }
+                ]
+            },
+            {
                 "title": "Compressore di Immagini",
                 "image": "/Projects/image-compressor.jpg",
                 "websiteUrl": "https://image-compressor-aed.vercel.app",
-                "githubFrontendUrl": "",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/image-compressor-pro",
                 "githubBackendUrl": "",
                 "description": "Uno strumento di compressione delle immagini potente e sicuro basato su browser. Consente agli utenti di comprimere immagini JPG, PNG e WebP illimitate fino al 90% senza perdita di qualità. Le funzionalità includono compressione in massa, generazione di PDF, interfaccia drag-and-drop e privacy completa poiché tutta l'elaborazione avviene localmente nel browser.",
                 "technologies": [
@@ -581,30 +615,13 @@
         "backToTop": "Torna su",
         "siteMapLabel": "Mappa del sito",
         "links": [
-            {
-                "name": "Chi sono",
-                "path": "/About"
-            },
-            {
-                "name": "Competenze",
-                "path": "/Skills"
-            },
-            {
-                "name": "Progetti",
-                "path": "/Projects"
-            },
-            {
-                "name": "Istruzione",
-                "path": "/Education"
-            },
-            {
-                "name": "Esperienza",
-                "path": "/Experience"
-            },
-            {
-                "name": "Contatti",
-                "path": "/Contact"
-            }
+            { "name": "Chi sono", "path": "/About" },
+            { "name": "Servizi", "path": "/Services" },
+            { "name": "Competenze", "path": "/Skills" },
+            { "name": "Progetti", "path": "/Projects" },
+            { "name": "Esperienza", "path": "/Experience" },
+            { "name": "Istruzione", "path": "/Education" },
+            { "name": "Contatti", "path": "/Contact" }
         ],
         "connectLabel": "Connetti",
         "emailLabel": "Email",
