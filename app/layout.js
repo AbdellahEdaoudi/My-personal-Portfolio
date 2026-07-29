@@ -78,7 +78,7 @@ const prompt = Prompt({ subsets: ["latin"], weight: '500' });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className="dark">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -86,10 +86,10 @@ export default function RootLayout({ children }) {
               (function() {
                 try {
                   var savedTheme = localStorage.getItem('theme');
-                  if (savedTheme === 'light') {
-                    document.documentElement.classList.remove('dark');
-                  } else {
+                  if (savedTheme === 'dark') {
                     document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
                   }
                 } catch (e) {}
               })();

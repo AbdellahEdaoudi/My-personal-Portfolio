@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useState, useCallback, useRef } from 'react';
-import { motion, useSpring, useMotionValue, AnimatePresence } from 'framer-motion';
 
 const CustomCursor = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -9,24 +8,40 @@ const CustomCursor = () => {
     const [mounted, setMounted] = useState(false);
     const audioCtxRef = useRef(null);
 
-    // Position of the mouse
-    const mouseX = useMotionValue(-100);
-    const mouseY = useMotionValue(-100);
+    const cursorRef = useRef(null);
+    const trailRef = useRef(null);
+    
+    const mouseX = useRef(-100);
+    const mouseY = useRef(-100);
+    const cursorX = useRef(-100);
+    const cursorY = useRef(-100);
+    const trailX = useRef(-100);
+    const trailY = useRef(-100);
+    const requestRef = useRef();
 
-    // 1. Natural Precision Spring (For the Arrow - High response)
-    const cursorX = useSpring(mouseX, { damping: 45, stiffness: 1000 });
-    const cursorY = useSpring(mouseY, { damping: 45, stiffness: 1000 });
+    const updatePosition = useCallback(() => {
+        // Simple lerp for smooth trailing
+        cursorX.current += (mouseX.current - cursorX.current) * 0.5;
+        cursorY.current += (mouseY.current - cursorY.current) * 0.5;
+        
+        trailX.current += (mouseX.current - trailX.current) * 0.15;
+        trailY.current += (mouseY.current - trailY.current) * 0.15;
 
-    // 2. Professional Fluid Spring (For the Shadow/Glow - Soft trailing)
-    const trailX = useSpring(mouseX, { damping: 30, stiffness: 150 });
-    const trailY = useSpring(mouseY, { damping: 30, stiffness: 150 });
+        if (cursorRef.current) {
+            cursorRef.current.style.transform = `translate3d(${cursorX.current}px, ${cursorY.current}px, 0) translate(-4px, -4px) scale(${isActive ? 0.8 : (isHovered ? 1.2 : 1)})`;
+        }
+        if (trailRef.current) {
+            trailRef.current.style.transform = `translate3d(${trailX.current}px, ${trailY.current}px, 0) translate(-50%, -50%)`;
+        }
+
+        requestRef.current = requestAnimationFrame(updatePosition);
+    }, [isActive, isHovered]);
 
     const handleMouseMove = useCallback((e) => {
-        mouseX.set(e.clientX);
-        mouseY.set(e.clientY);
-    }, [mouseX, mouseY]);
+        mouseX.current = e.clientX;
+        mouseY.current = e.clientY;
+    }, []);
 
-    // Elegant UI Sound Synthesizer
     const playClickSound = useCallback(() => {
         try {
             if (!audioCtxRef.current) {
@@ -57,33 +72,22 @@ const CustomCursor = () => {
 
     useEffect(() => {
         const checkDevice = () => {
-            if (window.innerWidth >= 768) {
-                setMounted(true);
-            } else {
-                setMounted(false);
-            }
+            setMounted(window.innerWidth >= 768);
         };
-
         checkDevice();
         window.addEventListener('resize', checkDevice);
-
-        return () => {
-            window.removeEventListener('resize', checkDevice);
-        };
+        return () => window.removeEventListener('resize', checkDevice);
     }, []);
 
     useEffect(() => {
         if (!mounted) return;
 
         window.addEventListener('mousemove', handleMouseMove);
+        requestRef.current = requestAnimationFrame(updatePosition);
 
         const handleMouseOver = (e) => {
             const target = e.target;
-            if (target && target.closest('a, button, [role="button"], input, select, textarea, .project-card, .clickable')) {
-                setIsHovered(true);
-            } else {
-                setIsHovered(false);
-            }
+            setIsHovered(!!(target && target.closest('a, button, [role="button"], input, select, textarea, .project-card, .clickable')));
         };
 
         const handleMouseDown = () => {
@@ -102,66 +106,35 @@ const CustomCursor = () => {
             window.removeEventListener('mouseover', handleMouseOver);
             window.removeEventListener('mousedown', handleMouseDown);
             window.removeEventListener('mouseup', handleMouseUp);
+            if (requestRef.current) cancelAnimationFrame(requestRef.current);
         };
-    }, [mounted, handleMouseMove, playClickSound]);
+    }, [mounted, handleMouseMove, updatePosition, playClickSound]);
 
     if (!mounted) return null;
 
     return (
         <div className="fixed inset-0 pointer-events-none z-[9999999]">
-            {/* 1. The Trailing Professional Glow */}
-            <motion.div
-                className="fixed w-12 h-12 rounded-full"
+            {/* 1. The Trailing Professional Glow & Ring combined */}
+            <div
+                ref={trailRef}
+                className="fixed transition-all duration-300"
                 style={{
-                    x: trailX,
-                    y: trailY,
-                    translateX: '-50%',
-                    translateY: '-50%',
+                    width: isHovered ? '20px' : '48px',
+                    height: isHovered ? '20px' : '48px',
+                    borderRadius: '50%',
                     background: isHovered
                         ? 'radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0) 70%)'
                         : 'radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0) 70%)',
-                }}
-                animate={{
-                    scale: isHovered ? 2 : 1,
-                    opacity: isHovered ? 0.8 : 0.3,
-                }}
-            />
-
-            {/* 2. The Interactive Magnet Ring (Large Rotating Dashed) */}
-            <motion.div
-                className="fixed rounded-full border-2 border-dashed border-emerald-500/40"
-                style={{
-                    x: trailX,
-                    y: trailY,
-                    translateX: '-50%',
-                    translateY: '-50%',
-                }}
-                animate={{
-                    width: isHovered ? 20 : 0,
-                    height: isHovered ? 20 : 0,
-                    opacity: isHovered ? 1 : 0,
-                    rotate: isHovered ? 180 : 0,
-                }}
-                transition={{
-                    type: 'spring',
-                    damping: 25,
-                    stiffness: 150,
-                    rotate: { duration: 0.5, ease: "easeOut" }
+                    border: isHovered ? '2px dashed rgba(16, 185, 129, 0.4)' : 'none',
+                    opacity: isHovered ? 1 : 0.3,
+                    animation: isHovered ? 'spin 2s linear infinite' : 'none',
                 }}
             />
 
-            {/* 3. The Natural Elite Pointer (Arrow) */}
-            <motion.div
-                className="fixed z-[1000]"
-                style={{
-                    x: cursorX,
-                    y: cursorY,
-                    translateX: '-4px',
-                    translateY: '-4px',
-                }}
-                animate={{
-                    scale: isActive ? 0.8 : (isHovered ? 1.2 : 1),
-                }}
+            {/* 2. The Natural Elite Pointer (Arrow) */}
+            <div
+                ref={cursorRef}
+                className="fixed z-[1000] transition-transform duration-100"
             >
                 <svg
                     width="28"
@@ -191,27 +164,7 @@ const CustomCursor = () => {
                         fill={isHovered ? "rgba(16, 185, 129, 0.1)" : "rgba(59, 130, 246, 0.1)"}
                     />
                 </svg>
-            </motion.div>
-
-            {/* 4. Refined Click Feedback */}
-            <AnimatePresence>
-                {isActive && (
-                    <motion.div
-                        initial={{ scale: 0, opacity: 0.8 }}
-                        animate={{ scale: 4, opacity: 0 }}
-                        exit={{ opacity: 0 }}
-                        className="fixed rounded-full ring-1 ring-emerald-400/50"
-                        style={{
-                            left: mouseX.get(),
-                            top: mouseY.get(),
-                            width: 10,
-                            height: 10,
-                            translateX: '-50%',
-                            translateY: '-50%',
-                        }}
-                    />
-                )}
-            </AnimatePresence>
+            </div>
         </div>
     );
 };

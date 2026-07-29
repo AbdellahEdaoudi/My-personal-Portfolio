@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 import { useParams, usePathname, useRouter } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
+
 import { AlignJustify, ChevronDown } from '../Icons';
 
 import "flag-icons/css/flag-icons.min.css"; // Import flag-icons CSS
@@ -159,33 +159,25 @@ export default function Header({ content, lang }) {
                             <ChevronDown className={`w-4 h-4 text-gray-600 dark:text-gray-400 transition-transform duration-200 ${isLangOpen ? 'rotate-180' : ''}`} />
                         </button>
 
-                        <AnimatePresence>
-                            {isLangOpen && (
-                                <motion.div
-                                    initial={{ opacity: 0, y: -10 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    exit={{ opacity: 0, y: -10 }}
-                                    transition={{ duration: 0.2 }}
-                                    className="absolute top-full right-0 mt-2 w-48 bg-white dark:bg-slate-900 rounded-xl shadow-xl border border-gray-100 dark:border-slate-800 overflow-hidden max-h-80 overflow-y-auto"
+                        <div
+                            className={`absolute top-full right-0 mt-2 w-48 bg-white dark:bg-slate-900 rounded-xl shadow-xl border border-gray-100 dark:border-slate-800 overflow-hidden max-h-80 overflow-y-auto transition-all duration-200 ${isLangOpen ? 'opacity-100 translate-y-0 visible pointer-events-auto' : 'opacity-0 -translate-y-2 invisible pointer-events-none'}`}
+                        >
+                            {languages.map((langItem) => (
+                                <Link
+                                    prefetch={false}
+                                    href={LanguageChange(langItem.code)}
+                                    key={langItem.code}
+                                    onClick={() => {
+                                        setIsLangOpen(false);
+                                        setIsMobileLangOpen(false);
+                                    }}
+                                    className={`w-full flex items-center gap-3 px-4 py-2.5 hover:bg-green-50 dark:hover:bg-blue-950/50 transition-colors text-left ${currentLang === langItem.code ? 'bg-green-50 dark:bg-blue-950/70 text-green-600 dark:text-blue-400 font-bold' : 'text-gray-700 dark:text-gray-300'}`}
                                 >
-                                    {languages.map((langItem) => (
-                                        <Link
-                                            prefetch={false}
-                                            href={LanguageChange(langItem.code)}
-                                            key={langItem.code}
-                                            onClick={() => {
-                                                setIsLangOpen(false);
-                                                setIsMobileLangOpen(false);
-                                            }}
-                                            className={`w-full flex items-center gap-3 px-4 py-2.5 hover:bg-green-50 dark:hover:bg-blue-950/50 transition-colors text-left ${currentLang === langItem.code ? 'bg-green-50 dark:bg-blue-950/70 text-green-600 dark:text-blue-400 font-bold' : 'text-gray-700 dark:text-gray-300'}`}
-                                        >
-                                            <span className={`fi fi-${langItem.countryCode}`}></span>
-                                            <span className="text-sm font-medium">{langItem.name}</span>
-                                        </Link>
-                                    ))}
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+                                    <span className={`fi fi-${langItem.countryCode}`}></span>
+                                    <span className="text-sm font-medium">{langItem.name}</span>
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 </div>
 
@@ -206,7 +198,7 @@ export default function Header({ content, lang }) {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41" />
                             </svg>
                         ) : (
-                            <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <svg className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                             </svg>
                         )}
@@ -223,33 +215,25 @@ export default function Header({ content, lang }) {
                             <ChevronDown className={`w-3 h-3 text-gray-600 dark:text-gray-400 transition-transform duration-200 ${isMobileLangOpen ? 'rotate-180' : ''}`} />
                         </button>
 
-                        <AnimatePresence>
-                            {isMobileLangOpen && (
-                                <motion.div
-                                    initial={{ opacity: 0, y: -10, scale: 0.95 }}
-                                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                                    exit={{ opacity: 0, y: -10, scale: 0.95 }}
-                                    transition={{ duration: 0.2 }}
-                                    className="absolute top-full right-0 mt-2 w-40 bg-white dark:bg-slate-900 rounded-lg shadow-lg border border-gray-100 dark:border-slate-800 overflow-hidden max-h-60 overflow-y-auto z-[60]"
+                        <div
+                            className={`absolute top-full right-0 mt-2 w-40 bg-white dark:bg-slate-900 rounded-lg shadow-lg border border-gray-100 dark:border-slate-800 overflow-hidden max-h-60 overflow-y-auto z-[60] transition-all duration-200 origin-top-right ${isMobileLangOpen ? 'opacity-100 translate-y-0 scale-100 visible pointer-events-auto' : 'opacity-0 -translate-y-2 scale-95 invisible pointer-events-none'}`}
+                        >
+                            {languages.map((langItem) => (
+                                <Link
+                                    prefetch={false}
+                                    href={LanguageChange(langItem.code)}
+                                    key={langItem.code}
+                                    onClick={() => {
+                                        setIsLangOpen(false);
+                                        setIsMobileLangOpen(false);
+                                    }}
+                                    className={`w-full flex items-center gap-2 px-3 py-2 hover:bg-green-50 dark:hover:bg-blue-950/50 transition-colors text-left text-sm ${currentLang === langItem.code ? 'bg-green-50 dark:bg-blue-950/70 text-green-600 dark:text-blue-400 font-bold' : 'text-gray-700 dark:text-gray-300'}`}
                                 >
-                                    {languages.map((langItem) => (
-                                        <Link
-                                            prefetch={false}
-                                            href={LanguageChange(langItem.code)}
-                                            key={langItem.code}
-                                            onClick={() => {
-                                                setIsLangOpen(false);
-                                                setIsMobileLangOpen(false);
-                                            }}
-                                            className={`w-full flex items-center gap-2 px-3 py-2 hover:bg-green-50 dark:hover:bg-blue-950/50 transition-colors text-left text-sm ${currentLang === langItem.code ? 'bg-green-50 dark:bg-blue-950/70 text-green-600 dark:text-blue-400 font-bold' : 'text-gray-700 dark:text-gray-300'}`}
-                                        >
-                                            <span className={`fi fi-${langItem.countryCode}`}></span>
-                                            <span className="font-medium">{langItem.name}</span>
-                                        </Link>
-                                    ))}
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+                                    <span className={`fi fi-${langItem.countryCode}`}></span>
+                                    <span className="font-medium">{langItem.name}</span>
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
