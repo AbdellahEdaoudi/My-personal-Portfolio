@@ -10,6 +10,8 @@
         "admin": "Admin",
         "developer": "Sviluppatore",
         "fullStack": "Full Stack",
+        "switchToLight": "Passa alla modalità chiara",
+        "switchToDark": "Passa alla modalità scura",
         "mobileMenu": {
             "navigation": "Navigazione",
             "explore": "Esplora questa sezione",

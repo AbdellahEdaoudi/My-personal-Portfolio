@@ -133,7 +133,7 @@ export default function Header({ content, lang }) {
                     <button
                         onClick={toggleTheme}
                         aria-label="Toggle Dark/Light Mode"
-                        title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                        title={theme === 'dark' ? content?.switchToLight || 'Switch to Light Mode' : content?.switchToDark || 'Switch to Dark Mode'}
                         className="p-2 rounded-xl border border-gray-200 dark:border-slate-700/80 bg-gray-50 dark:bg-slate-800/80 hover:bg-gray-100 dark:hover:bg-slate-700 text-gray-800 dark:text-gray-100 transition-all duration-300 focus:outline-none hover:scale-105 shadow-sm"
                     >
                         {mounted && theme === 'dark' ? (

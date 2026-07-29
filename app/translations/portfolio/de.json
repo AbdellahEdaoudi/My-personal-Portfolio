@@ -10,6 +10,8 @@
         "admin": "Admin",
         "developer": "Entwickler",
         "fullStack": "Full Stack",
+        "switchToLight": "In den hellen Modus wechseln",
+        "switchToDark": "In den dunklen Modus wechseln",
         "mobileMenu": {
             "navigation": "Navigation",
             "explore": "Diesen Bereich erkunden",

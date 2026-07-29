@@ -10,6 +10,8 @@
         "admin": "Quản trị",
         "developer": "Nhà phát triển",
         "fullStack": "Full Stack",
+        "switchToLight": "Chuyển sang chế độ sáng",
+        "switchToDark": "Chuyển sang chế độ tối",
         "mobileMenu": {
             "navigation": "Điều hướng",
             "explore": "Khám phá phần này",
