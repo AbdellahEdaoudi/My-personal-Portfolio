@@ -10,6 +10,8 @@
         "admin": "Admin",
         "developer": "Pengembang",
         "fullStack": "Full Stack",
+        "switchToLight": "Beralih ke Mode Terang",
+        "switchToDark": "Beralih ke Mode Gelap",
         "mobileMenu": {
             "navigation": "Navigasi",
             "explore": "Jelajahi bagian ini",

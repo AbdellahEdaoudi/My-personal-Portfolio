@@ -16,7 +16,9 @@
             "history": "History",
             "learning": "Learning"
         },
-        "services": "Services"
+        "services": "Services",
+        "switchToLight": "Switch to Light Mode",
+        "switchToDark": "Switch to Dark Mode"
     },
     "home": {
         "greeting": "Hi, I'm Abdellah Edaoudi",

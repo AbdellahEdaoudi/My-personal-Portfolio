@@ -10,6 +10,8 @@
         "admin": "مدیر",
         "developer": "توسعه‌دهنده",
         "fullStack": "فول‌استک",
+        "switchToLight": "رفتن به حالت روشن",
+        "switchToDark": "رفتن به حالت تاریک",
         "mobileMenu": {
             "navigation": "ناوبری",
             "explore": "بخش‌ها را کاوش کنید",

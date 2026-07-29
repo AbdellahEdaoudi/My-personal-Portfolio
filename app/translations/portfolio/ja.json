@@ -10,6 +10,8 @@
         "admin": "管理",
         "developer": "開発者",
         "fullStack": "フルスタック",
+        "switchToLight": "ライトモードに切り替え",
+        "switchToDark": "ダークモードに切り替え",
         "mobileMenu": {
             "navigation": "ナビゲーション",
             "explore": "このセクションを探索",

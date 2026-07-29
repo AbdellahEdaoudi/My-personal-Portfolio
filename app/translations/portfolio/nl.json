@@ -10,6 +10,8 @@
         "admin": "Admin",
         "developer": "Ontwikkelaar",
         "fullStack": "Full Stack",
+        "switchToLight": "Schakel over naar lichte modus",
+        "switchToDark": "Schakel over naar donkere modus",
         "mobileMenu": {
             "navigation": "Navigatie",
             "explore": "Verken deze sectie",

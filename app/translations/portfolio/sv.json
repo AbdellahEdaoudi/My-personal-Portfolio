@@ -10,6 +10,8 @@
         "admin": "Admin",
         "developer": "Utvecklare",
         "fullStack": "Full Stack",
+        "switchToLight": "Byt till ljust läge",
+        "switchToDark": "Byt till mörkt läge",
         "mobileMenu": {
             "navigation": "Navigering",
             "explore": "Utforska denna sektion",
