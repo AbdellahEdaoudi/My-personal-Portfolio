@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+
 import axios from "axios";
 import { useToast } from "../Toast";
 import Image from "next/image";
@@ -113,23 +113,16 @@ function Contact({ content }) {
             className=" pb-10 flex flex-col items-center pt-4 min-h-screen relative"
         >
             {/* Image Lightbox Modal */}
-            <AnimatePresence>
-                {imageModal && imagePreview && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        onClick={() => setImageModal(false)}
-                        className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md cursor-zoom-out"
+            {/* Image Lightbox Modal */}
+            {imageModal && imagePreview && (
+                <div
+                    onClick={() => setImageModal(false)}
+                    className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md cursor-zoom-out transition-opacity duration-300"
+                >
+                    <div
+                        onClick={(e) => e.stopPropagation()}
+                        className="relative max-w-3xl w-full cursor-default transform transition-all duration-300 scale-100"
                     >
-                        <motion.div
-                            initial={{ scale: 0.85, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            exit={{ scale: 0.85, opacity: 0 }}
-                            transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-                            onClick={(e) => e.stopPropagation()}
-                            className="relative max-w-3xl w-full cursor-default"
-                        >
                             {/* Close Button */}
                             <button
                                 type="button"
@@ -145,10 +138,9 @@ function Contact({ content }) {
                                 alt="Full size preview"
                                 className="w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl border border-white/10"
                             />
-                        </motion.div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+                    </div>
+                </div>
+            )}
 
             <div className="text-center pb-10">
                 <p className="text-4xl font-bold dark:text-white">{content.title}</p>
@@ -198,18 +190,11 @@ function Contact({ content }) {
                                 }}
                                 className={`text-[13px] bg-gray-50 dark:bg-slate-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 pl-4 pr-4 py-3 w-72 rounded-xl border-2 transition-colors ${errors.subject ? 'border-red-500 bg-red-50 dark:bg-red-950/20' : 'border-gray-200 dark:border-slate-800 dark:focus:border-blue-500'}`}
                             />
-                            <AnimatePresence>
-                                {errors.subject && (
-                                    <motion.p
-                                        initial={{ opacity: 0, y: -10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: -10 }}
-                                        className="text-red-500 text-[10px] mt-1"
-                                    >
-                                        {errors.subject}
-                                    </motion.p>
-                                )}
-                            </AnimatePresence>
+                            {errors.subject && (
+                                <p className="text-red-500 text-[10px] mt-1 transition-all duration-300">
+                                    {errors.subject}
+                                </p>
+                            )}
                         </div>
 
                         <div>
@@ -225,18 +210,11 @@ function Contact({ content }) {
                                 }}
                                 className={`text-[13px] bg-gray-50 dark:bg-slate-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 pl-4 pr-4 py-3 w-72 rounded-xl border-2 transition-colors ${errors.email ? 'border-red-500 bg-red-50 dark:bg-red-950/20' : 'border-gray-200 dark:border-slate-800 dark:focus:border-blue-500'}`}
                             />
-                            <AnimatePresence>
-                                {errors.email && (
-                                    <motion.p
-                                        initial={{ opacity: 0, y: -10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: -10 }}
-                                        className="text-red-500 text-[10px] mt-1"
-                                    >
-                                        {errors.email}
-                                    </motion.p>
-                                )}
-                            </AnimatePresence>
+                            {errors.email && (
+                                <p className="text-red-500 text-[10px] mt-1 transition-all duration-300">
+                                    {errors.email}
+                                </p>
+                            )}
                         </div>
 
                         <div>
@@ -250,18 +228,11 @@ function Contact({ content }) {
                                 }}
                                 className={`text-[13px] bg-gray-50 dark:bg-slate-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 pl-4 pr-4 py-3 w-72 rounded-xl border-2 transition-colors ${errors.message ? 'border-red-500 bg-red-50 dark:bg-red-950/20' : 'border-gray-200 dark:border-slate-800 dark:focus:border-blue-500'}`}
                             />
-                            <AnimatePresence>
-                                {errors.message && (
-                                    <motion.p
-                                        initial={{ opacity: 0, y: -10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: -10 }}
-                                        className="text-red-500 text-[10px] mt-1"
-                                    >
-                                        {errors.message}
-                                    </motion.p>
-                                )}
-                            </AnimatePresence>
+                            {errors.message && (
+                                <p className="text-red-500 text-[10px] mt-1 transition-all duration-300">
+                                    {errors.message}
+                                </p>
+                            )}
                         </div>
 
                         {/* Image Attachment */}
@@ -296,13 +267,9 @@ function Contact({ content }) {
                                     )}
                                 </button>
                             ) : (
-                                <AnimatePresence>
-                                    <motion.div
-                                        initial={{ opacity: 0, scale: 0.95 }}
-                                        animate={{ opacity: 1, scale: 1 }}
-                                        exit={{ opacity: 0, scale: 0.95 }}
-                                        className="relative w-72 rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700"
-                                    >
+                                <div
+                                    className="relative w-72 rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700 transition-all duration-300"
+                                >
                                         <img
                                             src={imagePreview}
                                             alt="Preview"
@@ -319,8 +286,7 @@ function Contact({ content }) {
                                         <p className="text-[10px] text-gray-400 dark:text-gray-400 text-center py-1 bg-gray-50 dark:bg-slate-800">
                                             {content.imageAttached || "Image attached & compressed ✓"}
                                         </p>
-                                    </motion.div>
-                                </AnimatePresence>
+                                </div>
                             )}
                         </div>
 

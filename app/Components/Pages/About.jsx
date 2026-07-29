@@ -80,7 +80,7 @@ function About({ content, lang }) {
               <Link
                 href={content.Cv}
                 target="_blank"
-                className="flex p-3 rounded-lg bg-black dark:bg-blue-600 dark:hover:bg-blue-700 hover:scale-[1.03] duration-300 text-white gap-2"
+                className="flex p-3 rounded-lg bg-black dark:bg-blue-700 dark:hover:bg-blue-700 hover:scale-[1.03] duration-300 text-white gap-2"
               >
                 {content.downloadCv} <StickyNote />
               </Link>
