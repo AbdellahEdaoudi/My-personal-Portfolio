@@ -6,17 +6,17 @@ export default function sitemap() {
     const urls = [];
 
     const DOCUMENTS = {
-    cv: {
-        en: "/cv/cv-abdellah-edaoudi-en.pdf",
-        fr: "/cv/cv-abdellah-edaoudi-fr.pdf",
-        es: "/cv/cv-abdellah-edaoudi-es.pdf",
-    },
-    coverLetter: {
-        en: "/cl/Cover-Letter-Abdellah-Edaoudi-EN.pdf",
-        fr: "/cl/Lettre-de-Motivation-Abdellah-Edaoudi-FR.pdf",
-        es: "/cl/Carta-de-Presentacion-Abdellah-Edaoudi-ES.pdf",
-    }
-};
+        cv: {
+            en: "/cv/cv-abdellah-edaoudi-en.pdf",
+            fr: "/cv/cv-abdellah-edaoudi-fr.pdf",
+            es: "/cv/cv-abdellah-edaoudi-es.pdf",
+        },
+        coverLetter: {
+            en: "/cl/Cover-Letter-Abdellah-Edaoudi-EN.pdf",
+            fr: "/cl/Lettre-de-Motivation-Abdellah-Edaoudi-FR.pdf",
+            es: "/cl/Carta-de-Presentacion-Abdellah-Edaoudi-ES.pdf",
+        }
+    };
 
     // Base routes
     ROUTES.forEach((route) => {
@@ -52,15 +52,15 @@ export default function sitemap() {
 
     // CV and cover letter routes
     Object.values(DOCUMENTS).forEach((group) => {
-    Object.values(group).forEach((path) => {
-        urls.push({
-            url: `${BASE_URL}${path}`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 0.6,
+        Object.values(group).forEach((path) => {
+            urls.push({
+                url: `${BASE_URL}${path}`,
+                lastModified: new Date(),
+                changeFrequency: 'yearly',
+                priority: 0.6,
+            });
         });
     });
-});
 
     return urls;
 }
