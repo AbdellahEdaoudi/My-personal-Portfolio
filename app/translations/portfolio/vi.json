@@ -558,7 +558,7 @@
         "items": [
             {
                 "title": "Phát triển Web & Ứng dụng",
-                "description": "Xây dựng các ứng dụng di động và web full-stack đáp ứng, nhanh chóng và có tính tương tác cao bằng cách sử dụng các công nghệ hiện đại.",
+                "description": "Xây dựng các ứng dụng web full-stack đáp ứng, nhanh chóng và có tính tương tác cao bằng cách sử dụng các công nghệ hiện đại.",
                 "icon": "Code"
             },
             {
@@ -582,8 +582,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "Thiết kế UX/UI",
-                "description": "Tạo ra trải nghiệm người dùng trực quan, hấp dẫn và dễ tiếp cận bằng thiết kế giao diện hoàn hảo đến từng pixel.",
+                "title": "Phát triển UI Tương tác",
+                "description": "Chuyển đổi thiết kế thành giao diện đáp ứng, hoàn hảo từng pixel và có tính tương tác cao với Next.js và Tailwind CSS.",
                 "icon": "Layout"
             }
         ]

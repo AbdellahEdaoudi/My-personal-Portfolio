@@ -558,7 +558,7 @@
         "items": [
             {
                 "title": "Tworzenie stron internetowych i aplikacji",
-                "description": "Tworzenie responsywnych, szybkich i wysoce interaktywnych, kompleksowych aplikacji internetowych i mobilnych przy użyciu nowoczesnych technologii.",
+                "description": "Tworzenie responsywnych, szybkich i wysoce interaktywnych, kompleksowych aplikacji internetowych przy użyciu nowoczesnych technologii.",
                 "icon": "Code"
             },
             {
@@ -582,8 +582,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "Projekt UX/UI",
-                "description": "Twórz intuicyjne, wciągające i dostępne doświadczenia użytkownika dzięki projektom interfejsów dopracowanym w pikselach.",
+                "title": "Interaktywny Rozwój UI",
+                "description": "Przekształcanie projektów w responsywne, pikselowo doskonałe i wysoce interaktywne interfejsy przy użyciu Next.js i Tailwind CSS.",
                 "icon": "Layout"
             }
         ]

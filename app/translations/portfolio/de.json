@@ -570,7 +570,7 @@
         "items": [
             {
                 "title": "Web- und App-Entwicklung",
-                "description": "Erstellen Sie reaktionsfähige, schnelle und hochgradig interaktive Full-Stack-Web- und Mobilanwendungen mithilfe moderner Technologien.",
+                "description": "Erstellen Sie reaktionsfähige, schnelle und hochgradig interaktive Full-Stack-Webanwendungen mithilfe moderner Technologien.",
                 "icon": "Code"
             },
             {
@@ -594,8 +594,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "UX/UI-Design",
-                "description": "Erstellen Sie intuitive, ansprechende und zugängliche Benutzererlebnisse mit pixelgenauen Schnittstellendesigns.",
+                "title": "Interaktive UI-Entwicklung",
+                "description": "Umwandlung von Designs in responsive, pixelgenaue und hochinteraktive Benutzeroberflächen mit Next.js und Tailwind CSS.",
                 "icon": "Layout"
             }
         ]

@@ -570,7 +570,7 @@
         "items": [
             {
                 "title": "Desarrollo web y de aplicaciones",
-                "description": "Creación de aplicaciones web y móviles de pila completa, responsivas, rápidas y altamente interactivas utilizando tecnologías modernas.",
+                "description": "Creación de aplicaciones web de pila completa, responsivas, rápidas y altamente interactivas utilizando tecnologías modernas.",
                 "icon": "Code"
             },
             {
@@ -594,8 +594,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "Diseño UX/UI",
-                "description": "Creando experiencias de usuario intuitivas, atractivas y accesibles con diseños de interfaz perfectos en píxeles.",
+                "title": "Desarrollo de UI Interactiva",
+                "description": "Transformando diseños en interfaces responsivas, perfectas al píxel y altamente interactivas con Next.js y Tailwind CSS.",
                 "icon": "Layout"
             }
         ]

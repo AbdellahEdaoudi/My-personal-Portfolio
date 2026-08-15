@@ -642,7 +642,7 @@
         "items": [
             {
                 "title": "Sviluppo Web e App",
-                "description": "Creazione di applicazioni Web e mobili full-stack reattive, veloci e altamente interattive utilizzando tecnologie moderne.",
+                "description": "Creazione di applicazioni Web full-stack reattive, veloci e altamente interattive utilizzando tecnologie moderne.",
                 "icon": "Code"
             },
             {
@@ -666,8 +666,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "Progettazione dell'esperienza utente/interfaccia utente",
-                "description": "Creare esperienze utente intuitive, coinvolgenti e accessibili con design dell'interfaccia pixel-perfect.",
+                "title": "Sviluppo UI Interattivo",
+                "description": "Trasformazione dei design in interfacce responsive, pixel-perfect e altamente interattive con Next.js e Tailwind CSS.",
                 "icon": "Layout"
             }
         ]

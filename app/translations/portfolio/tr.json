@@ -558,7 +558,7 @@
         "items": [
             {
                 "title": "Web ve Uygulama Geliştirme",
-                "description": "Modern teknolojileri kullanarak duyarlı, hızlı ve son derece etkileşimli tam yığın web ve mobil uygulamalar oluşturma.",
+                "description": "Modern teknolojileri kullanarak duyarlı, hızlı ve son derece etkileşimli tam yığın web uygulamaları oluşturma.",
                 "icon": "Code"
             },
             {
@@ -582,8 +582,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "Kullanıcı Deneyimi/UI Tasarımı",
-                "description": "Piksel açısından mükemmel arayüz tasarımlarıyla sezgisel, ilgi çekici ve erişilebilir kullanıcı deneyimleri oluşturmak.",
+                "title": "Etkileşimli UI Geliştirme",
+                "description": "Tasarımları Next.js ve Tailwind CSS kullanarak duyarlı, piksel mükemmeliyetinde ve son derece etkileşimli arayüzlere dönüştürme.",
                 "icon": "Layout"
             }
         ]

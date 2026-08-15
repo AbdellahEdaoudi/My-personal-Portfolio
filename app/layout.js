@@ -107,6 +107,13 @@ export default function RootLayout({ children }) {
                 "@context": "https://schema.org",
                 "@type": "Person",
                 "name": "Abdellah Edaoudi",
+                "givenName": "Abdellah",
+                "familyName": "Edaoudi",
+                "alternateName": [
+                  "عبد الله الدودي",
+                  "Abdellah Edaoudi Developer",
+                  "Abdellah Edaoudi Full Stack"
+                ],
                 "url": "https://abdellah-edaoudi.vercel.app",
                 "image": "https://abdellah-edaoudi.vercel.app/profile/profile.jpg",
                 "sameAs": [
@@ -116,7 +123,18 @@ export default function RootLayout({ children }) {
                   "https://instagram.com/edaoudi_abdellah/",
                   "https://www.youtube.com/@edaoudi.abdellah"
                 ],
-                "jobTitle": "Full Stack Developer",
+                "jobTitle": "Full Stack Developer & Software Engineer",
+                "knowsAbout": [
+                  "Software Engineering",
+                  "Full Stack Web Development",
+                  "MERN Stack",
+                  "React.js",
+                  "Next.js",
+                  "NestJS",
+                  "Node.js",
+                  "TypeScript",
+                  "JavaScript"
+                ],
                 "nationality": {
                   "@type": "Country",
                   "name": "Morocco"
@@ -127,7 +145,7 @@ export default function RootLayout({ children }) {
                   "addressCountry": "MA"
                 },
                 "description": "Official portfolio of Abdellah Edaoudi, a Full Stack Developer specialized in MERN stack, Next.js, Nest.js, and building secure and scalable web applications.",
-                "disambiguatingDescription": "Full Stack Developer based in Morocco. Not to be confused with the Moroccan singer Abdellah Daoudi.",
+                "disambiguatingDescription": "Abdellah Edaoudi is a Full Stack Software Engineer and Web Developer based in Morocco. He is a distinct entity from the Moroccan singer Abdellah Daoudi.",
                 "brand": {
                   "@type": "Brand",
                   "name": "Abdellah Edaoudi"

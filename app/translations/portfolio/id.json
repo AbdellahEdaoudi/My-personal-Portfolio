@@ -570,7 +570,7 @@
         "items": [
             {
                 "title": "Pengembangan Web & Aplikasi",
-                "description": "Membangun aplikasi web dan seluler full-stack yang responsif, cepat, dan sangat interaktif menggunakan teknologi modern.",
+                "description": "Membangun aplikasi web full-stack yang responsif, cepat, dan sangat interaktif menggunakan teknologi modern.",
                 "icon": "Code"
             },
             {
@@ -594,8 +594,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "Desain UX/UI",
-                "description": "Menciptakan pengalaman pengguna yang intuitif, menarik, dan mudah diakses dengan desain antarmuka piksel sempurna.",
+                "title": "Pengembangan UI Interaktif",
+                "description": "Mengubah desain menjadi antarmuka yang responsif, sempurna piksel, dan sangat interaktif menggunakan Next.js dan Tailwind CSS.",
                 "icon": "Layout"
             }
         ]

@@ -558,7 +558,7 @@
         "items": [
             {
                 "title": "网页和应用程序开发",
-                "description": "使用现代技术构建响应灵敏、快速且高度交互的全栈 Web 和移动应用程序。",
+                "description": "使用现代技术构建响应灵敏、快速且高度交互的全栈 Web 应用程序。",
                 "icon": "Code"
             },
             {
@@ -582,8 +582,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "用户体验/用户界面设计",
-                "description": "通过像素完美的界面设计打造直观、引人入胜且易于访问的用户体验。",
+                "title": "交互式UI开发",
+                "description": "使用 Next.js 和 Tailwind CSS 将设计转化为响应式、像素完美且高度交互的界面。",
                 "icon": "Layout"
             }
         ]

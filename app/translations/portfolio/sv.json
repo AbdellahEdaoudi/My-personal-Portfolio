@@ -558,7 +558,7 @@
         "items": [
             {
                 "title": "Webb- och apputveckling",
-                "description": "Skapa responsiva, snabba och mycket interaktiva fullstack-webb- och mobilapplikationer med modern teknik.",
+                "description": "Bygga responsiva, snabba och mycket interaktiva full-stack webbapplikationer med modern teknik.",
                 "icon": "Code"
             },
             {
@@ -582,8 +582,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "UX/UI-design",
-                "description": "Skapa intuitiva, engagerande och tillgängliga användarupplevelser med pixelperfekta gränssnittsdesigner.",
+                "title": "Interaktiv UI-utveckling",
+                "description": "Omvandla designs till responsiva, pixelperfekta och mycket interaktiva gränssnitt med Next.js och Tailwind CSS.",
                 "icon": "Layout"
             }
         ]
