@@ -453,7 +453,7 @@
         "items": [
             {
                 "title": "Web & App Development",
-                "description": "Building responsive, fast, and highly interactive full-stack web and mobile applications using modern technologies.",
+                "description": "Building responsive, fast, and highly interactive full-stack web applications using modern technologies.",
                 "icon": "Code"
             },
             {
@@ -477,8 +477,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "UX/UI Design",
-                "description": "Crafting intuitive, engaging, and accessible user experiences with pixel-perfect interface designs.",
+                "title": "Interactive UI Development",
+                "description": "Turning designs into responsive, pixel-perfect, and highly interactive interfaces using Next.js and Tailwind CSS.",
                 "icon": "Layout"
             }
         ]

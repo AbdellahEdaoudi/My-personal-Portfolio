@@ -558,7 +558,7 @@
         "items": [
             {
                 "title": "Web- en app-ontwikkeling",
-                "description": "Het bouwen van responsieve, snelle en zeer interactieve full-stack web- en mobiele applicaties met behulp van moderne technologieën.",
+                "description": "Het bouwen van responsieve, snelle en zeer interactieve full-stack webapplicaties met behulp van moderne technologieën.",
                 "icon": "Code"
             },
             {
@@ -582,8 +582,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "UX/UI-ontwerp",
-                "description": "Creëer intuïtieve, boeiende en toegankelijke gebruikerservaringen met pixel-perfecte interface-ontwerpen.",
+                "title": "Interactieve UI-ontwikkeling",
+                "description": "Ontwerpen omzetten in responsieve, pixelnauwkeurige en zeer interactieve interfaces met Next.js en Tailwind CSS.",
                 "icon": "Layout"
             }
         ]

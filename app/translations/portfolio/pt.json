@@ -558,7 +558,7 @@
         "items": [
             {
                 "title": "Desenvolvimento de sites e aplicativos",
-                "description": "Construindo aplicativos web e móveis full-stack responsivos, rápidos e altamente interativos usando tecnologias modernas.",
+                "description": "Construindo aplicações web full-stack responsivas, rápidas e altamente interativas usando tecnologias modernas.",
                 "icon": "Code"
             },
             {
@@ -582,8 +582,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "Design de UX/UI",
-                "description": "Crie experiências de usuário intuitivas, envolventes e acessíveis com designs de interface perfeitos.",
+                "title": "Desenvolvimento de UI Interativa",
+                "description": "Transformando designs em interfaces responsivas, perfeitas em pixels e altamente interativas com Next.js e Tailwind CSS.",
                 "icon": "Layout"
             }
         ]

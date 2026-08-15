@@ -569,8 +569,8 @@
         "subtitle": "Ce que je propose",
         "items": [
             {
-                "title": "Développement Web & Mobile",
-                "description": "Création d'applications web et mobiles full-stack réactives, rapides et interactives à l'aide des dernières technologies.",
+                "title": "Développement Web & App",
+                "description": "Construction d'applications web full-stack réactives, rapides et hautement interactives avec les technologies modernes.",
                 "icon": "Code"
             },
             {
@@ -594,8 +594,8 @@
                 "icon": "Shield"
             },
             {
-                "title": "Conception UI/UX",
-                "description": "Création d'interfaces utilisateur intuitives, attrayantes et accessibles pour offrir une expérience utilisateur exceptionnelle et soignée.",
+                "title": "Développement UI Interactif",
+                "description": "Transformation des designs en interfaces réactives, parfaites au pixel et hautement interactives avec Next.js et Tailwind CSS.",
                 "icon": "Layout"
             }
         ]
