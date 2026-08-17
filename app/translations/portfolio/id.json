@@ -23,7 +23,7 @@
     "home": {
         "greeting": "Hai, Saya Abdellah Edaoudi",
         "role": "🔷 Full Stack Developer 🔷",
-        "description": "Saya berspesialisasi dalam membangun aplikasi web full-stack yang aman menggunakan MERN stack, serta framework tingkat lanjut seperti Next.js dan NestJS. Saya fokus dalam memberikan solusi berkinerja tinggi dan terukur dengan kode yang bersih dan pengalaman pengguna luar biasa.",
+        "description": "Saya berspesialisasi dalam membangun aplikasi web full-stack yang aman dan berkinerja tinggi menggunakan React.js, Node.js, Next.js, NestJS, dan TypeScript. Saya fokus pada penyampaian solusi yang dapat diskalakan dengan kode yang bersih, mudah dipelihara, dan pengalaman pengguna yang luar biasa.",
         "portfolio": "Portofolio"
     },
     "about": {

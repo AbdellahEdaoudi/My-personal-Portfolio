@@ -23,7 +23,7 @@
     "home": {
         "greeting": "Xin chào, tôi là Abdellah Edaoudi",
         "role": "🔷 Lập trình viên Full Stack 🔷",
-        "description": "Tôi chuyên xây dựng các ứng dụng web full-stack an toàn sử dụng bộ công nghệ MERN, cũng như các framework tiên tiến như Next.js và NestJS. Tôi tập trung cung cấp các giải pháp hiệu suất cao, có khả năng mở rộng với mã nguồn sạch và trải nghiệm người dùng tuyệt vời.",
+        "description": "Tôi chuyên xây dựng các ứng dụng web full-stack an toàn và hiệu năng cao bằng cách sử dụng React.js, Node.js, Next.js, NestJS và TypeScript. Tôi tập trung vào việc cung cấp các giải pháp có thể mở rộng với mã nguồn sạch, dễ bảo trì và trải nghiệm người dùng tuyệt vời.",
         "portfolio": "Danh mục đầu tư"
     },
     "about": {
