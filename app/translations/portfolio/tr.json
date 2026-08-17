@@ -23,7 +23,7 @@
     "home": {
         "greeting": "Merhaba, Ben Abdellah Edaoudi",
         "role": "🔷 Full Stack Geliştirici 🔷",
-        "description": "MERN yığınını ve Next.js ile NestJS gibi gelişmiş çerçeveleri kullanarak güvenli full-stack web uygulamaları oluşturma konusunda uzmanım. Temiz kod ve harika kullanıcı deneyimi ile yüksek performanslı, ölçeklenebilir çözümler sunmaya odaklanıyorum.",
+        "description": "React.js, Node.js, Next.js, NestJS ve TypeScript kullanarak güvenli ve yüksek performanslı full-stack web uygulamaları geliştirme konusunda uzmanım. Temiz, bakımı kolay kodlar ve harika bir kullanıcı deneyimi ile ölçeklenebilir çözümler sunmaya odaklanıyorum.",
         "portfolio": "Portfolyo"
     },
     "about": {

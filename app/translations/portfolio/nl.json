@@ -23,7 +23,7 @@
     "home": {
         "greeting": "Hallo, ik ben Abdellah Edaoudi",
         "role": "🔷 Full Stack Ontwikkelaar 🔷",
-        "description": "Ik ben gespecialiseerd in het bouwen van veilige full-stack webapplicaties met de MERN-stack, evenals geavanceerde frameworks zoals Next.js en NestJS. Ik richt me op het leveren van hoogwaardige, schaalbare oplossingen met schone code en een geweldige gebruikerservaring.",
+        "description": "Ik ben gespecialiseerd in het bouwen van veilige en krachtige full-stack webapplicaties met behulp van React.js, Node.js, Next.js, NestJS en TypeScript. Ik focus me op het leveren van schaalbare oplossingen met schone, onderhoudbare code en een geweldige gebruikerservaring.",
         "portfolio": "Portfolio"
     },
     "about": {
