@@ -616,7 +616,7 @@
         "items": [
             {
                 "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
-                "degree": "Diplôme en Développement Digital - Option Web Full Stack",
+                "degree": "Diplôme de Technicien Spécialisé (DTS), Développement Digital – Option Web Full Stack",
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "Laayoune, Maroc",
@@ -624,7 +624,7 @@
             },
             {
                 "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
-                "degree": "Baccalauréat en Sciences Physiques",
+                "degree": "Baccalauréat, Sciences Physiques",
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "Laayoune, Maroc",
@@ -663,34 +663,13 @@
         "backToTop": "Retour en haut",
         "siteMapLabel": "Plan du site",
         "links": [
-            {
-                "name": "À propos",
-                "path": "/About"
-            },
-            {
-                "name": "Services",
-                "path": "/Services"
-            },
-            {
-                "name": "Compétences",
-                "path": "/Skills"
-            },
-            {
-                "name": "Projets",
-                "path": "/Projects"
-            },
-            {
-                "name": "Expérience",
-                "path": "/Experience"
-            },
-            {
-                "name": "Éducation",
-                "path": "/Education"
-            },
-            {
-                "name": "Contact",
-                "path": "/Contact"
-            }
+            {"name": "À propos", "path": "/about"},
+            {"name": "Services", "path": "/services"},
+            {"name": "Compétences", "path": "/skills"},
+            {"name": "Projets", "path": "/projects"},
+            {"name": "Expérience", "path": "/experience"},
+            {"name": "Éducation", "path": "/education"},
+            {"name": "Contact", "path": "/contact"}
         ],
         "connectLabel": "Contactez-moi",
         "emailLabel": "E-mail",

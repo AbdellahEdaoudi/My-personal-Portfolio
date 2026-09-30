@@ -616,7 +616,7 @@
         "items": [
             {
                 "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
-                "degree": "Diploma in Digitale Ontwikkeling - Full Stack Web Optie",
+                "degree": "Gespecialiseerd Technicus Diploma (DTS), Digitale Ontwikkeling – Web Full Stack Optie",
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "Laayoune, Marokko",
@@ -624,7 +624,7 @@
             },
             {
                 "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
-                "degree": "Middelbareschooldiploma in Fysische Wetenschappen",
+                "degree": "Baccalaureaat, Fysische Wetenschappen",
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "Laayoune, Marokko",
@@ -663,34 +663,13 @@
         "backToTop": "Terug naar boven",
         "siteMapLabel": "Sitemap",
         "links": [
-            {
-                "name": "Over mij",
-                "path": "/About"
-            },
-            {
-                "name": "Diensten",
-                "path": "/Services"
-            },
-            {
-                "name": "Vaardigheden",
-                "path": "/Skills"
-            },
-            {
-                "name": "Projecten",
-                "path": "/Projects"
-            },
-            {
-                "name": "Ervaring",
-                "path": "/Experience"
-            },
-            {
-                "name": "Opleiding",
-                "path": "/Education"
-            },
-            {
-                "name": "Contact",
-                "path": "/Contact"
-            }
+            {"name": "Over mij", "path": "/about"},
+            {"name": "Diensten", "path": "/services"},
+            {"name": "Vaardigheden", "path": "/skills"},
+            {"name": "Projecten", "path": "/projects"},
+            {"name": "Ervaring", "path": "/experience"},
+            {"name": "Opleiding", "path": "/education"},
+            {"name": "Contact", "path": "/contact"}
         ],
         "connectLabel": "Verbinden",
         "emailLabel": "E-mail",

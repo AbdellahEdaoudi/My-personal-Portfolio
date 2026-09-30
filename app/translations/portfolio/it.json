@@ -616,7 +616,7 @@
         "items": [
             {
                 "institution": "<a href='https://cmc.ac.ma/fr'>Cités des Métiers et des Compétences (CMC)</a>",
-                "degree": "Diploma in Sviluppo Digitale - Opzione Web Full Stack",
+                "degree": "Diploma di Tecnico Specializzato (DTS), Sviluppo Digitale – Opzione Web Full Stack",
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "Laayoune, Marocco",
@@ -624,7 +624,7 @@
             },
             {
                 "institution": "Lycée Baba Ahmed Ben Mohammed Yahdih",
-                "degree": "Diploma di Scuola Superiore in Scienze Fisiche",
+                "degree": "Maturità (Baccalaureato), Scienze Fisiche",
                 "startDate": "2021",
                 "endDate": "2022",
                 "location": "Laayoune, Marocco",
@@ -663,34 +663,13 @@
         "backToTop": "Torna su",
         "siteMapLabel": "Mappa del sito",
         "links": [
-            {
-                "name": "Chi sono",
-                "path": "/About"
-            },
-            {
-                "name": "Servizi",
-                "path": "/Services"
-            },
-            {
-                "name": "Competenze",
-                "path": "/Skills"
-            },
-            {
-                "name": "Progetti",
-                "path": "/Projects"
-            },
-            {
-                "name": "Esperienza",
-                "path": "/Experience"
-            },
-            {
-                "name": "Istruzione",
-                "path": "/Education"
-            },
-            {
-                "name": "Contatti",
-                "path": "/Contact"
-            }
+            {"name": "Chi sono", "path": "/about"},
+            {"name": "Servizi", "path": "/services"},
+            {"name": "Competenze", "path": "/skills"},
+            {"name": "Progetti", "path": "/projects"},
+            {"name": "Esperienza", "path": "/experience"},
+            {"name": "Istruzione", "path": "/education"},
+            {"name": "Contatti", "path": "/contact"}
         ],
         "connectLabel": "Connetti",
         "emailLabel": "Email",
