@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/Admin'],
+        disallow: ['/admin', '/auth'],
       },
     ],
     sitemap: 'https://abdellah-edaoudi.vercel.app/sitemap.xml',

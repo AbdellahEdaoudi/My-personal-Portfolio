@@ -4,10 +4,10 @@ const cairo = Cairo({ subsets: ["arabic"], weight: ["400", "500", "700", "900"] 
 
 export default async function Layout({ children, params }) {
     const { lang } = await params;
-    const isAr = lang === 'ar' || lang === 'fa';
+    const isRtl = lang === 'ar';
 
     return (
-        <div dir={isAr ? "rtl" : "ltr"} className={isAr ? cairo.className : ''}>
+        <div lang={lang} dir={isRtl ? "rtl" : "ltr"} className={isRtl ? cairo.className : ""}>
             {children}
         </div>
     );

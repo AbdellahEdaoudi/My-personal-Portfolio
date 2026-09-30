@@ -615,8 +615,8 @@
         "subtitle": "الخلفية الأكاديمية",
         "items": [
             {
-                "institution": "<a href='https://cmc.ac.ma/fr'>مدن المهن والكفاءات</a>",
-                "degree": "دبلوم في التطوير الرقمي (خيار Web Full Stack)",
+                "institution": "<a href='https://cmc.ac.ma/fr'>مدن المهن والكفاءات (CMC)</a>",
+                "degree": "دبلوم تقني متخصص (DTS)، التطوير الرقمي – خيار Web Full Stack",
                 "startDate": "2022",
                 "endDate": "2024",
                 "location": "العيون، المغرب",
@@ -663,34 +663,13 @@
         "backToTop": "الرجوع للأعلى",
         "siteMapLabel": "خريطة الموقع",
         "links": [
-            {
-                "name": "نبذة عني",
-                "path": "/About"
-            },
-            {
-                "name": "الخدمات",
-                "path": "/Services"
-            },
-            {
-                "name": "المهارات",
-                "path": "/Skills"
-            },
-            {
-                "name": "المشاريع",
-                "path": "/Projects"
-            },
-            {
-                "name": "الخبرة",
-                "path": "/Experience"
-            },
-            {
-                "name": "التعليم",
-                "path": "/Education"
-            },
-            {
-                "name": "تواصل معي",
-                "path": "/Contact"
-            }
+            {"name": "نبذة عني", "path": "/about"},
+            {"name": "الخدمات", "path": "/services"},
+            {"name": "المهارات", "path": "/skills"},
+            {"name": "المشاريع", "path": "/projects"},
+            {"name": "الخبرة", "path": "/experience"},
+            {"name": "التعليم", "path": "/education"},
+            {"name": "تواصل معي", "path": "/contact"}
         ],
         "connectLabel": "تواصل معي",
         "emailLabel": "البريد الإلكتروني",

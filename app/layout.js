@@ -1,10 +1,10 @@
 import { Analytics } from "@vercel/analytics/react"
 import './globals.css'
 import { Prompt } from 'next/font/google'
-import ScrollToTop from './Components/ScrollToTop'
-import { ToastProvider } from './Components/Toast'
-import CinematicBackground from './Components/CinematicBackground'
-import { ThemeProvider } from './Components/ThemeProvider'
+import ScrollToTop from './components/ScrollToTop'
+import { ToastProvider } from './components/Toast'
+import CinematicBackground from './components/CinematicBackground'
+import { ThemeProvider } from './components/ThemeProvider'
 
 
 

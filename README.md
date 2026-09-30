@@ -12,7 +12,7 @@ This project is built using cutting-edge web technologies to ensure performance 
 -   **Styling**: [Tailwind CSS](https://tailwindcss.com/) - For rapid, utility-first styling.
 -   **Animations**: [Framer Motion](https://www.framer.com/motion/) - For complex animations and page transitions.
 -   **State Management**: React Hooks & Context.
--   **Localization**: Custom-built Internationalization (i18n) handling **18+ languages** (English, Arabic, French, Spanish, etc.).
+-   **Localization**: Custom-built Internationalization (i18n) handling **19 languages** (including English, Arabic, French, and Spanish).
 -   **Icons**: React Icons & Custom SVGs.
 
 ## ✨ Key Features
@@ -35,12 +35,12 @@ Ensure you have **Node.js** (v18.x or later) installed on your system.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/AbdellahEdaoudi/My-personal-Portfolio.git
+    git clone https://github.com/AbdellahEdaoudi/ed-portfolio.git
     ```
 
-2.  **Navigate to the frontend directory:**
+2.  **Navigate to the project directory:**
     ```bash
-    cd front
+    cd ed-portfolio
     ```
 
 3.  **Install dependencies:**
@@ -57,21 +57,33 @@ Ensure you have **Node.js** (v18.x or later) installed on your system.
 
 5.  Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
+6.  **Create a production build:**
+    ```bash
+    npm run build
+    ```
+
+7.  **Run the linter:**
+    ```bash
+    npm run lint
+    ```
+
 ## 📂 Project Structure
 
 A quick look at the top-level directory structure:
 
 ```
-front/
+./
 ├── app/
+│   ├── [lang]/         # Localized routes for all supported languages
 │   ├── Components/     # Reusable UI components (Header, Hero, Projects, etc.)
 │   ├── translations/   # JSON translation files for i18n
-│   ├── globals.css     # Global styles & Tailwind directives
-│   ├── layout.js       # Main Root Layout
-│   └── page.js         # Entry page
+│   ├── globals.css     # Global styles and Tailwind directives
+│   ├── layout.js       # Shared application layout
+│   └── page.js         # Redirects to the default language
 ├── public/             # Static images, icons, and resumes
 ├── tailwind.config.js  # Tailwind CSS configuration
-└── next.config.mjs     # Next.js configuration
+├── next.config.js      # Next.js configuration
+└── package.json        # Scripts and dependencies
 ```
 
 ## 📬 Contact
