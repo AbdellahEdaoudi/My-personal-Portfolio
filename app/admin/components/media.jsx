@@ -27,7 +27,6 @@ export default function Media({ isForbidden, setIsForbidden }) {
             if (response.data.success) {
                 setImages(response.data.images || []);
             }
-            if (silent) toast.success("Refreshed");
         } catch (error) {
             console.error("Fetch media error details:", error);
             if (error.response) {

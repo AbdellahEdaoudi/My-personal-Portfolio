@@ -70,7 +70,6 @@ export default function Messages({ isForbidden, setIsForbidden }) {
             );
             const contactsData = response.data.contacts || response.data;
             setContacts(Array.isArray(contactsData) ? contactsData.reverse() : []);
-            if (silent) toast.success("Token refreshed");
         } catch (error) {
             handleApiError(error, () => fetchContacts(true), "Failed to fetch messages.");
         } finally {
