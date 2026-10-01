@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/login`, {
+      await axios.post("/api/auth/login", {
         email,
         password,
       }, { withCredentials: true });

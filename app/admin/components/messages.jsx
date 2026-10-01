@@ -33,7 +33,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                 if (errorMsg === "Access token expired") {
                     try {
                         await axios.post(
-                            `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`,
+                            "/api/auth/refresh",
                             {},
                             { withCredentials: true }
                         );
@@ -65,7 +65,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
         if (!silent) setIsLoading(true);
         try {
             const response = await axios.get(
-                `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`,
+                "/api/contact",
                 { withCredentials: true }
             );
             const contactsData = response.data.contacts || response.data;
@@ -95,12 +95,12 @@ export default function Messages({ isForbidden, setIsForbidden }) {
         setDeleteModal(prev => ({ ...prev, isDeleting: true }));
         try {
             if (deleteModal.type === "all") {
-                await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`, withCredentials: true });
+                await axios({ method: "delete", url: "/api/contact", withCredentials: true });
                 setContacts([]);
                 setSelectedId(null);
                 toast.success("All messages deleted successfully.");
             } else if (deleteModal.type === "single" && deleteModal.id) {
-                await axios({ method: "delete", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${deleteModal.id}`, withCredentials: true });
+                await axios({ method: "delete", url: `/api/contact/${deleteModal.id}`, withCredentials: true });
                 setContacts((prev) => prev.filter((contact) => contact._id !== deleteModal.id));
                 if (selectedId === deleteModal.id) setSelectedId(null);
                 toast.success("Message deleted successfully.");
@@ -119,7 +119,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                 email: "[EMAIL_ADDRESS]",
                 message: "Hi, I came across your portfolio and I'm impressed with your work. I'm looking for a developer to work on a project, and I think you'd be a great fit.",
             };
-            const res = await axios({ method: "post", url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`, data: newMsg, withCredentials: true });
+            const res = await axios({ method: "post", url: "/api/contact", data: newMsg, withCredentials: true });
             setContacts((prev) => [...prev, res.data]);
             toast.success("Added successfully.");
         } catch (error) {
@@ -160,7 +160,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
         if (!contact.isRead) {
             try {
                 await axios.patch(
-                    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${contact._id}/read`,
+                    `/api/contact/${contact._id}/read`,
                     { isRead: true },
                     { withCredentials: true }
                 );
@@ -178,7 +178,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
         const nextStatus = targetStatus !== undefined ? targetStatus : !contact.isRead;
         try {
             await axios.patch(
-                `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${contact._id}/read`,
+                `/api/contact/${contact._id}/read`,
                 { isRead: nextStatus },
                 { withCredentials: true }
             );
@@ -196,7 +196,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
         const nextStarred = !contact.isStarred;
         try {
             await axios.patch(
-                `${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact/${contact._id}/star`,
+                `/api/contact/${contact._id}/star`,
                 { isStarred: nextStarred },
                 { withCredentials: true }
             );
