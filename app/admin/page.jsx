@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 import { useToast } from "../components/Toast";
 import Messages from "./components/messages";
 import Media from "./components/media";
-import { LogOut, LayoutDashboard, Moon, Sun, MessageSquare, ImageIcon } from "../components/Icons";
+import EmailSender from "./components/email";
+import { LogOut, LayoutDashboard, Moon, Sun, MessageSquare, ImageIcon, Mail } from "../components/Icons";
 
 function Admin() {
   const router = useRouter();
@@ -120,6 +121,13 @@ function Admin() {
                     <ImageIcon className="w-4 h-4" />
                     Media
                 </button>
+                <button 
+                    onClick={() => setActiveTab("email")}
+                    className={`flex items-center gap-2 px-4 py-1.5 rounded-lg text-sm font-semibold transition-all ${activeTab === 'email' ? 'bg-white dark:bg-[#1E222D] text-indigo-600 dark:text-[#E8A33D] shadow-sm border border-slate-200/50 dark:border-white/5' : 'text-slate-500 dark:text-[#8B93A7] hover:text-slate-700 dark:hover:text-[#F5F3EE]'}`}
+                >
+                    <Mail className="w-4 h-4" />
+                    Send Email
+                </button>
             </div>
 
             {/* Right Side Actions */}
@@ -176,6 +184,13 @@ function Admin() {
                   <ImageIcon className="w-3.5 h-3.5" />
                   Media
               </button>
+              <button 
+                  onClick={() => setActiveTab("email")}
+                  className={`flex-1 flex justify-center items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold transition-all ${activeTab === 'email' ? 'bg-indigo-50 dark:bg-[#1E222D] text-indigo-600 dark:text-[#E8A33D] shadow-sm border border-indigo-100 dark:border-white/10' : 'bg-slate-50 dark:bg-[#14171F] text-slate-500 dark:text-[#8B93A7] border border-slate-200 dark:border-white/5'}`}
+              >
+                  <Mail className="w-3.5 h-3.5" />
+                  Send Email
+              </button>
           </div>
         </div>
       </header>
@@ -187,6 +202,9 @@ function Admin() {
         </div>
         <div className={`absolute inset-0 px-4 sm:px-6 lg:px-8 py-6 flex-col min-h-0 w-full max-w-6xl mx-auto ${activeTab === 'media' ? 'flex z-10' : 'hidden -z-10'}`}>
             <Media isForbidden={isForbidden} setIsForbidden={setIsForbidden} />
+        </div>
+        <div className={`absolute inset-0 px-4 sm:px-6 lg:px-8 py-6 flex-col min-h-0 w-full max-w-6xl mx-auto ${activeTab === 'email' ? 'flex z-10' : 'hidden -z-10'}`}>
+            <EmailSender isForbidden={isForbidden} setIsForbidden={setIsForbidden} />
         </div>
       </main>
       </div>
