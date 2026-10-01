@@ -21,7 +21,7 @@ export default function Media({ isForbidden, setIsForbidden }) {
         if (!silent) setIsLoading(true);
         try {
             const response = await axios.get(
-                `${process.env.NEXT_PUBLIC_SERVER_URL}/api/media`,
+                "/api/media",
                 { withCredentials: true }
             );
             if (response.data.success) {
@@ -36,7 +36,7 @@ export default function Media({ isForbidden, setIsForbidden }) {
                     if (errorMsg === "Access token expired") {
                         try {
                             await axios.post(
-                                `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`,
+                                "/api/auth/refresh",
                                 {},
                                 { withCredentials: true }
                             );
@@ -82,7 +82,7 @@ export default function Media({ isForbidden, setIsForbidden }) {
         try {
             await axios({
                 method: "delete",
-                url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/media`,
+                url: "/api/media",
                 data: { public_id: deleteModal.public_id },
                 withCredentials: true
             });
@@ -96,13 +96,13 @@ export default function Media({ isForbidden, setIsForbidden }) {
                     if (errorMsg === "Access token expired") {
                         try {
                             await axios.post(
-                                `${process.env.NEXT_PUBLIC_SERVER_URL}/api/auth/refresh`,
+                                "/api/auth/refresh",
                                 {},
                                 { withCredentials: true }
                             );
                             await axios({
                                 method: "delete",
-                                url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/media`,
+                                url: "/api/media",
                                 data: { public_id: deleteModal.public_id },
                                 withCredentials: true
                             });
