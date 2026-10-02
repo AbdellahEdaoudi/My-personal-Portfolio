@@ -1,7 +1,9 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 import { useToast } from "../../components/Toast";
+import { handleApiError } from "../utils/apiErrorHandler";
 import {
   Send,
   Mail,
@@ -53,8 +55,19 @@ const STATUS = {
 
 export default function EmailSender({ isForbidden, setIsForbidden }) {
   const toast = useToast();
+  const router = useRouter();
   const [isBulkMode, setIsBulkMode] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  const handleError = (error, retryCallback, defaultErrorMsg) =>
+    handleApiError({
+      error,
+      retryCallback,
+      defaultErrorMsg,
+      toast,
+      router,
+      setIsForbidden,
+    });
 
   // Form Data
   const [formData, setFormData] = useState({
@@ -131,7 +144,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
 
   // Single email sender
   const handleSingleSend = async (e) => {
-    e.preventDefault();
+    if (e && e.preventDefault) e.preventDefault();
     if (!formData.to || !formData.subject || !formData.message) {
       toast.error("Please fill in recipient, subject, and message.");
       return;
@@ -152,11 +165,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
       toast.success(res.data?.message || "Email sent successfully!");
       setFormData((prev) => ({ ...prev, to: "" }));
     } catch (err) {
-      console.error("Single email send error:", err);
-      if (err.response?.status === 401 || err.response?.status === 403) {
-        setIsForbidden?.(true);
-      }
-      toast.error(err.response?.data?.message || "Failed to send email");
+      await handleError(err, () => handleSingleSend(e), "Failed to send email");
     } finally {
       setLoading(false);
     }
@@ -262,8 +271,8 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
       let success = false;
       let errorMsg = null;
 
-      try {
-        await axios.post(
+      const sendSingleBulkItem = async () => {
+        return await axios.post(
           "/api/email/send",
           {
             to: initialJobs[i].to,
@@ -272,11 +281,13 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
           },
           { withCredentials: true }
         );
+      };
+
+      try {
+        await sendSingleBulkItem();
         success = true;
       } catch (err) {
-        if (err.response?.status === 401 || err.response?.status === 403) {
-          setIsForbidden?.(true);
-        }
+        await handleError(err, sendSingleBulkItem, "Failed to send email");
         errorMsg = err.response?.data?.message || err.message || "Failed";
       }
 
