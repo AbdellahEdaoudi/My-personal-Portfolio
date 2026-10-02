@@ -47,7 +47,7 @@
         "supportDetail": "Online 24/7",
         "description": "Tenho ampla experiência em transformar ideias em aplicativos inovadores, seguros e eficazes. Meu foco combina melhorar a experiência do usuário e criar interfaces atraentes com a garantia de segurança robusta e alto desempenho.",
         "downloadCv": "Currículo",
-        "Cv": "/cv/cv-abdellah-edaoudi-en.pdf",
+        "Cv": "/cv/cv-abdellah-edaoudi-pt.pdf",
         "downloadCoverLetter": "Carta de apresentação",
         "coverLetter": "/cl/Cover-Letter-Abdellah-Edaoudi-EN.pdf"
     },
@@ -518,8 +518,8 @@
         "subtitle": "Minha experiência profissional",
         "items": [
             {
-                "title": "Fundador e Desenvolvedor Full Stack (MERN)",
-                "company": "DGT PORTFOLIO",
+                "title": "Fundador e Desenvolvedor Full Stack",
+                "company": "DGT Portfolio",
                 "location": "Remoto",
                 "startDate": "Out 2025",
                 "endDate": "Presente",
@@ -528,10 +528,10 @@
                 "workType": "Remoto",
                 "achievementsLabel": "Principais responsabilidades:",
                 "responsibilities": [
-                    "Desenvolvimento de uma plataforma SaaS Next.js para portfólios profissionais com pagamentos PayPal integrados.",
-                    "Projetista de APIs Node.js seguras usando JWT/NextAuth, garantindo proteção de datos robusta e escalabilidade.",
-                    "Otimização de Performance e SEO através de Server-Side Rendering (SSR), entregando uma UX premium de alta velocidade.",
-                    "Gerenciamento de Implantação Full-Stack na Vercel com Git/GitHub para integração e entrega contínuas."
+                    "Construção e manutenção de uma plataforma SaaS Next.js para criação de portfólios profissionais, com integração de pagamentos PayPal e suporte a domínios personalizados.",
+                    "Desenvolvimento de APIs RESTful seguras com Node.js e Express.js, com autenticação JWT/NextAuth.js e Controle de Acesso Baseado em Funções (RBAC).",
+                    "Implementação de otimizações de desempenho e SEO usando Server-Side Rendering (SSR) e práticas modernas de desenvolvimento web.",
+                    "Gestão do deployment da aplicação na Vercel e workflows CI/CD com Git e GitHub."
                 ]
             },
             {
@@ -559,15 +559,13 @@
                 "duration": "10 meses",
                 "type": "Estágio",
                 "workType": "Presencial",
-                "achievementsLabel": "Desenvolvi habilidades de desenvolvimento web full-stack através de um estágio profissional, aplicando conceitos aprendidos em:",
+                "achievementsLabel": "Principais responsabilidades:",
                 "responsibilities": [
-                    "Preparação e planejamento de projetos web.",
-                    "Metodologia Ágil e práticas de gestão de projetos.",
-                    "Gestão de banco de dados e manipulação de dados.",
-                    "Desenvolvimento front-end para interfaces de usuário interativas e responsivas.",
-                    "Desenvolvimento back-end e lógica de aplicação no lado do servidor.",
-                    "Conceitos de desenvolvimento e implantação de aplicações nativas da nuvem.",
-                    "Desenvolvimento de aplicações web de ponta a ponta através de um projeto final de síntese."
+                    "Desenvolvimento de aplicações web responsivas e interativas com React.js e JavaScript.",
+                    "Construção de serviços back-end e APIs RESTful com Node.js e Express.js, com experiência em Laravel/PHP.",
+                    "Design e gestão de bases de dados com MongoDB e MySQL.",
+                    "Aplicação de metodologias Ágil/Scrum ao longo do planeamento, desenvolvimento, testes e entrega de projetos.",
+                    "Utilização de Docker, Git/GitHub e SonarQube para desenvolvimento, controlo de versões e análise de qualidade de código."
                 ]
             },
             {
@@ -581,11 +579,9 @@
                 "workType": "Híbrido",
                 "achievementsLabel": "Principais tarefas:",
                 "responsibilities": [
-                    "Concepção e desenvolvimento de uma aplicação de gestão de tarefas que permite aos utilizadores adicionar, editar e eliminar tarefas.",
-                    "Implementação de autenticação e autorização utilizando JWT para garantir a segurança da aplicação.",
-                    "Teste de endpoints de API usando Postman para garantir a funcionalidade correta.",
-                    "Melhoria da experiência do utilizador através da conceção de uma interface simples e amigável.",
-                    "Implantação da aplicação na Vercel e gestão da base de código utilizando Git/GitHub."
+                    "Design e desenvolvimento de uma aplicação full-stack de gestão de tarefas com autenticação baseada em JWT.",
+                    "Desenvolvimento de endpoints da API RESTful e testes com Postman.",
+                    "Deployment da aplicação na Vercel."
                 ]
             },
             {
@@ -597,15 +593,11 @@
                 "duration": "8 meses",
                 "type": "Tempo integral",
                 "workType": "Presencial",
-                "achievementsLabel": "Desenvolvi habilidades fundamentais em desenvolvimento digital através de treinamento prático, cobrindo:",
+                "achievementsLabel": "Principais responsabilidades:",
                 "responsibilities": [
-                    "Fundamentos algorítmici e técnicas de resolução de problemas.",
-                    "Conceitos de Programação Orientada a Objetos (POO).",
-                    "Criação de sites estáticos e dinâmicos.",
-                    "Programação JavaScript e interatividade web.",
-                    "Manipulação de banco de dados e gestão de dados.",
-                    "Fundamentos de segurança de sistemas de informação.",
-                    "Compreensão de processos de desenvolvimento digital e práticas profissionais."
+                    "Aplicação de conceitos de programação e algoritmos através de projetos práticos.",
+                    "Desenvolvimento de websites estáticos e dinâmicos com HTML, CSS, JavaScript e PHP.",
+                    "Trabalho com bases de dados SQL e aplicação de práticas básicas de segurança de sistemas de informação."
                 ]
             }
         ]

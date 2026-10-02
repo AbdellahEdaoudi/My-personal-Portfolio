@@ -518,8 +518,8 @@
         "subtitle": "Mi experiencia profesional",
         "items": [
             {
-                "title": "Fundador y Desarrollador Full Stack (MERN)",
-                "company": "DGT PORTFOLIO",
+                "title": "Fundador y Desarrollador Full Stack",
+                "company": "DGT Portfolio",
                 "location": "Remoto",
                 "startDate": "Oct 2025",
                 "endDate": "Presente",
@@ -528,10 +528,10 @@
                 "workType": "Remoto",
                 "achievementsLabel": "Responsabilidades principales:",
                 "responsibilities": [
-                    "Desarrollo de una plataforma SaaS Next.js para portafolios profesionales con pagos PayPal integrados.",
-                    "Diseño de APIs Node.js seguras utilizando JWT/NextAuth, garantizando una protección de datos robusta y escalabilidad.",
-                    "Optimización de rendimiento y SEO a través de Server-Side Rendering (SSR), ofreciendo una UX premium de alta velocidad.",
-                    "Gestión de despliegue Full-Stack en Vercel con Git/GitHub para integración y entrega continuas."
+                    "Construcción y mantenimiento de una plataforma SaaS con Next.js para crear portfolios profesionales, con integración de pagos PayPal y soporte de dominio personalizado.",
+                    "Desarrollo de APIs RESTful seguras con Node.js y Express.js, con autenticación JWT/NextAuth.js y Control de Acceso Basado en Roles (RBAC).",
+                    "Implementación de optimizaciones de rendimiento y SEO mediante Server-Side Rendering (SSR) y prácticas modernas de desarrollo web.",
+                    "Gestión del despliegue de la aplicación en Vercel y flujos de trabajo CI/CD con Git y GitHub."
                 ]
             },
             {
@@ -559,15 +559,13 @@
                 "duration": "10 meses",
                 "type": "Pasantía",
                 "workType": "Presencial",
-                "achievementsLabel": "Desarrolló habilidades de desarrollo web full-stack a través de una pasantía profesional, aplicando conceptos aprendidos en:",
+                "achievementsLabel": "Responsabilidades principales:",
                 "responsibilities": [
-                    "Preparación y planificación de proyectos web.",
-                    "Metodología ágil y prácticas de gestión de proyectos.",
-                    "Gestión de bases de datos y manejo de datos.",
-                    "Desarrollo front-end para interfaces de usuario interactivas y receptivas.",
-                    "Desarrollo back-end y lógica de aplicaciones del lado del servidor.",
-                    "Conceptos de desarrollo y despliegue de aplicaciones nativas de la nube.",
-                    "Desarrollo de aplicaciones web de extremo a extremo a través de un proyecto de síntesis final."
+                    "Desarrollo de aplicaciones web responsivas e interactivas con React.js y JavaScript.",
+                    "Construcción de servicios back-end y APIs RESTful con Node.js y Express.js, con experiencia en Laravel/PHP.",
+                    "Diseño y gestión de bases de datos con MongoDB y MySQL.",
+                    "Aplicación de metodologías Agile/Scrum en planificación, desarrollo, pruebas y entrega de proyectos.",
+                    "Uso de Docker, Git/GitHub y SonarQube para desarrollo, control de versiones y análisis de calidad de código."
                 ]
             },
             {
@@ -581,11 +579,9 @@
                 "workType": "Híbrido",
                 "achievementsLabel": "Tareas principales:",
                 "responsibilities": [
-                    "Diseño y desarrollo de una aplicación de gestión de tareas que permite a los usuarios agregar, editar y eliminar tareas.",
-                    "Implementación de autenticación y autorización mediante JWT para garantizar la seguridad de la aplicación.",
-                    "Prueba de endpoints de API con Postman para asegurar el funcionamiento correcto.",
-                    "Mejora de la experiencia del usuario diseñando una interfaz sencilla y amigable.",
-                    "Despliegue de la aplicación en Vercel y gestión de la base de código mediante Git/GitHub."
+                    "Diseño y desarrollo de una aplicación full-stack de gestión de tareas con autenticación basada en JWT.",
+                    "Desarrollo de endpoints de la API RESTful y pruebas con Postman.",
+                    "Despliegue de la aplicación en Vercel."
                 ]
             },
             {
@@ -597,15 +593,11 @@
                 "duration": "8 meses",
                 "type": "Tiempo completo",
                 "workType": "Presencial",
-                "achievementsLabel": "Desarrolló habilidades fundamentales en desarrollo digital a través de capacitación práctica, cubriendo:",
+                "achievementsLabel": "Responsabilidades principales:",
                 "responsibilities": [
-                    "Fundamentos algorítmicos y técnicas de resolución de problemas.",
-                    "Conceptos de Programación Orientada a Objetos (POO).",
-                    "Creación de sitios web estáticos y dinámicos.",
-                    "Programación JavaScript e interactividad web.",
-                    "Manipulación de bases de datos y gestión de datos.",
-                    "Fundamentos de seguridad de sistemas de información.",
-                    "Comprensión de los procesos de desarrollo digital y prácticas profesionales."
+                    "Aplicación de conceptos de programación y algoritmos en proyectos prácticos.",
+                    "Desarrollo de sitios web estáticos y dinámicos con HTML, CSS, JavaScript y PHP.",
+                    "Trabajo con bases de datos SQL y aplicación de prácticas básicas de seguridad en sistemas de información."
                 ]
             }
         ]

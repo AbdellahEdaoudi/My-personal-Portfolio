@@ -47,7 +47,7 @@
         "supportDetail": "24/7 Online",
         "description": "Ik heb uitgebreide ervaring in het omzetten van ideeën in innovatieve, veilige en effectieve applicaties. Mijn focus combineert het verbeteren van de gebruikerservaring en het creëren van aantrekkelijke interfaces met het waarborgen van robuuste beveiliging en hoge prestaties.",
         "downloadCv": "CV",
-        "Cv": "/cv/cv-abdellah-edaoudi-en.pdf",
+        "Cv": "/cv/cv-abdellah-edaoudi-nl.pdf",
         "downloadCoverLetter": "Sollicitatiebrief",
         "coverLetter": "/cl/Cover-Letter-Abdellah-Edaoudi-EN.pdf"
     },
@@ -518,8 +518,8 @@
         "subtitle": "Mijn professionele ervaring",
         "items": [
             {
-                "title": "Oprichter & Full Stack Developer (MERN)",
-                "company": "DGT PORTFOLIO",
+                "title": "Oprichter & Full Stack Developer",
+                "company": "DGT Portfolio",
                 "location": "Op afstand",
                 "startDate": "okt 2025",
                 "endDate": "Heden",
@@ -528,10 +528,10 @@
                 "workType": "Op afstand",
                 "achievementsLabel": "Belangrijkste verantwoordelijkheden:",
                 "responsibilities": [
-                    "Ontwikkelde een Next.js SaaS-platform voor professionele portfolio's met geïntegreerde PayPal-betalingen.",
-                    "Ontworpen veilige Node.js API's met JWT/NextAuth, wat zorgt voor robuuste gegevensbescherming en schaalbaarheid.",
-                    "Prestaties & SEO geoptimaliseerd via Server-Side Rendering (SSR), wat zorgt voor een snelle, premium UX.",
-                    "Beheerde Full-Stack Deployment op Vercel met Git/GitHub voor continue integratie en levering."
+                    "Ontwikkeling en onderhoud van een Next.js SaaS-platform voor het creëren van professionele portfolio's, met PayPal-betalingsintegratie en ondersteuning voor aangepaste domeinen.",
+                    "Ontwikkeling van veilige RESTful API's met Node.js en Express.js, met JWT/NextAuth.js-authenticatie en op rollen gebaseerde toegangscontrole (RBAC).",
+                    "Implementatie van performance- en SEO-optimalisaties via Server-Side Rendering (SSR) en moderne webontwikkelingspraktijken.",
+                    "Beheer van applicatie-deployment op Vercel en CI/CD-workflows met Git en GitHub."
                 ]
             },
             {
@@ -559,15 +559,13 @@
                 "duration": "10 mnd",
                 "type": "Stage",
                 "workType": "Op locatie",
-                "achievementsLabel": "Ontwikkelde full-stack webontwikkelingsvaardigheden via een professionele stage en paste concepten toe die waren geleerd in:",
+                "achievementsLabel": "Belangrijkste verantwoordelijkheden:",
                 "responsibilities": [
-                    "Voorbereiding en planning van webprojecten.",
-                    "Agile methodologie en projectmanagementpraktijken.",
-                    "Databasebeheer en gegevensverwerking.",
-                    "Front-end ontwikkeling voor interactieve en responsieve gebruikersinterfaces.",
-                    "Back-end ontwikkeling en server-side applicatielogica.",
-                    "Cloud-native applicatie-ontwikkeling en implementatieconcepten.",
-                    "End-to-end ontwikkeling van webapplicaties via een afrondend syntheseproject."
+                    "Ontwikkeling van responsieve en interactieve webapplicaties met React.js en JavaScript.",
+                    "Bouw van back-end services en RESTful API's met Node.js en Express.js, met ervaring in Laravel/PHP.",
+                    "Ontwerp en beheer van databases met MongoDB en MySQL.",
+                    "Toepassing van Agile/Scrum-methoden in projectplanning, -ontwikkeling, -testen en -oplevering.",
+                    "Gebruik van Docker, Git/GitHub en SonarQube voor ontwikkeling, versiebeheer en codekwaliteitsanalyse."
                 ]
             },
             {
@@ -581,11 +579,9 @@
                 "workType": "Op locatie",
                 "achievementsLabel": "Belangrijkste taken:",
                 "responsibilities": [
-                    "Een taakbeheerapplicatie ontworpen en ontwikkeld waarmee gebruikers taken kunnen toevoegen, bewerken en verwijderen.",
-                    "Authenticatie en autorisatie geïmplementeerd met JWT om de veiligheid van de applicatie te waarborgen.",
-                    "API-eindpunten getest met Postman om de juiste functionaliteit te garanderen.",
-                    "Gebruikerservaring verbeterd door een eenvoudige en gebruiksvriendelijke interface te ontwerpen.",
-                    "De applicatie geïmplementeerd op Vercel en de codebase beheerd met Git/GitHub."
+                    "Ontwerp en ontwikkeling van een full-stack taakbeheertoepassing met JWT-gebaseerde authenticatie.",
+                    "Ontwikkeling van RESTful API-eindpunten en testen met Postman.",
+                    "Implementatie van de applicatie op Vercel."
                 ]
             },
             {
@@ -597,15 +593,11 @@
                 "duration": "8 mnd",
                 "type": "Fulltime",
                 "workType": "Op locatie",
-                "achievementsLabel": "Ontwikkelde fundamentele vaardigheden in digitale ontwikkeling door praktische training, gericht op:",
+                "achievementsLabel": "Belangrijkste verantwoordelijkheden:",
                 "responsibilities": [
-                    "Algoritmische fundamenten en probleemoplossende technieken.",
-                    "Concepten van Object-Georiënteerd Programmeren (OOP).",
-                    "Creatie van statische en dynamische websites.",
-                    "JavaScript-programmering en webinteractiviteit.",
-                    "Databasemanipulatie en gegevensbeheer.",
-                    "Fundamenten van de beveiliging van informatiesystemen.",
-                    "Begrip van digitale ontwikkelingsprocessen en professionele praktijken."
+                    "Toepassing van programmeer- en algoritmeconcepten in praktische projecten.",
+                    "Ontwikkeling van statische en dynamische websites met HTML, CSS, JavaScript en PHP.",
+                    "Werken met SQL-databases en toepassing van basispraktijken op het gebied van informatiesysteembeveiliging."
                 ]
             }
         ]
