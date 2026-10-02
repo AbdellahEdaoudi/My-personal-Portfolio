@@ -8,6 +8,7 @@ import {
     User, Mail, Clock, RefreshCcw, Star, MailOpen
 } from "../../components/Icons";
 import { useRouter } from "next/navigation";
+import { handleApiError } from "../utils/apiErrorHandler";
 
 export default function Messages({ isForbidden, setIsForbidden }) {
     const toast = useToast();
@@ -25,41 +26,15 @@ export default function Messages({ isForbidden, setIsForbidden }) {
     });
     const [imageModal, setImageModal] = useState(null); // stores image URL when open
 
-    const handleApiError = async (error, retryCallback, defaultErrorMsg = "Operation failed.") => {
-        console.error("API error details:", error);
-        if (error.response) {
-            const errorMsg = error.response.data?.message || defaultErrorMsg;
-            if (error.response.status === 401) {
-                if (errorMsg === "Access token expired") {
-                    try {
-                        await axios.post(
-                            "/api/auth/refresh",
-                            {},
-                            { withCredentials: true }
-                        );
-                        if (retryCallback) await retryCallback();
-                    } catch (refreshError) {
-                        const refreshMsg = refreshError.response?.data?.message || "Session expired. Please login again.";
-                        toast.error(refreshMsg);
-                        router.push("/auth/login");
-                    }
-                } else {
-                    toast.error(errorMsg);
-                    router.push("/auth/login");
-                }
-            } else if (error.response.status === 403) {
-                setIsForbidden(true);
-                toast.error(errorMsg || "Forbidden: You don't have permission.");
-                router.push("/en");
-            } else {
-                toast.error(`Error: ${errorMsg}`);
-            }
-        } else if (error.request) {
-            toast.error("Network error: No response received.");
-        } else {
-            toast.error("Error setting up request.");
-        }
-    };
+    const handleError = (error, retryCallback, defaultErrorMsg) =>
+        handleApiError({
+            error,
+            retryCallback,
+            defaultErrorMsg,
+            toast,
+            router,
+            setIsForbidden,
+        });
 
     const fetchContacts = async (silent = false) => {
         if (!silent) setIsLoading(true);
@@ -71,7 +46,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
             const contactsData = response.data.contacts || response.data;
             setContacts(Array.isArray(contactsData) ? contactsData.reverse() : []);
         } catch (error) {
-            handleApiError(error, () => fetchContacts(true), "Failed to fetch messages.");
+            handleError(error, () => fetchContacts(true), "Failed to fetch messages.");
         } finally {
             setIsLoading(false);
         }
@@ -105,7 +80,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                 toast.success("Message deleted successfully.");
             }
         } catch (error) {
-            handleApiError(error, confirmDelete, "Delete failed.");
+            handleError(error, confirmDelete, "Delete failed.");
         } finally {
             setDeleteModal(prev => ({ ...prev, isOpen: false, isDeleting: false }));
         }
@@ -167,7 +142,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
                     prev.map((c) => (c._id === contact._id ? { ...c, isRead: true } : c))
                 );
             } catch (error) {
-                handleApiError(error, () => handleSelectContact(contact), "Failed to mark message as read.");
+                handleError(error, () => handleSelectContact(contact), "Failed to mark message as read.");
             }
         }
     };
@@ -186,7 +161,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
             );
             toast.success(nextStatus ? "Marked as read" : "Marked as unread");
         } catch (error) {
-            handleApiError(error, () => handleToggleRead(null, contact, targetStatus), "Failed to update read status.");
+            handleError(error, () => handleToggleRead(null, contact, targetStatus), "Failed to update read status.");
         }
     };
 
@@ -204,7 +179,7 @@ export default function Messages({ isForbidden, setIsForbidden }) {
             );
             toast.success(nextStarred ? "Starred message" : "Unstarred message");
         } catch (error) {
-            handleApiError(error, () => handleToggleStar(null, contact), "Failed to update star status.");
+            handleError(error, () => handleToggleStar(null, contact), "Failed to update star status.");
         }
     };
 

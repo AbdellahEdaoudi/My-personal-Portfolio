@@ -4,6 +4,7 @@ import axios from "axios";
 import { useToast } from "../../components/Toast";
 import { Trash2, ImageIcon, RefreshCcw } from "../../components/Icons";
 import { useRouter } from "next/navigation";
+import { handleApiError } from "../utils/apiErrorHandler";
 
 export default function Media({ isForbidden, setIsForbidden }) {
     const toast = useToast();
@@ -17,6 +18,16 @@ export default function Media({ isForbidden, setIsForbidden }) {
         isDeleting: false
     });
 
+    const handleError = (error, retryCallback, defaultErrorMsg) =>
+        handleApiError({
+            error,
+            retryCallback,
+            defaultErrorMsg,
+            toast,
+            router,
+            setIsForbidden,
+        });
+
     const fetchImages = async (silent = false) => {
         if (!silent) setIsLoading(true);
         try {
@@ -28,39 +39,7 @@ export default function Media({ isForbidden, setIsForbidden }) {
                 setImages(response.data.images || []);
             }
         } catch (error) {
-            console.error("Fetch media error details:", error);
-            if (error.response) {
-                const errorMsg = error.response.data?.message;
-                if (error.response.status === 401) {
-                    if (errorMsg === "Access token expired") {
-                        try {
-                            await axios.post(
-                                "/api/auth/refresh",
-                                {},
-                                { withCredentials: true }
-                            );
-                            fetchImages(true);
-                        } catch (refreshError) {
-                            const refreshMsg = refreshError.response?.data?.message || "Session expired. Please login again.";
-                            toast.error(refreshMsg);
-                            router.push("/auth/login");
-                        }
-                    } else {
-                        toast.error(errorMsg || "Unauthorized");
-                        router.push("/auth/login");
-                    }
-                } else if (error.response.status === 403) {
-                    setIsForbidden(true);
-                    toast.error(errorMsg || "Forbidden: You don't have permission.");
-                    router.push("/en");
-                } else {
-                    toast.error(`Error: ${errorMsg || "Failed to fetch images."}`);
-                }
-            } else if (error.request) {
-                toast.error("Network error: No response received.");
-            } else {
-                toast.error("Error setting up request.");
-            }
+            handleError(error, () => fetchImages(true), "Failed to fetch images.");
         } finally {
             setIsLoading(false);
         }
@@ -88,40 +67,7 @@ export default function Media({ isForbidden, setIsForbidden }) {
             setImages(prev => prev.filter(img => img.public_id !== deleteModal.public_id));
             toast.success("Image deleted successfully.");
         } catch (error) {
-            console.error("Delete media error:", error);
-            if (error.response) {
-                const errorMsg = error.response.data?.message;
-                if (error.response.status === 401) {
-                    if (errorMsg === "Access token expired") {
-                        try {
-                            await axios.post(
-                                "/api/auth/refresh",
-                                {},
-                                { withCredentials: true }
-                            );
-                            await axios({
-                                method: "delete",
-                                url: "/api/media",
-                                data: { public_id: deleteModal.public_id },
-                                withCredentials: true
-                            });
-                            setImages(prev => prev.filter(img => img.public_id !== deleteModal.public_id));
-                            toast.success("Image deleted successfully.");
-                        } catch (refreshError) {
-                            const refreshMsg = refreshError.response?.data?.message || "Session expired. Please login again.";
-                            toast.error(refreshMsg);
-                            router.push("/auth/login");
-                        }
-                    } else {
-                        toast.error(errorMsg || "Unauthorized");
-                        router.push("/auth/login");
-                    }
-                } else {
-                    toast.error(`Error: ${errorMsg || "Failed to delete image."}`);
-                }
-            } else {
-                toast.error("Failed to delete image.");
-            }
+            handleError(error, confirmDelete, "Failed to delete image.");
         } finally {
             setDeleteModal(prev => ({ ...prev, isOpen: false, isDeleting: false }));
         }
