@@ -518,8 +518,8 @@
         "subtitle": "My professional experience",
         "items": [
             {
-                "title": "Founder & Full Stack Developer (MERN)",
-                "company": "DGT PORTFOLIO",
+                "title": "Founder & Full Stack Developer",
+                "company": "DGT Portfolio",
                 "location": "Remote",
                 "startDate": "Oct 2025",
                 "endDate": "Present",
@@ -528,10 +528,10 @@
                 "workType": "Remote",
                 "achievementsLabel": "Key Responsibilities:",
                 "responsibilities": [
-                    "Developed a Next.js SaaS platform for professional portfolios with integrated PayPal payments.",
-                    "Engineered secure Node.js APIs using JWT/NextAuth, ensuring robust data protection and scalability.",
-                    "Optimized Performance & SEO via Server-Side Rendering (SSR), delivering a high-speed, premium UX.",
-                    "Managed Full-Stack Deployment on Vercel with Git/GitHub for continuous integration and delivery."
+                    "Built and maintain a Next.js SaaS platform for creating professional portfolios, with PayPal payment integration and custom domain support.",
+                    "Developed secure RESTful APIs using Node.js and Express.js, with JWT/NextAuth.js authentication and Role-Based Access Control (RBAC).",
+                    "Implemented performance and SEO optimizations using Server-Side Rendering (SSR) and modern web development practices.",
+                    "Managed application deployment on Vercel and CI/CD workflows using Git and GitHub."
                 ]
             },
             {
@@ -559,15 +559,13 @@
                 "duration": "10 mos",
                 "type": "Internship",
                 "workType": "On-site",
-                "achievementsLabel": "Developed full-stack web development skills through a professional internship, applying concepts learned in:",
+                "achievementsLabel": "Key Responsibilities:",
                 "responsibilities": [
-                    "Web project preparation and planning.",
-                    "Agile methodology and project management practices.",
-                    "Database management and data handling.",
-                    "Front-end development for interactive and responsive user interfaces.",
-                    "Back-end development and server-side application logic.",
-                    "Cloud-native application development and deployment concepts.",
-                    "End-to-end web application development through a final synthesis project."
+                    "Developed responsive and interactive web applications using React.js and JavaScript.",
+                    "Built back-end services and RESTful APIs using Node.js and Express.js, with experience in Laravel/PHP.",
+                    "Designed and managed databases using MongoDB and MySQL.",
+                    "Applied Agile/Scrum methodologies throughout project planning, development, testing, and delivery.",
+                    "Used Docker, Git/GitHub, and SonarQube for development, version control, and code quality analysis."
                 ]
             },
             {
@@ -581,11 +579,9 @@
                 "workType": "On-site",
                 "achievementsLabel": "Key Tasks:",
                 "responsibilities": [
-                    "Designed and developed a task management application allowing users to add, edit, and delete tasks.",
-                    "Implemented authentication and authorization using JWT to ensure the security of the application.",
-                    "Tested API endpoints using Postman to ensure proper functionality.",
-                    "Improved user experience by designing a simple and user-friendly interface.",
-                    "Deployed the application on Vercel and managed the codebase using Git/GitHub."
+                    "Designed and developed a full-stack task management application with JWT-based authentication.",
+                    "Developed RESTful API endpoints and tested them with Postman.",
+                    "Deployed the application on Vercel."
                 ]
             },
             {
@@ -597,15 +593,11 @@
                 "duration": "8 mos",
                 "type": "Full-time",
                 "workType": "On-site",
-                "achievementsLabel": "Developed foundational skills in digital development through hands-on training, covering:",
+                "achievementsLabel": "Key Responsibilities:",
                 "responsibilities": [
-                    "Algorithmic fundamentals and problem-solving techniques.",
-                    "Object-Oriented Programming (OOP) concepts.",
-                    "Creation of static and dynamic websites.",
-                    "JavaScript programming and web interactivity.",
-                    "Database manipulation and data management.",
-                    "Information systems security fundamentals.",
-                    "Understanding of digital development processes and professional practices."
+                    "Applied programming and algorithmic concepts through practical projects.",
+                    "Developed static and dynamic websites using HTML, CSS, JavaScript, and PHP.",
+                    "Worked with SQL databases and applied basic information system security practices."
                 ]
             }
         ]

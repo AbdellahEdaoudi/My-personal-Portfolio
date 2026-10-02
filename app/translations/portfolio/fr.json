@@ -518,8 +518,8 @@
         "subtitle": "Mon expérience professionnelle",
         "items": [
             {
-                "title": "Fondateur & Développeur Full Stack (MERN)",
-                "company": "DGT PORTFOLIO",
+                "title": "Fondateur & Développeur Full Stack",
+                "company": "DGT Portfolio",
                 "location": "À distance",
                 "startDate": "Oct 2025",
                 "endDate": "Présent",
@@ -528,10 +528,10 @@
                 "workType": "À distance",
                 "achievementsLabel": "Responsabilités clés :",
                 "responsibilities": [
-                    "Développement d'une plateforme SaaS avec Next.js pour des portfolios professionnels avec intégration des paiements PayPal.",
-                    "Conception d'APIs Node.js sécurisées utilisant JWT/NextAuth, garantissant une protection robuste des données et l'évolutivité.",
-                    "Optimisation des performances et du SEO via le rendu côté serveur (SSR), offrant une expérience utilisateur rapide et premium.",
-                    "Gestion du déploiement Full-Stack sur Vercel avec Git/GitHub pour une intégration et une livraison continues."
+                    "Développement et maintenance d'une plateforme SaaS Next.js pour la création de portfolios professionnels, avec intégration des paiements PayPal et support de domaines personnalisés.",
+                    "Développement d'APIs RESTful sécurisées avec Node.js et Express.js, avec authentification JWT/NextAuth.js et Contrôle d'Accès Basé sur les Rôles (RBAC).",
+                    "Mise en œuvre des optimisations de performance et de SEO via le Server-Side Rendering (SSR) et les pratiques modernes de développement web.",
+                    "Gestion du déploiement applicatif sur Vercel et des workflows CI/CD avec Git et GitHub."
                 ]
             },
             {
@@ -559,15 +559,13 @@
                 "duration": "10 mois",
                 "type": "Stage",
                 "workType": "Sur site",
-                "achievementsLabel": "Développement de compétences en développement web full-stack à travers un stage professionnel, en appliquant les concepts appris en :",
+                "achievementsLabel": "Responsabilités clés :",
                 "responsibilities": [
-                    "Préparation et planification de projets web.",
-                    "Méthodologie Agile et pratiques de gestion de projet.",
-                    "Gestion de bases de données et manipulation des données.",
-                    "Développement front-end pour des interfaces utilisateur interactives et réactives.",
-                    "Développement back-end et logique d'application côté serveur.",
-                    "Concepts de développement et de déploiement d'applications cloud-natives.",
-                    "Développement d'applications web de bout en bout à travers un projet de synthèse final."
+                    "Développement d'applications web réactives et interactives avec React.js et JavaScript.",
+                    "Construction de services back-end et d'APIs RESTful avec Node.js et Express.js, avec une expérience en Laravel/PHP.",
+                    "Conception et gestion de bases de données avec MongoDB et MySQL.",
+                    "Application des méthodologies Agile/Scrum tout au long de la planification, du développement, des tests et de la livraison.",
+                    "Utilisation de Docker, Git/GitHub et SonarQube pour le développement, le contrôle de version et l'analyse qualité du code."
                 ]
             },
             {
@@ -581,11 +579,9 @@
                 "workType": "Sur site",
                 "achievementsLabel": "Missions principales :",
                 "responsibilities": [
-                    "Conception et développement d'une application de gestion des tâches permettant aux utilisateurs d'ajouter, modifier et supprimer des tâches.",
-                    "Mise en œuvre de l'authentification et de l'autorisation à l'aide de JWT pour garantir la sécurité de l'application.",
-                    "Test des points de terminaison de l'API à l'aide de Postman pour garantir un fonctionnement correct.",
-                    "Amélioration de l'expérience utilisateur en concevant une interface simple et intuitive.",
-                    "Déploiement de l'application sur Vercel et gestion du code via Git/GitHub."
+                    "Conception et développement d'une application full-stack de gestion des tâches avec authentification JWT.",
+                    "Développement des endpoints de l'API RESTful et tests avec Postman.",
+                    "Déploiement de l'application sur Vercel."
                 ]
             },
             {
@@ -597,15 +593,11 @@
                 "duration": "8 mois",
                 "type": "Temps plein",
                 "workType": "Sur site",
-                "achievementsLabel": "Développement de compétences fondamentales en développement digital à travers une formation pratique, couvrant :",
+                "achievementsLabel": "Responsabilités clés :",
                 "responsibilities": [
-                    "Fondamentaux de l'algorithmique et techniques de résolution de problèmes.",
-                    "Concepts de la Programmation Orientée Objet (POO).",
-                    "Création de sites web statiques et dynamiques.",
-                    "Programmation JavaScript et interactivité web.",
-                    "Manipulation de bases de données et gestion des données.",
-                    "Fondamentaux de la sécurité des systèmes d'information.",
-                    "Compréhension des processus de développement digital et des pratiques professionnelles."
+                    "Application des concepts de programmation et d'algorithmique à travers des projets pratiques.",
+                    "Développement de sites web statiques et dynamiques avec HTML, CSS, JavaScript et PHP.",
+                    "Travail avec des bases de données SQL et application des pratiques de base en sécurité des systèmes d'information."
                 ]
             }
         ]

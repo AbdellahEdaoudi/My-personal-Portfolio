@@ -47,7 +47,7 @@
         "supportDetail": "Online 24/7",
         "description": "Ho una vasta esperienza nel trasformare idee in applicazioni innovative, sicure ed efficaci. Il mio focus combina il miglioramento dell'esperienza utente e la creazione di interfacce accattivanti con la garanzia di una solida sicurezza e alte prestazioni.",
         "downloadCv": "Curriculum",
-        "Cv": "/cv/cv-abdellah-edaoudi-en.pdf",
+        "Cv": "/cv/cv-abdellah-edaoudi-it.pdf",
         "downloadCoverLetter": "Lettera di presentazione",
         "coverLetter": "/cl/Cover-Letter-Abdellah-Edaoudi-EN.pdf"
     },
@@ -518,8 +518,8 @@
         "subtitle": "La mia esperienza professionale",
         "items": [
             {
-                "title": "Fondatore e Sviluppatore Full Stack (MERN)",
-                "company": "DGT PORTFOLIO",
+                "title": "Fondatore e Sviluppatore Full Stack",
+                "company": "DGT Portfolio",
                 "location": "Remoto",
                 "startDate": "Ott 2025",
                 "endDate": "Presente",
@@ -528,10 +528,10 @@
                 "workType": "Remoto",
                 "achievementsLabel": "Responsabilità principali:",
                 "responsibilities": [
-                    "Sviluppata una piattaforma SaaS Next.js per portfolio professionali con pagamenti PayPal integrati.",
-                    "Progettate API Node.js sicure utilizzando JWT/NextAuth, garantendo una robusta protezione dei dati e scalabilità.",
-                    "Ottimizzate prestazioni e SEO tramite Server-Side Rendering (SSR), offrendo una UX premium ad alta velocità.",
-                    "Gestito il deployment Full-Stack su Vercel con Git/GitHub per l'integrazione e la consegna continua."
+                    "Sviluppo e manutenzione di una piattaforma SaaS Next.js per la creazione di portfolio professionali, con integrazione pagamenti PayPal e supporto domini personalizzati.",
+                    "Sviluppo di API RESTful sicure con Node.js ed Express.js, con autenticazione JWT/NextAuth.js e Controllo degli Accessi Basato sui Ruoli (RBAC).",
+                    "Implementazione di ottimizzazioni di performance e SEO tramite Server-Side Rendering (SSR) e pratiche moderne di sviluppo web.",
+                    "Gestione del deployment dell'applicazione su Vercel e dei workflow CI/CD con Git e GitHub."
                 ]
             },
             {
@@ -559,15 +559,13 @@
                 "duration": "10 mesi",
                 "type": "Tirocinio",
                 "workType": "In loco",
-                "achievementsLabel": "Sviluppate competenze di sviluppo web full-stack attraverso uno stage professionale, applicando concetti appresi in:",
+                "achievementsLabel": "Responsabilità principali:",
                 "responsibilities": [
-                    "Preparazione e pianificazione di progetti web.",
-                    "Metodologia Agile e pratiche di gestione dei progetti.",
-                    "Gestione dei database e manipolazione dei dati.",
-                    "Sviluppo front-end per interfacce utente interattive e reattive.",
-                    "Sviluppo back-end e logica delle applicazioni lato server.",
-                    "Concetti di sviluppo e distribuzione di applicazioni cloud-native.",
-                    "Sviluppo end-to-end di applicazioni web tramite un progetto di sintesi finale."
+                    "Sviluppo di applicazioni web responsive e interattive con React.js e JavaScript.",
+                    "Costruzione di servizi back-end e API RESTful con Node.js ed Express.js, con esperienza in Laravel/PHP.",
+                    "Progettazione e gestione di database con MongoDB e MySQL.",
+                    "Applicazione delle metodologie Agile/Scrum in pianificazione, sviluppo, test e consegna dei progetti.",
+                    "Utilizzo di Docker, Git/GitHub e SonarQube per sviluppo, controllo versione e analisi della qualità del codice."
                 ]
             },
             {
@@ -581,11 +579,9 @@
                 "workType": "In loco",
                 "achievementsLabel": "Compiti principali:",
                 "responsibilities": [
-                    "Progettato e sviluppato un'applicazione di gestione delle attività che consente agli utenti di aggiungere, modificare ed eliminare attività.",
-                    "Implementata l'autenticazione e l'autorizzazione utilizzando JWT per garantire la sicurezza dell'applicazione.",
-                    "Testati gli endpoint API utilizzando Postman per garantire la corretta funzionalità.",
-                    "Migliorata l'esperienza utente progettando un'interfaccia semplice e intuitiva.",
-                    "Implementata l'applicazione su Vercel e gestito il codebase utilizzando Git/GitHub."
+                    "Progettazione e sviluppo di un'applicazione full-stack di gestione delle attività con autenticazione basata su JWT.",
+                    "Sviluppo degli endpoint dell'API RESTful e test con Postman.",
+                    "Deployment dell'applicazione su Vercel."
                 ]
             },
             {
@@ -597,15 +593,11 @@
                 "duration": "8 mesi",
                 "type": "Tempo pieno",
                 "workType": "In loco",
-                "achievementsLabel": "Sviluppate competenze fondamentali nello sviluppo digitale attraverso una formazione pratica, che copre:",
+                "achievementsLabel": "Responsabilità principali:",
                 "responsibilities": [
-                    "Fondamenti algoritmici e tecniche di risoluzione dei problemi.",
-                    "Concetti di Programmazione Orientata agli Oggetti (OOP).",
-                    "Creazione di siti web statici e dinamici.",
-                    "Programmazione JavaScript e interattività web.",
-                    "Manipolazione di database e gestione dei dati.",
-                    "Fondamenti di sicurezza dei sistemi informativi.",
-                    "Comprensione dei processi di sviluppo digitale e delle pratiche professionali."
+                    "Applicazione di concetti di programmazione e algoritmi attraverso progetti pratici.",
+                    "Sviluppo di siti web statici e dinamici con HTML, CSS, JavaScript e PHP.",
+                    "Lavoro con database SQL e applicazione di pratiche di base sulla sicurezza dei sistemi informativi."
                 ]
             }
         ]
