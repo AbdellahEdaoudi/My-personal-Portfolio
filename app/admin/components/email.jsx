@@ -19,30 +19,22 @@ import {
   RefreshCcw,
   X,
   Sparkles,
+  Paperclip,
+  ChevronDown,
 } from "../../components/Icons";
 
-const DEFAULT_TEMPLATE = {
-  subject: "Candidature spontanée — Développeur Web Full Stack",
-  message: `Bonjour,
+import EMAIL_TEMPLATES from "../data/email-templates.json";
 
-Je me permets de vous contacter afin de vous soumettre ma candidature spontanée pour une opportunité en tant que Développeur Web Full Stack au sein de votre entreprise.
-
-Je suis titulaire d'un diplôme en Développement Digital — Option Full Stack Web de la Cité des Métiers et des Compétences (CMC), avec plus de 2 ans d'expérience en développement web.
-
-Je suis spécialisé en React.js, Next.js, Node.js et NestJS, et je conçois et développe des applications web sécurisées, performantes et évolutives, avec une attention particulière portée à la qualité du code et à l'expérience utilisateur.
-
-Vous pouvez découvrir mon parcours et mes projets sur mon portfolio :
-https://abdellah-edaoudi.vercel.app/fr
-
-Je serais ravi d'échanger avec votre équipe si une opportunité correspond à mon profil.
-
-Merci pour votre attention.
-
-Cordialement,
-Abdellah Edaoudi
-abdellahedaoudi.dev@gmail.com
-+212609085357`
-};
+const TEMPLATE_LANGS = [
+  { lang: "en", countryCode: "gb",  label: "English"    },
+  { lang: "fr", countryCode: "fr",  label: "Français"   },
+  { lang: "ar", countryCode: "ma",  label: "العربية"   },
+  { lang: "de", countryCode: "de",  label: "Deutsch"    },
+  { lang: "es", countryCode: "es",  label: "Español"    },
+  { lang: "it", countryCode: "it",  label: "Italiano"   },
+  { lang: "nl", countryCode: "nl",  label: "Nederlands" },
+  { lang: "pt", countryCode: "pt",  label: "Português"  },
+];
 
 const STATUS = {
   PENDING: "PENDING",
@@ -78,10 +70,33 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
   const [bulkEmails, setBulkEmails] = useState("");
   const [delayRange, setDelayRange] = useState({ min: 8, max: 18 });
 
+  // CV language selector (fetched from /cv/ at send time)
+  const CV_OPTIONS = [
+    { lang: "en", label: "English",    countryCode: "gb" },
+    { lang: "fr", label: "Français",   countryCode: "fr" },
+    { lang: "ar", label: "العربية",    countryCode: "ma" },
+    { lang: "de", label: "Deutsch",    countryCode: "de" },
+    { lang: "es", label: "Español",    countryCode: "es" },
+    { lang: "it", label: "Italiano",   countryCode: "it" },
+    { lang: "nl", label: "Nederlands", countryCode: "nl" },
+    { lang: "pt", label: "Português",  countryCode: "pt" },
+  ];
+  const [cvLang, setCvLang] = useState("en");
+  const [attachCv, setAttachCv] = useState(true);
+
+  const fetchCvBlob = async () => {
+    const filename = `cv-abdellah-edaoudi-${cvLang}.pdf`;
+    const res = await fetch(`/cv/${filename}`);
+    if (!res.ok) throw new Error(`CV file not found: ${filename}`);
+    const blob = await res.blob();
+    return new File([blob], filename, { type: "application/pdf" });
+  };
+
   // Bulk Engine state
   const [isBulkRunning, setIsBulkRunning] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  const [templateModalOpen, setTemplateModalOpen] = useState(false);
 
   const [jobs, setJobs] = useState([]);
   const [stats, setStats] = useState({
@@ -98,6 +113,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
   const isPausedRef = useRef(false);
   const isCancelledRef = useRef(false);
   const listRef = useRef(null);
+  const templateDropdownRef = useRef(null);
 
   // Timer for elapsed seconds during bulk process
   useEffect(() => {
@@ -113,6 +129,17 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
     return () => clearInterval(timer);
   }, [isBulkRunning, isPaused, stats.startTime, stats.isDone]);
 
+  // Close template dropdown on outside click
+  useEffect(() => {
+    const handleOutside = (e) => {
+      if (templateDropdownRef.current && !templateDropdownRef.current.contains(e.target)) {
+        setTemplateModalOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleOutside);
+    return () => document.removeEventListener("mousedown", handleOutside);
+  }, []);
+
   // Auto-scroll modal log list to active item
   useEffect(() => {
     if (listRef.current && modalOpen) {
@@ -123,13 +150,20 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
     }
   }, [jobs, modalOpen]);
 
+  const isRTL = cvLang === "ar";
+
   const loadTemplate = () => {
-    setFormData({
-      ...formData,
-      subject: DEFAULT_TEMPLATE.subject,
-      message: DEFAULT_TEMPLATE.message,
-    });
-    toast.info("Default recruitment template loaded!");
+    setTemplateModalOpen((v) => !v);
+  };
+
+  const applyTemplate = (lang) => {
+    const tpl = EMAIL_TEMPLATES[lang];
+    if (!tpl) return;
+    setFormData((prev) => ({ ...prev, subject: tpl.subject, message: tpl.message }));
+    setCvLang(lang);
+    setAttachCv(true);
+    setTemplateModalOpen(false);
+    toast.info(`Template loaded in ${tpl.label} — CV set to ${tpl.label}`);
   };
 
   const loadTestEmails = () => {
@@ -152,15 +186,18 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
 
     setLoading(true);
     try {
-      const res = await axios.post(
-        "/api/email/send",
-        {
-          to: formData.to.trim(),
-          subject: formData.subject,
-          message: formData.message,
-        },
-        { withCredentials: true }
-      );
+      const payload = new FormData();
+      payload.append("to", formData.to.trim());
+      payload.append("subject", formData.subject);
+      payload.append("message", formData.message);
+      if (attachCv) {
+        const cvFile = await fetchCvBlob();
+        payload.append("cv", cvFile);
+      }
+
+      const res = await axios.post("/api/email/send", payload, {
+        withCredentials: true,
+      });
 
       toast.success(res.data?.message || "Email sent successfully!");
       setFormData((prev) => ({ ...prev, to: "" }));
@@ -272,15 +309,17 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
       let errorMsg = null;
 
       const sendSingleBulkItem = async () => {
-        return await axios.post(
-          "/api/email/send",
-          {
-            to: initialJobs[i].to,
-            subject: formData.subject,
-            message: formData.message,
-          },
-          { withCredentials: true }
-        );
+        const payload = new FormData();
+        payload.append("to", initialJobs[i].to);
+        payload.append("subject", formData.subject);
+        payload.append("message", formData.message);
+        if (attachCv) {
+          const cvFile = await fetchCvBlob();
+          payload.append("cv", cvFile);
+        }
+        return await axios.post("/api/email/send", payload, {
+          withCredentials: true,
+        });
       };
 
       try {
@@ -399,14 +438,62 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
 
         {/* Action Controls & Preset Loader */}
         <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={loadTemplate}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-[#F5F3EE] hover:bg-slate-200 dark:hover:bg-white/10 text-xs font-semibold transition"
-          >
-            <FileText className="w-3.5 h-3.5 text-indigo-500 dark:text-[#E8A33D]" />
-            Load Preset Template
-          </button>
+          {/* Load Preset Template — Custom Dropdown */}
+          <div className="relative" ref={templateDropdownRef}>
+            <button
+              type="button"
+              onClick={loadTemplate}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-semibold transition ${
+                templateModalOpen
+                  ? "bg-indigo-50 dark:bg-[#E8A33D]/10 border-indigo-300 dark:border-[#E8A33D]/40 text-indigo-600 dark:text-[#E8A33D]"
+                  : "bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 text-slate-700 dark:text-[#F5F3EE] hover:bg-slate-200 dark:hover:bg-white/10"
+              }`}
+            >
+              <FileText className="w-3.5 h-3.5" />
+              Load Preset Template
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${templateModalOpen ? "rotate-180" : ""}`} />
+            </button>
+
+            {/* Dropdown List */}
+            <div
+              dir={isRTL ? "rtl" : "ltr"}
+              className={`absolute top-full left-0 mt-1.5 w-56 bg-white dark:bg-[#14171F] border border-slate-200 dark:border-white/10 rounded-xl shadow-xl overflow-hidden z-50 transition-all duration-200 origin-top-left ${
+                templateModalOpen
+                  ? "opacity-100 scale-100 translate-y-0 visible pointer-events-auto"
+                  : "opacity-0 scale-95 -translate-y-1 invisible pointer-events-none"
+              }`}
+            >
+              <div className="px-3 py-2 border-b border-slate-100 dark:border-white/5">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-[#8B93A7]">
+                  Select Language
+                </p>
+              </div>
+              {TEMPLATE_LANGS.map(({ lang, countryCode, label }) => (
+                <button
+                  key={lang}
+                  type="button"
+                  onClick={() => applyTemplate(lang)}
+                  className={`w-full flex items-center gap-2.5 px-3 py-2 text-left transition-colors ${
+                    cvLang === lang
+                      ? "bg-indigo-50 dark:bg-[#E8A33D]/10 text-indigo-600 dark:text-[#E8A33D]"
+                      : "text-slate-700 dark:text-[#F5F3EE] hover:bg-slate-50 dark:hover:bg-white/5"
+                  }`}
+                >
+                  <img
+                    src={`/flags/${countryCode}.svg`}
+                    alt={label}
+                    width={20}
+                    height={15}
+                    className="rounded-sm object-cover shrink-0 shadow-sm"
+                  />
+                  <span className="text-xs font-semibold flex-1">{label}</span>
+                  {cvLang === lang && (
+                    <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
+                  )}
+                </button>
+              ))}
+            </div>
+          </div>
 
           {/* Mode Switcher Pills */}
           <div className="flex items-center p-1 bg-slate-100 dark:bg-[#0B0D12] rounded-xl border border-slate-200 dark:border-white/10">
@@ -466,6 +553,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
               <textarea
                 rows={4}
                 required
+                dir={isRTL ? "rtl" : "ltr"}
                 placeholder={`contact@company1.ma\nrecrutement@company2.com\njobs@company3.ma`}
                 value={bulkEmails}
                 onChange={(e) => setBulkEmails(e.target.value)}
@@ -474,6 +562,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
             ) : (
               <input
                 type="email"
+                name="email"
                 required
                 placeholder="recipient@example.com"
                 value={formData.to}
@@ -491,6 +580,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
             <input
               type="text"
               required
+              dir={isRTL ? "rtl" : "ltr"}
               placeholder="Enter email subject line..."
               value={formData.subject}
               onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
@@ -506,11 +596,66 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
             <textarea
               required
               rows={8}
+              dir={isRTL ? "rtl" : "ltr"}
               placeholder="Write your email body here..."
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               className="w-full bg-white dark:bg-[#14171F] border border-slate-300 dark:border-white/10 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-[#F5F3EE] placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-[#E8A33D] transition resize-y custom-scroll"
             />
+          </div>
+
+          {/* CV Attachment Selector */}
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <label className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-[#8B93A7] flex items-center gap-1.5">
+                <Paperclip className="w-3.5 h-3.5" />
+                CV Attachment
+              </label>
+              {/* Toggle attach/skip */}
+              <button
+                type="button"
+                onClick={() => setAttachCv((v) => !v)}
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs font-semibold transition ${
+                  attachCv
+                    ? "bg-indigo-50 dark:bg-[#E8A33D]/10 border-indigo-200 dark:border-[#E8A33D]/30 text-indigo-600 dark:text-[#E8A33D]"
+                    : "bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 text-slate-400 dark:text-[#8B93A7]"
+                }`}
+              >
+                <Paperclip className="w-3 h-3" />
+                {attachCv ? "Attached" : "No Attachment"}
+              </button>
+            </div>
+
+            {attachCv && (
+              <div className="p-3 rounded-xl bg-slate-50 dark:bg-[#0B0D12] border border-slate-200 dark:border-white/10 space-y-2">
+                <p className="text-[11px] text-slate-500 dark:text-[#8B93A7] font-medium">
+                  Select CV language — <span className="font-mono text-indigo-600 dark:text-[#E8A33D]">cv-abdellah-edaoudi-{cvLang}.pdf</span>
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {CV_OPTIONS.map(({ lang, label, countryCode }) => (
+                    <button
+                      key={lang}
+                      type="button"
+                      onClick={() => {
+                        setCvLang(lang);
+                        const tpl = EMAIL_TEMPLATES[lang];
+                        if (tpl) {
+                          setFormData((prev) => ({ ...prev, subject: tpl.subject, message: tpl.message }));
+                        }
+                      }}
+                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-semibold transition-all ${
+                        cvLang === lang
+                          ? "bg-indigo-600 dark:bg-[#E8A33D] text-white dark:text-[#0B0D12] border-indigo-600 dark:border-[#E8A33D] shadow-sm"
+                          : "bg-white dark:bg-[#14171F] border-slate-200 dark:border-white/10 text-slate-700 dark:text-[#F5F3EE] hover:border-indigo-300 dark:hover:border-[#E8A33D]/40 hover:bg-indigo-50 dark:hover:bg-[#E8A33D]/5"
+                      }`}
+                    >
+                      <img src={`/flags/${countryCode}.svg`} alt={label} width={20} height={15} className="rounded-sm object-cover" />
+                      <span>{label}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Anti-Spam Notice & Custom Delay Range in Bulk Mode */}
@@ -809,6 +954,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
           </div>
         </div>
       )}
+
     </div>
   );
 }
