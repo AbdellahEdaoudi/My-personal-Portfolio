@@ -10,11 +10,21 @@ export default function sitemap() {
             en: "/cv/cv-abdellah-edaoudi-en.pdf",
             fr: "/cv/cv-abdellah-edaoudi-fr.pdf",
             es: "/cv/cv-abdellah-edaoudi-es.pdf",
+            de: "/cv/cv-abdellah-edaoudi-de.pdf",
+            nl: "/cv/cv-abdellah-edaoudi-nl.pdf",
+            pt: "/cv/cv-abdellah-edaoudi-pt.pdf",
+            it: "/cv/cv-abdellah-edaoudi-it.pdf",
+            ar: "/cv/cv-abdellah-edaoudi-ar.pdf",
         },
         coverLetter: {
-            en: "/cl/Cover-Letter-Abdellah-Edaoudi-EN.pdf",
-            fr: "/cl/Lettre-de-Motivation-Abdellah-Edaoudi-FR.pdf",
-            es: "/cl/Carta-de-Presentacion-Abdellah-Edaoudi-ES.pdf",
+            ar: "/cover-letters/cl-abdellah-edaoudi-ar.pdf",
+            de: "/cover-letters/cl-abdellah-edaoudi-de.pdf",
+            en: "/cover-letters/cl-abdellah-edaoudi-en.pdf",
+            es: "/cover-letters/cl-abdellah-edaoudi-es.pdf",
+            fr: "/cover-letters/cl-abdellah-edaoudi-fr.pdf",
+            it: "/cover-letters/cl-abdellah-edaoudi-it.pdf",
+            nl: "/cover-letters/cl-abdellah-edaoudi-nl.pdf",
+            pt: "/cover-letters/cl-abdellah-edaoudi-pt.pdf",
         }
     };
 
