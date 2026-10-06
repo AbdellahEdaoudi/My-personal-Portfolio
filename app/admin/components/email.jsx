@@ -21,25 +21,28 @@ import {
   Sparkles,
   Paperclip,
   ChevronDown,
+  Info,
+  Eye,
 } from "../../components/Icons";
 
 import EMAIL_TEMPLATES from "../data/email-templates.json";
 
 const TEMPLATE_LANGS = [
-  { lang: "en", countryCode: "gb",  label: "English"    },
-  { lang: "fr", countryCode: "fr",  label: "Français"   },
-  { lang: "ar", countryCode: "ma",  label: "العربية"   },
-  { lang: "de", countryCode: "de",  label: "Deutsch"    },
-  { lang: "es", countryCode: "es",  label: "Español"    },
-  { lang: "it", countryCode: "it",  label: "Italiano"   },
-  { lang: "nl", countryCode: "nl",  label: "Nederlands" },
-  { lang: "pt", countryCode: "pt",  label: "Português"  },
+  { lang: "en", countryCode: "gb", label: "English" },
+  { lang: "fr", countryCode: "fr", label: "Français" },
+  { lang: "ar", countryCode: "ma", label: "العربية" },
+  { lang: "de", countryCode: "de", label: "Deutsch" },
+  { lang: "es", countryCode: "es", label: "Español" },
+  { lang: "it", countryCode: "it", label: "Italiano" },
+  { lang: "nl", countryCode: "nl", label: "Nederlands" },
+  { lang: "pt", countryCode: "pt", label: "Português" },
 ];
 
 const STATUS = {
   PENDING: "PENDING",
   SENDING: "SENDING",
   SENT: "SENT",
+  SKIPPED: "SKIPPED",
   FAILED: "FAILED",
   PAUSED: "PAUSED",
   CANCELLED: "CANCELLED",
@@ -68,9 +71,8 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
     message: "",
   });
   const [bulkEmails, setBulkEmails] = useState("");
-  const [delayRange, setDelayRange] = useState({ min: 8, max: 18 });
 
-  // CV language selector (fetched from /cv/ at send time)
+  // CV language selector
   const CV_OPTIONS = [
     { lang: "en", label: "English",    countryCode: "gb" },
     { lang: "fr", label: "Français",   countryCode: "fr" },
@@ -83,6 +85,11 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
   ];
   const [cvLang, setCvLang] = useState("en");
   const [attachCv, setAttachCv] = useState(true);
+  const [checkDuplicates, setCheckDuplicates] = useState(true);
+  const [cvDropdownOpen, setCvDropdownOpen] = useState(false);
+  const cvDropdownRef = useRef(null);
+
+  const selectedCvOpt = CV_OPTIONS.find((opt) => opt.lang === cvLang) || CV_OPTIONS[0];
 
   const fetchCvBlob = async () => {
     const filename = `cv-abdellah-edaoudi-${cvLang}.pdf`;
@@ -94,7 +101,6 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
 
   // Bulk Engine state
   const [isBulkRunning, setIsBulkRunning] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [templateModalOpen, setTemplateModalOpen] = useState(false);
 
@@ -102,23 +108,101 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
   const [stats, setStats] = useState({
     total: 0,
     sent: 0,
+    skipped: 0,
     failed: 0,
     cancelled: 0,
     startTime: null,
     elapsed: 0,
+    currentEmail: "",
+    status: "idle",
   });
-  const [countdown, setCountdown] = useState(0);
 
-  // Refs for async loop controls
-  const isPausedRef = useRef(false);
-  const isCancelledRef = useRef(false);
   const listRef = useRef(null);
   const templateDropdownRef = useRef(null);
 
-  // Timer for elapsed seconds during bulk process
+  // Close dropdowns on outside click
+  useEffect(() => {
+    const handleOutside = (e) => {
+      if (templateDropdownRef.current && !templateDropdownRef.current.contains(e.target)) {
+        setTemplateModalOpen(false);
+      }
+      if (cvDropdownRef.current && !cvDropdownRef.current.contains(e.target)) {
+        setCvDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleOutside);
+    return () => document.removeEventListener("mousedown", handleOutside);
+  }, []);
+
+  // Poll backend status
+  const checkBackendStatus = async () => {
+    try {
+      const res = await axios.get("/api/email/status", { withCredentials: true });
+      const data = res.data?.data;
+      if (!data) return;
+
+      const isRunning = data.status === "running" || data.status === "pending";
+      setIsBulkRunning(isRunning);
+
+      if (data.details && data.details.length > 0) {
+        setJobs(
+          data.details.map((d) => ({
+            to: d.email,
+            status:
+              d.status === "sent"
+                ? STATUS.SENT
+                : d.status === "skipped"
+                ? STATUS.SKIPPED
+                : d.status === "failed"
+                ? STATUS.FAILED
+                : d.status === "sending"
+                ? STATUS.SENDING
+                : d.status === "cancelled"
+                ? STATUS.CANCELLED
+                : STATUS.PENDING,
+            error: d.error,
+            duration: d.duration,
+            retries: d.retries,
+          }))
+        );
+      }
+
+      setStats({
+        total: data.total || 0,
+        sent: data.sent || 0,
+        skipped: data.skipped || 0,
+        failed: data.failed || 0,
+        cancelled:
+          data.status === "cancelled"
+            ? (data.total || 0) - ((data.sent || 0) + (data.skipped || 0) + (data.failed || 0))
+            : 0,
+        startTime: data.startTime ? new Date(data.startTime).getTime() : null,
+        elapsed: data.startTime ? Math.round((Date.now() - new Date(data.startTime).getTime()) / 1000) : 0,
+        currentEmail: data.currentEmail || "",
+        status: data.status || "idle",
+        isDone: data.status === "completed" || data.status === "cancelled",
+      });
+
+      // Auto open modal if job is currently running on server
+      if (isRunning && !modalOpen) {
+        setModalOpen(true);
+      }
+    } catch (err) {
+      console.error("Error checking backend status:", err);
+    }
+  };
+
+  // Auto-check status on component mount & setup interval polling
+  useEffect(() => {
+    checkBackendStatus();
+    const interval = setInterval(checkBackendStatus, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Timer for elapsed seconds
   useEffect(() => {
     let timer;
-    if (isBulkRunning && stats.startTime && !isPaused && !stats.isDone) {
+    if (isBulkRunning && stats.startTime && !stats.isDone) {
       timer = setInterval(() => {
         setStats((prev) => ({
           ...prev,
@@ -127,7 +211,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
       }, 1000);
     }
     return () => clearInterval(timer);
-  }, [isBulkRunning, isPaused, stats.startTime, stats.isDone]);
+  }, [isBulkRunning, stats.startTime, stats.isDone]);
 
   // Close template dropdown on outside click
   useEffect(() => {
@@ -140,7 +224,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
     return () => document.removeEventListener("mousedown", handleOutside);
   }, []);
 
-  // Auto-scroll modal log list to active item
+  // Auto-scroll log to sending item
   useEffect(() => {
     if (listRef.current && modalOpen) {
       const activeEl = listRef.current.querySelector('[data-sending="true"]');
@@ -208,28 +292,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
     }
   };
 
-  // Wait utility with pause/cancel checks
-  const sleepWithControls = async (seconds) => {
-    const step = 200; // check every 200ms
-    let remaining = seconds * 1000;
-
-    while (remaining > 0) {
-      if (isCancelledRef.current) return false;
-
-      while (isPausedRef.current) {
-        if (isCancelledRef.current) return false;
-        await new Promise((r) => setTimeout(r, step));
-      }
-
-      setCountdown(Math.ceil(remaining / 1000));
-      await new Promise((r) => setTimeout(r, Math.min(step, remaining)));
-      remaining -= step;
-    }
-    setCountdown(0);
-    return true;
-  };
-
-  // Start Bulk Email Engine
+  // Start Bulk Email Engine on Backend
   const handleBulkSend = async () => {
     const rawList = bulkEmails
       .split("\n")
@@ -245,167 +308,42 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
       return;
     }
 
-    const initialJobs = rawList.map((email) => ({
-      to: email,
-      status: STATUS.PENDING,
-      error: null,
-      duration: null,
-    }));
+    try {
+      setLoading(true);
 
-    setJobs(initialJobs);
-    setStats({
-      total: initialJobs.length,
-      sent: 0,
-      failed: 0,
-      cancelled: 0,
-      startTime: Date.now(),
-      elapsed: 0,
-      isDone: false,
-    });
-
-    isPausedRef.current = false;
-    isCancelledRef.current = false;
-    setIsPaused(false);
-    setIsBulkRunning(true);
-    setModalOpen(true);
-
-    let sentAcc = 0;
-    let failedAcc = 0;
-    let cancelAcc = 0;
-
-    for (let i = 0; i < initialJobs.length; i++) {
-      if (isCancelledRef.current) {
-        cancelAcc = initialJobs.length - i;
-        setJobs((prev) =>
-          prev.map((j, idx) =>
-            idx >= i ? { ...j, status: STATUS.CANCELLED } : j
-          )
-        );
-        break;
+      const payload = new FormData();
+      payload.append("recipients", JSON.stringify(rawList));
+      payload.append("subject", formData.subject);
+      payload.append("message", formData.message);
+      payload.append("checkDuplicates", checkDuplicates);
+      if (attachCv) {
+        const cvFile = await fetchCvBlob();
+        payload.append("cv", cvFile);
       }
 
-      // Pause check
-      while (isPausedRef.current) {
-        if (isCancelledRef.current) break;
-        await new Promise((r) => setTimeout(r, 200));
-      }
-      if (isCancelledRef.current) {
-        cancelAcc = initialJobs.length - i;
-        setJobs((prev) =>
-          prev.map((j, idx) =>
-            idx >= i ? { ...j, status: STATUS.CANCELLED } : j
-          )
-        );
-        break;
-      }
+      const res = await axios.post("/api/email/send-bulk", payload, {
+        withCredentials: true,
+      });
 
-      // Mark current job sending
-      setJobs((prev) =>
-        prev.map((j, idx) => (idx === i ? { ...j, status: STATUS.SENDING } : j))
-      );
-
-      const itemStartTime = Date.now();
-      let success = false;
-      let errorMsg = null;
-
-      const sendSingleBulkItem = async () => {
-        const payload = new FormData();
-        payload.append("to", initialJobs[i].to);
-        payload.append("subject", formData.subject);
-        payload.append("message", formData.message);
-        if (attachCv) {
-          const cvFile = await fetchCvBlob();
-          payload.append("cv", cvFile);
-        }
-        return await axios.post("/api/email/send", payload, {
-          withCredentials: true,
-        });
-      };
-
-      try {
-        await sendSingleBulkItem();
-        success = true;
-      } catch (err) {
-        await handleError(err, sendSingleBulkItem, "Failed to send email");
-        errorMsg = err.response?.data?.message || err.message || "Failed";
-      }
-
-      const durationSec = Math.round((Date.now() - itemStartTime) / 1000);
-
-      if (success) {
-        sentAcc++;
-        setJobs((prev) =>
-          prev.map((j, idx) =>
-            idx === i
-              ? { ...j, status: STATUS.SENT, duration: durationSec }
-              : j
-          )
-        );
-      } else {
-        failedAcc++;
-        setJobs((prev) =>
-          prev.map((j, idx) =>
-            idx === i
-              ? {
-                  ...j,
-                  status: STATUS.FAILED,
-                  error: errorMsg,
-                  duration: durationSec,
-                }
-              : j
-          )
-        );
-      }
-
-      setStats((prev) => ({
-        ...prev,
-        sent: sentAcc,
-        failed: failedAcc,
-      }));
-
-      // Delay between emails to avoid spam filters (except for last email)
-      if (i < initialJobs.length - 1 && !isCancelledRef.current) {
-        const minD = Math.max(1, delayRange.min);
-        const maxD = Math.max(minD, delayRange.max);
-        const randomDelay = Math.floor(Math.random() * (maxD - minD + 1)) + minD;
-        const continueRun = await sleepWithControls(randomDelay);
-        if (!continueRun) {
-          cancelAcc = initialJobs.length - (i + 1);
-          setJobs((prev) =>
-            prev.map((j, idx) =>
-              idx > i ? { ...j, status: STATUS.CANCELLED } : j
-            )
-          );
-          break;
-        }
-      }
+      toast.success(res.data?.message || "Bulk job started on server!");
+      setIsBulkRunning(true);
+      setModalOpen(true);
+      checkBackendStatus();
+    } catch (err) {
+      await handleError(err, () => handleBulkSend(), "Failed to start bulk send job");
+    } finally {
+      setLoading(false);
     }
-
-    setStats((prev) => ({
-      ...prev,
-      cancelled: cancelAcc,
-      isDone: true,
-    }));
-    setIsBulkRunning(false);
-    toast.success(`Bulk process completed! (${sentAcc} sent, ${failedAcc} failed)`);
   };
 
-  const handlePause = () => {
-    isPausedRef.current = true;
-    setIsPaused(true);
-    toast.info("Bulk send paused");
-  };
-
-  const handleResume = () => {
-    isPausedRef.current = false;
-    setIsPaused(false);
-    toast.info("Bulk send resumed");
-  };
-
-  const handleCancel = () => {
-    isCancelledRef.current = true;
-    setIsPaused(false);
-    toast.warning("Cancelling bulk send process...");
+  const handleCancel = async () => {
+    try {
+      await axios.post("/api/email/cancel", {}, { withCredentials: true });
+      toast.warning("Cancelling bulk send process on backend...");
+      checkBackendStatus();
+    } catch (err) {
+      toast.error("Failed to submit cancel request.");
+    }
   };
 
   const formatTime = (seconds) => {
@@ -415,7 +353,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
     return m > 0 ? `${m}m ${s}s` : `${s}s`;
   };
 
-  const doneCount = stats.sent + stats.failed + stats.cancelled;
+  const doneCount = stats.sent + stats.skipped + stats.failed + stats.cancelled;
   const progress = stats.total > 0 ? Math.round((doneCount / stats.total) * 100) : 0;
 
   return (
@@ -431,14 +369,26 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
               Email Dispatcher
             </h2>
             <p className="text-xs text-slate-500 dark:text-[#8B93A7]">
-              Send single or bulk emails safely via secure backend SMTP
+              Send single or bulk emails safely via server-side sequential queue
             </p>
           </div>
         </div>
 
         {/* Action Controls & Preset Loader */}
         <div className="flex items-center gap-2">
-          {/* Load Preset Template — Custom Dropdown */}
+          {/* Active Job Indicator Button */}
+          {isBulkRunning && (
+            <button
+              type="button"
+              onClick={() => setModalOpen(true)}
+              className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-600 dark:text-amber-400 text-xs font-bold animate-pulse"
+            >
+              <RefreshCcw className="w-3.5 h-3.5 animate-spin" />
+              Campaign Running ({progress}%) — View
+            </button>
+          )}
+
+          {/* Load Preset Template */}
           <div className="relative" ref={templateDropdownRef}>
             <button
               type="button"
@@ -449,368 +399,279 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
                   : "bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 text-slate-700 dark:text-[#F5F3EE] hover:bg-slate-200 dark:hover:bg-white/10"
               }`}
             >
-              <FileText className="w-3.5 h-3.5" />
-              Load Preset Template
-              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${templateModalOpen ? "rotate-180" : ""}`} />
+              <FileText className="w-3.5 h-3.5 text-indigo-500 dark:text-[#E8A33D]" />
+              Templates
+              <ChevronDown className="w-3 h-3 opacity-60" />
             </button>
 
-            {/* Dropdown List */}
-            <div
-              dir={isRTL ? "rtl" : "ltr"}
-              className={`absolute top-full left-0 mt-1.5 w-56 bg-white dark:bg-[#14171F] border border-slate-200 dark:border-white/10 rounded-xl shadow-xl overflow-hidden z-50 transition-all duration-200 origin-top-left ${
-                templateModalOpen
-                  ? "opacity-100 scale-100 translate-y-0 visible pointer-events-auto"
-                  : "opacity-0 scale-95 -translate-y-1 invisible pointer-events-none"
-              }`}
-            >
-              <div className="px-3 py-2 border-b border-slate-100 dark:border-white/5">
-                <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-[#8B93A7]">
-                  Select Language
-                </p>
+            {templateModalOpen && (
+              <div className="absolute right-0 mt-2 w-56 py-1.5 bg-white dark:bg-[#1A1D26] border border-slate-200 dark:border-white/10 rounded-xl shadow-xl z-50 overflow-hidden">
+                <div className="px-3 py-1.5 text-[11px] font-bold text-slate-400 dark:text-[#8B93A7] uppercase tracking-wider border-b border-slate-100 dark:border-white/5">
+                  Select Preset Template
+                </div>
+                {TEMPLATE_LANGS.map(({ lang, countryCode, label }) => (
+                  <button
+                    key={lang}
+                    type="button"
+                    onClick={() => applyTemplate(lang)}
+                    className="w-full text-left px-3 py-2 text-xs font-medium text-slate-700 dark:text-[#F5F3EE] hover:bg-indigo-50 dark:hover:bg-[#E8A33D]/10 hover:text-indigo-600 dark:hover:text-[#E8A33D] transition flex items-center justify-between"
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className={`fi fi-${countryCode}`} />
+                      <span>{label}</span>
+                    </div>
+                    <span className="text-[10px] text-slate-400 font-mono uppercase">{lang}</span>
+                  </button>
+                ))}
               </div>
-              {TEMPLATE_LANGS.map(({ lang, countryCode, label }) => (
-                <button
-                  key={lang}
-                  type="button"
-                  onClick={() => applyTemplate(lang)}
-                  className={`w-full flex items-center gap-2.5 px-3 py-2 text-left transition-colors ${
-                    cvLang === lang
-                      ? "bg-indigo-50 dark:bg-[#E8A33D]/10 text-indigo-600 dark:text-[#E8A33D]"
-                      : "text-slate-700 dark:text-[#F5F3EE] hover:bg-slate-50 dark:hover:bg-white/5"
-                  }`}
-                >
-                  <img
-                    src={`/flags/${countryCode}.svg`}
-                    alt={label}
-                    width={20}
-                    height={15}
-                    className="rounded-sm object-cover shrink-0 shadow-sm"
-                  />
-                  <span className="text-xs font-semibold flex-1">{label}</span>
-                  {cvLang === lang && (
-                    <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
-                  )}
-                </button>
-              ))}
-            </div>
+            )}
           </div>
 
-          {/* Mode Switcher Pills */}
-          <div className="flex items-center p-1 bg-slate-100 dark:bg-[#0B0D12] rounded-xl border border-slate-200 dark:border-white/10">
+          {/* Mode Switcher */}
+          <div className="p-1 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center gap-1">
             <button
               type="button"
               onClick={() => setIsBulkMode(false)}
-              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition ${
                 !isBulkMode
-                  ? "bg-white dark:bg-[#1E222D] text-indigo-600 dark:text-[#E8A33D] shadow-xs"
+                  ? "bg-white dark:bg-[#1A1D26] text-slate-900 dark:text-[#F5F3EE] shadow-sm"
                   : "text-slate-500 dark:text-[#8B93A7] hover:text-slate-900 dark:hover:text-[#F5F3EE]"
               }`}
             >
-              <Mail className="w-3.5 h-3.5" />
-              Single
+              <Send className="w-3.5 h-3.5" /> Single
             </button>
             <button
               type="button"
               onClick={() => setIsBulkMode(true)}
-              className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition ${
                 isBulkMode
-                  ? "bg-white dark:bg-[#1E222D] text-indigo-600 dark:text-[#E8A33D] shadow-xs"
+                  ? "bg-white dark:bg-[#1A1D26] text-slate-900 dark:text-[#F5F3EE] shadow-sm"
                   : "text-slate-500 dark:text-[#8B93A7] hover:text-slate-900 dark:hover:text-[#F5F3EE]"
               }`}
             >
-              <Users className="w-3.5 h-3.5" />
-              Bulk Sender
+              <Users className="w-3.5 h-3.5" /> Bulk Queue
             </button>
           </div>
         </div>
       </div>
 
-      {/* Main Workspace Body */}
-      <div className="flex-1 overflow-y-auto p-6 custom-scroll">
-        <form
-          onSubmit={isBulkMode ? (e) => { e.preventDefault(); handleBulkSend(); } : handleSingleSend}
-          className="max-w-4xl mx-auto space-y-5"
-        >
-          {/* Recipient Section */}
-          <div className="space-y-1.5">
-            <div className="flex items-center justify-between">
-              <label className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-[#8B93A7]">
-                {isBulkMode ? "Recipient Email List (One per line)" : "Recipient Email Address"}
+      {/* Main Content Area */}
+      <div className="flex-1 overflow-y-auto p-6 space-y-6 custom-scroll">
+        {/* CV Attachment & Duplicate Protection Bar */}
+        <div className="p-4 rounded-xl bg-white dark:bg-[#14171F] border border-slate-200 dark:border-white/10 shadow-sm flex flex-wrap items-center justify-between gap-4">
+          <div className="flex flex-wrap items-center gap-6">
+            <div className="flex items-center gap-3">
+              <label className="relative flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={attachCv}
+                  onChange={(e) => setAttachCv(e.target.checked)}
+                  className="sr-only peer"
+                />
+                <div className="w-9 h-5 bg-slate-200 dark:bg-white/10 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 dark:peer-checked:bg-[#E8A33D]"></div>
               </label>
-              {isBulkMode && (
-                <button
-                  type="button"
-                  onClick={loadTestEmails}
-                  className="text-xs font-semibold text-indigo-600 dark:text-[#E8A33D] hover:underline flex items-center gap-1"
-                >
-                  <Sparkles className="w-3 h-3" />
-                  Load Sample Emails
-                </button>
-              )}
+              <span className="text-xs font-bold text-slate-800 dark:text-[#F5F3EE] flex items-center gap-1.5">
+                <Paperclip className="w-4 h-4 text-indigo-500 dark:text-[#E8A33D]" />
+                Attach CV PDF
+              </span>
             </div>
 
-            {isBulkMode ? (
-              <textarea
-                rows={4}
-                required
-                dir={isRTL ? "rtl" : "ltr"}
-                placeholder={`contact@company1.ma\nrecrutement@company2.com\njobs@company3.ma`}
-                value={bulkEmails}
-                onChange={(e) => setBulkEmails(e.target.value)}
-                className="w-full bg-white dark:bg-[#14171F] border border-slate-300 dark:border-white/10 rounded-xl px-4 py-3 text-sm font-mono text-slate-900 dark:text-[#F5F3EE] placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-[#E8A33D] transition resize-y custom-scroll"
-              />
-            ) : (
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="recipient@example.com"
-                value={formData.to}
-                onChange={(e) => setFormData({ ...formData, to: e.target.value })}
-                className="w-full bg-white dark:bg-[#14171F] border border-slate-300 dark:border-white/10 rounded-xl px-4 py-2.5 text-sm text-slate-900 dark:text-[#F5F3EE] placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-[#E8A33D] transition"
-              />
-            )}
-          </div>
-
-          {/* Subject Field */}
-          <div className="space-y-1.5">
-            <label className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-[#8B93A7]">
-              Subject Line
-            </label>
-            <input
-              type="text"
-              required
-              dir={isRTL ? "rtl" : "ltr"}
-              placeholder="Enter email subject line..."
-              value={formData.subject}
-              onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-              className="w-full bg-white dark:bg-[#14171F] border border-slate-300 dark:border-white/10 rounded-xl px-4 py-2.5 text-sm text-slate-900 dark:text-[#F5F3EE] placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-[#E8A33D] transition"
-            />
-          </div>
-
-          {/* Message Body Field */}
-          <div className="space-y-1.5">
-            <label className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-[#8B93A7]">
-              Email Content Body
-            </label>
-            <textarea
-              required
-              rows={8}
-              dir={isRTL ? "rtl" : "ltr"}
-              placeholder="Write your email body here..."
-              value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full bg-white dark:bg-[#14171F] border border-slate-300 dark:border-white/10 rounded-xl px-4 py-3 text-sm text-slate-900 dark:text-[#F5F3EE] placeholder-slate-400 dark:placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-[#E8A33D] transition resize-y custom-scroll"
-            />
-          </div>
-
-          {/* CV Attachment Selector */}
-          <div className="space-y-2">
-            <div className="flex items-center justify-between">
-              <label className="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-[#8B93A7] flex items-center gap-1.5">
-                <Paperclip className="w-3.5 h-3.5" />
-                CV Attachment
+            <div className="flex items-center gap-3 border-l border-slate-200 dark:border-white/10 pl-6">
+              <label className="relative flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={checkDuplicates}
+                  onChange={(e) => setCheckDuplicates(e.target.checked)}
+                  className="sr-only peer"
+                />
+                <div className="w-9 h-5 bg-slate-200 dark:bg-white/10 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 dark:peer-checked:bg-[#E8A33D]"></div>
               </label>
-              {/* Toggle attach/skip */}
+              <span className="text-xs font-bold text-slate-800 dark:text-[#F5F3EE] flex items-center gap-1.5">
+                <ShieldAlert className="w-4 h-4 text-emerald-500 dark:text-emerald-400" />
+                Check previously sent emails
+              </span>
+            </div>
+          </div>
+
+          {attachCv && (
+            <div className="relative" ref={cvDropdownRef}>
               <button
                 type="button"
-                onClick={() => setAttachCv((v) => !v)}
-                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs font-semibold transition ${
-                  attachCv
-                    ? "bg-indigo-50 dark:bg-[#E8A33D]/10 border-indigo-200 dark:border-[#E8A33D]/30 text-indigo-600 dark:text-[#E8A33D]"
-                    : "bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10 text-slate-400 dark:text-[#8B93A7]"
-                }`}
+                onClick={() => setCvDropdownOpen((prev) => !prev)}
+                className="flex items-center gap-2 px-3 py-1.5 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 border border-slate-200 dark:border-white/10 rounded-xl text-xs font-semibold text-slate-800 dark:text-[#F5F3EE] transition shadow-sm"
               >
-                <Paperclip className="w-3 h-3" />
-                {attachCv ? "Attached" : "No Attachment"}
+                <span className={`fi fi-${selectedCvOpt.countryCode}`} />
+                <span>{selectedCvOpt.label}</span>
+                <span className="text-[10px] font-mono uppercase text-slate-400 bg-slate-200 dark:bg-white/10 px-1.5 py-0.5 rounded">
+                  {selectedCvOpt.lang}
+                </span>
+                <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
               </button>
-            </div>
 
-            {attachCv && (
-              <div className="p-3 rounded-xl bg-slate-50 dark:bg-[#0B0D12] border border-slate-200 dark:border-white/10 space-y-2">
-                <p className="text-[11px] text-slate-500 dark:text-[#8B93A7] font-medium">
-                  Select CV language — <span className="font-mono text-indigo-600 dark:text-[#E8A33D]">cv-abdellah-edaoudi-{cvLang}.pdf</span>
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {CV_OPTIONS.map(({ lang, label, countryCode }) => (
+              {cvDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-52 py-1.5 bg-white dark:bg-[#1A1D26] border border-slate-200 dark:border-white/10 rounded-xl shadow-xl z-50 overflow-hidden">
+                  <div className="px-3 py-1.5 text-[10px] font-bold text-slate-400 dark:text-[#8B93A7] uppercase tracking-wider border-b border-slate-100 dark:border-white/5">
+                    Select CV Document Language
+                  </div>
+                  {CV_OPTIONS.map((opt) => (
                     <button
-                      key={lang}
+                      key={opt.lang}
                       type="button"
                       onClick={() => {
-                        setCvLang(lang);
-                        const tpl = EMAIL_TEMPLATES[lang];
-                        if (tpl) {
-                          setFormData((prev) => ({ ...prev, subject: tpl.subject, message: tpl.message }));
-                        }
+                        applyTemplate(opt.lang);
+                        setCvDropdownOpen(false);
                       }}
-                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-semibold transition-all ${
-                        cvLang === lang
-                          ? "bg-indigo-600 dark:bg-[#E8A33D] text-white dark:text-[#0B0D12] border-indigo-600 dark:border-[#E8A33D] shadow-sm"
-                          : "bg-white dark:bg-[#14171F] border-slate-200 dark:border-white/10 text-slate-700 dark:text-[#F5F3EE] hover:border-indigo-300 dark:hover:border-[#E8A33D]/40 hover:bg-indigo-50 dark:hover:bg-[#E8A33D]/5"
+                      className={`w-full text-left px-3 py-2 text-xs font-medium transition flex items-center justify-between ${
+                        cvLang === opt.lang
+                          ? "bg-indigo-50 dark:bg-[#E8A33D]/10 text-indigo-600 dark:text-[#E8A33D] font-bold"
+                          : "text-slate-700 dark:text-[#F5F3EE] hover:bg-slate-50 dark:hover:bg-white/5"
                       }`}
                     >
-                      <img src={`/flags/${countryCode}.svg`} alt={label} width={20} height={15} className="rounded-sm object-cover" />
-                      <span>{label}</span>
+                      <div className="flex items-center gap-2">
+                        <span className={`fi fi-${opt.countryCode}`} />
+                        <span>{opt.label}</span>
+                      </div>
+                      <span className="text-[10px] text-slate-400 font-mono uppercase">{opt.lang}</span>
                     </button>
                   ))}
                 </div>
-              </div>
-            )}
-          </div>
-
-          {/* Anti-Spam Notice & Custom Delay Range in Bulk Mode */}
-          {isBulkMode && (
-            <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/30 flex flex-wrap items-center justify-between gap-4">
-              <div className="flex items-start gap-3 max-w-xl">
-                <ShieldAlert className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-xs font-semibold text-amber-900 dark:text-amber-300">
-                    Smart Anti-Spam Protection Enabled
-                  </p>
-                  <p className="text-xs text-amber-700 dark:text-amber-400/80 mt-0.5 leading-relaxed">
-                    Applies randomized time delays between consecutive email dispatches to protect your Gmail sender address from rate-limiting.
-                  </p>
-                </div>
-              </div>
-
-              {/* Delay Selector */}
-              <div className="flex items-center gap-2 bg-white dark:bg-[#14171F] px-3 py-1.5 rounded-lg border border-amber-200 dark:border-amber-800/30">
-                <Clock className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-                <span className="text-xs font-medium text-slate-700 dark:text-[#F5F3EE]">Delay:</span>
-                <input
-                  type="number"
-                  min={1}
-                  max={60}
-                  value={delayRange.min}
-                  onChange={(e) => setDelayRange({ ...delayRange, min: parseInt(e.target.value) || 1 })}
-                  className="w-12 text-center bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded px-1 text-xs text-slate-900 dark:text-[#F5F3EE]"
-                />
-                <span className="text-xs text-slate-400">-</span>
-                <input
-                  type="number"
-                  min={1}
-                  max={60}
-                  value={delayRange.max}
-                  onChange={(e) => setDelayRange({ ...delayRange, max: parseInt(e.target.value) || 1 })}
-                  className="w-12 text-center bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded px-1 text-xs text-slate-900 dark:text-[#F5F3EE]"
-                />
-                <span className="text-xs text-slate-500">sec</span>
-              </div>
-            </div>
-          )}
-
-          {/* Primary Action Button */}
-          {isBulkMode ? (
-            <div className="flex items-center gap-3 pt-2">
-              <button
-                type="button"
-                disabled={isBulkRunning}
-                onClick={handleBulkSend}
-                className="flex-1 py-3 px-6 rounded-xl bg-indigo-600 dark:bg-[#E8A33D] hover:bg-indigo-700 dark:hover:bg-[#d9942e] text-white dark:text-[#0B0D12] font-bold text-sm shadow-md transition flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isBulkRunning ? (
-                  <>
-                    <RefreshCcw className="w-4 h-4 animate-spin" />
-                    <span>Bulk Sending in Progress...</span>
-                  </>
-                ) : (
-                  <>
-                    <Send className="w-4 h-4" />
-                    <span>Start Bulk Dispatch</span>
-                  </>
-                )}
-              </button>
-
-              {isBulkRunning && !modalOpen && (
-                <button
-                  type="button"
-                  onClick={() => setModalOpen(true)}
-                  className="px-4 py-3 rounded-xl bg-slate-200 dark:bg-white/10 text-slate-800 dark:text-[#F5F3EE] hover:bg-slate-300 dark:hover:bg-white/20 font-semibold text-sm transition"
-                >
-                  View Progress
-                </button>
               )}
             </div>
-          ) : (
-            <div className="pt-2">
+          )}
+        </div>
+
+        {/* Recipients Box */}
+        {!isBulkMode ? (
+          <div className="space-y-2">
+            <label className="block text-xs font-bold text-slate-700 dark:text-[#F5F3EE]">
+              Recipient Email Address <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="email"
+              placeholder="e.g. hr@company.com"
+              value={formData.to}
+              onChange={(e) => setFormData((prev) => ({ ...prev, to: e.target.value }))}
+              className="w-full px-4 py-2.5 rounded-xl bg-white dark:bg-[#14171F] border border-slate-200 dark:border-white/10 text-sm font-medium text-slate-900 dark:text-[#F5F3EE] placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-[#E8A33D]"
+            />
+          </div>
+        ) : (
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <label className="block text-xs font-bold text-slate-700 dark:text-[#F5F3EE]">
+                Bulk Recipients (One email per line) <span className="text-red-500">*</span>
+              </label>
               <button
-                type="submit"
-                disabled={loading}
-                className="w-full py-3 px-6 rounded-xl bg-indigo-600 dark:bg-[#E8A33D] hover:bg-indigo-700 dark:hover:bg-[#d9942e] text-white dark:text-[#0B0D12] font-bold text-sm shadow-md transition flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                type="button"
+                onClick={loadTestEmails}
+                className="text-xs text-indigo-600 dark:text-[#E8A33D] font-semibold hover:underline"
               >
-                {loading ? (
-                  <>
-                    <RefreshCcw className="w-4 h-4 animate-spin" />
-                    <span>Sending Email...</span>
-                  </>
-                ) : (
-                  <>
-                    <Send className="w-4 h-4" />
-                    <span>Send Email Now</span>
-                  </>
-                )}
+                + Load test samples
               </button>
             </div>
+            <textarea
+              rows={5}
+              placeholder={`hr@company1.com\ncareers@company2.com\njobs@company3.com`}
+              value={bulkEmails}
+              onChange={(e) => setBulkEmails(e.target.value)}
+              className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#14171F] border border-slate-200 dark:border-white/10 text-xs font-mono text-slate-900 dark:text-[#F5F3EE] placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-[#E8A33D] custom-scroll"
+            />
+          </div>
+        )}
+
+        {/* Subject */}
+        <div className="space-y-2">
+          <label className="block text-xs font-bold text-slate-700 dark:text-[#F5F3EE]">
+            Email Subject <span className="text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            dir={isRTL ? "rtl" : "ltr"}
+            placeholder="e.g. Application for Full Stack Developer Position"
+            value={formData.subject}
+            onChange={(e) => setFormData((prev) => ({ ...prev, subject: e.target.value }))}
+            className="w-full px-4 py-2.5 rounded-xl bg-white dark:bg-[#14171F] border border-slate-200 dark:border-white/10 text-sm font-medium text-slate-900 dark:text-[#F5F3EE] placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-[#E8A33D]"
+          />
+        </div>
+
+        {/* Message Body */}
+        <div className="space-y-2">
+          <label className="block text-xs font-bold text-slate-700 dark:text-[#F5F3EE]">
+            Message Body <span className="text-red-500">*</span>
+          </label>
+          <textarea
+            rows={8}
+            dir={isRTL ? "rtl" : "ltr"}
+            placeholder="Write your email body here..."
+            value={formData.message}
+            onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
+            className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#14171F] border border-slate-200 dark:border-white/10 text-xs font-medium text-slate-900 dark:text-[#F5F3EE] placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-[#E8A33D] custom-scroll"
+          />
+        </div>
+
+        {/* Submit Actions */}
+        <div className="pt-2 flex items-center justify-end gap-3">
+          {!isBulkMode ? (
+            <button
+              type="button"
+              disabled={loading}
+              onClick={handleSingleSend}
+              className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 dark:bg-[#E8A33D] dark:hover:bg-[#d49231] text-white dark:text-[#0E1016] text-xs font-bold shadow-md transition disabled:opacity-50"
+            >
+              {loading ? <RefreshCcw className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
+              Send Single Email
+            </button>
+          ) : (
+            <button
+              type="button"
+              disabled={loading || isBulkRunning}
+              onClick={handleBulkSend}
+              className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 dark:bg-[#E8A33D] dark:hover:bg-[#d49231] text-white dark:text-[#0E1016] text-xs font-bold shadow-md transition disabled:opacity-50"
+            >
+              {loading || isBulkRunning ? (
+                <RefreshCcw className="w-4 h-4 animate-spin" />
+              ) : (
+                <Users className="w-4 h-4" />
+              )}
+              {isBulkRunning ? "Bulk Campaign Running..." : "Start Bulk Dispatch Queue"}
+            </button>
           )}
-        </form>
+        </div>
       </div>
 
-      {/* Real-time Progress Modal for Bulk Sending */}
+      {/* Progress & Live Queue Modal */}
       {modalOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
-          onClick={() => { if (!isBulkRunning) setModalOpen(false); }}
-        >
-          <div
-            className="w-full max-w-2xl bg-white dark:bg-[#14171F] border border-slate-200 dark:border-white/10 rounded-2xl shadow-2xl flex flex-col max-h-[85vh] overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
-          >
+        <div className="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="w-full max-w-2xl bg-white dark:bg-[#14171F] border border-slate-200 dark:border-white/10 rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[85vh]">
             {/* Modal Header */}
-            <div className="px-5 py-4 border-b border-slate-200 dark:border-white/10 flex items-center justify-between bg-slate-50 dark:bg-[#0E1016]">
-              <div className="flex items-center gap-3">
+            <div className="px-6 py-4 border-b border-slate-200 dark:border-white/10 flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
                 <div className="p-2 rounded-lg bg-indigo-50 dark:bg-[#E8A33D]/10 text-indigo-600 dark:text-[#E8A33D]">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-slate-900 dark:text-[#F5F3EE]">
-                    Bulk Mail Process Monitor
+                    Server Bulk Dispatch Monitor
                   </h3>
-                  <p className="text-xs text-slate-500 dark:text-[#8B93A7]">
-                    Real-time status tracking and controls
+                  <p className="text-[11px] text-slate-500 dark:text-[#8B93A7]">
+                    Sequential background worker engine active
                   </p>
                 </div>
               </div>
 
-              {/* Action Controls */}
               <div className="flex items-center gap-2">
-                {isBulkRunning && !stats.isDone && (
-                  <>
-                    {isPaused ? (
-                      <button
-                        onClick={handleResume}
-                        className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-xs font-semibold hover:bg-emerald-500/20 transition cursor-pointer"
-                      >
-                        <Play className="w-3.5 h-3.5" /> Resume
-                      </button>
-                    ) : (
-                      <button
-                        onClick={handlePause}
-                        className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 text-xs font-semibold hover:bg-amber-500/20 transition cursor-pointer"
-                      >
-                        <Pause className="w-3.5 h-3.5" /> Pause
-                      </button>
-                    )}
-                    <button
-                      onClick={handleCancel}
-                      className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20 text-xs font-semibold hover:bg-red-500/20 transition cursor-pointer"
-                    >
-                      <Square className="w-3.5 h-3.5" /> Stop
-                    </button>
-                  </>
+                {isBulkRunning && (
+                  <button
+                    type="button"
+                    onClick={handleCancel}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-red-500/10 hover:bg-red-500/20 text-red-600 dark:text-red-400 border border-red-500/20 text-xs font-bold transition"
+                  >
+                    <Square className="w-3 h-3 fill-current" /> Stop Queue
+                  </button>
                 )}
                 <button
+                  type="button"
                   onClick={() => setModalOpen(false)}
-                  className="p-1.5 rounded-lg text-slate-400 hover:text-slate-900 dark:hover:text-[#F5F3EE] hover:bg-slate-200 dark:hover:bg-white/10 transition cursor-pointer"
+                  className="p-1.5 text-slate-400 hover:text-slate-600 dark:hover:text-[#F5F3EE] rounded-lg transition"
                 >
                   <X className="w-4 h-4" />
                 </button>
@@ -818,12 +679,12 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
             </div>
 
             {/* Modal Stats Overview */}
-            <div className="p-5 border-b border-slate-200 dark:border-white/10 space-y-4">
+            <div className="p-5 border-b border-slate-200 dark:border-white/10 space-y-4 bg-slate-50/50 dark:bg-white/[0.02]">
               {/* Progress Bar */}
               <div>
                 <div className="flex justify-between items-center text-xs mb-1.5 font-medium">
                   <span className="text-slate-600 dark:text-[#8B93A7]">
-                    Processed {doneCount} of {stats.total}
+                    Processed {doneCount} of {stats.total} recipients
                   </span>
                   <span className="font-mono font-bold text-indigo-600 dark:text-[#E8A33D]">
                     {progress}%
@@ -834,7 +695,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
                     className={`h-full transition-all duration-500 ${
                       stats.isDone
                         ? stats.cancelled > 0
-                          ? "bg-red-500"
+                          ? "bg-amber-500"
                           : "bg-emerald-500"
                         : "bg-indigo-600 dark:bg-[#E8A33D]"
                     }`}
@@ -843,58 +704,67 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
                 </div>
               </div>
 
-              {/* Counters */}
-              <div className="grid grid-cols-4 gap-3 text-center">
-                <div className="p-2.5 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10">
-                  <span className="block text-lg font-bold text-slate-900 dark:text-[#F5F3EE]">
+              {/* Counters Grid */}
+              <div className="grid grid-cols-5 gap-2 text-center">
+                <div className="p-2 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10">
+                  <span className="block text-base font-bold text-slate-900 dark:text-[#F5F3EE]">
                     {stats.total}
                   </span>
                   <span className="text-[10px] uppercase font-bold text-slate-500 dark:text-[#8B93A7]">
                     Total
                   </span>
                 </div>
-                <div className="p-2.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/30">
-                  <span className="block text-lg font-bold text-emerald-600 dark:text-emerald-400">
+                <div className="p-2 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/30">
+                  <span className="block text-base font-bold text-emerald-600 dark:text-emerald-400">
                     {stats.sent}
                   </span>
                   <span className="text-[10px] uppercase font-bold text-emerald-600 dark:text-emerald-400">
                     Sent
                   </span>
                 </div>
-                <div className="p-2.5 rounded-xl bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800/30">
-                  <span className="block text-lg font-bold text-red-600 dark:text-red-400">
+                <div className="p-2 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/30">
+                  <span className="block text-base font-bold text-amber-600 dark:text-amber-400">
+                    {stats.skipped}
+                  </span>
+                  <span className="text-[10px] uppercase font-bold text-amber-600 dark:text-amber-400">
+                    Skipped
+                  </span>
+                </div>
+                <div className="p-2 rounded-xl bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800/30">
+                  <span className="block text-base font-bold text-red-600 dark:text-red-400">
                     {stats.failed}
                   </span>
                   <span className="text-[10px] uppercase font-bold text-red-600 dark:text-red-400">
                     Failed
                   </span>
                 </div>
-                <div className="p-2.5 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10">
-                  <span className="block text-lg font-bold font-mono text-indigo-600 dark:text-[#E8A33D]">
+                <div className="p-2 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10">
+                  <span className="block text-base font-bold font-mono text-indigo-600 dark:text-[#E8A33D]">
                     {formatTime(stats.elapsed)}
                   </span>
                   <span className="text-[10px] uppercase font-bold text-slate-500 dark:text-[#8B93A7]">
-                    Time
+                    Elapsed
                   </span>
                 </div>
               </div>
 
-              {/* Countdown or Status Notification */}
-              {isPaused && !stats.isDone && (
-                <div className="p-2.5 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/30 text-amber-800 dark:text-amber-300 text-xs font-semibold flex items-center gap-2">
-                  <Pause className="w-4 h-4 text-amber-600 dark:text-amber-400" />
-                  Execution Paused — click Resume to continue sending.
-                </div>
-              )}
-              {!isPaused && !stats.isDone && countdown > 0 && (
-                <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-800/30 text-indigo-800 dark:text-indigo-300 text-xs font-semibold flex items-center gap-2">
-                  <Clock className="w-4 h-4 text-indigo-600 dark:text-indigo-400 animate-spin" />
-                  Anti-spam interval delay — next email dispatch in <span className="font-mono font-bold text-indigo-600 dark:text-[#E8A33D]">{countdown}s</span>
+              {/* Server Processing Indicator Banner */}
+              {isBulkRunning && stats.currentEmail && (
+                <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-800/30 text-indigo-900 dark:text-indigo-300 text-xs font-semibold flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2 truncate">
+                    <Clock className="w-4 h-4 text-indigo-600 dark:text-indigo-400 animate-spin shrink-0" />
+                    <span className="truncate">
+                      Currently processing: <strong className="font-mono text-indigo-700 dark:text-[#E8A33D]">{stats.currentEmail}</strong>
+                    </span>
+                  </div>
+                  <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 shrink-0">
+                    Server Background Queue
+                  </span>
                 </div>
               )}
             </div>
 
-            {/* Email Jobs Log */}
+            {/* Email Jobs Log List */}
             <div ref={listRef} className="flex-1 overflow-y-auto p-4 space-y-2 custom-scroll">
               {jobs.map((job, idx) => (
                 <div
@@ -905,6 +775,8 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
                       ? "bg-indigo-50 dark:bg-[#E8A33D]/10 border-indigo-200 dark:border-[#E8A33D]/30 text-indigo-900 dark:text-[#F5F3EE]"
                       : job.status === STATUS.SENT
                       ? "bg-emerald-50 dark:bg-emerald-950/10 border-emerald-200 dark:border-emerald-800/30 text-emerald-900 dark:text-emerald-300"
+                      : job.status === STATUS.SKIPPED
+                      ? "bg-amber-50 dark:bg-amber-950/10 border-amber-200 dark:border-amber-800/30 text-amber-900 dark:text-amber-300"
                       : job.status === STATUS.FAILED
                       ? "bg-red-50 dark:bg-red-950/10 border-red-200 dark:border-red-800/30 text-red-900 dark:text-red-300"
                       : "bg-slate-50 dark:bg-white/5 border-slate-200 dark:border-white/5 text-slate-600 dark:text-[#8B93A7]"
@@ -917,7 +789,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
                         {job.to}
                       </p>
                       {job.error && (
-                        <p className="text-[11px] text-red-500 truncate mt-0.5">{job.error}</p>
+                        <p className="text-[11px] text-amber-600 dark:text-amber-400 truncate mt-0.5">{job.error}</p>
                       )}
                     </div>
                   </div>
@@ -934,6 +806,11 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
                     {job.status === STATUS.SENT && (
                       <span className="flex items-center gap-1 font-bold text-emerald-600 dark:text-emerald-400">
                         <CheckCircle2 className="w-3.5 h-3.5" /> Sent
+                      </span>
+                    )}
+                    {job.status === STATUS.SKIPPED && (
+                      <span className="flex items-center gap-1 font-bold text-amber-600 dark:text-amber-400">
+                        <CheckCircle2 className="w-3.5 h-3.5" /> Skipped (Already Sent)
                       </span>
                     )}
                     {job.status === STATUS.FAILED && (
@@ -954,7 +831,6 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
           </div>
         </div>
       )}
-
     </div>
   );
 }
