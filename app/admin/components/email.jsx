@@ -359,9 +359,9 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
   return (
     <div className="flex-1 flex flex-col min-h-0 bg-slate-50 dark:bg-[#0E1016] rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden shadow-sm transition-colors duration-300">
       {/* Header Banner */}
-      <div className="shrink-0 px-6 py-4 bg-white dark:bg-[#14171F] border-b border-slate-200 dark:border-white/10 flex flex-wrap items-center justify-between gap-4">
+      <div className="shrink-0 px-4 sm:px-6 py-4 bg-white dark:bg-[#14171F] border-b border-slate-200 dark:border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div className="flex items-center gap-3">
-          <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-[#E8A33D]/10 text-indigo-600 dark:text-[#E8A33D] border border-indigo-100 dark:border-[#E8A33D]/20">
+          <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-[#E8A33D]/10 text-indigo-600 dark:text-[#E8A33D] border border-indigo-100 dark:border-[#E8A33D]/20 shrink-0">
             <Mail className="w-5 h-5" />
           </div>
           <div>
@@ -375,7 +375,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
         </div>
 
         {/* Action Controls & Preset Loader */}
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2 w-full sm:w-auto justify-between sm:justify-end">
           {/* Active Job Indicator Button */}
           {isBulkRunning && (
             <button
@@ -405,7 +405,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
             </button>
 
             {templateModalOpen && (
-              <div className="absolute right-0 mt-2 w-56 py-1.5 bg-white dark:bg-[#1A1D26] border border-slate-200 dark:border-white/10 rounded-xl shadow-xl z-50 overflow-hidden">
+              <div className="absolute left-0 sm:left-auto sm:right-0 mt-2 w-56 py-1.5 bg-white dark:bg-[#1A1D26] border border-slate-200 dark:border-white/10 rounded-xl shadow-xl z-50 overflow-hidden">
                 <div className="px-3 py-1.5 text-[11px] font-bold text-slate-400 dark:text-[#8B93A7] uppercase tracking-wider border-b border-slate-100 dark:border-white/5">
                   Select Preset Template
                 </div>
@@ -456,10 +456,10 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
       </div>
 
       {/* Main Content Area */}
-      <div className="flex-1 overflow-y-auto p-6 space-y-6 custom-scroll">
+      <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6 custom-scroll">
         {/* CV Attachment & Duplicate Protection Bar */}
-        <div className="p-4 rounded-xl bg-white dark:bg-[#14171F] border border-slate-200 dark:border-white/10 shadow-sm flex flex-wrap items-center justify-between gap-4">
-          <div className="flex flex-wrap items-center gap-6">
+        <div className="p-4 rounded-xl bg-white dark:bg-[#14171F] border border-slate-200 dark:border-white/10 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
             <div className="flex items-center gap-3">
               <label className="relative flex items-center cursor-pointer">
                 <input
@@ -476,7 +476,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
               </span>
             </div>
 
-            <div className="flex items-center gap-3 border-l border-slate-200 dark:border-white/10 pl-6">
+            <div className="flex items-center gap-3 border-t sm:border-t-0 sm:border-l border-slate-200 dark:border-white/10 pt-3 sm:pt-0 sm:pl-6">
               <label className="relative flex items-center cursor-pointer">
                 <input
                   type="checkbox"
@@ -494,7 +494,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
           </div>
 
           {attachCv && (
-            <div className="relative" ref={cvDropdownRef}>
+            <div className="relative self-start md:self-auto" ref={cvDropdownRef}>
               <button
                 type="button"
                 onClick={() => setCvDropdownOpen((prev) => !prev)}
@@ -509,7 +509,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
               </button>
 
               {cvDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-52 py-1.5 bg-white dark:bg-[#1A1D26] border border-slate-200 dark:border-white/10 rounded-xl shadow-xl z-50 overflow-hidden">
+                <div className="absolute left-0 md:left-auto md:right-0 mt-2 w-52 py-1.5 bg-white dark:bg-[#1A1D26] border border-slate-200 dark:border-white/10 rounded-xl shadow-xl z-50 overflow-hidden">
                   <div className="px-3 py-1.5 text-[10px] font-bold text-slate-400 dark:text-[#8B93A7] uppercase tracking-wider border-b border-slate-100 dark:border-white/5">
                     Select CV Document Language
                   </div>

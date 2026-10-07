@@ -16,14 +16,23 @@ function Admin() {
   const [isForbidden, setIsForbidden] = useState(false);
   
   const [isDarkMode, setIsDarkMode] = useState(true);
-  const [activeTab, setActiveTab] = useState("messages"); // 'messages' or 'media'
+  const [activeTab, setActiveTab] = useState("messages"); // 'messages', 'media', or 'email'
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('admin-theme');
     if (savedTheme === 'light') {
         setIsDarkMode(false);
     }
+    const savedTab = localStorage.getItem('admin-active-tab');
+    if (savedTab && ['messages', 'media', 'email'].includes(savedTab)) {
+        setActiveTab(savedTab);
+    }
   }, []);
+
+  const handleTabChange = (tabName) => {
+    setActiveTab(tabName);
+    localStorage.setItem('admin-active-tab', tabName);
+  };
 
   const toggleTheme = () => {
       setIsDarkMode(prev => {
@@ -108,21 +117,21 @@ function Admin() {
             {/* Navigation Tabs */}
             <div className="hidden md:flex items-center gap-1 p-1 bg-slate-100 dark:bg-[#14171F] rounded-xl border border-slate-200 dark:border-white/10 transition-colors duration-300">
                 <button 
-                    onClick={() => setActiveTab("messages")}
+                    onClick={() => handleTabChange("messages")}
                     className={`flex items-center gap-2 px-4 py-1.5 rounded-lg text-sm font-semibold transition-all ${activeTab === 'messages' ? 'bg-white dark:bg-[#1E222D] text-indigo-600 dark:text-[#E8A33D] shadow-sm border border-slate-200/50 dark:border-white/5' : 'text-slate-500 dark:text-[#8B93A7] hover:text-slate-700 dark:hover:text-[#F5F3EE]'}`}
                 >
                     <MessageSquare className="w-4 h-4" />
                     Messages
                 </button>
                 <button 
-                    onClick={() => setActiveTab("media")}
+                    onClick={() => handleTabChange("media")}
                     className={`flex items-center gap-2 px-4 py-1.5 rounded-lg text-sm font-semibold transition-all ${activeTab === 'media' ? 'bg-white dark:bg-[#1E222D] text-indigo-600 dark:text-[#E8A33D] shadow-sm border border-slate-200/50 dark:border-white/5' : 'text-slate-500 dark:text-[#8B93A7] hover:text-slate-700 dark:hover:text-[#F5F3EE]'}`}
                 >
                     <ImageIcon className="w-4 h-4" />
                     Media
                 </button>
                 <button 
-                    onClick={() => setActiveTab("email")}
+                    onClick={() => handleTabChange("email")}
                     className={`flex items-center gap-2 px-4 py-1.5 rounded-lg text-sm font-semibold transition-all ${activeTab === 'email' ? 'bg-white dark:bg-[#1E222D] text-indigo-600 dark:text-[#E8A33D] shadow-sm border border-slate-200/50 dark:border-white/5' : 'text-slate-500 dark:text-[#8B93A7] hover:text-slate-700 dark:hover:text-[#F5F3EE]'}`}
                 >
                     <Mail className="w-4 h-4" />
@@ -171,21 +180,21 @@ function Admin() {
           {/* Mobile Navigation Tabs (visible only on small screens) */}
           <div className="md:hidden flex items-center gap-2 pb-3 mt-1">
               <button 
-                  onClick={() => setActiveTab("messages")}
+                  onClick={() => handleTabChange("messages")}
                   className={`flex-1 flex justify-center items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold transition-all ${activeTab === 'messages' ? 'bg-indigo-50 dark:bg-[#1E222D] text-indigo-600 dark:text-[#E8A33D] shadow-sm border border-indigo-100 dark:border-white/10' : 'bg-slate-50 dark:bg-[#14171F] text-slate-500 dark:text-[#8B93A7] border border-slate-200 dark:border-white/5'}`}
               >
                   <MessageSquare className="w-3.5 h-3.5" />
                   Messages
               </button>
               <button 
-                  onClick={() => setActiveTab("media")}
+                  onClick={() => handleTabChange("media")}
                   className={`flex-1 flex justify-center items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold transition-all ${activeTab === 'media' ? 'bg-indigo-50 dark:bg-[#1E222D] text-indigo-600 dark:text-[#E8A33D] shadow-sm border border-indigo-100 dark:border-white/10' : 'bg-slate-50 dark:bg-[#14171F] text-slate-500 dark:text-[#8B93A7] border border-slate-200 dark:border-white/5'}`}
               >
                   <ImageIcon className="w-3.5 h-3.5" />
                   Media
               </button>
               <button 
-                  onClick={() => setActiveTab("email")}
+                  onClick={() => handleTabChange("email")}
                   className={`flex-1 flex justify-center items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold transition-all ${activeTab === 'email' ? 'bg-indigo-50 dark:bg-[#1E222D] text-indigo-600 dark:text-[#E8A33D] shadow-sm border border-indigo-100 dark:border-white/10' : 'bg-slate-50 dark:bg-[#14171F] text-slate-500 dark:text-[#8B93A7] border border-slate-200 dark:border-white/5'}`}
               >
                   <Mail className="w-3.5 h-3.5" />
