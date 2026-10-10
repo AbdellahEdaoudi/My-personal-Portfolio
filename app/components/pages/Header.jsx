@@ -87,8 +87,8 @@ export default function Header({ content, lang }) {
                 <Link href={`/${lang}`} className='hover:scale-105 duration-300 cursor-pointer'>
                     <div className="flex items-center gap-3 group">
                         {/* Profile Image with Gold Verified Badge */}
-                        <div className="relative w-10 h-10 flex-shrink-0">
-                            <div className="w-10 h-10 rounded-lg p-[2px] bg-gradient-to-tr from-amber-400 via-amber-500 to-amber-200 shadow-md group-hover:shadow-amber-500/30 transition-all duration-300">
+                        <div className="relative w-10 h-10 shrink-0">
+                            <div className="w-10 h-10 rounded-lg p-0.5 bg-linear-to-tr from-amber-400 via-amber-500 to-amber-200 shadow-md group-hover:shadow-amber-500/30 transition-all duration-300">
                                 <div className="relative w-full h-full rounded-md overflow-hidden bg-slate-900">
                                     <Image
                                         src="/profile/new-profile.jpg"
@@ -148,7 +148,7 @@ export default function Header({ content, lang }) {
                     <div className="relative" ref={langDropdownRef}>
                         <button
                             onClick={() => setIsLangOpen(!isLangOpen)}
-                            className="flex items-center gap-2 border border-gray-200 dark:border-slate-700/80 rounded-full px-3 py-1.5 hover:border-green-500 dark:hover:border-blue-400 transition-colors focus:outline-none bg-gray-50 dark:bg-slate-800/80 hover:bg-white dark:hover:bg-slate-700"
+                            className="cursor-pointer flex items-center gap-2 border border-gray-200 dark:border-slate-700/80 rounded-full px-3 py-1.5 hover:border-green-500 dark:hover:border-blue-400 transition-colors focus:outline-none bg-gray-50 dark:bg-slate-800/80 hover:bg-white dark:hover:bg-slate-700"
                         >
                             <span className={`fi fi-${selectedLang.countryCode}`}></span>
                             <span className="text-sm font-medium uppercase text-gray-800 dark:text-gray-200">{selectedLang.code}</span>
@@ -204,7 +204,7 @@ export default function Header({ content, lang }) {
                     <div className="relative" ref={mobileLangDropdownRef}>
                         <button
                             onClick={() => setIsMobileLangOpen(!isMobileLangOpen)}
-                            className="flex items-center gap-1.5 border border-gray-200 dark:border-slate-700 rounded-lg px-2 py-1.5 hover:border-green-500 dark:hover:border-blue-400 transition-colors focus:outline-none bg-gray-50 dark:bg-slate-800 hover:bg-white dark:hover:bg-slate-700"
+                            className="cursor-pointer flex items-center gap-1.5 border border-gray-200 dark:border-slate-700 rounded-lg px-2 py-1.5 hover:border-green-500 dark:hover:border-blue-400 transition-colors focus:outline-none bg-gray-50 dark:bg-slate-800 hover:bg-white dark:hover:bg-slate-700"
                         >
                             <span className={`fi fi-${selectedLang.countryCode}`}></span>
                             <span className="text-xs font-medium uppercase text-gray-800 dark:text-gray-200">{selectedLang.code}</span>
@@ -212,7 +212,7 @@ export default function Header({ content, lang }) {
                         </button>
 
                         <div
-                            className={`absolute top-full right-0 mt-2 w-40 bg-white dark:bg-[#0b1b2b] rounded-lg shadow-lg border border-gray-100 dark:border-[#13283d] overflow-hidden max-h-60 overflow-y-auto z-[60] transition-all duration-200 origin-top-right ${isMobileLangOpen ? 'opacity-100 translate-y-0 scale-100 visible pointer-events-auto' : 'opacity-0 -translate-y-2 scale-95 invisible pointer-events-none'}`}
+                            className={`absolute top-full right-0 mt-2 w-40 bg-white dark:bg-[#0b1b2b] rounded-lg shadow-lg border border-gray-100 dark:border-[#13283d] overflow-hidden max-h-60 overflow-y-auto z-60 transition-all duration-200 origin-top-right ${isMobileLangOpen ? 'opacity-100 translate-y-0 scale-100 visible pointer-events-auto' : 'opacity-0 -translate-y-2 scale-95 invisible pointer-events-none'}`}
                         >
                             {languages.map((langItem) => (
                                 <Link
@@ -240,7 +240,7 @@ export default function Header({ content, lang }) {
                         {/* Section 1: Main Links */}
                         <div>
                             <p className="text-[10px] font-black uppercase tracking-[0.2em] text-emerald-600 dark:text-blue-400 mb-6 flex items-center gap-2">
-                                <span className="w-8 h-[1px] bg-emerald-100 dark:bg-blue-500/30"></span> {content?.mobileMenu?.navigation || "Navigation"}
+                                <span className="w-8 h-px bg-emerald-100 dark:bg-blue-500/30"></span> {content?.mobileMenu?.navigation || "Navigation"}
                             </p>
                             <nav className="space-y-4">
                                 {LinksHeader.slice(0, 5).map((ln, i) => (
@@ -292,10 +292,10 @@ export default function Header({ content, lang }) {
                             <div className="flex items-center justify-between">
                                 <div className="flex gap-4">
                                     <Link href="https://github.com/AbdellahEdaoudi" className="w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-slate-900 dark:hover:bg-blue-600 hover:text-white transition-all">
-                                        <Image src={"/icons/github.svg"} alt="Abdellah Edaoudi GitHub" width={30} height={30} className="w-[30px] h-[30px]" />
+                                        <Image src={"/icons/github.svg"} alt="Abdellah Edaoudi GitHub" width={30} height={30} className="w-7.5 h-7.5" />
                                     </Link>
                                     <Link href="https://linkedin.com/in/abdellah-edaoudi" className="w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-slate-900 dark:hover:bg-blue-600 hover:text-white transition-all">
-                                        <Image src={"/icons/linkedin.svg"} alt="Abdellah Edaoudi LinkedIn" width={30} height={30} className="w-[30px] h-[30px]" />
+                                        <Image src={"/icons/linkedin.svg"} alt="Abdellah Edaoudi LinkedIn" width={30} height={30} className="w-7.5 h-7.5" />
                                     </Link>
                                 </div>
                                 <span className="text-[9px] font-black uppercase tracking-[0.2em] text-slate-300 dark:text-slate-500">© AE Portfolio ©</span>

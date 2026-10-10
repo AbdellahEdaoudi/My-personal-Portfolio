@@ -3,6 +3,7 @@ const nextConfig = {
   // output: 'export',
 
   images: {
+    qualities: [75, 95],
     remotePatterns: [
       {
         protocol: "https",
