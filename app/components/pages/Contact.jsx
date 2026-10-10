@@ -117,7 +117,7 @@ function Contact({ content }) {
             {imageModal && imagePreview && (
                 <div
                     onClick={() => setImageModal(false)}
-                    className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md cursor-zoom-out transition-opacity duration-300"
+                    className="fixed inset-0 z-200 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md cursor-zoom-out transition-opacity duration-300"
                 >
                     <div
                         onClick={(e) => e.stopPropagation()}

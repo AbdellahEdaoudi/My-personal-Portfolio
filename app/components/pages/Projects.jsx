@@ -16,22 +16,23 @@ function Projects({ content }) {
           <div key={i} className="bg-white/70 dark:bg-[#0b1b2b]/70 backdrop-blur-sm flex flex-col w-80 hover:scale-[1.03] border border-white/40 dark:border-[#13283d] duration-300 rounded-lg shadow-2xl pb-4 mb-5 overflow-hidden transition-all hover:bg-white/80 dark:hover:bg-[#112438]">
             <Link href={p.websiteUrl} target="_blank" rel="noopener noreferrer">
               <Image width={800} height={450}
-                className="w-96 rounded-md border-b-2 cursor-pointer dark:border-[#13283d]"
+                className="w-full h-auto object-contain rounded-t-md border-b-2 cursor-pointer dark:border-[#13283d]"
                 src={p.image}
                 alt={p.title || "Project Image"}
                 priority={i < 3}
+                quality={95}
               />
             </Link>
             <div>
               <div className="flex justify-between items-start gap-2 px-3 py-3">
-                <h1 className="text-[16px] underline flex-1 leading-snug break-words min-w-0 dark:text-white">{p.title}</h1>
-                <Link href={p.websiteUrl} className="flex-shrink-0 flex items-center gap-1 hover:scale-105 duration-300 hover:text-sky-500 hover:bg-sky-50 border p-1 rounded-md bg-gray-100 dark:bg-slate-800 dark:border-slate-700 dark:text-blue-400 dark:hover:bg-blue-950/60" target="_blank">
-                  <Image src="/Projects/WebSite.png" width={17} height={17} alt="WebSite" />
+                <h1 className="text-[16px] underline flex-1 leading-snug wrap-break-word min-w-0 dark:text-white">{p.title}</h1>
+                <Link href={p.websiteUrl} className="shrink-0 flex items-center gap-1 text-gray-700 dark:text-gray-200 hover:text-sky-600 dark:hover:text-blue-400 transition-colors duration-300 p-1 rounded-md border border-gray-300 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400" target="_blank" rel="noopener noreferrer">
+                  <Image src="/Projects/WebSite.png" width={17} height={17} alt="WebSite" className="brightness-0 dark:invert" />
                   <span className="ml-1 text-xs sm:text-sm font-medium whitespace-nowrap">{preview}</span>
                 </Link>
               </div>
               {/* Description */}
-              <div className="relative px-3 py-2 text-[12px] border text-gray-500 dark:text-gray-300 dark:border-[#13283d]">
+              <div className="relative px-3 py-2 text-[12px] border-y border-gray-200/80 text-gray-500 dark:text-gray-300 dark:border-[#13283d]">
                 <input type="checkbox" id={`expand-${i}`} className="peer hidden" />
                 <h2 className="line-clamp-5 peer-checked:line-clamp-none peer-checked:h-auto overflow-hidden transition-all duration-300">
                   {p.description}
@@ -48,10 +49,10 @@ function Projects({ content }) {
                 )}
               </div>
               {/* technologies */}
-              <div className="flex flex-wrap gap-2 justify-around py-2 px-1 border dark:border-[#13283d]">
+              <div className="flex flex-wrap gap-2 justify-around py-2 px-1 border-b border-gray-200/80 dark:border-[#13283d]">
                 {p.technologies.map((tech, i) => (
                   <div key={i} className="flex items-center gap-1 bg-gray-100 dark:bg-slate-800 rounded-full px-1 py-0.5 shadow-sm hover:shadow-md transition-shadow duration-300 text-xs dark:border dark:border-slate-700">
-                    <Image src={tech.logo} alt={tech.name} width={18} height={18} className="rounded-full w-[18px] h-[18px]" />
+                    <Image src={tech.logo} alt={tech.name} width={18} height={18} className="rounded-full w-4.5 h-4.5" />
                     <p className="text-xs text-gray-700 dark:text-gray-300">{tech.name}</p>
                   </div>
                 ))}

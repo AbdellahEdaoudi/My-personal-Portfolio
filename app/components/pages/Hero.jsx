@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { 
-  FaReact, 
+import {
+  FaReact,
   FaNodeJs
 } from "react-icons/fa";
-import { 
-  SiNextdotjs, 
+import {
+  SiNextdotjs,
   SiNestjs
 } from "react-icons/si";
 
@@ -36,12 +36,13 @@ function Hero({ content, lang }) {
   return (
     <section className="mx-4 min-h-[calc(100vh-5rem)] flex items-center justify-center py-6">
       <div className="flex md:flex-row flex-col-reverse items-center justify-center gap-8 md:gap-14 lg:gap-24 w-full max-w-6xl duration-300">
-        
+
         {/* Profile Content - Centered */}
         <div className="space-y-6 flex flex-col items-center justify-center text-center">
-          
-          {/* Greeting - Responsive text size and natural wrapping to prevent overflow in all languages */}
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white leading-snug break-words max-w-xl" dir="auto">
+          <h1
+            className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 dark:text-white leading-snug max-w-xl"
+            dir="auto"
+          >
             {content.greeting}
           </h1>
 
@@ -51,7 +52,7 @@ function Hero({ content, lang }) {
           </h2>
 
           {/* Description Box */}
-          <p className="border border-white/40 dark:border-[#13283d] rounded-2xl md:w-[460px] text-justify p-4 sm:p-5 bg-white/70 dark:bg-[#0b1b2b]/70 backdrop-blur-sm shadow-xl text-gray-800 dark:text-gray-200 leading-relaxed transition-all duration-500 hover:bg-white/80 dark:hover:bg-[#112438]/90">
+          <p className="border border-white/40 dark:border-[#13283d] rounded-2xl md:w-115 text-justify p-4 sm:p-5 bg-white/70 dark:bg-[#0b1b2b]/70 backdrop-blur-sm shadow-xl text-gray-800 dark:text-gray-200 leading-relaxed transition-all duration-500 hover:bg-white/80 dark:hover:bg-[#112438]/90">
             {content.description}
           </p>
 
@@ -88,17 +89,17 @@ function Hero({ content, lang }) {
             {isRtl ? '{' : '}'}
           </div>
 
-          <div className="absolute -inset-6 bg-gradient-to-br from-blue-100/30 via-purple-50/30 to-transparent dark:from-blue-500/20 dark:via-blue-600/10 dark:to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+          <div className="absolute -inset-6 bg-linear-to-br from-blue-100/30 via-purple-50/30 to-transparent dark:from-blue-500/20 dark:via-blue-600/10 dark:to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
           {/* Border Outline */}
           <div className={`absolute top-4 ${isRtl ? 'left-4' : 'right-4'} w-full h-full border border-gray-100 dark:border-[#13283d] rounded-[2.5rem] transition-transform duration-500 ${isRtl ? 'group-hover:translate-x-2' : 'group-hover:-translate-x-2'} group-hover:translate-y-2`}></div>
 
           {/* Profile Card Frame */}
-          <div className="relative z-10 p-[1px] bg-gradient-to-br from-gray-200 via-white to-gray-100 dark:from-slate-800 dark:via-slate-900 dark:to-slate-800 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
+          <div className="relative z-10 p-px bg-linear-to-br from-gray-200 via-white to-gray-100 dark:from-slate-800 dark:via-slate-900 dark:to-slate-800 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
             <div className="relative bg-white dark:bg-[#0b1b2b] p-2 rounded-[2.5rem] overflow-hidden">
-              <div className="overflow-hidden rounded-[2rem] bg-gray-100 dark:bg-slate-800 relative md:w-80 md:h-[360px] w-64 h-72 sm:w-72 sm:h-80">
+              <div className="overflow-hidden rounded-4xl bg-gray-100 dark:bg-slate-800 relative md:w-80 md:h-90 w-64 h-72 sm:w-72 sm:h-80">
                 {/* Loader / Placeholder Background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-gray-100 via-gray-200 to-gray-100 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800 animate-pulse"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-gray-100 via-gray-200 to-gray-100 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800 animate-pulse"></div>
 
                 <Image
                   src="/profile/new-profile.jpg"
@@ -109,7 +110,7 @@ function Hero({ content, lang }) {
                   priority
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/20 to-white/0 dark:via-blue-500/10 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
+                <div className="absolute inset-0 bg-linear-to-tr from-white/0 via-white/20 to-white/0 dark:via-blue-500/10 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
               </div>
             </div>
           </div>
@@ -160,7 +161,7 @@ function Hero({ content, lang }) {
 
           {/* Vertical Text */}
           <div className={`absolute ${isRtl ? '-left-6' : '-right-6'} top-10 hidden sm:flex flex-col items-center gap-4 z-20`}>
-            <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-blue-500"></div>
+            <div className="w-px h-12 bg-linear-to-b from-transparent to-blue-500"></div>
             <span className={`[writing-mode:vertical-lr] ${isRtl ? 'rotate-180' : ''} text-[10px] uppercase tracking-[0.4em] font-bold text-blue-600 dark:text-blue-400 bg-white/80 dark:bg-[#0b1b2b]/80 backdrop-blur-sm p-2 rounded-full border border-blue-100 dark:border-blue-900/50 shadow-sm transition-transform duration-500 group-hover:-translate-y-2`}>
               {content.portfolio || "Portfolio"} {new Date().getFullYear()}
             </span>

@@ -23,12 +23,12 @@ function About({ content, lang }) {
             <div className="absolute -bottom-6 -right-6 text-purple-600/10 dark:text-blue-400/20 text-[6rem] font-serif transition-all duration-700 group-hover:translate-x-3 group-hover:translate-y-3 select-none leading-none">
               {lang === 'ar' || lang === 'fa' ? '{' : '}'}
             </div>
-            <div className="absolute -inset-6 bg-gradient-to-br from-blue-100/30 via-purple-50/30 to-transparent dark:from-blue-500/20 dark:via-blue-600/10 dark:to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            <div className="absolute -inset-6 bg-linear-to-br from-blue-100/30 via-purple-50/30 to-transparent dark:from-blue-500/20 dark:via-blue-600/10 dark:to-transparent rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             <div className={`absolute top-4 ${lang === 'ar' || lang === 'fa' ? 'left-4' : 'right-4'} w-full h-full border border-gray-100 dark:border-[#13283d] rounded-[2.5rem] transition-transform duration-500 ${lang === 'ar' || lang === 'fa' ? 'group-hover:translate-x-2' : 'group-hover:-translate-x-2'} group-hover:translate-y-2`}></div>
 
-            <div className="relative z-10 p-[1px] bg-gradient-to-bl from-gray-200 via-white to-gray-100 dark:from-slate-800 dark:via-slate-900 dark:to-slate-800 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
+            <div className="relative z-10 p-px bg-linear-to-bl from-gray-200 via-white to-gray-100 dark:from-slate-800 dark:via-slate-900 dark:to-slate-800 rounded-[2.5rem] shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
               <div className="relative bg-white dark:bg-[#0b1b2b] p-2 rounded-[2.5rem] overflow-hidden">
-                <div className="overflow-hidden rounded-[2rem] relative">
+                <div className="overflow-hidden rounded-4xl relative">
                   <Image
                     src="/about/image.jpg"
                     alt="Abdellah Edaoudi - About Me"
@@ -38,14 +38,14 @@ function About({ content, lang }) {
                     priority
                   />
 
-                  <div className="absolute bottom-0 right-0 p-2 bg-gradient-to-tl from-white via-white/80 to-transparent dark:from-slate-900 dark:via-slate-900/80 z-20">
+                  <div className="absolute bottom-0 right-0 p-2 bg-linear-to-tl from-white via-white/80 to-transparent dark:from-slate-900 dark:via-slate-900/80 z-20">
                     <div className="flex flex-col items-end opacity-40 group-hover:opacity-100 transition-opacity duration-500">
                       <span className="text-[8px] font-black uppercase tracking-tighter text-blue-900 dark:text-blue-400 leading-none">Abdellah Edaoudi</span>
                       <span className="text-[6px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 leading-none mt-1">Software Developer</span>
                     </div>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-white/0 via-white/10 to-white/0 dark:via-blue-500/10 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-white/0 via-white/10 to-white/0 dark:via-blue-500/10 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none"></div>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ function About({ content, lang }) {
                 </span>
               </li>
             </ul>
-            <p className="text-justify md:w-[400px] text-gray-700 dark:text-gray-300 px-2 leading-relaxed">
+            <p className="text-justify md:w-100 text-gray-700 dark:text-gray-300 px-2 leading-relaxed">
               {content.description}
             </p>
             <div className="flex items-center flex-wrap justify-center gap-4">

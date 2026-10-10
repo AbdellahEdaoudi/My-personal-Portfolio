@@ -16,7 +16,7 @@ export default function Experience({ content }) {
                     {content.items && content.items.map((item, index) => (
                         <div key={index} className="bg-white/70 dark:bg-[#0b1b2b]/70 backdrop-blur-sm border border-gray-100 dark:border-[#13283d] rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group">
                             {/* Card Top Border */}
-                            <div className="h-1 bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-blue-600 dark:to-blue-400 transform scale-x-100 transition-transform duration-500 origin-left"></div>
+                            <div className="h-1 bg-linear-to-r from-cyan-500 to-blue-500 dark:from-blue-600 dark:to-blue-400 transform scale-x-100 transition-transform duration-500 origin-left"></div>
 
                             <div className="p-5 md:p-6">
                                 <div className="flex flex-col md:flex-row md:justify-between gap-4 mb-4">
@@ -62,7 +62,7 @@ export default function Experience({ content }) {
                                             <ul className="grid grid-cols-1 gap-2">
                                                 {(item.responsibilities || item.description).map((text, i) => (
                                                     <li key={i} className="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-300 leading-relaxed group/item">
-                                                        <span className="mt-1.5 w-1.5 h-1.5 bg-blue-500 rounded-full group-hover/item:scale-125 transition-transform flex-shrink-0"></span>
+                                                        <span className="mt-1.5 w-1.5 h-1.5 bg-blue-500 rounded-full group-hover/item:scale-125 transition-transform shrink-0"></span>
                                                         {text}
                                                     </li>
                                                 ))}

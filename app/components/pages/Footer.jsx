@@ -42,8 +42,8 @@ export default function Footer({ content, lang }) {
           <div className="lg:col-span-5 flex flex-col items-start gap-8">
             <div className="flex items-center gap-3">
               {/* Profile Image with Gold Verified Badge */}
-              <div className="relative w-11 h-11 flex-shrink-0">
-                <div className="w-11 h-11 rounded-lg p-[2px] bg-gradient-to-tr from-amber-400 via-amber-500 to-amber-200 shadow-md">
+              <div className="relative w-11 h-11 shrink-0">
+                <div className="w-11 h-11 rounded-lg p-0.5 bg-linear-to-tr from-amber-400 via-amber-500 to-amber-200 shadow-md">
                   <div className="relative w-full h-full rounded-md overflow-hidden bg-slate-900">
                     <Image
                       src="/profile/new-profile.jpg"
@@ -116,7 +116,7 @@ export default function Footer({ content, lang }) {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-white dark:hover:text-[#6CABDD] transition-colors duration-200 text-sm font-medium"
+                      className="text-gray-400 hover:text-white dark:hover:text-[#6CABDD] transition-colors duration-200 text-xs sm:text-sm font-medium break-all block"
                     >
                       {item.value}
                     </Link>
@@ -129,7 +129,7 @@ export default function Footer({ content, lang }) {
       </div>
 
       {/* Copyright Bar */}
-      <div className="w-full bg-[#c5a059] dark:bg-[#112d48] border-t dark:border-[#6CABDD]/20 py-3 mt-[-2rem] relative z-0 rounded-b-[2rem]">
+      <div className="w-full bg-[#c5a059] dark:bg-[#112d48] border-t dark:border-[#6CABDD]/20 py-3 -mt-8 relative z-0 rounded-b-4xl">
         <div className="container mx-auto px-4 text-center">
           <p className="text-[#0f1d1b] dark:text-[#6CABDD] text-[10px] md:text-xs font-bold uppercase tracking-widest">
             {content.copyright || 'Copyright'} © {new Date().getFullYear()} {content.name}. {content.rights}.
