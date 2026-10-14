@@ -274,17 +274,22 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
       payload.append("to", formData.to.trim());
       payload.append("subject", formData.subject);
       payload.append("message", formData.message);
+      payload.append("checkDuplicates", checkDuplicates);
       if (attachCv) {
         const cvFile = await fetchCvBlob();
         payload.append("cv", cvFile);
       }
-
+      
       const res = await axios.post("/api/email/send", payload, {
         withCredentials: true,
       });
 
-      toast.success(res.data?.message || "Email sent successfully!");
-      setFormData((prev) => ({ ...prev, to: "" }));
+      if (res.data?.skipped) {
+        toast.warning(res.data?.message || "Email already sent previously. Skipped.");
+      } else {
+        toast.success(res.data?.message || "Email sent successfully!");
+        setFormData((prev) => ({ ...prev, to: "" }));
+      }
     } catch (err) {
       await handleError(err, () => handleSingleSend(e), "Failed to send email");
     } finally {
@@ -468,7 +473,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
                   onChange={(e) => setAttachCv(e.target.checked)}
                   className="sr-only peer"
                 />
-                <div className="w-9 h-5 bg-slate-200 dark:bg-white/10 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 dark:peer-checked:bg-[#E8A33D]"></div>
+                <div className="w-9 h-5 bg-slate-200 dark:bg-white/10 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 dark:peer-checked:bg-[#E8A33D]"></div>
               </label>
               <span className="text-xs font-bold text-slate-800 dark:text-[#F5F3EE] flex items-center gap-1.5">
                 <Paperclip className="w-4 h-4 text-indigo-500 dark:text-[#E8A33D]" />
@@ -484,7 +489,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
                   onChange={(e) => setCheckDuplicates(e.target.checked)}
                   className="sr-only peer"
                 />
-                <div className="w-9 h-5 bg-slate-200 dark:bg-white/10 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 dark:peer-checked:bg-[#E8A33D]"></div>
+                <div className="w-9 h-5 bg-slate-200 dark:bg-white/10 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600 dark:peer-checked:bg-[#E8A33D]"></div>
               </label>
               <span className="text-xs font-bold text-slate-800 dark:text-[#F5F3EE] flex items-center gap-1.5">
                 <ShieldAlert className="w-4 h-4 text-emerald-500 dark:text-emerald-400" />
@@ -679,7 +684,7 @@ export default function EmailSender({ isForbidden, setIsForbidden }) {
             </div>
 
             {/* Modal Stats Overview */}
-            <div className="p-5 border-b border-slate-200 dark:border-white/10 space-y-4 bg-slate-50/50 dark:bg-white/[0.02]">
+            <div className="p-5 border-b border-slate-200 dark:border-white/10 space-y-4 bg-slate-50/50 dark:bg-white/2">
               {/* Progress Bar */}
               <div>
                 <div className="flex justify-between items-center text-xs mb-1.5 font-medium">
