@@ -91,11 +91,10 @@
             {
                 "title": "منصة إنشاء البورتفوليو الاحترافي",
                 "type": "fullstack",
-                "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com",
-                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
-                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "image": "/Projects/mylio.png",
+                "websiteUrl": "https://mylio.site",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/mylio-portfolio-builder",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/mylio-server",
                 "description": "منصة SaaS شاملة تتيح للمستخدمين إنشاء محافظ احترافية بسهولة تامة. توفر دعمًا متعدد اللغات، وتكامل نطاق مخصص، واختيار سمات ديناميكية، وإنشاء سيرة ذاتية في الوقت الفعلي، ولوحة إدارة بديهية لإدارة المحتوى والاشتراكات والتحليلات.",
                 "technologies": [
                     {
@@ -566,20 +565,22 @@
         "subtitle": "خبرتي المهنية",
         "items": [
             {
-                "title": "مؤسس ومطور Full Stack",
-                "company": "DGT Portfolio",
+                "title": "مؤسس ومطور Full-Stack",
+                "company": "OasyTech",
                 "location": "عن بعد",
                 "startDate": "أكتوبر 2025",
                 "endDate": "الحاضر",
-                "duration": "+7 أشهر",
+                "duration": "سنة وشهران",
                 "type": "دوام كامل",
                 "workType": "عن بعد",
                 "achievementsLabel": "المسؤوليات الرئيسية:",
                 "responsibilities": [
-                    "بناء والحفاظ على منصة SaaS باستخدام Next.js لإنشاء ملفات تعريفية احترافية، مع دمج نظام الدفع PayPal ودعم النطاقات المخصصة.",
-                    "تطوير واجهات برمجة تطبيقات RESTful آمنة باستخدام Node.js وExpress.js، مع المصادقة عبر JWT/NextAuth.js والتحكم في الوصول المستند إلى الأدوار (RBAC).",
-                    "تطبيق تحسينات الأداء وتهيئة محركات البحث (SEO) باستخدام تقنية العرض من جانب الخادم (SSR) وأفضل ممارسات تطوير الويب الحديثة.",
-                    "إدارة نشر التطبيق على Vercel وسير عمل CI/CD باستخدام Git وGitHub."
+                    "هندسة وتطوير تطبيقات الويب المتكاملة (Full-Stack).",
+                    "بناء أنظمة خلفية (Backend) قابلة للتوسع وواجهات برمجة تطبيقات REST APIs.",
+                    "تطوير واجهات أمامية حديثة باستخدام React و Next.js.",
+                    "تطوير حلول الخادم (Backend) باستخدام Node.js و NestJS و TypeScript.",
+                    "تصميم معماريات برمجية آمنة وقابلة للصيانة وعالية الأداء.",
+                    "استكشاف تكاملات الذكاء الاصطناعي وأتمتة سير العمل، مع التركيز على تحويل الأفكار إلى منتجات رقمية موثوقة عبر كود نظيف وممارسات هندسية رصينة."
                 ]
             },
             {

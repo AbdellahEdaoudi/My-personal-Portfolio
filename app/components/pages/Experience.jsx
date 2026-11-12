@@ -11,12 +11,14 @@ import { TbApi } from "react-icons/tb";
 import Image from "next/image";
 
 const EXPERIENCE_SKILLS = {
-    // 0: Founder & Full Stack Developer - DGT Portfolio
+    // 0: Founder & Full-Stack Developer - OasyTech
     0: [
         { name: 'Next.js', icon: <SiNextdotjs className="text-black dark:text-white" /> },
         { name: 'React.js', icon: <FaReact className="text-blue-500" /> },
+        { name: 'NestJS', icon: <SiNestjs className="text-red-600" /> },
         { name: 'Node.js', icon: <FaNodeJs className="text-green-500" /> },
         { name: 'Express.js', icon: <SiExpress className="text-gray-800 dark:text-gray-200" /> },
+        { name: 'TypeScript', icon: <SiTypescript className="text-blue-600" /> },
         { name: 'MongoDB', icon: <SiMongodb className="text-green-600" /> },
         { name: 'PayPal API', icon: <FaPaypal className="text-blue-700" /> },
         { name: 'JWT / NextAuth', icon: <SiJsonwebtokens className="text-pink-500" /> },

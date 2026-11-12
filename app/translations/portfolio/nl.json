@@ -91,11 +91,10 @@
             {
                 "title": "Professionele Portfolio Builder",
                 "type": "fullstack",
-                "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com",
-                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
-                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "image": "/Projects/mylio.png",
+                "websiteUrl": "https://mylio.site",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/mylio-portfolio-builder",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/mylio-server",
                 "description": "Een compleet SaaS-platform waarmee gebruikers moeiteloos professionele portfolio's kunnen maken. Het biedt meertalige ondersteuning, integratie van een aangepast domein, dynamische themaselectie, realtime CV-generatie en een intuïtief beheerderspaneel voor het beheren van inhoud, abonnementen en analyses.",
                 "technologies": [
                     {
@@ -566,20 +565,22 @@
         "subtitle": "Mijn professionele ervaring",
         "items": [
             {
-                "title": "Oprichter & Full Stack Developer",
-                "company": "DGT Portfolio",
+                "title": "Oprichter & Full-Stack Developer",
+                "company": "OasyTech",
                 "location": "Op afstand",
                 "startDate": "okt 2025",
                 "endDate": "Heden",
-                "duration": "+7 mnd",
+                "duration": "1 jaar 2 mnd",
                 "type": "Fulltime",
                 "workType": "Op afstand",
                 "achievementsLabel": "Belangrijkste verantwoordelijkheden:",
                 "responsibilities": [
-                    "Ontwikkeling en onderhoud van een Next.js SaaS-platform voor het creëren van professionele portfolio's, met PayPal-betalingsintegratie en ondersteuning voor aangepaste domeinen.",
-                    "Ontwikkeling van veilige RESTful API's met Node.js en Express.js, met JWT/NextAuth.js-authenticatie en op rollen gebaseerde toegangscontrole (RBAC).",
-                    "Implementatie van performance- en SEO-optimalisaties via Server-Side Rendering (SSR) en moderne webontwikkelingspraktijken.",
-                    "Beheer van applicatie-deployment op Vercel en CI/CD-workflows met Git en GitHub."
+                    "Architectuur en ontwikkeling van full-stack webapplicaties.",
+                    "Bouwen van schaalbare backend-systemen en REST API's.",
+                    "Ontwikkelen van moderne frontend-ervaringen met React en Next.js.",
+                    "Ontwerpen van backend-oplossingen met Node.js, NestJS en TypeScript.",
+                    "Ontwerpen van veilige, onderhoudbare en krachtige softwarearchitecturen.",
+                    "Verkennen van AI-integraties en workflow-automatisering, gericht op het omzetten van ideeën in betrouwbare digitale producten met schone code en solide engineeringpraktijken."
                 ]
             },
             {

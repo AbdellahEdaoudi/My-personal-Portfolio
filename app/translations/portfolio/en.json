@@ -91,10 +91,10 @@
             {
                 "title": "Professional Portfolio Builder",
                 "type": "fullstack",
-                "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com",
-                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
-                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
+                "image": "/Projects/mylio.png",
+                "websiteUrl": "https://mylio.site",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/mylio-portfolio-builder",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/mylio-server",
                 "description": "A comprehensive SaaS platform that allows users to create professional portfolios without programming. It features multilingual support, custom subdomains, a built-in resume generator, multiple modern themes, and an intuitive dashboard to manage portfolio content.",
                 "technologies": [
                     {
@@ -137,8 +137,7 @@
                         "name": "jwt",
                         "logo": "/Skills/jwt.jpg"
                     }
-                ],
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server"
+                ]
             },
             {
                 "title": "Hotel Reservation System",
@@ -566,20 +565,22 @@
         "subtitle": "My professional experience",
         "items": [
             {
-                "title": "Founder & Full Stack Developer",
-                "company": "DGT Portfolio",
+                "title": "Founder & Full-Stack Developer",
+                "company": "OasyTech",
                 "location": "Remote",
                 "startDate": "Oct 2025",
                 "endDate": "Present",
-                "duration": "+7 mos",
+                "duration": "1 yr 2 mos",
                 "type": "Full-time",
                 "workType": "Remote",
                 "achievementsLabel": "Key Responsibilities:",
                 "responsibilities": [
-                    "Built and maintain a Next.js SaaS platform for creating professional portfolios, with PayPal payment integration and custom domain support.",
-                    "Developed secure RESTful APIs using Node.js and Express.js, with JWT/NextAuth.js authentication and Role-Based Access Control (RBAC).",
-                    "Implemented performance and SEO optimizations using Server-Side Rendering (SSR) and modern web development practices.",
-                    "Managed application deployment on Vercel and CI/CD workflows using Git and GitHub."
+                    "Architecting and developing full-stack web applications.",
+                    "Building scalable backend systems and REST APIs.",
+                    "Developing modern frontend experiences using React and Next.js.",
+                    "Engineering backend solutions with Node.js, NestJS, and TypeScript.",
+                    "Designing secure, maintainable, and high-performance software architectures.",
+                    "Exploring AI integrations and workflow automation, focused on turning ideas into reliable digital products through clean code and solid engineering practices."
                 ]
             },
             {

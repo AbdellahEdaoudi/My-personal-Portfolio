@@ -91,11 +91,10 @@
             {
                 "title": "Créateur de Portfolio Professionnel",
                 "type": "fullstack",
-                "image": "/Projects/dgtportfolio.png",
-                "websiteUrl": "https://dgtportfolio.com",
-                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-CLIENT",
-                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/DGT-PORTFOLIO-SERVER",
-                "githubNestjsBackendUrl": "https://github.com/AbdellahEdaoudi/nestjs-dgtportfolio-server",
+                "image": "/Projects/mylio.png",
+                "websiteUrl": "https://mylio.site",
+                "githubFrontendUrl": "https://github.com/AbdellahEdaoudi/mylio-portfolio-builder",
+                "githubBackendUrl": "https://github.com/AbdellahEdaoudi/mylio-server",
                 "description": "Une plateforme SaaS complète permettant aux utilisateurs de créer des portfolios professionnels sans effort. Elle offre un support multilingue, une intégration de domaine personnalisé, une sélection de thèmes dynamiques, une génération de CV en temps réel et un tableau de bord d'administration intuitif pour gérer le contenu, les abonnements et les analyses.",
                 "technologies": [
                     {
@@ -566,20 +565,22 @@
         "subtitle": "Mon expérience professionnelle",
         "items": [
             {
-                "title": "Fondateur & Développeur Full Stack",
-                "company": "DGT Portfolio",
+                "title": "Fondateur & Développeur Full-Stack",
+                "company": "OasyTech",
                 "location": "À distance",
                 "startDate": "Oct 2025",
                 "endDate": "Présent",
-                "duration": "+7 mois",
+                "duration": "1 an 2 mois",
                 "type": "Full-time",
                 "workType": "À distance",
                 "achievementsLabel": "Responsabilités clés :",
                 "responsibilities": [
-                    "Développement et maintenance d'une plateforme SaaS Next.js pour la création de portfolios professionnels, avec intégration des paiements PayPal et support de domaines personnalisés.",
-                    "Développement d'APIs RESTful sécurisées avec Node.js et Express.js, avec authentification JWT/NextAuth.js et Contrôle d'Accès Basé sur les Rôles (RBAC).",
-                    "Mise en œuvre des optimisations de performance et de SEO via le Server-Side Rendering (SSR) et les pratiques modernes de développement web.",
-                    "Gestion du déploiement applicatif sur Vercel et des workflows CI/CD avec Git et GitHub."
+                    "Architecture et développement d'applications web full-stack.",
+                    "Construction de systèmes back-end évolutifs et d'APIs REST.",
+                    "Développement d'interfaces front-end modernes avec React et Next.js.",
+                    "Ingénierie de solutions back-end avec Node.js, NestJS et TypeScript.",
+                    "Conception d'architectures logicielles sécurisées, maintenables et performantes.",
+                    "Exploration des intégrations d'IA et de l'automatisation des flux de travail, visant à transformer les idées en produits numériques fiables grâce à un code propre et de solides pratiques d'ingénierie."
                 ]
             },
             {
